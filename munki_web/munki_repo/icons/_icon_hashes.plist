@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Brave.png</key>
+	<string>8b9642a2788ef34ad73e8ff98049b3bf94f22bba861dcbab1d722c45df6e0a18</string>
 	<key>Chrome.png</key>
 	<string>ea9b13faff65b8eaca0b05e8fe77a15581080ca166fdf3a7f7485e70863f2fab</string>
 	<key>Firefox.png</key>
