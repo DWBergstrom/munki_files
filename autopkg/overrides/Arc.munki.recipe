@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Arc</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>Arc</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>A new productivity-focused web browser.</string>
+			<key>developer</key>
+			<string>The Browser Company of New York</string>
+			<key>display_name</key>
+			<string>Arc</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.homebysix.munki.Arc</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.homebysix.download.Arc</key>
+			<dict>
+				<key>git_hash</key>
+				<string>8edd5600352feed9bafef64f96c1f7741570b2f0</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Arc/Arc.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>87451fa9ab50567d84d28101921504c383b96b06e9fbcda70333db229426078a</string>
+			</dict>
+			<key>com.github.homebysix.munki.Arc</key>
+			<dict>
+				<key>git_hash</key>
+				<string>8edd5600352feed9bafef64f96c1f7741570b2f0</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Arc/Arc.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>23bb27eb3129eedb971bae17e6dd24271427eb6d5f3a0934d4daa581e64462c1</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

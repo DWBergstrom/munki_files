@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.MicrosoftEdge</string>
+	<key>Input</key>
+	<dict>
+		<key>DOWNLOADURL</key>
+		<string>https://go.microsoft.com/fwlink/?linkid=%PRODUCTID%</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/Microsoft</string>
+		<key>NAME</key>
+		<string>MicrosoftEdge</string>
+		<key>PRODUCTID</key>
+		<string>2093504</string>
+		<key>SOFTWARETITLE</key>
+		<string>Edge</string>
+		<key>VENDOR</key>
+		<string>Microsoft</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>Productivity</string>
+			<key>description</key>
+			<string>Microsoft Edge web browser</string>
+			<key>developer</key>
+			<string>Microsoft</string>
+			<key>display_name</key>
+			<string>Microsoft Edge</string>
+			<key>minimum_os_version</key>
+			<string>10.10.0</string>
+			<key>name</key>
+			<string>%NAME%</string>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.rtrouton.munki.microsoftedge</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.rtrouton.download.microsoftedge</key>
+			<dict>
+				<key>git_hash</key>
+				<string>94bb3b9cbe49eca82aafd75665bf944f26438532</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.rtrouton-recipes/MicrosoftEdge/MicrosoftEdge.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>77766bae33daee294ca3471d4959b5d88d94baf55f83a22d5c75318dddd8e69a</string>
+			</dict>
+			<key>com.github.rtrouton.munki.microsoftedge</key>
+			<dict>
+				<key>git_hash</key>
+				<string>8fbf3a313fc161560098914c3e71088a836c626b</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.rtrouton-recipes/MicrosoftEdge/MicrosoftEdge.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>d7264d9e310228983c607bc24d1c09bfe84ea18e7c93f8de45a8ab5f16dd0674</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

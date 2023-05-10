@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Brave</string>
+	<key>Input</key>
+	<dict>
+		<key>INCLUDE_PRERELEASES</key>
+		<string></string>
+		<key>MUNKI_CATEGORY</key>
+		<string>Browsers</string>
+		<key>MUNKI_DEVELOPER</key>
+		<string>Brave Software Inc.</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>Brave</string>
+		<key>SPARKLE_FEED_URL</key>
+		<string>https://updates.bravesoftware.com/sparkle/Brave-Browser/stable/appcast.xml</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>%MUNKI_CATEGORY%</string>
+			<key>description</key>
+			<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
+			<key>developer</key>
+			<string>%MUNKI_DEVELOPER%</string>
+			<key>display_name</key>
+			<string>Brave Browser</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.apettinen.munki.brave</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.apettinen.download.brave</key>
+			<dict>
+				<key>git_hash</key>
+				<string>6a331bd9fcb6d624dda23cc6813c0ce40b884b78</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.apettinen-recipes/Brave/Brave.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>88ac22839fc36d5092fe7e7343241219381bbd4aace12459a1099eec315ef381</string>
+			</dict>
+			<key>com.github.apettinen.munki.brave</key>
+			<dict>
+				<key>git_hash</key>
+				<string>ce85d4f9887c2771fd8386aa5a66b4570913b46d</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.apettinen-recipes/Brave/Brave.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>61d7b640a53c633129b33c008d7a78934b1ec6455bf12a49bc6b6caaf48f4f16</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>
