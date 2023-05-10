@@ -7,9 +7,9 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2023-05-04T02:19:42Z</date>
+		<date>2023-05-10T02:30:40Z</date>
 		<key>munki_version</key>
-		<string>6.3.0.4556</string>
+		<string>6.3.1.4580</string>
 		<key>os_version</key>
 		<string>12.6.5</string>
 	</dict>
@@ -23,34 +23,34 @@
 	<key>category</key>
 	<string>Browsers</string>
 	<key>description</key>
-	<string>Web browser from Mozilla</string>
+	<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
 	<key>developer</key>
-	<string>Mozilla</string>
+	<string>Brave Software Inc.</string>
 	<key>display_name</key>
-	<string>Mozilla Firefox</string>
+	<string>Brave Browser</string>
 	<key>installer_item_hash</key>
-	<string>930d2685b6b52da6b907c4d8be5704408b7332b64de1974589eaff16d56d447d</string>
+	<string>2709ca93e0002d86ee558622775a9ea49108c9682f964c050ac0dd555cee5028</string>
 	<key>installer_item_location</key>
-	<string>apps/mozilla/Firefox 112.0.2.dmg</string>
+	<string>apps/Brave/Brave-113.1.51.114.dmg</string>
 	<key>installer_item_size</key>
-	<integer>130709</integer>
+	<integer>134645</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>org.mozilla.firefox</string>
+			<string>com.brave.Browser</string>
 			<key>CFBundleName</key>
-			<string>Firefox</string>
+			<string>Brave</string>
 			<key>CFBundleShortVersionString</key>
-			<string>112.0.2</string>
+			<string>113.1.51.114</string>
 			<key>CFBundleVersion</key>
-			<string>11223.4.24</string>
+			<string>151.114</string>
 			<key>minosversion</key>
-			<string>10.12.0</string>
+			<string>10.13</string>
 			<key>path</key>
-			<string>/Applications/Firefox.app</string>
+			<string>/Applications/Brave Browser.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -63,22 +63,20 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Firefox.app</string>
+			<string>Brave Browser.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>10.12.0</string>
+	<string>10.13</string>
 	<key>name</key>
-	<string>Firefox</string>
+	<string>Brave</string>
 	<key>unattended_install</key>
-	<false/>
-	<key>unattended_uninstall</key>
-	<false/>
+	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>112.0.2</string>
+	<string>113.1.51.114</string>
 </dict>
 </plist>

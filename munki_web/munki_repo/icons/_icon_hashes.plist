@@ -2,11 +2,29 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>1Password.png</key>
+	<string>3f99c31c1cb400f2f498ef602905a42e1e7ca6dc7ec26fb9021c3026b29e73b8</string>
+	<key>Arc.png</key>
+	<string>a526e65a5c8fd1bb0efbb35aabf44b26de6ba44193470467a76c9b02388d3b63</string>
+	<key>AutoPkgr.png</key>
+	<string>7913b114a9b31bc86a2d34890c0bd8e1aa43ff6558583d237117caededddbd5d</string>
+	<key>Bartender.png</key>
+	<string>644efc4b11e4fa0197e155787ddd37a54938f429d67f03d36f68f6b7104c7d90</string>
 	<key>Brave.png</key>
 	<string>8b9642a2788ef34ad73e8ff98049b3bf94f22bba861dcbab1d722c45df6e0a18</string>
-	<key>Chrome.png</key>
-	<string>ea9b13faff65b8eaca0b05e8fe77a15581080ca166fdf3a7f7485e70863f2fab</string>
 	<key>Firefox.png</key>
 	<string>ea497e0f26fdef83b1021d09db7740247e976745382aa2dffab589763b7902f5</string>
+	<key>GoogleChrome.png</key>
+	<string>5d5641838bd9f8b238f75c6ceb638ee06bbe3dd577890fec5243a799585f260b</string>
+	<key>MicrosoftEdge.png</key>
+	<string>ed890ea5e9a59ae850b73d001ce6b81d85aedaec77b057e08b64adbdba9d8537</string>
+	<key>Recipe Robot.png</key>
+	<string>631e487b0a8abef7d2a37f8050f04823680a69121cd531d9b4fad53c831e9a08</string>
+	<key>VLC.png</key>
+	<string>0cd379434edf527df9043434da68f5290f53c6e80e3e2526fac37cd0182bee53</string>
+	<key>iTerm2.png</key>
+	<string>1cb743d40fd2450cdd498a7572b25aa6f19185732b6247c77b7f7d619e45f303</string>
+	<key>munkitools.png</key>
+	<string>d2e4641e4c70f83f485be3cd3dbb6110b0f7cb3a66c004867714e0786cb2f265</string>
 </dict>
 </plist>

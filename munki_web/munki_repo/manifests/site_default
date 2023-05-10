@@ -14,9 +14,25 @@
 	<array/>
 	<key>managed_updates</key>
 	<array>
+		<string>1Password</string>
+		<string>1Password</string>
+		<string>Arc</string>
+		<string>Arc</string>
+		<string>AutoPkgr</string>
+		<string>Bartender</string>
 		<string>Brave</string>
-		<string>Chrome</string>
 		<string>Firefox</string>
+		<string>GoogleChrome</string>
+		<string>iTerm2</string>
+		<string>MicrosoftEdge</string>
+		<string>munkitools</string>
+		<string>munkitools_admin</string>
+		<string>munkitools_app_usage</string>
+		<string>munkitools_core</string>
+		<string>munkitools_launchd</string>
+		<string>munkitools_python</string>
+		<string>Recipe Robot</string>
+		<string>VLC</string>
 	</array>
 </dict>
 </plist>

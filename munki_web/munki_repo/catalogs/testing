@@ -7,7 +7,676 @@
 		<false/>
 		<key>catalogs</key>
 		<array>
+			<string>development</string>
 			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>munkitools</string>
+		<key>description</key>
+		<string>Core command-line tools used by Managed Software Center.</string>
+		<key>developer</key>
+		<string>The Munki Project</string>
+		<key>display_name</key>
+		<string>Managed Software Center core tools</string>
+		<key>icon_name</key>
+		<string></string>
+		<key>installed_size</key>
+		<integer>1211</integer>
+		<key>installer_item_hash</key>
+		<string>97ae83b680d154e29d4f2461b940ed6271a7594c9b57151ebb62755701ce621b</string>
+		<key>installer_item_location</key>
+		<string>munkitools/munkitools_core-6.3.1.4580.pkg</string>
+		<key>installer_item_size</key>
+		<integer>259</integer>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>munkitools_core</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>1211</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.core</string>
+				<key>version</key>
+				<string>6.3.1.4580</string>
+			</dict>
+		</array>
+		<key>requires</key>
+		<array>
+			<string>munkitools_python</string>
+			<string>munkitools_launchd</string>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>6.3.1.4580</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>development</string>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>munkitools</string>
+		<key>description</key>
+		<string>Application usage statistics for Managed Software Center.</string>
+		<key>developer</key>
+		<string>The Munki Project</string>
+		<key>display_name</key>
+		<string>Managed Software Center app usage</string>
+		<key>icon_name</key>
+		<string></string>
+		<key>installed_size</key>
+		<integer>25</integer>
+		<key>installer_item_hash</key>
+		<string>932c454cd95d7de4817ba36677116b0362181e13586e2cc59e716e291f25c158</string>
+		<key>installer_item_location</key>
+		<string>munkitools/munkitools_app_usage-6.3.1.4580.pkg</string>
+		<key>installer_item_size</key>
+		<integer>8</integer>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>munkitools_app_usage</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>25</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.app_usage</string>
+				<key>version</key>
+				<string>6.3.1.4580</string>
+			</dict>
+		</array>
+		<key>requires</key>
+		<array>
+			<string>munkitools_python</string>
+			<string>munkitools_core</string>
+			<string>munkitools_launchd</string>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>6.3.1.4580</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>development</string>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>munkitools</string>
+		<key>description</key>
+		<string>Embedded Python tools used by Managed Software Center.</string>
+		<key>developer</key>
+		<string>The Munki Project</string>
+		<key>display_name</key>
+		<string>Managed Software Center embedded python</string>
+		<key>icon_name</key>
+		<string></string>
+		<key>installed_size</key>
+		<integer>131620</integer>
+		<key>installer_item_hash</key>
+		<string>993bb7e0dd24f07d6b374b9dba88b225d2a14ae46a39835476d7af182bc10b2a</string>
+		<key>installer_item_location</key>
+		<string>munkitools/munkitools_python-3.10.10.4574.pkg</string>
+		<key>installer_item_size</key>
+		<integer>39568</integer>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>munkitools_python</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>131620</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.python</string>
+				<key>version</key>
+				<string>3.10.10.4574</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>3.10.10.4574</string>
+	</dict>
+	<dict>
+		<key>RestartAction</key>
+		<string>RequireRestart</string>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>development</string>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>munkitools</string>
+		<key>description</key>
+		<string>launchd configuration files for use by Managed Software Center.</string>
+		<key>developer</key>
+		<string>The Munki Project</string>
+		<key>display_name</key>
+		<string>Managed Software Center launchd files</string>
+		<key>icon_name</key>
+		<string></string>
+		<key>installed_size</key>
+		<integer>10</integer>
+		<key>installer_item_hash</key>
+		<string>2d0760d7aac0b1959b128d702aa370878b943f82f4c1a9c56d4d199c09323d1d</string>
+		<key>installer_item_location</key>
+		<string>munkitools/munkitools_launchd-3.0.3265.pkg</string>
+		<key>installer_item_size</key>
+		<integer>4</integer>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>munkitools_launchd</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>10</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.launchd</string>
+				<key>version</key>
+				<string>3.0.3265</string>
+			</dict>
+		</array>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>3.0.3265</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>development</string>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>munkitools</string>
+		<key>description</key>
+		<string>Command-line Managed Software Center admin tools.</string>
+		<key>developer</key>
+		<string>The Munki Project</string>
+		<key>display_name</key>
+		<string>Managed Software Center admin tools</string>
+		<key>icon_name</key>
+		<string></string>
+		<key>installed_size</key>
+		<integer>111</integer>
+		<key>installer_item_hash</key>
+		<string>ac143d5b197c7ba9448421db74764f410e0876e5eaa5ddb92042b9866ed6e629</string>
+		<key>installer_item_location</key>
+		<string>munkitools/munkitools_admin-6.3.1.4580.pkg</string>
+		<key>installer_item_size</key>
+		<integer>23</integer>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>munkitools_admin</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>111</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.admin</string>
+				<key>version</key>
+				<string>6.3.1.4580</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>update_for</key>
+		<array>
+			<string>munkitools_python</string>
+			<string>munkitools_core</string>
+		</array>
+		<key>version</key>
+		<string>6.3.1.4580</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>development</string>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>munkitools</string>
+		<key>description</key>
+		<string>Managed Software Center application.</string>
+		<key>developer</key>
+		<string>The Munki Project</string>
+		<key>display_name</key>
+		<string>Managed Software Center</string>
+		<key>installed_size</key>
+		<integer>28963</integer>
+		<key>installer_item_hash</key>
+		<string>cdfc3d07b8d36029cc700495927af5380505ac8e1d8a890b2daf774dd24ff042</string>
+		<key>installer_item_location</key>
+		<string>munkitools/munkitools_app-6.2.0.4576.pkg</string>
+		<key>installer_item_size</key>
+		<integer>10850</integer>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>munkitools</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>28963</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.app</string>
+				<key>version</key>
+				<string>6.2.0.4576</string>
+			</dict>
+		</array>
+		<key>requires</key>
+		<array>
+			<string>munkitools_python</string>
+			<string>munkitools_core</string>
+			<string>munkitools_launchd</string>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>6.2.0.4576</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+			<string>development</string>
+		</array>
+		<key>category</key>
+		<string>Utilities</string>
+		<key>description</key>
+		<string>iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with OS 10.5 (Leopard) or newer. Its focus is on performance, internationalization, and supporting innovative features that make your life better.</string>
+		<key>developer</key>
+		<string>George Nachman</string>
+		<key>display_name</key>
+		<string>iTerm2</string>
+		<key>installer_item_hash</key>
+		<string>f72ef0508c7be0e599539cef464ff6eeac99c4b1b134c49366b5d71e7b0df3fb</string>
+		<key>installer_item_location</key>
+		<string>apps/iTerm2-3.4.19.dmg</string>
+		<key>installer_item_size</key>
+		<integer>23862</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.googlecode.iterm2</string>
+				<key>CFBundleName</key>
+				<string>iTerm2</string>
+				<key>CFBundleShortVersionString</key>
+				<string>3.4.19</string>
+				<key>CFBundleVersion</key>
+				<string>3.4.19</string>
+				<key>minosversion</key>
+				<string>10.14</string>
+				<key>path</key>
+				<string>/Applications/iTerm.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>iTerm.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.14</string>
+		<key>name</key>
+		<string>iTerm2</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>3.4.19</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+			<string>development</string>
+		</array>
+		<key>description</key>
+		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
+		<key>display_name</key>
+		<string>Google Chrome</string>
+		<key>installer_item_hash</key>
+		<string>8433f92398017e9135035d706a75d8e0dba50c6f4af628dd2aef6e14beb04103</string>
+		<key>installer_item_location</key>
+		<string>apps/GoogleChrome-113.0.5672.92.dmg</string>
+		<key>installer_item_size</key>
+		<integer>215609</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.google.Chrome</string>
+				<key>CFBundleName</key>
+				<string>Chrome</string>
+				<key>CFBundleShortVersionString</key>
+				<string>113.0.5672.92</string>
+				<key>CFBundleVersion</key>
+				<string>5672.92</string>
+				<key>minosversion</key>
+				<string>10.13</string>
+				<key>path</key>
+				<string>/Applications/Google Chrome.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Google Chrome.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>GoogleChrome</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>113.0.5672.92</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>1Password</string>
+			<string>1Password 7</string>
+			<string>1Password Browser Helper</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+			<string>development</string>
+		</array>
+		<key>category</key>
+		<string>Utilities</string>
+		<key>description</key>
+		<string>1Password is a password manager that goes beyond simple password storage by integrating directly with your web browser to automatically log you into websites, enter credit card information, fill registration forms, and easily generate strong passwords.</string>
+		<key>developer</key>
+		<string>AgileBits Inc.</string>
+		<key>display_name</key>
+		<string>1Password</string>
+		<key>installed_size</key>
+		<integer>606487</integer>
+		<key>installer_item_hash</key>
+		<string>af45554dc4c5eda375445f729864cd3c42aad19c928050340a57f7d7a0a7bad4</string>
+		<key>installer_item_location</key>
+		<string>apps/1Password-8.10.6.pkg</string>
+		<key>installer_item_size</key>
+		<integer>237110</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.1password.1password</string>
+				<key>CFBundleName</key>
+				<string>1Password</string>
+				<key>CFBundleShortVersionString</key>
+				<string>8.10.6</string>
+				<key>CFBundleVersion</key>
+				<string>8.10.6.152179</string>
+				<key>minosversion</key>
+				<string>10.15</string>
+				<key>path</key>
+				<string>/Applications/1Password.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15</string>
+		<key>name</key>
+		<string>1Password</string>
+		<key>postinstall_script</key>
+		<string>#!/bin/zsh
+
+# Remove version 7 remnants if they exist
+
+if [[ -e "/Applications/1Password 7.app.zip" ]]; then
+    /bin/rm -f "/Applications/1Password 7.app.zip"
+fi
+
+if [[ -e "/Applications/1Password 7.app" ]]; then
+    /bin/rm -rf "/Applications/1Password 7.app"
+fi
+</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>606487</integer>
+				<key>packageid</key>
+				<string>com.1password.1password</string>
+				<key>version</key>
+				<string>8.10.6</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>8.10.6</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+			<string>development</string>
+		</array>
+		<key>description</key>
+		<string>Mozilla Firefox is a free and open source web browser.</string>
+		<key>display_name</key>
+		<string>Mozilla Firefox</string>
+		<key>installer_item_hash</key>
+		<string>6c546654b80341c13145931bdf4e1c8d1486982bc41f8c492c7230e43e1a6ed7</string>
+		<key>installer_item_location</key>
+		<string>apps/firefox/Firefox-113.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>129851</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>org.mozilla.firefox</string>
+				<key>CFBundleName</key>
+				<string>Firefox</string>
+				<key>CFBundleShortVersionString</key>
+				<string>113.0</string>
+				<key>CFBundleVersion</key>
+				<string>11323.5.4</string>
+				<key>minosversion</key>
+				<string>10.12.0</string>
+				<key>path</key>
+				<string>/Applications/Firefox.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Firefox.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.12.0</string>
+		<key>name</key>
+		<string>Firefox</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>113.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+			<string>development</string>
+		</array>
+		<key>description</key>
+		<string>A kick ass tool for creating AutoPkg recipes.</string>
+		<key>developer</key>
+		<string>Elliot Jordan</string>
+		<key>display_name</key>
+		<string>Recipe Robot</string>
+		<key>installer_item_hash</key>
+		<string>ed1596f2923c164309545fbd40794e91924f0d02cfbb5b6e7cb3f41179eaa69b</string>
+		<key>installer_item_location</key>
+		<string>apps/Recipe Robot/Recipe Robot-2.2.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>8966</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.elliotjordan.recipe-robot</string>
+				<key>CFBundleName</key>
+				<string>Recipe Robot</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2.2.0</string>
+				<key>CFBundleVersion</key>
+				<string>1291</string>
+				<key>minosversion</key>
+				<string>10.13</string>
+				<key>path</key>
+				<string>/Applications/Recipe Robot.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Recipe Robot.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>Recipe Robot</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2.2.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+			<string>development</string>
 		</array>
 		<key>category</key>
 		<string>Browsers</string>
@@ -76,38 +745,37 @@
 		<key>catalogs</key>
 		<array>
 			<string>testing</string>
+			<string>development</string>
 		</array>
-		<key>category</key>
-		<string>Browsers</string>
 		<key>description</key>
-		<string>Web browser from Google</string>
+		<string>Bartender lets you organize your menu bar icons, by hiding them, rearranging them, show hidden items with a click or keyboard shortcut and have icons show when they update.</string>
 		<key>developer</key>
-		<string>Google</string>
+		<string>Surtees Studios</string>
 		<key>display_name</key>
-		<string>Google Chrome</string>
+		<string>Bartender</string>
 		<key>installer_item_hash</key>
-		<string>58288df4f24575701162fa02c7a742741f4061560139d99e57d34ba7210ebfc2</string>
+		<string>e7fb55ecb9efe9d1596eda4b96d45918c49836ca3d2e0281c1d02b629ed9939c</string>
 		<key>installer_item_location</key>
-		<string>apps/google/googlechrome-113.0.5672.63.dmg</string>
+		<string>apps/Bartender/Bartender-4.2.21.dmg</string>
 		<key>installer_item_size</key>
-		<integer>215613</integer>
+		<integer>10113</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
 		<array>
 			<dict>
 				<key>CFBundleIdentifier</key>
-				<string>com.google.Chrome</string>
+				<string>com.surteesstudios.Bartender</string>
 				<key>CFBundleName</key>
-				<string>Chrome</string>
+				<string>Bartender 4</string>
 				<key>CFBundleShortVersionString</key>
-				<string>113.0.5672.63</string>
+				<string>4.2.21</string>
 				<key>CFBundleVersion</key>
-				<string>5672.63</string>
+				<string>42021</string>
 				<key>minosversion</key>
-				<string>10.13</string>
+				<string>11.0</string>
 				<key>path</key>
-				<string>/Applications/Google Chrome.app</string>
+				<string>/Applications/Bartender 4.app</string>
 				<key>type</key>
 				<string>application</string>
 				<key>version_comparison_key</key>
@@ -120,23 +788,21 @@
 				<key>destination_path</key>
 				<string>/Applications</string>
 				<key>source_item</key>
-				<string>Google Chrome.app</string>
+				<string>Bartender 4.app</string>
 			</dict>
 		</array>
 		<key>minimum_os_version</key>
-		<string>10.13</string>
+		<string>11.0</string>
 		<key>name</key>
-		<string>Chrome</string>
+		<string>Bartender</string>
 		<key>unattended_install</key>
-		<false/>
-		<key>unattended_uninstall</key>
-		<false/>
+		<true/>
 		<key>uninstall_method</key>
 		<string>remove_copied_items</string>
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>113.0.5672.63</string>
+		<string>4.2.21</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -144,6 +810,53 @@
 		<key>catalogs</key>
 		<array>
 			<string>testing</string>
+			<string>development</string>
+		</array>
+		<key>category</key>
+		<string>Productivity</string>
+		<key>description</key>
+		<string>Microsoft Edge web browser</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Microsoft Edge</string>
+		<key>installed_size</key>
+		<integer>781393</integer>
+		<key>installer_item_hash</key>
+		<string>e23b9886171cb6b1e5b717fdd19e92cb692351559d7522c31ebac1f4c4130c77</string>
+		<key>installer_item_location</key>
+		<string>apps/Microsoft/Microsoft_Edge-113.0.1774.35.pkg</string>
+		<key>installer_item_size</key>
+		<integer>336093</integer>
+		<key>minimum_os_version</key>
+		<string>10.10.0</string>
+		<key>name</key>
+		<string>MicrosoftEdge</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>781393</integer>
+				<key>packageid</key>
+				<string>com.microsoft.edgemac</string>
+				<key>version</key>
+				<string>113.0.1774.35</string>
+			</dict>
+		</array>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>113.0.1774.35</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+			<string>development</string>
 		</array>
 		<key>category</key>
 		<string>Browsers</string>
@@ -203,6 +916,273 @@
 		<true/>
 		<key>version</key>
 		<string>113.1.51.110</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+			<string>development</string>
+		</array>
+		<key>category</key>
+		<string>Browsers</string>
+		<key>description</key>
+		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
+		<key>developer</key>
+		<string>Brave Software Inc.</string>
+		<key>display_name</key>
+		<string>Brave Browser</string>
+		<key>installer_item_hash</key>
+		<string>2709ca93e0002d86ee558622775a9ea49108c9682f964c050ac0dd555cee5028</string>
+		<key>installer_item_location</key>
+		<string>apps/Brave/Brave-113.1.51.114.dmg</string>
+		<key>installer_item_size</key>
+		<integer>134645</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.brave.Browser</string>
+				<key>CFBundleName</key>
+				<string>Brave</string>
+				<key>CFBundleShortVersionString</key>
+				<string>113.1.51.114</string>
+				<key>CFBundleVersion</key>
+				<string>151.114</string>
+				<key>minosversion</key>
+				<string>10.13</string>
+				<key>path</key>
+				<string>/Applications/Brave Browser.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Brave Browser.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>Brave</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>113.1.51.114</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+			<string>development</string>
+		</array>
+		<key>description</key>
+		<string>VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVD, Audio CD, VCD, and various streaming protocols.</string>
+		<key>developer</key>
+		<string>The VideoLAN Project</string>
+		<key>display_name</key>
+		<string>VLC Media Player</string>
+		<key>installer_item_hash</key>
+		<string>0e66accce5381f3e671e19fe102631c006b5f0b2cc7909fabc511d597b76c0c0</string>
+		<key>installer_item_location</key>
+		<string>apps/VLC/VLC-3.0.18.dmg</string>
+		<key>installer_item_size</key>
+		<integer>82509</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>org.videolan.vlc</string>
+				<key>CFBundleName</key>
+				<string>VLC media player</string>
+				<key>CFBundleShortVersionString</key>
+				<string>3.0.18</string>
+				<key>CFBundleVersion</key>
+				<string>3.0.18</string>
+				<key>minosversion</key>
+				<string>10.7.5</string>
+				<key>path</key>
+				<string>/Applications/VLC.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>VLC.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.7.5</string>
+		<key>name</key>
+		<string>VLC</string>
+		<key>supported_architectures</key>
+		<array>
+			<string>arm64</string>
+			<string>x86_64</string>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>3.0.18</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+			<string>development</string>
+		</array>
+		<key>description</key>
+		<string>AutoPkgr is a free Mac app that makes it easy to install and configure AutoPkg.</string>
+		<key>developer</key>
+		<string>Linde Group, Inc.</string>
+		<key>display_name</key>
+		<string>AutoPkgr</string>
+		<key>installer_item_hash</key>
+		<string>0cb70cd08102124a5bfa6f02d2a38001ab4b0b659bdf968821e91abb776b0a6e</string>
+		<key>installer_item_location</key>
+		<string>apps/AutoPkgr/AutoPkgr-1.6.dmg</string>
+		<key>installer_item_size</key>
+		<integer>4646</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.lindegroup.AutoPkgr</string>
+				<key>CFBundleName</key>
+				<string>AutoPkgr</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.6</string>
+				<key>CFBundleVersion</key>
+				<string>1506</string>
+				<key>minosversion</key>
+				<string>10.13</string>
+				<key>path</key>
+				<string>/Applications/AutoPkgr.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>AutoPkgr.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>AutoPkgr</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.6</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+			<string>development</string>
+		</array>
+		<key>description</key>
+		<string>A new productivity-focused web browser.</string>
+		<key>developer</key>
+		<string>The Browser Company of New York</string>
+		<key>display_name</key>
+		<string>Arc</string>
+		<key>installer_item_hash</key>
+		<string>05a4cd18ab2d2d73065bd3366f14cbe4be810d1ddba06cabc161f369307966de</string>
+		<key>installer_item_location</key>
+		<string>apps/Arc/Arc-0.102.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>312427</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>company.thebrowser.Browser</string>
+				<key>CFBundleName</key>
+				<string>Arc</string>
+				<key>CFBundleShortVersionString</key>
+				<string>0.102.0</string>
+				<key>CFBundleVersion</key>
+				<string>38682</string>
+				<key>minosversion</key>
+				<string>12.0</string>
+				<key>path</key>
+				<string>/Applications/Arc.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Arc.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.0</string>
+		<key>name</key>
+		<string>Arc</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>0.102.0</string>
 	</dict>
 </array>
 </plist>
