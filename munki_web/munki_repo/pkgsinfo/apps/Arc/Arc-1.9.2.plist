@@ -7,9 +7,9 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2023-05-04T02:19:42Z</date>
+		<date>2023-09-22T18:38:09Z</date>
 		<key>munki_version</key>
-		<string>6.3.0.4556</string>
+		<string>6.3.1.4580</string>
 		<key>os_version</key>
 		<string>12.6.5</string>
 	</dict>
@@ -18,39 +18,36 @@
 	<key>catalogs</key>
 	<array>
 		<string>testing</string>
-		<string>development</string>
 	</array>
-	<key>category</key>
-	<string>Browsers</string>
 	<key>description</key>
-	<string>Web browser from Mozilla</string>
+	<string>A new productivity-focused web browser.</string>
 	<key>developer</key>
-	<string>Mozilla</string>
+	<string>The Browser Company of New York</string>
 	<key>display_name</key>
-	<string>Mozilla Firefox</string>
+	<string>Arc</string>
 	<key>installer_item_hash</key>
-	<string>930d2685b6b52da6b907c4d8be5704408b7332b64de1974589eaff16d56d447d</string>
+	<string>4f8936f8906d3c736cca2ebef83796e3fd29304671350217b7269e5484baf5d3</string>
 	<key>installer_item_location</key>
-	<string>apps/mozilla/Firefox 112.0.2.dmg</string>
+	<string>apps/Arc/Arc-1.9.2.dmg</string>
 	<key>installer_item_size</key>
-	<integer>130709</integer>
+	<integer>374765</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>org.mozilla.firefox</string>
+			<string>company.thebrowser.Browser</string>
 			<key>CFBundleName</key>
-			<string>Firefox</string>
+			<string>Arc</string>
 			<key>CFBundleShortVersionString</key>
-			<string>112.0.2</string>
+			<string>1.9.2</string>
 			<key>CFBundleVersion</key>
-			<string>11223.4.24</string>
+			<string>41848</string>
 			<key>minosversion</key>
-			<string>10.12.0</string>
+			<string>12.1.0</string>
 			<key>path</key>
-			<string>/Applications/Firefox.app</string>
+			<string>/Applications/Arc.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -63,22 +60,20 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Firefox.app</string>
+			<string>Arc.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>10.12.0</string>
+	<string>12.1.0</string>
 	<key>name</key>
-	<string>Firefox</string>
+	<string>Arc</string>
 	<key>unattended_install</key>
-	<false/>
-	<key>unattended_uninstall</key>
-	<false/>
+	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>112.0.2</string>
+	<string>1.9.2</string>
 </dict>
 </plist>

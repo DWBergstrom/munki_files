@@ -43,7 +43,7 @@
 		<key>MUNKITOOLS_PYTHON_NAME</key>
 		<string>munkitools_python</string>
 		<key>MUNKI_CATALOG</key>
-		<string>development</string>
+		<string>testing</string>
 		<key>MUNKI_CATEGORY</key>
 		<string>munkitools</string>
 		<key>MUNKI_DEVELOPER</key>

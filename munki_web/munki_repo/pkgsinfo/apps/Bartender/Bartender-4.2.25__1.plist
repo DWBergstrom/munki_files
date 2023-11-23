@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2023-11-23T04:35:39Z</date>
+		<key>munki_version</key>
+		<string>6.3.1.4580</string>
+		<key>os_version</key>
+		<string>12.6.5</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>Bartender lets you organize your menu bar icons, by hiding them, rearranging them, show hidden items with a click or keyboard shortcut and have icons show when they update.</string>
+	<key>developer</key>
+	<string>Surtees Studios</string>
+	<key>display_name</key>
+	<string>Bartender</string>
+	<key>installer_item_hash</key>
+	<string>5ee4f53c18dd8b868ddab742aeb904a6e80205077ba9744942eb30467f2a5a28</string>
+	<key>installer_item_location</key>
+	<string>apps/Bartender/Bartender-4.2.25__1.dmg</string>
+	<key>installer_item_size</key>
+	<integer>10433</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.surteesstudios.Bartender</string>
+			<key>CFBundleName</key>
+			<string>Bartender 4</string>
+			<key>CFBundleShortVersionString</key>
+			<string>4.2.25</string>
+			<key>CFBundleVersion</key>
+			<string>42025</string>
+			<key>minosversion</key>
+			<string>11.0</string>
+			<key>path</key>
+			<string>/Applications/Bartender 4.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>Bartender 4.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>11.0</string>
+	<key>name</key>
+	<string>Bartender</string>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>4.2.25</string>
+</dict>
+</plist>
