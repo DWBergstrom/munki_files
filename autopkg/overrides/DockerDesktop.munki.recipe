@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.DockerDesktop</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>Docker</string>
+		<key>PLATFORM_ARCH</key>
+		<string>amd64</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Automates deployment of containerized applications.</string>
+			<key>developer</key>
+			<string>Docker</string>
+			<key>display_name</key>
+			<string>Docker</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.homebysix.munki.DockerDesktop</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.homebysix.download.DockerDesktop</key>
+			<dict>
+				<key>git_hash</key>
+				<string>1c07af1afad04e57eaa8984c39e1b545fb9cd978</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Docker/DockerDesktop.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>897443f0dd248bc863f855488f7bd846e17a66c31657f50992b469381b43fc11</string>
+			</dict>
+			<key>com.github.homebysix.munki.DockerDesktop</key>
+			<dict>
+				<key>git_hash</key>
+				<string>1c07af1afad04e57eaa8984c39e1b545fb9cd978</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Docker/DockerDesktop.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>2d2c418b4fe5e3fdc97e6fa7c9560799a5817394649578b3178a62f97da8337a</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

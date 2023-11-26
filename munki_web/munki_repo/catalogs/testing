@@ -1254,6 +1254,68 @@ fi
 		<array>
 			<string>testing</string>
 		</array>
+		<key>description</key>
+		<string></string>
+		<key>display_name</key>
+		<string>Visual Studio Code</string>
+		<key>installer_item_hash</key>
+		<string>b763872e44fea28b9548227d2714d767b45f7df580e05f9b839c229d038eeb11</string>
+		<key>installer_item_location</key>
+		<string>apps/Visual Studio Code-1.84.2.dmg</string>
+		<key>installer_item_size</key>
+		<integer>209924</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.microsoft.VSCode</string>
+				<key>CFBundleName</key>
+				<string>Code</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.84.2</string>
+				<key>CFBundleVersion</key>
+				<string>1.84.2</string>
+				<key>minosversion</key>
+				<string>10.13</string>
+				<key>path</key>
+				<string>/Applications/Visual Studio Code.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Visual Studio Code.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>Visual Studio Code</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.84.2</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
 		<key>category</key>
 		<string>Utilities</string>
 		<key>description</key>
@@ -1993,6 +2055,70 @@ fi
 		<true/>
 		<key>version</key>
 		<string>2.3.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Automates deployment of containerized applications.</string>
+		<key>developer</key>
+		<string>Docker</string>
+		<key>display_name</key>
+		<string>Docker</string>
+		<key>installer_item_hash</key>
+		<string>036f3a052c299d6cc5280bcaeb0018e5ad116cc1697464fffc3133d393f5d2e0</string>
+		<key>installer_item_location</key>
+		<string>apps/Docker/Docker-amd64-4.25.2.dmg</string>
+		<key>installer_item_size</key>
+		<integer>615130</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.docker.docker</string>
+				<key>CFBundleName</key>
+				<string>Docker</string>
+				<key>CFBundleShortVersionString</key>
+				<string>4.25.2</string>
+				<key>CFBundleVersion</key>
+				<string>129061</string>
+				<key>minosversion</key>
+				<string>11.0</string>
+				<key>path</key>
+				<string>/Applications/Docker.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Docker.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>11.0</string>
+		<key>name</key>
+		<string>Docker</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>4.25.2</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>

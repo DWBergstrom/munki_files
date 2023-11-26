@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.VisualStudioCode</string>
+	<key>Input</key>
+	<dict>
+		<key>DOWNLOAD_URL</key>
+		<string>https://go.microsoft.com/fwlink/?LinkID=2156837</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps</string>
+		<key>NAME</key>
+		<string>Visual Studio Code</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string></string>
+			<key>display_name</key>
+			<string>Visual Studio Code</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.killahquam.munki.visualstudiocode</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.killahquam.download.visualstudiocode</key>
+			<dict>
+				<key>git_hash</key>
+				<string>e1c6fdbc3e80fb0f8b3e29ca6c9ed38067d9f17e</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.killahquam-recipes/VisualStudioCode/VisualStudioCode.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>661e58dc573b5f48e073d95b537934a36c3033da9316a7ba92d1848ccc49b5e0</string>
+			</dict>
+			<key>com.github.killahquam.munki.visualstudiocode</key>
+			<dict>
+				<key>git_hash</key>
+				<string>b8639ace132f1d2893b898744c144ede800e953a</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.killahquam-recipes/VisualStudioCode/VisualStudioCode.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>8069536b3fca30dd289ee85c3b62c74aa62cd9178493ae7c8b804195b64bbcea</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>
