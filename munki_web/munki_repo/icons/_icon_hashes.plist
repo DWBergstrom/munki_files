@@ -12,6 +12,8 @@
 	<string>644efc4b11e4fa0197e155787ddd37a54938f429d67f03d36f68f6b7104c7d90</string>
 	<key>Brave.png</key>
 	<string>8b9642a2788ef34ad73e8ff98049b3bf94f22bba861dcbab1d722c45df6e0a18</string>
+	<key>Docker.png</key>
+	<string>3f4a9bc1415d843baa938ca03b73296ccb9aece3ec8dfd97ade698c30d77409b</string>
 	<key>Firefox.png</key>
 	<string>ea497e0f26fdef83b1021d09db7740247e976745382aa2dffab589763b7902f5</string>
 	<key>GoogleChrome.png</key>
@@ -22,6 +24,8 @@
 	<string>631e487b0a8abef7d2a37f8050f04823680a69121cd531d9b4fad53c831e9a08</string>
 	<key>VLC.png</key>
 	<string>0cd379434edf527df9043434da68f5290f53c6e80e3e2526fac37cd0182bee53</string>
+	<key>Visual Studio Code.png</key>
+	<string>c960adb10723a86869cac10a8246cefff3c61d98e44403b157f83ea5a3af593a</string>
 	<key>iTerm2.png</key>
 	<string>1cb743d40fd2450cdd498a7572b25aa6f19185732b6247c77b7f7d619e45f303</string>
 	<key>munkitools.png</key>
