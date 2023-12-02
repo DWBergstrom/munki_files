@@ -1021,6 +1021,172 @@
 	<dict>
 		<key>autoremove</key>
 		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Utilities</string>
+		<key>description</key>
+		<string>DFU Blaster is the easiest way to put a Mac into DFU mode.</string>
+		<key>developer</key>
+		<string>Twocanoes Software</string>
+		<key>display_name</key>
+		<string>DFU Blaster</string>
+		<key>installed_size</key>
+		<integer>779</integer>
+		<key>installer_item_hash</key>
+		<string>83b4553c5326ff29347d972930c40b373b6d6b032ca1661b0a97299f4c4a7a75</string>
+		<key>installer_item_location</key>
+		<string>utilities/DFUBlaster/DFU_Blaster-2.2.2112.dmg</string>
+		<key>installer_item_size</key>
+		<integer>310</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.twocanoes.DFU-Blaster</string>
+				<key>CFBundleName</key>
+				<string>DFU Blaster</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2.2</string>
+				<key>CFBundleVersion</key>
+				<string>2112</string>
+				<key>minosversion</key>
+				<string>12.0</string>
+				<key>path</key>
+				<string>/Applications/DFU Blaster.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.0</string>
+		<key>name</key>
+		<string>DFUBlaster</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>779</integer>
+				<key>packageid</key>
+				<string>com.twocanoes.pkg.DFU-Blaster</string>
+				<key>version</key>
+				<string>2.2.2112</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>uninstall_script</string>
+		<key>uninstall_script</key>
+		<string>#!/bin/sh
+# Uninstall script adapted from DFU Blaster Uninstall package
+if [ -d "/Applications/DFU Blaster.app" ] ; then
+	echo "Removing DFU Blaster.app"
+	rm -rf "/Applications/DFU Blaster.app"
+fi
+
+if [ -e "/Library/LaunchDaemons/com.twocanoes.dfublasterhelper.plist" ] ; then
+	echo "Removing DFU Blaster Helper LaunchDaemon"
+	cd "/Library/LaunchDaemons"
+	launchctl stop com.twocanoes.dfublasterhelper
+	launchctl unload com.twocanoes.dfublasterhelper.plist
+	rm com.twocanoes.dfublasterhelper.plist
+	echo "Done removing DFU Blaster Helper LaunchDaemon"
+fi
+
+if [ -e "/Library/PrivilegedHelperTools/com.twocanoes.dfublasterhelper" ] ; then
+	echo "Removing DFU Blaster Helper Tool"
+	rm "/Library/PrivilegedHelperTools/com.twocanoes.dfublasterhelper"
+	echo "Done removing DFU Blaster Helper Tool"
+fi</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2.2.2112</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Software</string>
+		<key>description</key>
+		<string>Oracle VM VirtualBox is a free and open-source hypervisor for x86 computers currently being developed by Oracle Corporation.</string>
+		<key>developer</key>
+		<string>Oracle Corporation</string>
+		<key>display_name</key>
+		<string>VirtualBox</string>
+		<key>installed_size</key>
+		<integer>260263</integer>
+		<key>installer_item_hash</key>
+		<string>d9e46fe33c0e25e1cb50a38e892d8713e7775d5e9cc87b29fd10452bae2709b7</string>
+		<key>installer_item_location</key>
+		<string>apps/VirtualBox-7.0.12.dmg</string>
+		<key>installer_item_size</key>
+		<integer>130578</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>org.virtualbox.app.VirtualBox</string>
+				<key>CFBundleName</key>
+				<string>VirtualBox</string>
+				<key>CFBundleShortVersionString</key>
+				<string>7.0.12</string>
+				<key>CFBundleVersion</key>
+				<string>7.0.12</string>
+				<key>path</key>
+				<string>/Applications/VirtualBox.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.5.0</string>
+		<key>name</key>
+		<string>VirtualBox</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>260256</integer>
+				<key>packageid</key>
+				<string>org.virtualbox.pkg.virtualbox</string>
+				<key>version</key>
+				<string>7.0.12</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>7</integer>
+				<key>packageid</key>
+				<string>org.virtualbox.pkg.virtualboxcli</string>
+				<key>version</key>
+				<string>7.0.12</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>7.0.12</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
 		<key>blocking_applications</key>
 		<array>
 			<string>1Password 7</string>
@@ -1235,6 +1401,68 @@ fi
 		<true/>
 		<key>version</key>
 		<string>3.4.19</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
+		<key>display_name</key>
+		<string>Google Chrome</string>
+		<key>installer_item_hash</key>
+		<string>13f3c5034643599af3f9893903b926550a42418bca6b3be833677d5b08c131e9</string>
+		<key>installer_item_location</key>
+		<string>apps/GoogleChrome-119.0.6045.199.dmg</string>
+		<key>installer_item_size</key>
+		<integer>198903</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.google.Chrome</string>
+				<key>CFBundleName</key>
+				<string>Chrome</string>
+				<key>CFBundleShortVersionString</key>
+				<string>119.0.6045.199</string>
+				<key>CFBundleVersion</key>
+				<string>6045.199</string>
+				<key>minosversion</key>
+				<string>10.15</string>
+				<key>path</key>
+				<string>/Applications/Google Chrome.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Google Chrome.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15</string>
+		<key>name</key>
+		<string>GoogleChrome</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>119.0.6045.199</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -2294,6 +2522,68 @@ fi
 		<key>catalogs</key>
 		<array>
 			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Mozilla Firefox is a free and open source web browser.</string>
+		<key>display_name</key>
+		<string>Mozilla Firefox</string>
+		<key>installer_item_hash</key>
+		<string>b30cbaafe57c49fd334db05824b1641b75227da2415e6ae1751f72f9a1335d2d</string>
+		<key>installer_item_location</key>
+		<string>apps/firefox/Firefox-120.0.1.dmg</string>
+		<key>installer_item_size</key>
+		<integer>130243</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>org.mozilla.firefox</string>
+				<key>CFBundleName</key>
+				<string>Firefox</string>
+				<key>CFBundleShortVersionString</key>
+				<string>120.0.1</string>
+				<key>CFBundleVersion</key>
+				<string>12023.11.29</string>
+				<key>minosversion</key>
+				<string>10.15.0</string>
+				<key>path</key>
+				<string>/Applications/Firefox.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Firefox.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15.0</string>
+		<key>name</key>
+		<string>Firefox</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>120.0.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
 			<string>development</string>
 		</array>
 		<key>description</key>
@@ -3189,6 +3479,72 @@ fi
 		<key>catalogs</key>
 		<array>
 			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Browsers</string>
+		<key>description</key>
+		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
+		<key>developer</key>
+		<string>Brave Software Inc.</string>
+		<key>display_name</key>
+		<string>Brave Browser</string>
+		<key>installer_item_hash</key>
+		<string>b3f813595ff10d36a6e8ce79d52b4aa6876f0eefa99fe838821baef0e497c3e2</string>
+		<key>installer_item_location</key>
+		<string>apps/Brave/Brave-119.1.60.125.dmg</string>
+		<key>installer_item_size</key>
+		<integer>142091</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.brave.Browser</string>
+				<key>CFBundleName</key>
+				<string>Brave</string>
+				<key>CFBundleShortVersionString</key>
+				<string>119.1.60.125</string>
+				<key>CFBundleVersion</key>
+				<string>160.125</string>
+				<key>minosversion</key>
+				<string>10.15</string>
+				<key>path</key>
+				<string>/Applications/Brave Browser.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Brave Browser.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15</string>
+		<key>name</key>
+		<string>Brave</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>119.1.60.125</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
 			<string>development</string>
 		</array>
 		<key>category</key>
@@ -3517,6 +3873,70 @@ fi
 		<true/>
 		<key>version</key>
 		<string>1.9.2</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>A new productivity-focused web browser.</string>
+		<key>developer</key>
+		<string>The Browser Company of New York</string>
+		<key>display_name</key>
+		<string>Arc</string>
+		<key>installer_item_hash</key>
+		<string>d7116e7e2a44ca45ddf31dbc5249ba1be2122659583a273e3d4021833cd053d9</string>
+		<key>installer_item_location</key>
+		<string>apps/Arc/Arc-1.19.1.dmg</string>
+		<key>installer_item_size</key>
+		<integer>366312</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>company.thebrowser.Browser</string>
+				<key>CFBundleName</key>
+				<string>Arc</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.19.1</string>
+				<key>CFBundleVersion</key>
+				<string>43687</string>
+				<key>minosversion</key>
+				<string>12.1.0</string>
+				<key>path</key>
+				<string>/Applications/Arc.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Arc.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.1.0</string>
+		<key>name</key>
+		<string>Arc</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.19.1</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>

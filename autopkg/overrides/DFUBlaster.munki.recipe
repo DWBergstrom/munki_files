@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.DFUBlaster</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>utilities/DFUBlaster</string>
+		<key>NAME</key>
+		<string>DFUBlaster</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>Utilities</string>
+			<key>description</key>
+			<string>DFU Blaster is the easiest way to put a Mac into DFU mode.</string>
+			<key>developer</key>
+			<string>Twocanoes Software</string>
+			<key>display_name</key>
+			<string>DFU Blaster</string>
+			<key>icon_name</key>
+			<string>DFUBlaster.png</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>unattended_uninstall</key>
+			<true/>
+			<key>uninstall_method</key>
+			<string>uninstall_script</string>
+			<key>uninstall_script</key>
+			<string>#!/bin/sh
+# Uninstall script adapted from DFU Blaster Uninstall package
+if [ -d "/Applications/DFU Blaster.app" ] ; then
+	echo "Removing DFU Blaster.app"
+	rm -rf "/Applications/DFU Blaster.app"
+fi
+
+if [ -e "/Library/LaunchDaemons/com.twocanoes.dfublasterhelper.plist" ] ; then
+	echo "Removing DFU Blaster Helper LaunchDaemon"
+	cd "/Library/LaunchDaemons"
+	launchctl stop com.twocanoes.dfublasterhelper
+	launchctl unload com.twocanoes.dfublasterhelper.plist
+	rm com.twocanoes.dfublasterhelper.plist
+	echo "Done removing DFU Blaster Helper LaunchDaemon"
+fi
+
+if [ -e "/Library/PrivilegedHelperTools/com.twocanoes.dfublasterhelper" ] ; then
+	echo "Removing DFU Blaster Helper Tool"
+	rm "/Library/PrivilegedHelperTools/com.twocanoes.dfublasterhelper"
+	echo "Done removing DFU Blaster Helper Tool"
+fi</string>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.kevinmcox.munki.DFUBlaster</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.kevinmcox.download.DFUBlaster</key>
+			<dict>
+				<key>git_hash</key>
+				<string>acda11f20c5cf2b0139001b63187ab070fb86912</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.kevinmcox-recipes/Twocanoes Software/DFUBlaster.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>b5a6129ef95c64752b8d8bb1b6b3a9290acd0b87763ad3bed6448f9196f23752</string>
+			</dict>
+			<key>com.github.kevinmcox.munki.DFUBlaster</key>
+			<dict>
+				<key>git_hash</key>
+				<string>d2ea91b0c6938c8f626f12892803188b861ed166</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.kevinmcox-recipes/Twocanoes Software/DFUBlaster.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>a575232a4f72558397e3c979da0fd785dfdf3db5392ddf736ac453b74b4f25a7</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

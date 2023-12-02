@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.VirtualBox</string>
+	<key>Input</key>
+	<dict>
+		<key>DERIVE_MIN_OS</key>
+		<string></string>
+		<key>MUNKI_CATEGORY</key>
+		<string>Software</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps</string>
+		<key>NAME</key>
+		<string>VirtualBox</string>
+		<key>PKG_ID</key>
+		<string>org.virtualbox.app.VirtualBox</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>%MUNKI_CATEGORY%</string>
+			<key>description</key>
+			<string>Oracle VM VirtualBox is a free and open-source hypervisor for x86 computers currently being developed by Oracle Corporation.</string>
+			<key>developer</key>
+			<string>Oracle Corporation</string>
+			<key>display_name</key>
+			<string>VirtualBox</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.apizz.munki.VirtualBox</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.apizz.munki.VirtualBox</key>
+			<dict>
+				<key>git_hash</key>
+				<string>76f95e7c21dc0a468c6e2172d51ebd4aaa4a29f3</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.apizz-recipes/VirtualBox/VirtualBox.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>9243af2bcaed8be71cf9d6e03db3e77fc49a42223acb87e2f30857b8c2a5629c</string>
+			</dict>
+			<key>com.github.homebysix.download.VirtualBox</key>
+			<dict>
+				<key>git_hash</key>
+				<string>3009854a66dc994e88b0f41eb4ff6d781ed827be</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/VirtualBox/VirtualBox.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>187e6a58589f6118943c309154fa248939914c301e1d8071fddbc8d112f4c54a</string>
+			</dict>
+			<key>com.github.homebysix.pkg.VirtualBox</key>
+			<dict>
+				<key>git_hash</key>
+				<string>14670086c18ba0c68dc0faa5d7e174bfe54192df</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/VirtualBox/VirtualBox.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>e1c8731cf0e62435f0f3d02b8180c8675c9301d463b107b53101bdc203035597</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

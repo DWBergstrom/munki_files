@@ -21,6 +21,8 @@
 		<string>AutoPkgr</string>
 		<string>Bartender</string>
 		<string>Brave</string>
+		<string>DFUBlaster</string>
+		<string>Docker</string>
 		<string>Firefox</string>
 		<string>GoogleChrome</string>
 		<string>iTerm2</string>
@@ -32,7 +34,9 @@
 		<string>munkitools_launchd</string>
 		<string>munkitools_python</string>
 		<string>Recipe Robot</string>
+		<string>Visual Studio Code</string>
 		<string>VLC</string>
+		<string>VirtualBox</string>
 	</array>
 </dict>
 </plist>
