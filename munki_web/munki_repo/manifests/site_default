@@ -9,7 +9,12 @@
 	<key>included_manifests</key>
 	<array/>
 	<key>managed_installs</key>
-	<array/>
+	<array>
+		<string>1Password</string>
+		<string>Arc</string>
+		<string>Visual Studio Code</string>
+		<string>Warp</string>
+	</array>
 	<key>managed_uninstalls</key>
 	<array/>
 	<key>managed_updates</key>
@@ -34,9 +39,10 @@
 		<string>munkitools_launchd</string>
 		<string>munkitools_python</string>
 		<string>Recipe Robot</string>
+		<string>VirtualBox</string>
 		<string>Visual Studio Code</string>
 		<string>VLC</string>
-		<string>VirtualBox</string>
+		<string>Warp</string>
 	</array>
 </dict>
 </plist>

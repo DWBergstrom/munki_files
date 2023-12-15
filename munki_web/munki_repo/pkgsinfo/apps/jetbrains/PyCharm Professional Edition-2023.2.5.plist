@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2023-12-02T04:27:45Z</date>
+		<key>munki_version</key>
+		<string>6.3.4.4598</string>
+		<key>os_version</key>
+		<string>12.6.5</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>category</key>
+	<string>Developer Tools</string>
+	<key>description</key>
+	<string>Python IDE for professional developers
+
+https://www.jetbrains.com/pycharm</string>
+	<key>developer</key>
+	<string>JetBrains</string>
+	<key>display_name</key>
+	<string>PyCharm Professional Edition</string>
+	<key>installer_item_hash</key>
+	<string>a8fbd5fda39cf94ccf86918fe170bcd74595e0d59491b79c329033d0e517ae2d</string>
+	<key>installer_item_location</key>
+	<string>apps/jetbrains/pycharm-professional-2023.2.5.dmg</string>
+	<key>installer_item_size</key>
+	<integer>711176</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.jetbrains.pycharm</string>
+			<key>CFBundleName</key>
+			<string>PyCharm</string>
+			<key>CFBundleShortVersionString</key>
+			<string>2023.2.5</string>
+			<key>CFBundleVersion</key>
+			<string>PY-232.10227.11</string>
+			<key>minosversion</key>
+			<string>10.13</string>
+			<key>path</key>
+			<string>/Applications/PyCharm.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>PyCharm.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.13</string>
+	<key>name</key>
+	<string>PyCharm Professional Edition</string>
+	<key>supported_architectures</key>
+	<array>
+		<string>x86_64</string>
+	</array>
+	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>2023.2.5</string>
+</dict>
+</plist>
