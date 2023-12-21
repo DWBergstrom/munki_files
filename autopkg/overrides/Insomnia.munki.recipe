@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Insomnia</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>Insomnia</string>
+		<key>PRERELEASE</key>
+		<string></string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Explore REST and GraphQL APIs.</string>
+			<key>display_name</key>
+			<string>Insomnia </string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.dataJAR-recipes.munki.Insomnia</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.dataJAR-recipes.download.Insomnia</key>
+			<dict>
+				<key>git_hash</key>
+				<string>dd99bb5a5507c89d3d565d6e746a5ff7ab414519</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Insomnia/Insomnia.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>ef2bb49c127d7124935919eede29a1dfa1bc8ef4efe97228107d3e881ebd47f0</string>
+			</dict>
+			<key>com.github.dataJAR-recipes.munki.Insomnia</key>
+			<dict>
+				<key>git_hash</key>
+				<string>dd99bb5a5507c89d3d565d6e746a5ff7ab414519</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Insomnia/Insomnia.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>a50f93adcf0a595d246fc9a48144aeb6cfddb7d90d5828386a74de428d6fea97</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

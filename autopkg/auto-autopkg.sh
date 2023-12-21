@@ -1,5 +1,7 @@
 #!/bin/bash
 
+CURRENT_DATE=$(date +%Y-%m-%d)
+
 # Define the directory containing the overrides
 OVERRIDES_DIR="/Users/dwbergstrom/git/munki_files/autopkg/overrides"
 
@@ -19,3 +21,9 @@ done < <(find "$OVERRIDES_DIR" -type f -newermt "$current_date")
 
 # Run makecatalogs
 makecatalogs
+
+tailscale funnel /Users/dwbergstrom/git/munki_files/munki_web/munki_repo&
+
+git add --all
+git commit -m "$CURRENT_DATE Updating munki"
+git push origin main
