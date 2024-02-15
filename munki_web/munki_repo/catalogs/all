@@ -1651,6 +1651,68 @@ fi</string>
 		<array>
 			<string>testing</string>
 		</array>
+		<key>description</key>
+		<string></string>
+		<key>display_name</key>
+		<string>Visual Studio Code</string>
+		<key>installer_item_hash</key>
+		<string>fcfbe5303e614081a319c8a8568d1fd0b45ffce11d4521d16bb68020457c17ce</string>
+		<key>installer_item_location</key>
+		<string>apps/Visual Studio Code-1.86.2.dmg</string>
+		<key>installer_item_size</key>
+		<integer>217640</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.microsoft.VSCode</string>
+				<key>CFBundleName</key>
+				<string>Code</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.86.2</string>
+				<key>CFBundleVersion</key>
+				<string>1.86.2</string>
+				<key>minosversion</key>
+				<string>10.15</string>
+				<key>path</key>
+				<string>/Applications/Visual Studio Code.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Visual Studio Code.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15</string>
+		<key>name</key>
+		<string>Visual Studio Code</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.86.2</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
 		<key>category</key>
 		<string>Software</string>
 		<key>description</key>
@@ -2688,6 +2750,72 @@ fi
 		<array>
 			<string>testing</string>
 		</array>
+		<key>category</key>
+		<string>Utilities</string>
+		<key>description</key>
+		<string>iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with OS 10.5 (Leopard) or newer. Its focus is on performance, internationalization, and supporting innovative features that make your life better.</string>
+		<key>developer</key>
+		<string>George Nachman</string>
+		<key>display_name</key>
+		<string>iTerm2</string>
+		<key>installer_item_hash</key>
+		<string>8f1c05bc91d593c4433f15433d4303259996f32d9b251052d931c8f7c3e020fd</string>
+		<key>installer_item_location</key>
+		<string>apps/iTerm2-3.4.23.dmg</string>
+		<key>installer_item_size</key>
+		<integer>23885</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.googlecode.iterm2</string>
+				<key>CFBundleName</key>
+				<string>iTerm2</string>
+				<key>CFBundleShortVersionString</key>
+				<string>3.4.23</string>
+				<key>CFBundleVersion</key>
+				<string>3.4.23</string>
+				<key>minosversion</key>
+				<string>10.14</string>
+				<key>path</key>
+				<string>/Applications/iTerm.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>iTerm.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.14</string>
+		<key>name</key>
+		<string>iTerm2</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>3.4.23</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
 		<key>description</key>
 		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
 		<key>display_name</key>
@@ -2742,6 +2870,95 @@ fi
 		<true/>
 		<key>version</key>
 		<string>120.0.6099.129</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>1Password 7</string>
+			<string>1Password Browser Helper</string>
+			<string>1Password</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Utilities</string>
+		<key>description</key>
+		<string>1Password is a password manager that goes beyond simple password storage by integrating directly with your web browser to automatically log you into websites, enter credit card information, fill registration forms, and easily generate strong passwords.</string>
+		<key>developer</key>
+		<string>AgileBits Inc.</string>
+		<key>display_name</key>
+		<string>1Password</string>
+		<key>installed_size</key>
+		<integer>709829</integer>
+		<key>installer_item_hash</key>
+		<string>62838b123ab92c6ee23c6492e742aac2a8f9da3cd2626f21f24d3cd4c02fd941</string>
+		<key>installer_item_location</key>
+		<string>apps/1Password-8.10.24.pkg</string>
+		<key>installer_item_size</key>
+		<integer>267563</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.1password.1password</string>
+				<key>CFBundleName</key>
+				<string>1Password</string>
+				<key>CFBundleShortVersionString</key>
+				<string>8.10.24</string>
+				<key>CFBundleVersion</key>
+				<string>8.10.24.196371</string>
+				<key>minosversion</key>
+				<string>10.15</string>
+				<key>path</key>
+				<string>/Applications/1Password.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15</string>
+		<key>name</key>
+		<string>1Password</string>
+		<key>postinstall_script</key>
+		<string>#!/bin/zsh
+
+# Remove version 7 remnants if they exist
+
+if [[ -e "/Applications/1Password 7.app.zip" ]]; then
+    /bin/rm -f "/Applications/1Password 7.app.zip"
+fi
+
+if [[ -e "/Applications/1Password 7.app" ]]; then
+    /bin/rm -rf "/Applications/1Password 7.app"
+fi
+</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>709829</integer>
+				<key>packageid</key>
+				<string>com.1password.1password</string>
+				<key>version</key>
+				<string>8.10.24</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>8.10.24</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -3271,6 +3488,130 @@ fi
 			<string>testing</string>
 		</array>
 		<key>description</key>
+		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
+		<key>display_name</key>
+		<string>Google Chrome</string>
+		<key>installer_item_hash</key>
+		<string>57b1a1e370dc8f10870e64453e7b2b8ad97b589dbff9b0535c0e207c2d901ffc</string>
+		<key>installer_item_location</key>
+		<string>apps/GoogleChrome-121.0.6167.184.dmg</string>
+		<key>installer_item_size</key>
+		<integer>205297</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.google.Chrome</string>
+				<key>CFBundleName</key>
+				<string>Chrome</string>
+				<key>CFBundleShortVersionString</key>
+				<string>121.0.6167.184</string>
+				<key>CFBundleVersion</key>
+				<string>6167.184</string>
+				<key>minosversion</key>
+				<string>10.15</string>
+				<key>path</key>
+				<string>/Applications/Google Chrome.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Google Chrome.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15</string>
+		<key>name</key>
+		<string>GoogleChrome</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>121.0.6167.184</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Mozilla Firefox is a free and open source web browser.</string>
+		<key>display_name</key>
+		<string>Mozilla Firefox</string>
+		<key>installer_item_hash</key>
+		<string>42721425ca279d48b729eab8e443ce2ad83465ada46dee367d84a103791deb2a</string>
+		<key>installer_item_location</key>
+		<string>apps/firefox/Firefox-122.0.1.dmg</string>
+		<key>installer_item_size</key>
+		<integer>133668</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>org.mozilla.firefox</string>
+				<key>CFBundleName</key>
+				<string>Firefox</string>
+				<key>CFBundleShortVersionString</key>
+				<string>122.0.1</string>
+				<key>CFBundleVersion</key>
+				<string>12224.2.5</string>
+				<key>minosversion</key>
+				<string>10.15.0</string>
+				<key>path</key>
+				<string>/Applications/Firefox.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Firefox.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15.0</string>
+		<key>name</key>
+		<string>Firefox</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>122.0.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
 		<string>Mozilla Firefox is a free and open source web browser.</string>
 		<key>display_name</key>
 		<string>Mozilla Firefox</string>
@@ -3764,6 +4105,70 @@ fi
 		<true/>
 		<key>version</key>
 		<string>2.3.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Automates deployment of containerized applications.</string>
+		<key>developer</key>
+		<string>Docker</string>
+		<key>display_name</key>
+		<string>Docker</string>
+		<key>installer_item_hash</key>
+		<string>7e2bb9403904078e95332dbc5d94107a740a66d5ceba46e749116fa9a4707a2b</string>
+		<key>installer_item_location</key>
+		<string>apps/Docker/Docker-amd64-4.27.1.dmg</string>
+		<key>installer_item_size</key>
+		<integer>566414</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.docker.docker</string>
+				<key>CFBundleName</key>
+				<string>Docker</string>
+				<key>CFBundleShortVersionString</key>
+				<string>4.27.1</string>
+				<key>CFBundleVersion</key>
+				<string>136059</string>
+				<key>minosversion</key>
+				<string>11.0</string>
+				<key>path</key>
+				<string>/Applications/Docker.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Docker.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>11.0</string>
+		<key>name</key>
+		<string>Docker</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>4.27.1</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -4516,6 +4921,51 @@ fi
 		<true/>
 		<key>version</key>
 		<string>119.0.2151.97</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Productivity</string>
+		<key>description</key>
+		<string>Microsoft Edge web browser</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Microsoft Edge</string>
+		<key>installed_size</key>
+		<integer>845773</integer>
+		<key>installer_item_hash</key>
+		<string>5eb19b6d59bf27be888bc633c0b1113845c5ab8f880d2119093fe258573ce421</string>
+		<key>installer_item_location</key>
+		<string>apps/Microsoft/Microsoft_Edge-121.0.2277.112.pkg</string>
+		<key>installer_item_size</key>
+		<integer>374832</integer>
+		<key>minimum_os_version</key>
+		<string>10.10.0</string>
+		<key>name</key>
+		<string>MicrosoftEdge</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>845773</integer>
+				<key>packageid</key>
+				<string>com.microsoft.edgemac</string>
+				<key>version</key>
+				<string>121.0.2277.112</string>
+			</dict>
+		</array>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>121.0.2277.112</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -5346,6 +5796,72 @@ fi
 			<string>testing</string>
 		</array>
 		<key>category</key>
+		<string>Browsers</string>
+		<key>description</key>
+		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
+		<key>developer</key>
+		<string>Brave Software Inc.</string>
+		<key>display_name</key>
+		<string>Brave Browser</string>
+		<key>installer_item_hash</key>
+		<string>83fee91c2a899c0a65f0d3553581bce5e1ee35570a11ef6da9d3d95ea11c479b</string>
+		<key>installer_item_location</key>
+		<string>apps/Brave/Brave-121.1.62.165.dmg</string>
+		<key>installer_item_size</key>
+		<integer>147307</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.brave.Browser</string>
+				<key>CFBundleName</key>
+				<string>Brave</string>
+				<key>CFBundleShortVersionString</key>
+				<string>121.1.62.165</string>
+				<key>CFBundleVersion</key>
+				<string>162.165</string>
+				<key>minosversion</key>
+				<string>10.15</string>
+				<key>path</key>
+				<string>/Applications/Brave Browser.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Brave Browser.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15</string>
+		<key>name</key>
+		<string>Brave</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>121.1.62.165</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
 		<string>Developer Tools</string>
 		<key>description</key>
 		<string>Python IDE for professional developers
@@ -5559,6 +6075,80 @@ https://www.jetbrains.com/pycharm</string>
 		<true/>
 		<key>version</key>
 		<string>2023.3.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Developer Tools</string>
+		<key>description</key>
+		<string>Python IDE for professional developers
+
+https://www.jetbrains.com/pycharm</string>
+		<key>developer</key>
+		<string>JetBrains</string>
+		<key>display_name</key>
+		<string>PyCharm Professional Edition</string>
+		<key>installer_item_hash</key>
+		<string>c86b6e279ac6a82ce79e187c96b671c1b3bbb6cc2c7c5686454705316b398e9c</string>
+		<key>installer_item_location</key>
+		<string>apps/jetbrains/pycharm-professional-2023.3.3.dmg</string>
+		<key>installer_item_size</key>
+		<integer>756931</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.jetbrains.pycharm</string>
+				<key>CFBundleName</key>
+				<string>PyCharm</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2023.3.3</string>
+				<key>CFBundleVersion</key>
+				<string>PY-233.13763.11</string>
+				<key>minosversion</key>
+				<string>10.13</string>
+				<key>path</key>
+				<string>/Applications/PyCharm.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>PyCharm.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>PyCharm Professional Edition</string>
+		<key>supported_architectures</key>
+		<array>
+			<string>x86_64</string>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2023.3.3</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -6027,6 +6617,70 @@ https://www.jetbrains.com/pycharm</string>
 		<true/>
 		<key>version</key>
 		<string>1.19.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>A new productivity-focused web browser.</string>
+		<key>developer</key>
+		<string>The Browser Company of New York</string>
+		<key>display_name</key>
+		<string>Arc</string>
+		<key>installer_item_hash</key>
+		<string>67a694a98dd0f1bcdca9b0c1941b504fa69f679b7e773eb73017fa059adfff46</string>
+		<key>installer_item_location</key>
+		<string>apps/Arc/Arc-1.29.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>381654</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>company.thebrowser.Browser</string>
+				<key>CFBundleName</key>
+				<string>Arc</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.29.0</string>
+				<key>CFBundleVersion</key>
+				<string>46113</string>
+				<key>minosversion</key>
+				<string>12.1.0</string>
+				<key>path</key>
+				<string>/Applications/Arc.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Arc.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.1.0</string>
+		<key>name</key>
+		<string>Arc</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.29.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
