@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.UTM</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>UTM</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Virtual machines for iOS and macOS</string>
+			<key>developer</key>
+			<string>Turing Software, LLC</string>
+			<key>display_name</key>
+			<string>UTM</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.flammable.munki.UTM</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.ahousseini-recipes.download.UTM</key>
+			<dict>
+				<key>git_hash</key>
+				<string>886011b1f8e59d71775de1a4653d2d6ea41d51eb</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.ahousseini-recipes/UTM/UTM.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>2dc5bd668da72c1bd8777023c1541ce57cd850dac73e38100455a7e3af167578</string>
+			</dict>
+			<key>com.github.flammable.munki.UTM</key>
+			<dict>
+				<key>git_hash</key>
+				<string>f32619e26f5f768c3f3bffc44fdb198538eae0d6</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.flammable-recipes/UTM/UTM.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>310ce3bb8a9a31224949fe45954b51873ecb0a276bba4fe39c138048e9d74e4c</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>
