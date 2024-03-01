@@ -1919,6 +1919,68 @@ fi
 	<dict>
 		<key>autoremove</key>
 		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string></string>
+		<key>display_name</key>
+		<string>Visual Studio Code</string>
+		<key>installer_item_hash</key>
+		<string>94bf0cd8b58795e601e6ffed7a0ff3805093156f195da6007030c285bc9fd64b</string>
+		<key>installer_item_location</key>
+		<string>apps/Visual Studio Code-1.87.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>216937</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.microsoft.VSCode</string>
+				<key>CFBundleName</key>
+				<string>Code</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.87.0</string>
+				<key>CFBundleVersion</key>
+				<string>1.87.0</string>
+				<key>minosversion</key>
+				<string>10.15</string>
+				<key>path</key>
+				<string>/Applications/Visual Studio Code.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Visual Studio Code.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15</string>
+		<key>name</key>
+		<string>Visual Studio Code</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.87.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
 		<key>blocking_applications</key>
 		<array>
 			<string>1Password 7</string>
@@ -2837,6 +2899,68 @@ fi
 		<true/>
 		<key>version</key>
 		<string>122.0.6261.69</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
+		<key>display_name</key>
+		<string>Google Chrome</string>
+		<key>installer_item_hash</key>
+		<string>2cf50dac96d48be954479026ce3a90140ad59beb44369b30ad8b256c46b2b8f6</string>
+		<key>installer_item_location</key>
+		<string>apps/GoogleChrome-122.0.6261.94.dmg</string>
+		<key>installer_item_size</key>
+		<integer>201715</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.google.Chrome</string>
+				<key>CFBundleName</key>
+				<string>Chrome</string>
+				<key>CFBundleShortVersionString</key>
+				<string>122.0.6261.94</string>
+				<key>CFBundleVersion</key>
+				<string>6261.94</string>
+				<key>minosversion</key>
+				<string>10.15</string>
+				<key>path</key>
+				<string>/Applications/Google Chrome.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Google Chrome.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15</string>
+		<key>name</key>
+		<string>GoogleChrome</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>122.0.6261.94</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -5098,6 +5222,51 @@ fi
 			<string>testing</string>
 		</array>
 		<key>category</key>
+		<string>Productivity</string>
+		<key>description</key>
+		<string>Microsoft Edge web browser</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Microsoft Edge</string>
+		<key>installed_size</key>
+		<integer>835272</integer>
+		<key>installer_item_hash</key>
+		<string>654f1092c13a6c85101ebf42a4d8cf0a2ffb1894ccbcaf0078a252a709b8ae71</string>
+		<key>installer_item_location</key>
+		<string>apps/Microsoft/Microsoft_Edge-122.0.2365.63.pkg</string>
+		<key>installer_item_size</key>
+		<integer>368992</integer>
+		<key>minimum_os_version</key>
+		<string>10.10.0</string>
+		<key>name</key>
+		<string>MicrosoftEdge</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>835272</integer>
+				<key>packageid</key>
+				<string>com.microsoft.edgemac</string>
+				<key>version</key>
+				<string>122.0.2365.63</string>
+			</dict>
+		</array>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>122.0.2365.63</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
 		<string>Browsers</string>
 		<key>description</key>
 		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
@@ -5768,6 +5937,72 @@ fi
 		<key>display_name</key>
 		<string>Brave Browser</string>
 		<key>installer_item_hash</key>
+		<string>e7db1da78ca69f35c2c33d5c6bf44cf9b7c8c13bb3f319b4b2196eba1f729856</string>
+		<key>installer_item_location</key>
+		<string>apps/Brave/Brave-122.1.63.165.dmg</string>
+		<key>installer_item_size</key>
+		<integer>147459</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.brave.Browser</string>
+				<key>CFBundleName</key>
+				<string>Brave</string>
+				<key>CFBundleShortVersionString</key>
+				<string>122.1.63.165</string>
+				<key>CFBundleVersion</key>
+				<string>163.165</string>
+				<key>minosversion</key>
+				<string>10.15</string>
+				<key>path</key>
+				<string>/Applications/Brave Browser.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Brave Browser.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15</string>
+		<key>name</key>
+		<string>Brave</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>122.1.63.165</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Browsers</string>
+		<key>description</key>
+		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
+		<key>developer</key>
+		<string>Brave Software Inc.</string>
+		<key>display_name</key>
+		<string>Brave Browser</string>
+		<key>installer_item_hash</key>
 		<string>83fee91c2a899c0a65f0d3553581bce5e1ee35570a11ef6da9d3d95ea11c479b</string>
 		<key>installer_item_location</key>
 		<string>apps/Brave/Brave-121.1.62.165.dmg</string>
@@ -5891,6 +6126,80 @@ https://www.jetbrains.com/pycharm</string>
 		<true/>
 		<key>version</key>
 		<string>2023.3.2</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Developer Tools</string>
+		<key>description</key>
+		<string>Python IDE for professional developers
+
+https://www.jetbrains.com/pycharm</string>
+		<key>developer</key>
+		<string>JetBrains</string>
+		<key>display_name</key>
+		<string>PyCharm Professional Edition</string>
+		<key>installer_item_hash</key>
+		<string>59512bbe61a9332f02e78d34b85ab2563b5dac2fa9882519ed27cfcbccef5dc2</string>
+		<key>installer_item_location</key>
+		<string>apps/jetbrains/pycharm-professional-2023.3.4.dmg</string>
+		<key>installer_item_size</key>
+		<integer>757223</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.jetbrains.pycharm</string>
+				<key>CFBundleName</key>
+				<string>PyCharm</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2023.3.4</string>
+				<key>CFBundleVersion</key>
+				<string>PY-233.14475.56</string>
+				<key>minosversion</key>
+				<string>10.13</string>
+				<key>path</key>
+				<string>/Applications/PyCharm.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>PyCharm.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>PyCharm Professional Edition</string>
+		<key>supported_architectures</key>
+		<array>
+			<string>x86_64</string>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2023.3.4</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -7157,6 +7466,70 @@ https://www.jetbrains.com/pycharm</string>
 		<true/>
 		<key>version</key>
 		<string>1.21.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>A new productivity-focused web browser.</string>
+		<key>developer</key>
+		<string>The Browser Company of New York</string>
+		<key>display_name</key>
+		<string>Arc</string>
+		<key>installer_item_hash</key>
+		<string>c9ea665eeff0ecf278c1908c6e35e0e3eb2d56b47bc89ae5b666683bb747f677</string>
+		<key>installer_item_location</key>
+		<string>apps/Arc/Arc-1.32.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>376784</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>company.thebrowser.Browser</string>
+				<key>CFBundleName</key>
+				<string>Arc</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.32.0</string>
+				<key>CFBundleVersion</key>
+				<string>46908</string>
+				<key>minosversion</key>
+				<string>12.1.0</string>
+				<key>path</key>
+				<string>/Applications/Arc.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Arc.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.1.0</string>
+		<key>name</key>
+		<string>Arc</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.32.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
