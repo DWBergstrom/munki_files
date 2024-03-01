@@ -22,8 +22,10 @@ done < <(find "$OVERRIDES_DIR" -type f -newermt "$current_date")
 # Run makecatalogs
 makecatalogs
 
+# Serve munki repo via tailscale
 tailscale funnel /Users/dwbergstrom/git/munki_files/munki_web/munki_repo&
 
+# Save changes to git
 git add --all
 git commit -m "$CURRENT_DATE Updating munki"
 git push origin main
