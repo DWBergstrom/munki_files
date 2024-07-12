@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CURRENT_DATE=$(date +%Y-%m-%d)
+CURRENT_DATE=$(date "+%Y-%m-%d %H:%M:%S")
 
 # Define the directory containing the overrides
 OVERRIDES_DIR="/Users/dwbergstrom/git/munki_files/autopkg/overrides"
