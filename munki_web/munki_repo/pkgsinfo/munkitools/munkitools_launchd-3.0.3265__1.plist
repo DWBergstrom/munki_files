@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>RestartAction</key>
+	<string>RequireRestart</string>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2024-07-18T20:59:37Z</date>
+		<key>munki_version</key>
+		<string>6.5.1.4661</string>
+		<key>os_version</key>
+		<string>14.5</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>category</key>
+	<string>munkitools</string>
+	<key>description</key>
+	<string>launchd configuration files for use by Managed Software Center.</string>
+	<key>developer</key>
+	<string>The Munki Project</string>
+	<key>display_name</key>
+	<string>Managed Software Center launchd files</string>
+	<key>icon_name</key>
+	<string></string>
+	<key>installed_size</key>
+	<integer>10</integer>
+	<key>installer_item_hash</key>
+	<string>31d1817a4941ea95fb7e09d349f3bb71a3cfb1b08c60d55485f3d66f2259d02f</string>
+	<key>installer_item_location</key>
+	<string>munkitools/munkitools_launchd-3.0.3265.pkg</string>
+	<key>installer_item_size</key>
+	<integer>4</integer>
+	<key>minimum_os_version</key>
+	<string>10.13</string>
+	<key>name</key>
+	<string>munkitools_launchd</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>10</integer>
+			<key>packageid</key>
+			<string>com.googlecode.munki.launchd</string>
+			<key>version</key>
+			<string>3.0.3265</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>3.0.3265</string>
+</dict>
+</plist>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2024-07-18T20:55:53Z</date>
+		<key>munki_version</key>
+		<string>6.5.1.4661</string>
+		<key>os_version</key>
+		<string>14.5</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>category</key>
+	<string>Utilities</string>
+	<key>description</key>
+	<string>DFU Blaster is the easiest way to put a Mac into DFU mode.</string>
+	<key>developer</key>
+	<string>Twocanoes Software</string>
+	<key>display_name</key>
+	<string>DFU Blaster</string>
+	<key>icon_name</key>
+	<string>DFUBlaster.png</string>
+	<key>installed_size</key>
+	<integer>779</integer>
+	<key>installer_item_hash</key>
+	<string>83b4553c5326ff29347d972930c40b373b6d6b032ca1661b0a97299f4c4a7a75</string>
+	<key>installer_item_location</key>
+	<string>utilities/DFUBlaster/DFUBlaster-2.2.2112.dmg</string>
+	<key>installer_item_size</key>
+	<integer>310</integer>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.twocanoes.DFU-Blaster</string>
+			<key>CFBundleName</key>
+			<string>DFU Blaster</string>
+			<key>CFBundleShortVersionString</key>
+			<string>2.2</string>
+			<key>CFBundleVersion</key>
+			<string>2112</string>
+			<key>minosversion</key>
+			<string>12.0</string>
+			<key>path</key>
+			<string>/Applications/DFU Blaster.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>12.0</string>
+	<key>name</key>
+	<string>DFUBlaster</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>779</integer>
+			<key>packageid</key>
+			<string>com.twocanoes.pkg.DFU-Blaster</string>
+			<key>version</key>
+			<string>2.2.2112</string>
+		</dict>
+	</array>
+	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>uninstall_script</string>
+	<key>uninstall_script</key>
+	<string>#!/bin/sh
+# Uninstall script adapted from DFU Blaster Uninstall package
+if [ -d "/Applications/DFU Blaster.app" ] ; then
+	echo "Removing DFU Blaster.app"
+	rm -rf "/Applications/DFU Blaster.app"
+fi
+
+if [ -e "/Library/LaunchDaemons/com.twocanoes.dfublasterhelper.plist" ] ; then
+	echo "Removing DFU Blaster Helper LaunchDaemon"
+	cd "/Library/LaunchDaemons"
+	launchctl stop com.twocanoes.dfublasterhelper
+	launchctl unload com.twocanoes.dfublasterhelper.plist
+	rm com.twocanoes.dfublasterhelper.plist
+	echo "Done removing DFU Blaster Helper LaunchDaemon"
+fi
+
+if [ -e "/Library/PrivilegedHelperTools/com.twocanoes.dfublasterhelper" ] ; then
+	echo "Removing DFU Blaster Helper Tool"
+	rm "/Library/PrivilegedHelperTools/com.twocanoes.dfublasterhelper"
+	echo "Done removing DFU Blaster Helper Tool"
+fi</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>2.2.2112</string>
+</dict>
+</plist>
