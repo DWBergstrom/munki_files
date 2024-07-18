@@ -17,7 +17,7 @@ MUNKI_REPO_PATH="/Users/dwbergstrom/git/munki_files/munki_web/munki_repo"
 
 # Run autopkg for each override in the directory
 for override in "$OVERRIDES_DIR"/*; do
-  autopkg run "$AUTOPKG_VERBOSITY" "$override"
+  autopkg run "$override"
 done
 
 # Get the current date
