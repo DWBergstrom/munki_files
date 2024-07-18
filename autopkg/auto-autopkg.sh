@@ -1,13 +1,23 @@
 #!/bin/bash
 
+# Verbose options
+if [ $# -gt 0 ]; then
+  AUTOPKG_VERBOSITY=$1
+  else
+  AUTOPKG_VERBOSITY=""
+fi
+
 CURRENT_DATE=$(date "+%Y-%m-%d %H:%M:%S")
 
 # Define the directory containing the overrides
 OVERRIDES_DIR="/Users/dwbergstrom/git/munki_files/autopkg/overrides"
 
+# Define Munki repo path
+MUNKI_REPO_PATH="/Users/dwbergstrom/git/munki_files/munki_web/munki_repo"
+
 # Run autopkg for each override in the directory
 for override in "$OVERRIDES_DIR"/*; do
-  autopkg run -v "$override"
+  autopkg run "$AUTOPKG_VERBOSITY" "$override"
 done
 
 # Get the current date
@@ -20,7 +30,7 @@ while IFS= read -r new_override; do
 done < <(find "$OVERRIDES_DIR" -type f -newermt "$current_date")
 
 # Run makecatalogs
-makecatalogs
+makecatalogs --skip-pkg-check "$MUNKI_REPO_PATH"
 
 # Serve munki repo via tailscale
 tailscale funnel /Users/dwbergstrom/git/munki_files/munki_web/munki_repo&
