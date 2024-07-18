@@ -41,11 +41,11 @@
 			<key>com.github.homebysix.download.DockerDesktop</key>
 			<dict>
 				<key>git_hash</key>
-				<string>1c07af1afad04e57eaa8984c39e1b545fb9cd978</string>
+				<string>62821b481086db4e4d6db38e0cb36e58b9b93612</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Docker/DockerDesktop.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>897443f0dd248bc863f855488f7bd846e17a66c31657f50992b469381b43fc11</string>
+				<string>3b48e283992c4c2c5a5ab737220b3abd116e327f3b2409ecea265250e86b7cf4</string>
 			</dict>
 			<key>com.github.homebysix.munki.DockerDesktop</key>
 			<dict>
