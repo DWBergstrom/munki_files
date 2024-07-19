@@ -2,12 +2,12 @@
 
 # Verbose options
 if [ $# -gt 0 ]; then
-  AUTOPKG_VERBOSITY=$1
+  AUTOPKG_CMD="/usr/local/bin/autopkg run ${1}"
   else
-  AUTOPKG_VERBOSITY=""
+  AUTOPKG_CMD="/usr/local/bin/autopkg run"
 fi
 
-CURRENT_DATE=$(date "+%Y-%m-%d %H:%M:%S")
+COMMIT_DATE=$(date "+%Y-%m-%d %H:%M:%S")
 
 # Define the directory containing the overrides
 OVERRIDES_DIR="/Users/dwbergstrom/git/munki_files/autopkg/overrides"
@@ -17,7 +17,7 @@ MUNKI_REPO_PATH="/Users/dwbergstrom/git/munki_files/munki_web/munki_repo"
 
 # Run autopkg for each override in the directory
 for override in "$OVERRIDES_DIR"/*; do
-  autopkg run "$override"
+  eval "${AUTOPKG_CMD} ${override}"
 done
 
 # Get the current date
@@ -37,5 +37,5 @@ tailscale funnel /Users/dwbergstrom/git/munki_files/munki_web/munki_repo&
 
 # Save changes to git
 git add --all
-git commit -m "$CURRENT_DATE Updating munki"
+git commit -m "$COMMIT_DATE Updating munki"
 git push origin main
