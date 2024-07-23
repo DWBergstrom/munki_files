@@ -13,7 +13,7 @@
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>apps/jetbrains</string>
 		<key>NAME</key>
-		<string>WebStorm</string>
+		<string>RustRover</string>
 		<key>PROD_CODE</key>
 		<string>RR</string>
 		<key>SUPPORTED_ARCH</key>
@@ -75,11 +75,11 @@
 			<key>com.github.dwbergstrom.munki.rustrover</key>
 			<dict>
 				<key>git_hash</key>
-				<string>695512dd14a9dbf67b00e3e59d76ad46c62445fe</string>
+				<string>6fb8249118a9a1ea3fb2e1ca895119f4cb3bc8c7</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dbergstrom-recipes/JetBrains/RustRover.munki.recipe</string>
 				<key>sha256_hash</key>
-				<string>d09ffec6793b2b21dd456d7faed6f18de9d87db3b6b8a3fb282412f7b164720b</string>
+				<string>c58ef851345882b10386cb1bcddd7be2d027124fd5b319fee0cea74c2686a86d</string>
 			</dict>
 		</dict>
 	</dict>

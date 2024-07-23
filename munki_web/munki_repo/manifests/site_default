@@ -20,12 +20,11 @@
 	<key>managed_updates</key>
 	<array>
 		<string>1Password</string>
-		<string>1Password</string>
-		<string>Arc</string>
 		<string>Arc</string>
 		<string>AutoPkgr</string>
 		<string>Bartender</string>
 		<string>Brave</string>
+		<string>DataSpell</string>
 		<string>DFUBlaster</string>
 		<string>Docker</string>
 		<string>Firefox</string>
@@ -39,15 +38,14 @@
 		<string>munkitools_core</string>
 		<string>munkitools_launchd</string>
 		<string>munkitools_python</string>
+		<string>munkitools6</string>
 		<string>Recipe Robot</string>
+		<string>RustRover</string>
+		<string>UTM</string>
 		<string>VirtualBox</string>
 		<string>Visual Studio Code</string>
 		<string>VLC</string>
 		<string>Warp</string>
-		<string>UTM</string>
-		<string>munkitools6</string>
-		<string>PyCharm Professional Edition</string>
-		<string>WebStorm</string>
 	</array>
 </dict>
 </plist>

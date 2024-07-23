@@ -10376,36 +10376,34 @@ fi
 		<key>category</key>
 		<string>Developer Tools</string>
 		<key>description</key>
-		<string>Python IDE for professional developers
-
-https://www.jetbrains.com/pycharm</string>
+		<string>JetBrains DataSpell: Essential tools for data analysts.</string>
 		<key>developer</key>
 		<string>JetBrains</string>
 		<key>display_name</key>
-		<string>PyCharm Professional Edition</string>
+		<string>DataSpell</string>
 		<key>installer_item_hash</key>
-		<string>9932498fa5287c86ccc838b0b4421990cf4c15156ccd387a5e6b6f9cf8c1346f</string>
+		<string>fa8f9c77b2fab31ea383a492c7a061e4b297e6581df4a5c116de9aec4a52c86d</string>
 		<key>installer_item_location</key>
-		<string>apps/jetbrains/pycharm-professional-2023.3.2.dmg</string>
+		<string>apps/jetbrains/dataspell-2024.1.3-aarch64-2024.1.3.dmg</string>
 		<key>installer_item_size</key>
-		<integer>754404</integer>
+		<integer>979423</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
 		<array>
 			<dict>
 				<key>CFBundleIdentifier</key>
-				<string>com.jetbrains.pycharm</string>
+				<string>com.jetbrains.dataspell</string>
 				<key>CFBundleName</key>
-				<string>PyCharm</string>
+				<string>DataSpell</string>
 				<key>CFBundleShortVersionString</key>
-				<string>2023.3.2</string>
+				<string>2024.1.3</string>
 				<key>CFBundleVersion</key>
-				<string>PY-233.13135.95</string>
+				<string>DS-241.18034.23</string>
 				<key>minosversion</key>
 				<string>10.13</string>
 				<key>path</key>
-				<string>/Applications/PyCharm.app</string>
+				<string>/Applications/DataSpell.app</string>
 				<key>type</key>
 				<string>application</string>
 				<key>version_comparison_key</key>
@@ -10418,16 +10416,16 @@ https://www.jetbrains.com/pycharm</string>
 				<key>destination_path</key>
 				<string>/Applications</string>
 				<key>source_item</key>
-				<string>PyCharm.app</string>
+				<string>DataSpell.app</string>
 			</dict>
 		</array>
 		<key>minimum_os_version</key>
 		<string>10.13</string>
 		<key>name</key>
-		<string>PyCharm Professional Edition</string>
+		<string>DataSpell</string>
 		<key>supported_architectures</key>
 		<array>
-			<string>x86_64</string>
+			<string>arm64</string>
 		</array>
 		<key>unattended_install</key>
 		<true/>
@@ -10438,7 +10436,7 @@ https://www.jetbrains.com/pycharm</string>
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>2023.3.2</string>
+		<string>2024.1.3</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -10450,36 +10448,34 @@ https://www.jetbrains.com/pycharm</string>
 		<key>category</key>
 		<string>Developer Tools</string>
 		<key>description</key>
-		<string>Python IDE for professional developers
-
-https://www.jetbrains.com/pycharm</string>
+		<string>JetBrains RustRover: The Rust IDE for Productivity.</string>
 		<key>developer</key>
 		<string>JetBrains</string>
 		<key>display_name</key>
-		<string>PyCharm Professional Edition</string>
+		<string>RustRover</string>
 		<key>installer_item_hash</key>
-		<string>05a684d1fa1d0a9dc292110f07533c6bb8db558f716306b255cfef543c0be873</string>
+		<string>944e3d3f86abc0d3161d4383bdb11713fc5b1e7420f7e13dd6dea96dba25d713</string>
 		<key>installer_item_location</key>
-		<string>apps/jetbrains/pycharm-professional-2024.1.2.dmg</string>
+		<string>apps/jetbrains/RustRover-2024.1.5-aarch64-2024.1.5__2.dmg</string>
 		<key>installer_item_size</key>
-		<integer>945286</integer>
+		<integer>698280</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
 		<array>
 			<dict>
 				<key>CFBundleIdentifier</key>
-				<string>com.jetbrains.pycharm</string>
+				<string>com.jetbrains.rustrover</string>
 				<key>CFBundleName</key>
-				<string>PyCharm</string>
+				<string>RustRover</string>
 				<key>CFBundleShortVersionString</key>
-				<string>2024.1.2</string>
+				<string>2024.1.5</string>
 				<key>CFBundleVersion</key>
-				<string>PY-241.17011.127</string>
+				<string>RR-241.17890.39</string>
 				<key>minosversion</key>
 				<string>10.13</string>
 				<key>path</key>
-				<string>/Applications/PyCharm.app</string>
+				<string>/Applications/RustRover.app</string>
 				<key>type</key>
 				<string>application</string>
 				<key>version_comparison_key</key>
@@ -10492,16 +10488,16 @@ https://www.jetbrains.com/pycharm</string>
 				<key>destination_path</key>
 				<string>/Applications</string>
 				<key>source_item</key>
-				<string>PyCharm.app</string>
+				<string>RustRover.app</string>
 			</dict>
 		</array>
 		<key>minimum_os_version</key>
 		<string>10.13</string>
 		<key>name</key>
-		<string>PyCharm Professional Edition</string>
+		<string>RustRover</string>
 		<key>supported_architectures</key>
 		<array>
-			<string>x86_64</string>
+			<string>arm64</string>
 		</array>
 		<key>unattended_install</key>
 		<true/>
@@ -10512,673 +10508,7 @@ https://www.jetbrains.com/pycharm</string>
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>2024.1.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Developer Tools</string>
-		<key>description</key>
-		<string>Python IDE for professional developers
-
-https://www.jetbrains.com/pycharm</string>
-		<key>developer</key>
-		<string>JetBrains</string>
-		<key>display_name</key>
-		<string>PyCharm Professional Edition</string>
-		<key>installer_item_hash</key>
-		<string>99f22cba7855dbe8acaa0ec222dfaa75cea2ebe5975f1adca6c7b52c7fa763a5</string>
-		<key>installer_item_location</key>
-		<string>apps/jetbrains/pycharm-professional-2024.1.4.dmg</string>
-		<key>installer_item_size</key>
-		<integer>947600</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.jetbrains.pycharm</string>
-				<key>CFBundleName</key>
-				<string>PyCharm</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2024.1.4</string>
-				<key>CFBundleVersion</key>
-				<string>PY-241.18034.82</string>
-				<key>minosversion</key>
-				<string>10.13</string>
-				<key>path</key>
-				<string>/Applications/PyCharm.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>PyCharm.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.13</string>
-		<key>name</key>
-		<string>PyCharm Professional Edition</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>x86_64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2024.1.4</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Developer Tools</string>
-		<key>description</key>
-		<string>Python IDE for professional developers
-
-https://www.jetbrains.com/pycharm</string>
-		<key>developer</key>
-		<string>JetBrains</string>
-		<key>display_name</key>
-		<string>PyCharm Professional Edition</string>
-		<key>installer_item_hash</key>
-		<string>59512bbe61a9332f02e78d34b85ab2563b5dac2fa9882519ed27cfcbccef5dc2</string>
-		<key>installer_item_location</key>
-		<string>apps/jetbrains/pycharm-professional-2023.3.4.dmg</string>
-		<key>installer_item_size</key>
-		<integer>757223</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.jetbrains.pycharm</string>
-				<key>CFBundleName</key>
-				<string>PyCharm</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2023.3.4</string>
-				<key>CFBundleVersion</key>
-				<string>PY-233.14475.56</string>
-				<key>minosversion</key>
-				<string>10.13</string>
-				<key>path</key>
-				<string>/Applications/PyCharm.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>PyCharm.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.13</string>
-		<key>name</key>
-		<string>PyCharm Professional Edition</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>x86_64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2023.3.4</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Developer Tools</string>
-		<key>description</key>
-		<string>Python IDE for professional developers
-
-https://www.jetbrains.com/pycharm</string>
-		<key>developer</key>
-		<string>JetBrains</string>
-		<key>display_name</key>
-		<string>PyCharm Professional Edition</string>
-		<key>installer_item_hash</key>
-		<string>99f22cba7855dbe8acaa0ec222dfaa75cea2ebe5975f1adca6c7b52c7fa763a5</string>
-		<key>installer_item_location</key>
-		<string>apps/jetbrains/pycharm-professional-2024.1.4.dmg</string>
-		<key>installer_item_size</key>
-		<integer>947600</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.jetbrains.pycharm</string>
-				<key>CFBundleName</key>
-				<string>PyCharm</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2024.1.4</string>
-				<key>CFBundleVersion</key>
-				<string>PY-241.18034.82</string>
-				<key>minosversion</key>
-				<string>10.13</string>
-				<key>path</key>
-				<string>/Applications/PyCharm.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>PyCharm.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.13</string>
-		<key>name</key>
-		<string>PyCharm Professional Edition</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>x86_64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2024.1.4</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Developer Tools</string>
-		<key>description</key>
-		<string>Python IDE for professional developers
-
-https://www.jetbrains.com/pycharm</string>
-		<key>developer</key>
-		<string>JetBrains</string>
-		<key>display_name</key>
-		<string>PyCharm Professional Edition</string>
-		<key>installer_item_hash</key>
-		<string>a8fbd5fda39cf94ccf86918fe170bcd74595e0d59491b79c329033d0e517ae2d</string>
-		<key>installer_item_location</key>
-		<string>apps/jetbrains/pycharm-professional-2023.2.5.dmg</string>
-		<key>installer_item_size</key>
-		<integer>711176</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.jetbrains.pycharm</string>
-				<key>CFBundleName</key>
-				<string>PyCharm</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2023.2.5</string>
-				<key>CFBundleVersion</key>
-				<string>PY-232.10227.11</string>
-				<key>minosversion</key>
-				<string>10.13</string>
-				<key>path</key>
-				<string>/Applications/PyCharm.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>PyCharm.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.13</string>
-		<key>name</key>
-		<string>PyCharm Professional Edition</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>x86_64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2023.2.5</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Developer Tools</string>
-		<key>description</key>
-		<string>Python IDE for professional developers
-
-https://www.jetbrains.com/pycharm</string>
-		<key>developer</key>
-		<string>JetBrains</string>
-		<key>display_name</key>
-		<string>PyCharm Professional Edition</string>
-		<key>installer_item_hash</key>
-		<string>ddb6f52803e1774bcf1d965b0dece128d152579a8c773dc65b06b44b70a0b395</string>
-		<key>installer_item_location</key>
-		<string>apps/jetbrains/pycharm-professional-2023.3.1.dmg</string>
-		<key>installer_item_size</key>
-		<integer>753794</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.jetbrains.pycharm</string>
-				<key>CFBundleName</key>
-				<string>PyCharm</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2023.3.1</string>
-				<key>CFBundleVersion</key>
-				<string>PY-233.11799.298</string>
-				<key>minosversion</key>
-				<string>10.13</string>
-				<key>path</key>
-				<string>/Applications/PyCharm.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>PyCharm.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.13</string>
-		<key>name</key>
-		<string>PyCharm Professional Edition</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>x86_64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2023.3.1</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Developer Tools</string>
-		<key>description</key>
-		<string>Python IDE for professional developers
-
-https://www.jetbrains.com/pycharm</string>
-		<key>developer</key>
-		<string>JetBrains</string>
-		<key>display_name</key>
-		<string>PyCharm Professional Edition</string>
-		<key>installer_item_hash</key>
-		<string>c86b6e279ac6a82ce79e187c96b671c1b3bbb6cc2c7c5686454705316b398e9c</string>
-		<key>installer_item_location</key>
-		<string>apps/jetbrains/pycharm-professional-2023.3.3.dmg</string>
-		<key>installer_item_size</key>
-		<integer>756931</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.jetbrains.pycharm</string>
-				<key>CFBundleName</key>
-				<string>PyCharm</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2023.3.3</string>
-				<key>CFBundleVersion</key>
-				<string>PY-233.13763.11</string>
-				<key>minosversion</key>
-				<string>10.13</string>
-				<key>path</key>
-				<string>/Applications/PyCharm.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>PyCharm.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.13</string>
-		<key>name</key>
-		<string>PyCharm Professional Edition</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>x86_64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2023.3.3</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Developer Tools</string>
-		<key>description</key>
-		<string>Python IDE for professional developers
-
-https://www.jetbrains.com/pycharm</string>
-		<key>developer</key>
-		<string>JetBrains</string>
-		<key>display_name</key>
-		<string>PyCharm Professional Edition</string>
-		<key>installer_item_hash</key>
-		<string>32882869eb3dbe44ed74ff5c916222cf7f60af23775c58430e2967b0cbe90846</string>
-		<key>installer_item_location</key>
-		<string>apps/jetbrains/pycharm-professional-2024.1.dmg</string>
-		<key>installer_item_size</key>
-		<integer>938486</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.jetbrains.pycharm</string>
-				<key>CFBundleName</key>
-				<string>PyCharm</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2024.1</string>
-				<key>CFBundleVersion</key>
-				<string>PY-241.14494.241</string>
-				<key>minosversion</key>
-				<string>10.13</string>
-				<key>path</key>
-				<string>/Applications/PyCharm.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>PyCharm.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.13</string>
-		<key>name</key>
-		<string>PyCharm Professional Edition</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>x86_64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2024.1</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Developer Tools</string>
-		<key>description</key>
-		<string>Python IDE for professional developers
-
-https://www.jetbrains.com/pycharm</string>
-		<key>developer</key>
-		<string>JetBrains</string>
-		<key>display_name</key>
-		<string>PyCharm Professional Edition</string>
-		<key>installer_item_hash</key>
-		<string>315081d461086495ab07483c5ac3858f6354b1f7bc684114c0d3c511e7ab6932</string>
-		<key>installer_item_location</key>
-		<string>apps/jetbrains/pycharm-professional-2023.3.5.dmg</string>
-		<key>installer_item_size</key>
-		<integer>757392</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.jetbrains.pycharm</string>
-				<key>CFBundleName</key>
-				<string>PyCharm</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2023.3.5</string>
-				<key>CFBundleVersion</key>
-				<string>PY-233.15026.15</string>
-				<key>minosversion</key>
-				<string>10.13</string>
-				<key>path</key>
-				<string>/Applications/PyCharm.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>PyCharm.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.13</string>
-		<key>name</key>
-		<string>PyCharm Professional Edition</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>x86_64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2023.3.5</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Developer Tools</string>
-		<key>description</key>
-		<string>Python IDE for professional developers
-
-https://www.jetbrains.com/pycharm</string>
-		<key>developer</key>
-		<string>JetBrains</string>
-		<key>display_name</key>
-		<string>PyCharm Professional Edition</string>
-		<key>installer_item_hash</key>
-		<string>6a9595e40cafe3575d0966d4b3b6005d4eb414ed82eaa9f15402cd6f76784a77</string>
-		<key>installer_item_location</key>
-		<string>apps/jetbrains/pycharm-professional-2023.3.dmg</string>
-		<key>installer_item_size</key>
-		<integer>753648</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.jetbrains.pycharm</string>
-				<key>CFBundleName</key>
-				<string>PyCharm</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2023.3</string>
-				<key>CFBundleVersion</key>
-				<string>PY-233.11799.259</string>
-				<key>minosversion</key>
-				<string>10.13</string>
-				<key>path</key>
-				<string>/Applications/PyCharm.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>PyCharm.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.13</string>
-		<key>name</key>
-		<string>PyCharm Professional Edition</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>x86_64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2023.3</string>
+		<string>2024.1.5</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>

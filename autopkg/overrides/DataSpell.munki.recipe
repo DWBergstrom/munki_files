@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>local.munki.PyCharm-PE</string>
+	<string>local.munki.DataSpell</string>
 	<key>Input</key>
 	<dict>
 		<key>ARCH_TYPE</key>
-		<string>mac</string>
+		<string>macM1</string>
 		<key>CSV_REQ</key>
-		<string>identifier "com.jetbrains.pycharm" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "2ZEFAR8TH3"</string>
+		<string>identifier "com.jetbrains.dataspell" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "2ZEFAR8TH3"</string>
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>apps/jetbrains</string>
 		<key>NAME</key>
-		<string>PyCharm Professional Edition</string>
+		<string>DataSpell</string>
 		<key>PROD_CODE</key>
-		<string>PCP</string>
+		<string>DS</string>
 		<key>SUPPORTED_ARCH</key>
-		<string>x86_64</string>
+		<string>arm64</string>
 		<key>pkginfo</key>
 		<dict>
 			<key>catalogs</key>
@@ -27,13 +27,11 @@
 			<key>category</key>
 			<string>Developer Tools</string>
 			<key>description</key>
-			<string>Python IDE for professional developers
-
-https://www.jetbrains.com/pycharm</string>
+			<string>JetBrains DataSpell: Essential tools for data analysts.</string>
 			<key>developer</key>
 			<string>JetBrains</string>
 			<key>display_name</key>
-			<string>PyCharm Professional Edition</string>
+			<string>DataSpell</string>
 			<key>name</key>
 			<string>%NAME%</string>
 			<key>supported_architectures</key>
@@ -49,7 +47,7 @@ https://www.jetbrains.com/pycharm</string>
 		</dict>
 	</dict>
 	<key>ParentRecipe</key>
-	<string>com.github.bnpl.autopkg.munki.pycharmpe</string>
+	<string>com.github.dwbergstrom.munki.dataspell</string>
 	<key>ParentRecipeTrustInfo</key>
 	<dict>
 		<key>non_core_processors</key>
@@ -65,23 +63,23 @@ https://www.jetbrains.com/pycharm</string>
 				<key>sha256_hash</key>
 				<string>5a8d144d1b0130509875314a105149e76209a0bed696bb7005c01527938d21fb</string>
 			</dict>
-			<key>com.github.bnpl.autopkg.download.pycharmpe</key>
+			<key>com.github.dwbergstrom.download.dataspell</key>
 			<dict>
 				<key>git_hash</key>
-				<string>2421adaf643efcd25a5e6b7b3edea7f76d8629e2</string>
+				<string>9fc3bda6288ce4f11d32d114bf9c7f779174a490</string>
 				<key>path</key>
-				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.bnpl-recipes/JetBrains/PyCharm-PE.download.recipe</string>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dbergstrom-recipes/JetBrains/DataSpell.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>c6212b6fed120404ec2375af5dbd9735121f6e3faae7d17d1a0ee634a357a294</string>
+				<string>a81bcb43480e87118c668602e7bd475cae0d9fcda064555f81617dcde196fa46</string>
 			</dict>
-			<key>com.github.bnpl.autopkg.munki.pycharmpe</key>
+			<key>com.github.dwbergstrom.munki.dataspell</key>
 			<dict>
 				<key>git_hash</key>
-				<string>97d583be1f38b3a37fc841fec670ac3176215eb7</string>
+				<string>9fc3bda6288ce4f11d32d114bf9c7f779174a490</string>
 				<key>path</key>
-				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.bnpl-recipes/JetBrains/PyCharm-PE.munki.recipe</string>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dbergstrom-recipes/JetBrains/DataSpell.munki.recipe</string>
 				<key>sha256_hash</key>
-				<string>4b455e2c1f758077a01fc2f7d1edd08c43140ae5a55b3aa204b007e2c639093a</string>
+				<string>6f2becf73df8d3c74c5dd36de3ce55f6467eab4f51e85100aedf870b6f02baee</string>
 			</dict>
 		</dict>
 	</dict>
