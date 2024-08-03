@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2024-08-03T14:36:10Z</date>
+		<date>2024-08-03T14:47:25Z</date>
 		<key>munki_version</key>
 		<string>6.5.1.4661</string>
 		<key>os_version</key>
@@ -26,7 +26,7 @@
 	<key>installer_item_hash</key>
 	<string>bd9b7a006b869a29ad09948a018d9af6ae85d4da2fc663624d1436892f0d3731</string>
 	<key>installer_item_location</key>
-	<string>apps/firefox/Firefox-128.0.3.dmg</string>
+	<string>apps/firefox/Firefox-128.0.3__1.dmg</string>
 	<key>installer_item_size</key>
 	<integer>143625</integer>
 	<key>installer_type</key>
