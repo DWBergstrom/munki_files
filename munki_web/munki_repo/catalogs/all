@@ -2838,6 +2838,68 @@ fi
 		<key>display_name</key>
 		<string>Google Chrome</string>
 		<key>installer_item_hash</key>
+		<string>8efb3308f8d99f1a78c939108fb8a360a88ea10032f229781ebd4f96440925fd</string>
+		<key>installer_item_location</key>
+		<string>apps/GoogleChrome-127.0.6533.100.dmg</string>
+		<key>installer_item_size</key>
+		<integer>205454</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.google.Chrome</string>
+				<key>CFBundleName</key>
+				<string>Chrome</string>
+				<key>CFBundleShortVersionString</key>
+				<string>127.0.6533.100</string>
+				<key>CFBundleVersion</key>
+				<string>6533.100</string>
+				<key>minosversion</key>
+				<string>10.15</string>
+				<key>path</key>
+				<string>/Applications/Google Chrome.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Google Chrome.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15</string>
+		<key>name</key>
+		<string>GoogleChrome</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>127.0.6533.100</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
+		<key>display_name</key>
+		<string>Google Chrome</string>
+		<key>installer_item_hash</key>
 		<string>13f3c5034643599af3f9893903b926550a42418bca6b3be833677d5b08c131e9</string>
 		<key>installer_item_location</key>
 		<string>apps/GoogleChrome-119.0.6045.199.dmg</string>
@@ -6210,6 +6272,95 @@ fi
 	<dict>
 		<key>autoremove</key>
 		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>1Password 7</string>
+			<string>1Password Browser Helper</string>
+			<string>1Password</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Utilities</string>
+		<key>description</key>
+		<string>1Password is a password manager that goes beyond simple password storage by integrating directly with your web browser to automatically log you into websites, enter credit card information, fill registration forms, and easily generate strong passwords.</string>
+		<key>developer</key>
+		<string>AgileBits Inc.</string>
+		<key>display_name</key>
+		<string>1Password</string>
+		<key>installed_size</key>
+		<integer>679328</integer>
+		<key>installer_item_hash</key>
+		<string>9281e7b08950a2510b6020c4d680600c1bfe68157a7307dcf6911137a9f16ec1</string>
+		<key>installer_item_location</key>
+		<string>apps/1Password-8.10.38.pkg</string>
+		<key>installer_item_size</key>
+		<integer>272321</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.1password.1password</string>
+				<key>CFBundleName</key>
+				<string>1Password</string>
+				<key>CFBundleShortVersionString</key>
+				<string>8.10.38</string>
+				<key>CFBundleVersion</key>
+				<string>8.10.38.255422</string>
+				<key>minosversion</key>
+				<string>10.15</string>
+				<key>path</key>
+				<string>/Applications/1Password.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15</string>
+		<key>name</key>
+		<string>1Password</string>
+		<key>postinstall_script</key>
+		<string>#!/bin/zsh
+
+# Remove version 7 remnants if they exist
+
+if [[ -e "/Applications/1Password 7.app.zip" ]]; then
+    /bin/rm -f "/Applications/1Password 7.app.zip"
+fi
+
+if [[ -e "/Applications/1Password 7.app" ]]; then
+    /bin/rm -rf "/Applications/1Password 7.app"
+fi
+</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>679328</integer>
+				<key>packageid</key>
+				<string>com.1password.1password</string>
+				<key>version</key>
+				<string>8.10.38</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>8.10.38</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
 		<key>catalogs</key>
 		<array>
 			<string>testing</string>
@@ -6640,6 +6791,68 @@ fi
 		<true/>
 		<key>version</key>
 		<string>128.0.2</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Mozilla Firefox is a free and open source web browser.</string>
+		<key>display_name</key>
+		<string>Mozilla Firefox</string>
+		<key>installer_item_hash</key>
+		<string>4b86e9de2b26339b30342a1ef3be1e3914d70921f81fd67bc9c63595823051f1</string>
+		<key>installer_item_location</key>
+		<string>apps/firefox/Firefox-129.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>144139</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>org.mozilla.firefox</string>
+				<key>CFBundleName</key>
+				<string>Firefox</string>
+				<key>CFBundleShortVersionString</key>
+				<string>129.0</string>
+				<key>CFBundleVersion</key>
+				<string>12924.8.1</string>
+				<key>minosversion</key>
+				<string>10.15.0</string>
+				<key>path</key>
+				<string>/Applications/Firefox.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Firefox.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15.0</string>
+		<key>name</key>
+		<string>Firefox</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>129.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -10511,6 +10724,72 @@ fi
 		<key>display_name</key>
 		<string>Brave Browser</string>
 		<key>installer_item_hash</key>
+		<string>7b9981912927dab09593f0fa5e5003ef2683e3459ea5754042c4ca2b1b2e5cb9</string>
+		<key>installer_item_location</key>
+		<string>apps/Brave/Brave-127.1.68.137.dmg</string>
+		<key>installer_item_size</key>
+		<integer>201265</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.brave.Browser</string>
+				<key>CFBundleName</key>
+				<string>Brave</string>
+				<key>CFBundleShortVersionString</key>
+				<string>127.1.68.137</string>
+				<key>CFBundleVersion</key>
+				<string>168.137</string>
+				<key>minosversion</key>
+				<string>10.15</string>
+				<key>path</key>
+				<string>/Applications/Brave Browser.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Brave Browser.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15</string>
+		<key>name</key>
+		<string>Brave</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>127.1.68.137</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Browsers</string>
+		<key>description</key>
+		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
+		<key>developer</key>
+		<string>Brave Software Inc.</string>
+		<key>display_name</key>
+		<string>Brave Browser</string>
+		<key>installer_item_hash</key>
 		<string>e6daae8aaa7c5087dbeecf7803d948fa5c3a4d4840c442ad97920e83f9fa95a3</string>
 		<key>installer_item_location</key>
 		<string>apps/Brave/Brave-116.1.57.47.dmg</string>
@@ -11300,6 +11579,78 @@ fi
 		<true/>
 		<key>version</key>
 		<string>2024.1.6</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Developer Tools</string>
+		<key>description</key>
+		<string>JetBrains RustRover: The Rust IDE for Productivity.</string>
+		<key>developer</key>
+		<string>JetBrains</string>
+		<key>display_name</key>
+		<string>RustRover</string>
+		<key>installer_item_hash</key>
+		<string>4d21eafc858e45e1085058609497ac389298da5e1b6b1de6a87e734c45e0a8a1</string>
+		<key>installer_item_location</key>
+		<string>apps/jetbrains/RustRover-2024.1.7-aarch64-2024.1.7.dmg</string>
+		<key>installer_item_size</key>
+		<integer>698911</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.jetbrains.rustrover</string>
+				<key>CFBundleName</key>
+				<string>RustRover</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2024.1.7</string>
+				<key>CFBundleVersion</key>
+				<string>RR-241.18034.106</string>
+				<key>minosversion</key>
+				<string>10.13</string>
+				<key>path</key>
+				<string>/Applications/RustRover.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>RustRover.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>RustRover</string>
+		<key>supported_architectures</key>
+		<array>
+			<string>arm64</string>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2024.1.7</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
