@@ -4293,6 +4293,68 @@ fi
 	<dict>
 		<key>autoremove</key>
 		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string></string>
+		<key>display_name</key>
+		<string>Visual Studio Code</string>
+		<key>installer_item_hash</key>
+		<string>338a6778855bca1d9ba3266170a50588ca8d3be15e205fc733d74cfefce48646</string>
+		<key>installer_item_location</key>
+		<string>apps/Visual Studio Code-1.92.1.dmg</string>
+		<key>installer_item_size</key>
+		<integer>223940</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.microsoft.VSCode</string>
+				<key>CFBundleName</key>
+				<string>Code</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.92.1</string>
+				<key>CFBundleVersion</key>
+				<string>1.92.1</string>
+				<key>minosversion</key>
+				<string>10.15</string>
+				<key>path</key>
+				<string>/Applications/Visual Studio Code.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Visual Studio Code.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15</string>
+		<key>name</key>
+		<string>Visual Studio Code</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.92.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
 		<key>blocking_applications</key>
 		<array>
 			<string>1Password 7</string>
@@ -4932,6 +4994,95 @@ fi
 		<true/>
 		<key>version</key>
 		<string>122.0.6261.94</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>1Password 7</string>
+			<string>1Password Browser Helper</string>
+			<string>1Password</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Utilities</string>
+		<key>description</key>
+		<string>1Password is a password manager that goes beyond simple password storage by integrating directly with your web browser to automatically log you into websites, enter credit card information, fill registration forms, and easily generate strong passwords.</string>
+		<key>developer</key>
+		<string>AgileBits Inc.</string>
+		<key>display_name</key>
+		<string>1Password</string>
+		<key>installed_size</key>
+		<integer>679328</integer>
+		<key>installer_item_hash</key>
+		<string>089d565f1b140302b1f9871bfea8c7cb164bc9b36c63d65af17d543c4fa724f7</string>
+		<key>installer_item_location</key>
+		<string>apps/1Password-8.10.39.pkg</string>
+		<key>installer_item_size</key>
+		<integer>272322</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.1password.1password</string>
+				<key>CFBundleName</key>
+				<string>1Password</string>
+				<key>CFBundleShortVersionString</key>
+				<string>8.10.39</string>
+				<key>CFBundleVersion</key>
+				<string>8.10.39.256306</string>
+				<key>minosversion</key>
+				<string>10.15</string>
+				<key>path</key>
+				<string>/Applications/1Password.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15</string>
+		<key>name</key>
+		<string>1Password</string>
+		<key>postinstall_script</key>
+		<string>#!/bin/zsh
+
+# Remove version 7 remnants if they exist
+
+if [[ -e "/Applications/1Password 7.app.zip" ]]; then
+    /bin/rm -f "/Applications/1Password 7.app.zip"
+fi
+
+if [[ -e "/Applications/1Password 7.app" ]]; then
+    /bin/rm -rf "/Applications/1Password 7.app"
+fi
+</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>679328</integer>
+				<key>packageid</key>
+				<string>com.1password.1password</string>
+				<key>version</key>
+				<string>8.10.39</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>8.10.39</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -8828,6 +8979,51 @@ fi
 		<key>display_name</key>
 		<string>Microsoft Edge</string>
 		<key>installed_size</key>
+		<integer>874092</integer>
+		<key>installer_item_hash</key>
+		<string>3e3987e04afb667db3b9c67f4b872cc20ac305fd46202bb0e8ce9c7568d47d68</string>
+		<key>installer_item_location</key>
+		<string>apps/Microsoft/Microsoft_Edge-127.0.2651.98.pkg</string>
+		<key>installer_item_size</key>
+		<integer>384741</integer>
+		<key>minimum_os_version</key>
+		<string>10.10.0</string>
+		<key>name</key>
+		<string>MicrosoftEdge</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>874092</integer>
+				<key>packageid</key>
+				<string>com.microsoft.edgemac</string>
+				<key>version</key>
+				<string>127.0.2651.98</string>
+			</dict>
+		</array>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>127.0.2651.98</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Productivity</string>
+		<key>description</key>
+		<string>Microsoft Edge web browser</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Microsoft Edge</string>
+		<key>installed_size</key>
 		<integer>859626</integer>
 		<key>installer_item_hash</key>
 		<string>a4e217a33c8be03f18c81b3a6e07f5ba5c59e24c06010d595cd3899e44de1053</string>
@@ -11821,6 +12017,70 @@ fi
 		<true/>
 		<key>version</key>
 		<string>1.6.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>A new productivity-focused web browser.</string>
+		<key>developer</key>
+		<string>The Browser Company of New York</string>
+		<key>display_name</key>
+		<string>Arc</string>
+		<key>installer_item_hash</key>
+		<string>62d19efb40d6090897c4f64a92333896f0418d7fed9dd25dbd083b8218d3ef54</string>
+		<key>installer_item_location</key>
+		<string>apps/Arc/Arc-1.55.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>405407</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>company.thebrowser.Browser</string>
+				<key>CFBundleName</key>
+				<string>Arc</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.55.0</string>
+				<key>CFBundleVersion</key>
+				<string>52417</string>
+				<key>minosversion</key>
+				<string>13.0.0</string>
+				<key>path</key>
+				<string>/Applications/Arc.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Arc.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0.0</string>
+		<key>name</key>
+		<string>Arc</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.55.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
