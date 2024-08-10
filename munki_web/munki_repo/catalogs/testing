@@ -11362,6 +11362,78 @@ fi
 		<key>category</key>
 		<string>Developer Tools</string>
 		<key>description</key>
+		<string>JetBrains DataSpell: Essential tools for data analysts.</string>
+		<key>developer</key>
+		<string>JetBrains</string>
+		<key>display_name</key>
+		<string>DataSpell</string>
+		<key>installer_item_hash</key>
+		<string>c303fe3cf2490ab41ed573f4253c30a7182041cd00f3a12d8b033ce1cb097120</string>
+		<key>installer_item_location</key>
+		<string>apps/jetbrains/dataspell-2024.1.4-aarch64-2024.1.4.dmg</string>
+		<key>installer_item_size</key>
+		<integer>981578</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.jetbrains.dataspell</string>
+				<key>CFBundleName</key>
+				<string>DataSpell</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2024.1.4</string>
+				<key>CFBundleVersion</key>
+				<string>DS-241.19072.25</string>
+				<key>minosversion</key>
+				<string>10.13</string>
+				<key>path</key>
+				<string>/Applications/DataSpell.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>DataSpell.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>DataSpell</string>
+		<key>supported_architectures</key>
+		<array>
+			<string>arm64</string>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2024.1.4</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Developer Tools</string>
+		<key>description</key>
 		<string>JetBrains RustRover: The Rust IDE for Productivity.</string>
 		<key>developer</key>
 		<string>JetBrains</string>
