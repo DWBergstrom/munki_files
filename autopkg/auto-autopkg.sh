@@ -37,16 +37,17 @@ done < <(find "$OVERRIDES_DIR" -type f -newermt "$current_date")
 
 # Run makecatalogs
 echo "Running makecatalogs..."
-makecatalogs --skip-pkg-check "$MUNKI_REPO_PATH"
+/usr/local/munki/makecatalogs --skip-pkg-check "$MUNKI_REPO_PATH"
 
 # Serve munki repo via tailscale
 # echo "setting up tailscale funnel..."
 # /Users/dwbergstrom/git/munki_files/munki_web/munki_repo&
 
 # Save changes to git
+cd "${RSYNC_PATH}"
 git add --all
 git status
 git commit -m "$COMMIT_DATE Updating munki"
 git push origin main
 
-rsync -avz ssh "${RSYNC_PATH}" "dwbergstrom@${WEBSERVER_IP}:${WEBSERVER_SYNC_PATH}"
+rsync -avz "${RSYNC_PATH}" "dwbergstrom@${WEBSERVER_IP}:${WEBSERVER_SYNC_PATH}"
