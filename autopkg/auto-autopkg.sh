@@ -14,7 +14,7 @@ OVERRIDES_DIR="/Users/dwbergstrom/github/munki_files/autopkg/overrides"
 
 # Define Munki repo path
 MUNKI_REPO_PATH="/Users/dwbergstrom/github/munki_files/munki_web/munki_repo"
-RSYNC_PATH="/Users/dwbergstrom/git/munki_files"
+RSYNC_PATH="/Users/dwbergstrom/github/munki_files"
 WEBSERVER_IP="100.123.110.99"
 WEBSERVER_SYNC_PATH="/home/dwbergstrom/git/"
 
