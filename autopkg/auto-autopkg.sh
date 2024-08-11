@@ -45,6 +45,7 @@ makecatalogs --skip-pkg-check "$MUNKI_REPO_PATH"
 
 # Save changes to git
 git add --all
+git status
 git commit -m "$COMMIT_DATE Updating munki"
 git push origin main
 
