@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Raycast</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>Raycast</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Supercharged productivity
+
+Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
+			<key>developer</key>
+			<string>Raycast Technologies Inc</string>
+			<key>display_name</key>
+			<string>Raycast</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>unattended_uninstall</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.dataJAR-recipes.munki.Raycast</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.dataJAR-recipes.download.Raycast</key>
+			<dict>
+				<key>git_hash</key>
+				<string>f87f8e97f6d0e22772048c009e8f939e24932ecf</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Raycast/Raycast.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>1211c4536711f4b128b058678fad7293aa9859cac0f49e58e46c943623c62ea3</string>
+			</dict>
+			<key>com.github.dataJAR-recipes.munki.Raycast</key>
+			<dict>
+				<key>git_hash</key>
+				<string>f87f8e97f6d0e22772048c009e8f939e24932ecf</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Raycast/Raycast.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>abee5260649c7cf04a896f94966f200c4562de03ab735a9ff9729870a7cff22f</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>
