@@ -12,6 +12,7 @@
 	<array>
 		<string>1Password</string>
 		<string>Arc</string>
+		<string>Raycast</string>
 		<string>Visual Studio Code</string>
 		<string>Warp</string>
 	</array>
@@ -29,6 +30,7 @@
 		<string>Docker</string>
 		<string>Firefox</string>
 		<string>GoogleChrome</string>
+		<string>iMazingProfileEditor</string>
 		<string>Insomnia</string>
 		<string>iTerm2</string>
 		<string>JetBrains Toolbox</string>
@@ -39,6 +41,7 @@
 		<string>munkitools_core</string>
 		<string>munkitools_launchd</string>
 		<string>munkitools_python</string>
+		<string>Raycast</string>
 		<string>Recipe Robot</string>
 		<string>RustRover</string>
 		<string>UTM</string>
@@ -46,7 +49,6 @@
 		<string>Visual Studio Code</string>
 		<string>VLC</string>
 		<string>Warp</string>
-		<string>iMazingProfileEditor</string>
 	</array>
 </dict>
 </plist>
