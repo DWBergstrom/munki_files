@@ -44,9 +44,11 @@ echo "Running makecatalogs..."
 # /Users/dwbergstrom/git/munki_files/munki_web/munki_repo&
 
 # Save changes to git
+echo "Changing to munki directory"
 cd "${RSYNC_PATH}"
 git add --all
 git status
+echo "Printing date for logging:  ${current_date}"
 git commit -m "$COMMIT_DATE Updating munki"
 git push origin main
 
