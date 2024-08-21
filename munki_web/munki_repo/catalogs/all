@@ -7982,6 +7982,68 @@ fi
 		<key>display_name</key>
 		<string>Mozilla Firefox</string>
 		<key>installer_item_hash</key>
+		<string>04e84a82ade99d031f8b28bd36e9b9606b83dc09905aac42e992c8e59a289539</string>
+		<key>installer_item_location</key>
+		<string>apps/firefox/Firefox-129.0.2.dmg</string>
+		<key>installer_item_size</key>
+		<integer>144177</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>org.mozilla.firefox</string>
+				<key>CFBundleName</key>
+				<string>Firefox</string>
+				<key>CFBundleShortVersionString</key>
+				<string>129.0.2</string>
+				<key>CFBundleVersion</key>
+				<string>12924.8.19</string>
+				<key>minosversion</key>
+				<string>10.15.0</string>
+				<key>path</key>
+				<string>/Applications/Firefox.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Firefox.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15.0</string>
+		<key>name</key>
+		<string>Firefox</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>129.0.2</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Mozilla Firefox is a free and open source web browser.</string>
+		<key>display_name</key>
+		<string>Mozilla Firefox</string>
+		<key>installer_item_hash</key>
 		<string>d0341bae660b826fdf6a352355f462495b9a64a3a7b0f953ab85025d6ddbda05</string>
 		<key>installer_item_location</key>
 		<string>apps/firefox/Firefox-128.0.dmg</string>
@@ -12821,6 +12883,78 @@ fi
 		<true/>
 		<key>version</key>
 		<string>2024.2</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Developer Tools</string>
+		<key>description</key>
+		<string>JetBrains RustRover: The Rust IDE for Productivity.</string>
+		<key>developer</key>
+		<string>JetBrains</string>
+		<key>display_name</key>
+		<string>RustRover</string>
+		<key>installer_item_hash</key>
+		<string>533bb27ab515989b946bd5c72d0fa36417b248a8d2ec9f16a6ca32cc98e56048</string>
+		<key>installer_item_location</key>
+		<string>apps/jetbrains/RustRover-2024.1.8-aarch64-2024.1.8.dmg</string>
+		<key>installer_item_size</key>
+		<integer>699260</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.jetbrains.rustrover</string>
+				<key>CFBundleName</key>
+				<string>RustRover</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2024.1.8</string>
+				<key>CFBundleVersion</key>
+				<string>RR-241.18968.39</string>
+				<key>minosversion</key>
+				<string>10.13</string>
+				<key>path</key>
+				<string>/Applications/RustRover.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>RustRover.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>RustRover</string>
+		<key>supported_architectures</key>
+		<array>
+			<string>arm64</string>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2024.1.8</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
