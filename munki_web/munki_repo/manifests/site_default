@@ -49,6 +49,7 @@
 		<string>Visual Studio Code</string>
 		<string>VLC</string>
 		<string>Warp</string>
+		<string>Tailscale</string>
 	</array>
 </dict>
 </plist>
