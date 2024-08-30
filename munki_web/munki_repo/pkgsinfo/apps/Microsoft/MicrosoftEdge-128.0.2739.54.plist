@@ -7,57 +7,54 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2023-05-10T02:44:01Z</date>
+		<date>2024-08-30T04:53:20Z</date>
 		<key>munki_version</key>
-		<string>6.3.1.4580</string>
+		<string>6.6.0.4686</string>
 		<key>os_version</key>
-		<string>12.6.5</string>
+		<string>14.4.1</string>
 	</dict>
 	<key>autoremove</key>
 	<false/>
 	<key>catalogs</key>
 	<array>
-		<string>development</string>
 		<string>testing</string>
 	</array>
 	<key>category</key>
-	<string>munkitools</string>
+	<string>Productivity</string>
 	<key>description</key>
-	<string>Embedded Python tools used by Managed Software Center.</string>
+	<string>Microsoft Edge web browser</string>
 	<key>developer</key>
-	<string>The Munki Project</string>
+	<string>Microsoft</string>
 	<key>display_name</key>
-	<string>Managed Software Center embedded python</string>
+	<string>Microsoft Edge</string>
 	<key>installed_size</key>
-	<integer>131620</integer>
+	<integer>874492</integer>
 	<key>installer_item_hash</key>
-	<string>993bb7e0dd24f07d6b374b9dba88b225d2a14ae46a39835476d7af182bc10b2a</string>
+	<string>bfadb60ab3a5506f247033d82a3f2aef99cd687c89d6f7e5a99b7f04783ffec6</string>
 	<key>installer_item_location</key>
-	<string>munkitools/munkitools_python-3.10.10.4574.pkg</string>
+	<string>apps/Microsoft/Microsoft_Edge-128.0.2739.54.pkg</string>
 	<key>installer_item_size</key>
-	<integer>39568</integer>
+	<integer>385811</integer>
 	<key>minimum_os_version</key>
-	<string>10.13</string>
+	<string>10.10.0</string>
 	<key>name</key>
-	<string>munkitools_python</string>
+	<string>MicrosoftEdge</string>
 	<key>receipts</key>
 	<array>
 		<dict>
 			<key>installed_size</key>
-			<integer>131620</integer>
+			<integer>874492</integer>
 			<key>packageid</key>
-			<string>com.googlecode.munki.python</string>
+			<string>com.microsoft.edgemac</string>
 			<key>version</key>
-			<string>3.10.10.4574</string>
+			<string>128.0.2739.54</string>
 		</dict>
 	</array>
-	<key>unattended_install</key>
-	<true/>
 	<key>uninstall_method</key>
 	<string>removepackages</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>3.10.10.4574</string>
+	<string>128.0.2739.54</string>
 </dict>
 </plist>

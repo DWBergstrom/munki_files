@@ -28,8 +28,6 @@
 	<string>The Munki Project</string>
 	<key>display_name</key>
 	<string>Managed Software Center embedded python</string>
-	<key>icon_name</key>
-	<string></string>
 	<key>installed_size</key>
 	<integer>131938</integer>
 	<key>installer_item_hash</key>

@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2024-08-25T04:50:46Z</date>
+		<date>2024-08-30T04:49:33Z</date>
 		<key>munki_version</key>
 		<string>6.6.0.4686</string>
 		<key>os_version</key>
@@ -19,37 +19,37 @@
 	<array>
 		<string>testing</string>
 	</array>
+	<key>category</key>
+	<string>Developer Tools</string>
 	<key>description</key>
-	<string>Virtual machines for iOS and macOS</string>
+	<string>JetBrains DataSpell: Essential tools for data analysts.</string>
 	<key>developer</key>
-	<string>Turing Software, LLC</string>
+	<string>JetBrains</string>
 	<key>display_name</key>
-	<string>UTM</string>
-	<key>icon_name</key>
-	<string>utm.png</string>
+	<string>DataSpell</string>
 	<key>installer_item_hash</key>
-	<string>1b3c2890afeaf12dfc95b39584680d6aa6c3000af21c9f5e0400161a9b8e40e1</string>
+	<string>d64d0a1c53f06aecc16f24c3203c662576ad89dc5939e5bc94417a2991b23c63</string>
 	<key>installer_item_location</key>
-	<string>apps/UTM/UTM-4.5.4.dmg</string>
+	<string>apps/jetbrains/dataspell-2024.2.1-aarch64-2024.2.1.dmg</string>
 	<key>installer_item_size</key>
-	<integer>234637</integer>
+	<integer>1029685</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.utmapp.UTM</string>
+			<string>com.jetbrains.dataspell</string>
 			<key>CFBundleName</key>
-			<string>UTM</string>
+			<string>DataSpell</string>
 			<key>CFBundleShortVersionString</key>
-			<string>4.5.4</string>
+			<string>2024.2.1</string>
 			<key>CFBundleVersion</key>
-			<string>100</string>
+			<string>DS-242.21829.112</string>
 			<key>minosversion</key>
-			<string>11.3</string>
+			<string>10.13</string>
 			<key>path</key>
-			<string>/Applications/UTM.app</string>
+			<string>/Applications/DataSpell.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -62,20 +62,26 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>UTM.app</string>
+			<string>DataSpell.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>11.3</string>
+	<string>10.13</string>
 	<key>name</key>
-	<string>UTM</string>
+	<string>DataSpell</string>
+	<key>supported_architectures</key>
+	<array>
+		<string>arm64</string>
+	</array>
 	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>4.5.4</string>
+	<string>2024.2.1</string>
 </dict>
 </plist>

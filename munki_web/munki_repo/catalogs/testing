@@ -292,8 +292,6 @@
 		<string>The Munki Project</string>
 		<key>display_name</key>
 		<string>Managed Software Center embedded python</string>
-		<key>icon_name</key>
-		<string></string>
 		<key>installed_size</key>
 		<integer>131620</integer>
 		<key>installer_item_hash</key>
@@ -724,8 +722,6 @@
 		<string>The Munki Project</string>
 		<key>display_name</key>
 		<string>Managed Software Center embedded python</string>
-		<key>icon_name</key>
-		<string></string>
 		<key>installed_size</key>
 		<integer>131934</integer>
 		<key>installer_item_hash</key>
@@ -773,8 +769,6 @@
 		<string>The Munki Project</string>
 		<key>display_name</key>
 		<string>Managed Software Center embedded python</string>
-		<key>icon_name</key>
-		<string></string>
 		<key>installed_size</key>
 		<integer>144025</integer>
 		<key>installer_item_hash</key>
@@ -1310,8 +1304,6 @@
 		<string>The Munki Project</string>
 		<key>display_name</key>
 		<string>Managed Software Center embedded python</string>
-		<key>icon_name</key>
-		<string></string>
 		<key>installed_size</key>
 		<integer>141026</integer>
 		<key>installer_item_hash</key>
@@ -1360,8 +1352,6 @@
 		<string>The Munki Project</string>
 		<key>display_name</key>
 		<string>Managed Software Center embedded python</string>
-		<key>icon_name</key>
-		<string></string>
 		<key>installed_size</key>
 		<integer>131938</integer>
 		<key>installer_item_hash</key>
@@ -1518,8 +1508,6 @@
 		<string>The Munki Project</string>
 		<key>display_name</key>
 		<string>Managed Software Center embedded python</string>
-		<key>icon_name</key>
-		<string></string>
 		<key>installed_size</key>
 		<integer>131934</integer>
 		<key>installer_item_hash</key>
@@ -1724,8 +1712,6 @@
 		<string>The Munki Project</string>
 		<key>display_name</key>
 		<string>Managed Software Center embedded python</string>
-		<key>icon_name</key>
-		<string></string>
 		<key>installed_size</key>
 		<integer>144025</integer>
 		<key>installer_item_hash</key>
@@ -4820,6 +4806,90 @@ fi
 	<dict>
 		<key>autoremove</key>
 		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>1Password 7</string>
+			<string>1Password Browser Helper</string>
+			<string>1Password</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Utilities</string>
+		<key>description</key>
+		<string>1Password is a password manager that goes beyond simple password storage by integrating directly with your web browser to automatically log you into websites, enter credit card information, fill registration forms, and easily generate strong passwords.</string>
+		<key>developer</key>
+		<string>AgileBits Inc.</string>
+		<key>display_name</key>
+		<string>1Password</string>
+		<key>installed_size</key>
+		<integer>679337</integer>
+		<key>installer_item_hash</key>
+		<string>bcaecee5a6344ea4d610abe333872dfc6f4f0f5b8be351e5da4b6a1e5b9ab01d</string>
+		<key>installer_item_location</key>
+		<string>apps/1Password-8.10.40__1.pkg</string>
+		<key>installer_item_size</key>
+		<integer>272332</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.1password.1password</string>
+				<key>CFBundleName</key>
+				<string>1Password</string>
+				<key>CFBundleShortVersionString</key>
+				<string>8.10.40</string>
+				<key>CFBundleVersion</key>
+				<string>8.10.40.258070</string>
+				<key>minosversion</key>
+				<string>10.15</string>
+				<key>path</key>
+				<string>/Applications/1Password.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15</string>
+		<key>name</key>
+		<string>1Password</string>
+		<key>postinstall_script</key>
+		<string>#!/bin/bash
+
+LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console); 
+
+/usr/sbin/chown -R "$LOGGED_IN_USER":staff "/Applications/1Password.app"
+
+</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>679337</integer>
+				<key>packageid</key>
+				<string>com.1password.1password</string>
+				<key>version</key>
+				<string>8.10.40</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>8.10.40</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
 		<key>catalogs</key>
 		<array>
 			<string>testing</string>
@@ -6613,17 +6683,12 @@ fi
 		<key>name</key>
 		<string>1Password</string>
 		<key>postinstall_script</key>
-		<string>#!/bin/zsh
+		<string>#!/bin/bash
 
-# Remove version 7 remnants if they exist
+LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console); 
 
-if [[ -e "/Applications/1Password 7.app.zip" ]]; then
-    /bin/rm -f "/Applications/1Password 7.app.zip"
-fi
+/usr/sbin/chown -R "$LOGGED_IN_USER":staff "/Applications/1Password.app"
 
-if [[ -e "/Applications/1Password 7.app" ]]; then
-    /bin/rm -rf "/Applications/1Password 7.app"
-fi
 </string>
 		<key>receipts</key>
 		<array>
@@ -8758,6 +8823,70 @@ fi
 		<key>display_name</key>
 		<string>Docker</string>
 		<key>installer_item_hash</key>
+		<string>ea4e558d38fac4caafeb73134f012524f3b5a3b90894485f19ae99b0aa7cde19</string>
+		<key>installer_item_location</key>
+		<string>apps/Docker/Docker-amd64-4.34.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>507360</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.docker.docker</string>
+				<key>CFBundleName</key>
+				<string>Docker</string>
+				<key>CFBundleShortVersionString</key>
+				<string>4.34.0</string>
+				<key>CFBundleVersion</key>
+				<string>165256</string>
+				<key>minosversion</key>
+				<string>11.0</string>
+				<key>path</key>
+				<string>/Applications/Docker.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Docker.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>11.0</string>
+		<key>name</key>
+		<string>Docker</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>4.34.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Automates deployment of containerized applications.</string>
+		<key>developer</key>
+		<string>Docker</string>
+		<key>display_name</key>
+		<string>Docker</string>
+		<key>installer_item_hash</key>
 		<string>617e07f04cd8a337c189efcfc05109fc9ef83c313ea101c520593c79c36697cf</string>
 		<key>installer_item_location</key>
 		<string>apps/Docker/Docker-amd64-4.26.1.dmg</string>
@@ -10631,6 +10760,51 @@ fi
 		<key>display_name</key>
 		<string>Microsoft Edge</string>
 		<key>installed_size</key>
+		<integer>874492</integer>
+		<key>installer_item_hash</key>
+		<string>bfadb60ab3a5506f247033d82a3f2aef99cd687c89d6f7e5a99b7f04783ffec6</string>
+		<key>installer_item_location</key>
+		<string>apps/Microsoft/Microsoft_Edge-128.0.2739.54.pkg</string>
+		<key>installer_item_size</key>
+		<integer>385811</integer>
+		<key>minimum_os_version</key>
+		<string>10.10.0</string>
+		<key>name</key>
+		<string>MicrosoftEdge</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>874492</integer>
+				<key>packageid</key>
+				<string>com.microsoft.edgemac</string>
+				<key>version</key>
+				<string>128.0.2739.54</string>
+			</dict>
+		</array>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>128.0.2739.54</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Productivity</string>
+		<key>description</key>
+		<string>Microsoft Edge web browser</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Microsoft Edge</string>
+		<key>installed_size</key>
 		<integer>873983</integer>
 		<key>installer_item_hash</key>
 		<string>081684b050baf0db09859b778538a194cbf0df948b08fa731713a7d8d558c0a0</string>
@@ -12219,6 +12393,72 @@ fi
 		<key>display_name</key>
 		<string>Brave Browser</string>
 		<key>installer_item_hash</key>
+		<string>6eb4dbe3abf9aa53902aed09948796b2092eb217515eac42bb158f3d61e1211d</string>
+		<key>installer_item_location</key>
+		<string>apps/Brave/Brave-128.1.69.160.dmg</string>
+		<key>installer_item_size</key>
+		<integer>202791</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.brave.Browser</string>
+				<key>CFBundleName</key>
+				<string>Brave</string>
+				<key>CFBundleShortVersionString</key>
+				<string>128.1.69.160</string>
+				<key>CFBundleVersion</key>
+				<string>169.160</string>
+				<key>minosversion</key>
+				<string>10.15</string>
+				<key>path</key>
+				<string>/Applications/Brave Browser.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Brave Browser.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15</string>
+		<key>name</key>
+		<string>Brave</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>128.1.69.160</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Browsers</string>
+		<key>description</key>
+		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
+		<key>developer</key>
+		<string>Brave Software Inc.</string>
+		<key>display_name</key>
+		<string>Brave Browser</string>
+		<key>installer_item_hash</key>
 		<string>e7db1da78ca69f35c2c33d5c6bf44cf9b7c8c13bb3f319b4b2196eba1f729856</string>
 		<key>installer_item_location</key>
 		<string>apps/Brave/Brave-122.1.63.165.dmg</string>
@@ -12478,6 +12718,78 @@ fi
 		<true/>
 		<key>version</key>
 		<string>2024.1.6</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Developer Tools</string>
+		<key>description</key>
+		<string>JetBrains DataSpell: Essential tools for data analysts.</string>
+		<key>developer</key>
+		<string>JetBrains</string>
+		<key>display_name</key>
+		<string>DataSpell</string>
+		<key>installer_item_hash</key>
+		<string>d64d0a1c53f06aecc16f24c3203c662576ad89dc5939e5bc94417a2991b23c63</string>
+		<key>installer_item_location</key>
+		<string>apps/jetbrains/dataspell-2024.2.1-aarch64-2024.2.1.dmg</string>
+		<key>installer_item_size</key>
+		<integer>1029685</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.jetbrains.dataspell</string>
+				<key>CFBundleName</key>
+				<string>DataSpell</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2024.2.1</string>
+				<key>CFBundleVersion</key>
+				<string>DS-242.21829.112</string>
+				<key>minosversion</key>
+				<string>10.13</string>
+				<key>path</key>
+				<string>/Applications/DataSpell.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>DataSpell.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>DataSpell</string>
+		<key>supported_architectures</key>
+		<array>
+			<string>arm64</string>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2024.2.1</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -15251,6 +15563,70 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<key>display_name</key>
 		<string>Arc</string>
 		<key>installer_item_hash</key>
+		<string>35d76fcec34728100dae0cc888e3aa79e90421d54ceec99dc7e05a7c0837366f</string>
+		<key>installer_item_location</key>
+		<string>apps/Arc/Arc-1.58.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>419949</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>company.thebrowser.Browser</string>
+				<key>CFBundleName</key>
+				<string>Arc</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.58.0</string>
+				<key>CFBundleVersion</key>
+				<string>53136</string>
+				<key>minosversion</key>
+				<string>13.0.0</string>
+				<key>path</key>
+				<string>/Applications/Arc.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Arc.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0.0</string>
+		<key>name</key>
+		<string>Arc</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.58.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>A new productivity-focused web browser.</string>
+		<key>developer</key>
+		<string>The Browser Company of New York</string>
+		<key>display_name</key>
+		<string>Arc</string>
+		<key>installer_item_hash</key>
 		<string>cc4ed237f632c5c2a3e974181c31197da030a8b67d5b1d97c29b4f77d7f4c70d</string>
 		<key>installer_item_location</key>
 		<string>apps/Arc/Arc-1.51.0.dmg</string>
@@ -15699,6 +16075,8 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<string>Turing Software, LLC</string>
 		<key>display_name</key>
 		<string>UTM</string>
+		<key>icon_name</key>
+		<string>utm.png</string>
 		<key>installer_item_hash</key>
 		<string>1b3c2890afeaf12dfc95b39584680d6aa6c3000af21c9f5e0400161a9b8e40e1</string>
 		<key>installer_item_location</key>
@@ -15763,6 +16141,8 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<string>Turing Software, LLC</string>
 		<key>display_name</key>
 		<string>UTM</string>
+		<key>icon_name</key>
+		<string>utm.png</string>
 		<key>installer_item_hash</key>
 		<string>ee1a564dee93be7368745b75ad2446a2e81e66e123bd27ae57305615f628e776</string>
 		<key>installer_item_location</key>
@@ -15827,6 +16207,8 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<string>Turing Software, LLC</string>
 		<key>display_name</key>
 		<string>UTM</string>
+		<key>icon_name</key>
+		<string>utm.png</string>
 		<key>installer_item_hash</key>
 		<string>ee1a564dee93be7368745b75ad2446a2e81e66e123bd27ae57305615f628e776</string>
 		<key>installer_item_location</key>

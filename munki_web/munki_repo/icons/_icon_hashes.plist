@@ -48,7 +48,21 @@
 	<string>e758c4b5b92e552f55a33936261c617811fc459d65fbc0175b8d0a07f354fffd</string>
 	<key>iTerm2.png</key>
 	<string>1cb743d40fd2450cdd498a7572b25aa6f19185732b6247c77b7f7d619e45f303</string>
+	<key>munki.png</key>
+	<string>21701ce5eb2c06590238f473b65d22bae872ccdc503efe2150abd0004348abbd</string>
 	<key>munkitools.png</key>
 	<string>d2e4641e4c70f83f485be3cd3dbb6110b0f7cb3a66c004867714e0786cb2f265</string>
+	<key>munkitools_admin.png</key>
+	<string>0593e09353cc3532226e9233f6cebdb3334079e338bb4237bef86320e4dd08ac</string>
+	<key>munkitools_app_usage.png</key>
+	<string>0593e09353cc3532226e9233f6cebdb3334079e338bb4237bef86320e4dd08ac</string>
+	<key>munkitools_core.png</key>
+	<string>0593e09353cc3532226e9233f6cebdb3334079e338bb4237bef86320e4dd08ac</string>
+	<key>munkitools_launchd.png</key>
+	<string>0593e09353cc3532226e9233f6cebdb3334079e338bb4237bef86320e4dd08ac</string>
+	<key>munkitools_python.png</key>
+	<string>0593e09353cc3532226e9233f6cebdb3334079e338bb4237bef86320e4dd08ac</string>
+	<key>utm.png</key>
+	<string>e8142fef0129d5a0696a282c956f001950dc659419e3a1823c9752d0d6d272af</string>
 </dict>
 </plist>

@@ -25,6 +25,8 @@
 	<string>Turing Software, LLC</string>
 	<key>display_name</key>
 	<string>UTM</string>
+	<key>icon_name</key>
+	<string>utm.png</string>
 	<key>installer_item_hash</key>
 	<string>ee1a564dee93be7368745b75ad2446a2e81e66e123bd27ae57305615f628e776</string>
 	<key>installer_item_location</key>
