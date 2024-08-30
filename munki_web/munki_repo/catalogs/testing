@@ -6633,9 +6633,9 @@ fi
 		<false/>
 		<key>blocking_applications</key>
 		<array>
+			<string>1Password</string>
 			<string>1Password 7</string>
 			<string>1Password Browser Helper</string>
-			<string>1Password</string>
 		</array>
 		<key>catalogs</key>
 		<array>
