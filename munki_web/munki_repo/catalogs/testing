@@ -4808,9 +4808,9 @@ fi
 		<false/>
 		<key>blocking_applications</key>
 		<array>
+			<string>1Password</string>
 			<string>1Password 7</string>
 			<string>1Password Browser Helper</string>
-			<string>1Password</string>
 		</array>
 		<key>catalogs</key>
 		<array>
@@ -4824,6 +4824,8 @@ fi
 		<string>AgileBits Inc.</string>
 		<key>display_name</key>
 		<string>1Password</string>
+		<key>force_install_after_date</key>
+		<date>2024-08-30T16:20:00Z</date>
 		<key>installed_size</key>
 		<integer>679337</integer>
 		<key>installer_item_hash</key>
@@ -6649,6 +6651,8 @@ fi
 		<string>AgileBits Inc.</string>
 		<key>display_name</key>
 		<string>1Password</string>
+		<key>force_install_after_date</key>
+		<date>2024-08-30T16:05:00Z</date>
 		<key>installed_size</key>
 		<integer>679337</integer>
 		<key>installer_item_hash</key>
