@@ -67,6 +67,60 @@
 		<key>category</key>
 		<string>munkitools</string>
 		<key>description</key>
+		<string>Core command-line tools used by Managed Software Center.</string>
+		<key>developer</key>
+		<string>The Munki Project</string>
+		<key>display_name</key>
+		<string>Managed Software Center core tools</string>
+		<key>icon_name</key>
+		<string></string>
+		<key>installed_size</key>
+		<integer>1222</integer>
+		<key>installer_item_hash</key>
+		<string>a045bcd2b1fb585575357c3aece3198716202e7f767f6229ec671342cd47597d</string>
+		<key>installer_item_location</key>
+		<string>munkitools/munkitools_core-6.6.1.4696.pkg</string>
+		<key>installer_item_size</key>
+		<integer>261</integer>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>munkitools_core</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>1222</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.core</string>
+				<key>version</key>
+				<string>6.6.1.4696</string>
+			</dict>
+		</array>
+		<key>requires</key>
+		<array>
+			<string>munkitools_python</string>
+			<string>munkitools_launchd</string>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>6.6.1.4696</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>munkitools</string>
+		<key>description</key>
 		<string>Application usage statistics for Managed Software Center.</string>
 		<key>developer</key>
 		<string>The Munki Project</string>
@@ -323,6 +377,61 @@
 		<true/>
 		<key>version</key>
 		<string>3.10.10.4574</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>munkitools</string>
+		<key>description</key>
+		<string>Application usage statistics for Managed Software Center.</string>
+		<key>developer</key>
+		<string>The Munki Project</string>
+		<key>display_name</key>
+		<string>Managed Software Center app usage</string>
+		<key>icon_name</key>
+		<string></string>
+		<key>installed_size</key>
+		<integer>25</integer>
+		<key>installer_item_hash</key>
+		<string>cdbd233c31bcc16fa2117f0bfea1b8535f23ad9cab76c62cde0b76f01e551ded</string>
+		<key>installer_item_location</key>
+		<string>munkitools/munkitools_app_usage-6.6.1.4696.pkg</string>
+		<key>installer_item_size</key>
+		<integer>8</integer>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>munkitools_app_usage</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>25</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.app_usage</string>
+				<key>version</key>
+				<string>6.6.1.4696</string>
+			</dict>
+		</array>
+		<key>requires</key>
+		<array>
+			<string>munkitools_python</string>
+			<string>munkitools_core</string>
+			<string>munkitools_launchd</string>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>6.6.1.4696</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -1456,6 +1565,61 @@
 		<key>icon_name</key>
 		<string></string>
 		<key>installed_size</key>
+		<integer>28733</integer>
+		<key>installer_item_hash</key>
+		<string>72557b3c2c13818c08c4a6040f9be8e420b42f74d8e15fcfd02c36123e5a5cc2</string>
+		<key>installer_item_location</key>
+		<string>munkitools/munkitools_app-6.6.1.4695.pkg</string>
+		<key>installer_item_size</key>
+		<integer>10850</integer>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>munkitools</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>28733</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.app</string>
+				<key>version</key>
+				<string>6.6.1.4695</string>
+			</dict>
+		</array>
+		<key>requires</key>
+		<array>
+			<string>munkitools_python</string>
+			<string>munkitools_core</string>
+			<string>munkitools_launchd</string>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>6.6.1.4695</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>munkitools</string>
+		<key>description</key>
+		<string>Managed Software Center application.</string>
+		<key>developer</key>
+		<string>The Munki Project</string>
+		<key>display_name</key>
+		<string>Managed Software Center</string>
+		<key>icon_name</key>
+		<string></string>
+		<key>installed_size</key>
 		<integer>29038</integer>
 		<key>installer_item_hash</key>
 		<string>62ecf9e0691bad3665a464b40cd8993b7735908bfc17963541696f4e177efc1d</string>
@@ -1696,6 +1860,60 @@
 		</array>
 		<key>version</key>
 		<string>6.6.0.4686</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>munkitools</string>
+		<key>description</key>
+		<string>Command-line Managed Software Center admin tools.</string>
+		<key>developer</key>
+		<string>The Munki Project</string>
+		<key>display_name</key>
+		<string>Managed Software Center admin tools</string>
+		<key>icon_name</key>
+		<string></string>
+		<key>installed_size</key>
+		<integer>134</integer>
+		<key>installer_item_hash</key>
+		<string>35a331386f3b91db25bdfc06c790f0b6db63a7f8a008e84afe0ec1e0abcd1f17</string>
+		<key>installer_item_location</key>
+		<string>munkitools/munkitools_admin-6.6.1.4696.pkg</string>
+		<key>installer_item_size</key>
+		<integer>27</integer>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>munkitools_admin</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>134</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.admin</string>
+				<key>version</key>
+				<string>6.6.1.4696</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>update_for</key>
+		<array>
+			<string>munkitools_python</string>
+			<string>munkitools_core</string>
+		</array>
+		<key>version</key>
+		<string>6.6.1.4696</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -6697,6 +6915,90 @@ fi
 		<false/>
 		<key>blocking_applications</key>
 		<array>
+			<string>1Password 7</string>
+			<string>1Password Browser Helper</string>
+			<string>1Password</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Utilities</string>
+		<key>description</key>
+		<string>1Password is a password manager that goes beyond simple password storage by integrating directly with your web browser to automatically log you into websites, enter credit card information, fill registration forms, and easily generate strong passwords.</string>
+		<key>developer</key>
+		<string>AgileBits Inc.</string>
+		<key>display_name</key>
+		<string>1Password</string>
+		<key>installed_size</key>
+		<integer>704328</integer>
+		<key>installer_item_hash</key>
+		<string>d6f6c8818385f6c9e43407847d46b95f1df4ad5fa08fc2e9c492f5130f6bb2b1</string>
+		<key>installer_item_location</key>
+		<string>apps/1Password-8.10.44.pkg</string>
+		<key>installer_item_size</key>
+		<integer>275011</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.1password.1password</string>
+				<key>CFBundleName</key>
+				<string>1Password</string>
+				<key>CFBundleShortVersionString</key>
+				<string>8.10.44</string>
+				<key>CFBundleVersion</key>
+				<string>8.10.44.263110</string>
+				<key>minosversion</key>
+				<string>10.15</string>
+				<key>path</key>
+				<string>/Applications/1Password.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15</string>
+		<key>name</key>
+		<string>1Password</string>
+		<key>postinstall_script</key>
+		<string>#!/bin/bash
+
+LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console); 
+
+/usr/sbin/chown -R "$LOGGED_IN_USER":staff "/Applications/1Password.app"
+
+</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>704328</integer>
+				<key>packageid</key>
+				<string>com.1password.1password</string>
+				<key>version</key>
+				<string>8.10.44</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>8.10.44</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>blocking_applications</key>
+		<array>
 			<string>1Password</string>
 			<string>1Password 7</string>
 			<string>1Password Browser Helper</string>
@@ -7490,6 +7792,68 @@ fi
 		<true/>
 		<key>version</key>
 		<string>129.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Mozilla Firefox is a free and open source web browser.</string>
+		<key>display_name</key>
+		<string>Mozilla Firefox</string>
+		<key>installer_item_hash</key>
+		<string>c89ee9abcf7a3554959a7d2db0a5a748be3ae2c30d7c170b879de10e46127602</string>
+		<key>installer_item_location</key>
+		<string>apps/firefox/Firefox-130.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>145088</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>org.mozilla.firefox</string>
+				<key>CFBundleName</key>
+				<string>Firefox</string>
+				<key>CFBundleShortVersionString</key>
+				<string>130.0</string>
+				<key>CFBundleVersion</key>
+				<string>13024.8.29</string>
+				<key>minosversion</key>
+				<string>10.15.0</string>
+				<key>path</key>
+				<string>/Applications/Firefox.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Firefox.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15.0</string>
+		<key>name</key>
+		<string>Firefox</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>130.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -10105,6 +10469,51 @@ fi
 		<key>display_name</key>
 		<string>Microsoft Edge</string>
 		<key>installed_size</key>
+		<integer>874508</integer>
+		<key>installer_item_hash</key>
+		<string>b11b4ac5ce6b15efba621934908a8714145ce64965fc4f9853b26fe5b61d43d3</string>
+		<key>installer_item_location</key>
+		<string>apps/Microsoft/Microsoft_Edge-128.0.2739.63.pkg</string>
+		<key>installer_item_size</key>
+		<integer>385809</integer>
+		<key>minimum_os_version</key>
+		<string>10.10.0</string>
+		<key>name</key>
+		<string>MicrosoftEdge</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>874508</integer>
+				<key>packageid</key>
+				<string>com.microsoft.edgemac</string>
+				<key>version</key>
+				<string>128.0.2739.63</string>
+			</dict>
+		</array>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>128.0.2739.63</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Productivity</string>
+		<key>description</key>
+		<string>Microsoft Edge web browser</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Microsoft Edge</string>
+		<key>installed_size</key>
 		<integer>829309</integer>
 		<key>installer_item_hash</key>
 		<string>a34ad087155db844aabe47175eff2f5cafce9f13352570d3133f9e061c8c0966</string>
@@ -12375,6 +12784,72 @@ fi
 		<true/>
 		<key>version</key>
 		<string>122.1.63.162</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Browsers</string>
+		<key>description</key>
+		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
+		<key>developer</key>
+		<string>Brave Software Inc.</string>
+		<key>display_name</key>
+		<string>Brave Browser</string>
+		<key>installer_item_hash</key>
+		<string>da36f62ef423f3e847e69be351825658d4b837a64b56b77545291cea7a510640</string>
+		<key>installer_item_location</key>
+		<string>apps/Brave/Brave-128.1.69.162.dmg</string>
+		<key>installer_item_size</key>
+		<integer>202833</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.brave.Browser</string>
+				<key>CFBundleName</key>
+				<string>Brave</string>
+				<key>CFBundleShortVersionString</key>
+				<string>128.1.69.162</string>
+				<key>CFBundleVersion</key>
+				<string>169.162</string>
+				<key>minosversion</key>
+				<string>10.15</string>
+				<key>path</key>
+				<string>/Applications/Brave Browser.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Brave Browser.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15</string>
+		<key>name</key>
+		<string>Brave</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>128.1.69.162</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
