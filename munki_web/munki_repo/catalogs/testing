@@ -7083,6 +7083,68 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 	<dict>
 		<key>autoremove</key>
 		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string></string>
+		<key>display_name</key>
+		<string>Visual Studio Code</string>
+		<key>installer_item_hash</key>
+		<string>16f2aacd393a39e0a0e76f01982277ca6af14fa79dc14ef7bf9ab98beb2dfb14</string>
+		<key>installer_item_location</key>
+		<string>apps/Visual Studio Code-1.93.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>224538</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.microsoft.VSCode</string>
+				<key>CFBundleName</key>
+				<string>Code</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.93.0</string>
+				<key>CFBundleVersion</key>
+				<string>1.93.0</string>
+				<key>minosversion</key>
+				<string>10.15</string>
+				<key>path</key>
+				<string>/Applications/Visual Studio Code.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Visual Studio Code.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15</string>
+		<key>name</key>
+		<string>Visual Studio Code</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.93.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
 		<key>blocking_applications</key>
 		<array>
 			<string>1Password 7</string>
@@ -10514,6 +10576,51 @@ fi
 		<key>display_name</key>
 		<string>Microsoft Edge</string>
 		<key>installed_size</key>
+		<integer>874510</integer>
+		<key>installer_item_hash</key>
+		<string>cb4ddcbe57be83d1ec82d4ac76062a49bcd92e5bb27e04e8ff01dbda9045f449</string>
+		<key>installer_item_location</key>
+		<string>apps/Microsoft/Microsoft_Edge-128.0.2739.67.pkg</string>
+		<key>installer_item_size</key>
+		<integer>385818</integer>
+		<key>minimum_os_version</key>
+		<string>10.10.0</string>
+		<key>name</key>
+		<string>MicrosoftEdge</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>874510</integer>
+				<key>packageid</key>
+				<string>com.microsoft.edgemac</string>
+				<key>version</key>
+				<string>128.0.2739.67</string>
+			</dict>
+		</array>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>128.0.2739.67</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Productivity</string>
+		<key>description</key>
+		<string>Microsoft Edge web browser</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Microsoft Edge</string>
+		<key>installed_size</key>
 		<integer>829309</integer>
 		<key>installer_item_hash</key>
 		<string>a34ad087155db844aabe47175eff2f5cafce9f13352570d3133f9e061c8c0966</string>
@@ -13420,6 +13527,78 @@ fi
 		<key>display_name</key>
 		<string>RustRover</string>
 		<key>installer_item_hash</key>
+		<string>1f8e9a3d53eed9a7b292db588d1f75822c363172117c6e69a30fd369907c2bf9</string>
+		<key>installer_item_location</key>
+		<string>apps/jetbrains/RustRover-2024.2-aarch64-2024.2.dmg</string>
+		<key>installer_item_size</key>
+		<integer>973858</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.jetbrains.rustrover</string>
+				<key>CFBundleName</key>
+				<string>RustRover</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2024.2</string>
+				<key>CFBundleVersion</key>
+				<string>RR-242.21829.198</string>
+				<key>minosversion</key>
+				<string>10.13</string>
+				<key>path</key>
+				<string>/Applications/RustRover.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>RustRover.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>RustRover</string>
+		<key>supported_architectures</key>
+		<array>
+			<string>arm64</string>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2024.2</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Developer Tools</string>
+		<key>description</key>
+		<string>JetBrains RustRover: The Rust IDE for Productivity.</string>
+		<key>developer</key>
+		<string>JetBrains</string>
+		<key>display_name</key>
+		<string>RustRover</string>
+		<key>installer_item_hash</key>
 		<string>4d21eafc858e45e1085058609497ac389298da5e1b6b1de6a87e734c45e0a8a1</string>
 		<key>installer_item_location</key>
 		<string>apps/jetbrains/RustRover-2024.1.7-aarch64-2024.1.7.dmg</string>
@@ -14100,6 +14279,74 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<true/>
 		<key>version</key>
 		<string>1.81.2</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Supercharged productivity
+
+Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
+		<key>developer</key>
+		<string>Raycast Technologies Inc</string>
+		<key>display_name</key>
+		<string>Raycast</string>
+		<key>installer_item_hash</key>
+		<string>19194c4fe1e173bb77224b829da0c39d15365e4f976746c43a14ae5de2b8f9cf</string>
+		<key>installer_item_location</key>
+		<string>apps/Raycast/Raycast-1.82.3.dmg</string>
+		<key>installer_item_size</key>
+		<integer>75491</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.raycast.macos</string>
+				<key>CFBundleName</key>
+				<string>Raycast</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.82.3</string>
+				<key>CFBundleVersion</key>
+				<string>0</string>
+				<key>minosversion</key>
+				<string>12.0</string>
+				<key>path</key>
+				<string>/Applications/Raycast.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Raycast.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.0</string>
+		<key>name</key>
+		<string>Raycast</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.82.3</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -16734,6 +16981,70 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<true/>
 		<key>version</key>
 		<string>0.102.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>A new productivity-focused web browser.</string>
+		<key>developer</key>
+		<string>The Browser Company of New York</string>
+		<key>display_name</key>
+		<string>Arc</string>
+		<key>installer_item_hash</key>
+		<string>ee9b21905ff629eab7f9cad053c9c2f9ebcea6082905bacca70b5a9993c514ff</string>
+		<key>installer_item_location</key>
+		<string>apps/Arc/Arc-1.59.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>469216</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>company.thebrowser.Browser</string>
+				<key>CFBundleName</key>
+				<string>Arc</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.59.0</string>
+				<key>CFBundleVersion</key>
+				<string>53388</string>
+				<key>minosversion</key>
+				<string>13.0.0</string>
+				<key>path</key>
+				<string>/Applications/Arc.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Arc.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0.0</string>
+		<key>name</key>
+		<string>Arc</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.59.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
