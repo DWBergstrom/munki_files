@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2024-09-22T04:55:45Z</date>
+		<key>munki_version</key>
+		<string>6.6.1.4696</string>
+		<key>os_version</key>
+		<string>15.0</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>category</key>
+	<string>munkitools</string>
+	<key>description</key>
+	<string>Managed Software Center application.</string>
+	<key>developer</key>
+	<string>The Munki Project</string>
+	<key>display_name</key>
+	<string>Managed Software Center</string>
+	<key>icon_name</key>
+	<string></string>
+	<key>installed_size</key>
+	<integer>28733</integer>
+	<key>installer_item_hash</key>
+	<string>4cecf7847c7ebe0b6aedea91dac52a68d690a0037513fb5352fc8a8972ef3169</string>
+	<key>installer_item_location</key>
+	<string>munkitools/munkitools_app-6.6.1.4700.pkg</string>
+	<key>installer_item_size</key>
+	<integer>10850</integer>
+	<key>minimum_os_version</key>
+	<string>10.13</string>
+	<key>name</key>
+	<string>munkitools</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>28733</integer>
+			<key>packageid</key>
+			<string>com.googlecode.munki.app</string>
+			<key>version</key>
+			<string>6.6.1.4700</string>
+		</dict>
+	</array>
+	<key>requires</key>
+	<array>
+		<string>munkitools_python</string>
+		<string>munkitools_core</string>
+		<string>munkitools_launchd</string>
+	</array>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>6.6.1.4700</string>
+</dict>
+</plist>
