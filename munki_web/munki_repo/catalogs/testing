@@ -11198,6 +11198,72 @@ fi
 		<key>display_name</key>
 		<string>iMazing Profile Editor</string>
 		<key>installer_item_hash</key>
+		<string>f4e88fed4a6e165a61e1cabed679b1d890ebbd0228af7d2a79584561d8c1df23</string>
+		<key>installer_item_location</key>
+		<string>apps/imazingprofileeditor/iMazing_Profile_Editor_1.9.2.304501-1.9.2.dmg</string>
+		<key>installer_item_size</key>
+		<integer>19285</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.DigiDNA.iMazingProfileEditorMac</string>
+				<key>CFBundleName</key>
+				<string>iMazing Profile Editor</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.9.2</string>
+				<key>CFBundleVersion</key>
+				<string>304501</string>
+				<key>minosversion</key>
+				<string>10.13.6</string>
+				<key>path</key>
+				<string>/Applications/iMazing Profile Editor.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>iMazing Profile Editor.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.13.6</string>
+		<key>name</key>
+		<string>iMazingProfileEditor</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.9.2</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Utilities</string>
+		<key>description</key>
+		<string>iMazing Profile Editor lets users create, modify, and also digitally sign configuration profiles with a friendly user interface instead of manually coding them in XML.</string>
+		<key>developer</key>
+		<string>DigiDNA SARL</string>
+		<key>display_name</key>
+		<string>iMazing Profile Editor</string>
+		<key>installer_item_hash</key>
 		<string>ba1414257c21615e6b8c04a4d98d5ab963bfd1eb52b67f248991dbe79c1bf2ed</string>
 		<key>installer_item_location</key>
 		<string>apps/imazingprofileeditor/iMazing_Profile_Editor_1.9.1.304001-1.9.1.dmg</string>
