@@ -10,9 +10,10 @@
 	<array/>
 	<key>managed_installs</key>
 	<array>
-		<string>1Password</string>
-		<string>Arc</string>
+		<string>AutoPkgr</string>
+		<string>Brave</string>
 		<string>Raycast</string>
+		<string>Tailscale</string>
 		<string>Visual Studio Code</string>
 		<string>Warp</string>
 	</array>
@@ -44,12 +45,12 @@
 		<string>Raycast</string>
 		<string>Recipe Robot</string>
 		<string>RustRover</string>
+		<string>Tailscale</string>
 		<string>UTM</string>
 		<string>VirtualBox</string>
 		<string>Visual Studio Code</string>
 		<string>VLC</string>
 		<string>Warp</string>
-		<string>Tailscale</string>
 	</array>
 </dict>
 </plist>
