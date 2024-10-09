@@ -54,6 +54,8 @@
 		<string>munkitools</string>
 		<key>NAME</key>
 		<string>munkitools6</string>
+		<key>unattended_install</key>
+		<true/>
 	</dict>
 	<key>ParentRecipe</key>
 	<string>com.github.autopkg.munki.munkitools6-signed</string>

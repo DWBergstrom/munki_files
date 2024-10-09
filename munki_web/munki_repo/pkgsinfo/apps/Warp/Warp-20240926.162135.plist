@@ -7,11 +7,11 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2023-12-15T04:43:37Z</date>
+		<date>2024-10-09T21:04:06Z</date>
 		<key>munki_version</key>
-		<string>6.3.5.4619</string>
+		<string>6.6.2.4699</string>
 		<key>os_version</key>
-		<string>12.7.1</string>
+		<string>15.0</string>
 	</dict>
 	<key>autoremove</key>
 	<false/>
@@ -25,12 +25,14 @@
 	<string>Denver Technologies</string>
 	<key>display_name</key>
 	<string>Warp</string>
+	<key>force_munkiimport</key>
+	<true/>
 	<key>installer_item_hash</key>
-	<string>238e9775a475390ff9e6cab61c16ed8e5d51383d77fae5cc309b2ee19ecf2cd5</string>
+	<string>cdb9ce92577ee949d278c7ef73a3faa99e3be0a687731d50cf2af81c25acbfdf</string>
 	<key>installer_item_location</key>
-	<string>apps/Warp/Warp-20231215.022506.dmg</string>
+	<string>apps/Warp/Warp-20240926.162135.dmg</string>
 	<key>installer_item_size</key>
-	<integer>70053</integer>
+	<integer>75139</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
@@ -43,7 +45,7 @@
 			<key>CFBundleShortVersionString</key>
 			<string>0.1.0</string>
 			<key>CFBundleVersion</key>
-			<string>20231215.022506</string>
+			<string>20240926.162135</string>
 			<key>path</key>
 			<string>/Applications/Warp.app</string>
 			<key>type</key>
@@ -72,6 +74,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>20231215.022506</string>
+	<string>20240926.162135</string>
 </dict>
 </plist>

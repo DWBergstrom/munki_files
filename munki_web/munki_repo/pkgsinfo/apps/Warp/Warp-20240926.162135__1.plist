@@ -7,48 +7,47 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2023-05-10T02:41:00Z</date>
+		<date>2024-10-09T21:13:23Z</date>
 		<key>munki_version</key>
-		<string>6.3.1.4580</string>
+		<string>6.6.2.4699</string>
 		<key>os_version</key>
-		<string>12.6.5</string>
+		<string>15.0</string>
 	</dict>
 	<key>autoremove</key>
 	<false/>
 	<key>catalogs</key>
 	<array>
 		<string>testing</string>
-		<string>development</string>
 	</array>
 	<key>description</key>
-	<string>AutoPkgr is a free Mac app that makes it easy to install and configure AutoPkg.</string>
+	<string>Fast Terminal app based in Rust.</string>
 	<key>developer</key>
-	<string>Linde Group, Inc.</string>
+	<string>Denver Technologies</string>
 	<key>display_name</key>
-	<string>AutoPkgr</string>
+	<string>Warp</string>
+	<key>force_munkiimport</key>
+	<true/>
 	<key>installer_item_hash</key>
-	<string>0cb70cd08102124a5bfa6f02d2a38001ab4b0b659bdf968821e91abb776b0a6e</string>
+	<string>cdb9ce92577ee949d278c7ef73a3faa99e3be0a687731d50cf2af81c25acbfdf</string>
 	<key>installer_item_location</key>
-	<string>apps/AutoPkgr/AutoPkgr-1.6.dmg</string>
+	<string>apps/Warp/Warp-20240926.162135__1.dmg</string>
 	<key>installer_item_size</key>
-	<integer>4646</integer>
+	<integer>75139</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.lindegroup.AutoPkgr</string>
+			<string>dev.warp.Warp-Stable</string>
 			<key>CFBundleName</key>
-			<string>AutoPkgr</string>
+			<string>Warp</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.6</string>
+			<string>0.1.0</string>
 			<key>CFBundleVersion</key>
-			<string>1506</string>
-			<key>minosversion</key>
-			<string>10.13</string>
+			<string>20240926.162135</string>
 			<key>path</key>
-			<string>/Applications/AutoPkgr.app</string>
+			<string>/Applications/Warp.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -61,13 +60,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>AutoPkgr.app</string>
+			<string>Warp.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>10.13</string>
+	<string>10.4.0</string>
 	<key>name</key>
-	<string>AutoPkgr</string>
+	<string>Warp</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -75,6 +74,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.6</string>
+	<string>20240926.162135</string>
 </dict>
 </plist>

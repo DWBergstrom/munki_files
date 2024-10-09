@@ -24,6 +24,8 @@
 			<string>Warp</string>
 			<key>name</key>
 			<string>%NAME%</string>
+			<key>force_munkiimport</key>
+			<true/>
 			<key>unattended_install</key>
 			<true/>
 		</dict>
