@@ -935,6 +935,61 @@
 		<key>category</key>
 		<string>munkitools</string>
 		<key>description</key>
+		<string>Managed Software Center application.</string>
+		<key>developer</key>
+		<string>The Munki Project</string>
+		<key>display_name</key>
+		<string>Managed Software Center</string>
+		<key>icon_name</key>
+		<string></string>
+		<key>installed_size</key>
+		<integer>28734</integer>
+		<key>installer_item_hash</key>
+		<string>91ee0bdbd63c1b8b0589e3fd36ada2443a81796ecacaac196438ce744fc0f851</string>
+		<key>installer_item_location</key>
+		<string>munkitools/munkitools_app-6.6.3.4704.pkg</string>
+		<key>installer_item_size</key>
+		<integer>10850</integer>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>munkitools</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>28734</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.app</string>
+				<key>version</key>
+				<string>6.6.3.4704</string>
+			</dict>
+		</array>
+		<key>requires</key>
+		<array>
+			<string>munkitools_python</string>
+			<string>munkitools_core</string>
+			<string>munkitools_launchd</string>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>6.6.3.4704</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>munkitools</string>
+		<key>description</key>
 		<string>Embedded Python tools used by Managed Software Center.</string>
 		<key>developer</key>
 		<string>The Munki Project</string>
@@ -1287,6 +1342,60 @@
 		<true/>
 		<key>version</key>
 		<string>6.6.2.4699</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>munkitools</string>
+		<key>description</key>
+		<string>Command-line Managed Software Center admin tools.</string>
+		<key>developer</key>
+		<string>The Munki Project</string>
+		<key>display_name</key>
+		<string>Managed Software Center admin tools</string>
+		<key>icon_name</key>
+		<string></string>
+		<key>installed_size</key>
+		<integer>134</integer>
+		<key>installer_item_hash</key>
+		<string>bbb7020d15112ea9bd080390cd59ef928da87d5c68a2447031fbfb36a53e8ab6</string>
+		<key>installer_item_location</key>
+		<string>munkitools/munkitools_admin-6.6.3.4704.pkg</string>
+		<key>installer_item_size</key>
+		<integer>27</integer>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>munkitools_admin</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>134</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.admin</string>
+				<key>version</key>
+				<string>6.6.3.4704</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>update_for</key>
+		<array>
+			<string>munkitools_python</string>
+			<string>munkitools_core</string>
+		</array>
+		<key>version</key>
+		<string>6.6.3.4704</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -1662,6 +1771,60 @@
 		<true/>
 		<key>version</key>
 		<string>6.3.3.4593</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>munkitools</string>
+		<key>description</key>
+		<string>Core command-line tools used by Managed Software Center.</string>
+		<key>developer</key>
+		<string>The Munki Project</string>
+		<key>display_name</key>
+		<string>Managed Software Center core tools</string>
+		<key>icon_name</key>
+		<string></string>
+		<key>installed_size</key>
+		<integer>1223</integer>
+		<key>installer_item_hash</key>
+		<string>4eb62a9619bb64fc282b992cb7f8858148b4944e49f9c367fcf88b86ca61f130</string>
+		<key>installer_item_location</key>
+		<string>munkitools/munkitools_core-6.6.3.4704.pkg</string>
+		<key>installer_item_size</key>
+		<integer>261</integer>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>munkitools_core</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>1223</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.core</string>
+				<key>version</key>
+				<string>6.6.3.4704</string>
+			</dict>
+		</array>
+		<key>requires</key>
+		<array>
+			<string>munkitools_python</string>
+			<string>munkitools_launchd</string>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>6.6.3.4704</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -2083,6 +2246,61 @@
 		</array>
 		<key>version</key>
 		<string>6.6.2.4699</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>munkitools</string>
+		<key>description</key>
+		<string>Application usage statistics for Managed Software Center.</string>
+		<key>developer</key>
+		<string>The Munki Project</string>
+		<key>display_name</key>
+		<string>Managed Software Center app usage</string>
+		<key>icon_name</key>
+		<string></string>
+		<key>installed_size</key>
+		<integer>25</integer>
+		<key>installer_item_hash</key>
+		<string>f38a7a72bd705299c1a934318d5b0ae15e2b14ffb3065d30dd9400461a0cf7c5</string>
+		<key>installer_item_location</key>
+		<string>munkitools/munkitools_app_usage-6.6.3.4704.pkg</string>
+		<key>installer_item_size</key>
+		<integer>8</integer>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>munkitools_app_usage</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>25</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.app_usage</string>
+				<key>version</key>
+				<string>6.6.3.4704</string>
+			</dict>
+		</array>
+		<key>requires</key>
+		<array>
+			<string>munkitools_python</string>
+			<string>munkitools_core</string>
+			<string>munkitools_launchd</string>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>6.6.3.4704</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -4613,6 +4831,68 @@ fi
 	<dict>
 		<key>autoremove</key>
 		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string></string>
+		<key>display_name</key>
+		<string>Visual Studio Code</string>
+		<key>installer_item_hash</key>
+		<string>6343d7bd2ed37b55b0cc70fc0c31c7ce3af5a6305466797455ae72f5a47c4c7a</string>
+		<key>installer_item_location</key>
+		<string>apps/Visual Studio Code-1.94.1.dmg</string>
+		<key>installer_item_size</key>
+		<integer>223898</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.microsoft.VSCode</string>
+				<key>CFBundleName</key>
+				<string>Code</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.94.1</string>
+				<key>CFBundleVersion</key>
+				<string>1.94.1</string>
+				<key>minosversion</key>
+				<string>10.15</string>
+				<key>path</key>
+				<string>/Applications/Visual Studio Code.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Visual Studio Code.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15</string>
+		<key>name</key>
+		<string>Visual Studio Code</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.94.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
 		<key>blocking_applications</key>
 		<array>
 			<string>1Password 7</string>
@@ -5260,6 +5540,68 @@ fi
 		<true/>
 		<key>version</key>
 		<string>120.0.6099.109</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
+		<key>display_name</key>
+		<string>Google Chrome</string>
+		<key>installer_item_hash</key>
+		<string>d7e483cb0daa78f0ec7454ea7aa34872f7b37e5429890d6d3d7def0fed399e31</string>
+		<key>installer_item_location</key>
+		<string>apps/GoogleChrome-129.0.6668.101.dmg</string>
+		<key>installer_item_size</key>
+		<integer>210565</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.google.Chrome</string>
+				<key>CFBundleName</key>
+				<string>Chrome</string>
+				<key>CFBundleShortVersionString</key>
+				<string>129.0.6668.101</string>
+				<key>CFBundleVersion</key>
+				<string>6668.101</string>
+				<key>minosversion</key>
+				<string>11.0</string>
+				<key>path</key>
+				<string>/Applications/Google Chrome.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Google Chrome.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>11.0</string>
+		<key>name</key>
+		<string>GoogleChrome</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>129.0.6668.101</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
