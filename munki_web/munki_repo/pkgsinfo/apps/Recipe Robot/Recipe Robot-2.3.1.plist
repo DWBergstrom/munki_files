@@ -7,11 +7,11 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2023-11-23T04:41:15Z</date>
+		<date>2024-10-10T16:55:25Z</date>
 		<key>munki_version</key>
-		<string>6.3.1.4580</string>
+		<string>6.6.3.4704</string>
 		<key>os_version</key>
-		<string>12.6.5</string>
+		<string>15.0</string>
 	</dict>
 	<key>autoremove</key>
 	<false/>
