@@ -3340,6 +3340,68 @@ fi</string>
 		<array>
 			<string>testing</string>
 		</array>
+		<key>description</key>
+		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
+		<key>display_name</key>
+		<string>Google Chrome</string>
+		<key>installer_item_hash</key>
+		<string>49d95e21d5be2a40fe78004693d1ae960468fdc0d806567f762215bb5cc30d8b</string>
+		<key>installer_item_location</key>
+		<string>apps/GoogleChrome-130.0.6723.70.dmg</string>
+		<key>installer_item_size</key>
+		<integer>209030</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.google.Chrome</string>
+				<key>CFBundleName</key>
+				<string>Chrome</string>
+				<key>CFBundleShortVersionString</key>
+				<string>130.0.6723.70</string>
+				<key>CFBundleVersion</key>
+				<string>6723.70</string>
+				<key>minosversion</key>
+				<string>11.0</string>
+				<key>path</key>
+				<string>/Applications/Google Chrome.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Google Chrome.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>11.0</string>
+		<key>name</key>
+		<string>GoogleChrome</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>130.0.6723.70</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
 		<key>category</key>
 		<string>Software</string>
 		<key>description</key>
@@ -13902,6 +13964,51 @@ fi
 		<key>display_name</key>
 		<string>Microsoft Edge</string>
 		<key>installed_size</key>
+		<integer>874143</integer>
+		<key>installer_item_hash</key>
+		<string>589dfc20914892b6a026af57816a335ecf68b440a994a7da5b31ca2b6ce0e3b2</string>
+		<key>installer_item_location</key>
+		<string>apps/Microsoft/Microsoft_Edge-130.0.2849.52.pkg</string>
+		<key>installer_item_size</key>
+		<integer>386501</integer>
+		<key>minimum_os_version</key>
+		<string>10.10.0</string>
+		<key>name</key>
+		<string>MicrosoftEdge</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>874143</integer>
+				<key>packageid</key>
+				<string>com.microsoft.edgemac</string>
+				<key>version</key>
+				<string>130.0.2849.52</string>
+			</dict>
+		</array>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>130.0.2849.52</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Productivity</string>
+		<key>description</key>
+		<string>Microsoft Edge web browser</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Microsoft Edge</string>
+		<key>installed_size</key>
 		<integer>842172</integer>
 		<key>installer_item_hash</key>
 		<string>cb7b2c0166e04bbfd23a2e1b60d6ec782381104c76a5e0e2ae4520dcb3d3b563</string>
@@ -14598,6 +14705,70 @@ fi
 		<true/>
 		<key>version</key>
 		<string>2.4.2.32922</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string> </string>
+		<key>developer</key>
+		<string>JetBrains s.r.o.</string>
+		<key>display_name</key>
+		<string>JetBrains Toolbox</string>
+		<key>installer_item_hash</key>
+		<string>0a751b1572d88d1b65d2493e33e974ff09585d86d77170ebec9ea278f34d5264</string>
+		<key>installer_item_location</key>
+		<string>apps/JetBrains Toolbox/JetBrains Toolbox-mac-2.5.1.34629.dmg</string>
+		<key>installer_item_size</key>
+		<integer>77555</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.jetbrains.toolbox</string>
+				<key>CFBundleName</key>
+				<string>JetBrains Toolbox</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2.5.1.34629</string>
+				<key>CFBundleVersion</key>
+				<string>2.5.1.34629</string>
+				<key>minosversion</key>
+				<string>10.13.0</string>
+				<key>path</key>
+				<string>/Applications/JetBrains Toolbox.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>JetBrains Toolbox.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.13.0</string>
+		<key>name</key>
+		<string>JetBrains Toolbox</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2.5.1.34629</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
