@@ -19333,6 +19333,72 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<key>display_name</key>
 		<string>Tailscale</string>
 		<key>installer_item_hash</key>
+		<string>657f9e10094e5aa989bf5781e610bd4b107f2aac818c26e58fb1f935a461326b</string>
+		<key>installer_item_location</key>
+		<string>apps/tailscale/Tailscale-1.76.6.dmg</string>
+		<key>installer_item_size</key>
+		<integer>26485</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>io.tailscale.ipn.macsys</string>
+				<key>CFBundleName</key>
+				<string>Tailscale</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.76.6</string>
+				<key>CFBundleVersion</key>
+				<string>101.76.6</string>
+				<key>minosversion</key>
+				<string>11.0</string>
+				<key>path</key>
+				<string>/Applications/Tailscale.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Tailscale.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>11.0</string>
+		<key>name</key>
+		<string>Tailscale</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.76.6</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>VPN</string>
+		<key>description</key>
+		<string>Secure remote access to shared resources. Tailscale connects your team's devices and development environments for easy access to remote resources.</string>
+		<key>developer</key>
+		<string>Tailscale Inc.</string>
+		<key>display_name</key>
+		<string>Tailscale</string>
+		<key>installer_item_hash</key>
 		<string>f27a03aed316aad66268d55caf9045c5d3458e375c7283f67bcc392d2a8ee864</string>
 		<key>installer_item_location</key>
 		<string>apps/tailscale/Tailscale-1.76.0.dmg</string>
