@@ -21922,6 +21922,70 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<key>display_name</key>
 		<string>Arc</string>
 		<key>installer_item_hash</key>
+		<string>b6173ea29c35a6a640acf2e4e1d99865deb8adb132735cadaad02d1bce502916</string>
+		<key>installer_item_location</key>
+		<string>apps/Arc/Arc-1.67.2.dmg</string>
+		<key>installer_item_size</key>
+		<integer>431485</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>company.thebrowser.Browser</string>
+				<key>CFBundleName</key>
+				<string>Arc</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.67.2</string>
+				<key>CFBundleVersion</key>
+				<string>55679</string>
+				<key>minosversion</key>
+				<string>13.0.0</string>
+				<key>path</key>
+				<string>/Applications/Arc.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Arc.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0.0</string>
+		<key>name</key>
+		<string>Arc</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.67.2</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>A new productivity-focused web browser.</string>
+		<key>developer</key>
+		<string>The Browser Company of New York</string>
+		<key>display_name</key>
+		<string>Arc</string>
+		<key>installer_item_hash</key>
 		<string>cc4ed237f632c5c2a3e974181c31197da030a8b67d5b1d97c29b4f77d7f4c70d</string>
 		<key>installer_item_location</key>
 		<string>apps/Arc/Arc-1.51.0.dmg</string>
