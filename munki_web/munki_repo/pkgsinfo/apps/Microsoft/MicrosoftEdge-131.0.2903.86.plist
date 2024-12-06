@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2024-12-06T05:50:23Z</date>
+		<key>munki_version</key>
+		<string>6.6.3.4704</string>
+		<key>os_version</key>
+		<string>15.0.1</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>description</key>
+	<string>Microsoft Edge web browser</string>
+	<key>developer</key>
+	<string>Microsoft</string>
+	<key>display_name</key>
+	<string>Microsoft Edge</string>
+	<key>installed_size</key>
+	<integer>879449</integer>
+	<key>installer_item_hash</key>
+	<string>77dc0bf6d465815d3414a1b52d506323619c9debb12f9feb85ec4ad2c7e58585</string>
+	<key>installer_item_location</key>
+	<string>apps/Microsoft/Microsoft_Edge-131.0.2903.86.pkg</string>
+	<key>installer_item_size</key>
+	<integer>387078</integer>
+	<key>minimum_os_version</key>
+	<string>10.10.0</string>
+	<key>name</key>
+	<string>MicrosoftEdge</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>879449</integer>
+			<key>packageid</key>
+			<string>com.microsoft.edgemac</string>
+			<key>version</key>
+			<string>131.0.2903.86</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>131.0.2903.86</string>
+</dict>
+</plist>

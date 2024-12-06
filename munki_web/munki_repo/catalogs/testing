@@ -14895,6 +14895,51 @@ fi
 		<key>display_name</key>
 		<string>Microsoft Edge</string>
 		<key>installed_size</key>
+		<integer>879449</integer>
+		<key>installer_item_hash</key>
+		<string>77dc0bf6d465815d3414a1b52d506323619c9debb12f9feb85ec4ad2c7e58585</string>
+		<key>installer_item_location</key>
+		<string>apps/Microsoft/Microsoft_Edge-131.0.2903.86.pkg</string>
+		<key>installer_item_size</key>
+		<integer>387078</integer>
+		<key>minimum_os_version</key>
+		<string>10.10.0</string>
+		<key>name</key>
+		<string>MicrosoftEdge</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>879449</integer>
+				<key>packageid</key>
+				<string>com.microsoft.edgemac</string>
+				<key>version</key>
+				<string>131.0.2903.86</string>
+			</dict>
+		</array>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>131.0.2903.86</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Productivity</string>
+		<key>description</key>
+		<string>Microsoft Edge web browser</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Microsoft Edge</string>
+		<key>installed_size</key>
 		<integer>874092</integer>
 		<key>installer_item_hash</key>
 		<string>091c611cd1920e93cf6998309d54f35843d4217b1d3f548ab258692150a5cbe6</string>
@@ -20351,6 +20396,74 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<key>display_name</key>
 		<string>Raycast</string>
 		<key>installer_item_hash</key>
+		<string>b4cf23f681489f9800b2433b171bb8c4c461de946c9aba030cb906c9a89ef48d</string>
+		<key>installer_item_location</key>
+		<string>apps/Raycast/Raycast-1.87.4.dmg</string>
+		<key>installer_item_size</key>
+		<integer>82927</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.raycast.macos</string>
+				<key>CFBundleName</key>
+				<string>Raycast</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.87.4</string>
+				<key>CFBundleVersion</key>
+				<string>0</string>
+				<key>minosversion</key>
+				<string>12.0</string>
+				<key>path</key>
+				<string>/Applications/Raycast.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Raycast.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.0</string>
+		<key>name</key>
+		<string>Raycast</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.87.4</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Supercharged productivity
+
+Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
+		<key>developer</key>
+		<string>Raycast Technologies Inc</string>
+		<key>display_name</key>
+		<string>Raycast</string>
+		<key>installer_item_hash</key>
 		<string>bab77d62b7299dfd4005e61abcd6485fc8d9a041f6f29437518482137f2aecc0</string>
 		<key>installer_item_location</key>
 		<string>apps/Raycast/Raycast-1.85.1.dmg</string>
@@ -20798,6 +20911,72 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<true/>
 		<key>version</key>
 		<string>1.72.2</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>VPN</string>
+		<key>description</key>
+		<string>Secure remote access to shared resources. Tailscale connects your team's devices and development environments for easy access to remote resources.</string>
+		<key>developer</key>
+		<string>Tailscale Inc.</string>
+		<key>display_name</key>
+		<string>Tailscale</string>
+		<key>installer_item_hash</key>
+		<string>1d8ae379aa42ffcfc2c50cef9fddbea308ba8cb1c54318a897aeb51865d8d09a</string>
+		<key>installer_item_location</key>
+		<string>apps/tailscale/Tailscale-1.78.1.dmg</string>
+		<key>installer_item_size</key>
+		<integer>26645</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>io.tailscale.ipn.macsys</string>
+				<key>CFBundleName</key>
+				<string>Tailscale</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.78.1</string>
+				<key>CFBundleVersion</key>
+				<string>101.78.1</string>
+				<key>minosversion</key>
+				<string>11.0</string>
+				<key>path</key>
+				<string>/Applications/Tailscale.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Tailscale.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>11.0</string>
+		<key>name</key>
+		<string>Tailscale</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.78.1</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
