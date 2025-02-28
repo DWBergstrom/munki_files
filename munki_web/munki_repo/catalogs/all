@@ -17243,6 +17243,51 @@ fi
 		<key>display_name</key>
 		<string>Microsoft Edge</string>
 		<key>installed_size</key>
+		<integer>873352</integer>
+		<key>installer_item_hash</key>
+		<string>bfa719621205421945eca8891c7ef1901af753994f4522c3eb9354d6c18c23ed</string>
+		<key>installer_item_location</key>
+		<string>apps/Microsoft/Microsoft_Edge-133.0.3065.92.pkg</string>
+		<key>installer_item_size</key>
+		<integer>384639</integer>
+		<key>minimum_os_version</key>
+		<string>10.10.0</string>
+		<key>name</key>
+		<string>MicrosoftEdge</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>873352</integer>
+				<key>packageid</key>
+				<string>com.microsoft.edgemac</string>
+				<key>version</key>
+				<string>133.0.3065.92</string>
+			</dict>
+		</array>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>133.0.3065.92</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Productivity</string>
+		<key>description</key>
+		<string>Microsoft Edge web browser</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Microsoft Edge</string>
+		<key>installed_size</key>
 		<integer>874000</integer>
 		<key>installer_item_hash</key>
 		<string>67893bc929315ae6798d93ccce5386c81e8f5b544b14ba31c8ddcaea401f2ced</string>
@@ -18370,6 +18415,70 @@ fi
 		<true/>
 		<key>version</key>
 		<string>2.5.2.35332</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string> </string>
+		<key>developer</key>
+		<string>JetBrains s.r.o.</string>
+		<key>display_name</key>
+		<string>JetBrains Toolbox</string>
+		<key>installer_item_hash</key>
+		<string>cb4cd7404a98e658ff7b8e34751b7205f6b0f02c2aaa0ccedd48eb79bdfb67f2</string>
+		<key>installer_item_location</key>
+		<string>apps/JetBrains Toolbox/JetBrains Toolbox-mac-2.5.4.38621.dmg</string>
+		<key>installer_item_size</key>
+		<integer>77863</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.jetbrains.toolbox</string>
+				<key>CFBundleName</key>
+				<string>JetBrains Toolbox</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2.5.4.38621</string>
+				<key>CFBundleVersion</key>
+				<string>2.5.4.38621</string>
+				<key>minosversion</key>
+				<string>10.13.0</string>
+				<key>path</key>
+				<string>/Applications/JetBrains Toolbox.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>JetBrains Toolbox.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.13.0</string>
+		<key>name</key>
+		<string>JetBrains Toolbox</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2.5.4.38621</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -20842,6 +20951,78 @@ fi
 		<true/>
 		<key>version</key>
 		<string>2024.3</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Developer Tools</string>
+		<key>description</key>
+		<string>JetBrains DataSpell: Essential tools for data analysts.</string>
+		<key>developer</key>
+		<string>JetBrains</string>
+		<key>display_name</key>
+		<string>DataSpell</string>
+		<key>installer_item_hash</key>
+		<string>172a8641249784afe4f73359adb1419c2eb8b00bddfa4182bf691e44b3c4baa4</string>
+		<key>installer_item_location</key>
+		<string>apps/jetbrains/dataspell-2024.3.2-aarch64-2024.3.2.dmg</string>
+		<key>installer_item_size</key>
+		<integer>1132378</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.jetbrains.dataspell</string>
+				<key>CFBundleName</key>
+				<string>DataSpell</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2024.3.2</string>
+				<key>CFBundleVersion</key>
+				<string>DS-243.25659.44</string>
+				<key>minosversion</key>
+				<string>10.13</string>
+				<key>path</key>
+				<string>/Applications/DataSpell.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>DataSpell.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>DataSpell</string>
+		<key>supported_architectures</key>
+		<array>
+			<string>arm64</string>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2024.3.2</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -24700,6 +24881,70 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<key>force_munkiimport</key>
 		<true/>
 		<key>installer_item_hash</key>
+		<string>b3c481a120918268160743f46278077a0a95bf054e3dc630407a5d4dfcc31a51</string>
+		<key>installer_item_location</key>
+		<string>apps/Warp/Warp-0.2025.02.26.08.02.02.dmg</string>
+		<key>installer_item_size</key>
+		<integer>88141</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>dev.warp.Warp-Stable</string>
+				<key>CFBundleName</key>
+				<string>Warp</string>
+				<key>CFBundleShortVersionString</key>
+				<string>0.2025.02.26.08.02.02</string>
+				<key>CFBundleVersion</key>
+				<string>0.2025.02.26.08.02.02</string>
+				<key>path</key>
+				<string>/Applications/Warp.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Warp.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.4.0</string>
+		<key>name</key>
+		<string>Warp</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>0.2025.02.26.08.02.02</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Fast Terminal app based in Rust.</string>
+		<key>developer</key>
+		<string>Denver Technologies</string>
+		<key>display_name</key>
+		<string>Warp</string>
+		<key>force_munkiimport</key>
+		<true/>
+		<key>installer_item_hash</key>
 		<string>cdb9ce92577ee949d278c7ef73a3faa99e3be0a687731d50cf2af81c25acbfdf</string>
 		<key>installer_item_location</key>
 		<string>apps/Warp/Warp-20240926.162135.dmg</string>
@@ -26539,6 +26784,70 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<true/>
 		<key>version</key>
 		<string>1.58.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>A new productivity-focused web browser.</string>
+		<key>developer</key>
+		<string>The Browser Company of New York</string>
+		<key>display_name</key>
+		<string>Arc</string>
+		<key>installer_item_hash</key>
+		<string>cf14e4cc503b0033b7f0f6ef0a6f382a9a5f59b3af2b6d4a252674008c473fbc</string>
+		<key>installer_item_location</key>
+		<string>apps/Arc/Arc-1.83.1.dmg</string>
+		<key>installer_item_size</key>
+		<integer>400050</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>company.thebrowser.Browser</string>
+				<key>CFBundleName</key>
+				<string>Arc</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.83.1</string>
+				<key>CFBundleVersion</key>
+				<string>59303</string>
+				<key>minosversion</key>
+				<string>13.0.0</string>
+				<key>path</key>
+				<string>/Applications/Arc.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Arc.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0.0</string>
+		<key>name</key>
+		<string>Arc</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.83.1</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
