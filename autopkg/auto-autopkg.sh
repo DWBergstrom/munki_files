@@ -2,8 +2,17 @@
 
 # Verbose options
 if [ $# -gt 0 ]; then
-  AUTOPKG_CMD="/usr/local/bin/autopkg run ${1}"
+  if [ "$1" = "--rsync-only" ] || [ "$1" = "-r" ]; then
+    # Only run the rsync command
+    WEBSERVER_IP=$(/Applications/Tailscale.app/Contents/MacOS/Tailscale status | grep ubuntun20 | awk '{ print $1 }')
+    RSYNC_PATH="/Users/dwbergstrom/github/munki_files"
+    WEBSERVER_SYNC_PATH="/home/dwbergstrom/git/"
+    rsync -avz "${RSYNC_PATH}" "dwbergstrom@${WEBSERVER_IP}:${WEBSERVER_SYNC_PATH}"
+    exit 0
   else
+    AUTOPKG_CMD="/usr/local/bin/autopkg run ${1}"
+  fi
+else
   AUTOPKG_CMD="/usr/local/bin/autopkg run"
 fi
 
