@@ -16,12 +16,13 @@ if [ $# -gt 0 ]; then
     rsync -avz "${RSYNC_PATH}" "dwbergstrom@${WEBSERVER_IP}:${WEBSERVER_SYNC_PATH}"
     exit 0
   else
-    AUTOPKG_CMD="/usr/local/bin/autopkg run ${1}"
+    echo "running single override ${OVERRIDES_DIR}/${1}"
+    /usr/local/bin/autopkg run -v ${OVERRIDES_DIR}/${1}
     rsync -avz "${RSYNC_PATH}" "dwbergstrom@${WEBSERVER_IP}:${WEBSERVER_SYNC_PATH}"
     exit 0
   fi
 else
-  AUTOPKG_CMD="/usr/local/bin/autopkg run"
+  AUTOPKG_CMD="/usr/local/bin/autopkg run -v"
 fi
 
 COMMIT_DATE=$(date "+%Y-%m-%d %H:%M:%S")
