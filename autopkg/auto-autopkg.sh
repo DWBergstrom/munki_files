@@ -1,23 +1,5 @@
 #!/bin/bash
 
-# Verbose options
-if [ $# -gt 0 ]; then
-  if [ "$1" = "--rsync-only" ] || [ "$1" = "-r" ]; then
-    # Only run the rsync command
-    WEBSERVER_IP=$(/Applications/Tailscale.app/Contents/MacOS/Tailscale status | grep ubuntun20 | awk '{ print $1 }')
-    RSYNC_PATH="/Users/dwbergstrom/github/munki_files"
-    WEBSERVER_SYNC_PATH="/home/dwbergstrom/git/"
-    rsync -avz "${RSYNC_PATH}" "dwbergstrom@${WEBSERVER_IP}:${WEBSERVER_SYNC_PATH}"
-    exit 0
-  else
-    AUTOPKG_CMD="/usr/local/bin/autopkg run ${1}"
-  fi
-else
-  AUTOPKG_CMD="/usr/local/bin/autopkg run"
-fi
-
-COMMIT_DATE=$(date "+%Y-%m-%d %H:%M:%S")
-
 # Define the directory containing the overrides
 OVERRIDES_DIR="/Users/dwbergstrom/github/munki_files/autopkg/overrides"
 
@@ -26,6 +8,23 @@ MUNKI_REPO_PATH="/Users/dwbergstrom/github/munki_files/munki_web/munki_repo"
 RSYNC_PATH="/Users/dwbergstrom/github/munki_files"
 WEBSERVER_IP=$(/Applications/Tailscale.app/Contents/MacOS/Tailscale status | grep ubuntun20 | awk '{ print $1 }')
 WEBSERVER_SYNC_PATH="/home/dwbergstrom/git/"
+
+# Verbose options
+if [ $# -gt 0 ]; then
+  if [ "$1" = "--rsync-only" ] || [ "$1" = "-r" ]; then
+    # Only run the rsync command
+    rsync -avz "${RSYNC_PATH}" "dwbergstrom@${WEBSERVER_IP}:${WEBSERVER_SYNC_PATH}"
+    exit 0
+  else
+    AUTOPKG_CMD="/usr/local/bin/autopkg run ${1}"
+    rsync -avz "${RSYNC_PATH}" "dwbergstrom@${WEBSERVER_IP}:${WEBSERVER_SYNC_PATH}"
+    exit 0
+  fi
+else
+  AUTOPKG_CMD="/usr/local/bin/autopkg run"
+fi
+
+COMMIT_DATE=$(date "+%Y-%m-%d %H:%M:%S")
 
 # Clean up old apps
 # rm -Rf "${MUNKI_REPO_PATH}/pkgs/"*
