@@ -12103,6 +12103,68 @@ fi
 		<key>display_name</key>
 		<string>Mozilla Firefox</string>
 		<key>installer_item_hash</key>
+		<string>69a917a6cdfa7c5ac44d8df9c03329faf46cb8b4f969826f2b33c1fd4cb43f08</string>
+		<key>installer_item_location</key>
+		<string>apps/firefox/Firefox-136.0.2.dmg</string>
+		<key>installer_item_size</key>
+		<integer>128052</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>org.mozilla.firefox</string>
+				<key>CFBundleName</key>
+				<string>Firefox</string>
+				<key>CFBundleShortVersionString</key>
+				<string>136.0.2</string>
+				<key>CFBundleVersion</key>
+				<string>13625.3.17</string>
+				<key>minosversion</key>
+				<string>10.15.0</string>
+				<key>path</key>
+				<string>/Applications/Firefox.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Firefox.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15.0</string>
+		<key>name</key>
+		<string>Firefox</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>136.0.2</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Mozilla Firefox is a free and open source web browser.</string>
+		<key>display_name</key>
+		<string>Mozilla Firefox</string>
+		<key>installer_item_hash</key>
 		<string>c89ee9abcf7a3554959a7d2db0a5a748be3ae2c30d7c170b879de10e46127602</string>
 		<key>installer_item_location</key>
 		<string>apps/firefox/Firefox-130.0.dmg</string>
@@ -15504,6 +15566,68 @@ fi
 		<key>display_name</key>
 		<string>Insomnia </string>
 		<key>installer_item_hash</key>
+		<string>94f12179917d3fe059ff0afd5a04ff44fd7634afa403c37a61349c32b1eabb4b</string>
+		<key>installer_item_location</key>
+		<string>apps/Insomnia/Insomnia.Core-11.0.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>230913</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.insomnia.app</string>
+				<key>CFBundleName</key>
+				<string>Insomnia</string>
+				<key>CFBundleShortVersionString</key>
+				<string>11.0.0</string>
+				<key>CFBundleVersion</key>
+				<string>11.0.0</string>
+				<key>minosversion</key>
+				<string>11.0</string>
+				<key>path</key>
+				<string>/Applications/Insomnia.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Insomnia.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>11.0</string>
+		<key>name</key>
+		<string>Insomnia</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>11.0.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Explore REST and GraphQL APIs.</string>
+		<key>display_name</key>
+		<string>Insomnia </string>
+		<key>installer_item_hash</key>
 		<string>df094a391b2424f1713f2d9401136b6cb52b7b0c5128f636b107d35fc0d9076f</string>
 		<key>installer_item_location</key>
 		<string>apps/Insomnia/Insomnia.Core-10.3.0.dmg</string>
@@ -16583,6 +16707,51 @@ fi
 		<true/>
 		<key>version</key>
 		<string>130.0.2849.46</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Productivity</string>
+		<key>description</key>
+		<string>Microsoft Edge web browser</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Microsoft Edge</string>
+		<key>installed_size</key>
+		<integer>875374</integer>
+		<key>installer_item_hash</key>
+		<string>a768a8708129ba776ef28a1c4d86208398d2eaf898028d89f5dfde465fcdf07e</string>
+		<key>installer_item_location</key>
+		<string>apps/Microsoft/Microsoft_Edge-134.0.3124.77.pkg</string>
+		<key>installer_item_size</key>
+		<integer>385389</integer>
+		<key>minimum_os_version</key>
+		<string>10.10.0</string>
+		<key>name</key>
+		<string>MicrosoftEdge</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>875374</integer>
+				<key>packageid</key>
+				<string>com.microsoft.edgemac</string>
+				<key>version</key>
+				<string>134.0.3124.77</string>
+			</dict>
+		</array>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>134.0.3124.77</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
