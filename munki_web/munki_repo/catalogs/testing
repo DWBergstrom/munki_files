@@ -17974,6 +17974,51 @@ fi
 		<key>display_name</key>
 		<string>Microsoft Edge</string>
 		<key>installed_size</key>
+		<integer>875462</integer>
+		<key>installer_item_hash</key>
+		<string>9a8515a6069e34169a4502f2240ba4ed24461b85e7457b4a0f3e2cf7175fafd4</string>
+		<key>installer_item_location</key>
+		<string>apps/Microsoft/Microsoft_Edge-134.0.3124.85.pkg</string>
+		<key>installer_item_size</key>
+		<integer>385416</integer>
+		<key>minimum_os_version</key>
+		<string>10.10.0</string>
+		<key>name</key>
+		<string>MicrosoftEdge</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>875462</integer>
+				<key>packageid</key>
+				<string>com.microsoft.edgemac</string>
+				<key>version</key>
+				<string>134.0.3124.85</string>
+			</dict>
+		</array>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>134.0.3124.85</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Productivity</string>
+		<key>description</key>
+		<string>Microsoft Edge web browser</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Microsoft Edge</string>
+		<key>installed_size</key>
 		<integer>862020</integer>
 		<key>installer_item_hash</key>
 		<string>f2e7015d4f6efa444fe77b085a3d77d60c5e69d3beb888104d7f7c354d06d291</string>
