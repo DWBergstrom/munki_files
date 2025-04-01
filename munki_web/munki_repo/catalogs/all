@@ -14519,6 +14519,70 @@ fi
 		<key>display_name</key>
 		<string>Docker</string>
 		<key>installer_item_hash</key>
+		<string>b715a5ba3a45c5ed0ade36f785f6c20a569dea4b9065cc4ee65ce9e2d7c325e6</string>
+		<key>installer_item_location</key>
+		<string>apps/Docker/Docker-amd64-4.40.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>541909</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.docker.docker</string>
+				<key>CFBundleName</key>
+				<string>Docker</string>
+				<key>CFBundleShortVersionString</key>
+				<string>4.40.0</string>
+				<key>CFBundleVersion</key>
+				<string>187762</string>
+				<key>minosversion</key>
+				<string>11.0</string>
+				<key>path</key>
+				<string>/Applications/Docker.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Docker.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>11.0</string>
+		<key>name</key>
+		<string>Docker</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>4.40.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Automates deployment of containerized applications.</string>
+		<key>developer</key>
+		<string>Docker</string>
+		<key>display_name</key>
+		<string>Docker</string>
+		<key>installer_item_hash</key>
 		<string>3b6ea4803d29b947b1553d5d91e26815a76e099bcea0f3c55d27974868652127</string>
 		<key>installer_item_location</key>
 		<string>apps/Docker/Docker-amd64-4.29.0.dmg</string>
@@ -25471,6 +25535,74 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<true/>
 		<key>version</key>
 		<string>1.87.2</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Supercharged productivity
+
+Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
+		<key>developer</key>
+		<string>Raycast Technologies Inc</string>
+		<key>display_name</key>
+		<string>Raycast</string>
+		<key>installer_item_hash</key>
+		<string>c811e93bb7f3e87ad803e942109327480711cebbd3d4dea13cab5c3bf67b7bca</string>
+		<key>installer_item_location</key>
+		<string>apps/Raycast/Raycast-1.94.3.dmg</string>
+		<key>installer_item_size</key>
+		<integer>87892</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.raycast.macos</string>
+				<key>CFBundleName</key>
+				<string>Raycast</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.94.3</string>
+				<key>CFBundleVersion</key>
+				<string>0</string>
+				<key>minosversion</key>
+				<string>12.0</string>
+				<key>path</key>
+				<string>/Applications/Raycast.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Raycast.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.0</string>
+		<key>name</key>
+		<string>Raycast</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.94.3</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
