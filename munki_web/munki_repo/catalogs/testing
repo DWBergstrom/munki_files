@@ -9945,6 +9945,68 @@ fi
 	<dict>
 		<key>autoremove</key>
 		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string></string>
+		<key>display_name</key>
+		<string>Visual Studio Code</string>
+		<key>installer_item_hash</key>
+		<string>0de1663846003bae3b3cec3a858185c8b907143fd26105077abb461edbe998cd</string>
+		<key>installer_item_location</key>
+		<string>apps/Visual Studio Code-1.99.2.dmg</string>
+		<key>installer_item_size</key>
+		<integer>230974</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.microsoft.VSCode</string>
+				<key>CFBundleName</key>
+				<string>Code</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.99.2</string>
+				<key>CFBundleVersion</key>
+				<string>1.99.2</string>
+				<key>minosversion</key>
+				<string>11.0</string>
+				<key>path</key>
+				<string>/Applications/Visual Studio Code.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Visual Studio Code.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>11.0</string>
+		<key>name</key>
+		<string>Visual Studio Code</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.99.2</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
 		<key>blocking_applications</key>
 		<array>
 			<string>1Password 7</string>
@@ -10556,6 +10618,72 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<true/>
 		<key>version</key>
 		<string>128.0.6613.85</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Utilities</string>
+		<key>description</key>
+		<string>iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with OS 10.5 (Leopard) or newer. Its focus is on performance, internationalization, and supporting innovative features that make your life better.</string>
+		<key>developer</key>
+		<string>George Nachman</string>
+		<key>display_name</key>
+		<string>iTerm2</string>
+		<key>installer_item_hash</key>
+		<string>7a8929763eaa6f85df7c5c4aa3d5721c11abecc82261507584469d8c41cdb904</string>
+		<key>installer_item_location</key>
+		<string>apps/iTerm2-3.5.13.dmg</string>
+		<key>installer_item_size</key>
+		<integer>32027</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.googlecode.iterm2</string>
+				<key>CFBundleName</key>
+				<string>iTerm2</string>
+				<key>CFBundleShortVersionString</key>
+				<string>3.5.13</string>
+				<key>CFBundleVersion</key>
+				<string>3.5.13</string>
+				<key>minosversion</key>
+				<string>10.15</string>
+				<key>path</key>
+				<string>/Applications/iTerm.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>iTerm.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15</string>
+		<key>name</key>
+		<string>iTerm2</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>3.5.13</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -27515,6 +27643,70 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<key>force_munkiimport</key>
 		<true/>
 		<key>installer_item_hash</key>
+		<string>3e7c7cf6d16b8554b6b719f8610726f8f4049234220d12942ac977bb3f79bcaf</string>
+		<key>installer_item_location</key>
+		<string>apps/Warp/Warp-0.2025.04.09.08.11.02.dmg</string>
+		<key>installer_item_size</key>
+		<integer>93730</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>dev.warp.Warp-Stable</string>
+				<key>CFBundleName</key>
+				<string>Warp</string>
+				<key>CFBundleShortVersionString</key>
+				<string>0.2025.04.09.08.11.02</string>
+				<key>CFBundleVersion</key>
+				<string>0.2025.04.09.08.11.02</string>
+				<key>path</key>
+				<string>/Applications/Warp.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Warp.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.4.0</string>
+		<key>name</key>
+		<string>Warp</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>0.2025.04.09.08.11.02</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Fast Terminal app based in Rust.</string>
+		<key>developer</key>
+		<string>Denver Technologies</string>
+		<key>display_name</key>
+		<string>Warp</string>
+		<key>force_munkiimport</key>
+		<true/>
+		<key>installer_item_hash</key>
 		<string>cdb9ce92577ee949d278c7ef73a3faa99e3be0a687731d50cf2af81c25acbfdf</string>
 		<key>installer_item_location</key>
 		<string>apps/Warp/Warp-20240926.162135__1.dmg</string>
@@ -30570,6 +30762,70 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<true/>
 		<key>version</key>
 		<string>1.83.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>A new productivity-focused web browser.</string>
+		<key>developer</key>
+		<string>The Browser Company of New York</string>
+		<key>display_name</key>
+		<string>Arc</string>
+		<key>installer_item_hash</key>
+		<string>5d73ed359e0f65c78e5517427181ecdb649644f5245cd075e40ded1917587d90</string>
+		<key>installer_item_location</key>
+		<string>apps/Arc/Arc-1.90.1.dmg</string>
+		<key>installer_item_size</key>
+		<integer>399509</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>company.thebrowser.Browser</string>
+				<key>CFBundleName</key>
+				<string>Arc</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.90.1</string>
+				<key>CFBundleVersion</key>
+				<string>61364</string>
+				<key>minosversion</key>
+				<string>13.0.0</string>
+				<key>path</key>
+				<string>/Applications/Arc.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Arc.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0.0</string>
+		<key>name</key>
+		<string>Arc</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.90.1</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
