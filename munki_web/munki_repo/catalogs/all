@@ -4295,6 +4295,68 @@ fi
 		<array>
 			<string>testing</string>
 		</array>
+		<key>description</key>
+		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
+		<key>display_name</key>
+		<string>Google Chrome</string>
+		<key>installer_item_hash</key>
+		<string>c27ebe4bd439940d1b3428ea888fab634e760f113b2acd930d665dbb75eee421</string>
+		<key>installer_item_location</key>
+		<string>apps/GoogleChrome-135.0.7049.96.dmg</string>
+		<key>installer_item_size</key>
+		<integer>218242</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.google.Chrome</string>
+				<key>CFBundleName</key>
+				<string>Chrome</string>
+				<key>CFBundleShortVersionString</key>
+				<string>135.0.7049.96</string>
+				<key>CFBundleVersion</key>
+				<string>7049.96</string>
+				<key>minosversion</key>
+				<string>11.0</string>
+				<key>path</key>
+				<string>/Applications/Google Chrome.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Google Chrome.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>11.0</string>
+		<key>name</key>
+		<string>GoogleChrome</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>135.0.7049.96</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
 		<key>category</key>
 		<string>Software</string>
 		<key>description</key>
@@ -10582,6 +10644,80 @@ fi
 		<array>
 			<string>testing</string>
 		</array>
+		<key>category</key>
+		<string>Software</string>
+		<key>description</key>
+		<string>Oracle VM VirtualBox is a free and open-source hypervisor for x86 computers currently being developed by Oracle Corporation.</string>
+		<key>developer</key>
+		<string>Oracle Corporation</string>
+		<key>display_name</key>
+		<string>VirtualBox</string>
+		<key>installed_size</key>
+		<integer>288680</integer>
+		<key>installer_item_hash</key>
+		<string>a01b8ca7dd30f23c3527a68347b923bade2171ad8ab5b3e8e7ae008876a33505</string>
+		<key>installer_item_location</key>
+		<string>apps/VirtualBox-7.1.8.dmg</string>
+		<key>installer_item_size</key>
+		<integer>153892</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>org.virtualbox.app.VirtualBox</string>
+				<key>CFBundleName</key>
+				<string>VirtualBox</string>
+				<key>CFBundleShortVersionString</key>
+				<string>7.1.8</string>
+				<key>CFBundleVersion</key>
+				<string>7.1.8</string>
+				<key>path</key>
+				<string>/Applications/VirtualBox.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.5.0</string>
+		<key>name</key>
+		<string>VirtualBox</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>288673</integer>
+				<key>packageid</key>
+				<string>org.virtualbox.pkg.virtualbox</string>
+				<key>version</key>
+				<string>7.1.8</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>7</integer>
+				<key>packageid</key>
+				<string>org.virtualbox.pkg.virtualboxcli</string>
+				<key>version</key>
+				<string>7.1.8</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>7.1.8</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
 		<key>description</key>
 		<string></string>
 		<key>display_name</key>
@@ -12642,6 +12778,68 @@ fi
 		<true/>
 		<key>version</key>
 		<string>117.0.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Mozilla Firefox is a free and open source web browser.</string>
+		<key>display_name</key>
+		<string>Mozilla Firefox</string>
+		<key>installer_item_hash</key>
+		<string>0338912d47bdcb9ea2c09bcf31b7e68a4ded1a083b60c129781534d535601ed5</string>
+		<key>installer_item_location</key>
+		<string>apps/firefox/Firefox-137.0.2.dmg</string>
+		<key>installer_item_size</key>
+		<integer>128360</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>org.mozilla.firefox</string>
+				<key>CFBundleName</key>
+				<string>Firefox</string>
+				<key>CFBundleShortVersionString</key>
+				<string>137.0.2</string>
+				<key>CFBundleVersion</key>
+				<string>13725.4.14</string>
+				<key>minosversion</key>
+				<string>10.15.0</string>
+				<key>path</key>
+				<string>/Applications/Firefox.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Firefox.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15.0</string>
+		<key>name</key>
+		<string>Firefox</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>137.0.2</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
