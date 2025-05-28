@@ -28,7 +28,7 @@ fi
 COMMIT_DATE=$(date "+%Y-%m-%d %H:%M:%S")
 
 # Clean up old apps
-# rm -Rf "${MUNKI_REPO_PATH}/pkgs/"*
+repoclean -a $MUNKI_REPO_PATH
 
 # Run autopkg for each override in the directory
 for override in "$OVERRIDES_DIR"/*; do
