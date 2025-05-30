@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-05-09T04:48:22Z</date>
+		<date>2025-05-30T19:54:53Z</date>
 		<key>munki_version</key>
 		<string>6.6.3.4704</string>
 		<key>os_version</key>
@@ -28,13 +28,13 @@
 	<key>display_name</key>
 	<string>Microsoft Edge</string>
 	<key>installed_size</key>
-	<integer>874128</integer>
+	<integer>894372</integer>
 	<key>installer_item_hash</key>
-	<string>483324afe4db695c9497822e3e220065379d92077b8f29abb1e8d8f6d045909c</string>
+	<string>08d29e9b89d2b2789bab08c70530226a7bd700835a35b5fb2f458a06d057765d</string>
 	<key>installer_item_location</key>
-	<string>apps/Microsoft/Microsoft_Edge-136.0.3240.64.pkg</string>
+	<string>apps/Microsoft/Microsoft_Edge-137.0.3296.52.pkg</string>
 	<key>installer_item_size</key>
-	<integer>377767</integer>
+	<integer>387767</integer>
 	<key>minimum_os_version</key>
 	<string>10.10.0</string>
 	<key>name</key>
@@ -43,11 +43,11 @@
 	<array>
 		<dict>
 			<key>installed_size</key>
-			<integer>874128</integer>
+			<integer>894372</integer>
 			<key>packageid</key>
 			<string>com.microsoft.edgemac</string>
 			<key>version</key>
-			<string>136.0.3240.64</string>
+			<string>137.0.3296.52</string>
 		</dict>
 	</array>
 	<key>uninstall_method</key>
@@ -55,6 +55,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>136.0.3240.64</string>
+	<string>137.0.3296.52</string>
 </dict>
 </plist>

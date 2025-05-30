@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-05-17T04:51:53Z</date>
+		<date>2025-05-30T19:55:02Z</date>
 		<key>munki_version</key>
 		<string>6.6.3.4704</string>
 		<key>os_version</key>
@@ -20,34 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Fast Terminal app based in Rust.</string>
+	<string>A kick ass tool for creating AutoPkg recipes.</string>
 	<key>developer</key>
-	<string>Denver Technologies</string>
+	<string>Elliot Jordan</string>
 	<key>display_name</key>
-	<string>Warp</string>
-	<key>force_munkiimport</key>
-	<true/>
+	<string>Recipe Robot</string>
 	<key>installer_item_hash</key>
-	<string>0313d435d65bbdce93e2c1454e4427380836eaf9b37fcea86866edcdaa726c57</string>
+	<string>1623d259c149c8c572cdf9983a484bc69fac9e2941561ddc208b1d50663752ab</string>
 	<key>installer_item_location</key>
-	<string>apps/Warp/Warp-0.2025.05.14.08.11.03.dmg</string>
+	<string>apps/Recipe Robot/Recipe Robot-2.3.2.dmg</string>
 	<key>installer_item_size</key>
-	<integer>100138</integer>
+	<integer>4209</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>dev.warp.Warp-Stable</string>
+			<string>com.elliotjordan.recipe-robot</string>
 			<key>CFBundleName</key>
-			<string>Warp</string>
+			<string>Recipe Robot</string>
 			<key>CFBundleShortVersionString</key>
-			<string>0.2025.05.14.08.11.03</string>
+			<string>2.3.2</string>
 			<key>CFBundleVersion</key>
-			<string>0.2025.05.14.08.11.03</string>
+			<string>1407</string>
+			<key>minosversion</key>
+			<string>11.0</string>
 			<key>path</key>
-			<string>/Applications/Warp.app</string>
+			<string>/Applications/Recipe Robot.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,13 +60,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Warp.app</string>
+			<string>Recipe Robot.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>10.4.0</string>
+	<string>11.0</string>
 	<key>name</key>
-	<string>Warp</string>
+	<string>Recipe Robot</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -74,6 +74,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>0.2025.05.14.08.11.03</string>
+	<string>2.3.2</string>
 </dict>
 </plist>
