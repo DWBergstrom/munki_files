@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-05-16T04:46:18Z</date>
+		<date>2025-06-06T16:35:46Z</date>
 		<key>munki_version</key>
 		<string>6.6.3.4704</string>
 		<key>os_version</key>
@@ -26,11 +26,11 @@
 	<key>display_name</key>
 	<string>Arc</string>
 	<key>installer_item_hash</key>
-	<string>b83c0d02ff69819858bf45482ee8ed23531a307f1d27ccbf79116ee10b4fb135</string>
+	<string>c6e520df8f9dbc138680f89f3cefe53e9c60329beaa351a44bec527466463b33</string>
 	<key>installer_item_location</key>
-	<string>apps/Arc/Arc-1.95.0.dmg</string>
+	<string>apps/Arc/Arc-1.97.1.dmg</string>
 	<key>installer_item_size</key>
-	<integer>401262</integer>
+	<integer>401230</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
@@ -41,9 +41,9 @@
 			<key>CFBundleName</key>
 			<string>Arc</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.95.0</string>
+			<string>1.97.1</string>
 			<key>CFBundleVersion</key>
-			<string>62781</string>
+			<string>63934</string>
 			<key>minosversion</key>
 			<string>13.0.0</string>
 			<key>path</key>
@@ -74,6 +74,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.95.0</string>
+	<string>1.97.1</string>
 </dict>
 </plist>

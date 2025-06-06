@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-05-17T04:46:06Z</date>
+		<date>2025-06-06T16:44:13Z</date>
 		<key>munki_version</key>
 		<string>6.6.3.4704</string>
 		<key>os_version</key>
@@ -20,34 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>A new productivity-focused web browser.</string>
+	<string>Fast Terminal app based in Rust.</string>
 	<key>developer</key>
-	<string>The Browser Company of New York</string>
+	<string>Denver Technologies</string>
 	<key>display_name</key>
-	<string>Arc</string>
+	<string>Warp</string>
+	<key>force_munkiimport</key>
+	<true/>
 	<key>installer_item_hash</key>
-	<string>69a4f2a2ea90c8d28650fc6911c75cd2e166a208b5c14bbe2e9afee47f260f30</string>
+	<string>6ff596309bc90a766b9afc310d602f1bc9057fec4ee5ea7b7b3c05a13fb4a39d</string>
 	<key>installer_item_location</key>
-	<string>apps/Arc/Arc-1.95.0__1.dmg</string>
+	<string>apps/Warp/Warp-0.2025.06.04.08.11.01.dmg</string>
 	<key>installer_item_size</key>
-	<integer>401196</integer>
+	<integer>100956</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>company.thebrowser.Browser</string>
+			<string>dev.warp.Warp-Stable</string>
 			<key>CFBundleName</key>
-			<string>Arc</string>
+			<string>Warp</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.95.0</string>
+			<string>0.2025.06.04.08.11.01</string>
 			<key>CFBundleVersion</key>
-			<string>62781</string>
-			<key>minosversion</key>
-			<string>13.0.0</string>
+			<string>0.2025.06.04.08.11.01</string>
 			<key>path</key>
-			<string>/Applications/Arc.app</string>
+			<string>/Applications/Warp.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,13 +60,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Arc.app</string>
+			<string>Warp.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>13.0.0</string>
+	<string>10.4.0</string>
 	<key>name</key>
-	<string>Arc</string>
+	<string>Warp</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -74,6 +74,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.95.0</string>
+	<string>0.2025.06.04.08.11.01</string>
 </dict>
 </plist>

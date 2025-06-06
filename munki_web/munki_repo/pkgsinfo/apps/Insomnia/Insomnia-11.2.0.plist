@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-05-18T04:47:54Z</date>
+		<date>2025-06-06T16:39:37Z</date>
 		<key>munki_version</key>
 		<string>6.6.3.4704</string>
 		<key>os_version</key>
@@ -20,32 +20,32 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Mozilla Firefox is a free and open source web browser.</string>
+	<string>Explore REST and GraphQL APIs.</string>
 	<key>display_name</key>
-	<string>Mozilla Firefox</string>
+	<string>Insomnia </string>
 	<key>installer_item_hash</key>
-	<string>6842663f38b8b12b08b67239f0cc2118e93fa0b5b57e856c21f384fb501fb430</string>
+	<string>4bf3435b3ec57fc40964f46dfa7572c80499929461a584b419f2b6b80332efb8</string>
 	<key>installer_item_location</key>
-	<string>apps/firefox/Firefox-138.0.4.dmg</string>
+	<string>apps/Insomnia/Insomnia.Core-11.2.0.dmg</string>
 	<key>installer_item_size</key>
-	<integer>128774</integer>
+	<integer>245097</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>org.mozilla.firefox</string>
+			<string>com.insomnia.app</string>
 			<key>CFBundleName</key>
-			<string>Firefox</string>
+			<string>Insomnia</string>
 			<key>CFBundleShortVersionString</key>
-			<string>138.0.4</string>
+			<string>11.2.0</string>
 			<key>CFBundleVersion</key>
-			<string>13825.5.17</string>
+			<string>11.2.0</string>
 			<key>minosversion</key>
-			<string>10.15.0</string>
+			<string>11.0</string>
 			<key>path</key>
-			<string>/Applications/Firefox.app</string>
+			<string>/Applications/Insomnia.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -58,13 +58,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Firefox.app</string>
+			<string>Insomnia.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>10.15.0</string>
+	<string>11.0</string>
 	<key>name</key>
-	<string>Firefox</string>
+	<string>Insomnia</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -72,6 +72,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>138.0.4</string>
+	<string>11.2.0</string>
 </dict>
 </plist>
