@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-05-14T04:51:49Z</date>
+		<date>2025-06-20T17:09:50Z</date>
 		<key>munki_version</key>
 		<string>6.6.3.4704</string>
 		<key>os_version</key>
@@ -20,32 +20,32 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string></string>
+	<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
 	<key>display_name</key>
-	<string>Visual Studio Code</string>
+	<string>Google Chrome</string>
 	<key>installer_item_hash</key>
-	<string>efb3925d1ef48dee2fef2ff084bc604cfc165ffb4efbf32977c8d73269099295</string>
+	<string>3bba81fa7d1e80cbd84063cddbce45bd5516971fcee7484c715b022996fee33a</string>
 	<key>installer_item_location</key>
-	<string>apps/Visual Studio Code-1.100.1.dmg</string>
+	<string>apps/GoogleChrome-137.0.7151.120.dmg</string>
 	<key>installer_item_size</key>
-	<integer>232738</integer>
+	<integer>220839</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.microsoft.VSCode</string>
+			<string>com.google.Chrome</string>
 			<key>CFBundleName</key>
-			<string>Code</string>
+			<string>Chrome</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.100.1</string>
+			<string>137.0.7151.120</string>
 			<key>CFBundleVersion</key>
-			<string>1.100.1</string>
+			<string>7151.120</string>
 			<key>minosversion</key>
 			<string>11.0</string>
 			<key>path</key>
-			<string>/Applications/Visual Studio Code.app</string>
+			<string>/Applications/Google Chrome.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -58,13 +58,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Visual Studio Code.app</string>
+			<string>Google Chrome.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
 	<string>11.0</string>
 	<key>name</key>
-	<string>Visual Studio Code</string>
+	<string>GoogleChrome</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -72,6 +72,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.100.1</string>
+	<string>137.0.7151.120</string>
 </dict>
 </plist>

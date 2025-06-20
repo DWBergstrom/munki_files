@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-05-22T19:54:24Z</date>
+		<date>2025-06-20T17:08:54Z</date>
 		<key>munki_version</key>
 		<string>6.6.3.4704</string>
 		<key>os_version</key>
@@ -20,34 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>A new productivity-focused web browser.</string>
+	<string>Automates deployment of containerized applications.</string>
 	<key>developer</key>
-	<string>The Browser Company of New York</string>
+	<string>Docker</string>
 	<key>display_name</key>
-	<string>Arc</string>
+	<string>Docker</string>
 	<key>installer_item_hash</key>
-	<string>7f447496d9e005ae03ce64a17c39df463095eeb1bc22a3a1dc606f579c6a8214</string>
+	<string>89b48619c6c792af2d64109115852dbb3cd9ed62f943a77fc5bf3d5759e2632e</string>
 	<key>installer_item_location</key>
-	<string>apps/Arc/Arc-1.95.1.dmg</string>
+	<string>apps/Docker/Docker-amd64-4.42.1.dmg</string>
 	<key>installer_item_size</key>
-	<integer>401278</integer>
+	<integer>574197</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>company.thebrowser.Browser</string>
+			<string>com.docker.docker</string>
 			<key>CFBundleName</key>
-			<string>Arc</string>
+			<string>Docker</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.95.1</string>
+			<string>4.42.1</string>
 			<key>CFBundleVersion</key>
-			<string>62956</string>
+			<string>196321</string>
 			<key>minosversion</key>
-			<string>13.0.0</string>
+			<string>13.0</string>
 			<key>path</key>
-			<string>/Applications/Arc.app</string>
+			<string>/Applications/Docker.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,13 +60,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Arc.app</string>
+			<string>Docker.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>13.0.0</string>
+	<string>13.0</string>
 	<key>name</key>
-	<string>Arc</string>
+	<string>Docker</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -74,6 +74,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.95.1</string>
+	<string>4.42.1</string>
 </dict>
 </plist>
