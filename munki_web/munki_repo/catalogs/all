@@ -2889,68 +2889,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 			<string>testing</string>
 		</array>
 		<key>description</key>
-		<string></string>
-		<key>display_name</key>
-		<string>Visual Studio Code</string>
-		<key>installer_item_hash</key>
-		<string>becbe8685f8ed71442ac175dc4cd331ecbfc354e16407172a2665b8b2cbff2f2</string>
-		<key>installer_item_location</key>
-		<string>apps/Visual Studio Code-1.100.3.dmg</string>
-		<key>installer_item_size</key>
-		<integer>232764</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.microsoft.VSCode</string>
-				<key>CFBundleName</key>
-				<string>Code</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.100.3</string>
-				<key>CFBundleVersion</key>
-				<string>1.100.3</string>
-				<key>minosversion</key>
-				<string>11.0</string>
-				<key>path</key>
-				<string>/Applications/Visual Studio Code.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Visual Studio Code.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>11.0</string>
-		<key>name</key>
-		<string>Visual Studio Code</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.100.3</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
 		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
 		<key>display_name</key>
 		<string>Google Chrome</string>
@@ -3066,68 +3004,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<true/>
 		<key>version</key>
 		<string>1.97.1</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
-		<key>display_name</key>
-		<string>Google Chrome</string>
-		<key>installer_item_hash</key>
-		<string>279f6febb96bfa80c92fb2f4cf320dcd61ff7e4313cd6ac27f38b279bad6c41f</string>
-		<key>installer_item_location</key>
-		<string>apps/GoogleChrome-137.0.7151.69.dmg</string>
-		<key>installer_item_size</key>
-		<integer>220898</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.google.Chrome</string>
-				<key>CFBundleName</key>
-				<string>Chrome</string>
-				<key>CFBundleShortVersionString</key>
-				<string>137.0.7151.69</string>
-				<key>CFBundleVersion</key>
-				<string>7151.69</string>
-				<key>minosversion</key>
-				<string>11.0</string>
-				<key>path</key>
-				<string>/Applications/Google Chrome.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Google Chrome.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>11.0</string>
-		<key>name</key>
-		<string>GoogleChrome</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>137.0.7151.69</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -3346,80 +3222,6 @@ fi
 		<true/>
 		<key>version</key>
 		<string>8.10.6</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Software</string>
-		<key>description</key>
-		<string>Oracle VM VirtualBox is a free and open-source hypervisor for x86 computers currently being developed by Oracle Corporation.</string>
-		<key>developer</key>
-		<string>Oracle Corporation</string>
-		<key>display_name</key>
-		<string>VirtualBox</string>
-		<key>installed_size</key>
-		<integer>288680</integer>
-		<key>installer_item_hash</key>
-		<string>a01b8ca7dd30f23c3527a68347b923bade2171ad8ab5b3e8e7ae008876a33505</string>
-		<key>installer_item_location</key>
-		<string>apps/VirtualBox-7.1.8.dmg</string>
-		<key>installer_item_size</key>
-		<integer>153892</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.virtualbox.app.VirtualBox</string>
-				<key>CFBundleName</key>
-				<string>VirtualBox</string>
-				<key>CFBundleShortVersionString</key>
-				<string>7.1.8</string>
-				<key>CFBundleVersion</key>
-				<string>7.1.8</string>
-				<key>path</key>
-				<string>/Applications/VirtualBox.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.5.0</string>
-		<key>name</key>
-		<string>VirtualBox</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>288673</integer>
-				<key>packageid</key>
-				<string>org.virtualbox.pkg.virtualbox</string>
-				<key>version</key>
-				<string>7.1.8</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>7</integer>
-				<key>packageid</key>
-				<string>org.virtualbox.pkg.virtualboxcli</string>
-				<key>version</key>
-				<string>7.1.8</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.1.8</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -3672,68 +3474,6 @@ fi
 		<true/>
 		<key>version</key>
 		<string>140.0.4</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Mozilla Firefox is a free and open source web browser.</string>
-		<key>display_name</key>
-		<string>Mozilla Firefox</string>
-		<key>installer_item_hash</key>
-		<string>243478e2a2fd5d9dd0cc261c812b0146e433d703fec960c27c7284b2de7e65bc</string>
-		<key>installer_item_location</key>
-		<string>apps/firefox/Firefox-139.0.1.dmg</string>
-		<key>installer_item_size</key>
-		<integer>129936</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.mozilla.firefox</string>
-				<key>CFBundleName</key>
-				<string>Firefox</string>
-				<key>CFBundleShortVersionString</key>
-				<string>139.0.1</string>
-				<key>CFBundleVersion</key>
-				<string>13925.5.29</string>
-				<key>minosversion</key>
-				<string>10.15.0</string>
-				<key>path</key>
-				<string>/Applications/Firefox.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Firefox.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.15.0</string>
-		<key>name</key>
-		<string>Firefox</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>139.0.1</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -4323,70 +4063,6 @@ fi
 		<key>display_name</key>
 		<string>Docker</string>
 		<key>installer_item_hash</key>
-		<string>7d6077cd24aa11127b5d01a857f08f0af4378d9983212b73d8c6f29cd04cfb66</string>
-		<key>installer_item_location</key>
-		<string>apps/Docker/Docker-amd64-4.42.0.dmg</string>
-		<key>installer_item_size</key>
-		<integer>574130</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.docker.docker</string>
-				<key>CFBundleName</key>
-				<string>Docker</string>
-				<key>CFBundleShortVersionString</key>
-				<string>4.42.0</string>
-				<key>CFBundleVersion</key>
-				<string>195023</string>
-				<key>minosversion</key>
-				<string>13.0</string>
-				<key>path</key>
-				<string>/Applications/Docker.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Docker.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>13.0</string>
-		<key>name</key>
-		<string>Docker</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>4.42.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Automates deployment of containerized applications.</string>
-		<key>developer</key>
-		<string>Docker</string>
-		<key>display_name</key>
-		<string>Docker</string>
-		<key>installer_item_hash</key>
 		<string>216e17a9f2c46c99c832f99a1051bb993b230011c23a84709a0b5f2d8b3aedfd</string>
 		<key>installer_item_location</key>
 		<string>apps/Docker/Docker-amd64-4.43.2.dmg</string>
@@ -4950,68 +4626,6 @@ fi
 		<key>display_name</key>
 		<string>Insomnia </string>
 		<key>installer_item_hash</key>
-		<string>e7cb0f1a35f2510e54d89e05d39fdc74830d0c347d85c098448f59c0138d3365</string>
-		<key>installer_item_location</key>
-		<string>apps/Insomnia/Insomnia.Core-11.1.0.dmg</string>
-		<key>installer_item_size</key>
-		<integer>244812</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.insomnia.app</string>
-				<key>CFBundleName</key>
-				<string>Insomnia</string>
-				<key>CFBundleShortVersionString</key>
-				<string>11.1.0</string>
-				<key>CFBundleVersion</key>
-				<string>11.1.0</string>
-				<key>minosversion</key>
-				<string>11.0</string>
-				<key>path</key>
-				<string>/Applications/Insomnia.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Insomnia.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>11.0</string>
-		<key>name</key>
-		<string>Insomnia</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>11.1.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Explore REST and GraphQL APIs.</string>
-		<key>display_name</key>
-		<string>Insomnia </string>
-		<key>installer_item_hash</key>
 		<string>1a1bfcc6c0d8079c6e26d26fb5622e2385ae49b69fe70700c833fe46235d39e6</string>
 		<key>installer_item_location</key>
 		<string>apps/Insomnia/Insomnia.Core-11.3.0.dmg</string>
@@ -5328,51 +4942,6 @@ fi
 		<key>catalogs</key>
 		<array>
 			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Productivity</string>
-		<key>description</key>
-		<string>Microsoft Edge web browser</string>
-		<key>developer</key>
-		<string>Microsoft</string>
-		<key>display_name</key>
-		<string>Microsoft Edge</string>
-		<key>installed_size</key>
-		<integer>894300</integer>
-		<key>installer_item_hash</key>
-		<string>e2c537663569fc81ff14f3278495e071e7b1e5d8c759b7bcf17f7d807403f957</string>
-		<key>installer_item_location</key>
-		<string>apps/Microsoft/Microsoft_Edge-137.0.3296.62.pkg</string>
-		<key>installer_item_size</key>
-		<integer>387755</integer>
-		<key>minimum_os_version</key>
-		<string>10.10.0</string>
-		<key>name</key>
-		<string>MicrosoftEdge</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>894300</integer>
-				<key>packageid</key>
-				<string>com.microsoft.edgemac</string>
-				<key>version</key>
-				<string>137.0.3296.62</string>
-			</dict>
-		</array>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>137.0.3296.62</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
 			<string>development</string>
 		</array>
 		<key>category</key>
@@ -5566,70 +5135,6 @@ fi
 		<true/>
 		<key>version</key>
 		<string>2.7.0.48109</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>JetBrains s.r.o.</string>
-		<key>display_name</key>
-		<string>JetBrains Toolbox</string>
-		<key>installer_item_hash</key>
-		<string>e75f04c37ca18fac2b4df3e494d4c2e8b6b410e6ff5e6ac570d9a878d6e877c9</string>
-		<key>installer_item_location</key>
-		<string>apps/JetBrains Toolbox/JetBrains Toolbox-mac-2.6.2.41321.dmg</string>
-		<key>installer_item_size</key>
-		<integer>98802</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.jetbrains.toolbox</string>
-				<key>CFBundleName</key>
-				<string>JetBrains Toolbox</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2.6.2.41321</string>
-				<key>CFBundleVersion</key>
-				<string>2.6.2.41321</string>
-				<key>minosversion</key>
-				<string>10.13.0</string>
-				<key>path</key>
-				<string>/Applications/JetBrains Toolbox.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>JetBrains Toolbox.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.13.0</string>
-		<key>name</key>
-		<string>JetBrains Toolbox</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2.6.2.41321</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -6454,222 +5959,6 @@ fi
 		<array>
 			<string>testing</string>
 		</array>
-		<key>category</key>
-		<string>Developer Tools</string>
-		<key>description</key>
-		<string>JetBrains DataSpell: Essential tools for data analysts.</string>
-		<key>developer</key>
-		<string>JetBrains</string>
-		<key>display_name</key>
-		<string>DataSpell</string>
-		<key>installer_item_hash</key>
-		<string>65bbf4da47e5ceecfab5e19f80bec7ddd5f66bfcdc8dc75691cad98958e72af1</string>
-		<key>installer_item_location</key>
-		<string>apps/jetbrains/dataspell-2025.1.1-aarch64-2025.1.1.dmg</string>
-		<key>installer_item_size</key>
-		<integer>1159776</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.jetbrains.dataspell</string>
-				<key>CFBundleName</key>
-				<string>DataSpell</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2025.1.1</string>
-				<key>CFBundleVersion</key>
-				<string>DS-251.25410.158</string>
-				<key>minosversion</key>
-				<string>10.13</string>
-				<key>path</key>
-				<string>/Applications/DataSpell.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>DataSpell.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.13</string>
-		<key>name</key>
-		<string>DataSpell</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>arm64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2025.1.1</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Developer Tools</string>
-		<key>description</key>
-		<string>JetBrains RustRover: The Rust IDE for Productivity.</string>
-		<key>developer</key>
-		<string>JetBrains</string>
-		<key>display_name</key>
-		<string>RustRover</string>
-		<key>installer_item_hash</key>
-		<string>3f12ad41285d6b67dcc577526976b5c394b44caa3f243147143968a505144a79</string>
-		<key>installer_item_location</key>
-		<string>apps/jetbrains/RustRover-2025.1.2-aarch64-2025.1.2.dmg</string>
-		<key>installer_item_size</key>
-		<integer>1042804</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.jetbrains.rustrover</string>
-				<key>CFBundleName</key>
-				<string>RustRover</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2025.1.2</string>
-				<key>CFBundleVersion</key>
-				<string>RR-251.25410.115</string>
-				<key>minosversion</key>
-				<string>10.13</string>
-				<key>path</key>
-				<string>/Applications/RustRover.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>RustRover.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.13</string>
-		<key>name</key>
-		<string>RustRover</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>arm64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2025.1.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Developer Tools</string>
-		<key>description</key>
-		<string>JetBrains DataSpell: Essential tools for data analysts.</string>
-		<key>developer</key>
-		<string>JetBrains</string>
-		<key>display_name</key>
-		<string>DataSpell</string>
-		<key>installer_item_hash</key>
-		<string>65bbf4da47e5ceecfab5e19f80bec7ddd5f66bfcdc8dc75691cad98958e72af1</string>
-		<key>installer_item_location</key>
-		<string>apps/jetbrains/dataspell-2025.1.1-aarch64-2025.1.1__1.dmg</string>
-		<key>installer_item_size</key>
-		<integer>1159776</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.jetbrains.dataspell</string>
-				<key>CFBundleName</key>
-				<string>DataSpell</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2025.1.1</string>
-				<key>CFBundleVersion</key>
-				<string>DS-251.25410.158</string>
-				<key>minosversion</key>
-				<string>10.13</string>
-				<key>path</key>
-				<string>/Applications/DataSpell.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>DataSpell.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.13</string>
-		<key>name</key>
-		<string>DataSpell</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>arm64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2025.1.1</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
 		<key>description</key>
 		<string>VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVD, Audio CD, VCD, and various streaming protocols.</string>
 		<key>developer</key>
@@ -7008,74 +6297,6 @@ fi
 		<true/>
 		<key>version</key>
 		<string>3.0.21</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Supercharged productivity
-
-Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
-		<key>developer</key>
-		<string>Raycast Technologies Inc</string>
-		<key>display_name</key>
-		<string>Raycast</string>
-		<key>installer_item_hash</key>
-		<string>916d2944b56b290256d930607fb69f463f750b384af64147be9062ab1faaef56</string>
-		<key>installer_item_location</key>
-		<string>apps/Raycast/Raycast-1.99.4.dmg</string>
-		<key>installer_item_size</key>
-		<integer>96866</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.raycast.macos</string>
-				<key>CFBundleName</key>
-				<string>Raycast</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.99.4</string>
-				<key>CFBundleVersion</key>
-				<string>0</string>
-				<key>minosversion</key>
-				<string>13.0</string>
-				<key>path</key>
-				<string>/Applications/Raycast.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Raycast.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>13.0</string>
-		<key>name</key>
-		<string>Raycast</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.99.4</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -7497,11 +6718,11 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<key>force_munkiimport</key>
 		<true/>
 		<key>installer_item_hash</key>
-		<string>c251667c7052c0187d505aba6f2e767c660dd847ed3fbf77bb72f9ed74830ca4</string>
+		<string>83ac9e2deb7f96a4c5ee94beac49be543c16c4d2cadd069da79d0f152a268b17</string>
 		<key>installer_item_location</key>
-		<string>apps/Warp/Warp-0.2025.06.18.08.11.03.dmg</string>
+		<string>apps/Warp/Warp-0.2025.07.16.08.12.02.dmg</string>
 		<key>installer_item_size</key>
-		<integer>102079</integer>
+		<integer>109550</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -7512,9 +6733,9 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 				<key>CFBundleName</key>
 				<string>Warp</string>
 				<key>CFBundleShortVersionString</key>
-				<string>0.2025.06.18.08.11.03</string>
+				<string>0.2025.07.16.08.12.02</string>
 				<key>CFBundleVersion</key>
-				<string>0.2025.06.18.08.11.03</string>
+				<string>0.2025.07.16.08.12.02</string>
 				<key>path</key>
 				<string>/Applications/Warp.app</string>
 				<key>type</key>
@@ -7543,7 +6764,7 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>0.2025.06.18.08.11.03</string>
+		<string>0.2025.07.16.08.12.02</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -8056,70 +7277,6 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<true/>
 		<key>version</key>
 		<string>1.103.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>A new productivity-focused web browser.</string>
-		<key>developer</key>
-		<string>The Browser Company of New York</string>
-		<key>display_name</key>
-		<string>Arc</string>
-		<key>installer_item_hash</key>
-		<string>9dbfcd4fd4f112e63ffcb15ea9e23a37bab768f8ce7fd69c944f2f45f5b44fdb</string>
-		<key>installer_item_location</key>
-		<string>apps/Arc/Arc-1.99.0.dmg</string>
-		<key>installer_item_size</key>
-		<integer>401360</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>company.thebrowser.Browser</string>
-				<key>CFBundleName</key>
-				<string>Arc</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.99.0</string>
-				<key>CFBundleVersion</key>
-				<string>64212</string>
-				<key>minosversion</key>
-				<string>13.0.0</string>
-				<key>path</key>
-				<string>/Applications/Arc.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Arc.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>13.0.0</string>
-		<key>name</key>
-		<string>Arc</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.99.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>

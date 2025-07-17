@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-06-06T16:44:05Z</date>
+		<date>2025-07-17T19:32:20Z</date>
 		<key>munki_version</key>
 		<string>6.6.3.4704</string>
 		<key>os_version</key>
@@ -20,32 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string></string>
+	<string>Fast Terminal app based in Rust.</string>
+	<key>developer</key>
+	<string>Denver Technologies</string>
 	<key>display_name</key>
-	<string>Visual Studio Code</string>
+	<string>Warp</string>
+	<key>force_munkiimport</key>
+	<true/>
 	<key>installer_item_hash</key>
-	<string>becbe8685f8ed71442ac175dc4cd331ecbfc354e16407172a2665b8b2cbff2f2</string>
+	<string>83ac9e2deb7f96a4c5ee94beac49be543c16c4d2cadd069da79d0f152a268b17</string>
 	<key>installer_item_location</key>
-	<string>apps/Visual Studio Code-1.100.3.dmg</string>
+	<string>apps/Warp/Warp-0.2025.07.16.08.12.02.dmg</string>
 	<key>installer_item_size</key>
-	<integer>232764</integer>
+	<integer>109550</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.microsoft.VSCode</string>
+			<string>dev.warp.Warp-Stable</string>
 			<key>CFBundleName</key>
-			<string>Code</string>
+			<string>Warp</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.100.3</string>
+			<string>0.2025.07.16.08.12.02</string>
 			<key>CFBundleVersion</key>
-			<string>1.100.3</string>
-			<key>minosversion</key>
-			<string>11.0</string>
+			<string>0.2025.07.16.08.12.02</string>
 			<key>path</key>
-			<string>/Applications/Visual Studio Code.app</string>
+			<string>/Applications/Warp.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -58,13 +60,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Visual Studio Code.app</string>
+			<string>Warp.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>11.0</string>
+	<string>10.4.0</string>
 	<key>name</key>
-	<string>Visual Studio Code</string>
+	<string>Warp</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -72,6 +74,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.100.3</string>
+	<string>0.2025.07.16.08.12.02</string>
 </dict>
 </plist>
