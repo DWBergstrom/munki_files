@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-06-06T16:44:13Z</date>
+		<date>2025-07-17T19:12:34Z</date>
 		<key>munki_version</key>
 		<string>6.6.3.4704</string>
 		<key>os_version</key>
@@ -28,11 +28,11 @@
 	<key>force_munkiimport</key>
 	<true/>
 	<key>installer_item_hash</key>
-	<string>6ff596309bc90a766b9afc310d602f1bc9057fec4ee5ea7b7b3c05a13fb4a39d</string>
+	<string>9d1234c6d2c5c85aaa342663207d3b0f1bade0e75930edca1c7c8f78d4f75caa</string>
 	<key>installer_item_location</key>
-	<string>apps/Warp/Warp-0.2025.06.04.08.11.01.dmg</string>
+	<string>apps/Warp/Warp-0.2025.07.09.08.11.01.dmg</string>
 	<key>installer_item_size</key>
-	<integer>100956</integer>
+	<integer>107239</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
@@ -43,9 +43,9 @@
 			<key>CFBundleName</key>
 			<string>Warp</string>
 			<key>CFBundleShortVersionString</key>
-			<string>0.2025.06.04.08.11.01</string>
+			<string>0.2025.07.09.08.11.01</string>
 			<key>CFBundleVersion</key>
-			<string>0.2025.06.04.08.11.01</string>
+			<string>0.2025.07.09.08.11.01</string>
 			<key>path</key>
 			<string>/Applications/Warp.app</string>
 			<key>type</key>
@@ -74,6 +74,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>0.2025.06.04.08.11.01</string>
+	<string>0.2025.07.09.08.11.01</string>
 </dict>
 </plist>

@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-05-17T04:51:41Z</date>
+		<date>2025-07-17T19:09:24Z</date>
 		<key>munki_version</key>
 		<string>6.6.3.4704</string>
 		<key>os_version</key>
@@ -19,33 +19,37 @@
 	<array>
 		<string>testing</string>
 	</array>
+	<key>category</key>
+	<string>Developer Tools</string>
 	<key>description</key>
-	<string></string>
+	<string>JetBrains RustRover: The Rust IDE for Productivity.</string>
+	<key>developer</key>
+	<string>JetBrains</string>
 	<key>display_name</key>
-	<string>Visual Studio Code</string>
+	<string>RustRover</string>
 	<key>installer_item_hash</key>
-	<string>6ef0dfb374c5933a1641d6211c61667fefd689dce9fc8378f5b023d60fa5d2e2</string>
+	<string>9386f41063a209d4634098bc14e8e63d3cf030b3f8b83524b61d99bf992905d1</string>
 	<key>installer_item_location</key>
-	<string>apps/Visual Studio Code-1.100.2.dmg</string>
+	<string>apps/jetbrains/RustRover-2025.1.5-aarch64-2025.1.5.dmg</string>
 	<key>installer_item_size</key>
-	<integer>232735</integer>
+	<integer>1056687</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.microsoft.VSCode</string>
+			<string>com.jetbrains.rustrover</string>
 			<key>CFBundleName</key>
-			<string>Code</string>
+			<string>RustRover</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.100.2</string>
+			<string>2025.1.5</string>
 			<key>CFBundleVersion</key>
-			<string>1.100.2</string>
+			<string>RR-251.26927.79</string>
 			<key>minosversion</key>
-			<string>11.0</string>
+			<string>10.13</string>
 			<key>path</key>
-			<string>/Applications/Visual Studio Code.app</string>
+			<string>/Applications/RustRover.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -58,20 +62,26 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Visual Studio Code.app</string>
+			<string>RustRover.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>11.0</string>
+	<string>10.13</string>
 	<key>name</key>
-	<string>Visual Studio Code</string>
+	<string>RustRover</string>
+	<key>supported_architectures</key>
+	<array>
+		<string>arm64</string>
+	</array>
 	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.100.2</string>
+	<string>2025.1.5</string>
 </dict>
 </plist>

@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-04-17T04:47:28Z</date>
+		<date>2025-07-17T19:03:19Z</date>
 		<key>munki_version</key>
 		<string>6.6.3.4704</string>
 		<key>os_version</key>
@@ -19,37 +19,35 @@
 	<array>
 		<string>testing</string>
 	</array>
-	<key>category</key>
-	<string>Developer Tools</string>
 	<key>description</key>
-	<string>JetBrains DataSpell: Essential tools for data analysts.</string>
+	<string>A new productivity-focused web browser.</string>
 	<key>developer</key>
-	<string>JetBrains</string>
+	<string>The Browser Company of New York</string>
 	<key>display_name</key>
-	<string>DataSpell</string>
+	<string>Arc</string>
 	<key>installer_item_hash</key>
-	<string>f6dd63c5458ea2adeb76a9042ab3316b124fd9cbdcccd4d4b08c2d90e17b49b8</string>
+	<string>4900860d5f7cc19650ca16b5c53dba9f04a028b683d50e51c69e9f3188088248</string>
 	<key>installer_item_location</key>
-	<string>apps/jetbrains/dataspell-2025.1-aarch64-2025.1.dmg</string>
+	<string>apps/Arc/Arc-1.104.0.dmg</string>
 	<key>installer_item_size</key>
-	<integer>1159345</integer>
+	<integer>404025</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.jetbrains.dataspell</string>
+			<string>company.thebrowser.Browser</string>
 			<key>CFBundleName</key>
-			<string>DataSpell</string>
+			<string>Arc</string>
 			<key>CFBundleShortVersionString</key>
-			<string>2025.1</string>
+			<string>1.104.0</string>
 			<key>CFBundleVersion</key>
-			<string>DS-251.23774.439</string>
+			<string>65533</string>
 			<key>minosversion</key>
-			<string>10.13</string>
+			<string>13.0.0</string>
 			<key>path</key>
-			<string>/Applications/DataSpell.app</string>
+			<string>/Applications/Arc.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -62,26 +60,20 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>DataSpell.app</string>
+			<string>Arc.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>10.13</string>
+	<string>13.0.0</string>
 	<key>name</key>
-	<string>DataSpell</string>
-	<key>supported_architectures</key>
-	<array>
-		<string>arm64</string>
-	</array>
+	<string>Arc</string>
 	<key>unattended_install</key>
-	<true/>
-	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>2025.1</string>
+	<string>1.104.0</string>
 </dict>
 </plist>

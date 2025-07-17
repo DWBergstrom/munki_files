@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-05-28T20:24:52Z</date>
+		<date>2025-07-17T19:07:11Z</date>
 		<key>munki_version</key>
 		<string>6.6.3.4704</string>
 		<key>os_version</key>
@@ -20,36 +20,32 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Supercharged productivity
-
-Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
-	<key>developer</key>
-	<string>Raycast Technologies Inc</string>
+	<string>Explore REST and GraphQL APIs.</string>
 	<key>display_name</key>
-	<string>Raycast</string>
+	<string>Insomnia </string>
 	<key>installer_item_hash</key>
-	<string>3612344510650da28a5b579225d53351b897cb88d6fcdd700fd70abd8ea24b70</string>
+	<string>1a1bfcc6c0d8079c6e26d26fb5622e2385ae49b69fe70700c833fe46235d39e6</string>
 	<key>installer_item_location</key>
-	<string>apps/Raycast/Raycast-1.99.3.dmg</string>
+	<string>apps/Insomnia/Insomnia.Core-11.3.0.dmg</string>
 	<key>installer_item_size</key>
-	<integer>96867</integer>
+	<integer>245290</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.raycast.macos</string>
+			<string>com.insomnia.app</string>
 			<key>CFBundleName</key>
-			<string>Raycast</string>
+			<string>Insomnia</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.99.3</string>
+			<string>11.3.0</string>
 			<key>CFBundleVersion</key>
-			<string>0</string>
+			<string>11.3.0</string>
 			<key>minosversion</key>
-			<string>13.0</string>
+			<string>11.0</string>
 			<key>path</key>
-			<string>/Applications/Raycast.app</string>
+			<string>/Applications/Insomnia.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -62,22 +58,20 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Raycast.app</string>
+			<string>Insomnia.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>13.0</string>
+	<string>11.0</string>
 	<key>name</key>
-	<string>Raycast</string>
+	<string>Insomnia</string>
 	<key>unattended_install</key>
-	<true/>
-	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.99.3</string>
+	<string>11.3.0</string>
 </dict>
 </plist>

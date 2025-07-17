@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-04-15T04:47:59Z</date>
+		<date>2025-07-17T19:05:52Z</date>
 		<key>munki_version</key>
 		<string>6.6.3.4704</string>
 		<key>os_version</key>
@@ -20,34 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string> </string>
+	<string>Automates deployment of containerized applications.</string>
 	<key>developer</key>
-	<string>JetBrains s.r.o.</string>
+	<string>Docker</string>
 	<key>display_name</key>
-	<string>JetBrains Toolbox</string>
+	<string>Docker</string>
 	<key>installer_item_hash</key>
-	<string>97bd2e292298a55edfc6423222e843854e9df64565bb1dd4f7956934ff9c6ae7</string>
+	<string>216e17a9f2c46c99c832f99a1051bb993b230011c23a84709a0b5f2d8b3aedfd</string>
 	<key>installer_item_location</key>
-	<string>apps/JetBrains Toolbox/JetBrains Toolbox-mac-2.6.0.40632.dmg</string>
+	<string>apps/Docker/Docker-amd64-4.43.2.dmg</string>
 	<key>installer_item_size</key>
-	<integer>98563</integer>
+	<integer>578414</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.jetbrains.toolbox</string>
+			<string>com.docker.docker</string>
 			<key>CFBundleName</key>
-			<string>JetBrains Toolbox</string>
+			<string>Docker</string>
 			<key>CFBundleShortVersionString</key>
-			<string>2.6.0.40632</string>
+			<string>4.43.2</string>
 			<key>CFBundleVersion</key>
-			<string>2.6.0.40632</string>
+			<string>199162</string>
 			<key>minosversion</key>
-			<string>10.13.0</string>
+			<string>13.0</string>
 			<key>path</key>
-			<string>/Applications/JetBrains Toolbox.app</string>
+			<string>/Applications/Docker.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,13 +60,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>JetBrains Toolbox.app</string>
+			<string>Docker.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>10.13.0</string>
+	<string>13.0</string>
 	<key>name</key>
-	<string>JetBrains Toolbox</string>
+	<string>Docker</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -74,6 +74,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>2.6.0.40632</string>
+	<string>4.43.2</string>
 </dict>
 </plist>
