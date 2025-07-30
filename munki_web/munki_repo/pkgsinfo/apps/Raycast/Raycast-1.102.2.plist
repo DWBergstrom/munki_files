@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-07-20T04:45:54Z</date>
+		<date>2025-07-30T15:38:55Z</date>
 		<key>munki_version</key>
 		<string>6.6.3.4704</string>
 		<key>os_version</key>
@@ -19,39 +19,37 @@
 	<array>
 		<string>testing</string>
 	</array>
-	<key>category</key>
-	<string>Developer</string>
 	<key>description</key>
-	<string>Built to make you extraordinarily productive, Cursor is the best way to code with AI.</string>
+	<string>Supercharged productivity
+
+Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
 	<key>developer</key>
-	<string>Anysphere, Inc.</string>
+	<string>Raycast Technologies Inc</string>
 	<key>display_name</key>
-	<string>Cursor</string>
-	<key>icon_name</key>
-	<string>Cursor.png</string>
+	<string>Raycast</string>
 	<key>installer_item_hash</key>
-	<string>7324a85b5e6927cb0bdd320f23dbe8475ec8337e737a11a245989283cda6fa6b</string>
+	<string>66c906bb87c79f5f447a9c3fe4e2eb349676654d8237307c20c0f738b480444c</string>
 	<key>installer_item_location</key>
-	<string>apps/Cursor/Cursor-1.2.2.dmg</string>
+	<string>apps/Raycast/Raycast-1.102.2.dmg</string>
 	<key>installer_item_size</key>
-	<integer>240748</integer>
+	<integer>98531</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.todesktop.230313mzl4w4u92</string>
+			<string>com.raycast.macos</string>
 			<key>CFBundleName</key>
-			<string>Cursor</string>
+			<string>Raycast</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.2.2</string>
+			<string>1.102.2</string>
 			<key>CFBundleVersion</key>
-			<string>1.2.2</string>
+			<string>0</string>
 			<key>minosversion</key>
-			<string>11.0</string>
+			<string>13.0</string>
 			<key>path</key>
-			<string>/Applications/Cursor.app</string>
+			<string>/Applications/Raycast.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -64,13 +62,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Cursor.app</string>
+			<string>Raycast.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>11.0</string>
+	<string>13.0</string>
 	<key>name</key>
-	<string>Cursor</string>
+	<string>Raycast</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>unattended_uninstall</key>
@@ -80,6 +78,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.2.2</string>
+	<string>1.102.2</string>
 </dict>
 </plist>
