@@ -2706,76 +2706,6 @@ fi
 		<array>
 			<string>testing</string>
 		</array>
-		<key>category</key>
-		<string>Developer</string>
-		<key>description</key>
-		<string>Built to make you extraordinarily productive, Cursor is the best way to code with AI.</string>
-		<key>developer</key>
-		<string>Anysphere, Inc.</string>
-		<key>display_name</key>
-		<string>Cursor</string>
-		<key>icon_name</key>
-		<string>Cursor.png</string>
-		<key>installer_item_hash</key>
-		<string>abb341341dcfcdd0e35c184d42651eb5b75058397869ced9daad3dfe3086c505</string>
-		<key>installer_item_location</key>
-		<string>apps/Cursor/Cursor-1.3.6.dmg</string>
-		<key>installer_item_size</key>
-		<integer>241300</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.todesktop.230313mzl4w4u92</string>
-				<key>CFBundleName</key>
-				<string>Cursor</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.3.6</string>
-				<key>CFBundleVersion</key>
-				<string>1.3.6</string>
-				<key>minosversion</key>
-				<string>11.0</string>
-				<key>path</key>
-				<string>/Applications/Cursor.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Cursor.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>11.0</string>
-		<key>name</key>
-		<string>Cursor</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.3.6</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
 		<key>description</key>
 		<string>Suspicious Package: An Application for Inspecting OS X Installer Packages</string>
 		<key>display_name</key>
@@ -3130,51 +3060,6 @@ fi
 		<true/>
 		<key>version</key>
 		<string>113.0.1774.35</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Productivity</string>
-		<key>description</key>
-		<string>Microsoft Edge web browser</string>
-		<key>developer</key>
-		<string>Microsoft</string>
-		<key>display_name</key>
-		<string>Microsoft Edge</string>
-		<key>installed_size</key>
-		<integer>899109</integer>
-		<key>installer_item_hash</key>
-		<string>1f752d28a651615b25c4281b496e4562d9669b245c70eb9be2237c15c9ef9051</string>
-		<key>installer_item_location</key>
-		<string>apps/Microsoft/Microsoft_Edge-138.0.3351.109.pkg</string>
-		<key>installer_item_size</key>
-		<integer>390166</integer>
-		<key>minimum_os_version</key>
-		<string>10.10.0</string>
-		<key>name</key>
-		<string>MicrosoftEdge</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>899109</integer>
-				<key>packageid</key>
-				<string>com.microsoft.edgemac</string>
-				<key>version</key>
-				<string>138.0.3351.109</string>
-			</dict>
-		</array>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>138.0.3351.109</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -3987,74 +3872,6 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<key>display_name</key>
 		<string>Raycast</string>
 		<key>installer_item_hash</key>
-		<string>66c906bb87c79f5f447a9c3fe4e2eb349676654d8237307c20c0f738b480444c</string>
-		<key>installer_item_location</key>
-		<string>apps/Raycast/Raycast-1.102.2.dmg</string>
-		<key>installer_item_size</key>
-		<integer>98531</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.raycast.macos</string>
-				<key>CFBundleName</key>
-				<string>Raycast</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.102.2</string>
-				<key>CFBundleVersion</key>
-				<string>0</string>
-				<key>minosversion</key>
-				<string>13.0</string>
-				<key>path</key>
-				<string>/Applications/Raycast.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Raycast.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>13.0</string>
-		<key>name</key>
-		<string>Raycast</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.102.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Supercharged productivity
-
-Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
-		<key>developer</key>
-		<string>Raycast Technologies Inc</string>
-		<key>display_name</key>
-		<string>Raycast</string>
-		<key>installer_item_hash</key>
 		<string>1ff7c7c319c201aa57ade1f063155ef5e93f39351a4a8d3346cceb36bca80c63</string>
 		<key>installer_item_location</key>
 		<string>apps/Raycast/Raycast-1.94.4.dmg</string>
@@ -4368,70 +4185,6 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<true/>
 		<key>version</key>
 		<string>20240926.162135</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Fast Terminal app based in Rust.</string>
-		<key>developer</key>
-		<string>Denver Technologies</string>
-		<key>display_name</key>
-		<string>Warp</string>
-		<key>force_munkiimport</key>
-		<true/>
-		<key>installer_item_hash</key>
-		<string>41dcd8523ff9fac1e9aa5686ea7aafd26978841696b7b356b282b097d48f578d</string>
-		<key>installer_item_location</key>
-		<string>apps/Warp/Warp-0.2025.07.30.08.12.01.dmg</string>
-		<key>installer_item_size</key>
-		<integer>110512</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>dev.warp.Warp-Stable</string>
-				<key>CFBundleName</key>
-				<string>Warp</string>
-				<key>CFBundleShortVersionString</key>
-				<string>0.2025.07.30.08.12.01</string>
-				<key>CFBundleVersion</key>
-				<string>0.2025.07.30.08.12.01</string>
-				<key>path</key>
-				<string>/Applications/Warp.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Warp.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.4.0</string>
-		<key>name</key>
-		<string>Warp</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>0.2025.07.30.08.12.01</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
