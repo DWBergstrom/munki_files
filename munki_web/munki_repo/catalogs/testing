@@ -4257,6 +4257,70 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<key>force_munkiimport</key>
 		<true/>
 		<key>installer_item_hash</key>
+		<string>de3e8aaa5a3f9ec73e8234ab5b901fb9a9a7874a9bf539c6fac14de04e699f17</string>
+		<key>installer_item_location</key>
+		<string>apps/Warp/Warp-0.2025.07.30.08.12.02.dmg</string>
+		<key>installer_item_size</key>
+		<integer>110561</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>dev.warp.Warp-Stable</string>
+				<key>CFBundleName</key>
+				<string>Warp</string>
+				<key>CFBundleShortVersionString</key>
+				<string>0.2025.07.30.08.12.02</string>
+				<key>CFBundleVersion</key>
+				<string>0.2025.07.30.08.12.02</string>
+				<key>path</key>
+				<string>/Applications/Warp.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Warp.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.4.0</string>
+		<key>name</key>
+		<string>Warp</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>0.2025.07.30.08.12.02</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Fast Terminal app based in Rust.</string>
+		<key>developer</key>
+		<string>Denver Technologies</string>
+		<key>display_name</key>
+		<string>Warp</string>
+		<key>force_munkiimport</key>
+		<true/>
+		<key>installer_item_hash</key>
 		<string>cdb9ce92577ee949d278c7ef73a3faa99e3be0a687731d50cf2af81c25acbfdf</string>
 		<key>installer_item_location</key>
 		<string>apps/Warp/Warp-20240926.162135.dmg</string>
