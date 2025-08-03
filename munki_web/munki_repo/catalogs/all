@@ -3067,6 +3067,76 @@ fi
 		<key>icon_name</key>
 		<string>Cursor.png</string>
 		<key>installer_item_hash</key>
+		<string>7801b33b8c143844a1c85afe3b804b74c32001eff0c3b511e3705456a44ff700</string>
+		<key>installer_item_location</key>
+		<string>apps/Cursor/Cursor-1.3.9.dmg</string>
+		<key>installer_item_size</key>
+		<integer>241300</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.todesktop.230313mzl4w4u92</string>
+				<key>CFBundleName</key>
+				<string>Cursor</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.3.9</string>
+				<key>CFBundleVersion</key>
+				<string>1.3.9</string>
+				<key>minosversion</key>
+				<string>11.0</string>
+				<key>path</key>
+				<string>/Applications/Cursor.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Cursor.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>11.0</string>
+		<key>name</key>
+		<string>Cursor</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.3.9</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Developer</string>
+		<key>description</key>
+		<string>Built to make you extraordinarily productive, Cursor is the best way to code with AI.</string>
+		<key>developer</key>
+		<string>Anysphere, Inc.</string>
+		<key>display_name</key>
+		<string>Cursor</string>
+		<key>icon_name</key>
+		<string>Cursor.png</string>
+		<key>installer_item_hash</key>
 		<string>f69b1052c04087d75486625b5910db16f89f33c4a0a748409fca9b0092ca0465</string>
 		<key>installer_item_location</key>
 		<string>apps/Cursor/Cursor-1.3.8.dmg</string>
