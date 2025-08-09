@@ -1776,11 +1776,11 @@ fi
 		<key>display_name</key>
 		<string>Mozilla Firefox</string>
 		<key>installer_item_hash</key>
-		<string>37b716b18a7852d3253e9444dbd0eb275204e54b589cc7ad38209c7fceb7ccf3</string>
+		<string>bb922cda690543bddaa1fbc3b3cba508c60774832643452bc266595331f42db1</string>
 		<key>installer_item_location</key>
-		<string>apps/firefox/Firefox-141.0.dmg</string>
+		<string>apps/firefox/Firefox-141.0.3.dmg</string>
 		<key>installer_item_size</key>
-		<integer>135502</integer>
+		<integer>135544</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -1791,9 +1791,9 @@ fi
 				<key>CFBundleName</key>
 				<string>Firefox</string>
 				<key>CFBundleShortVersionString</key>
-				<string>141.0</string>
+				<string>141.0.3</string>
 				<key>CFBundleVersion</key>
-				<string>14125.7.17</string>
+				<string>14125.8.6</string>
 				<key>minosversion</key>
 				<string>10.15.0</string>
 				<key>path</key>
@@ -1824,7 +1824,7 @@ fi
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>141.0</string>
+		<string>141.0.3</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -2779,11 +2779,11 @@ fi
 		<key>icon_name</key>
 		<string>Cursor.png</string>
 		<key>installer_item_hash</key>
-		<string>f69b1052c04087d75486625b5910db16f89f33c4a0a748409fca9b0092ca0465</string>
+		<string>c8303ff172a7b4a8e90d68702745a10e7d89a97eaaf728aad3c4ded6b219f7a6</string>
 		<key>installer_item_location</key>
-		<string>apps/Cursor/Cursor-1.3.8.dmg</string>
+		<string>apps/Cursor/Cursor-1.4.3.dmg</string>
 		<key>installer_item_size</key>
-		<integer>241299</integer>
+		<integer>242986</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -2794,9 +2794,9 @@ fi
 				<key>CFBundleName</key>
 				<string>Cursor</string>
 				<key>CFBundleShortVersionString</key>
-				<string>1.3.8</string>
+				<string>1.4.3</string>
 				<key>CFBundleVersion</key>
-				<string>1.3.8</string>
+				<string>1.4.3</string>
 				<key>minosversion</key>
 				<string>11.0</string>
 				<key>path</key>
@@ -2829,7 +2829,7 @@ fi
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>1.3.8</string>
+		<string>1.4.3</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -3192,6 +3192,51 @@ fi
 		<true/>
 		<key>version</key>
 		<string>113.0.1774.35</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Productivity</string>
+		<key>description</key>
+		<string>Microsoft Edge web browser</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Microsoft Edge</string>
+		<key>installed_size</key>
+		<integer>921926</integer>
+		<key>installer_item_hash</key>
+		<string>07051b3d4c97eeeff72c0858ae9510a249d9b1193a9c0174bef4a9697dbd395d</string>
+		<key>installer_item_location</key>
+		<string>apps/Microsoft/Microsoft_Edge-139.0.3405.86.pkg</string>
+		<key>installer_item_size</key>
+		<integer>399858</integer>
+		<key>minimum_os_version</key>
+		<string>10.10.0</string>
+		<key>name</key>
+		<string>MicrosoftEdge</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>921926</integer>
+				<key>packageid</key>
+				<string>com.microsoft.edgemac</string>
+				<key>version</key>
+				<string>139.0.3405.86</string>
+			</dict>
+		</array>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>139.0.3405.86</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -4206,11 +4251,11 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<key>force_munkiimport</key>
 		<true/>
 		<key>installer_item_hash</key>
-		<string>de3e8aaa5a3f9ec73e8234ab5b901fb9a9a7874a9bf539c6fac14de04e699f17</string>
+		<string>c0edf113c71248c69855ce9ea2cc03711dda701cd6c01fc11db8a7b3c7223386</string>
 		<key>installer_item_location</key>
-		<string>apps/Warp/Warp-0.2025.07.30.08.12.02.dmg</string>
+		<string>apps/Warp/Warp-0.2025.08.06.08.12.02.dmg</string>
 		<key>installer_item_size</key>
-		<integer>110561</integer>
+		<integer>111911</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -4221,9 +4266,9 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 				<key>CFBundleName</key>
 				<string>Warp</string>
 				<key>CFBundleShortVersionString</key>
-				<string>0.2025.07.30.08.12.02</string>
+				<string>0.2025.08.06.08.12.02</string>
 				<key>CFBundleVersion</key>
-				<string>0.2025.07.30.08.12.02</string>
+				<string>0.2025.08.06.08.12.02</string>
 				<key>path</key>
 				<string>/Applications/Warp.app</string>
 				<key>type</key>
@@ -4252,7 +4297,7 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>0.2025.07.30.08.12.02</string>
+		<string>0.2025.08.06.08.12.02</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
