@@ -2838,6 +2838,76 @@ fi
 		<array>
 			<string>testing</string>
 		</array>
+		<key>category</key>
+		<string>Developer</string>
+		<key>description</key>
+		<string>Built to make you extraordinarily productive, Cursor is the best way to code with AI.</string>
+		<key>developer</key>
+		<string>Anysphere, Inc.</string>
+		<key>display_name</key>
+		<string>Cursor</string>
+		<key>icon_name</key>
+		<string>Cursor.png</string>
+		<key>installer_item_hash</key>
+		<string>9779f901386d881fc070ea94b6213b72d0f4e89f23f2cebaa707d67ac7984398</string>
+		<key>installer_item_location</key>
+		<string>apps/Cursor/Cursor-1.4.5.dmg</string>
+		<key>installer_item_size</key>
+		<integer>242972</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.todesktop.230313mzl4w4u92</string>
+				<key>CFBundleName</key>
+				<string>Cursor</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.4.5</string>
+				<key>CFBundleVersion</key>
+				<string>1.4.5</string>
+				<key>minosversion</key>
+				<string>11.0</string>
+				<key>path</key>
+				<string>/Applications/Cursor.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Cursor.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>11.0</string>
+		<key>name</key>
+		<string>Cursor</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.4.5</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
 		<key>description</key>
 		<string>Suspicious Package: An Application for Inspecting OS X Installer Packages</string>
 		<key>display_name</key>
@@ -4032,6 +4102,74 @@ fi
 		<true/>
 		<key>version</key>
 		<string>3.0.21</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Supercharged productivity
+
+Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
+		<key>developer</key>
+		<string>Raycast Technologies Inc</string>
+		<key>display_name</key>
+		<string>Raycast</string>
+		<key>installer_item_hash</key>
+		<string>cf0d7fc79e7cf72496d9b3b29379674d4da53293e42bd5dd0b100a2d283e3b16</string>
+		<key>installer_item_location</key>
+		<string>apps/Raycast/Raycast-1.102.4.dmg</string>
+		<key>installer_item_size</key>
+		<integer>98546</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.raycast.macos</string>
+				<key>CFBundleName</key>
+				<string>Raycast</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.102.4</string>
+				<key>CFBundleVersion</key>
+				<string>0</string>
+				<key>minosversion</key>
+				<string>13.0</string>
+				<key>path</key>
+				<string>/Applications/Raycast.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Raycast.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0</string>
+		<key>name</key>
+		<string>Raycast</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.102.4</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
