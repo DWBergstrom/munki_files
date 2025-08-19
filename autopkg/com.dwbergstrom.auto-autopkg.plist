@@ -7,7 +7,7 @@
 
     <key>ProgramArguments</key>
     <array>
-        <string>/Users/dwbergstrom/github/munki_files/autopkg/auto-autopkg.sh</string>
+        <string>/Volumes/2TB-WD/munki_files/autopkg/auto-autopkg.sh</string>
     </array>
 
     <key>StartCalendarInterval</key>
