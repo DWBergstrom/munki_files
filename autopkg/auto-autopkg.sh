@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the directory containing the overrides
-OVERRIDES_DIR="/Users/dwbergstrom/github/munki_files/autopkg/overrides"
+OVERRIDES_DIR="/Volumes/2TB-WD/munki_files/autopkg/overrides"
 
 # Define Munki repo path
 MUNKI_REPO_PATH="/Volumes/2TB-WD/munki_files/munki_web/munki_repo/"

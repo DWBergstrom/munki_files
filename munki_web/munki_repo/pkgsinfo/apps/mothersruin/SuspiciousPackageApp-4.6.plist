@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-08-03T04:46:07Z</date>
+		<date>2025-08-19T03:52:16Z</date>
 		<key>munki_version</key>
 		<string>6.6.3.4704</string>
 		<key>os_version</key>
@@ -17,41 +17,35 @@
 	<false/>
 	<key>catalogs</key>
 	<array>
-		<string>testing</string>
+		<string>testing-mothersruin-suspiciouspackage</string>
 	</array>
-	<key>category</key>
-	<string>Developer</string>
 	<key>description</key>
-	<string>Built to make you extraordinarily productive, Cursor is the best way to code with AI.</string>
-	<key>developer</key>
-	<string>Anysphere, Inc.</string>
+	<string>Suspicious Package: An Application for Inspecting OS X Installer Packages</string>
 	<key>display_name</key>
-	<string>Cursor</string>
-	<key>icon_name</key>
-	<string>Cursor.png</string>
+	<string>Suspicious Package App</string>
 	<key>installer_item_hash</key>
-	<string>7801b33b8c143844a1c85afe3b804b74c32001eff0c3b511e3705456a44ff700</string>
+	<string>489717a9047f762dd3f0adee34abf4d1090bb260c624d53d350108a434aa6093</string>
 	<key>installer_item_location</key>
-	<string>apps/Cursor/Cursor-1.3.9.dmg</string>
+	<string>apps/mothersruin/SuspiciousPackage-4.6.dmg</string>
 	<key>installer_item_size</key>
-	<integer>241300</integer>
+	<integer>6859</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.todesktop.230313mzl4w4u92</string>
+			<string>com.mothersruin.SuspiciousPackageApp</string>
 			<key>CFBundleName</key>
-			<string>Cursor</string>
+			<string>Suspicious Package</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.3.9</string>
+			<string>4.6</string>
 			<key>CFBundleVersion</key>
-			<string>1.3.9</string>
+			<string>1311</string>
 			<key>minosversion</key>
-			<string>11.0</string>
+			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/Cursor.app</string>
+			<string>/Applications/Suspicious Package.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -64,22 +58,18 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Cursor.app</string>
+			<string>Suspicious Package.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>11.0</string>
+	<string>10.13</string>
 	<key>name</key>
-	<string>Cursor</string>
-	<key>unattended_install</key>
-	<true/>
-	<key>unattended_uninstall</key>
-	<true/>
+	<string>SuspiciousPackageApp</string>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.3.9</string>
+	<string>4.6</string>
 </dict>
 </plist>
