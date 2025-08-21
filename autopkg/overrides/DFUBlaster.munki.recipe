@@ -69,20 +69,20 @@ fi</string>
 			<key>com.github.kevinmcox.download.DFUBlaster</key>
 			<dict>
 				<key>git_hash</key>
-				<string>716c526de138b4bd7f6877bb788099c874a1a12c</string>
+				<string>71e5388e57600a29fe5bdbd814043da695240b31</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.kevinmcox-recipes/Twocanoes Software/DFUBlaster.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>87e0f9f8525e57e9910efafe2c8f2339456cd14eeffad0b2a2346c345c2713e5</string>
+				<string>e7cb83f598179a99c85180f0555555eceb22e2bcee65fd36581bb05dbc4fa964</string>
 			</dict>
 			<key>com.github.kevinmcox.munki.DFUBlaster</key>
 			<dict>
 				<key>git_hash</key>
-				<string>716c526de138b4bd7f6877bb788099c874a1a12c</string>
+				<string>d70920e3e0d588cfb05a44024106cc2ed6df5843</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.kevinmcox-recipes/Twocanoes Software/DFUBlaster.munki.recipe</string>
 				<key>sha256_hash</key>
-				<string>e2f12ffff5eb11c9253cc46fbd37c571ec86c0cef21ec54d9a5ad3a2631c47db</string>
+				<string>02c92c9a45c28ff7804a2ba229cb338d5bc2febd6eda6218a2dc55857608d266</string>
 			</dict>
 		</dict>
 	</dict>

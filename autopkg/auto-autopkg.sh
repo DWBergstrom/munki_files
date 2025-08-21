@@ -2,6 +2,7 @@
 
 #TODO:
 # - Convert if statements to case statements for parameters
+# - Add autopkg verify function
 # - Move blocks into functions where possible
 # - Add error handling for rsync and tailscale
 # - Reorder when functions are created

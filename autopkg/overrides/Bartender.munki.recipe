@@ -41,11 +41,11 @@
 			<key>com.github.homebysix.FindAndReplace/FindAndReplace</key>
 			<dict>
 				<key>git_hash</key>
-				<string>dc086969ec741e70edcf24774d50fba627732496</string>
+				<string>cecb7b4f782a8f6b59f029d30a544df0e07c5548</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/FindAndReplace/FindAndReplace.py</string>
 				<key>sha256_hash</key>
-				<string>bb19af8502c6531346e06767b128cee20532647d31b529af2deff1136e550bd8</string>
+				<string>550c9015d45d5f4bbdef4ebd2563c4fbfcbef10cde59598bb101ef7b2647a310</string>
 			</dict>
 		</dict>
 		<key>parent_recipes</key>
@@ -53,11 +53,11 @@
 			<key>com.github.homebysix.download.Bartender</key>
 			<dict>
 				<key>git_hash</key>
-				<string>b0d5a201bc68d6df88e321f8518316954f70447b</string>
+				<string>3b3cf3d616728802c1bce80bb2dbc000e026e9f4</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Bartender/Bartender.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>5d841bf58f3d5c10a22b625bd7536b3aeacc8c7f40e2ad0bdf7374664e066fc9</string>
+				<string>3612c2ed38858bfec175a7cd10f779cb7064fd13c7c375ac8e3c84806a5e500a</string>
 			</dict>
 			<key>com.github.homebysix.munki.Bartender</key>
 			<dict>
