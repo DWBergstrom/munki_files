@@ -1279,6 +1279,134 @@ fi</string>
 	<dict>
 		<key>autoremove</key>
 		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
+		<key>display_name</key>
+		<string>Google Chrome</string>
+		<key>installer_item_hash</key>
+		<string>b5056410f3286dad928c8e523a2b1c7fc6bdc52e2433449d0ee95e158d37414a</string>
+		<key>installer_item_location</key>
+		<string>apps/GoogleChrome-139.0.7258.139.dmg</string>
+		<key>installer_item_size</key>
+		<integer>224896</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.google.Chrome</string>
+				<key>CFBundleName</key>
+				<string>Chrome</string>
+				<key>CFBundleShortVersionString</key>
+				<string>139.0.7258.139</string>
+				<key>CFBundleVersion</key>
+				<string>7258.139</string>
+				<key>minosversion</key>
+				<string>12.0</string>
+				<key>path</key>
+				<string>/Applications/Google Chrome.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Google Chrome.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.0</string>
+		<key>name</key>
+		<string>GoogleChrome</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>139.0.7258.139</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Utilities</string>
+		<key>description</key>
+		<string>iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with OS 10.5 (Leopard) or newer. Its focus is on performance, internationalization, and supporting innovative features that make your life better.</string>
+		<key>developer</key>
+		<string>George Nachman</string>
+		<key>display_name</key>
+		<string>iTerm2</string>
+		<key>installer_item_hash</key>
+		<string>dd84fc8b57f7abdcb4979d6afba14c22819c377cd60faa494617ef32778b10b0</string>
+		<key>installer_item_location</key>
+		<string>apps/iTerm2-3.5.14.dmg</string>
+		<key>installer_item_size</key>
+		<integer>32033</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.googlecode.iterm2</string>
+				<key>CFBundleName</key>
+				<string>iTerm2</string>
+				<key>CFBundleShortVersionString</key>
+				<string>3.5.14</string>
+				<key>CFBundleVersion</key>
+				<string>3.5.14</string>
+				<key>minosversion</key>
+				<string>10.15</string>
+				<key>path</key>
+				<string>/Applications/iTerm.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>iTerm.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15</string>
+		<key>name</key>
+		<string>iTerm2</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>3.5.14</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
 		<key>blocking_applications</key>
 		<array>
 			<string>1Password 7</string>
@@ -1842,11 +1970,11 @@ fi
 		<key>display_name</key>
 		<string>Mozilla Firefox</string>
 		<key>installer_item_hash</key>
-		<string>bb922cda690543bddaa1fbc3b3cba508c60774832643452bc266595331f42db1</string>
+		<string>cc0ce6b3ec64d064c16187f92ca4a8df5a21a1d7aa2f79a9e82b44602f2b1a0f</string>
 		<key>installer_item_location</key>
-		<string>apps/firefox/Firefox-141.0.3.dmg</string>
+		<string>apps/firefox/Firefox-142.0.dmg</string>
 		<key>installer_item_size</key>
-		<integer>135544</integer>
+		<integer>136236</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -1857,9 +1985,9 @@ fi
 				<key>CFBundleName</key>
 				<string>Firefox</string>
 				<key>CFBundleShortVersionString</key>
-				<string>141.0.3</string>
+				<string>142.0</string>
 				<key>CFBundleVersion</key>
-				<string>14125.8.6</string>
+				<string>14225.8.11</string>
 				<key>minosversion</key>
 				<string>10.15.0</string>
 				<key>path</key>
@@ -1890,7 +2018,7 @@ fi
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>141.0.3</string>
+		<string>142.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -1963,32 +2091,34 @@ fi
 			<string>testing</string>
 		</array>
 		<key>description</key>
-		<string>Mozilla Firefox is a free and open source web browser.</string>
+		<string>A kick ass tool for creating AutoPkg recipes.</string>
+		<key>developer</key>
+		<string>Elliot Jordan</string>
 		<key>display_name</key>
-		<string>Mozilla Firefox</string>
+		<string>Recipe Robot</string>
 		<key>installer_item_hash</key>
-		<string>bb922cda690543bddaa1fbc3b3cba508c60774832643452bc266595331f42db1</string>
+		<string>1623d259c149c8c572cdf9983a484bc69fac9e2941561ddc208b1d50663752ab</string>
 		<key>installer_item_location</key>
-		<string>apps/firefox/Firefox-141.0.3.dmg</string>
+		<string>apps/Recipe Robot/Recipe Robot-2.3.2.dmg</string>
 		<key>installer_item_size</key>
-		<integer>135544</integer>
+		<integer>4209</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
 		<array>
 			<dict>
 				<key>CFBundleIdentifier</key>
-				<string>org.mozilla.firefox</string>
+				<string>com.elliotjordan.recipe-robot</string>
 				<key>CFBundleName</key>
-				<string>Firefox</string>
+				<string>Recipe Robot</string>
 				<key>CFBundleShortVersionString</key>
-				<string>141.0.3</string>
+				<string>2.3.2</string>
 				<key>CFBundleVersion</key>
-				<string>14125.8.6</string>
+				<string>1407</string>
 				<key>minosversion</key>
-				<string>10.15.0</string>
+				<string>11.0</string>
 				<key>path</key>
-				<string>/Applications/Firefox.app</string>
+				<string>/Applications/Recipe Robot.app</string>
 				<key>type</key>
 				<string>application</string>
 				<key>version_comparison_key</key>
@@ -2001,13 +2131,13 @@ fi
 				<key>destination_path</key>
 				<string>/Applications</string>
 				<key>source_item</key>
-				<string>Firefox.app</string>
+				<string>Recipe Robot.app</string>
 			</dict>
 		</array>
 		<key>minimum_os_version</key>
-		<string>10.15.0</string>
+		<string>11.0</string>
 		<key>name</key>
-		<string>Firefox</string>
+		<string>Recipe Robot</string>
 		<key>unattended_install</key>
 		<true/>
 		<key>uninstall_method</key>
@@ -2015,7 +2145,7 @@ fi
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>141.0.3</string>
+		<string>2.3.2</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -2410,6 +2540,104 @@ fi
 		<string>de71505d9300b12a468e094474b2955c028d65a8772c3ce024ea24a4589adad5</string>
 		<key>installer_item_location</key>
 		<string>apps/AppGate SDP/AppGate SDP-6.5.2.42437__1.dmg</string>
+		<key>installer_item_size</key>
+		<integer>172974</integer>
+		<key>minimum_os_version</key>
+		<string>10.5.0</string>
+		<key>name</key>
+		<string>AppGate SDP</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>578185</integer>
+				<key>packageid</key>
+				<string>com.appgate.pkg.appgatetun.component</string>
+				<key>version</key>
+				<string>6.5.2.42437</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>6.5.2.42437</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>AppGate SDP.app</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>AppGate brings secure access to your infrastructure using better network security than legacy VPNs, NACs and firewalls.</string>
+		<key>developer</key>
+		<string>CYXTERA TECHNOLOGIES, INC.</string>
+		<key>display_name</key>
+		<string>AppGate SDP</string>
+		<key>installed_size</key>
+		<integer>578185</integer>
+		<key>installer_item_hash</key>
+		<string>de71505d9300b12a468e094474b2955c028d65a8772c3ce024ea24a4589adad5</string>
+		<key>installer_item_location</key>
+		<string>apps/AppGate SDP/AppGate SDP-6.5.2.42437__1.dmg</string>
+		<key>installer_item_size</key>
+		<integer>172974</integer>
+		<key>minimum_os_version</key>
+		<string>10.5.0</string>
+		<key>name</key>
+		<string>AppGate SDP</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>578185</integer>
+				<key>packageid</key>
+				<string>com.appgate.pkg.appgatetun.component</string>
+				<key>version</key>
+				<string>6.5.2.42437</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>6.5.2.42437</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>AppGate SDP.app</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>AppGate brings secure access to your infrastructure using better network security than legacy VPNs, NACs and firewalls.</string>
+		<key>developer</key>
+		<string>CYXTERA TECHNOLOGIES, INC.</string>
+		<key>display_name</key>
+		<string>AppGate SDP</string>
+		<key>installed_size</key>
+		<integer>578185</integer>
+		<key>installer_item_hash</key>
+		<string>de71505d9300b12a468e094474b2955c028d65a8772c3ce024ea24a4589adad5</string>
+		<key>installer_item_location</key>
+		<string>apps/AppGate SDP/AppGate SDP-6.5.2.42437.dmg</string>
 		<key>installer_item_size</key>
 		<integer>172974</integer>
 		<key>minimum_os_version</key>
@@ -3017,6 +3245,76 @@ fi
 		<array>
 			<string>testing</string>
 		</array>
+		<key>category</key>
+		<string>Developer</string>
+		<key>description</key>
+		<string>Built to make you extraordinarily productive, Cursor is the best way to code with AI.</string>
+		<key>developer</key>
+		<string>Anysphere, Inc.</string>
+		<key>display_name</key>
+		<string>Cursor</string>
+		<key>icon_name</key>
+		<string>Cursor.png</string>
+		<key>installer_item_hash</key>
+		<string>9779f901386d881fc070ea94b6213b72d0f4e89f23f2cebaa707d67ac7984398</string>
+		<key>installer_item_location</key>
+		<string>apps/Cursor/Cursor-1.4.5.dmg</string>
+		<key>installer_item_size</key>
+		<integer>242972</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.todesktop.230313mzl4w4u92</string>
+				<key>CFBundleName</key>
+				<string>Cursor</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.4.5</string>
+				<key>CFBundleVersion</key>
+				<string>1.4.5</string>
+				<key>minosversion</key>
+				<string>11.0</string>
+				<key>path</key>
+				<string>/Applications/Cursor.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Cursor.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>11.0</string>
+		<key>name</key>
+		<string>Cursor</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.4.5</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
 		<key>description</key>
 		<string>Suspicious Package: An Application for Inspecting OS X Installer Packages</string>
 		<key>display_name</key>
@@ -3263,6 +3561,68 @@ fi
 		<array>
 			<string>testing</string>
 		</array>
+		<key>description</key>
+		<string>Explore REST and GraphQL APIs.</string>
+		<key>display_name</key>
+		<string>Insomnia </string>
+		<key>installer_item_hash</key>
+		<string>00595624c9e5dfa6aea60a31849aa637b69cb72c78ee3caf328e94ddff210cf1</string>
+		<key>installer_item_location</key>
+		<string>apps/Insomnia/Insomnia.Core-11.4.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>243777</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.insomnia.app</string>
+				<key>CFBundleName</key>
+				<string>Insomnia</string>
+				<key>CFBundleShortVersionString</key>
+				<string>11.4.0</string>
+				<key>CFBundleVersion</key>
+				<string>11.4.0</string>
+				<key>minosversion</key>
+				<string>11.0</string>
+				<key>path</key>
+				<string>/Applications/Insomnia.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Insomnia.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>11.0</string>
+		<key>name</key>
+		<string>Insomnia</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>11.4.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
 		<key>category</key>
 		<string>Utilities</string>
 		<key>description</key>
@@ -3460,6 +3820,72 @@ fi
 		<key>catalogs</key>
 		<array>
 			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Utilities</string>
+		<key>description</key>
+		<string>iMazing Profile Editor lets users create, modify, and also digitally sign configuration profiles with a friendly user interface instead of manually coding them in XML.</string>
+		<key>developer</key>
+		<string>DigiDNA SARL</string>
+		<key>display_name</key>
+		<string>iMazing Profile Editor</string>
+		<key>installer_item_hash</key>
+		<string>b35686da3edda25273069d370996caa611012ed8f1f3f5bf18128ca9fa130310</string>
+		<key>installer_item_location</key>
+		<string>apps/imazingprofileeditor/iMazing_Profile_Editor_2.0.0.364301-2.0.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>23986</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.DigiDNA.iMazingProfileEditorMac</string>
+				<key>CFBundleName</key>
+				<string>iMazing Profile Editor</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2.0.0</string>
+				<key>CFBundleVersion</key>
+				<string>364301</string>
+				<key>minosversion</key>
+				<string>12.0</string>
+				<key>path</key>
+				<string>/Applications/iMazing Profile Editor.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>iMazing Profile Editor.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.0</string>
+		<key>name</key>
+		<string>iMazingProfileEditor</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2.0.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
 			<string>development</string>
 		</array>
 		<key>category</key>
@@ -3516,13 +3942,13 @@ fi
 		<key>display_name</key>
 		<string>Microsoft Edge</string>
 		<key>installed_size</key>
-		<integer>921926</integer>
+		<integer>921965</integer>
 		<key>installer_item_hash</key>
-		<string>07051b3d4c97eeeff72c0858ae9510a249d9b1193a9c0174bef4a9697dbd395d</string>
+		<string>c5edb687ac110cabedf989706a6e9fade4f30375ef194f155fade830fc8837be</string>
 		<key>installer_item_location</key>
-		<string>apps/Microsoft/Microsoft_Edge-139.0.3405.86.pkg</string>
+		<string>apps/Microsoft/Microsoft_Edge-139.0.3405.102.pkg</string>
 		<key>installer_item_size</key>
-		<integer>399858</integer>
+		<integer>399877</integer>
 		<key>minimum_os_version</key>
 		<string>10.10.0</string>
 		<key>name</key>
@@ -3531,11 +3957,11 @@ fi
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>921926</integer>
+				<integer>921965</integer>
 				<key>packageid</key>
 				<string>com.microsoft.edgemac</string>
 				<key>version</key>
-				<string>139.0.3405.86</string>
+				<string>139.0.3405.102</string>
 			</dict>
 		</array>
 		<key>uninstall_method</key>
@@ -3543,7 +3969,7 @@ fi
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>139.0.3405.86</string>
+		<string>139.0.3405.102</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -4138,6 +4564,75 @@ fi
 		<key>catalogs</key>
 		<array>
 			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVD, Audio CD, VCD, and various streaming protocols.</string>
+		<key>developer</key>
+		<string>The VideoLAN Project</string>
+		<key>display_name</key>
+		<string>VLC Media Player</string>
+		<key>installer_item_hash</key>
+		<string>50380e56f81d630e3531426a265abf8b3dee6c0822bb7c9e30b532c7d69a65c0</string>
+		<key>installer_item_location</key>
+		<string>apps/VLC/VLC-3.0.21.dmg</string>
+		<key>installer_item_size</key>
+		<integer>83158</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>org.videolan.vlc</string>
+				<key>CFBundleName</key>
+				<string>VLC</string>
+				<key>CFBundleShortVersionString</key>
+				<string>3.0.21</string>
+				<key>CFBundleVersion</key>
+				<string>3.0.21</string>
+				<key>minosversion</key>
+				<string>10.7.5</string>
+				<key>path</key>
+				<string>/Applications/VLC.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>VLC.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.7.5</string>
+		<key>name</key>
+		<string>VLC</string>
+		<key>supported_architectures</key>
+		<array>
+			<string>arm64</string>
+			<string>x86_64</string>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>3.0.21</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
 			<string>development</string>
 		</array>
 		<key>description</key>
@@ -4425,142 +4920,6 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<key>display_name</key>
 		<string>Raycast</string>
 		<key>installer_item_hash</key>
-		<string>cf0d7fc79e7cf72496d9b3b29379674d4da53293e42bd5dd0b100a2d283e3b16</string>
-		<key>installer_item_location</key>
-		<string>apps/Raycast/Raycast-1.102.4.dmg</string>
-		<key>installer_item_size</key>
-		<integer>98546</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.raycast.macos</string>
-				<key>CFBundleName</key>
-				<string>Raycast</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.102.4</string>
-				<key>CFBundleVersion</key>
-				<string>0</string>
-				<key>minosversion</key>
-				<string>13.0</string>
-				<key>path</key>
-				<string>/Applications/Raycast.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Raycast.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>13.0</string>
-		<key>name</key>
-		<string>Raycast</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.102.4</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Supercharged productivity
-
-Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
-		<key>developer</key>
-		<string>Raycast Technologies Inc</string>
-		<key>display_name</key>
-		<string>Raycast</string>
-		<key>installer_item_hash</key>
-		<string>cf0d7fc79e7cf72496d9b3b29379674d4da53293e42bd5dd0b100a2d283e3b16</string>
-		<key>installer_item_location</key>
-		<string>apps/Raycast/Raycast-1.102.4.dmg</string>
-		<key>installer_item_size</key>
-		<integer>98546</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.raycast.macos</string>
-				<key>CFBundleName</key>
-				<string>Raycast</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.102.4</string>
-				<key>CFBundleVersion</key>
-				<string>0</string>
-				<key>minosversion</key>
-				<string>13.0</string>
-				<key>path</key>
-				<string>/Applications/Raycast.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Raycast.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>13.0</string>
-		<key>name</key>
-		<string>Raycast</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.102.4</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Supercharged productivity
-
-Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
-		<key>developer</key>
-		<string>Raycast Technologies Inc</string>
-		<key>display_name</key>
-		<string>Raycast</string>
-		<key>installer_item_hash</key>
 		<string>1ff7c7c319c201aa57ade1f063155ef5e93f39351a4a8d3346cceb36bca80c63</string>
 		<key>installer_item_location</key>
 		<string>apps/Raycast/Raycast-1.94.4.dmg</string>
@@ -4612,6 +4971,74 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<true/>
 		<key>version</key>
 		<string>1.94.4</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Supercharged productivity
+
+Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
+		<key>developer</key>
+		<string>Raycast Technologies Inc</string>
+		<key>display_name</key>
+		<string>Raycast</string>
+		<key>installer_item_hash</key>
+		<string>00e69a1c06b0ca4ea2ada42196b1cdb86b27af093b02a18a52803d8a0ca51719</string>
+		<key>installer_item_location</key>
+		<string>apps/Raycast/Raycast-1.102.5.dmg</string>
+		<key>installer_item_size</key>
+		<integer>98548</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.raycast.macos</string>
+				<key>CFBundleName</key>
+				<string>Raycast</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.102.5</string>
+				<key>CFBundleVersion</key>
+				<string>0</string>
+				<key>minosversion</key>
+				<string>13.0</string>
+				<key>path</key>
+				<string>/Applications/Raycast.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Raycast.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0</string>
+		<key>name</key>
+		<string>Raycast</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.102.5</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -5079,6 +5506,134 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<key>installer_item_hash</key>
 		<string>598aa227ef544d37b7f964c1352e6f2d955fc5a8127cc2a708e7bc02af2cc7f0</string>
 		<key>installer_item_location</key>
+		<string>apps/AutoPkgr/AutoPkgr-1.6.1.dmg</string>
+		<key>installer_item_size</key>
+		<integer>5648</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.lindegroup.AutoPkgr</string>
+				<key>CFBundleName</key>
+				<string>AutoPkgr</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.6.1</string>
+				<key>CFBundleVersion</key>
+				<string>1509</string>
+				<key>minosversion</key>
+				<string>10.13</string>
+				<key>path</key>
+				<string>/Applications/AutoPkgr.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>AutoPkgr.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>AutoPkgr</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.6.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>AutoPkgr is a free Mac app that makes it easy to install and configure AutoPkg.</string>
+		<key>developer</key>
+		<string>Linde Group, Inc.</string>
+		<key>display_name</key>
+		<string>AutoPkgr</string>
+		<key>installer_item_hash</key>
+		<string>598aa227ef544d37b7f964c1352e6f2d955fc5a8127cc2a708e7bc02af2cc7f0</string>
+		<key>installer_item_location</key>
+		<string>apps/AutoPkgr/AutoPkgr-1.6.1__1.dmg</string>
+		<key>installer_item_size</key>
+		<integer>5648</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.lindegroup.AutoPkgr</string>
+				<key>CFBundleName</key>
+				<string>AutoPkgr</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.6.1</string>
+				<key>CFBundleVersion</key>
+				<string>1509</string>
+				<key>minosversion</key>
+				<string>10.13</string>
+				<key>path</key>
+				<string>/Applications/AutoPkgr.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>AutoPkgr.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>AutoPkgr</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.6.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>AutoPkgr is a free Mac app that makes it easy to install and configure AutoPkg.</string>
+		<key>developer</key>
+		<string>Linde Group, Inc.</string>
+		<key>display_name</key>
+		<string>AutoPkgr</string>
+		<key>installer_item_hash</key>
+		<string>598aa227ef544d37b7f964c1352e6f2d955fc5a8127cc2a708e7bc02af2cc7f0</string>
+		<key>installer_item_location</key>
 		<string>apps/AutoPkgr/AutoPkgr-1.6.1__1.dmg</string>
 		<key>installer_item_size</key>
 		<integer>5648</integer>
@@ -5319,6 +5874,70 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<true/>
 		<key>version</key>
 		<string>0.102.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Virtual machines for iOS and macOS</string>
+		<key>developer</key>
+		<string>Turing Software, LLC</string>
+		<key>display_name</key>
+		<string>UTM</string>
+		<key>installer_item_hash</key>
+		<string>0b35607e01e2efa04f45f176d875b4a38613878071ee5536d2a9cc3b64a3c28d</string>
+		<key>installer_item_location</key>
+		<string>apps/UTM/UTM-4.6.5.dmg</string>
+		<key>installer_item_size</key>
+		<integer>239590</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.utmapp.UTM</string>
+				<key>CFBundleName</key>
+				<string>UTM</string>
+				<key>CFBundleShortVersionString</key>
+				<string>4.6.5</string>
+				<key>CFBundleVersion</key>
+				<string>108</string>
+				<key>minosversion</key>
+				<string>11.3</string>
+				<key>path</key>
+				<string>/Applications/UTM.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>UTM.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>11.3</string>
+		<key>name</key>
+		<string>UTM</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>4.6.5</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>

@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-08-21T03:02:39Z</date>
+		<date>2025-08-21T02:54:25Z</date>
 		<key>munki_version</key>
 		<string>6.6.3.4704</string>
 		<key>os_version</key>
@@ -20,34 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Fast Terminal app based in Rust.</string>
+	<string>VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVD, Audio CD, VCD, and various streaming protocols.</string>
 	<key>developer</key>
-	<string>Denver Technologies</string>
+	<string>The VideoLAN Project</string>
 	<key>display_name</key>
-	<string>Warp</string>
-	<key>force_munkiimport</key>
-	<true/>
+	<string>VLC Media Player</string>
 	<key>installer_item_hash</key>
-	<string>07d42187ed6fbe2b1da44f5761045b27cec8968e109b2f54bdded99f8f932f18</string>
+	<string>50380e56f81d630e3531426a265abf8b3dee6c0822bb7c9e30b532c7d69a65c0</string>
 	<key>installer_item_location</key>
-	<string>apps/Warp/Warp-0.2025.08.13.08.12.02.dmg</string>
+	<string>apps/VLC/VLC-3.0.21.dmg</string>
 	<key>installer_item_size</key>
-	<integer>112817</integer>
+	<integer>83158</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>dev.warp.Warp-Stable</string>
+			<string>org.videolan.vlc</string>
 			<key>CFBundleName</key>
-			<string>Warp</string>
+			<string>VLC</string>
 			<key>CFBundleShortVersionString</key>
-			<string>0.2025.08.13.08.12.02</string>
+			<string>3.0.21</string>
 			<key>CFBundleVersion</key>
-			<string>0.2025.08.13.08.12.02</string>
+			<string>3.0.21</string>
+			<key>minosversion</key>
+			<string>10.7.5</string>
 			<key>path</key>
-			<string>/Applications/Warp.app</string>
+			<string>/Applications/VLC.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,13 +60,18 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Warp.app</string>
+			<string>VLC.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>10.4.0</string>
+	<string>10.7.5</string>
 	<key>name</key>
-	<string>Warp</string>
+	<string>VLC</string>
+	<key>supported_architectures</key>
+	<array>
+		<string>arm64</string>
+		<string>x86_64</string>
+	</array>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -74,6 +79,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>0.2025.08.13.08.12.02</string>
+	<string>3.0.21</string>
 </dict>
 </plist>

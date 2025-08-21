@@ -74,11 +74,11 @@
 		<key>display_name</key>
 		<string>Suspicious Package App</string>
 		<key>installer_item_hash</key>
-		<string>fff88bec145da31f8a0350899c6b6d5108947ec92e05e306adfd5850db7f9bdd</string>
+		<string>489717a9047f762dd3f0adee34abf4d1090bb260c624d53d350108a434aa6093</string>
 		<key>installer_item_location</key>
-		<string>apps/mothersruin/SuspiciousPackage-4.5.dmg</string>
+		<string>apps/mothersruin/SuspiciousPackage-4.6.dmg</string>
 		<key>installer_item_size</key>
-		<integer>6776</integer>
+		<integer>6859</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -89,9 +89,9 @@
 				<key>CFBundleName</key>
 				<string>Suspicious Package</string>
 				<key>CFBundleShortVersionString</key>
-				<string>4.5</string>
+				<string>4.6</string>
 				<key>CFBundleVersion</key>
-				<string>1213</string>
+				<string>1311</string>
 				<key>minosversion</key>
 				<string>12.0</string>
 				<key>path</key>
@@ -120,7 +120,7 @@
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>4.5</string>
+		<string>4.6</string>
 	</dict>
 </array>
 </plist>

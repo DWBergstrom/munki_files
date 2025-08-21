@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-08-21T03:02:39Z</date>
+		<date>2025-08-21T02:55:44Z</date>
 		<key>munki_version</key>
 		<string>6.6.3.4704</string>
 		<key>os_version</key>
@@ -20,34 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Fast Terminal app based in Rust.</string>
+	<string>AutoPkgr is a free Mac app that makes it easy to install and configure AutoPkg.</string>
 	<key>developer</key>
-	<string>Denver Technologies</string>
+	<string>Linde Group, Inc.</string>
 	<key>display_name</key>
-	<string>Warp</string>
-	<key>force_munkiimport</key>
-	<true/>
+	<string>AutoPkgr</string>
 	<key>installer_item_hash</key>
-	<string>07d42187ed6fbe2b1da44f5761045b27cec8968e109b2f54bdded99f8f932f18</string>
+	<string>598aa227ef544d37b7f964c1352e6f2d955fc5a8127cc2a708e7bc02af2cc7f0</string>
 	<key>installer_item_location</key>
-	<string>apps/Warp/Warp-0.2025.08.13.08.12.02.dmg</string>
+	<string>apps/AutoPkgr/AutoPkgr-1.6.1__1.dmg</string>
 	<key>installer_item_size</key>
-	<integer>112817</integer>
+	<integer>5648</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>dev.warp.Warp-Stable</string>
+			<string>com.lindegroup.AutoPkgr</string>
 			<key>CFBundleName</key>
-			<string>Warp</string>
+			<string>AutoPkgr</string>
 			<key>CFBundleShortVersionString</key>
-			<string>0.2025.08.13.08.12.02</string>
+			<string>1.6.1</string>
 			<key>CFBundleVersion</key>
-			<string>0.2025.08.13.08.12.02</string>
+			<string>1509</string>
+			<key>minosversion</key>
+			<string>10.13</string>
 			<key>path</key>
-			<string>/Applications/Warp.app</string>
+			<string>/Applications/AutoPkgr.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,13 +60,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Warp.app</string>
+			<string>AutoPkgr.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>10.4.0</string>
+	<string>10.13</string>
 	<key>name</key>
-	<string>Warp</string>
+	<string>AutoPkgr</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -74,6 +74,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>0.2025.08.13.08.12.02</string>
+	<string>1.6.1</string>
 </dict>
 </plist>

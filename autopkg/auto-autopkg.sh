@@ -1,36 +1,98 @@
 #!/bin/bash
 
-# Define the directory containing the overrides
-OVERRIDES_DIR="/Volumes/2TB-WD/munki_files/autopkg/overrides"
+#TODO:
+# - Convert if statements to case statements for parameters
+# - Move blocks into functions where possible
+# - Add error handling for rsync and tailscale
+# - Reorder when functions are created
+# - Add logging
 
-# Define Munki repo path
-MUNKI_REPO_PATH="/Volumes/2TB-WD/munki_files/munki_web/munki_repo/"
-RSYNC_PATH="/Users/dwbergstrom/github/munki_files"
-WEBSERVER_IP=$(/Applications/Tailscale.app/Contents/MacOS/Tailscale status | grep ubuntun20 | awk '{ print $1 }')
+# Parameter check
+if [ $# -eq 0 ]; then
+  echo "Usage: auto-autopkg.sh [--all / -a] [--rsync-only / -r] [override.name]"
+  exit 1
+fi
+
+# Volume name
+VOLUME_NAME="1TB-Toshiba"
+
+# Tailscale command
+TAILSCALE_CMD="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+
+# Verify the munki volume is mounted
+if ! mount | grep -q "$VOLUME_NAME"; then
+  echo "Volume $VOLUME_NAME is not mounted - unable to access munki files. Please mount it and try again."
+  exit 1
+else
+  echo "Volume $VOLUME_NAME is mounted - continuing."
+fi
+
+# Define the override directory
+OVERRIDES_DIR="/Volumes/${VOLUME_NAME}/munki_files/autopkg/overrides"
+
+# Define Munki  and autopkg variables
+REPOCLEAN_VERSIONS="1"
+MUNKI_REPO_PATH="/Volumes/${VOLUME_NAME}/munki_files/munki_web/munki_repo/"
+RSYNC_PATH="/Volumes/${VOLUME_NAME}/munki_files/"
+WEBSERVER_NAME="ubuntun20"
+WEBSERVER_IP=$($TAILSCALE_CMD status | grep $WEBSERVER_NAME | awk '{ print $1 }')
+WEBSERVER_STATUS=""
+if $TAILSCALE_CMD status | grep $WEBSERVER_NAME | grep "offline" > /dev/null; then
+  WEBSERVER_STATUS="offline"
+  else
+    WEBSERVER_STATUS="online"
+fi
 WEBSERVER_SYNC_PATH="/home/dwbergstrom/git/"
+AUTOPKG_CMD="/usr/local/bin/autopkg run -v"
 
-# Verbose options
+# Verify autopkg settings
+function verify_autopkg_settings {
+  defaults write com.github.autopkg RECIPE_OVERRIDE_DIRS $OVERRIDES_DIR
+  defaults write com.github.autopkg MUNKI_REPO $MUNKI_REPO_PATH
+  autopkg repo-update all
+}
+
 if [ $# -gt 0 ]; then
   if [ "$1" = "--rsync-only" ] || [ "$1" = "-r" ]; then
     # Only run the rsync command
-    rsync -avz "${RSYNC_PATH}" "dwbergstrom@${WEBSERVER_IP}:${WEBSERVER_SYNC_PATH}"
+    if [ $WEBSERVER_STATUS == "online" ]; then
+      rsync -avz "${RSYNC_PATH}" "dwbergstrom@${WEBSERVER_IP}:${WEBSERVER_SYNC_PATH}"
+      else
+      echo "Tailscale server $WEBSERVER_NAME is offline - unable to rsync."
+    fi
     exit 0
+  elif [ "$1" = "--all" ] || [ "$1" = "-a" ]; then
+    echo "Running autopkg for all overrides in ${OVERRIDES_DIR}"
   else
-    echo "running single override ${OVERRIDES_DIR}/${1}"
-    /usr/local/bin/autopkg run -v ${OVERRIDES_DIR}/${1}
-    rsync -avz "${RSYNC_PATH}" "dwbergstrom@${WEBSERVER_IP}:${WEBSERVER_SYNC_PATH}"
+    echo "Checking for single override ${1} in ${OVERRIDES_DIR}"
+    if [ -f "${OVERRIDES_DIR}/${1}" ]; then
+      echo "Running single override ${1}"
+      verify_autopkg_settings
+      /usr/local/bin/autopkg run -v ${OVERRIDES_DIR}/${1}
+      if [ $WEBSERVER_STATUS == "online" ]; then
+        rsync -avz "${RSYNC_PATH}" "dwbergstrom@${WEBSERVER_IP}:${WEBSERVER_SYNC_PATH}"
+      else
+        echo "Tailscale server $WEBSERVER_NAME is offline - unable to rsync."
+      fi
+    else
+      echo "Override ${1} not found in ${OVERRIDES_DIR}"
+      exit 1
+    fi
     exit 0
   fi
 else
-  AUTOPKG_CMD="/usr/local/bin/autopkg run -v"
+  echo "Usage: auto-autopkg.sh [--all / -a] [--rsync-only / -r] [override.name]"
+  exit 1
 fi
 
 COMMIT_DATE=$(date "+%Y-%m-%d %H:%M:%S")
 
 # Clean up old apps
-repoclean -k 1 -a $MUNKI_REPO_PATH
+echo "Running repoclean..."
+repoclean -k $REPOCLEAN_VERSIONS -a $MUNKI_REPO_PATH
 
 # Run autopkg for each override in the directory
+verify_autopkg_settings
 for override in "$OVERRIDES_DIR"/*; do
   eval "${AUTOPKG_CMD} ${override}"
 done
@@ -61,4 +123,8 @@ echo "Printing date for logging:  ${current_date}"
 git commit -m "$COMMIT_DATE Updating munki"
 git push origin main
 
-rsync -avz "${RSYNC_PATH}" "dwbergstrom@${WEBSERVER_IP}:${WEBSERVER_SYNC_PATH}"
+if [ $WEBSERVER_STATUS == "online" ]; then
+  rsync -avz "${RSYNC_PATH}" "dwbergstrom@${WEBSERVER_IP}:${WEBSERVER_SYNC_PATH}"
+else
+  echo "Tailscale server $WEBSERVER_NAME is offline - unable to rsync."
+fi
