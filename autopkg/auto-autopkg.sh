@@ -8,6 +8,9 @@
 # - Reorder when functions are created
 # - Add logging
 
+#TODO with synology webserver
+# - update rsync paths
+
 # Parameter check
 if [ $# -eq 0 ]; then
   echo "Usage: auto-autopkg.sh [--all / -a] [--rsync-only / -r] [override.name]"
@@ -35,15 +38,16 @@ OVERRIDES_DIR="/Volumes/${VOLUME_NAME}/munki_files/autopkg/overrides"
 REPOCLEAN_VERSIONS="1"
 MUNKI_REPO_PATH="/Volumes/${VOLUME_NAME}/munki_files/munki_web/munki_repo/"
 RSYNC_PATH="/Volumes/${VOLUME_NAME}/munki_files/"
-WEBSERVER_NAME="ubuntun20"
+WEBSERVER_NAME="everything-book"
 WEBSERVER_IP=$($TAILSCALE_CMD status | grep $WEBSERVER_NAME | awk '{ print $1 }')
+WEBSERVER_PORT="8080"
 WEBSERVER_STATUS=""
 if $TAILSCALE_CMD status | grep $WEBSERVER_NAME | grep "offline" > /dev/null; then
   WEBSERVER_STATUS="offline"
   else
     WEBSERVER_STATUS="online"
 fi
-WEBSERVER_SYNC_PATH="/home/dwbergstrom/git/"
+WEBSERVER_SYNC_PATH="/volume1/serve"
 AUTOPKG_CMD="/usr/local/bin/autopkg run -v"
 
 # Verify autopkg settings
@@ -59,7 +63,7 @@ if [ $# -gt 0 ]; then
     if [ $WEBSERVER_STATUS == "online" ]; then
       rsync -avz "${RSYNC_PATH}" "dwbergstrom@${WEBSERVER_IP}:${WEBSERVER_SYNC_PATH}"
       else
-      echo "Tailscale server $WEBSERVER_NAME is offline - unable to rsync."
+      echo "Tailscale Synology server $WEBSERVER_NAME is offline - unable to rsync."
     fi
     exit 0
   elif [ "$1" = "--all" ] || [ "$1" = "-a" ]; then
