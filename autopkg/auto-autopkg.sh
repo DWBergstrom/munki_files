@@ -2,6 +2,8 @@
 
 #TODO:
 # - Convert if statements to case statements for parameters
+# - add an autopkg only option
+# - add a "add overrides" option
 # - Add autopkg verify function
 # - Move blocks into functions where possible
 # - Add error handling for rsync and tailscale
