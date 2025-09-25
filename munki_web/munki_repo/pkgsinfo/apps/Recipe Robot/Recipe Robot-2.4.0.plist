@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2025-09-25T02:42:05Z</date>
+		<key>munki_version</key>
+		<string>6.6.3.4704</string>
+		<key>os_version</key>
+		<string>15.7</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>A kick ass tool for creating AutoPkg recipes.</string>
+	<key>developer</key>
+	<string>Elliot Jordan</string>
+	<key>display_name</key>
+	<string>Recipe Robot</string>
+	<key>installer_item_hash</key>
+	<string>6ee401123bc2f605c1ebde522babe483e49f3b7f4778369e1e987042b0f1ea1a</string>
+	<key>installer_item_location</key>
+	<string>apps/Recipe Robot/Recipe Robot-2.4.0.dmg</string>
+	<key>installer_item_size</key>
+	<integer>4246</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.elliotjordan.recipe-robot</string>
+			<key>CFBundleName</key>
+			<string>Recipe Robot</string>
+			<key>CFBundleShortVersionString</key>
+			<string>2.4.0</string>
+			<key>CFBundleVersion</key>
+			<string>1471</string>
+			<key>minosversion</key>
+			<string>11.0</string>
+			<key>path</key>
+			<string>/Applications/Recipe Robot.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>Recipe Robot.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>11.0</string>
+	<key>name</key>
+	<string>Recipe Robot</string>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>2.4.0</string>
+</dict>
+</plist>

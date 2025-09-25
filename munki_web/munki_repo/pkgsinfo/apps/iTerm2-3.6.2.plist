@@ -7,11 +7,11 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-08-21T03:02:39Z</date>
+		<date>2025-09-25T02:41:32Z</date>
 		<key>munki_version</key>
 		<string>6.6.3.4704</string>
 		<key>os_version</key>
-		<string>15.3</string>
+		<string>15.7</string>
 	</dict>
 	<key>autoremove</key>
 	<false/>
@@ -19,35 +19,37 @@
 	<array>
 		<string>testing</string>
 	</array>
+	<key>category</key>
+	<string>Utilities</string>
 	<key>description</key>
-	<string>Fast Terminal app based in Rust.</string>
+	<string>iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with OS 10.5 (Leopard) or newer. Its focus is on performance, internationalization, and supporting innovative features that make your life better.</string>
 	<key>developer</key>
-	<string>Denver Technologies</string>
+	<string>George Nachman</string>
 	<key>display_name</key>
-	<string>Warp</string>
-	<key>force_munkiimport</key>
-	<true/>
+	<string>iTerm2</string>
 	<key>installer_item_hash</key>
-	<string>07d42187ed6fbe2b1da44f5761045b27cec8968e109b2f54bdded99f8f932f18</string>
+	<string>f88bc0761fc86893723d46aafa2fa41b517521c865452eb046cd0bb08e450eec</string>
 	<key>installer_item_location</key>
-	<string>apps/Warp/Warp-0.2025.08.13.08.12.02.dmg</string>
+	<string>apps/iTerm2-3.6.2.dmg</string>
 	<key>installer_item_size</key>
-	<integer>112817</integer>
+	<integer>51355</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>dev.warp.Warp-Stable</string>
+			<string>com.googlecode.iterm2</string>
 			<key>CFBundleName</key>
-			<string>Warp</string>
+			<string>iTerm2</string>
 			<key>CFBundleShortVersionString</key>
-			<string>0.2025.08.13.08.12.02</string>
+			<string>3.6.2</string>
 			<key>CFBundleVersion</key>
-			<string>0.2025.08.13.08.12.02</string>
+			<string>3.6.2</string>
+			<key>minosversion</key>
+			<string>12.4</string>
 			<key>path</key>
-			<string>/Applications/Warp.app</string>
+			<string>/Applications/iTerm.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,13 +62,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Warp.app</string>
+			<string>iTerm.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>10.4.0</string>
+	<string>12.4</string>
 	<key>name</key>
-	<string>Warp</string>
+	<string>iTerm2</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -74,6 +76,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>0.2025.08.13.08.12.02</string>
+	<string>3.6.2</string>
 </dict>
 </plist>
