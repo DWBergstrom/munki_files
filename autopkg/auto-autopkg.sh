@@ -19,9 +19,11 @@ fi
 
 # Volume name
 VOLUME_NAME="1TB-Toshiba"
+echo "Volume name: $VOLUME_NAME"
 
 # Tailscale command
 TAILSCALE_CMD="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+echo "Tailscale command: $TAILSCALE_CMD"
 
 # Verify the munki volume is mounted
 if ! mount | grep -q "$VOLUME_NAME"; then
@@ -33,14 +35,13 @@ fi
 
 # Define the override directory
 OVERRIDES_DIR="/Volumes/${VOLUME_NAME}/munki_files/autopkg/overrides"
+echo "Overrides directory: $OVERRIDES_DIR"
 
 # Define Munki  and autopkg variables
 REPOCLEAN_VERSIONS="1"
 MUNKI_REPO_PATH="/Volumes/${VOLUME_NAME}/munki_files/munki_web/munki_repo/"
-RSYNC_PATH="/Volumes/${VOLUME_NAME}/munki_files/"
+RSYNC_PATH="/Volumes/${VOLUME_NAME}/munki_files/munki_web/"
 WEBSERVER_NAME="everything-book"
-WEBSERVER_IP=$($TAILSCALE_CMD status | grep $WEBSERVER_NAME | awk '{ print $1 }')
-WEBSERVER_PORT="8080"
 WEBSERVER_STATUS=""
 if $TAILSCALE_CMD status | grep $WEBSERVER_NAME | grep "offline" > /dev/null; then
   WEBSERVER_STATUS="offline"
@@ -61,7 +62,8 @@ if [ $# -gt 0 ]; then
   if [ "$1" = "--rsync-only" ] || [ "$1" = "-r" ]; then
     # Only run the rsync command
     if [ $WEBSERVER_STATUS == "online" ]; then
-      rsync -avz "${RSYNC_PATH}" "dwbergstrom@${WEBSERVER_IP}:${WEBSERVER_SYNC_PATH}"
+      # host config in ~/.ssh/config
+      rsync -avz "${RSYNC_PATH}" "${WEBSERVER_NAME}:${WEBSERVER_SYNC_PATH}"
       else
       echo "Tailscale Synology server $WEBSERVER_NAME is offline - unable to rsync."
     fi
@@ -75,7 +77,7 @@ if [ $# -gt 0 ]; then
       verify_autopkg_settings
       /usr/local/bin/autopkg run -v ${OVERRIDES_DIR}/${1}
       if [ $WEBSERVER_STATUS == "online" ]; then
-        rsync -avz "${RSYNC_PATH}" "dwbergstrom@${WEBSERVER_IP}:${WEBSERVER_SYNC_PATH}"
+        rsync -avz "${RSYNC_PATH}" "${WEBSERVER_NAME}:${WEBSERVER_SYNC_PATH}"
       else
         echo "Tailscale server $WEBSERVER_NAME is offline - unable to rsync."
       fi
@@ -129,7 +131,7 @@ git commit -m "$COMMIT_DATE Updating munki"
 git push origin main
 
 if [ $WEBSERVER_STATUS == "online" ]; then
-  rsync -avz "${RSYNC_PATH}" "dwbergstrom@${WEBSERVER_IP}:${WEBSERVER_SYNC_PATH}"
+  rsync -avz "${RSYNC_PATH}" "${WEBSERVER_NAME}:${WEBSERVER_SYNC_PATH}"
 else
   echo "Tailscale server $WEBSERVER_NAME is offline - unable to rsync."
 fi
