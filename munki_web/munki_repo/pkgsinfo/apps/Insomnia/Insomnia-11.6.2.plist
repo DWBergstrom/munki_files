@@ -7,11 +7,11 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-09-25T02:40:56Z</date>
+		<date>2025-10-23T01:53:30Z</date>
 		<key>munki_version</key>
-		<string>6.6.3.4704</string>
+		<string>7.0.0.5328</string>
 		<key>os_version</key>
-		<string>15.7</string>
+		<string>15.5</string>
 	</dict>
 	<key>autoremove</key>
 	<false/>
@@ -19,37 +19,33 @@
 	<array>
 		<string>testing</string>
 	</array>
-	<key>category</key>
-	<string>Utilities</string>
 	<key>description</key>
-	<string>iMazing Profile Editor lets users create, modify, and also digitally sign configuration profiles with a friendly user interface instead of manually coding them in XML.</string>
-	<key>developer</key>
-	<string>DigiDNA SARL</string>
+	<string>Explore REST and GraphQL APIs.</string>
 	<key>display_name</key>
-	<string>iMazing Profile Editor</string>
+	<string>Insomnia </string>
 	<key>installer_item_hash</key>
-	<string>325213e0effda9b7f72791a18eaf8b6f92865f73b56a6b098fc29ec94ca72977</string>
+	<string>26ad3d7cac3aeeef8cccf1ddeea0af821be0df704776d54323970e7fde33e564</string>
 	<key>installer_item_location</key>
-	<string>apps/imazingprofileeditor/iMazing_Profile_Editor_2.1.0.377601-2.1.0.dmg</string>
+	<string>apps/Insomnia/Insomnia.Core-11.6.2.dmg</string>
 	<key>installer_item_size</key>
-	<integer>25226</integer>
+	<integer>299492</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.DigiDNA.iMazingProfileEditorMac</string>
+			<string>com.insomnia.app</string>
 			<key>CFBundleName</key>
-			<string>iMazing Profile Editor</string>
+			<string>Insomnia</string>
 			<key>CFBundleShortVersionString</key>
-			<string>2.1.0</string>
+			<string>11.6.2</string>
 			<key>CFBundleVersion</key>
-			<string>377601</string>
+			<string>11.6.2</string>
 			<key>minosversion</key>
-			<string>12.0</string>
+			<string>11.0</string>
 			<key>path</key>
-			<string>/Applications/iMazing Profile Editor.app</string>
+			<string>/Applications/Insomnia.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -62,13 +58,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>iMazing Profile Editor.app</string>
+			<string>Insomnia.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>12.0</string>
+	<string>11.0</string>
 	<key>name</key>
-	<string>iMazingProfileEditor</string>
+	<string>Insomnia</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -76,6 +72,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>2.1.0</string>
+	<string>11.6.2</string>
 </dict>
 </plist>

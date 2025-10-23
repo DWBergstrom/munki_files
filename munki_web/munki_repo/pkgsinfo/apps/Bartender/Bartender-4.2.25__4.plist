@@ -7,11 +7,11 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-09-25T02:44:05Z</date>
+		<date>2025-10-23T02:13:37Z</date>
 		<key>munki_version</key>
-		<string>6.6.3.4704</string>
+		<string>7.0.0.5328</string>
 		<key>os_version</key>
-		<string>15.7</string>
+		<string>15.5</string>
 	</dict>
 	<key>autoremove</key>
 	<false/>
@@ -20,34 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Fast Terminal app based in Rust.</string>
+	<string>Bartender lets you organize your menu bar icons, by hiding them, rearranging them, show hidden items with a click or keyboard shortcut and have icons show when they update.</string>
 	<key>developer</key>
-	<string>Denver Technologies</string>
+	<string>Surtees Studios</string>
 	<key>display_name</key>
-	<string>Warp</string>
-	<key>force_munkiimport</key>
-	<true/>
+	<string>Bartender</string>
 	<key>installer_item_hash</key>
-	<string>10fb4f8c3b124c6b0915154333c1eda6670b68f1736d0b2987ba7235d5e59405</string>
+	<string>88c68b38ff3491655e5ac42a01d5d50258d85b93b3fc4a42fc87a02c239b2762</string>
 	<key>installer_item_location</key>
-	<string>apps/Warp/Warp-0.2025.09.17.08.11.02.dmg</string>
+	<string>apps/Bartender/Bartender-4.2.25.dmg</string>
 	<key>installer_item_size</key>
-	<integer>155494</integer>
+	<integer>10449</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>dev.warp.Warp-Stable</string>
+			<string>com.surteesstudios.Bartender</string>
 			<key>CFBundleName</key>
-			<string>Warp</string>
+			<string>Bartender 4</string>
 			<key>CFBundleShortVersionString</key>
-			<string>0.2025.09.17.08.11.02</string>
+			<string>4.2.25</string>
 			<key>CFBundleVersion</key>
-			<string>0.2025.09.17.08.11.02</string>
+			<string>42025</string>
+			<key>minosversion</key>
+			<string>11.0</string>
 			<key>path</key>
-			<string>/Applications/Warp.app</string>
+			<string>/Applications/Bartender 4.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,13 +60,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Warp.app</string>
+			<string>Bartender 4.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>10.4.0</string>
+	<string>11.0</string>
 	<key>name</key>
-	<string>Warp</string>
+	<string>Bartender</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -74,6 +74,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>0.2025.09.17.08.11.02</string>
+	<string>4.2.25</string>
 </dict>
 </plist>

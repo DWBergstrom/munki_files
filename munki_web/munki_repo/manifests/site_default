@@ -12,20 +12,18 @@
 	<array>
 		<string>1Password</string>
 		<string>AutoPkgr</string>
-		<string>Brave</string>
 		<string>Raycast</string>
 		<string>Recipe Robot</string>
 		<string>SuspiciousPackageApp</string>
 		<string>Tailscale</string>
-		<string>Visual Studio Code</string>
 		<string>Warp</string>
 	</array>
 	<key>managed_uninstalls</key>
 	<array/>
 	<key>managed_updates</key>
 	<array>
+		<string></string>
 		<string>1Password</string>
-		<string>Arc</string>
 		<string>AutoPkgr</string>
 		<string>Bartender</string>
 		<string>Brave</string>
@@ -54,7 +52,6 @@
 		<string>Visual Studio Code</string>
 		<string>VLC</string>
 		<string>Warp</string>
-		<string></string>
 	</array>
 </dict>
 </plist>

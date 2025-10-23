@@ -7,58 +7,54 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-08-21T02:49:39Z</date>
+		<date>2025-10-23T01:54:06Z</date>
 		<key>munki_version</key>
-		<string>6.6.3.4704</string>
+		<string>7.0.0.5328</string>
 		<key>os_version</key>
-		<string>15.3</string>
+		<string>15.5</string>
 	</dict>
 	<key>autoremove</key>
 	<false/>
-	<key>blocking_applications</key>
-	<array>
-		<string>AppGate SDP.app</string>
-	</array>
 	<key>catalogs</key>
 	<array>
 		<string>testing</string>
 	</array>
+	<key>category</key>
+	<string>Productivity</string>
 	<key>description</key>
-	<string>AppGate brings secure access to your infrastructure using better network security than legacy VPNs, NACs and firewalls.</string>
+	<string>Microsoft Edge web browser</string>
 	<key>developer</key>
-	<string>CYXTERA TECHNOLOGIES, INC.</string>
+	<string>Microsoft</string>
 	<key>display_name</key>
-	<string>AppGate SDP</string>
+	<string>Microsoft Edge</string>
 	<key>installed_size</key>
-	<integer>578185</integer>
+	<integer>937101</integer>
 	<key>installer_item_hash</key>
-	<string>de71505d9300b12a468e094474b2955c028d65a8772c3ce024ea24a4589adad5</string>
+	<string>014154cefa1e65bbb3e4e2ba52feb752d457a8b48aa9a4e152afb9618245976f</string>
 	<key>installer_item_location</key>
-	<string>apps/AppGate SDP/AppGate SDP-6.5.2.42437.dmg</string>
+	<string>apps/Microsoft/Microsoft_Edge-141.0.3537.92.pkg</string>
 	<key>installer_item_size</key>
-	<integer>172974</integer>
+	<integer>405734</integer>
 	<key>minimum_os_version</key>
-	<string>10.5.0</string>
+	<string>10.10.0</string>
 	<key>name</key>
-	<string>AppGate SDP</string>
+	<string>MicrosoftEdge</string>
 	<key>receipts</key>
 	<array>
 		<dict>
 			<key>installed_size</key>
-			<integer>578185</integer>
+			<integer>937101</integer>
 			<key>packageid</key>
-			<string>com.appgate.pkg.appgatetun.component</string>
+			<string>com.microsoft.edgemac</string>
 			<key>version</key>
-			<string>6.5.2.42437</string>
+			<string>141.0.3537.92</string>
 		</dict>
 	</array>
-	<key>unattended_install</key>
-	<true/>
 	<key>uninstall_method</key>
 	<string>removepackages</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>6.5.2.42437</string>
+	<string>141.0.3537.92</string>
 </dict>
 </plist>

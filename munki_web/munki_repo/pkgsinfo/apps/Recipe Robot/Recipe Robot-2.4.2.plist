@@ -7,11 +7,11 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-08-21T02:51:35Z</date>
+		<date>2025-10-23T01:54:25Z</date>
 		<key>munki_version</key>
-		<string>6.6.3.4704</string>
+		<string>7.0.0.5328</string>
 		<key>os_version</key>
-		<string>15.3</string>
+		<string>15.5</string>
 	</dict>
 	<key>autoremove</key>
 	<false/>
@@ -20,36 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Supercharged productivity
-
-Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
+	<string>A kick ass tool for creating AutoPkg recipes.</string>
 	<key>developer</key>
-	<string>Raycast Technologies Inc</string>
+	<string>Elliot Jordan</string>
 	<key>display_name</key>
-	<string>Raycast</string>
+	<string>Recipe Robot</string>
 	<key>installer_item_hash</key>
-	<string>00e69a1c06b0ca4ea2ada42196b1cdb86b27af093b02a18a52803d8a0ca51719</string>
+	<string>694b62e76665088c6979ba0cfd375c58d140faedd47378936a212254b3b89266</string>
 	<key>installer_item_location</key>
-	<string>apps/Raycast/Raycast-1.102.5.dmg</string>
+	<string>apps/Recipe Robot/Recipe Robot-2.4.2.dmg</string>
 	<key>installer_item_size</key>
-	<integer>98548</integer>
+	<integer>3472</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.raycast.macos</string>
+			<string>com.elliotjordan.recipe-robot</string>
 			<key>CFBundleName</key>
-			<string>Raycast</string>
+			<string>Recipe Robot</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.102.5</string>
+			<string>2.4.2</string>
 			<key>CFBundleVersion</key>
-			<string>0</string>
+			<string>1532</string>
 			<key>minosversion</key>
-			<string>13.0</string>
+			<string>11.0</string>
 			<key>path</key>
-			<string>/Applications/Raycast.app</string>
+			<string>/Applications/Recipe Robot.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -62,22 +60,20 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Raycast.app</string>
+			<string>Recipe Robot.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>13.0</string>
+	<string>11.0</string>
 	<key>name</key>
-	<string>Raycast</string>
+	<string>Recipe Robot</string>
 	<key>unattended_install</key>
-	<true/>
-	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.102.5</string>
+	<string>2.4.2</string>
 </dict>
 </plist>

@@ -7,11 +7,11 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-09-25T02:41:32Z</date>
+		<date>2025-10-23T01:53:17Z</date>
 		<key>munki_version</key>
-		<string>6.6.3.4704</string>
+		<string>7.0.0.5328</string>
 		<key>os_version</key>
-		<string>15.7</string>
+		<string>15.5</string>
 	</dict>
 	<key>autoremove</key>
 	<false/>
@@ -19,37 +19,33 @@
 	<array>
 		<string>testing</string>
 	</array>
-	<key>category</key>
-	<string>Utilities</string>
 	<key>description</key>
-	<string>iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with OS 10.5 (Leopard) or newer. Its focus is on performance, internationalization, and supporting innovative features that make your life better.</string>
-	<key>developer</key>
-	<string>George Nachman</string>
+	<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
 	<key>display_name</key>
-	<string>iTerm2</string>
+	<string>Google Chrome</string>
 	<key>installer_item_hash</key>
-	<string>f88bc0761fc86893723d46aafa2fa41b517521c865452eb046cd0bb08e450eec</string>
+	<string>2c890ae9aa32f8f050881767ca600b1fe06e5065e81fa6536c3ae8fa2102939a</string>
 	<key>installer_item_location</key>
-	<string>apps/iTerm2-3.6.2.dmg</string>
+	<string>apps/GoogleChrome-141.0.7390.123.dmg</string>
 	<key>installer_item_size</key>
-	<integer>51355</integer>
+	<integer>228962</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.googlecode.iterm2</string>
+			<string>com.google.Chrome</string>
 			<key>CFBundleName</key>
-			<string>iTerm2</string>
+			<string>Chrome</string>
 			<key>CFBundleShortVersionString</key>
-			<string>3.6.2</string>
+			<string>141.0.7390.123</string>
 			<key>CFBundleVersion</key>
-			<string>3.6.2</string>
+			<string>7390.123</string>
 			<key>minosversion</key>
-			<string>12.4</string>
+			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/iTerm.app</string>
+			<string>/Applications/Google Chrome.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -62,13 +58,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>iTerm.app</string>
+			<string>Google Chrome.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>12.4</string>
+	<string>12.0</string>
 	<key>name</key>
-	<string>iTerm2</string>
+	<string>GoogleChrome</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -76,6 +72,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>3.6.2</string>
+	<string>141.0.7390.123</string>
 </dict>
 </plist>

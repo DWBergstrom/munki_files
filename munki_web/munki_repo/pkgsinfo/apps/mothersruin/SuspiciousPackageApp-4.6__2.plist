@@ -7,47 +7,45 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-09-25T02:42:05Z</date>
+		<date>2025-10-23T02:15:27Z</date>
 		<key>munki_version</key>
-		<string>6.6.3.4704</string>
+		<string>7.0.0.5328</string>
 		<key>os_version</key>
-		<string>15.7</string>
+		<string>15.5</string>
 	</dict>
 	<key>autoremove</key>
 	<false/>
 	<key>catalogs</key>
 	<array>
-		<string>testing</string>
+		<string>testing-mothersruin-suspiciouspackage</string>
 	</array>
 	<key>description</key>
-	<string>A kick ass tool for creating AutoPkg recipes.</string>
-	<key>developer</key>
-	<string>Elliot Jordan</string>
+	<string>Suspicious Package: An Application for Inspecting OS X Installer Packages</string>
 	<key>display_name</key>
-	<string>Recipe Robot</string>
+	<string>Suspicious Package App</string>
 	<key>installer_item_hash</key>
-	<string>6ee401123bc2f605c1ebde522babe483e49f3b7f4778369e1e987042b0f1ea1a</string>
+	<string>489717a9047f762dd3f0adee34abf4d1090bb260c624d53d350108a434aa6093</string>
 	<key>installer_item_location</key>
-	<string>apps/Recipe Robot/Recipe Robot-2.4.0.dmg</string>
+	<string>apps/mothersruin/SuspiciousPackage-4.6.dmg</string>
 	<key>installer_item_size</key>
-	<integer>4246</integer>
+	<integer>6859</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.elliotjordan.recipe-robot</string>
+			<string>com.mothersruin.SuspiciousPackageApp</string>
 			<key>CFBundleName</key>
-			<string>Recipe Robot</string>
+			<string>Suspicious Package</string>
 			<key>CFBundleShortVersionString</key>
-			<string>2.4.0</string>
+			<string>4.6</string>
 			<key>CFBundleVersion</key>
-			<string>1471</string>
+			<string>1311</string>
 			<key>minosversion</key>
-			<string>11.0</string>
+			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/Recipe Robot.app</string>
+			<string>/Applications/Suspicious Package.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,20 +58,18 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Recipe Robot.app</string>
+			<string>Suspicious Package.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>11.0</string>
+	<string>10.13</string>
 	<key>name</key>
-	<string>Recipe Robot</string>
-	<key>unattended_install</key>
-	<true/>
+	<string>SuspiciousPackageApp</string>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>2.4.0</string>
+	<string>4.6</string>
 </dict>
 </plist>

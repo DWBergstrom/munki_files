@@ -7,11 +7,11 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-02-10T15:41:31Z</date>
+		<date>2025-10-23T01:52:16Z</date>
 		<key>munki_version</key>
-		<string>6.6.3.4704</string>
+		<string>7.0.0.5328</string>
 		<key>os_version</key>
-		<string>15.0.1</string>
+		<string>15.5</string>
 	</dict>
 	<key>autoremove</key>
 	<false/>
@@ -19,35 +19,37 @@
 	<array>
 		<string>testing</string>
 	</array>
+	<key>category</key>
+	<string>Browsers</string>
 	<key>description</key>
-	<string>A kick ass tool for creating AutoPkg recipes.</string>
+	<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
 	<key>developer</key>
-	<string>Elliot Jordan</string>
+	<string>Brave Software Inc.</string>
 	<key>display_name</key>
-	<string>Recipe Robot</string>
+	<string>Brave Browser</string>
 	<key>installer_item_hash</key>
-	<string>1623d259c149c8c572cdf9983a484bc69fac9e2941561ddc208b1d50663752ab</string>
+	<string>994754adff3f20453bc37f2fa0502a2165b0753d290386ed038e313783ba695a</string>
 	<key>installer_item_location</key>
-	<string>apps/Recipe Robot/Recipe Robot-2.3.2.dmg</string>
+	<string>apps/Brave/Brave-141.1.83.120.dmg</string>
 	<key>installer_item_size</key>
-	<integer>4209</integer>
+	<integer>225637</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.elliotjordan.recipe-robot</string>
+			<string>com.brave.Browser</string>
 			<key>CFBundleName</key>
-			<string>Recipe Robot</string>
+			<string>Brave</string>
 			<key>CFBundleShortVersionString</key>
-			<string>2.3.2</string>
+			<string>141.1.83.120</string>
 			<key>CFBundleVersion</key>
-			<string>1407</string>
+			<string>183.120</string>
 			<key>minosversion</key>
-			<string>11.0</string>
+			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/Recipe Robot.app</string>
+			<string>/Applications/Brave Browser.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,13 +62,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Recipe Robot.app</string>
+			<string>Brave Browser.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>11.0</string>
+	<string>12.0</string>
 	<key>name</key>
-	<string>Recipe Robot</string>
+	<string>Brave</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -74,6 +76,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>2.3.2</string>
+	<string>141.1.83.120</string>
 </dict>
 </plist>

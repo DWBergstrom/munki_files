@@ -7,11 +7,11 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-08-19T03:51:51Z</date>
+		<date>2025-10-23T02:16:36Z</date>
 		<key>munki_version</key>
-		<string>6.6.3.4704</string>
+		<string>7.0.0.5328</string>
 		<key>os_version</key>
-		<string>15.3</string>
+		<string>15.5</string>
 	</dict>
 	<key>autoremove</key>
 	<false/>
@@ -20,32 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Explore REST and GraphQL APIs.</string>
+	<string>VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVD, Audio CD, VCD, and various streaming protocols.</string>
+	<key>developer</key>
+	<string>The VideoLAN Project</string>
 	<key>display_name</key>
-	<string>Insomnia </string>
+	<string>VLC Media Player</string>
 	<key>installer_item_hash</key>
-	<string>00595624c9e5dfa6aea60a31849aa637b69cb72c78ee3caf328e94ddff210cf1</string>
+	<string>50380e56f81d630e3531426a265abf8b3dee6c0822bb7c9e30b532c7d69a65c0</string>
 	<key>installer_item_location</key>
-	<string>apps/Insomnia/Insomnia.Core-11.4.0.dmg</string>
+	<string>apps/VLC/VLC-3.0.21.dmg</string>
 	<key>installer_item_size</key>
-	<integer>243777</integer>
+	<integer>83158</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.insomnia.app</string>
+			<string>org.videolan.vlc</string>
 			<key>CFBundleName</key>
-			<string>Insomnia</string>
+			<string>VLC</string>
 			<key>CFBundleShortVersionString</key>
-			<string>11.4.0</string>
+			<string>3.0.21</string>
 			<key>CFBundleVersion</key>
-			<string>11.4.0</string>
+			<string>3.0.21</string>
 			<key>minosversion</key>
-			<string>11.0</string>
+			<string>10.7.5</string>
 			<key>path</key>
-			<string>/Applications/Insomnia.app</string>
+			<string>/Applications/VLC.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -58,13 +60,18 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Insomnia.app</string>
+			<string>VLC.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>11.0</string>
+	<string>10.7.5</string>
 	<key>name</key>
-	<string>Insomnia</string>
+	<string>VLC</string>
+	<key>supported_architectures</key>
+	<array>
+		<string>arm64</string>
+		<string>x86_64</string>
+	</array>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -72,6 +79,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>11.4.0</string>
+	<string>3.0.21</string>
 </dict>
 </plist>

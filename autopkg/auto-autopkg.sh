@@ -1,6 +1,10 @@
 #!/bin/bash
 
 #TODO:
+# - make default NOT to rsync the munki repo (default should be to run autopkg for all overrides, with no rsync)
+# - make parameters more robust
+# - use python3 to serve the munki repo
+# - Use tailscale serve to serve the python3 server above
 # - Convert if statements to case statements for parameters
 # - add an autopkg only option
 # - add a "add overrides" option
@@ -20,7 +24,7 @@ if [ $# -eq 0 ]; then
 fi
 
 # Volume name
-VOLUME_NAME="1TB-Toshiba"
+VOLUME_NAME="M4_Dock"
 echo "Volume name: $VOLUME_NAME"
 
 # Tailscale command
