@@ -45,7 +45,6 @@
 		</array>
 		<key>requires</key>
 		<array>
-			<string>munkitools_python</string>
 			<string>munkitools_core</string>
 			<string>munkitools_launchd</string>
 		</array>
@@ -100,7 +99,6 @@
 		</array>
 		<key>requires</key>
 		<array>
-			<string>munkitools_python</string>
 			<string>munkitools_core</string>
 			<string>munkitools_launchd</string>
 		</array>
@@ -156,7 +154,6 @@
 		</array>
 		<key>requires</key>
 		<array>
-			<string>munkitools_python</string>
 			<string>munkitools_launchd</string>
 		</array>
 		<key>unattended_install</key>
@@ -266,7 +263,6 @@
 		<true/>
 		<key>update_for</key>
 		<array>
-			<string>munkitools_python</string>
 			<string>munkitools_core</string>
 		</array>
 		<key>version</key>
@@ -321,7 +317,6 @@
 		<true/>
 		<key>update_for</key>
 		<array>
-			<string>munkitools_python</string>
 			<string>munkitools_core</string>
 		</array>
 		<key>version</key>
@@ -369,7 +364,6 @@
 		</array>
 		<key>requires</key>
 		<array>
-			<string>munkitools_python</string>
 			<string>munkitools_launchd</string>
 		</array>
 		<key>unattended_install</key>
@@ -380,101 +374,6 @@
 		<true/>
 		<key>version</key>
 		<string>6.6.3.4704</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>munkitools</string>
-		<key>description</key>
-		<string>Embedded Python tools used by Managed Software Center.</string>
-		<key>developer</key>
-		<string>The Munki Project</string>
-		<key>display_name</key>
-		<string>Managed Software Center embedded python</string>
-		<key>installed_size</key>
-		<integer>141026</integer>
-		<key>installer_item_hash</key>
-		<string>6be5475a702efb0d8f06ba797bd6f22d3a3d2936762e0d9bc677900e46a83194</string>
-		<key>installer_item_location</key>
-		<string>munkitools/munkitools_python-3.12.2.4689.pkg</string>
-		<key>installer_item_size</key>
-		<integer>41938</integer>
-		<key>minimum_os_version</key>
-		<string>10.13</string>
-		<key>name</key>
-		<string>munkitools_python</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>141026</integer>
-				<key>packageid</key>
-				<string>com.googlecode.munki.python</string>
-				<key>version</key>
-				<string>3.12.2.4689</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>3.12.2.4689</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>development</string>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>munkitools</string>
-		<key>description</key>
-		<string>Embedded Python tools used by Managed Software Center.</string>
-		<key>developer</key>
-		<string>The Munki Project</string>
-		<key>display_name</key>
-		<string>Managed Software Center embedded python</string>
-		<key>installed_size</key>
-		<integer>131938</integer>
-		<key>installer_item_hash</key>
-		<string>d1c353404a07a9d83581fdd1bcc816b1301eb45a61481676cc1560e554f1c332</string>
-		<key>installer_item_location</key>
-		<string>munkitools/munkitools_python-3.10.11.4589__2.pkg</string>
-		<key>installer_item_size</key>
-		<integer>39663</integer>
-		<key>minimum_os_version</key>
-		<string>10.13</string>
-		<key>name</key>
-		<string>munkitools_python</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>131938</integer>
-				<key>packageid</key>
-				<string>com.googlecode.munki.python</string>
-				<key>version</key>
-				<string>3.10.11.4589</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>3.10.11.4589</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -518,7 +417,6 @@
 		</array>
 		<key>requires</key>
 		<array>
-			<string>munkitools_python</string>
 			<string>munkitools_core</string>
 			<string>munkitools_launchd</string>
 		</array>
@@ -574,7 +472,6 @@
 		</array>
 		<key>requires</key>
 		<array>
-			<string>munkitools_python</string>
 			<string>munkitools_core</string>
 			<string>munkitools_launchd</string>
 		</array>
@@ -3415,6 +3312,66 @@ fi
 		<true/>
 		<key>version</key>
 		<string>4.5</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Suspicious Package: An Application for Inspecting OS X Installer Packages</string>
+		<key>display_name</key>
+		<string>Suspicious Package App</string>
+		<key>installer_item_hash</key>
+		<string>489717a9047f762dd3f0adee34abf4d1090bb260c624d53d350108a434aa6093</string>
+		<key>installer_item_location</key>
+		<string>apps/mothersruin/SuspiciousPackage-4.6.dmg</string>
+		<key>installer_item_size</key>
+		<integer>6859</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.mothersruin.SuspiciousPackageApp</string>
+				<key>CFBundleName</key>
+				<string>Suspicious Package</string>
+				<key>CFBundleShortVersionString</key>
+				<string>4.6</string>
+				<key>CFBundleVersion</key>
+				<string>1311</string>
+				<key>minosversion</key>
+				<string>12.0</string>
+				<key>path</key>
+				<string>/Applications/Suspicious Package.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Suspicious Package.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>SuspiciousPackageApp</string>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>4.6</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>

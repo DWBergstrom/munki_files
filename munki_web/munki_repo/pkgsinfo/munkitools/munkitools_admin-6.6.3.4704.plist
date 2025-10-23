@@ -60,7 +60,6 @@
 	<true/>
 	<key>update_for</key>
 	<array>
-		<string>munkitools_python</string>
 		<string>munkitools_core</string>
 	</array>
 	<key>version</key>

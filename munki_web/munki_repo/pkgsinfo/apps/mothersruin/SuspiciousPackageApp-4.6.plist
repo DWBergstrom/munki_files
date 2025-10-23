@@ -7,17 +7,17 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-08-19T03:52:16Z</date>
+		<date>2025-10-23T02:45:29Z</date>
 		<key>munki_version</key>
-		<string>6.6.3.4704</string>
+		<string>7.0.0.5328</string>
 		<key>os_version</key>
-		<string>15.3</string>
+		<string>15.5</string>
 	</dict>
 	<key>autoremove</key>
 	<false/>
 	<key>catalogs</key>
 	<array>
-		<string>testing-mothersruin-suspiciouspackage</string>
+		<string>testing</string>
 	</array>
 	<key>description</key>
 	<string>Suspicious Package: An Application for Inspecting OS X Installer Packages</string>

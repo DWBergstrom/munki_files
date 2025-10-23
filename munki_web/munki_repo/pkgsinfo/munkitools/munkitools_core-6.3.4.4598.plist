@@ -55,7 +55,6 @@
 	</array>
 	<key>requires</key>
 	<array>
-		<string>munkitools_python</string>
 		<string>munkitools_launchd</string>
 	</array>
 	<key>unattended_install</key>

@@ -120,7 +120,7 @@ function verify_autopkg_settings {
   info "Autopkg recipe override directory: $(defaults read com.github.autopkg RECIPE_OVERRIDE_DIRS)"
   info "Autopkg munki repo: $(defaults read com.github.autopkg MUNKI_REPO)"
 }
-verify_autopkg_settings
+# verify_autopkg_settings
 
 function verify_munki_settings {
   # Check if running from launch agent (no TTY available)
@@ -133,23 +133,23 @@ function verify_munki_settings {
     info "Current Munki repo URL: $(defaults read /Library/Preferences/ManagedInstalls SoftwareRepoURL 2>/dev/null || echo 'Unable to read - may require sudo')"
   fi
 }
-verify_munki_settings
+# verify_munki_settings
 
 function run_repoclean {
   log "Running repoclean..."
   repoclean -k "${REPOCLEAN_VERSIONS}" -a "${MUNKI_REPO_PATH}"
 }
-run_repoclean
+# run_repoclean
 
 function run_all_overrides {
   log "Running autopkg repo-update all..."
   "${AUTOPKG_CMD}" repo-update all
   for override in "${OVERRIDES_DIR}"/*; do
     log "Running autopkg ${override}..."
-    "${AUTOPKG_CMD}" run -v "${override}"
+    "${AUTOPKG_CMD}" run -v "${override} -k force_munkiimport=true"
   done
 }
-run_all_overrides
+# run_all_overrides
 
 function run_single_override {
   log "Running autopkg ${1}..."
@@ -158,10 +158,12 @@ function run_single_override {
 
 function add_new_overrides {
   current_date=$(date +%Y%m%d)
+  info "Checking for an adding new overrides from ${OVERRIDES_DIR} since ${current_date}..."
   while IFS= read -r new_override; do
-    installer_name=$(xmllint --xpath 'string(//key[.="NAME"]/following-sibling::string[1])' "${new_override}")
+    installer_name=$(xmllint --xpath 'string(//key[.="NAME"]/following-sibling::string[1])' "$new_override")
+    log "Adding ${installer_name} to munki repo..."
     manifestutil add-pkg "$installer_name" --manifest site_default --section managed_updates
-  done < <(find "${OVERRIDES_DIR}" -type f -newermt "${current_date}")
+  done < <(find "$OVERRIDES_DIR" -type f -newermt "$current_date")
 }
 # add_new_overrides
 
@@ -169,18 +171,30 @@ function run_makecatalogs {
   log "Running makecatalogs..."
   /usr/local/munki/makecatalogs --skip-pkg-check "$MUNKI_REPO_PATH"
 }
-run_makecatalogs
+# run_makecatalogs
 
 # Save changes to git
 function save_changes_to_git {
-  current_date=$(date +%Y%m%d)
+  commit_date_and_time=$(date +%Y%m%d_%H%M%S)
   log "Changing to munki directory"
   cd "${MUNKI_REPO_PATH}"
   log "Adding all changes to git"
   git add --all
   git status
   log "Commiting changes..."
-  git commit -m "${current_date} Updating munki"
+  git commit -m "${commit_date_and_time} Updating munki"
   git push origin main
 }
-save_changes_to_git
+# save_changes_to_git
+
+function main {
+  verify_autopkg_settings
+  verify_munki_settings
+  run_repoclean
+  run_all_overrides
+  add_new_overrides
+  run_makecatalogs
+  save_changes_to_git
+}
+
+main

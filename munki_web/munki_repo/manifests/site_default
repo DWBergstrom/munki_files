@@ -42,10 +42,10 @@
 		<string>munkitools_app_usage</string>
 		<string>munkitools_core</string>
 		<string>munkitools_launchd</string>
-		<string>munkitools_python</string>
 		<string>Raycast</string>
 		<string>Recipe Robot</string>
 		<string>RustRover</string>
+		<string>SuspiciousPackageApp</string>
 		<string>Tailscale</string>
 		<string>UTM</string>
 		<string>VirtualBox</string>
