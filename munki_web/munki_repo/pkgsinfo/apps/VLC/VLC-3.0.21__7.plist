@@ -7,11 +7,11 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2024-10-10T16:07:22Z</date>
+		<date>2025-10-23T03:44:15Z</date>
 		<key>munki_version</key>
-		<string>6.6.3.4704</string>
+		<string>7.0.0.5328</string>
 		<key>os_version</key>
-		<string>15.0</string>
+		<string>15.5</string>
 	</dict>
 	<key>autoremove</key>
 	<false/>
@@ -20,32 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Suspicious Package: An Application for Inspecting OS X Installer Packages</string>
+	<string>VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVD, Audio CD, VCD, and various streaming protocols.</string>
+	<key>developer</key>
+	<string>The VideoLAN Project</string>
 	<key>display_name</key>
-	<string>Suspicious Package App</string>
+	<string>VLC Media Player</string>
 	<key>installer_item_hash</key>
-	<string>fff88bec145da31f8a0350899c6b6d5108947ec92e05e306adfd5850db7f9bdd</string>
+	<string>50380e56f81d630e3531426a265abf8b3dee6c0822bb7c9e30b532c7d69a65c0</string>
 	<key>installer_item_location</key>
-	<string>apps/mothersruin/SuspiciousPackage-4.5.dmg</string>
+	<string>apps/VLC/VLC-3.0.21__2.dmg</string>
 	<key>installer_item_size</key>
-	<integer>6776</integer>
+	<integer>83158</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.mothersruin.SuspiciousPackageApp</string>
+			<string>org.videolan.vlc</string>
 			<key>CFBundleName</key>
-			<string>Suspicious Package</string>
+			<string>VLC</string>
 			<key>CFBundleShortVersionString</key>
-			<string>4.5</string>
+			<string>3.0.21</string>
 			<key>CFBundleVersion</key>
-			<string>1213</string>
+			<string>3.0.21</string>
 			<key>minosversion</key>
-			<string>12.0</string>
+			<string>10.7.5</string>
 			<key>path</key>
-			<string>/Applications/Suspicious Package.app</string>
+			<string>/Applications/VLC.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -58,18 +60,25 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Suspicious Package.app</string>
+			<string>VLC.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>10.13</string>
+	<string>10.7.5</string>
 	<key>name</key>
-	<string>SuspiciousPackageApp</string>
+	<string>VLC</string>
+	<key>supported_architectures</key>
+	<array>
+		<string>arm64</string>
+		<string>x86_64</string>
+	</array>
+	<key>unattended_install</key>
+	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>4.5</string>
+	<string>3.0.21</string>
 </dict>
 </plist>

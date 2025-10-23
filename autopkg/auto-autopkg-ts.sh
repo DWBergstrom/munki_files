@@ -120,7 +120,6 @@ function verify_autopkg_settings {
   info "Autopkg recipe override directory: $(defaults read com.github.autopkg RECIPE_OVERRIDE_DIRS)"
   info "Autopkg munki repo: $(defaults read com.github.autopkg MUNKI_REPO)"
 }
-# verify_autopkg_settings
 
 function verify_munki_settings {
   # Check if running from launch agent (no TTY available)
@@ -133,27 +132,51 @@ function verify_munki_settings {
     info "Current Munki repo URL: $(defaults read /Library/Preferences/ManagedInstalls SoftwareRepoURL 2>/dev/null || echo 'Unable to read - may require sudo')"
   fi
 }
-# verify_munki_settings
 
 function run_repoclean {
   log "Running repoclean..."
   repoclean -k "${REPOCLEAN_VERSIONS}" -a "${MUNKI_REPO_PATH}"
 }
-# run_repoclean
 
 function run_all_overrides {
   log "Running autopkg repo-update all..."
   "${AUTOPKG_CMD}" repo-update all
   for override in "${OVERRIDES_DIR}"/*; do
     log "Running autopkg ${override}..."
-    "${AUTOPKG_CMD}" run -v "${override} -k force_munkiimport=true"
+    "${AUTOPKG_CMD}" run -v "${override}" -k force_munkiimport=true
   done
 }
-# run_all_overrides
 
-function run_single_override {
-  log "Running autopkg ${1}..."
-  "${AUTOPKG_CMD}" run -v "${1}"
+function make_override () {
+  shift  # Skip the script option flag
+  for override in "$@"; do
+    log "Making override ${override}..."
+    if ! "${AUTOPKG_CMD}" make-override "${override}"; then
+      error "Failed to make override ${override}"
+      # prompt for recipe repo
+      read -p "Enter the recipe repo for ${override}: " recipe_repo
+      "${AUTOPKG_CMD}" repo-add "${recipe_repo}"
+      "${AUTOPKG_CMD}" make-override "${override}"
+      log "Successfully made override ${override}"
+    else
+      log "Successfully made override ${override}"
+    fi
+  done
+}
+
+function run_specified_overrides {
+  run_repoclean
+  shift  # Skip the script option flag
+  log "Running autopkg for specified overrides: ${1}..."
+  "${AUTOPKG_CMD}" run -v "${1}" -k force_munkiimport=true
+  name="${1%.munki.recipe}"
+  if ! manifestutil display-manifest site_default | grep "${name}" > /dev/null; then  
+    log "Adding ${name} to site_default manifest in managed_updates section..."
+    manifestutil add-pkg "${name}" --manifest site_default --section managed_updates
+  else
+    log "${name} already in site_default manifest in managed_updates section"
+  fi
+  makecatalogs --skip-pkg-check "$MUNKI_REPO_PATH"
 }
 
 function add_new_overrides {
@@ -165,13 +188,11 @@ function add_new_overrides {
     manifestutil add-pkg "$installer_name" --manifest site_default --section managed_updates
   done < <(find "$OVERRIDES_DIR" -type f -newermt "$current_date")
 }
-# add_new_overrides
 
 function run_makecatalogs {
   log "Running makecatalogs..."
   /usr/local/munki/makecatalogs --skip-pkg-check "$MUNKI_REPO_PATH"
 }
-# run_makecatalogs
 
 # Save changes to git
 function save_changes_to_git {
@@ -197,4 +218,15 @@ function main {
   save_changes_to_git
 }
 
-main
+# parameters
+case $1 in
+  --make-overrides)
+    make_override "$@"
+    ;;
+  --run-overrides)
+    run_specified_overrides "$@"
+    ;;
+  *)
+    main
+    ;;
+esac
