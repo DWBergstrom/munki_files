@@ -48,14 +48,14 @@ if ! MANAGEDSOFTWAREUPDATE_CMD=$(command -v managedsoftwareupdate) &> /dev/null;
 else
 	info "Munki is installed at ${MANAGEDSOFTWAREUPDATE_CMD}"
 fi
-# Verify 1Password CLI is installed
+# Verify 1Password CLI is installed (optional)
 if ! OP_CMD=$(command -v op) &> /dev/null; then
 	warn "1Password CLI could not be found. Will not be able to update github token for autopkg."
 else
 	info "1Password CLI is installed at ${OP_CMD}"
 fi
 
-# Get github token for autopkg
+# Get github token for autopkg (optional)
 GITHUB_TOKEN=$(op item get "GitHub - Autopkg" --fields token)
 if [ -z "${GITHUB_TOKEN}" ]; then
 	error "Github token for autopkg not found. Add to 1Password when possible."
