@@ -7,11 +7,11 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-10-23T03:38:29Z</date>
+		<date>2025-11-03T22:55:03Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
-		<string>15.5</string>
+		<string>26.0.1</string>
 	</dict>
 	<key>autoremove</key>
 	<false/>
@@ -19,41 +19,37 @@
 	<array>
 		<string>testing</string>
 	</array>
-	<key>category</key>
-	<string>Web Browsers</string>
 	<key>description</key>
-	<string>Official OpenAI ChatGPT Browser application.</string>
-	<key>developer</key>
-	<string>OpenAI, L.L.C.</string>
+	<string>Explore REST and GraphQL APIs.</string>
 	<key>display_name</key>
-	<string>ChatGPT Atlas</string>
+	<string>Insomnia </string>
 	<key>installer_item_hash</key>
-	<string>199aaba05216dd5fbad121166fd74ecf35faed3f83e2fc6f8e37eedbc8543bad</string>
+	<string>98fb5e8d83afac7b92967446da5e9623343751afde986b44d3ccbcf4680c0235</string>
 	<key>installer_item_location</key>
-	<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2025.288.14.dmg</string>
+	<string>apps/Insomnia/Insomnia.Core-12.0.0__1.dmg</string>
 	<key>installer_item_size</key>
-	<integer>225206</integer>
+	<integer>339099</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.openai.atlas</string>
+			<string>com.insomnia.app</string>
 			<key>CFBundleName</key>
-			<string>ChatGPT Atlas</string>
+			<string>Insomnia</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.2025.288.14</string>
+			<string>12.0.0</string>
 			<key>CFBundleVersion</key>
-			<string>20251023013547000</string>
+			<string>12.0.0</string>
 			<key>minosversion</key>
-			<string>14.2</string>
+			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/ChatGPT Atlas.app</string>
+			<string>/Applications/Insomnia.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
-			<string>CFBundleVersion</string>
+			<string>CFBundleShortVersionString</string>
 		</dict>
 	</array>
 	<key>items_to_copy</key>
@@ -62,17 +58,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>ChatGPT Atlas.app</string>
+			<string>Insomnia.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>14.2</string>
+	<string>12.0</string>
 	<key>name</key>
-	<string>ChatGPT Atlas</string>
-	<key>supported_architectures</key>
-	<array>
-		<string>arm64</string>
-	</array>
+	<string>Insomnia</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -80,6 +72,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.2025.288.14</string>
+	<string>12.0.0</string>
 </dict>
 </plist>

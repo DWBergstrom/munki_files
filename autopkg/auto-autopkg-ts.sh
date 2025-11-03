@@ -92,7 +92,7 @@ else
 	PYTHON_SERVER_STATUS="not running"
 	log "Python server status: ${PYTHON_SERVER_STATUS}"
 	info "Attempting to start python server..."
-	python3 -m http.server ${WEBSERVER_PORT} --bind 127.0.0.1 --directory ${MUNKI_REPO_PATH} &
+	python3 -m http.server ${WEBSERVER_PORT} --bind 127.0.0.1 --directory ${MUNKI_REPO_PATH}&
 fi
 # Check if tailscale is serving the munki repo
 TAILSCALE_SERVING_STATUS=""

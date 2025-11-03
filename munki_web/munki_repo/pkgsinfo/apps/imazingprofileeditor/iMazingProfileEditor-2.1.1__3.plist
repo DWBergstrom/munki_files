@@ -7,11 +7,11 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-10-23T01:52:16Z</date>
+		<date>2025-11-03T22:56:22Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
-		<string>15.5</string>
+		<string>26.0.1</string>
 	</dict>
 	<key>autoremove</key>
 	<false/>
@@ -20,36 +20,36 @@
 		<string>testing</string>
 	</array>
 	<key>category</key>
-	<string>Browsers</string>
+	<string>Utilities</string>
 	<key>description</key>
-	<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
+	<string>iMazing Profile Editor lets users create, modify, and also digitally sign configuration profiles with a friendly user interface instead of manually coding them in XML.</string>
 	<key>developer</key>
-	<string>Brave Software Inc.</string>
+	<string>DigiDNA SARL</string>
 	<key>display_name</key>
-	<string>Brave Browser</string>
+	<string>iMazing Profile Editor</string>
 	<key>installer_item_hash</key>
-	<string>994754adff3f20453bc37f2fa0502a2165b0753d290386ed038e313783ba695a</string>
+	<string>18027adb3ac1a91041d72f795f615fe3b44843601fa4d5c98e7ebaf693ed61ce</string>
 	<key>installer_item_location</key>
-	<string>apps/Brave/Brave-141.1.83.120.dmg</string>
+	<string>apps/imazingprofileeditor/iMazing_Profile_Editor_2.1.1.379001-2.1.1__3.dmg</string>
 	<key>installer_item_size</key>
-	<integer>225637</integer>
+	<integer>25223</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.brave.Browser</string>
+			<string>com.DigiDNA.iMazingProfileEditorMac</string>
 			<key>CFBundleName</key>
-			<string>Brave</string>
+			<string>iMazing Profile Editor</string>
 			<key>CFBundleShortVersionString</key>
-			<string>141.1.83.120</string>
+			<string>2.1.1</string>
 			<key>CFBundleVersion</key>
-			<string>183.120</string>
+			<string>379001</string>
 			<key>minosversion</key>
 			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/Brave Browser.app</string>
+			<string>/Applications/iMazing Profile Editor.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -62,13 +62,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Brave Browser.app</string>
+			<string>iMazing Profile Editor.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
 	<string>12.0</string>
 	<key>name</key>
-	<string>Brave</string>
+	<string>iMazingProfileEditor</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -76,6 +76,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>141.1.83.120</string>
+	<string>2.1.1</string>
 </dict>
 </plist>
