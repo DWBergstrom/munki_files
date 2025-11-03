@@ -2,25 +2,31 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>Label</key>
-    <string>com.dwbergstrom.auto-autopkg-ts</string>
-
-    <key>ProgramArguments</key>
-    <array>
-        <string>/Volumes/M4_Dock/munki_files/autopkg/auto-autopkg-ts.sh</string>
-    </array>
-
-    <key>StartCalendarInterval</key>
-    <dict>
-        <key>Hour</key>
-        <integer>0</integer>
-        <key>Minute</key>
-        <integer>45</integer>
-    </dict>
-    
-    <key>StandardErrorPath</key>
-    <string>/Users/dwbergstrom/Library/Logs/auto-autopkg-ts.err</string>
-    <key>StandardOutPath</key>
-    <string>/Users/dwbergstrom/Library/Logs/auto-autopkg-ts.out</string>
+	<key>Label</key>
+	<string>com.dwbergstrom.auto-autopkg-ts</string>
+	
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Volumes/M4_Dock/munki_files/autopkg/auto-autopkg-ts.sh</string>
+	</array>
+	
+	<key>UserName</key>
+	<string>dwbergstrom</string>
+	
+	<key>StartCalendarInterval</key>
+	<dict>
+		<key>Hour</key>
+		<integer>0</integer>
+		<key>Minute</key>
+		<integer>45</integer>
+	</dict>
+	
+	<key>StandardErrorPath</key>
+	<string>/var/log/auto-autopkg-ts.err</string>
+	<key>StandardOutPath</key>
+	<string>/var/log/auto-autopkg-ts.out</string>
+	
+	<key>RunAtLoad</key>
+	<false/>
 </dict>
 </plist>
