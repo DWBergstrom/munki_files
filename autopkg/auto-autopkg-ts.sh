@@ -124,9 +124,13 @@ function verify_autopkg_settings {
 function verify_munki_settings {
 	# Check if running from launch agent (no TTY available)
 	if [ -t 0 ] && [ -t 1 ]; then
-		info "Setting Munki repo URL to ${TAILSCALE_URL}/munki - will prompt for sudo password"
-		sudo defaults write /Library/Preferences/ManagedInstalls SoftwareRepoURL "${TAILSCALE_URL}/munki"
-		info "Munki repo URL: $(defaults read /Library/Preferences/ManagedInstalls SoftwareRepoURL)"
+		if $(defaults read /Library/Preferences/ManagedInstalls SoftwareRepoURL) != "${TAILSCALE_URL}/munki"; then
+			info "Setting Munki repo URL to ${TAILSCALE_URL}/munki - will prompt for sudo password"
+			sudo defaults write /Library/Preferences/ManagedInstalls SoftwareRepoURL "${TAILSCALE_URL}/munki"
+			info "Munki repo URL: $(defaults read /Library/Preferences/ManagedInstalls SoftwareRepoURL)"
+		else
+			info "Munki repo URL is already set to ${TAILSCALE_URL}/munki"
+		fi
 	else
 		warn "Running from launch agent - skipping Munki settings update (requires sudo)"
 		info "Current Munki repo URL: $(defaults read /Library/Preferences/ManagedInstalls SoftwareRepoURL 2>/dev/null || echo 'Unable to read - may require sudo')"

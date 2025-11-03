@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2025-11-03T21:34:48Z</date>
+		<key>munki_version</key>
+		<string>7.0.0.5328</string>
+		<key>os_version</key>
+		<string>26.0.1</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>category</key>
+	<string>Web Browsers</string>
+	<key>description</key>
+	<string>Official OpenAI ChatGPT Browser application.</string>
+	<key>developer</key>
+	<string>OpenAI, L.L.C.</string>
+	<key>display_name</key>
+	<string>ChatGPT Atlas</string>
+	<key>installer_item_hash</key>
+	<string>ca6aa90a520312e8b68538c06920857f047af0de2b7b6580a39e01c1a1425f13</string>
+	<key>installer_item_location</key>
+	<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2025.295.4.dmg</string>
+	<key>installer_item_size</key>
+	<integer>226829</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.openai.atlas</string>
+			<key>CFBundleName</key>
+			<string>ChatGPT Atlas</string>
+			<key>CFBundleShortVersionString</key>
+			<string>1.2025.295.4</string>
+			<key>CFBundleVersion</key>
+			<string>20251028201412000</string>
+			<key>minosversion</key>
+			<string>14.2</string>
+			<key>path</key>
+			<string>/Applications/ChatGPT Atlas.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleVersion</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>ChatGPT Atlas.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>14.2</string>
+	<key>name</key>
+	<string>ChatGPT Atlas</string>
+	<key>supported_architectures</key>
+	<array>
+		<string>arm64</string>
+	</array>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.2025.295.4</string>
+</dict>
+</plist>

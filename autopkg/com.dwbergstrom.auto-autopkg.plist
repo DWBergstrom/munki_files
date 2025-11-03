@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>com.dwbergstrom.auto-autopkg</string>
+    <string>com.dwbergstrom.auto-autopkg-ts</string>
 
     <key>ProgramArguments</key>
     <array>
-        <string>/Volumes/2TB-WD/munki_files/autopkg/auto-autopkg.sh</string>
+        <string>/Volumes/M4_Dock/munki_files/autopkg/auto-autopkg-ts.sh</string>
     </array>
 
     <key>StartCalendarInterval</key>
@@ -19,8 +19,8 @@
     </dict>
     
     <key>StandardErrorPath</key>
-    <string>/Users/dwbergstrom/Library/Logs/auto-autopkg.err</string>
+    <string>/Users/dwbergstrom/Library/Logs/auto-autopkg-ts.err</string>
     <key>StandardOutPath</key>
-    <string>/Users/dwbergstrom/Library/Logs/auto-autopkg.out</string>
+    <string>/Users/dwbergstrom/Library/Logs/auto-autopkg-ts.out</string>
 </dict>
 </plist>
