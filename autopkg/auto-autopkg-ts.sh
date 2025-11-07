@@ -86,7 +86,9 @@ log "Webserver host status: ${WEBSERVER_STATUS}"
 # Check if python server is running
 PYTHON_SERVER_STATUS=""
 if pgrep -f "http.server" > /dev/null; then
-	PYTHON_SERVER_STATUS="running"
+	PYTHON_SERVER_STATUS="running...restarting"
+	kill -9 $(pgrep -f "http.server")
+	python3 -m http.server ${WEBSERVER_PORT} --bind 127.0.0.1 --directory ${MUNKI_REPO_PATH}&
 	log "Python server status: ${PYTHON_SERVER_STATUS} at http://127.0.0.1:${WEBSERVER_PORT}"
 else
 	PYTHON_SERVER_STATUS="not running"
