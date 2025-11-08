@@ -10,18 +10,19 @@ log() {
 	echo -e "${GREEN}[$(date +'%Y-%m-%d %H:%M:%S')]${NC} $1"
 }
 error() {
-	echo -e "${RED}[ERROR]${NC} $1" >&2
+	echo -e "${RED}[$(date +'%Y-%m-%d %H:%M:%S')][ERROR]${NC} $1" >&2
 }
 warn() {
-	echo -e "${YELLOW}[WARNING]${NC} $1"
+	echo -e "${YELLOW}[$(date +'%Y-%m-%d %H:%M:%S')][WARNING]${NC} $1"
 }
 info() {
-	echo -e "${BLUE}[INFO]${NC} $1"
+	echo -e "${BLUE}[$(date +'%Y-%m-%d %H:%M:%S')][INFO]${NC} $1"
 }
 
 # Prerequisites checks
 # Verify tailscale is installed
 if ! TAILSCALE_CMD=$(command -v tailscale) &> /dev/null; then
+	info "verifying tailscale is installed..."
 	error "Tailscale could not be found. Please install Tailscale and try again."
 	exit 1
 else
@@ -29,6 +30,7 @@ else
 fi
 # Verify python3 is installed
 if ! PYTHON_CMD=$(command -v python3) &> /dev/null; then
+	info "verifying python3 is installed..."
 	error "Python3 could not be found. Please install Python3 and try again."
 	exit 1
 else
@@ -36,6 +38,7 @@ else
 fi
 # Verify autopkg is installed
 if ! AUTOPKG_CMD=$(command -v autopkg) &> /dev/null; then
+	info "verifying autopkg is installed..."
 	error "Autopkg could not be found. Please install Autopkg and try again."
 	exit 1
 else
@@ -43,6 +46,7 @@ else
 fi
 # Verify munki is installed
 if ! MANAGEDSOFTWAREUPDATE_CMD=$(command -v managedsoftwareupdate) &> /dev/null; then
+	info "verifying munki is installed..."
 	error "Munki could not be found. Please install Munki and try again."
 	exit 1
 else
@@ -50,6 +54,7 @@ else
 fi
 # Verify 1Password CLI is installed (optional)
 if ! OP_CMD=$(command -v op) &> /dev/null; then
+	info "verifying 1password CLI is installed..."
 	warn "1Password CLI could not be found. Will not be able to update github token for autopkg."
 else
 	info "1Password CLI is installed at ${OP_CMD}"
@@ -58,6 +63,7 @@ fi
 # Get github token for autopkg (optional)
 GITHUB_TOKEN=$(op item get "GitHub - Autopkg" --fields token)
 if [ -z "${GITHUB_TOKEN}" ]; then
+	info "verifying github token for autopkg..."
 	error "Github token for autopkg not found. Add to 1Password when possible."
 else
 	info "Github token for autopkg: ${GITHUB_TOKEN}"
