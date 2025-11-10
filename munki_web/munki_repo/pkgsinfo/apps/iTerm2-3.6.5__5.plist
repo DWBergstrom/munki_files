@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-11-03T21:36:30Z</date>
+		<date>2025-11-10T23:11:01Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,37 +19,37 @@
 	<array>
 		<string>testing</string>
 	</array>
+	<key>category</key>
+	<string>Utilities</string>
 	<key>description</key>
-	<string>Supercharged productivity
-
-Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
+	<string>iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with OS 10.5 (Leopard) or newer. Its focus is on performance, internationalization, and supporting innovative features that make your life better.</string>
 	<key>developer</key>
-	<string>Raycast Technologies Inc</string>
+	<string>George Nachman</string>
 	<key>display_name</key>
-	<string>Raycast</string>
+	<string>iTerm2</string>
 	<key>installer_item_hash</key>
-	<string>f2a5b059a55955456e3d744263df965d45534e22622fd270509d0af63388f0fb</string>
+	<string>70f80f88bf0b92ec60a8b16a3f668c6bb8a46a082d36b3e81ebbc35345fbdb61</string>
 	<key>installer_item_location</key>
-	<string>apps/Raycast/Raycast-1.103.5.dmg</string>
+	<string>apps/iTerm2-3.6.5__5.dmg</string>
 	<key>installer_item_size</key>
-	<integer>101063</integer>
+	<integer>51738</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.raycast.macos</string>
+			<string>com.googlecode.iterm2</string>
 			<key>CFBundleName</key>
-			<string>Raycast</string>
+			<string>iTerm2</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.103.5</string>
+			<string>3.6.5</string>
 			<key>CFBundleVersion</key>
-			<string>0</string>
+			<string>3.6.5</string>
 			<key>minosversion</key>
-			<string>13.0</string>
+			<string>12.4</string>
 			<key>path</key>
-			<string>/Applications/Raycast.app</string>
+			<string>/Applications/iTerm.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -62,22 +62,20 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Raycast.app</string>
+			<string>iTerm.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>13.0</string>
+	<string>12.4</string>
 	<key>name</key>
-	<string>Raycast</string>
+	<string>iTerm2</string>
 	<key>unattended_install</key>
-	<true/>
-	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.103.5</string>
+	<string>3.6.5</string>
 </dict>
 </plist>

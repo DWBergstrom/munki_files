@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-11-03T22:55:13Z</date>
+		<date>2025-11-10T23:10:34Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,36 +20,32 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Supercharged productivity
-
-Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
-	<key>developer</key>
-	<string>Raycast Technologies Inc</string>
+	<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
 	<key>display_name</key>
-	<string>Raycast</string>
+	<string>Google Chrome</string>
 	<key>installer_item_hash</key>
-	<string>f2a5b059a55955456e3d744263df965d45534e22622fd270509d0af63388f0fb</string>
+	<string>bf53302bca056c193e3dc9cfe6d921d168189b328662bd959310fea2d28df718</string>
 	<key>installer_item_location</key>
-	<string>apps/Raycast/Raycast-1.103.5__1.dmg</string>
+	<string>apps/GoogleChrome-142.0.7444.60__3.dmg</string>
 	<key>installer_item_size</key>
-	<integer>101063</integer>
+	<integer>230527</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.raycast.macos</string>
+			<string>com.google.Chrome</string>
 			<key>CFBundleName</key>
-			<string>Raycast</string>
+			<string>Chrome</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.103.5</string>
+			<string>142.0.7444.60</string>
 			<key>CFBundleVersion</key>
-			<string>0</string>
+			<string>7444.60</string>
 			<key>minosversion</key>
-			<string>13.0</string>
+			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/Raycast.app</string>
+			<string>/Applications/Google Chrome.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -62,22 +58,20 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Raycast.app</string>
+			<string>Google Chrome.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>13.0</string>
+	<string>12.0</string>
 	<key>name</key>
-	<string>Raycast</string>
+	<string>GoogleChrome</string>
 	<key>unattended_install</key>
-	<true/>
-	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.103.5</string>
+	<string>142.0.7444.60</string>
 </dict>
 </plist>

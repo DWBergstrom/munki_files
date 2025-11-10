@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2025-11-10T23:10:14Z</date>
+		<key>munki_version</key>
+		<string>7.0.0.5328</string>
+		<key>os_version</key>
+		<string>26.0.1</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>Mozilla Firefox is a free and open source web browser.</string>
+	<key>display_name</key>
+	<string>Mozilla Firefox</string>
+	<key>installer_item_hash</key>
+	<string>c67e649a9ef2d23c929ca1b9a87b10591e06303cdf0d9e2395e64bcf7bc0f673</string>
+	<key>installer_item_location</key>
+	<string>apps/firefox/Firefox-144.0.2__3.dmg</string>
+	<key>installer_item_size</key>
+	<integer>138692</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>org.mozilla.firefox</string>
+			<key>CFBundleName</key>
+			<string>Firefox</string>
+			<key>CFBundleShortVersionString</key>
+			<string>144.0.2</string>
+			<key>CFBundleVersion</key>
+			<string>14425.10.27</string>
+			<key>minosversion</key>
+			<string>10.15.0</string>
+			<key>path</key>
+			<string>/Applications/Firefox.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>Firefox.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.15.0</string>
+	<key>name</key>
+	<string>Firefox</string>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>144.0.2</string>
+</dict>
+</plist>
