@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-11-10T23:20:08Z</date>
+		<date>2025-11-27T14:10:34Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,40 +20,40 @@
 		<string>testing</string>
 	</array>
 	<key>category</key>
-	<string>Browsers</string>
+	<string>Web Browsers</string>
 	<key>description</key>
-	<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
+	<string>Official OpenAI ChatGPT Browser application.</string>
 	<key>developer</key>
-	<string>Brave Software Inc.</string>
+	<string>OpenAI, L.L.C.</string>
 	<key>display_name</key>
-	<string>Brave Browser</string>
+	<string>ChatGPT Atlas</string>
 	<key>installer_item_hash</key>
-	<string>e7c96435627c8c5834bb3fbe40a6942e2c29b64abbfe87cf815104c29e03bd5a</string>
+	<string>6b06c7045f972b45abe0c7ec88c27cb9a3a20fdac212a70643af46899ef73125</string>
 	<key>installer_item_location</key>
-	<string>apps/Brave/Brave-142.1.84.135__2.dmg</string>
+	<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2025.323.6.dmg</string>
 	<key>installer_item_size</key>
-	<integer>227725</integer>
+	<integer>228819</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.brave.Browser</string>
+			<string>com.openai.atlas</string>
 			<key>CFBundleName</key>
-			<string>Brave</string>
+			<string>ChatGPT Atlas</string>
 			<key>CFBundleShortVersionString</key>
-			<string>142.1.84.135</string>
+			<string>1.2025.323.6</string>
 			<key>CFBundleVersion</key>
-			<string>184.135</string>
+			<string>20251124201745000</string>
 			<key>minosversion</key>
-			<string>12.0</string>
+			<string>14.2</string>
 			<key>path</key>
-			<string>/Applications/Brave Browser.app</string>
+			<string>/Applications/ChatGPT Atlas.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
-			<string>CFBundleShortVersionString</string>
+			<string>CFBundleVersion</string>
 		</dict>
 	</array>
 	<key>items_to_copy</key>
@@ -62,13 +62,17 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Brave Browser.app</string>
+			<string>ChatGPT Atlas.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>12.0</string>
+	<string>14.2</string>
 	<key>name</key>
-	<string>Brave</string>
+	<string>ChatGPT Atlas</string>
+	<key>supported_architectures</key>
+	<array>
+		<string>arm64</string>
+	</array>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -76,6 +80,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>142.1.84.135</string>
+	<string>1.2025.323.6</string>
 </dict>
 </plist>
