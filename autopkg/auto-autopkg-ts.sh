@@ -22,57 +22,57 @@ info() {
 # Prerequisites checks
 # Verify tailscale is installed
 if ! TAILSCALE_CMD=$(command -v tailscale) &> /dev/null; then
-	info "verifying tailscale is installed..."
+	log "verifying tailscale is installed..."
 	error "Tailscale could not be found. Please install Tailscale and try again."
 	exit 1
 else
-	info "Tailscale is installed at ${TAILSCALE_CMD}"
+	log "Tailscale is installed at ${TAILSCALE_CMD}"
 fi
 # Verify python3 is installed
 if ! PYTHON_CMD=$(command -v python3) &> /dev/null; then
-	info "verifying python3 is installed..."
+	log "verifying python3 is installed..."
 	error "Python3 could not be found. Please install Python3 and try again."
 	exit 1
 else
-	info "Python3 is installed at ${PYTHON_CMD}"
+	log "Python3 is installed at ${PYTHON_CMD}"
 fi
 # Verify autopkg is installed
 if ! AUTOPKG_CMD=$(command -v autopkg) &> /dev/null; then
-	info "verifying autopkg is installed..."
+	log "verifying autopkg is installed..."
 	error "Autopkg could not be found. Please install Autopkg and try again."
 	exit 1
 else
-	info "Autopkg is installed at ${AUTOPKG_CMD}"
+	log "Autopkg is installed at ${AUTOPKG_CMD}"
 fi
 # Verify munki is installed
 if ! MANAGEDSOFTWAREUPDATE_CMD=$(command -v managedsoftwareupdate) &> /dev/null; then
-	info "verifying munki is installed..."
+	log "verifying munki is installed..."
 	error "Munki could not be found. Please install Munki and try again."
 	exit 1
 else
-	info "Munki is installed at ${MANAGEDSOFTWAREUPDATE_CMD}"
+	log "Munki is installed at ${MANAGEDSOFTWAREUPDATE_CMD}"
 fi
 # Verify 1Password CLI is installed (optional)
 if ! OP_CMD=$(command -v op) &> /dev/null; then
-	info "verifying 1password CLI is installed..."
+	log "verifying 1password CLI is installed..."
 	warn "1Password CLI could not be found. Will not be able to update github token for autopkg."
 else
-	info "1Password CLI is installed at ${OP_CMD}"
+	log "1Password CLI is installed at ${OP_CMD}"
 fi
 
 # Get github token for autopkg (optional)
 GITHUB_TOKEN=$(op item get "GitHub - Autopkg" --fields token)
 if [ -z "${GITHUB_TOKEN}" ]; then
-	info "verifying github token for autopkg..."
+	log "verifying github token for autopkg..."
 	error "Github token for autopkg not found. Add to 1Password when possible."
 else
-	info "Github token for autopkg: ${GITHUB_TOKEN}"
+	log "Github token for autopkg: ${GITHUB_TOKEN}"
 fi
 
 # Config variables
 # Volume name
 VOLUME_NAME="M4_Dock"
-info "Munki volume name: ${VOLUME_NAME}"
+log "Munki volume name: ${VOLUME_NAME}"
 # Define Munki  and autopkg variables
 REPOCLEAN_VERSIONS="1"
 MUNKI_REPO_PATH="/Volumes/${VOLUME_NAME}/munki_files/munki_web/munki_repo/"
@@ -99,7 +99,7 @@ if pgrep -f "http.server" > /dev/null; then
 else
 	PYTHON_SERVER_STATUS="not running"
 	log "Python server status: ${PYTHON_SERVER_STATUS}"
-	info "Attempting to start python server..."
+	log "Attempting to start python server..."
 	python3 -m http.server ${WEBSERVER_PORT} --bind 127.0.0.1 --directory ${MUNKI_REPO_PATH}&
 fi
 # Check if tailscale is serving the munki repo
@@ -110,7 +110,7 @@ if TAILSCALE_URL=$($TAILSCALE_CMD serve status | grep $WEBSERVER_NAME | sed 's/ 
 else
 	TAILSCALE_SERVING_STATUS="not serving"
 	log "Tailscale serving status: ${TAILSCALE_SERVING_STATUS}"
-	info "Attempting to start tailscale serve..."
+	log "Attempting to start tailscale serve..."
 	$TAILSCALE_CMD serve --bg --set-path /munki http://127.0.0.1:${WEBSERVER_PORT}/
 fi
 
@@ -125,23 +125,23 @@ function verify_autopkg_settings {
 	for repo in $(cat autopkg-repos); do
 		"${AUTOPKG_CMD}" repo-add "${repo}"
 	done
-	info "Autopkg recipe override directory: $(defaults read com.github.autopkg RECIPE_OVERRIDE_DIRS)"
-	info "Autopkg munki repo: $(defaults read com.github.autopkg MUNKI_REPO)"
+	log "Autopkg recipe override directory: $(defaults read com.github.autopkg RECIPE_OVERRIDE_DIRS)"
+	log "Autopkg munki repo: $(defaults read com.github.autopkg MUNKI_REPO)"
 }
 
 function verify_munki_settings {
 	# Check if running from launch agent (no TTY available)
 	if [ -t 0 ] && [ -t 1 ]; then
 		if $(defaults read /Library/Preferences/ManagedInstalls SoftwareRepoURL) != "${TAILSCALE_URL}/munki"; then
-			info "Setting Munki repo URL to ${TAILSCALE_URL}/munki - will prompt for sudo password"
+			log "Setting Munki repo URL to ${TAILSCALE_URL}/munki - will prompt for sudo password"
 			sudo defaults write /Library/Preferences/ManagedInstalls SoftwareRepoURL "${TAILSCALE_URL}/munki"
-			info "Munki repo URL: $(defaults read /Library/Preferences/ManagedInstalls SoftwareRepoURL)"
+			log "Munki repo URL: $(defaults read /Library/Preferences/ManagedInstalls SoftwareRepoURL)"
 		else
-			info "Munki repo URL is already set to ${TAILSCALE_URL}/munki"
+			log "Munki repo URL is already set to ${TAILSCALE_URL}/munki"
 		fi
 	else
 		warn "Running from launch agent - skipping Munki settings update (requires sudo)"
-		info "Current Munki repo URL: $(defaults read /Library/Preferences/ManagedInstalls SoftwareRepoURL 2>/dev/null || echo 'Unable to read - may require sudo')"
+		log "Current Munki repo URL: $(defaults read /Library/Preferences/ManagedInstalls SoftwareRepoURL 2>/dev/null || echo 'Unable to read - may require sudo')"
 	fi
 }
 
@@ -193,7 +193,7 @@ function run_specified_overrides {
 
 function add_new_overrides {
 	current_date=$(date +%Y%m%d)
-	info "Checking for an adding new overrides from ${OVERRIDES_DIR} since ${current_date}..."
+	log "Checking for an adding new overrides from ${OVERRIDES_DIR} since ${current_date}..."
 	while IFS= read -r new_override; do
 		installer_name=$(xmllint --xpath 'string(//key[.="NAME"]/following-sibling::string[1])' "$new_override")
 		log "Adding ${installer_name} to munki repo..."
