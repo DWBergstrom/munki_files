@@ -484,7 +484,7 @@ function save_changes_to_git {
 
 function main {
 	#verify_autopkg_settings
-	verify_munki_settings
+	#verify_munki_settings
 	run_repoclean
 	run_all_overrides
 	add_new_overrides
