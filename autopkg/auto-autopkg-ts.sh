@@ -180,18 +180,12 @@ function verify_autopkg_settings {
 }
 
 function verify_munki_settings {
-	# Check if running from launch agent (no TTY available)
-	if [ -t 0 ] && [ -t 1 ]; then
-		if $(defaults read /Library/Preferences/ManagedInstalls SoftwareRepoURL) != "${TAILSCALE_URL}/munki"; then
-			log "Setting Munki repo URL to ${TAILSCALE_URL}/munki - will prompt for sudo password"
-			sudo defaults write /Library/Preferences/ManagedInstalls SoftwareRepoURL "${TAILSCALE_URL}/munki"
-			log "Munki repo URL: $(defaults read /Library/Preferences/ManagedInstalls SoftwareRepoURL)"
-		else
-			log "Munki repo URL is already set to ${TAILSCALE_URL}/munki"
-		fi
+	if $(defaults read /Library/Preferences/ManagedInstalls SoftwareRepoURL) != "${TAILSCALE_URL}/munki"; then
+		log "Setting Munki repo URL to ${TAILSCALE_URL}/munki - will prompt for sudo password"
+		sudo defaults write /Library/Preferences/ManagedInstalls SoftwareRepoURL "${TAILSCALE_URL}/munki"
+		log "Munki repo URL: $(defaults read /Library/Preferences/ManagedInstalls SoftwareRepoURL)"
 	else
-		warn "Running from launch agent - skipping Munki settings update (requires sudo)"
-		log "Current Munki repo URL: $(defaults read /Library/Preferences/ManagedInstalls SoftwareRepoURL 2>/dev/null || echo 'Unable to read - may require sudo')"
+		log "Munki repo URL is already set to ${TAILSCALE_URL}/munki"
 	fi
 }
 
@@ -483,13 +477,23 @@ function save_changes_to_git {
 }
 
 function main {
-	#verify_autopkg_settings
-	#verify_munki_settings
-	run_repoclean
-	run_all_overrides
-	add_new_overrides
-	run_makecatalogs
-	save_changes_to_git
+	# Check if running from launch agent (no TTY available)
+	if [ -t 0 ] && [ -t 1 ]; then
+		verify_autopkg_settings
+		verify_munki_settings
+		run_repoclean
+		run_all_overrides
+		add_new_overrides
+		run_makecatalogs
+		save_changes_to_git
+	else
+		warn "Running from launch agent - skipping autopkg settings verification and munki settings update (requires sudo)"
+		run_repoclean
+		run_all_overrides
+		add_new_overrides
+		run_makecatalogs
+		save_changes_to_git
+	fi
 }
 
 # parameters
