@@ -220,45 +220,48 @@ function run_all_overrides {
 		
 		# Capture both stdout and stderr to check for trust verification errors
 		autopkg_output=$(mktemp)
-		if "${AUTOPKG_CMD}" run -v "${override}" -k force_munkiimport=true > >(tee -a "${autopkg_output}") 2> >(tee -a "${autopkg_output}" >&2); then
+		# Redirect all output to file while also displaying it
+		if "${AUTOPKG_CMD}" run -v "${override}" -k force_munkiimport=true > >(tee "${autopkg_output}") 2> >(tee "${autopkg_output}" >&2); then
+			# Wait a moment for any buffered output
+			sleep 0.5
 			# Check output for trust verification errors
 			if grep -q "Failed local trust verification" "${autopkg_output}" 2>/dev/null; then
 				# Count how many trust errors occurred
 				trust_error_count=$(grep -c "Failed local trust verification" "${autopkg_output}" 2>/dev/null || echo "0")
 				
-			# Try to extract package names from MunkiImporter output
-			# Look for "MunkiImporter: pkg to:" lines and match with nearby trust errors
-			package_names=$(awk '
-				BEGIN { 
-					# Array to store recent packages (within last 50 lines)
-					split("", packages)
-					line_num=0
-				}
-				{
-					line_num++
-					# Store package names from MunkiImporter lines
-					if (/MunkiImporter:.*pkg to:/) {
-						pkg=$NF
-						gsub(/.*\//, "", pkg)
-						# Store with line number
-						packages[line_num] = pkg
+				# Try to extract package names from MunkiImporter output
+				# Look for "MunkiImporter: pkg to:" lines and match with nearby trust errors
+				package_names=$(awk '
+					BEGIN { 
+						# Array to store recent packages (within last 50 lines)
+						split("", packages)
+						line_num=0
 					}
-					# When we see a trust error, find the most recent package
-					if (/Failed local trust verification/) {
-						# Look back up to 50 lines for a package
-						found=""
-						for (i=line_num; i>0 && i>line_num-50; i--) {
-							if (packages[i] != "") {
-								found=packages[i]
-								break
+					{
+						line_num++
+						# Store package names from MunkiImporter lines
+						if (/MunkiImporter:.*pkg to:/) {
+							pkg=$NF
+							gsub(/.*\//, "", pkg)
+							# Store with line number
+							packages[line_num] = pkg
+						}
+						# When we see a trust error, find the most recent package
+						if (/Failed local trust verification/) {
+							# Look back up to 50 lines for a package
+							found=""
+							for (i=line_num; i>0 && i>line_num-50; i--) {
+								if (packages[i] != "") {
+									found=packages[i]
+									break
+								}
+							}
+							if (found != "") {
+								print found
 							}
 						}
-						if (found != "") {
-							print found
-						}
 					}
-				}
-			' "${autopkg_output}" | sort -u)
+				' "${autopkg_output}" | sort -u)
 				
 				# If we found package names, log them
 				if [ -n "${package_names}" ]; then
@@ -306,7 +309,10 @@ function run_specified_overrides {
 	
 	# Capture both stdout and stderr to check for trust verification errors
 	autopkg_output=$(mktemp)
-	if "${AUTOPKG_CMD}" run -v "${override_path}" -k force_munkiimport=true > >(tee -a "${autopkg_output}") 2> >(tee -a "${autopkg_output}" >&2); then
+	# Redirect all output to file while also displaying it
+	if "${AUTOPKG_CMD}" run -v "${override_path}" -k force_munkiimport=true > >(tee "${autopkg_output}") 2> >(tee "${autopkg_output}" >&2); then
+		# Wait a moment for any buffered output
+		sleep 0.5
 		# Check output for trust verification errors
 		if grep -q "Failed local trust verification" "${autopkg_output}" 2>/dev/null; then
 			# Count how many trust errors occurred
@@ -402,22 +408,36 @@ function run_makecatalogs {
 			trust_error_count=$(grep -c "Failed local trust verification" "${makecatalogs_output}" 2>/dev/null || echo "0")
 			
 			# Try to extract package names from lines before trust errors
-			# Look for package paths or names in the output
+			# Look for package paths or names in the output - check lines before each error
 			package_names=$(awk '
-				/[Pp]ackage:|[Pp]kg:|\.pkg|\.dmg/ {
-					# Extract package name from various formats
-					for (i=1; i<=NF; i++) {
-						if ($i ~ /\.(pkg|dmg)$/) {
-							pkg=$i
-							gsub(/.*\//, "", pkg)
-							last_pkg=pkg
+				BEGIN {
+					split("", packages)
+					line_num=0
+				}
+				{
+					line_num++
+					# Store package names from various patterns
+					if (/[Pp]ackage:|[Pp]kg:|\.pkg|\.dmg/) {
+						for (i=1; i<=NF; i++) {
+							if ($i ~ /\.(pkg|dmg)$/) {
+								pkg=$i
+								gsub(/.*\//, "", pkg)
+								packages[line_num] = pkg
+							}
 						}
 					}
-				}
-				/Failed local trust verification/ {
-					if (last_pkg != "") {
-						print last_pkg
-						last_pkg=""
+					# When we see a trust error, find the most recent package
+					if (/Failed local trust verification/) {
+						found=""
+						for (i=line_num; i>0 && i>line_num-50; i--) {
+							if (packages[i] != "") {
+								found=packages[i]
+								break
+							}
+						}
+						if (found != "") {
+							print found
+						}
 					}
 				}
 			' "${makecatalogs_output}" | sort -u)
@@ -430,7 +450,7 @@ function run_makecatalogs {
 				done <<< "${package_names}"
 			else
 				if [ "${trust_error_count}" -gt 0 ]; then
-					warn "[makecatalogs] Failed local trust verification (${trust_error_count} error(s), unable to determine package name(s))"
+					error "[makecatalogs] Failed local trust verification (${trust_error_count} error(s), unable to determine package name(s))"
 				fi
 			fi
 		fi
