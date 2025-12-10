@@ -12,12 +12,12 @@
 	</array>
 	
 	<key>WorkingDirectory</key>
-	<string>/Volumes/M4_Dock/munki_files/autopkg</string>
+	<string>/tmp</string>
 	
 	<key>EnvironmentVariables</key>
 	<dict>
 		<key>PATH</key>
-		<string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/bin</string>
+		<string>/usr/local/munki:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/bin</string>
 	</dict>
 	
 	<key>StartCalendarInterval</key>

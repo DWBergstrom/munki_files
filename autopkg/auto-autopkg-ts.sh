@@ -19,6 +19,8 @@ info() {
 	echo -e "${BLUE}[$(date +'%Y-%m-%d %H:%M:%S')][INFO]${NC} $1"
 }
 
+log "executing auto-autopkg-ts.sh from ${PWD}"
+
 # Prerequisites checks
 # Verify tailscale is installed
 log "verifying tailscale is installed..."
@@ -75,9 +77,18 @@ VOLUME_NAME="M4_Dock"
 log "Munki volume name: ${VOLUME_NAME}"
 # Define Munki  and autopkg variables
 REPOCLEAN_VERSIONS="1"
+AUTOPKG_DIR="/Volumes/${VOLUME_NAME}/munki_files/autopkg"
 MUNKI_REPO_PATH="/Volumes/${VOLUME_NAME}/munki_files/munki_web/munki_repo/"
 # Define the override directory
 OVERRIDES_DIR="/Volumes/${VOLUME_NAME}/munki_files/autopkg/overrides"
+AUTOPKG_REPOS_FILE="${AUTOPKG_DIR}/autopkg-repos"
+
+# Verify volume is mounted
+if [ ! -d "${AUTOPKG_DIR}" ]; then
+	error "Volume ${VOLUME_NAME} is not mounted or accessible at ${AUTOPKG_DIR}"
+	exit 1
+fi
+log "Autopkg directory verified: ${AUTOPKG_DIR}"
 
 # Munki repo webserver check
 WEBSERVER_NAME="coherence"
@@ -122,7 +133,11 @@ function verify_autopkg_settings {
 	defaults write com.github.autopkg RECIPE_OVERRIDE_DIRS "${OVERRIDES_DIR}"
 	defaults write com.github.autopkg MUNKI_REPO "${MUNKI_REPO_PATH}"
 	defaults write com.github.autopkg GITHUB_TOKEN "${GITHUB_TOKEN}"
-	for repo in $(cat autopkg-repos); do
+	if [ ! -f "${AUTOPKG_REPOS_FILE}" ]; then
+		error "autopkg-repos file not found at ${AUTOPKG_REPOS_FILE}"
+		exit 1
+	fi
+	for repo in $(cat "${AUTOPKG_REPOS_FILE}"); do
 		"${AUTOPKG_CMD}" repo-add "${repo}"
 	done
 	log "Autopkg recipe override directory: $(defaults read com.github.autopkg RECIPE_OVERRIDE_DIRS)"
@@ -194,11 +209,20 @@ function run_specified_overrides {
 function add_new_overrides {
 	current_date=$(date +%Y%m%d)
 	log "Checking for an adding new overrides from ${OVERRIDES_DIR} since ${current_date}..."
+	if [ ! -d "${OVERRIDES_DIR}" ]; then
+		warn "Overrides directory not accessible: ${OVERRIDES_DIR}"
+		return
+	fi
+	# Use find with error handling - redirect stderr to avoid permission errors in output
 	while IFS= read -r new_override; do
-		installer_name=$(xmllint --xpath 'string(//key[.="NAME"]/following-sibling::string[1])' "$new_override")
-		log "Adding ${installer_name} to munki repo..."
-		manifestutil add-pkg "$installer_name" --manifest site_default --section managed_updates
-	done < <(find "$OVERRIDES_DIR" -type f -newermt "$current_date")
+		if [ -n "$new_override" ] && [ -f "$new_override" ]; then
+			installer_name=$(xmllint --xpath 'string(//key[.="NAME"]/following-sibling::string[1])' "$new_override" 2>/dev/null)
+			if [ -n "$installer_name" ]; then
+				log "Adding ${installer_name} to munki repo..."
+				manifestutil add-pkg "$installer_name" --manifest site_default --section managed_updates
+			fi
+		fi
+	done < <(find "$OVERRIDES_DIR" -type f -newermt "$current_date" 2>/dev/null || true)
 }
 
 function run_makecatalogs {
@@ -209,14 +233,24 @@ function run_makecatalogs {
 # Save changes to git
 function save_changes_to_git {
 	commit_date_and_time=$(date +%Y%m%d_%H%M%S)
-	log "Changing to munki directory"
-	cd "${MUNKI_REPO_PATH}"
+	log "Saving changes to git in ${MUNKI_REPO_PATH}"
+	if [ ! -d "${MUNKI_REPO_PATH}" ]; then
+		error "Munki repo directory not accessible: ${MUNKI_REPO_PATH}"
+		return
+	fi
+	# Use git -C flag instead of cd to avoid working directory issues
 	log "Adding all changes to git"
-	git add --all
-	git status
+	if ! git -C "${MUNKI_REPO_PATH}" add --all 2>/dev/null; then
+		error "Failed to add changes to git"
+		return
+	fi
+	git -C "${MUNKI_REPO_PATH}" status
 	log "Commiting changes..."
-	git commit -m "${commit_date_and_time} Updating munki"
-	git push origin main
+	if ! git -C "${MUNKI_REPO_PATH}" commit -m "${commit_date_and_time} Updating munki" 2>/dev/null; then
+		warn "No changes to commit or commit failed"
+		return
+	fi
+	git -C "${MUNKI_REPO_PATH}" push origin main
 }
 
 function main {

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2025-12-10T21:41:14Z</date>
+		<key>munki_version</key>
+		<string>7.0.0.5328</string>
+		<key>os_version</key>
+		<string>26.0.1</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>Supercharged productivity
+
+Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
+	<key>developer</key>
+	<string>Raycast Technologies Inc</string>
+	<key>display_name</key>
+	<string>Raycast</string>
+	<key>installer_item_hash</key>
+	<string>1fe391e52430d3f50ac028187d3a3ad65910cf275169dfb63216787e264027d3</string>
+	<key>installer_item_location</key>
+	<string>apps/Raycast/Raycast-1.103.10__5.dmg</string>
+	<key>installer_item_size</key>
+	<integer>101102</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.raycast.macos</string>
+			<key>CFBundleName</key>
+			<string>Raycast</string>
+			<key>CFBundleShortVersionString</key>
+			<string>1.103.10</string>
+			<key>CFBundleVersion</key>
+			<string>0</string>
+			<key>minosversion</key>
+			<string>13.0</string>
+			<key>path</key>
+			<string>/Applications/Raycast.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>Raycast.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>13.0</string>
+	<key>name</key>
+	<string>Raycast</string>
+	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.103.10</string>
+</dict>
+</plist>
