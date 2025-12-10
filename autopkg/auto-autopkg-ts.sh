@@ -191,6 +191,8 @@ function verify_munki_settings {
 
 function run_repoclean {
 	log "Running repoclean..."
+	# Write context marker to stderr so errors in log have context
+	echo "--- [repoclean] Starting repoclean run ---" >&2
 	repoclean_output=$(mktemp)
 	if repoclean -k "${REPOCLEAN_VERSIONS}" -a "${MUNKI_REPO_PATH}" > >(tee -a "${repoclean_output}") 2> >(tee -a "${repoclean_output}" >&2); then
 		# Check for trust verification errors
@@ -202,6 +204,8 @@ function run_repoclean {
 		fi
 	fi
 	rm -f "${repoclean_output}"
+	# Write end marker to stderr
+	echo "--- [repoclean] Finished repoclean run ---" >&2
 }
 
 function run_all_overrides {
@@ -211,6 +215,8 @@ function run_all_overrides {
 		# Extract recipe name from override path
 		override_name=$(basename "${override}" .munki.recipe)
 		log "Running autopkg ${override}..."
+		# Write context marker to stderr so errors in log have context
+		echo "--- [${override_name}] Starting autopkg run ---" >&2
 		
 		# Capture both stdout and stderr to check for trust verification errors
 		autopkg_output=$(mktemp)
@@ -274,6 +280,8 @@ function run_all_overrides {
 		fi
 		# Clean up temp file
 		rm -f "${autopkg_output}"
+		# Write end marker to stderr
+		echo "--- [${override_name}] Finished autopkg run ---" >&2
 	done
 }
 
@@ -300,6 +308,8 @@ function run_specified_overrides {
 	override_path="${1}"
 	override_name=$(basename "${override_path}" .munki.recipe)
 	log "Running autopkg for specified overrides: ${override_path}..."
+	# Write context marker to stderr so errors in log have context
+	echo "--- [${override_name}] Starting autopkg run ---" >&2
 	
 	# Capture both stdout and stderr to check for trust verification errors
 	autopkg_output=$(mktemp)
@@ -363,6 +373,8 @@ function run_specified_overrides {
 	fi
 	# Clean up temp file
 	rm -f "${autopkg_output}"
+	# Write end marker to stderr
+	echo "--- [${override_name}] Finished autopkg run ---" >&2
 	
 	name="${override_name}"
 	if ! manifestutil display-manifest site_default | grep "${name}" > /dev/null; then  
@@ -395,6 +407,8 @@ function add_new_overrides {
 
 function run_makecatalogs {
 	log "Running makecatalogs..."
+	# Write context marker to stderr so errors in log have context
+	echo "--- [makecatalogs] Starting makecatalogs run ---" >&2
 	makecatalogs_output=$(mktemp)
 	if /usr/local/munki/makecatalogs --skip-pkg-check "$MUNKI_REPO_PATH" > >(tee -a "${makecatalogs_output}") 2> >(tee -a "${makecatalogs_output}" >&2); then
 		# Check for trust verification errors and try to extract package names
@@ -450,6 +464,8 @@ function run_makecatalogs {
 		fi
 	fi
 	rm -f "${makecatalogs_output}"
+	# Write end marker to stderr
+	echo "--- [makecatalogs] Finished makecatalogs run ---" >&2
 }
 
 # Save changes to git
