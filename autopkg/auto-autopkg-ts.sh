@@ -169,8 +169,38 @@ function run_all_overrides {
 	log "Running autopkg repo-update all..."
 	"${AUTOPKG_CMD}" repo-update all
 	for override in "${OVERRIDES_DIR}"/*; do
+		# Extract recipe name from override path
+		override_name=$(basename "${override}" .munki.recipe)
 		log "Running autopkg ${override}..."
-		"${AUTOPKG_CMD}" run -v "${override}" -k force_munkiimport=true
+		
+		# Capture stderr to check for trust verification errors while still outputting to stderr
+		autopkg_stderr=$(mktemp)
+		if "${AUTOPKG_CMD}" run -v "${override}" -k force_munkiimport=true 2> >(tee "${autopkg_stderr}" >&2); then
+			# Check captured stderr for trust verification errors
+			if grep -q "Failed local trust verification" "${autopkg_stderr}" 2>/dev/null; then
+				# Extract package/app name/path from various error message formats
+				# Format 1: "munkiimport: /path/to/pkg - Failed local trust verification."
+				# Format 2: "Failed local trust verification: /path/to/pkg"
+				# Format 3: Extract filename from path
+				trust_errors=$(grep "Failed local trust verification" "${autopkg_stderr}" | \
+					sed -E 's/.*munkiimport: ([^-]+).*/\1/' | \
+					sed -E 's/.*Failed local trust verification[^:]*: (.+)/\1/' | \
+					sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | \
+					sed 's/.*\///' | \
+					sort -u)
+				if [ -n "${trust_errors}" ]; then
+					while IFS= read -r package_name; do
+						if [ -n "${package_name}" ] && [ "${package_name}" != "Failed local trust verification" ]; then
+							error "[${override_name}] Failed local trust verification for: ${package_name}"
+						fi
+					done <<< "${trust_errors}"
+				else
+					error "[${override_name}] Failed local trust verification (unable to determine package name)"
+				fi
+			fi
+		fi
+		# Clean up temp file
+		rm -f "${autopkg_stderr}"
 	done
 }
 
@@ -194,9 +224,40 @@ function make_override () {
 function run_specified_overrides {
 	run_repoclean
 	shift  # Skip the script option flag
-	log "Running autopkg for specified overrides: ${1}..."
-	"${AUTOPKG_CMD}" run -v "${1}" -k force_munkiimport=true
-	name="${1%.munki.recipe}"
+	override_path="${1}"
+	override_name=$(basename "${override_path}" .munki.recipe)
+	log "Running autopkg for specified overrides: ${override_path}..."
+	
+	# Capture stderr to check for trust verification errors while still outputting to stderr
+	autopkg_stderr=$(mktemp)
+	if "${AUTOPKG_CMD}" run -v "${override_path}" -k force_munkiimport=true 2> >(tee "${autopkg_stderr}" >&2); then
+		# Check captured stderr for trust verification errors
+		if grep -q "Failed local trust verification" "${autopkg_stderr}" 2>/dev/null; then
+			# Extract package/app name/path from various error message formats
+			# Format 1: "munkiimport: /path/to/pkg - Failed local trust verification."
+			# Format 2: "Failed local trust verification: /path/to/pkg"
+			# Format 3: Extract filename from path
+			trust_errors=$(grep "Failed local trust verification" "${autopkg_stderr}" | \
+				sed -E 's/.*munkiimport: ([^-]+).*/\1/' | \
+				sed -E 's/.*Failed local trust verification[^:]*: (.+)/\1/' | \
+				sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | \
+				sed 's/.*\///' | \
+				sort -u)
+			if [ -n "${trust_errors}" ]; then
+				while IFS= read -r package_name; do
+					if [ -n "${package_name}" ] && [ "${package_name}" != "Failed local trust verification" ]; then
+						error "[${override_name}] Failed local trust verification for: ${package_name}"
+					fi
+				done <<< "${trust_errors}"
+			else
+				error "[${override_name}] Failed local trust verification (unable to determine package name)"
+			fi
+		fi
+	fi
+	# Clean up temp file
+	rm -f "${autopkg_stderr}"
+	
+	name="${override_name}"
 	if ! manifestutil display-manifest site_default | grep "${name}" > /dev/null; then  
 		log "Adding ${name} to site_default manifest in managed_updates section..."
 		manifestutil add-pkg "${name}" --manifest site_default --section managed_updates
