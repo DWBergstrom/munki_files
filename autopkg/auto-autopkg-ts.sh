@@ -162,7 +162,17 @@ function verify_munki_settings {
 
 function run_repoclean {
 	log "Running repoclean..."
-	repoclean -k "${REPOCLEAN_VERSIONS}" -a "${MUNKI_REPO_PATH}"
+	repoclean_output=$(mktemp)
+	if repoclean -k "${REPOCLEAN_VERSIONS}" -a "${MUNKI_REPO_PATH}" > >(tee -a "${repoclean_output}") 2> >(tee -a "${repoclean_output}" >&2); then
+		# Check for trust verification errors
+		if grep -q "Failed local trust verification" "${repoclean_output}" 2>/dev/null; then
+			trust_error_count=$(grep -c "Failed local trust verification" "${repoclean_output}" 2>/dev/null || echo "0")
+			if [ "${trust_error_count}" -gt 0 ]; then
+				warn "[repoclean] Failed local trust verification (${trust_error_count} error(s))"
+			fi
+		fi
+	fi
+	rm -f "${repoclean_output}"
 }
 
 function run_all_overrides {
@@ -173,34 +183,65 @@ function run_all_overrides {
 		override_name=$(basename "${override}" .munki.recipe)
 		log "Running autopkg ${override}..."
 		
-		# Capture stderr to check for trust verification errors while still outputting to stderr
-		autopkg_stderr=$(mktemp)
-		if "${AUTOPKG_CMD}" run -v "${override}" -k force_munkiimport=true 2> >(tee "${autopkg_stderr}" >&2); then
-			# Check captured stderr for trust verification errors
-			if grep -q "Failed local trust verification" "${autopkg_stderr}" 2>/dev/null; then
-				# Extract package/app name/path from various error message formats
-				# Format 1: "munkiimport: /path/to/pkg - Failed local trust verification."
-				# Format 2: "Failed local trust verification: /path/to/pkg"
-				# Format 3: Extract filename from path
-				trust_errors=$(grep "Failed local trust verification" "${autopkg_stderr}" | \
-					sed -E 's/.*munkiimport: ([^-]+).*/\1/' | \
-					sed -E 's/.*Failed local trust verification[^:]*: (.+)/\1/' | \
-					sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | \
-					sed 's/.*\///' | \
-					sort -u)
-				if [ -n "${trust_errors}" ]; then
+		# Capture both stdout and stderr to check for trust verification errors
+		autopkg_output=$(mktemp)
+		if "${AUTOPKG_CMD}" run -v "${override}" -k force_munkiimport=true > >(tee -a "${autopkg_output}") 2> >(tee -a "${autopkg_output}" >&2); then
+			# Check output for trust verification errors
+			if grep -q "Failed local trust verification" "${autopkg_output}" 2>/dev/null; then
+				# Count how many trust errors occurred
+				trust_error_count=$(grep -c "Failed local trust verification" "${autopkg_output}" 2>/dev/null || echo "0")
+				
+			# Try to extract package names from MunkiImporter output
+			# Look for "MunkiImporter: pkg to:" lines and match with nearby trust errors
+			package_names=$(awk '
+				BEGIN { 
+					# Array to store recent packages (within last 50 lines)
+					split("", packages)
+					line_num=0
+				}
+				{
+					line_num++
+					# Store package names from MunkiImporter lines
+					if (/MunkiImporter:.*pkg to:/) {
+						pkg=$NF
+						gsub(/.*\//, "", pkg)
+						# Store with line number
+						packages[line_num] = pkg
+					}
+					# When we see a trust error, find the most recent package
+					if (/Failed local trust verification/) {
+						# Look back up to 50 lines for a package
+						found=""
+						for (i=line_num; i>0 && i>line_num-50; i--) {
+							if (packages[i] != "") {
+								found=packages[i]
+								break
+							}
+						}
+						if (found != "") {
+							print found
+						}
+					}
+				}
+			' "${autopkg_output}" | sort -u)
+				
+				# If we found package names, log them
+				if [ -n "${package_names}" ]; then
 					while IFS= read -r package_name; do
-						if [ -n "${package_name}" ] && [ "${package_name}" != "Failed local trust verification" ]; then
+						if [ -n "${package_name}" ]; then
 							error "[${override_name}] Failed local trust verification for: ${package_name}"
 						fi
-					done <<< "${trust_errors}"
+					done <<< "${package_names}"
 				else
-					error "[${override_name}] Failed local trust verification (unable to determine package name)"
+					# Fallback: log with recipe name and count
+					if [ "${trust_error_count}" -gt 0 ]; then
+						error "[${override_name}] Failed local trust verification (${trust_error_count} error(s), unable to determine package name(s))"
+					fi
 				fi
 			fi
 		fi
 		# Clean up temp file
-		rm -f "${autopkg_stderr}"
+		rm -f "${autopkg_output}"
 	done
 }
 
@@ -228,34 +269,65 @@ function run_specified_overrides {
 	override_name=$(basename "${override_path}" .munki.recipe)
 	log "Running autopkg for specified overrides: ${override_path}..."
 	
-	# Capture stderr to check for trust verification errors while still outputting to stderr
-	autopkg_stderr=$(mktemp)
-	if "${AUTOPKG_CMD}" run -v "${override_path}" -k force_munkiimport=true 2> >(tee "${autopkg_stderr}" >&2); then
-		# Check captured stderr for trust verification errors
-		if grep -q "Failed local trust verification" "${autopkg_stderr}" 2>/dev/null; then
-			# Extract package/app name/path from various error message formats
-			# Format 1: "munkiimport: /path/to/pkg - Failed local trust verification."
-			# Format 2: "Failed local trust verification: /path/to/pkg"
-			# Format 3: Extract filename from path
-			trust_errors=$(grep "Failed local trust verification" "${autopkg_stderr}" | \
-				sed -E 's/.*munkiimport: ([^-]+).*/\1/' | \
-				sed -E 's/.*Failed local trust verification[^:]*: (.+)/\1/' | \
-				sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | \
-				sed 's/.*\///' | \
-				sort -u)
-			if [ -n "${trust_errors}" ]; then
+	# Capture both stdout and stderr to check for trust verification errors
+	autopkg_output=$(mktemp)
+	if "${AUTOPKG_CMD}" run -v "${override_path}" -k force_munkiimport=true > >(tee -a "${autopkg_output}") 2> >(tee -a "${autopkg_output}" >&2); then
+		# Check output for trust verification errors
+		if grep -q "Failed local trust verification" "${autopkg_output}" 2>/dev/null; then
+			# Count how many trust errors occurred
+			trust_error_count=$(grep -c "Failed local trust verification" "${autopkg_output}" 2>/dev/null || echo "0")
+			
+			# Try to extract package names from MunkiImporter output
+			# Look for "MunkiImporter: pkg to:" lines and match with nearby trust errors
+			package_names=$(awk '
+				BEGIN { 
+					# Array to store recent packages (within last 50 lines)
+					split("", packages)
+					line_num=0
+				}
+				{
+					line_num++
+					# Store package names from MunkiImporter lines
+					if (/MunkiImporter:.*pkg to:/) {
+						pkg=$NF
+						gsub(/.*\//, "", pkg)
+						# Store with line number
+						packages[line_num] = pkg
+					}
+					# When we see a trust error, find the most recent package
+					if (/Failed local trust verification/) {
+						# Look back up to 50 lines for a package
+						found=""
+						for (i=line_num; i>0 && i>line_num-50; i--) {
+							if (packages[i] != "") {
+								found=packages[i]
+								break
+							}
+						}
+						if (found != "") {
+							print found
+						}
+					}
+				}
+			' "${autopkg_output}" | sort -u)
+			
+			# If we found package names, log them
+			if [ -n "${package_names}" ]; then
 				while IFS= read -r package_name; do
-					if [ -n "${package_name}" ] && [ "${package_name}" != "Failed local trust verification" ]; then
+					if [ -n "${package_name}" ]; then
 						error "[${override_name}] Failed local trust verification for: ${package_name}"
 					fi
-				done <<< "${trust_errors}"
+				done <<< "${package_names}"
 			else
-				error "[${override_name}] Failed local trust verification (unable to determine package name)"
+				# Fallback: log with recipe name and count
+				if [ "${trust_error_count}" -gt 0 ]; then
+					error "[${override_name}] Failed local trust verification (${trust_error_count} error(s), unable to determine package name(s))"
+				fi
 			fi
 		fi
 	fi
 	# Clean up temp file
-	rm -f "${autopkg_stderr}"
+	rm -f "${autopkg_output}"
 	
 	name="${override_name}"
 	if ! manifestutil display-manifest site_default | grep "${name}" > /dev/null; then  
@@ -288,7 +360,47 @@ function add_new_overrides {
 
 function run_makecatalogs {
 	log "Running makecatalogs..."
-	/usr/local/munki/makecatalogs --skip-pkg-check "$MUNKI_REPO_PATH"
+	makecatalogs_output=$(mktemp)
+	if /usr/local/munki/makecatalogs --skip-pkg-check "$MUNKI_REPO_PATH" > >(tee -a "${makecatalogs_output}") 2> >(tee -a "${makecatalogs_output}" >&2); then
+		# Check for trust verification errors and try to extract package names
+		if grep -q "Failed local trust verification" "${makecatalogs_output}" 2>/dev/null; then
+			trust_error_count=$(grep -c "Failed local trust verification" "${makecatalogs_output}" 2>/dev/null || echo "0")
+			
+			# Try to extract package names from lines before trust errors
+			# Look for package paths or names in the output
+			package_names=$(awk '
+				/[Pp]ackage:|[Pp]kg:|\.pkg|\.dmg/ {
+					# Extract package name from various formats
+					for (i=1; i<=NF; i++) {
+						if ($i ~ /\.(pkg|dmg)$/) {
+							pkg=$i
+							gsub(/.*\//, "", pkg)
+							last_pkg=pkg
+						}
+					}
+				}
+				/Failed local trust verification/ {
+					if (last_pkg != "") {
+						print last_pkg
+						last_pkg=""
+					}
+				}
+			' "${makecatalogs_output}" | sort -u)
+			
+			if [ -n "${package_names}" ]; then
+				while IFS= read -r package_name; do
+					if [ -n "${package_name}" ]; then
+						error "[makecatalogs] Failed local trust verification for: ${package_name}"
+					fi
+				done <<< "${package_names}"
+			else
+				if [ "${trust_error_count}" -gt 0 ]; then
+					warn "[makecatalogs] Failed local trust verification (${trust_error_count} error(s), unable to determine package name(s))"
+				fi
+			fi
+		fi
+	fi
+	rm -f "${makecatalogs_output}"
 }
 
 # Save changes to git
@@ -312,6 +424,7 @@ function save_changes_to_git {
 		return
 	fi
 	git -C "${MUNKI_REPO_PATH}" push origin main
+	log "Changes saved to git in ${MUNKI_REPO_PATH}"
 }
 
 function main {
