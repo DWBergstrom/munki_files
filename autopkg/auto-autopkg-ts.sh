@@ -21,49 +21,49 @@ info() {
 
 # Prerequisites checks
 # Verify tailscale is installed
+log "verifying tailscale is installed..."
 if ! TAILSCALE_CMD=$(command -v tailscale) &> /dev/null; then
-	log "verifying tailscale is installed..."
 	error "Tailscale could not be found. Please install Tailscale and try again."
 	exit 1
 else
 	log "Tailscale is installed at ${TAILSCALE_CMD}"
 fi
 # Verify python3 is installed
+log "verifying python3 is installed..."
 if ! PYTHON_CMD=$(command -v python3) &> /dev/null; then
-	log "verifying python3 is installed..."
 	error "Python3 could not be found. Please install Python3 and try again."
 	exit 1
 else
 	log "Python3 is installed at ${PYTHON_CMD}"
 fi
 # Verify autopkg is installed
+log "verifying autopkg is installed..."
 if ! AUTOPKG_CMD=$(command -v autopkg) &> /dev/null; then
-	log "verifying autopkg is installed..."
 	error "Autopkg could not be found. Please install Autopkg and try again."
 	exit 1
 else
 	log "Autopkg is installed at ${AUTOPKG_CMD}"
 fi
 # Verify munki is installed
+log "verifying munki is installed..."
 if ! MANAGEDSOFTWAREUPDATE_CMD=$(command -v managedsoftwareupdate) &> /dev/null; then
-	log "verifying munki is installed..."
 	error "Munki could not be found. Please install Munki and try again."
 	exit 1
 else
 	log "Munki is installed at ${MANAGEDSOFTWAREUPDATE_CMD}"
 fi
 # Verify 1Password CLI is installed (optional)
+log "verifying 1password CLI is installed..."
 if ! OP_CMD=$(command -v op) &> /dev/null; then
-	log "verifying 1password CLI is installed..."
 	warn "1Password CLI could not be found. Will not be able to update github token for autopkg."
 else
 	log "1Password CLI is installed at ${OP_CMD}"
 fi
 
 # Get github token for autopkg (optional)
+log "verifying github token for autopkg..."
 GITHUB_TOKEN=$(op item get "GitHub - Autopkg" --fields token)
 if [ -z "${GITHUB_TOKEN}" ]; then
-	log "verifying github token for autopkg..."
 	error "Github token for autopkg not found. Add to 1Password when possible."
 else
 	log "Github token for autopkg: ${GITHUB_TOKEN}"
