@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-12-03T18:46:15Z</date>
+		<date>2025-12-10T20:57:13Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,32 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
+	<string>Virtual machines for iOS and macOS</string>
+	<key>developer</key>
+	<string>Turing Software, LLC</string>
 	<key>display_name</key>
-	<string>Google Chrome</string>
+	<string>UTM</string>
 	<key>installer_item_hash</key>
-	<string>9f5b02aff684d13376d144a5dce350238033022db15b722b46b2f03a382ab16f</string>
+	<string>e259e81fd142acbdc4596369980118cfe5c2c4f491ed96bf5bc606c405d79ace</string>
 	<key>installer_item_location</key>
-	<string>apps/GoogleChrome-143.0.7499.41__1.dmg</string>
+	<string>apps/UTM/UTM-4.7.4__15.dmg</string>
 	<key>installer_item_size</key>
-	<integer>230912</integer>
+	<integer>244123</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.google.Chrome</string>
+			<string>com.utmapp.UTM</string>
 			<key>CFBundleName</key>
-			<string>Chrome</string>
+			<string>UTM</string>
 			<key>CFBundleShortVersionString</key>
-			<string>143.0.7499.41</string>
+			<string>4.7.4</string>
 			<key>CFBundleVersion</key>
-			<string>7499.41</string>
+			<string>115</string>
 			<key>minosversion</key>
-			<string>12.0</string>
+			<string>11.3</string>
 			<key>path</key>
-			<string>/Applications/Google Chrome.app</string>
+			<string>/Applications/UTM.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -58,13 +60,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Google Chrome.app</string>
+			<string>UTM.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>12.0</string>
+	<string>11.3</string>
 	<key>name</key>
-	<string>GoogleChrome</string>
+	<string>UTM</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -72,6 +74,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>143.0.7499.41</string>
+	<string>4.7.4</string>
 </dict>
 </plist>

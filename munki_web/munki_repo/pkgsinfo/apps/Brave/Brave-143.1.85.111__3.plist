@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-12-02T22:31:41Z</date>
+		<date>2025-12-10T20:55:24Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,33 +19,37 @@
 	<array>
 		<string>testing</string>
 	</array>
+	<key>category</key>
+	<string>Browsers</string>
 	<key>description</key>
-	<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
+	<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
+	<key>developer</key>
+	<string>Brave Software Inc.</string>
 	<key>display_name</key>
-	<string>Google Chrome</string>
+	<string>Brave Browser</string>
 	<key>installer_item_hash</key>
-	<string>9f5b02aff684d13376d144a5dce350238033022db15b722b46b2f03a382ab16f</string>
+	<string>93d39fc17b39f274d97ecf465579e392ecfd714b0052ecf1270344172bdca508</string>
 	<key>installer_item_location</key>
-	<string>apps/GoogleChrome-143.0.7499.41.dmg</string>
+	<string>apps/Brave/Brave-143.1.85.111__3.dmg</string>
 	<key>installer_item_size</key>
-	<integer>230912</integer>
+	<integer>228475</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.google.Chrome</string>
+			<string>com.brave.Browser</string>
 			<key>CFBundleName</key>
-			<string>Chrome</string>
+			<string>Brave</string>
 			<key>CFBundleShortVersionString</key>
-			<string>143.0.7499.41</string>
+			<string>143.1.85.111</string>
 			<key>CFBundleVersion</key>
-			<string>7499.41</string>
+			<string>185.111</string>
 			<key>minosversion</key>
 			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/Google Chrome.app</string>
+			<string>/Applications/Brave Browser.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -58,13 +62,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Google Chrome.app</string>
+			<string>Brave Browser.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
 	<string>12.0</string>
 	<key>name</key>
-	<string>GoogleChrome</string>
+	<string>Brave</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -72,6 +76,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>143.0.7499.41</string>
+	<string>143.1.85.111</string>
 </dict>
 </plist>

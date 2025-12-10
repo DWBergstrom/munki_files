@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-11-27T14:11:06Z</date>
+		<date>2025-12-10T20:48:47Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,32 +20,36 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Mozilla Firefox is a free and open source web browser.</string>
+	<string>Supercharged productivity
+
+Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
+	<key>developer</key>
+	<string>Raycast Technologies Inc</string>
 	<key>display_name</key>
-	<string>Mozilla Firefox</string>
+	<string>Raycast</string>
 	<key>installer_item_hash</key>
-	<string>80f5851f90de88d1b8d27299cb0a3ff3b9ff3774c275de2675f651834bd9228b</string>
+	<string>1fe391e52430d3f50ac028187d3a3ad65910cf275169dfb63216787e264027d3</string>
 	<key>installer_item_location</key>
-	<string>apps/firefox/Firefox-145.0.2.dmg</string>
+	<string>apps/Raycast/Raycast-1.103.10__3.dmg</string>
 	<key>installer_item_size</key>
-	<integer>139967</integer>
+	<integer>101102</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>org.mozilla.firefox</string>
+			<string>com.raycast.macos</string>
 			<key>CFBundleName</key>
-			<string>Firefox</string>
+			<string>Raycast</string>
 			<key>CFBundleShortVersionString</key>
-			<string>145.0.2</string>
+			<string>1.103.10</string>
 			<key>CFBundleVersion</key>
-			<string>14525.11.24</string>
+			<string>0</string>
 			<key>minosversion</key>
-			<string>10.15.0</string>
+			<string>13.0</string>
 			<key>path</key>
-			<string>/Applications/Firefox.app</string>
+			<string>/Applications/Raycast.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -58,20 +62,22 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Firefox.app</string>
+			<string>Raycast.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>10.15.0</string>
+	<string>13.0</string>
 	<key>name</key>
-	<string>Firefox</string>
+	<string>Raycast</string>
 	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>145.0.2</string>
+	<string>1.103.10</string>
 </dict>
 </plist>

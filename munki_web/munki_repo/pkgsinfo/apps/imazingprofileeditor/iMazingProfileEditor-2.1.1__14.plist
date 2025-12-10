@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-12-03T18:45:55Z</date>
+		<date>2025-12-10T20:56:25Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,33 +19,37 @@
 	<array>
 		<string>testing</string>
 	</array>
+	<key>category</key>
+	<string>Utilities</string>
 	<key>description</key>
-	<string>Mozilla Firefox is a free and open source web browser.</string>
+	<string>iMazing Profile Editor lets users create, modify, and also digitally sign configuration profiles with a friendly user interface instead of manually coding them in XML.</string>
+	<key>developer</key>
+	<string>DigiDNA SARL</string>
 	<key>display_name</key>
-	<string>Mozilla Firefox</string>
+	<string>iMazing Profile Editor</string>
 	<key>installer_item_hash</key>
-	<string>80f5851f90de88d1b8d27299cb0a3ff3b9ff3774c275de2675f651834bd9228b</string>
+	<string>18027adb3ac1a91041d72f795f615fe3b44843601fa4d5c98e7ebaf693ed61ce</string>
 	<key>installer_item_location</key>
-	<string>apps/firefox/Firefox-145.0.2__2.dmg</string>
+	<string>apps/imazingprofileeditor/iMazing_Profile_Editor_2.1.1.379001-2.1.1__14.dmg</string>
 	<key>installer_item_size</key>
-	<integer>139967</integer>
+	<integer>25223</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>org.mozilla.firefox</string>
+			<string>com.DigiDNA.iMazingProfileEditorMac</string>
 			<key>CFBundleName</key>
-			<string>Firefox</string>
+			<string>iMazing Profile Editor</string>
 			<key>CFBundleShortVersionString</key>
-			<string>145.0.2</string>
+			<string>2.1.1</string>
 			<key>CFBundleVersion</key>
-			<string>14525.11.24</string>
+			<string>379001</string>
 			<key>minosversion</key>
-			<string>10.15.0</string>
+			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/Firefox.app</string>
+			<string>/Applications/iMazing Profile Editor.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -58,13 +62,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Firefox.app</string>
+			<string>iMazing Profile Editor.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>10.15.0</string>
+	<string>12.0</string>
 	<key>name</key>
-	<string>Firefox</string>
+	<string>iMazingProfileEditor</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -72,6 +76,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>145.0.2</string>
+	<string>2.1.1</string>
 </dict>
 </plist>
