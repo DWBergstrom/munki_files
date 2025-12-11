@@ -63,12 +63,15 @@ else
 fi
 
 # Get github token for autopkg (optional)
-log "verifying github token for autopkg..."
-GITHUB_TOKEN=$(op item get "GitHub - Autopkg" --fields token)
-if [ -z "${GITHUB_TOKEN}" ]; then
-	error "Github token for autopkg not found. Add to 1Password when possible."
-else
-	log "Github token for autopkg: ${GITHUB_TOKEN}"
+# only do this if not running from launch agent
+if [ -t 0 ] && [ -t 1 ]; then
+	log "verifying github token for autopkg..."
+	GITHUB_TOKEN=$(op item get "GitHub - Autopkg" --fields token)
+	if [ -z "${GITHUB_TOKEN}" ]; then
+		error "Github token for autopkg not found. Add to 1Password when possible."
+	else
+		log "Github token for autopkg: ${GITHUB_TOKEN}"
+	fi
 fi
 
 # Config variables
