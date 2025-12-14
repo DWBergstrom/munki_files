@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-12-10T23:32:35Z</date>
+		<date>2025-12-14T05:46:20Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -28,11 +28,11 @@
 	<key>display_name</key>
 	<string>ChatGPT Atlas</string>
 	<key>installer_item_hash</key>
-	<string>8c3ae0855fca9cf949b8f0184751e7c730c790f205bc66ad544257b5d7a27420</string>
+	<string>868bbb94432ee37bf834d8e9c7965b368dbd0c1412b04cf51919742929943222</string>
 	<key>installer_item_location</key>
-	<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2025.337.4__14.dmg</string>
+	<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2025.337.5__1.dmg</string>
 	<key>installer_item_size</key>
-	<integer>232269</integer>
+	<integer>232851</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
@@ -43,9 +43,9 @@
 			<key>CFBundleName</key>
 			<string>ChatGPT Atlas</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.2025.337.4</string>
+			<string>1.2025.337.5</string>
 			<key>CFBundleVersion</key>
-			<string>20251208174454000</string>
+			<string>20251212030011000</string>
 			<key>minosversion</key>
 			<string>14.2</string>
 			<key>path</key>
@@ -80,6 +80,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.2025.337.4</string>
+	<string>1.2025.337.5</string>
 </dict>
 </plist>

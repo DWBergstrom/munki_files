@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-12-10T20:47:27Z</date>
+		<date>2025-12-14T05:46:47Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,41 +19,37 @@
 	<array>
 		<string>testing</string>
 	</array>
-	<key>category</key>
-	<string>Web Browsers</string>
 	<key>description</key>
-	<string>Official OpenAI ChatGPT Browser application.</string>
-	<key>developer</key>
-	<string>OpenAI, L.L.C.</string>
+	<string>Mozilla Firefox is a free and open source web browser.</string>
 	<key>display_name</key>
-	<string>ChatGPT Atlas</string>
+	<string>Mozilla Firefox</string>
 	<key>installer_item_hash</key>
-	<string>8c3ae0855fca9cf949b8f0184751e7c730c790f205bc66ad544257b5d7a27420</string>
+	<string>4b1645313887972d466cd82166ea571485c2c40a167f84624e3f3ca739993cc9</string>
 	<key>installer_item_location</key>
-	<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2025.337.4__1.dmg</string>
+	<string>apps/firefox/Firefox-146.0__23.dmg</string>
 	<key>installer_item_size</key>
-	<integer>232269</integer>
+	<integer>141178</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.openai.atlas</string>
+			<string>org.mozilla.firefox</string>
 			<key>CFBundleName</key>
-			<string>ChatGPT Atlas</string>
+			<string>Firefox</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.2025.337.4</string>
+			<string>146.0</string>
 			<key>CFBundleVersion</key>
-			<string>20251208174454000</string>
+			<string>14625.12.5</string>
 			<key>minosversion</key>
-			<string>14.2</string>
+			<string>10.15.0</string>
 			<key>path</key>
-			<string>/Applications/ChatGPT Atlas.app</string>
+			<string>/Applications/Firefox.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
-			<string>CFBundleVersion</string>
+			<string>CFBundleShortVersionString</string>
 		</dict>
 	</array>
 	<key>items_to_copy</key>
@@ -62,17 +58,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>ChatGPT Atlas.app</string>
+			<string>Firefox.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>14.2</string>
+	<string>10.15.0</string>
 	<key>name</key>
-	<string>ChatGPT Atlas</string>
-	<key>supported_architectures</key>
-	<array>
-		<string>arm64</string>
-	</array>
+	<string>Firefox</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -80,6 +72,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.2025.337.4</string>
+	<string>146.0</string>
 </dict>
 </plist>
