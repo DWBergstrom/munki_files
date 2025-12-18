@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-12-10T21:54:25Z</date>
+		<date>2025-12-18T05:46:38Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,41 +19,41 @@
 	<array>
 		<string>testing</string>
 	</array>
+	<key>category</key>
+	<string>Web Browsers</string>
 	<key>description</key>
-	<string>Supercharged productivity
-
-Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
+	<string>Official OpenAI ChatGPT Browser application.</string>
 	<key>developer</key>
-	<string>Raycast Technologies Inc</string>
+	<string>OpenAI, L.L.C.</string>
 	<key>display_name</key>
-	<string>Raycast</string>
+	<string>ChatGPT Atlas</string>
 	<key>installer_item_hash</key>
-	<string>1fe391e52430d3f50ac028187d3a3ad65910cf275169dfb63216787e264027d3</string>
+	<string>868bbb94432ee37bf834d8e9c7965b368dbd0c1412b04cf51919742929943222</string>
 	<key>installer_item_location</key>
-	<string>apps/Raycast/Raycast-1.103.10__7.dmg</string>
+	<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2025.337.5__5.dmg</string>
 	<key>installer_item_size</key>
-	<integer>101102</integer>
+	<integer>232851</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.raycast.macos</string>
+			<string>com.openai.atlas</string>
 			<key>CFBundleName</key>
-			<string>Raycast</string>
+			<string>ChatGPT Atlas</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.103.10</string>
+			<string>1.2025.337.5</string>
 			<key>CFBundleVersion</key>
-			<string>0</string>
+			<string>20251212030011000</string>
 			<key>minosversion</key>
-			<string>13.0</string>
+			<string>14.2</string>
 			<key>path</key>
-			<string>/Applications/Raycast.app</string>
+			<string>/Applications/ChatGPT Atlas.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
-			<string>CFBundleShortVersionString</string>
+			<string>CFBundleVersion</string>
 		</dict>
 	</array>
 	<key>items_to_copy</key>
@@ -62,22 +62,24 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Raycast.app</string>
+			<string>ChatGPT Atlas.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>13.0</string>
+	<string>14.2</string>
 	<key>name</key>
-	<string>Raycast</string>
+	<string>ChatGPT Atlas</string>
+	<key>supported_architectures</key>
+	<array>
+		<string>arm64</string>
+	</array>
 	<key>unattended_install</key>
-	<true/>
-	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.103.10</string>
+	<string>1.2025.337.5</string>
 </dict>
 </plist>

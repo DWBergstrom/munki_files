@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-12-10T22:31:51Z</date>
+		<date>2025-12-18T05:48:29Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,36 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Supercharged productivity
-
-Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
+	<string>VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVD, Audio CD, VCD, and various streaming protocols.</string>
 	<key>developer</key>
-	<string>Raycast Technologies Inc</string>
+	<string>The VideoLAN Project</string>
 	<key>display_name</key>
-	<string>Raycast</string>
+	<string>VLC Media Player</string>
 	<key>installer_item_hash</key>
-	<string>1fe391e52430d3f50ac028187d3a3ad65910cf275169dfb63216787e264027d3</string>
+	<string>50380e56f81d630e3531426a265abf8b3dee6c0822bb7c9e30b532c7d69a65c0</string>
 	<key>installer_item_location</key>
-	<string>apps/Raycast/Raycast-1.103.10__9.dmg</string>
+	<string>apps/VLC/VLC-3.0.21__35.dmg</string>
 	<key>installer_item_size</key>
-	<integer>101102</integer>
+	<integer>83158</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.raycast.macos</string>
+			<string>org.videolan.vlc</string>
 			<key>CFBundleName</key>
-			<string>Raycast</string>
+			<string>VLC</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.103.10</string>
+			<string>3.0.21</string>
 			<key>CFBundleVersion</key>
-			<string>0</string>
+			<string>3.0.21</string>
 			<key>minosversion</key>
-			<string>13.0</string>
+			<string>10.7.5</string>
 			<key>path</key>
-			<string>/Applications/Raycast.app</string>
+			<string>/Applications/VLC.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -62,22 +60,25 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Raycast.app</string>
+			<string>VLC.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>13.0</string>
+	<string>10.7.5</string>
 	<key>name</key>
-	<string>Raycast</string>
+	<string>VLC</string>
+	<key>supported_architectures</key>
+	<array>
+		<string>arm64</string>
+		<string>x86_64</string>
+	</array>
 	<key>unattended_install</key>
-	<true/>
-	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.103.10</string>
+	<string>3.0.21</string>
 </dict>
 </plist>
