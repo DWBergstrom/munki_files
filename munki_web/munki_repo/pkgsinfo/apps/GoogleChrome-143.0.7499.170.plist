@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-11-27T14:12:02Z</date>
+		<date>2025-12-18T21:42:36Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,37 +19,33 @@
 	<array>
 		<string>testing</string>
 	</array>
-	<key>category</key>
-	<string>Utilities</string>
 	<key>description</key>
-	<string>iMazing Profile Editor lets users create, modify, and also digitally sign configuration profiles with a friendly user interface instead of manually coding them in XML.</string>
-	<key>developer</key>
-	<string>DigiDNA SARL</string>
+	<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
 	<key>display_name</key>
-	<string>iMazing Profile Editor</string>
+	<string>Google Chrome</string>
 	<key>installer_item_hash</key>
-	<string>18027adb3ac1a91041d72f795f615fe3b44843601fa4d5c98e7ebaf693ed61ce</string>
+	<string>2ddb9a4119101cf3542088e0f3ab0f9f339253572497ad6ce27414ccc4a582f6</string>
 	<key>installer_item_location</key>
-	<string>apps/imazingprofileeditor/iMazing_Profile_Editor_2.1.1.379001-2.1.1__9.dmg</string>
+	<string>apps/GoogleChrome-143.0.7499.170.dmg</string>
 	<key>installer_item_size</key>
-	<integer>25223</integer>
+	<integer>231074</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.DigiDNA.iMazingProfileEditorMac</string>
+			<string>com.google.Chrome</string>
 			<key>CFBundleName</key>
-			<string>iMazing Profile Editor</string>
+			<string>Chrome</string>
 			<key>CFBundleShortVersionString</key>
-			<string>2.1.1</string>
+			<string>143.0.7499.170</string>
 			<key>CFBundleVersion</key>
-			<string>379001</string>
+			<string>7499.170</string>
 			<key>minosversion</key>
 			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/iMazing Profile Editor.app</string>
+			<string>/Applications/Google Chrome.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -62,13 +58,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>iMazing Profile Editor.app</string>
+			<string>Google Chrome.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
 	<string>12.0</string>
 	<key>name</key>
-	<string>iMazingProfileEditor</string>
+	<string>GoogleChrome</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -76,6 +72,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>2.1.1</string>
+	<string>143.0.7499.170</string>
 </dict>
 </plist>

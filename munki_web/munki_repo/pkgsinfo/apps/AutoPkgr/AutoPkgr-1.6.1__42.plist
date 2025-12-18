@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-12-10T23:35:30Z</date>
+		<date>2025-12-18T21:40:06Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,37 +19,35 @@
 	<array>
 		<string>testing</string>
 	</array>
-	<key>category</key>
-	<string>Utilities</string>
 	<key>description</key>
-	<string>iMazing Profile Editor lets users create, modify, and also digitally sign configuration profiles with a friendly user interface instead of manually coding them in XML.</string>
+	<string>AutoPkgr is a free Mac app that makes it easy to install and configure AutoPkg.</string>
 	<key>developer</key>
-	<string>DigiDNA SARL</string>
+	<string>Linde Group, Inc.</string>
 	<key>display_name</key>
-	<string>iMazing Profile Editor</string>
+	<string>AutoPkgr</string>
 	<key>installer_item_hash</key>
-	<string>18027adb3ac1a91041d72f795f615fe3b44843601fa4d5c98e7ebaf693ed61ce</string>
+	<string>598aa227ef544d37b7f964c1352e6f2d955fc5a8127cc2a708e7bc02af2cc7f0</string>
 	<key>installer_item_location</key>
-	<string>apps/imazingprofileeditor/iMazing_Profile_Editor_2.1.1.379001-2.1.1__26.dmg</string>
+	<string>apps/AutoPkgr/AutoPkgr-1.6.1__36.dmg</string>
 	<key>installer_item_size</key>
-	<integer>25223</integer>
+	<integer>5648</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.DigiDNA.iMazingProfileEditorMac</string>
+			<string>com.lindegroup.AutoPkgr</string>
 			<key>CFBundleName</key>
-			<string>iMazing Profile Editor</string>
+			<string>AutoPkgr</string>
 			<key>CFBundleShortVersionString</key>
-			<string>2.1.1</string>
+			<string>1.6.1</string>
 			<key>CFBundleVersion</key>
-			<string>379001</string>
+			<string>1509</string>
 			<key>minosversion</key>
-			<string>12.0</string>
+			<string>10.13</string>
 			<key>path</key>
-			<string>/Applications/iMazing Profile Editor.app</string>
+			<string>/Applications/AutoPkgr.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -62,13 +60,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>iMazing Profile Editor.app</string>
+			<string>AutoPkgr.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>12.0</string>
+	<string>10.13</string>
 	<key>name</key>
-	<string>iMazingProfileEditor</string>
+	<string>AutoPkgr</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -76,6 +74,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>2.1.1</string>
+	<string>1.6.1</string>
 </dict>
 </plist>
