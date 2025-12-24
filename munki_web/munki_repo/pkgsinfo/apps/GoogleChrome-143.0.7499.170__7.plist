@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-12-22T05:46:24Z</date>
+		<date>2025-12-24T05:47:16Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,41 +19,37 @@
 	<array>
 		<string>testing</string>
 	</array>
-	<key>category</key>
-	<string>Web Browsers</string>
 	<key>description</key>
-	<string>Official OpenAI ChatGPT Browser application.</string>
-	<key>developer</key>
-	<string>OpenAI, L.L.C.</string>
+	<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
 	<key>display_name</key>
-	<string>ChatGPT Atlas</string>
+	<string>Google Chrome</string>
 	<key>installer_item_hash</key>
-	<string>1bb6972fff0cba055456668cf8a24502bdee55fa2e3a504a96316fefa8f3d737</string>
+	<string>2ddb9a4119101cf3542088e0f3ab0f9f339253572497ad6ce27414ccc4a582f6</string>
 	<key>installer_item_location</key>
-	<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2025.344.7__3.dmg</string>
+	<string>apps/GoogleChrome-143.0.7499.170__7.dmg</string>
 	<key>installer_item_size</key>
-	<integer>234593</integer>
+	<integer>231074</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.openai.atlas</string>
+			<string>com.google.Chrome</string>
 			<key>CFBundleName</key>
-			<string>ChatGPT Atlas</string>
+			<string>Chrome</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.2025.344.7</string>
+			<string>143.0.7499.170</string>
 			<key>CFBundleVersion</key>
-			<string>20251218120745000</string>
+			<string>7499.170</string>
 			<key>minosversion</key>
-			<string>14.2</string>
+			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/ChatGPT Atlas.app</string>
+			<string>/Applications/Google Chrome.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
-			<string>CFBundleVersion</string>
+			<string>CFBundleShortVersionString</string>
 		</dict>
 	</array>
 	<key>items_to_copy</key>
@@ -62,17 +58,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>ChatGPT Atlas.app</string>
+			<string>Google Chrome.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>14.2</string>
+	<string>12.0</string>
 	<key>name</key>
-	<string>ChatGPT Atlas</string>
-	<key>supported_architectures</key>
-	<array>
-		<string>arm64</string>
-	</array>
+	<string>GoogleChrome</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -80,6 +72,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.2025.344.7</string>
+	<string>143.0.7499.170</string>
 </dict>
 </plist>
