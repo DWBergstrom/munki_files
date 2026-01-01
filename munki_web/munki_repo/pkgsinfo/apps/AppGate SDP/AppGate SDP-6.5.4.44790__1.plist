@@ -7,11 +7,11 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-12-02T22:28:50Z</date>
+		<date>2026-01-01T05:45:45Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
-		<string>26.0.1</string>
+		<string>26.2</string>
 	</dict>
 	<key>autoremove</key>
 	<false/>
@@ -30,24 +30,24 @@
 	<key>display_name</key>
 	<string>AppGate SDP</string>
 	<key>installed_size</key>
-	<integer>577922</integer>
+	<integer>577926</integer>
 	<key>installer_item_hash</key>
-	<string>a3ce60ab9bfe838201c749ae22cbcad2e7c2d5348d5b17b8f0c33d109946d57e</string>
+	<string>091c4cf9a17acd315123d67b825d0e9be8504e63abea125cd5ad4e31eb17b147</string>
 	<key>installer_item_location</key>
-	<string>apps/AppGate SDP/AppGate SDP-6.5.3.42966__11.dmg</string>
+	<string>apps/AppGate SDP/AppGate SDP-6.5.4.44790__1.dmg</string>
 	<key>installer_item_size</key>
-	<integer>172891</integer>
+	<integer>172874</integer>
 	<key>name</key>
 	<string>AppGate SDP</string>
 	<key>receipts</key>
 	<array>
 		<dict>
 			<key>installed_size</key>
-			<integer>577922</integer>
+			<integer>577926</integer>
 			<key>packageid</key>
 			<string>com.appgate.pkg.appgatetun.component</string>
 			<key>version</key>
-			<string>6.5.3.42966</string>
+			<string>6.5.4.44790</string>
 		</dict>
 	</array>
 	<key>unattended_install</key>
@@ -57,6 +57,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>6.5.3.42966</string>
+	<string>6.5.4.44790</string>
 </dict>
 </plist>
