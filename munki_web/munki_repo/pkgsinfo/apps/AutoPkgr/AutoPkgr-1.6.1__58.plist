@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2026-01-03T05:45:56Z</date>
+		<key>munki_version</key>
+		<string>7.0.0.5328</string>
+		<key>os_version</key>
+		<string>26.2</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>AutoPkgr is a free Mac app that makes it easy to install and configure AutoPkg.</string>
+	<key>developer</key>
+	<string>Linde Group, Inc.</string>
+	<key>display_name</key>
+	<string>AutoPkgr</string>
+	<key>installer_item_hash</key>
+	<string>598aa227ef544d37b7f964c1352e6f2d955fc5a8127cc2a708e7bc02af2cc7f0</string>
+	<key>installer_item_location</key>
+	<string>apps/AutoPkgr/AutoPkgr-1.6.1__52.dmg</string>
+	<key>installer_item_size</key>
+	<integer>5648</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.lindegroup.AutoPkgr</string>
+			<key>CFBundleName</key>
+			<string>AutoPkgr</string>
+			<key>CFBundleShortVersionString</key>
+			<string>1.6.1</string>
+			<key>CFBundleVersion</key>
+			<string>1509</string>
+			<key>minosversion</key>
+			<string>10.13</string>
+			<key>path</key>
+			<string>/Applications/AutoPkgr.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>AutoPkgr.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.13</string>
+	<key>name</key>
+	<string>AutoPkgr</string>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.6.1</string>
+</dict>
+</plist>
