@@ -7,11 +7,11 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-12-10T20:08:20Z</date>
+		<date>2026-01-04T05:45:57Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
-		<string>26.0.1</string>
+		<string>26.2</string>
 	</dict>
 	<key>autoremove</key>
 	<false/>
@@ -20,34 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Virtual machines for iOS and macOS</string>
+	<string>AutoPkgr is a free Mac app that makes it easy to install and configure AutoPkg.</string>
 	<key>developer</key>
-	<string>Turing Software, LLC</string>
+	<string>Linde Group, Inc.</string>
 	<key>display_name</key>
-	<string>UTM</string>
+	<string>AutoPkgr</string>
 	<key>installer_item_hash</key>
-	<string>e259e81fd142acbdc4596369980118cfe5c2c4f491ed96bf5bc606c405d79ace</string>
+	<string>598aa227ef544d37b7f964c1352e6f2d955fc5a8127cc2a708e7bc02af2cc7f0</string>
 	<key>installer_item_location</key>
-	<string>apps/UTM/UTM-4.7.4__13.dmg</string>
+	<string>apps/AutoPkgr/AutoPkgr-1.6.1__53.dmg</string>
 	<key>installer_item_size</key>
-	<integer>244123</integer>
+	<integer>5648</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.utmapp.UTM</string>
+			<string>com.lindegroup.AutoPkgr</string>
 			<key>CFBundleName</key>
-			<string>UTM</string>
+			<string>AutoPkgr</string>
 			<key>CFBundleShortVersionString</key>
-			<string>4.7.4</string>
+			<string>1.6.1</string>
 			<key>CFBundleVersion</key>
-			<string>115</string>
+			<string>1509</string>
 			<key>minosversion</key>
-			<string>11.3</string>
+			<string>10.13</string>
 			<key>path</key>
-			<string>/Applications/UTM.app</string>
+			<string>/Applications/AutoPkgr.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,13 +60,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>UTM.app</string>
+			<string>AutoPkgr.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>11.3</string>
+	<string>10.13</string>
 	<key>name</key>
-	<string>UTM</string>
+	<string>AutoPkgr</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -74,6 +74,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>4.7.4</string>
+	<string>1.6.1</string>
 </dict>
 </plist>
