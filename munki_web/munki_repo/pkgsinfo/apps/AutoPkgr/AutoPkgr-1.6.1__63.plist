@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-12-29T05:47:33Z</date>
+		<date>2026-01-08T05:46:00Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,32 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
+	<string>AutoPkgr is a free Mac app that makes it easy to install and configure AutoPkg.</string>
+	<key>developer</key>
+	<string>Linde Group, Inc.</string>
 	<key>display_name</key>
-	<string>Google Chrome</string>
+	<string>AutoPkgr</string>
 	<key>installer_item_hash</key>
-	<string>2ddb9a4119101cf3542088e0f3ab0f9f339253572497ad6ce27414ccc4a582f6</string>
+	<string>598aa227ef544d37b7f964c1352e6f2d955fc5a8127cc2a708e7bc02af2cc7f0</string>
 	<key>installer_item_location</key>
-	<string>apps/GoogleChrome-143.0.7499.170__12.dmg</string>
+	<string>apps/AutoPkgr/AutoPkgr-1.6.1__57.dmg</string>
 	<key>installer_item_size</key>
-	<integer>231074</integer>
+	<integer>5648</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.google.Chrome</string>
+			<string>com.lindegroup.AutoPkgr</string>
 			<key>CFBundleName</key>
-			<string>Chrome</string>
+			<string>AutoPkgr</string>
 			<key>CFBundleShortVersionString</key>
-			<string>143.0.7499.170</string>
+			<string>1.6.1</string>
 			<key>CFBundleVersion</key>
-			<string>7499.170</string>
+			<string>1509</string>
 			<key>minosversion</key>
-			<string>12.0</string>
+			<string>10.13</string>
 			<key>path</key>
-			<string>/Applications/Google Chrome.app</string>
+			<string>/Applications/AutoPkgr.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -58,13 +60,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Google Chrome.app</string>
+			<string>AutoPkgr.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>12.0</string>
+	<string>10.13</string>
 	<key>name</key>
-	<string>GoogleChrome</string>
+	<string>AutoPkgr</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -72,6 +74,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>143.0.7499.170</string>
+	<string>1.6.1</string>
 </dict>
 </plist>

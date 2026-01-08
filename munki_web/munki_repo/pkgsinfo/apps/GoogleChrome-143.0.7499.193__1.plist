@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-12-23T05:47:17Z</date>
+		<date>2026-01-08T05:47:47Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -24,11 +24,11 @@
 	<key>display_name</key>
 	<string>Google Chrome</string>
 	<key>installer_item_hash</key>
-	<string>2ddb9a4119101cf3542088e0f3ab0f9f339253572497ad6ce27414ccc4a582f6</string>
+	<string>ca236cabc68a80986f5100c44bd06a7cb7f8b7afcb4f2d9e8a6524fb55230590</string>
 	<key>installer_item_location</key>
-	<string>apps/GoogleChrome-143.0.7499.170__6.dmg</string>
+	<string>apps/GoogleChrome-143.0.7499.193__1.dmg</string>
 	<key>installer_item_size</key>
-	<integer>231074</integer>
+	<integer>230870</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
@@ -39,9 +39,9 @@
 			<key>CFBundleName</key>
 			<string>Chrome</string>
 			<key>CFBundleShortVersionString</key>
-			<string>143.0.7499.170</string>
+			<string>143.0.7499.193</string>
 			<key>CFBundleVersion</key>
-			<string>7499.170</string>
+			<string>7499.193</string>
 			<key>minosversion</key>
 			<string>12.0</string>
 			<key>path</key>
@@ -72,6 +72,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>143.0.7499.170</string>
+	<string>143.0.7499.193</string>
 </dict>
 </plist>
