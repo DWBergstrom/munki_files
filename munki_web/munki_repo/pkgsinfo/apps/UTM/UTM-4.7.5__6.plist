@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-12-29T19:00:38Z</date>
+		<date>2026-01-08T15:56:53Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,37 +19,35 @@
 	<array>
 		<string>testing</string>
 	</array>
-	<key>category</key>
-	<string>Browsers</string>
 	<key>description</key>
-	<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
+	<string>Virtual machines for iOS and macOS</string>
 	<key>developer</key>
-	<string>Brave Software Inc.</string>
+	<string>Turing Software, LLC</string>
 	<key>display_name</key>
-	<string>Brave Browser</string>
+	<string>UTM</string>
 	<key>installer_item_hash</key>
-	<string>c493a1f044bd8b2c7d49d793027cf9d49cd37e237acd09a8187472173219f9b6</string>
+	<string>a8435c93cfb5f8bbfeea4b134cfad1ac66b67632b75e438c63b1a8ae043bef0e</string>
 	<key>installer_item_location</key>
-	<string>apps/Brave/Brave-143.1.85.118__11.dmg</string>
+	<string>apps/UTM/UTM-4.7.5__6.dmg</string>
 	<key>installer_item_size</key>
-	<integer>228692</integer>
+	<integer>244161</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.brave.Browser</string>
+			<string>com.utmapp.UTM</string>
 			<key>CFBundleName</key>
-			<string>Brave</string>
+			<string>UTM</string>
 			<key>CFBundleShortVersionString</key>
-			<string>143.1.85.118</string>
+			<string>4.7.5</string>
 			<key>CFBundleVersion</key>
-			<string>185.118</string>
+			<string>118</string>
 			<key>minosversion</key>
-			<string>12.0</string>
+			<string>11.3</string>
 			<key>path</key>
-			<string>/Applications/Brave Browser.app</string>
+			<string>/Applications/UTM.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -62,13 +60,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Brave Browser.app</string>
+			<string>UTM.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>12.0</string>
+	<string>11.3</string>
 	<key>name</key>
-	<string>Brave</string>
+	<string>UTM</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -76,6 +74,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>143.1.85.118</string>
+	<string>4.7.5</string>
 </dict>
 </plist>
