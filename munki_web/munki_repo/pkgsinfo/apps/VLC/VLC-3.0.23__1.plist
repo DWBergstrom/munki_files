@@ -7,11 +7,11 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2024-06-09T17:47:27Z</date>
+		<date>2026-01-09T05:49:12Z</date>
 		<key>munki_version</key>
-		<string>6.4.2.4634</string>
+		<string>7.0.0.5328</string>
 		<key>os_version</key>
-		<string>12.7.5</string>
+		<string>26.2</string>
 	</dict>
 	<key>autoremove</key>
 	<false/>
@@ -26,11 +26,11 @@
 	<key>display_name</key>
 	<string>VLC Media Player</string>
 	<key>installer_item_hash</key>
-	<string>50380e56f81d630e3531426a265abf8b3dee6c0822bb7c9e30b532c7d69a65c0</string>
+	<string>56ee657c3aaf5c71b4ab7d6e4f4a77f6eca54633e0bf42a93b8116eb1d1f6ec9</string>
 	<key>installer_item_location</key>
-	<string>apps/VLC/VLC-3.0.21.dmg</string>
+	<string>apps/VLC/VLC-3.0.23__1.dmg</string>
 	<key>installer_item_size</key>
-	<integer>83158</integer>
+	<integer>87035</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
@@ -41,9 +41,9 @@
 			<key>CFBundleName</key>
 			<string>VLC</string>
 			<key>CFBundleShortVersionString</key>
-			<string>3.0.21</string>
+			<string>3.0.23</string>
 			<key>CFBundleVersion</key>
-			<string>3.0.21</string>
+			<string>3.0.23</string>
 			<key>minosversion</key>
 			<string>10.7.5</string>
 			<key>path</key>
@@ -79,6 +79,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>3.0.21</string>
+	<string>3.0.23</string>
 </dict>
 </plist>

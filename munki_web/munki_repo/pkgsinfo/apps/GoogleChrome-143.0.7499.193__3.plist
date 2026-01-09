@@ -7,11 +7,11 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-12-10T22:43:16Z</date>
+		<date>2026-01-09T05:47:57Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
-		<string>26.0.1</string>
+		<string>26.2</string>
 	</dict>
 	<key>autoremove</key>
 	<false/>
@@ -20,34 +20,32 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVD, Audio CD, VCD, and various streaming protocols.</string>
-	<key>developer</key>
-	<string>The VideoLAN Project</string>
+	<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
 	<key>display_name</key>
-	<string>VLC Media Player</string>
+	<string>Google Chrome</string>
 	<key>installer_item_hash</key>
-	<string>50380e56f81d630e3531426a265abf8b3dee6c0822bb7c9e30b532c7d69a65c0</string>
+	<string>ca236cabc68a80986f5100c44bd06a7cb7f8b7afcb4f2d9e8a6524fb55230590</string>
 	<key>installer_item_location</key>
-	<string>apps/VLC/VLC-3.0.21__22.dmg</string>
+	<string>apps/GoogleChrome-143.0.7499.193__3.dmg</string>
 	<key>installer_item_size</key>
-	<integer>83158</integer>
+	<integer>230870</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>org.videolan.vlc</string>
+			<string>com.google.Chrome</string>
 			<key>CFBundleName</key>
-			<string>VLC</string>
+			<string>Chrome</string>
 			<key>CFBundleShortVersionString</key>
-			<string>3.0.21</string>
+			<string>143.0.7499.193</string>
 			<key>CFBundleVersion</key>
-			<string>3.0.21</string>
+			<string>7499.193</string>
 			<key>minosversion</key>
-			<string>10.7.5</string>
+			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/VLC.app</string>
+			<string>/Applications/Google Chrome.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,18 +58,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>VLC.app</string>
+			<string>Google Chrome.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>10.7.5</string>
+	<string>12.0</string>
 	<key>name</key>
-	<string>VLC</string>
-	<key>supported_architectures</key>
-	<array>
-		<string>arm64</string>
-		<string>x86_64</string>
-	</array>
+	<string>GoogleChrome</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -79,6 +72,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>3.0.21</string>
+	<string>143.0.7499.193</string>
 </dict>
 </plist>

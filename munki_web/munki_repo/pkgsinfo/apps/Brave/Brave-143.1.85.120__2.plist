@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-01-04T05:48:31Z</date>
+		<date>2026-01-09T05:46:47Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,35 +19,37 @@
 	<array>
 		<string>testing</string>
 	</array>
+	<key>category</key>
+	<string>Browsers</string>
 	<key>description</key>
-	<string>VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVD, Audio CD, VCD, and various streaming protocols.</string>
+	<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
 	<key>developer</key>
-	<string>The VideoLAN Project</string>
+	<string>Brave Software Inc.</string>
 	<key>display_name</key>
-	<string>VLC Media Player</string>
+	<string>Brave Browser</string>
 	<key>installer_item_hash</key>
-	<string>50380e56f81d630e3531426a265abf8b3dee6c0822bb7c9e30b532c7d69a65c0</string>
+	<string>dd222d05f03a4e3bb5d592f82bb30acc2d6a1d6135486837180e628a041b225d</string>
 	<key>installer_item_location</key>
-	<string>apps/VLC/VLC-3.0.21__55.dmg</string>
+	<string>apps/Brave/Brave-143.1.85.120__2.dmg</string>
 	<key>installer_item_size</key>
-	<integer>83158</integer>
+	<integer>228531</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>org.videolan.vlc</string>
+			<string>com.brave.Browser</string>
 			<key>CFBundleName</key>
-			<string>VLC</string>
+			<string>Brave</string>
 			<key>CFBundleShortVersionString</key>
-			<string>3.0.21</string>
+			<string>143.1.85.120</string>
 			<key>CFBundleVersion</key>
-			<string>3.0.21</string>
+			<string>185.120</string>
 			<key>minosversion</key>
-			<string>10.7.5</string>
+			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/VLC.app</string>
+			<string>/Applications/Brave Browser.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,18 +62,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>VLC.app</string>
+			<string>Brave Browser.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>10.7.5</string>
+	<string>12.0</string>
 	<key>name</key>
-	<string>VLC</string>
-	<key>supported_architectures</key>
-	<array>
-		<string>arm64</string>
-		<string>x86_64</string>
-	</array>
+	<string>Brave</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -79,6 +76,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>3.0.21</string>
+	<string>143.1.85.120</string>
 </dict>
 </plist>
