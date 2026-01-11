@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2026-01-11T05:49:26Z</date>
+		<key>munki_version</key>
+		<string>7.0.0.5328</string>
+		<key>os_version</key>
+		<string>26.2</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>category</key>
+	<string>Utilities</string>
+	<key>description</key>
+	<string>iMazing Profile Editor lets users create, modify, and also digitally sign configuration profiles with a friendly user interface instead of manually coding them in XML.</string>
+	<key>developer</key>
+	<string>DigiDNA SARL</string>
+	<key>display_name</key>
+	<string>iMazing Profile Editor</string>
+	<key>installer_item_hash</key>
+	<string>c9485f9d0b5334e408d14a82a7ad677bfde41cca7fb5bdb78b1944bc23661cb0</string>
+	<key>installer_item_location</key>
+	<string>apps/imazingprofileeditor/iMazing_Profile_Editor_2.1.2.382201-2.1.2__28.dmg</string>
+	<key>installer_item_size</key>
+	<integer>25070</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.DigiDNA.iMazingProfileEditorMac</string>
+			<key>CFBundleName</key>
+			<string>iMazing Profile Editor</string>
+			<key>CFBundleShortVersionString</key>
+			<string>2.1.2</string>
+			<key>CFBundleVersion</key>
+			<string>382201</string>
+			<key>minosversion</key>
+			<string>12.0</string>
+			<key>path</key>
+			<string>/Applications/iMazing Profile Editor.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>iMazing Profile Editor.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>12.0</string>
+	<key>name</key>
+	<string>iMazingProfileEditor</string>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>2.1.2</string>
+</dict>
+</plist>
