@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-01-11T05:47:26Z</date>
+		<date>2026-01-15T05:54:29Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,33 +19,37 @@
 	<array>
 		<string>testing</string>
 	</array>
+	<key>category</key>
+	<string>Utilities</string>
 	<key>description</key>
-	<string>Mozilla Firefox is a free and open source web browser.</string>
+	<string>iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with OS 10.5 (Leopard) or newer. Its focus is on performance, internationalization, and supporting innovative features that make your life better.</string>
+	<key>developer</key>
+	<string>George Nachman</string>
 	<key>display_name</key>
-	<string>Mozilla Firefox</string>
+	<string>iTerm2</string>
 	<key>installer_item_hash</key>
-	<string>1f153af0954e0e804cedfac185281a762cd6f270238687d8c7060d162435a1ff</string>
+	<string>f7821771493762c88d942b03bf3f8a33f82f1e4373f5366d327fd2c037720ecb</string>
 	<key>installer_item_location</key>
-	<string>apps/firefox/Firefox-146.0.1__27.dmg</string>
+	<string>apps/iTerm2-3.6.6__57.dmg</string>
 	<key>installer_item_size</key>
-	<integer>141197</integer>
+	<integer>52258</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>org.mozilla.firefox</string>
+			<string>com.googlecode.iterm2</string>
 			<key>CFBundleName</key>
-			<string>Firefox</string>
+			<string>iTerm2</string>
 			<key>CFBundleShortVersionString</key>
-			<string>146.0.1</string>
+			<string>3.6.6</string>
 			<key>CFBundleVersion</key>
-			<string>14625.12.17</string>
+			<string>3.6.6</string>
 			<key>minosversion</key>
-			<string>10.15.0</string>
+			<string>12.4</string>
 			<key>path</key>
-			<string>/Applications/Firefox.app</string>
+			<string>/Applications/iTerm.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -58,13 +62,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Firefox.app</string>
+			<string>iTerm.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>10.15.0</string>
+	<string>12.4</string>
 	<key>name</key>
-	<string>Firefox</string>
+	<string>iTerm2</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -72,6 +76,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>146.0.1</string>
+	<string>3.6.6</string>
 </dict>
 </plist>

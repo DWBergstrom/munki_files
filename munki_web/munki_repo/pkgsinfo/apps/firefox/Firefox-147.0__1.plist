@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-12-22T05:46:51Z</date>
+		<date>2026-01-15T05:47:59Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -24,11 +24,11 @@
 	<key>display_name</key>
 	<string>Mozilla Firefox</string>
 	<key>installer_item_hash</key>
-	<string>1f153af0954e0e804cedfac185281a762cd6f270238687d8c7060d162435a1ff</string>
+	<string>48485e2068bc726e2f30cf5855fc2da1fc75c1272bc243a5394f428ffae3ba35</string>
 	<key>installer_item_location</key>
-	<string>apps/firefox/Firefox-146.0.1__4.dmg</string>
+	<string>apps/firefox/Firefox-147.0__1.dmg</string>
 	<key>installer_item_size</key>
-	<integer>141197</integer>
+	<integer>142414</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
@@ -39,9 +39,9 @@
 			<key>CFBundleName</key>
 			<string>Firefox</string>
 			<key>CFBundleShortVersionString</key>
-			<string>146.0.1</string>
+			<string>147.0</string>
 			<key>CFBundleVersion</key>
-			<string>14625.12.17</string>
+			<string>14726.1.5</string>
 			<key>minosversion</key>
 			<string>10.15.0</string>
 			<key>path</key>
@@ -72,6 +72,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>146.0.1</string>
+	<string>147.0</string>
 </dict>
 </plist>
