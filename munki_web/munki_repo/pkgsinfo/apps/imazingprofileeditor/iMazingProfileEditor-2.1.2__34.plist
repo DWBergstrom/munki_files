@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2025-12-24T05:46:28Z</date>
+		<date>2026-01-17T05:52:22Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,40 +20,40 @@
 		<string>testing</string>
 	</array>
 	<key>category</key>
-	<string>Web Browsers</string>
+	<string>Utilities</string>
 	<key>description</key>
-	<string>Official OpenAI ChatGPT Browser application.</string>
+	<string>iMazing Profile Editor lets users create, modify, and also digitally sign configuration profiles with a friendly user interface instead of manually coding them in XML.</string>
 	<key>developer</key>
-	<string>OpenAI, L.L.C.</string>
+	<string>DigiDNA SARL</string>
 	<key>display_name</key>
-	<string>ChatGPT Atlas</string>
+	<string>iMazing Profile Editor</string>
 	<key>installer_item_hash</key>
-	<string>cea01b0f4f3ddd6e02a6ba71ce2cb95e2ece380f4ea23ab3c04d027cb93e4fb9</string>
+	<string>c9485f9d0b5334e408d14a82a7ad677bfde41cca7fb5bdb78b1944bc23661cb0</string>
 	<key>installer_item_location</key>
-	<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2025.344.9__1.dmg</string>
+	<string>apps/imazingprofileeditor/iMazing_Profile_Editor_2.1.2.382201-2.1.2__34.dmg</string>
 	<key>installer_item_size</key>
-	<integer>234560</integer>
+	<integer>25070</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.openai.atlas</string>
+			<string>com.DigiDNA.iMazingProfileEditorMac</string>
 			<key>CFBundleName</key>
-			<string>ChatGPT Atlas</string>
+			<string>iMazing Profile Editor</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.2025.344.9</string>
+			<string>2.1.2</string>
 			<key>CFBundleVersion</key>
-			<string>20251222192530000</string>
+			<string>382201</string>
 			<key>minosversion</key>
-			<string>14.2</string>
+			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/ChatGPT Atlas.app</string>
+			<string>/Applications/iMazing Profile Editor.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
-			<string>CFBundleVersion</string>
+			<string>CFBundleShortVersionString</string>
 		</dict>
 	</array>
 	<key>items_to_copy</key>
@@ -62,17 +62,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>ChatGPT Atlas.app</string>
+			<string>iMazing Profile Editor.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>14.2</string>
+	<string>12.0</string>
 	<key>name</key>
-	<string>ChatGPT Atlas</string>
-	<key>supported_architectures</key>
-	<array>
-		<string>arm64</string>
-	</array>
+	<string>iMazingProfileEditor</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -80,6 +76,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.2025.344.9</string>
+	<string>2.1.2</string>
 </dict>
 </plist>

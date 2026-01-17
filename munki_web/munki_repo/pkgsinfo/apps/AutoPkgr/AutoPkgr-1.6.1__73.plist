@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-01-05T05:46:35Z</date>
+		<date>2026-01-17T05:46:45Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,41 +19,39 @@
 	<array>
 		<string>testing</string>
 	</array>
-	<key>category</key>
-	<string>Web Browsers</string>
 	<key>description</key>
-	<string>Official OpenAI ChatGPT Browser application.</string>
+	<string>AutoPkgr is a free Mac app that makes it easy to install and configure AutoPkg.</string>
 	<key>developer</key>
-	<string>OpenAI, L.L.C.</string>
+	<string>Linde Group, Inc.</string>
 	<key>display_name</key>
-	<string>ChatGPT Atlas</string>
+	<string>AutoPkgr</string>
 	<key>installer_item_hash</key>
-	<string>cea01b0f4f3ddd6e02a6ba71ce2cb95e2ece380f4ea23ab3c04d027cb93e4fb9</string>
+	<string>598aa227ef544d37b7f964c1352e6f2d955fc5a8127cc2a708e7bc02af2cc7f0</string>
 	<key>installer_item_location</key>
-	<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2025.344.9__14.dmg</string>
+	<string>apps/AutoPkgr/AutoPkgr-1.6.1__67.dmg</string>
 	<key>installer_item_size</key>
-	<integer>234560</integer>
+	<integer>5648</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.openai.atlas</string>
+			<string>com.lindegroup.AutoPkgr</string>
 			<key>CFBundleName</key>
-			<string>ChatGPT Atlas</string>
+			<string>AutoPkgr</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.2025.344.9</string>
+			<string>1.6.1</string>
 			<key>CFBundleVersion</key>
-			<string>20251222192530000</string>
+			<string>1509</string>
 			<key>minosversion</key>
-			<string>14.2</string>
+			<string>10.13</string>
 			<key>path</key>
-			<string>/Applications/ChatGPT Atlas.app</string>
+			<string>/Applications/AutoPkgr.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
-			<string>CFBundleVersion</string>
+			<string>CFBundleShortVersionString</string>
 		</dict>
 	</array>
 	<key>items_to_copy</key>
@@ -62,17 +60,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>ChatGPT Atlas.app</string>
+			<string>AutoPkgr.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>14.2</string>
+	<string>10.13</string>
 	<key>name</key>
-	<string>ChatGPT Atlas</string>
-	<key>supported_architectures</key>
-	<array>
-		<string>arm64</string>
-	</array>
+	<string>AutoPkgr</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -80,6 +74,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.2025.344.9</string>
+	<string>1.6.1</string>
 </dict>
 </plist>
