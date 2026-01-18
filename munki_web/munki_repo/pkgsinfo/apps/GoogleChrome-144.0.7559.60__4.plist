@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-01-14T05:49:41Z</date>
+		<date>2026-01-18T05:51:03Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,32 +20,32 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Mozilla Firefox is a free and open source web browser.</string>
+	<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
 	<key>display_name</key>
-	<string>Mozilla Firefox</string>
+	<string>Google Chrome</string>
 	<key>installer_item_hash</key>
-	<string>48485e2068bc726e2f30cf5855fc2da1fc75c1272bc243a5394f428ffae3ba35</string>
+	<string>2b1b7c32b5b900d180203d0bf41fdd4c0e7a884d44f80169df29b5c2a2abaaf1</string>
 	<key>installer_item_location</key>
-	<string>apps/firefox/Firefox-147.0.dmg</string>
+	<string>apps/GoogleChrome-144.0.7559.60__4.dmg</string>
 	<key>installer_item_size</key>
-	<integer>142414</integer>
+	<integer>232238</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>org.mozilla.firefox</string>
+			<string>com.google.Chrome</string>
 			<key>CFBundleName</key>
-			<string>Firefox</string>
+			<string>Chrome</string>
 			<key>CFBundleShortVersionString</key>
-			<string>147.0</string>
+			<string>144.0.7559.60</string>
 			<key>CFBundleVersion</key>
-			<string>14726.1.5</string>
+			<string>7559.60</string>
 			<key>minosversion</key>
-			<string>10.15.0</string>
+			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/Firefox.app</string>
+			<string>/Applications/Google Chrome.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -58,13 +58,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Firefox.app</string>
+			<string>Google Chrome.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>10.15.0</string>
+	<string>12.0</string>
 	<key>name</key>
-	<string>Firefox</string>
+	<string>GoogleChrome</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -72,6 +72,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>147.0</string>
+	<string>144.0.7559.60</string>
 </dict>
 </plist>

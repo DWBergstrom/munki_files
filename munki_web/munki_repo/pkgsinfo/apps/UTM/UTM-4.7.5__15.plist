@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2026-01-18T05:51:45Z</date>
+		<key>munki_version</key>
+		<string>7.0.0.5328</string>
+		<key>os_version</key>
+		<string>26.2</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>Virtual machines for iOS and macOS</string>
+	<key>developer</key>
+	<string>Turing Software, LLC</string>
+	<key>display_name</key>
+	<string>UTM</string>
+	<key>installer_item_hash</key>
+	<string>a8435c93cfb5f8bbfeea4b134cfad1ac66b67632b75e438c63b1a8ae043bef0e</string>
+	<key>installer_item_location</key>
+	<string>apps/UTM/UTM-4.7.5__15.dmg</string>
+	<key>installer_item_size</key>
+	<integer>244161</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.utmapp.UTM</string>
+			<key>CFBundleName</key>
+			<string>UTM</string>
+			<key>CFBundleShortVersionString</key>
+			<string>4.7.5</string>
+			<key>CFBundleVersion</key>
+			<string>118</string>
+			<key>minosversion</key>
+			<string>11.3</string>
+			<key>path</key>
+			<string>/Applications/UTM.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>UTM.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>11.3</string>
+	<key>name</key>
+	<string>UTM</string>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>4.7.5</string>
+</dict>
+</plist>

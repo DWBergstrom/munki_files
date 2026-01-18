@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-01-15T05:47:59Z</date>
+		<date>2026-01-18T05:48:23Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,32 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Mozilla Firefox is a free and open source web browser.</string>
+	<string>AutoPkgr is a free Mac app that makes it easy to install and configure AutoPkg.</string>
+	<key>developer</key>
+	<string>Linde Group, Inc.</string>
 	<key>display_name</key>
-	<string>Mozilla Firefox</string>
+	<string>AutoPkgr</string>
 	<key>installer_item_hash</key>
-	<string>48485e2068bc726e2f30cf5855fc2da1fc75c1272bc243a5394f428ffae3ba35</string>
+	<string>598aa227ef544d37b7f964c1352e6f2d955fc5a8127cc2a708e7bc02af2cc7f0</string>
 	<key>installer_item_location</key>
-	<string>apps/firefox/Firefox-147.0__1.dmg</string>
+	<string>apps/AutoPkgr/AutoPkgr-1.6.1__68.dmg</string>
 	<key>installer_item_size</key>
-	<integer>142414</integer>
+	<integer>5648</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>org.mozilla.firefox</string>
+			<string>com.lindegroup.AutoPkgr</string>
 			<key>CFBundleName</key>
-			<string>Firefox</string>
+			<string>AutoPkgr</string>
 			<key>CFBundleShortVersionString</key>
-			<string>147.0</string>
+			<string>1.6.1</string>
 			<key>CFBundleVersion</key>
-			<string>14726.1.5</string>
+			<string>1509</string>
 			<key>minosversion</key>
-			<string>10.15.0</string>
+			<string>10.13</string>
 			<key>path</key>
-			<string>/Applications/Firefox.app</string>
+			<string>/Applications/AutoPkgr.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -58,13 +60,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Firefox.app</string>
+			<string>AutoPkgr.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>10.15.0</string>
+	<string>10.13</string>
 	<key>name</key>
-	<string>Firefox</string>
+	<string>AutoPkgr</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -72,6 +74,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>147.0</string>
+	<string>1.6.1</string>
 </dict>
 </plist>
