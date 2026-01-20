@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2026-01-20T15:37:16Z</date>
+		<key>munki_version</key>
+		<string>7.0.0.5328</string>
+		<key>os_version</key>
+		<string>26.2</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>blocking_applications</key>
+	<array>
+		<string>AppGate SDP.app</string>
+	</array>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>AppGate brings secure access to your infrastructure using better network security than legacy VPNs, NACs and firewalls.</string>
+	<key>developer</key>
+	<string>CYXTERA TECHNOLOGIES, INC.</string>
+	<key>display_name</key>
+	<string>AppGate SDP</string>
+	<key>installed_size</key>
+	<integer>577926</integer>
+	<key>installer_item_hash</key>
+	<string>091c4cf9a17acd315123d67b825d0e9be8504e63abea125cd5ad4e31eb17b147</string>
+	<key>installer_item_location</key>
+	<string>apps/AppGate SDP/AppGate SDP-6.5.4.44790__22.dmg</string>
+	<key>installer_item_size</key>
+	<integer>172874</integer>
+	<key>name</key>
+	<string>AppGate SDP</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>577926</integer>
+			<key>packageid</key>
+			<string>com.appgate.pkg.appgatetun.component</string>
+			<key>version</key>
+			<string>6.5.4.44790</string>
+		</dict>
+	</array>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>6.5.4.44790</string>
+</dict>
+</plist>
