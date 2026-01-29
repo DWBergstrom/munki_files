@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-01-20T15:43:38Z</date>
+		<date>2026-01-29T05:48:35Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,32 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Mozilla Firefox is a free and open source web browser.</string>
+	<string>VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVD, Audio CD, VCD, and various streaming protocols.</string>
+	<key>developer</key>
+	<string>The VideoLAN Project</string>
 	<key>display_name</key>
-	<string>Mozilla Firefox</string>
+	<string>VLC Media Player</string>
 	<key>installer_item_hash</key>
-	<string>bd30946381af47301c511df6f617d9b9a0b6cca04ecbeac55825db14808043f9</string>
+	<string>56ee657c3aaf5c71b4ab7d6e4f4a77f6eca54633e0bf42a93b8116eb1d1f6ec9</string>
 	<key>installer_item_location</key>
-	<string>apps/firefox/Firefox-147.0.1__4.dmg</string>
+	<string>apps/VLC/VLC-3.0.23__21.dmg</string>
 	<key>installer_item_size</key>
-	<integer>142327</integer>
+	<integer>87035</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>org.mozilla.firefox</string>
+			<string>org.videolan.vlc</string>
 			<key>CFBundleName</key>
-			<string>Firefox</string>
+			<string>VLC</string>
 			<key>CFBundleShortVersionString</key>
-			<string>147.0.1</string>
+			<string>3.0.23</string>
 			<key>CFBundleVersion</key>
-			<string>14726.1.16</string>
+			<string>3.0.23</string>
 			<key>minosversion</key>
-			<string>10.15.0</string>
+			<string>10.7.5</string>
 			<key>path</key>
-			<string>/Applications/Firefox.app</string>
+			<string>/Applications/VLC.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -58,13 +60,18 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Firefox.app</string>
+			<string>VLC.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>10.15.0</string>
+	<string>10.7.5</string>
 	<key>name</key>
-	<string>Firefox</string>
+	<string>VLC</string>
+	<key>supported_architectures</key>
+	<array>
+		<string>arm64</string>
+		<string>x86_64</string>
+	</array>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -72,6 +79,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>147.0.1</string>
+	<string>3.0.23</string>
 </dict>
 </plist>
