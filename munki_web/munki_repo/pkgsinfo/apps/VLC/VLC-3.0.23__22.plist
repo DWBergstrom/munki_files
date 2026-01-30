@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-01-26T05:46:27Z</date>
+		<date>2026-01-30T05:48:10Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,41 +19,39 @@
 	<array>
 		<string>testing</string>
 	</array>
-	<key>category</key>
-	<string>Web Browsers</string>
 	<key>description</key>
-	<string>Official OpenAI ChatGPT Browser application.</string>
+	<string>VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVD, Audio CD, VCD, and various streaming protocols.</string>
 	<key>developer</key>
-	<string>OpenAI, L.L.C.</string>
+	<string>The VideoLAN Project</string>
 	<key>display_name</key>
-	<string>ChatGPT Atlas</string>
+	<string>VLC Media Player</string>
 	<key>installer_item_hash</key>
-	<string>b7f5a8381994482f3cf94f51e706d14dec354595f7e481120a9aa9cb458c1b3d</string>
+	<string>56ee657c3aaf5c71b4ab7d6e4f4a77f6eca54633e0bf42a93b8116eb1d1f6ec9</string>
 	<key>installer_item_location</key>
-	<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.15.3__4.dmg</string>
+	<string>apps/VLC/VLC-3.0.23__22.dmg</string>
 	<key>installer_item_size</key>
-	<integer>243810</integer>
+	<integer>87035</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.openai.atlas</string>
+			<string>org.videolan.vlc</string>
 			<key>CFBundleName</key>
-			<string>ChatGPT Atlas</string>
+			<string>VLC</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.2026.15.3</string>
+			<string>3.0.23</string>
 			<key>CFBundleVersion</key>
-			<string>20260121174735000</string>
+			<string>3.0.23</string>
 			<key>minosversion</key>
-			<string>14.2</string>
+			<string>10.7.5</string>
 			<key>path</key>
-			<string>/Applications/ChatGPT Atlas.app</string>
+			<string>/Applications/VLC.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
-			<string>CFBundleVersion</string>
+			<string>CFBundleShortVersionString</string>
 		</dict>
 	</array>
 	<key>items_to_copy</key>
@@ -62,16 +60,17 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>ChatGPT Atlas.app</string>
+			<string>VLC.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>14.2</string>
+	<string>10.7.5</string>
 	<key>name</key>
-	<string>ChatGPT Atlas</string>
+	<string>VLC</string>
 	<key>supported_architectures</key>
 	<array>
 		<string>arm64</string>
+		<string>x86_64</string>
 	</array>
 	<key>unattended_install</key>
 	<true/>
@@ -80,6 +79,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.2026.15.3</string>
+	<string>3.0.23</string>
 </dict>
 </plist>

@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-01-22T05:46:26Z</date>
+		<date>2026-01-30T05:46:12Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -28,11 +28,11 @@
 	<key>display_name</key>
 	<string>Brave Browser</string>
 	<key>installer_item_hash</key>
-	<string>e1bc2d4c608322fa5c959005a09882b3b2c9caa781ad510ab66ada452feafab0</string>
+	<string>440cdf3d2c2b5f63817ce8eb8895782b4ceac5e7dc026405d16c2a92e4441ddd</string>
 	<key>installer_item_location</key>
-	<string>apps/Brave/Brave-144.1.86.142.dmg</string>
+	<string>apps/Brave/Brave-144.1.86.146__1.dmg</string>
 	<key>installer_item_size</key>
-	<integer>230257</integer>
+	<integer>230615</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
@@ -43,9 +43,9 @@
 			<key>CFBundleName</key>
 			<string>Brave</string>
 			<key>CFBundleShortVersionString</key>
-			<string>144.1.86.142</string>
+			<string>144.1.86.146</string>
 			<key>CFBundleVersion</key>
-			<string>186.142</string>
+			<string>186.146</string>
 			<key>minosversion</key>
 			<string>12.0</string>
 			<key>path</key>
@@ -76,6 +76,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>144.1.86.142</string>
+	<string>144.1.86.146</string>
 </dict>
 </plist>
