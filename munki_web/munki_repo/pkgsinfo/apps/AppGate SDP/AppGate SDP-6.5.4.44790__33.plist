@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-01-26T05:47:24Z</date>
+		<date>2026-01-31T05:45:35Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -15,46 +15,48 @@
 	</dict>
 	<key>autoremove</key>
 	<false/>
+	<key>blocking_applications</key>
+	<array>
+		<string>AppGate SDP.app</string>
+	</array>
 	<key>catalogs</key>
 	<array>
 		<string>testing</string>
 	</array>
-	<key>category</key>
-	<string>Productivity</string>
 	<key>description</key>
-	<string>Microsoft Edge web browser</string>
+	<string>AppGate brings secure access to your infrastructure using better network security than legacy VPNs, NACs and firewalls.</string>
 	<key>developer</key>
-	<string>Microsoft</string>
+	<string>CYXTERA TECHNOLOGIES, INC.</string>
 	<key>display_name</key>
-	<string>Microsoft Edge</string>
+	<string>AppGate SDP</string>
 	<key>installed_size</key>
-	<integer>938857</integer>
+	<integer>577926</integer>
 	<key>installer_item_hash</key>
-	<string>a28f7d0d27e163fdd23755dadb5870d6a1c87183f2185d25e618365afd1e3940</string>
+	<string>091c4cf9a17acd315123d67b825d0e9be8504e63abea125cd5ad4e31eb17b147</string>
 	<key>installer_item_location</key>
-	<string>apps/Microsoft/Microsoft_Edge-144.0.3719.92__2.pkg</string>
+	<string>apps/AppGate SDP/AppGate SDP-6.5.4.44790__33.dmg</string>
 	<key>installer_item_size</key>
-	<integer>405265</integer>
-	<key>minimum_os_version</key>
-	<string>10.10.0</string>
+	<integer>172874</integer>
 	<key>name</key>
-	<string>MicrosoftEdge</string>
+	<string>AppGate SDP</string>
 	<key>receipts</key>
 	<array>
 		<dict>
 			<key>installed_size</key>
-			<integer>938857</integer>
+			<integer>577926</integer>
 			<key>packageid</key>
-			<string>com.microsoft.edgemac</string>
+			<string>com.appgate.pkg.appgatetun.component</string>
 			<key>version</key>
-			<string>144.0.3719.92</string>
+			<string>6.5.4.44790</string>
 		</dict>
 	</array>
+	<key>unattended_install</key>
+	<true/>
 	<key>uninstall_method</key>
 	<string>removepackages</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>144.0.3719.92</string>
+	<string>6.5.4.44790</string>
 </dict>
 </plist>
