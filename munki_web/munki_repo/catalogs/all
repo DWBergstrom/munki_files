@@ -1893,6 +1893,95 @@
 		<key>installer_item_hash</key>
 		<string>b1931ca28760839a8312562f580ca5b19f0850f032564b2841120fdef546c58d</string>
 		<key>installer_item_location</key>
+		<string>munkitools/munkitools-6.7.0.4731__84.pkg</string>
+		<key>installer_item_size</key>
+		<integer>52874</integer>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>munkitools6</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>1227</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.core</string>
+				<key>version</key>
+				<string>6.7.0.4731</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>134</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.admin</string>
+				<key>version</key>
+				<string>6.7.0.4731</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>28793</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.app</string>
+				<key>version</key>
+				<string>6.7.0.4730</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>25</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.app_usage</string>
+				<key>version</key>
+				<string>6.7.0.4731</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>140348</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.python</string>
+				<key>version</key>
+				<string>3.12.2.4689</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>10</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.launchd</string>
+				<key>version</key>
+				<string>6.6.0.4656</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>6.7.0.4731</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>development</string>
+		</array>
+		<key>category</key>
+		<string>munkitools</string>
+		<key>description</key>
+		<string>Managed software installation for macOS.</string>
+		<key>developer</key>
+		<string>The Munki Project</string>
+		<key>display_name</key>
+		<string>Managed Software Center</string>
+		<key>icon_name</key>
+		<string></string>
+		<key>installed_size</key>
+		<integer>170537</integer>
+		<key>installer_item_hash</key>
+		<string>b1931ca28760839a8312562f580ca5b19f0850f032564b2841120fdef546c58d</string>
+		<key>installer_item_location</key>
 		<string>munkitools/munkitools-6.7.0.4731__77.pkg</string>
 		<key>installer_item_size</key>
 		<integer>52874</integer>
@@ -8949,6 +9038,72 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 	<dict>
 		<key>autoremove</key>
 		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Utilities</string>
+		<key>description</key>
+		<string>iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with OS 10.5 (Leopard) or newer. Its focus is on performance, internationalization, and supporting innovative features that make your life better.</string>
+		<key>developer</key>
+		<string>George Nachman</string>
+		<key>display_name</key>
+		<string>iTerm2</string>
+		<key>installer_item_hash</key>
+		<string>44663f2cc3bea77b3f422de4622bd28d0fa0f5c4d5f0bac7bcf66dfe6ba8343a</string>
+		<key>installer_item_location</key>
+		<string>apps/iTerm2-3.6.6__77.dmg</string>
+		<key>installer_item_size</key>
+		<integer>52258</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.googlecode.iterm2</string>
+				<key>CFBundleName</key>
+				<string>iTerm2</string>
+				<key>CFBundleShortVersionString</key>
+				<string>3.6.6</string>
+				<key>CFBundleVersion</key>
+				<string>3.6.6</string>
+				<key>minosversion</key>
+				<string>12.4</string>
+				<key>path</key>
+				<string>/Applications/iTerm.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>iTerm.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.4</string>
+		<key>name</key>
+		<string>iTerm2</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>3.6.6</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
 		<key>blocking_applications</key>
 		<array>
 			<string>1Password 7</string>
@@ -9312,6 +9467,68 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<true/>
 		<key>version</key>
 		<string>3.6.6</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
+		<key>display_name</key>
+		<string>Google Chrome</string>
+		<key>installer_item_hash</key>
+		<string>fb56dfaccca81272936143a9c75f5cdb400063f70e4cdd75f305bdb32bb62001</string>
+		<key>installer_item_location</key>
+		<string>apps/GoogleChrome-144.0.7559.110__6.dmg</string>
+		<key>installer_item_size</key>
+		<integer>232257</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.google.Chrome</string>
+				<key>CFBundleName</key>
+				<string>Chrome</string>
+				<key>CFBundleShortVersionString</key>
+				<string>144.0.7559.110</string>
+				<key>CFBundleVersion</key>
+				<string>7559.110</string>
+				<key>minosversion</key>
+				<string>12.0</string>
+				<key>path</key>
+				<string>/Applications/Google Chrome.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Google Chrome.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.0</string>
+		<key>name</key>
+		<string>GoogleChrome</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>144.0.7559.110</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -12869,6 +13086,90 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<true/>
 		<key>version</key>
 		<string>3.6.6</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>1Password 7</string>
+			<string>1Password Browser Helper</string>
+			<string>1Password</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Utilities</string>
+		<key>description</key>
+		<string>1Password is a password manager that goes beyond simple password storage by integrating directly with your web browser to automatically log you into websites, enter credit card information, fill registration forms, and easily generate strong passwords.</string>
+		<key>developer</key>
+		<string>AgileBits Inc.</string>
+		<key>display_name</key>
+		<string>1Password</string>
+		<key>installed_size</key>
+		<integer>854061</integer>
+		<key>installer_item_hash</key>
+		<string>5811a4d0edb1ffb97276377382dd775860fc8d5353cd7d8c40eaf5b2c2ce617c</string>
+		<key>installer_item_location</key>
+		<string>apps/1Password-8.12.0__15.pkg</string>
+		<key>installer_item_size</key>
+		<integer>343370</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.1password.1password</string>
+				<key>CFBundleName</key>
+				<string>1Password</string>
+				<key>CFBundleShortVersionString</key>
+				<string>8.12.0</string>
+				<key>CFBundleVersion</key>
+				<string>8.12.0.417987</string>
+				<key>minosversion</key>
+				<string>12.0</string>
+				<key>path</key>
+				<string>/Applications/1Password.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.0</string>
+		<key>name</key>
+		<string>1Password</string>
+		<key>postinstall_script</key>
+		<string>#!/bin/bash
+
+LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console); 
+
+/usr/sbin/chown -R "$LOGGED_IN_USER":staff "/Applications/1Password.app"
+
+</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>854061</integer>
+				<key>packageid</key>
+				<string>com.1password.1password</string>
+				<key>version</key>
+				<string>0</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>8.12.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -16779,6 +17080,68 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>installer_item_hash</key>
 		<string>767ee20f7742da7c6ea5edc6daa5ca66be56f299d457a188172fe9ba9b658c68</string>
 		<key>installer_item_location</key>
+		<string>apps/firefox/Firefox-147.0.2__6.dmg</string>
+		<key>installer_item_size</key>
+		<integer>142164</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>org.mozilla.firefox</string>
+				<key>CFBundleName</key>
+				<string>Firefox</string>
+				<key>CFBundleShortVersionString</key>
+				<string>147.0.2</string>
+				<key>CFBundleVersion</key>
+				<string>14726.1.26</string>
+				<key>minosversion</key>
+				<string>10.15.0</string>
+				<key>path</key>
+				<string>/Applications/Firefox.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Firefox.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15.0</string>
+		<key>name</key>
+		<string>Firefox</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>147.0.2</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Mozilla Firefox is a free and open source web browser.</string>
+		<key>display_name</key>
+		<string>Mozilla Firefox</string>
+		<key>installer_item_hash</key>
+		<string>767ee20f7742da7c6ea5edc6daa5ca66be56f299d457a188172fe9ba9b658c68</string>
+		<key>installer_item_location</key>
 		<string>apps/firefox/Firefox-147.0.2__4.dmg</string>
 		<key>installer_item_size</key>
 		<integer>142164</integer>
@@ -18801,6 +19164,53 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<string>091c4cf9a17acd315123d67b825d0e9be8504e63abea125cd5ad4e31eb17b147</string>
 		<key>installer_item_location</key>
 		<string>apps/AppGate SDP/AppGate SDP-6.5.4.44790__7.dmg</string>
+		<key>installer_item_size</key>
+		<integer>172874</integer>
+		<key>name</key>
+		<string>AppGate SDP</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>577926</integer>
+				<key>packageid</key>
+				<string>com.appgate.pkg.appgatetun.component</string>
+				<key>version</key>
+				<string>6.5.4.44790</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>6.5.4.44790</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>AppGate SDP.app</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>AppGate brings secure access to your infrastructure using better network security than legacy VPNs, NACs and firewalls.</string>
+		<key>developer</key>
+		<string>CYXTERA TECHNOLOGIES, INC.</string>
+		<key>display_name</key>
+		<string>AppGate SDP</string>
+		<key>installed_size</key>
+		<integer>577926</integer>
+		<key>installer_item_hash</key>
+		<string>091c4cf9a17acd315123d67b825d0e9be8504e63abea125cd5ad4e31eb17b147</string>
+		<key>installer_item_location</key>
+		<string>apps/AppGate SDP/AppGate SDP-6.5.4.44790__36.dmg</string>
 		<key>installer_item_size</key>
 		<integer>172874</integer>
 		<key>name</key>
@@ -23518,6 +23928,72 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>installer_item_hash</key>
 		<string>c9485f9d0b5334e408d14a82a7ad677bfde41cca7fb5bdb78b1944bc23661cb0</string>
 		<key>installer_item_location</key>
+		<string>apps/imazingprofileeditor/iMazing_Profile_Editor_2.1.2.382201-2.1.2__52.dmg</string>
+		<key>installer_item_size</key>
+		<integer>25070</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.DigiDNA.iMazingProfileEditorMac</string>
+				<key>CFBundleName</key>
+				<string>iMazing Profile Editor</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2.1.2</string>
+				<key>CFBundleVersion</key>
+				<string>382201</string>
+				<key>minosversion</key>
+				<string>12.0</string>
+				<key>path</key>
+				<string>/Applications/iMazing Profile Editor.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>iMazing Profile Editor.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.0</string>
+		<key>name</key>
+		<string>iMazingProfileEditor</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2.1.2</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Utilities</string>
+		<key>description</key>
+		<string>iMazing Profile Editor lets users create, modify, and also digitally sign configuration profiles with a friendly user interface instead of manually coding them in XML.</string>
+		<key>developer</key>
+		<string>DigiDNA SARL</string>
+		<key>display_name</key>
+		<string>iMazing Profile Editor</string>
+		<key>installer_item_hash</key>
+		<string>c9485f9d0b5334e408d14a82a7ad677bfde41cca7fb5bdb78b1944bc23661cb0</string>
+		<key>installer_item_location</key>
 		<string>apps/imazingprofileeditor/iMazing_Profile_Editor_2.1.2.382201-2.1.2__4.dmg</string>
 		<key>installer_item_size</key>
 		<integer>25070</integer>
@@ -24029,6 +24505,51 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<string>2022879f8bbba1cd3b270196d9759e55598a0485195f49ce7ab181b9e90bb282</string>
 		<key>installer_item_location</key>
 		<string>apps/Microsoft/Microsoft_Edge-144.0.3719.104__2.pkg</string>
+		<key>installer_item_size</key>
+		<integer>405275</integer>
+		<key>minimum_os_version</key>
+		<string>10.10.0</string>
+		<key>name</key>
+		<string>MicrosoftEdge</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>938905</integer>
+				<key>packageid</key>
+				<string>com.microsoft.edgemac</string>
+				<key>version</key>
+				<string>144.0.3719.104</string>
+			</dict>
+		</array>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>144.0.3719.104</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Productivity</string>
+		<key>description</key>
+		<string>Microsoft Edge web browser</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Microsoft Edge</string>
+		<key>installed_size</key>
+		<integer>938905</integer>
+		<key>installer_item_hash</key>
+		<string>2022879f8bbba1cd3b270196d9759e55598a0485195f49ce7ab181b9e90bb282</string>
+		<key>installer_item_location</key>
+		<string>apps/Microsoft/Microsoft_Edge-144.0.3719.104__4.pkg</string>
 		<key>installer_item_size</key>
 		<integer>405275</integer>
 		<key>minimum_os_version</key>
@@ -24602,6 +25123,72 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<string>440cdf3d2c2b5f63817ce8eb8895782b4ceac5e7dc026405d16c2a92e4441ddd</string>
 		<key>installer_item_location</key>
 		<string>apps/Brave/Brave-144.1.86.146.dmg</string>
+		<key>installer_item_size</key>
+		<integer>230615</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.brave.Browser</string>
+				<key>CFBundleName</key>
+				<string>Brave</string>
+				<key>CFBundleShortVersionString</key>
+				<string>144.1.86.146</string>
+				<key>CFBundleVersion</key>
+				<string>186.146</string>
+				<key>minosversion</key>
+				<string>12.0</string>
+				<key>path</key>
+				<string>/Applications/Brave Browser.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Brave Browser.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.0</string>
+		<key>name</key>
+		<string>Brave</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>144.1.86.146</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Browsers</string>
+		<key>description</key>
+		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
+		<key>developer</key>
+		<string>Brave Software Inc.</string>
+		<key>display_name</key>
+		<string>Brave Browser</string>
+		<key>installer_item_hash</key>
+		<string>440cdf3d2c2b5f63817ce8eb8895782b4ceac5e7dc026405d16c2a92e4441ddd</string>
+		<key>installer_item_location</key>
+		<string>apps/Brave/Brave-144.1.86.146__5.dmg</string>
 		<key>installer_item_size</key>
 		<integer>230615</integer>
 		<key>installer_type</key>
@@ -25837,6 +26424,75 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<string>56ee657c3aaf5c71b4ab7d6e4f4a77f6eca54633e0bf42a93b8116eb1d1f6ec9</string>
 		<key>installer_item_location</key>
 		<string>apps/VLC/VLC-3.0.23__2.dmg</string>
+		<key>installer_item_size</key>
+		<integer>87035</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>org.videolan.vlc</string>
+				<key>CFBundleName</key>
+				<string>VLC</string>
+				<key>CFBundleShortVersionString</key>
+				<string>3.0.23</string>
+				<key>CFBundleVersion</key>
+				<string>3.0.23</string>
+				<key>minosversion</key>
+				<string>10.7.5</string>
+				<key>path</key>
+				<string>/Applications/VLC.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>VLC.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.7.5</string>
+		<key>name</key>
+		<string>VLC</string>
+		<key>supported_architectures</key>
+		<array>
+			<string>arm64</string>
+			<string>x86_64</string>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>3.0.23</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVD, Audio CD, VCD, and various streaming protocols.</string>
+		<key>developer</key>
+		<string>The VideoLAN Project</string>
+		<key>display_name</key>
+		<string>VLC Media Player</string>
+		<key>installer_item_hash</key>
+		<string>56ee657c3aaf5c71b4ab7d6e4f4a77f6eca54633e0bf42a93b8116eb1d1f6ec9</string>
+		<key>installer_item_location</key>
+		<string>apps/VLC/VLC-3.0.23__26.dmg</string>
 		<key>installer_item_size</key>
 		<integer>87035</integer>
 		<key>installer_type</key>
@@ -28771,6 +29427,76 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<key>installer_item_hash</key>
 		<string>36c71f390f8d62c709c72f657490ac01fe0d5593e7be95484de0408fa306a182</string>
 		<key>installer_item_location</key>
+		<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.21.3__5.dmg</string>
+		<key>installer_item_size</key>
+		<integer>246308</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.openai.atlas</string>
+				<key>CFBundleName</key>
+				<string>ChatGPT Atlas</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.2026.21.3</string>
+				<key>CFBundleVersion</key>
+				<string>20260128170249000</string>
+				<key>minosversion</key>
+				<string>14.2</string>
+				<key>path</key>
+				<string>/Applications/ChatGPT Atlas.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleVersion</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>ChatGPT Atlas.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.2</string>
+		<key>name</key>
+		<string>ChatGPT Atlas</string>
+		<key>supported_architectures</key>
+		<array>
+			<string>arm64</string>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.2026.21.3</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Web Browsers</string>
+		<key>description</key>
+		<string>Official OpenAI ChatGPT Browser application.</string>
+		<key>developer</key>
+		<string>OpenAI, L.L.C.</string>
+		<key>display_name</key>
+		<string>ChatGPT Atlas</string>
+		<key>installer_item_hash</key>
+		<string>36c71f390f8d62c709c72f657490ac01fe0d5593e7be95484de0408fa306a182</string>
+		<key>installer_item_location</key>
 		<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.21.3__2.dmg</string>
 		<key>installer_item_size</key>
 		<integer>246308</integer>
@@ -29940,6 +30666,70 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<string>598aa227ef544d37b7f964c1352e6f2d955fc5a8127cc2a708e7bc02af2cc7f0</string>
 		<key>installer_item_location</key>
 		<string>apps/AutoPkgr/AutoPkgr-1.6.1__8.dmg</string>
+		<key>installer_item_size</key>
+		<integer>5648</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.lindegroup.AutoPkgr</string>
+				<key>CFBundleName</key>
+				<string>AutoPkgr</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.6.1</string>
+				<key>CFBundleVersion</key>
+				<string>1509</string>
+				<key>minosversion</key>
+				<string>10.13</string>
+				<key>path</key>
+				<string>/Applications/AutoPkgr.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>AutoPkgr.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>AutoPkgr</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.6.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>AutoPkgr is a free Mac app that makes it easy to install and configure AutoPkg.</string>
+		<key>developer</key>
+		<string>Linde Group, Inc.</string>
+		<key>display_name</key>
+		<string>AutoPkgr</string>
+		<key>installer_item_hash</key>
+		<string>598aa227ef544d37b7f964c1352e6f2d955fc5a8127cc2a708e7bc02af2cc7f0</string>
+		<key>installer_item_location</key>
+		<string>apps/AutoPkgr/AutoPkgr-1.6.1__85.dmg</string>
 		<key>installer_item_size</key>
 		<integer>5648</integer>
 		<key>installer_type</key>
@@ -36597,6 +37387,70 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<string>a8435c93cfb5f8bbfeea4b134cfad1ac66b67632b75e438c63b1a8ae043bef0e</string>
 		<key>installer_item_location</key>
 		<string>apps/UTM/UTM-4.7.5__12.dmg</string>
+		<key>installer_item_size</key>
+		<integer>244161</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.utmapp.UTM</string>
+				<key>CFBundleName</key>
+				<string>UTM</string>
+				<key>CFBundleShortVersionString</key>
+				<string>4.7.5</string>
+				<key>CFBundleVersion</key>
+				<string>118</string>
+				<key>minosversion</key>
+				<string>11.3</string>
+				<key>path</key>
+				<string>/Applications/UTM.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>UTM.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>11.3</string>
+		<key>name</key>
+		<string>UTM</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>4.7.5</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Virtual machines for iOS and macOS</string>
+		<key>developer</key>
+		<string>Turing Software, LLC</string>
+		<key>display_name</key>
+		<string>UTM</string>
+		<key>installer_item_hash</key>
+		<string>a8435c93cfb5f8bbfeea4b134cfad1ac66b67632b75e438c63b1a8ae043bef0e</string>
+		<key>installer_item_location</key>
+		<string>apps/UTM/UTM-4.7.5__32.dmg</string>
 		<key>installer_item_size</key>
 		<integer>244161</integer>
 		<key>installer_type</key>
