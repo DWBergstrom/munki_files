@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-02-01T05:46:13Z</date>
+		<date>2026-02-05T21:28:24Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,37 +19,39 @@
 	<array>
 		<string>testing</string>
 	</array>
-	<key>category</key>
-	<string>Browsers</string>
 	<key>description</key>
-	<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
+	<string>Enhance The Way You Work with Spatial Audio
+
+Welcome to Atlas, where innovation meets simplicity.
+
+Designed for theatre, live events, concerts and immersive experiences.</string>
 	<key>developer</key>
-	<string>Brave Software Inc.</string>
+	<string>Flamingo Solutions Ltd</string>
 	<key>display_name</key>
-	<string>Brave Browser</string>
+	<string>Atlas</string>
 	<key>installer_item_hash</key>
-	<string>440cdf3d2c2b5f63817ce8eb8895782b4ceac5e7dc026405d16c2a92e4441ddd</string>
+	<string>4e8c5dbdc55356607034d5cbe4f39d198cd222260653baa969ee1feeb4d7c482</string>
 	<key>installer_item_location</key>
-	<string>apps/Brave/Brave-144.1.86.146__3.dmg</string>
+	<string>apps/Atlas/Atlas-2.1.2.dmg</string>
 	<key>installer_item_size</key>
-	<integer>230615</integer>
+	<integer>30378</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.brave.Browser</string>
+			<string>com.flamingosoftware.atlas</string>
 			<key>CFBundleName</key>
-			<string>Brave</string>
+			<string>Atlas</string>
 			<key>CFBundleShortVersionString</key>
-			<string>144.1.86.146</string>
+			<string>2.1.2</string>
 			<key>CFBundleVersion</key>
-			<string>186.146</string>
+			<string>326</string>
 			<key>minosversion</key>
-			<string>12.0</string>
+			<string>14.6</string>
 			<key>path</key>
-			<string>/Applications/Brave Browser.app</string>
+			<string>/Applications/Atlas.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -62,20 +64,22 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Brave Browser.app</string>
+			<string>Atlas.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>12.0</string>
+	<string>14.6</string>
 	<key>name</key>
-	<string>Brave</string>
+	<string>Atlas</string>
 	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>144.1.86.146</string>
+	<string>2.1.2</string>
 </dict>
 </plist>

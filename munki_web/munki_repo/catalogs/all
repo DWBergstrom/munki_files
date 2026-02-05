@@ -16929,316 +16929,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>catalogs</key>
 		<array>
 			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Mozilla Firefox is a free and open source web browser.</string>
-		<key>display_name</key>
-		<string>Mozilla Firefox</string>
-		<key>installer_item_hash</key>
-		<string>767ee20f7742da7c6ea5edc6daa5ca66be56f299d457a188172fe9ba9b658c68</string>
-		<key>installer_item_location</key>
-		<string>apps/firefox/Firefox-147.0.2.dmg</string>
-		<key>installer_item_size</key>
-		<integer>142164</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.mozilla.firefox</string>
-				<key>CFBundleName</key>
-				<string>Firefox</string>
-				<key>CFBundleShortVersionString</key>
-				<string>147.0.2</string>
-				<key>CFBundleVersion</key>
-				<string>14726.1.26</string>
-				<key>minosversion</key>
-				<string>10.15.0</string>
-				<key>path</key>
-				<string>/Applications/Firefox.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Firefox.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.15.0</string>
-		<key>name</key>
-		<string>Firefox</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>147.0.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Mozilla Firefox is a free and open source web browser.</string>
-		<key>display_name</key>
-		<string>Mozilla Firefox</string>
-		<key>installer_item_hash</key>
-		<string>767ee20f7742da7c6ea5edc6daa5ca66be56f299d457a188172fe9ba9b658c68</string>
-		<key>installer_item_location</key>
-		<string>apps/firefox/Firefox-147.0.2__3.dmg</string>
-		<key>installer_item_size</key>
-		<integer>142164</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.mozilla.firefox</string>
-				<key>CFBundleName</key>
-				<string>Firefox</string>
-				<key>CFBundleShortVersionString</key>
-				<string>147.0.2</string>
-				<key>CFBundleVersion</key>
-				<string>14726.1.26</string>
-				<key>minosversion</key>
-				<string>10.15.0</string>
-				<key>path</key>
-				<string>/Applications/Firefox.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Firefox.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.15.0</string>
-		<key>name</key>
-		<string>Firefox</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>147.0.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Mozilla Firefox is a free and open source web browser.</string>
-		<key>display_name</key>
-		<string>Mozilla Firefox</string>
-		<key>installer_item_hash</key>
-		<string>767ee20f7742da7c6ea5edc6daa5ca66be56f299d457a188172fe9ba9b658c68</string>
-		<key>installer_item_location</key>
-		<string>apps/firefox/Firefox-147.0.2__1.dmg</string>
-		<key>installer_item_size</key>
-		<integer>142164</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.mozilla.firefox</string>
-				<key>CFBundleName</key>
-				<string>Firefox</string>
-				<key>CFBundleShortVersionString</key>
-				<string>147.0.2</string>
-				<key>CFBundleVersion</key>
-				<string>14726.1.26</string>
-				<key>minosversion</key>
-				<string>10.15.0</string>
-				<key>path</key>
-				<string>/Applications/Firefox.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Firefox.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.15.0</string>
-		<key>name</key>
-		<string>Firefox</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>147.0.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Mozilla Firefox is a free and open source web browser.</string>
-		<key>display_name</key>
-		<string>Mozilla Firefox</string>
-		<key>installer_item_hash</key>
-		<string>767ee20f7742da7c6ea5edc6daa5ca66be56f299d457a188172fe9ba9b658c68</string>
-		<key>installer_item_location</key>
-		<string>apps/firefox/Firefox-147.0.2__5.dmg</string>
-		<key>installer_item_size</key>
-		<integer>142164</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.mozilla.firefox</string>
-				<key>CFBundleName</key>
-				<string>Firefox</string>
-				<key>CFBundleShortVersionString</key>
-				<string>147.0.2</string>
-				<key>CFBundleVersion</key>
-				<string>14726.1.26</string>
-				<key>minosversion</key>
-				<string>10.15.0</string>
-				<key>path</key>
-				<string>/Applications/Firefox.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Firefox.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.15.0</string>
-		<key>name</key>
-		<string>Firefox</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>147.0.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Mozilla Firefox is a free and open source web browser.</string>
-		<key>display_name</key>
-		<string>Mozilla Firefox</string>
-		<key>installer_item_hash</key>
-		<string>767ee20f7742da7c6ea5edc6daa5ca66be56f299d457a188172fe9ba9b658c68</string>
-		<key>installer_item_location</key>
-		<string>apps/firefox/Firefox-147.0.2__7.dmg</string>
-		<key>installer_item_size</key>
-		<integer>142164</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.mozilla.firefox</string>
-				<key>CFBundleName</key>
-				<string>Firefox</string>
-				<key>CFBundleShortVersionString</key>
-				<string>147.0.2</string>
-				<key>CFBundleVersion</key>
-				<string>14726.1.26</string>
-				<key>minosversion</key>
-				<string>10.15.0</string>
-				<key>path</key>
-				<string>/Applications/Firefox.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Firefox.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.15.0</string>
-		<key>name</key>
-		<string>Firefox</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>147.0.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
 			<string>development</string>
 		</array>
 		<key>description</key>
@@ -17295,192 +16985,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<true/>
 		<key>version</key>
 		<string>113.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Mozilla Firefox is a free and open source web browser.</string>
-		<key>display_name</key>
-		<string>Mozilla Firefox</string>
-		<key>installer_item_hash</key>
-		<string>767ee20f7742da7c6ea5edc6daa5ca66be56f299d457a188172fe9ba9b658c68</string>
-		<key>installer_item_location</key>
-		<string>apps/firefox/Firefox-147.0.2__2.dmg</string>
-		<key>installer_item_size</key>
-		<integer>142164</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.mozilla.firefox</string>
-				<key>CFBundleName</key>
-				<string>Firefox</string>
-				<key>CFBundleShortVersionString</key>
-				<string>147.0.2</string>
-				<key>CFBundleVersion</key>
-				<string>14726.1.26</string>
-				<key>minosversion</key>
-				<string>10.15.0</string>
-				<key>path</key>
-				<string>/Applications/Firefox.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Firefox.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.15.0</string>
-		<key>name</key>
-		<string>Firefox</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>147.0.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Mozilla Firefox is a free and open source web browser.</string>
-		<key>display_name</key>
-		<string>Mozilla Firefox</string>
-		<key>installer_item_hash</key>
-		<string>767ee20f7742da7c6ea5edc6daa5ca66be56f299d457a188172fe9ba9b658c68</string>
-		<key>installer_item_location</key>
-		<string>apps/firefox/Firefox-147.0.2__6.dmg</string>
-		<key>installer_item_size</key>
-		<integer>142164</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.mozilla.firefox</string>
-				<key>CFBundleName</key>
-				<string>Firefox</string>
-				<key>CFBundleShortVersionString</key>
-				<string>147.0.2</string>
-				<key>CFBundleVersion</key>
-				<string>14726.1.26</string>
-				<key>minosversion</key>
-				<string>10.15.0</string>
-				<key>path</key>
-				<string>/Applications/Firefox.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Firefox.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.15.0</string>
-		<key>name</key>
-		<string>Firefox</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>147.0.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Mozilla Firefox is a free and open source web browser.</string>
-		<key>display_name</key>
-		<string>Mozilla Firefox</string>
-		<key>installer_item_hash</key>
-		<string>767ee20f7742da7c6ea5edc6daa5ca66be56f299d457a188172fe9ba9b658c68</string>
-		<key>installer_item_location</key>
-		<string>apps/firefox/Firefox-147.0.2__4.dmg</string>
-		<key>installer_item_size</key>
-		<integer>142164</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.mozilla.firefox</string>
-				<key>CFBundleName</key>
-				<string>Firefox</string>
-				<key>CFBundleShortVersionString</key>
-				<string>147.0.2</string>
-				<key>CFBundleVersion</key>
-				<string>14726.1.26</string>
-				<key>minosversion</key>
-				<string>10.15.0</string>
-				<key>path</key>
-				<string>/Applications/Firefox.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Firefox.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.15.0</string>
-		<key>name</key>
-		<string>Firefox</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>147.0.2</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -24962,6 +24466,51 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>catalogs</key>
 		<array>
 			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Productivity</string>
+		<key>description</key>
+		<string>Microsoft Edge web browser</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Microsoft Edge</string>
+		<key>installed_size</key>
+		<integer>938983</integer>
+		<key>installer_item_hash</key>
+		<string>4cec2b0b812cd4abf9bf4f5e74efc0d732ca93e331c78478ddd2b52e548d48bb</string>
+		<key>installer_item_location</key>
+		<string>apps/Microsoft/Microsoft_Edge-144.0.3719.115.pkg</string>
+		<key>installer_item_size</key>
+		<integer>405336</integer>
+		<key>minimum_os_version</key>
+		<string>10.10.0</string>
+		<key>name</key>
+		<string>MicrosoftEdge</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>938983</integer>
+				<key>packageid</key>
+				<string>com.microsoft.edgemac</string>
+				<key>version</key>
+				<string>144.0.3719.115</string>
+			</dict>
+		</array>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>144.0.3719.115</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
 			<string>development</string>
 		</array>
 		<key>category</key>
@@ -25585,204 +25134,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>catalogs</key>
 		<array>
 			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Browsers</string>
-		<key>description</key>
-		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
-		<key>developer</key>
-		<string>Brave Software Inc.</string>
-		<key>display_name</key>
-		<string>Brave Browser</string>
-		<key>installer_item_hash</key>
-		<string>440cdf3d2c2b5f63817ce8eb8895782b4ceac5e7dc026405d16c2a92e4441ddd</string>
-		<key>installer_item_location</key>
-		<string>apps/Brave/Brave-144.1.86.146__4.dmg</string>
-		<key>installer_item_size</key>
-		<integer>230615</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.brave.Browser</string>
-				<key>CFBundleName</key>
-				<string>Brave</string>
-				<key>CFBundleShortVersionString</key>
-				<string>144.1.86.146</string>
-				<key>CFBundleVersion</key>
-				<string>186.146</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Brave Browser.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Brave Browser.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Brave</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>144.1.86.146</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Browsers</string>
-		<key>description</key>
-		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
-		<key>developer</key>
-		<string>Brave Software Inc.</string>
-		<key>display_name</key>
-		<string>Brave Browser</string>
-		<key>installer_item_hash</key>
-		<string>440cdf3d2c2b5f63817ce8eb8895782b4ceac5e7dc026405d16c2a92e4441ddd</string>
-		<key>installer_item_location</key>
-		<string>apps/Brave/Brave-144.1.86.146__6.dmg</string>
-		<key>installer_item_size</key>
-		<integer>230615</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.brave.Browser</string>
-				<key>CFBundleName</key>
-				<string>Brave</string>
-				<key>CFBundleShortVersionString</key>
-				<string>144.1.86.146</string>
-				<key>CFBundleVersion</key>
-				<string>186.146</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Brave Browser.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Brave Browser.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Brave</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>144.1.86.146</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Browsers</string>
-		<key>description</key>
-		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
-		<key>developer</key>
-		<string>Brave Software Inc.</string>
-		<key>display_name</key>
-		<string>Brave Browser</string>
-		<key>installer_item_hash</key>
-		<string>440cdf3d2c2b5f63817ce8eb8895782b4ceac5e7dc026405d16c2a92e4441ddd</string>
-		<key>installer_item_location</key>
-		<string>apps/Brave/Brave-144.1.86.146__2.dmg</string>
-		<key>installer_item_size</key>
-		<integer>230615</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.brave.Browser</string>
-				<key>CFBundleName</key>
-				<string>Brave</string>
-				<key>CFBundleShortVersionString</key>
-				<string>144.1.86.146</string>
-				<key>CFBundleVersion</key>
-				<string>186.146</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Brave Browser.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Brave Browser.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Brave</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>144.1.86.146</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
 			<string>development</string>
 		</array>
 		<key>category</key>
@@ -25860,138 +25211,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>display_name</key>
 		<string>Brave Browser</string>
 		<key>installer_item_hash</key>
-		<string>440cdf3d2c2b5f63817ce8eb8895782b4ceac5e7dc026405d16c2a92e4441ddd</string>
-		<key>installer_item_location</key>
-		<string>apps/Brave/Brave-144.1.86.146.dmg</string>
-		<key>installer_item_size</key>
-		<integer>230615</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.brave.Browser</string>
-				<key>CFBundleName</key>
-				<string>Brave</string>
-				<key>CFBundleShortVersionString</key>
-				<string>144.1.86.146</string>
-				<key>CFBundleVersion</key>
-				<string>186.146</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Brave Browser.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Brave Browser.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Brave</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>144.1.86.146</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Browsers</string>
-		<key>description</key>
-		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
-		<key>developer</key>
-		<string>Brave Software Inc.</string>
-		<key>display_name</key>
-		<string>Brave Browser</string>
-		<key>installer_item_hash</key>
-		<string>440cdf3d2c2b5f63817ce8eb8895782b4ceac5e7dc026405d16c2a92e4441ddd</string>
-		<key>installer_item_location</key>
-		<string>apps/Brave/Brave-144.1.86.146__5.dmg</string>
-		<key>installer_item_size</key>
-		<integer>230615</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.brave.Browser</string>
-				<key>CFBundleName</key>
-				<string>Brave</string>
-				<key>CFBundleShortVersionString</key>
-				<string>144.1.86.146</string>
-				<key>CFBundleVersion</key>
-				<string>186.146</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Brave Browser.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Brave Browser.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Brave</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>144.1.86.146</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Browsers</string>
-		<key>description</key>
-		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
-		<key>developer</key>
-		<string>Brave Software Inc.</string>
-		<key>display_name</key>
-		<string>Brave Browser</string>
-		<key>installer_item_hash</key>
 		<string>0be69f2c1e4a645f96ef46d30932f68f69e5b65d1ed32c3f241152d77030cdbc</string>
 		<key>installer_item_location</key>
 		<string>apps/Brave/Brave-129.1.70.126.dmg</string>
@@ -26041,138 +25260,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<true/>
 		<key>version</key>
 		<string>129.1.70.126</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Browsers</string>
-		<key>description</key>
-		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
-		<key>developer</key>
-		<string>Brave Software Inc.</string>
-		<key>display_name</key>
-		<string>Brave Browser</string>
-		<key>installer_item_hash</key>
-		<string>440cdf3d2c2b5f63817ce8eb8895782b4ceac5e7dc026405d16c2a92e4441ddd</string>
-		<key>installer_item_location</key>
-		<string>apps/Brave/Brave-144.1.86.146__1.dmg</string>
-		<key>installer_item_size</key>
-		<integer>230615</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.brave.Browser</string>
-				<key>CFBundleName</key>
-				<string>Brave</string>
-				<key>CFBundleShortVersionString</key>
-				<string>144.1.86.146</string>
-				<key>CFBundleVersion</key>
-				<string>186.146</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Brave Browser.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Brave Browser.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Brave</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>144.1.86.146</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Browsers</string>
-		<key>description</key>
-		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
-		<key>developer</key>
-		<string>Brave Software Inc.</string>
-		<key>display_name</key>
-		<string>Brave Browser</string>
-		<key>installer_item_hash</key>
-		<string>440cdf3d2c2b5f63817ce8eb8895782b4ceac5e7dc026405d16c2a92e4441ddd</string>
-		<key>installer_item_location</key>
-		<string>apps/Brave/Brave-144.1.86.146__3.dmg</string>
-		<key>installer_item_size</key>
-		<integer>230615</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.brave.Browser</string>
-				<key>CFBundleName</key>
-				<string>Brave</string>
-				<key>CFBundleShortVersionString</key>
-				<string>144.1.86.146</string>
-				<key>CFBundleVersion</key>
-				<string>186.146</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Brave Browser.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Brave Browser.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Brave</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>144.1.86.146</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -30163,496 +29250,6 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<key>display_name</key>
 		<string>ChatGPT Atlas</string>
 		<key>installer_item_hash</key>
-		<string>36c71f390f8d62c709c72f657490ac01fe0d5593e7be95484de0408fa306a182</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.21.3__3.dmg</string>
-		<key>installer_item_size</key>
-		<integer>246308</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.openai.atlas</string>
-				<key>CFBundleName</key>
-				<string>ChatGPT Atlas</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.2026.21.3</string>
-				<key>CFBundleVersion</key>
-				<string>20260128170249000</string>
-				<key>minosversion</key>
-				<string>14.2</string>
-				<key>path</key>
-				<string>/Applications/ChatGPT Atlas.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>ChatGPT Atlas.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.2</string>
-		<key>name</key>
-		<string>ChatGPT Atlas</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>arm64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.21.3</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Web Browsers</string>
-		<key>description</key>
-		<string>Official OpenAI ChatGPT Browser application.</string>
-		<key>developer</key>
-		<string>OpenAI, L.L.C.</string>
-		<key>display_name</key>
-		<string>ChatGPT Atlas</string>
-		<key>installer_item_hash</key>
-		<string>36c71f390f8d62c709c72f657490ac01fe0d5593e7be95484de0408fa306a182</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.21.3__1.dmg</string>
-		<key>installer_item_size</key>
-		<integer>246308</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.openai.atlas</string>
-				<key>CFBundleName</key>
-				<string>ChatGPT Atlas</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.2026.21.3</string>
-				<key>CFBundleVersion</key>
-				<string>20260128170249000</string>
-				<key>minosversion</key>
-				<string>14.2</string>
-				<key>path</key>
-				<string>/Applications/ChatGPT Atlas.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>ChatGPT Atlas.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.2</string>
-		<key>name</key>
-		<string>ChatGPT Atlas</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>arm64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.21.3</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Web Browsers</string>
-		<key>description</key>
-		<string>Official OpenAI ChatGPT Browser application.</string>
-		<key>developer</key>
-		<string>OpenAI, L.L.C.</string>
-		<key>display_name</key>
-		<string>ChatGPT Atlas</string>
-		<key>installer_item_hash</key>
-		<string>36c71f390f8d62c709c72f657490ac01fe0d5593e7be95484de0408fa306a182</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.21.3__5.dmg</string>
-		<key>installer_item_size</key>
-		<integer>246308</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.openai.atlas</string>
-				<key>CFBundleName</key>
-				<string>ChatGPT Atlas</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.2026.21.3</string>
-				<key>CFBundleVersion</key>
-				<string>20260128170249000</string>
-				<key>minosversion</key>
-				<string>14.2</string>
-				<key>path</key>
-				<string>/Applications/ChatGPT Atlas.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>ChatGPT Atlas.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.2</string>
-		<key>name</key>
-		<string>ChatGPT Atlas</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>arm64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.21.3</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Web Browsers</string>
-		<key>description</key>
-		<string>Official OpenAI ChatGPT Browser application.</string>
-		<key>developer</key>
-		<string>OpenAI, L.L.C.</string>
-		<key>display_name</key>
-		<string>ChatGPT Atlas</string>
-		<key>installer_item_hash</key>
-		<string>36c71f390f8d62c709c72f657490ac01fe0d5593e7be95484de0408fa306a182</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.21.3__2.dmg</string>
-		<key>installer_item_size</key>
-		<integer>246308</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.openai.atlas</string>
-				<key>CFBundleName</key>
-				<string>ChatGPT Atlas</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.2026.21.3</string>
-				<key>CFBundleVersion</key>
-				<string>20260128170249000</string>
-				<key>minosversion</key>
-				<string>14.2</string>
-				<key>path</key>
-				<string>/Applications/ChatGPT Atlas.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>ChatGPT Atlas.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.2</string>
-		<key>name</key>
-		<string>ChatGPT Atlas</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>arm64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.21.3</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Web Browsers</string>
-		<key>description</key>
-		<string>Official OpenAI ChatGPT Browser application.</string>
-		<key>developer</key>
-		<string>OpenAI, L.L.C.</string>
-		<key>display_name</key>
-		<string>ChatGPT Atlas</string>
-		<key>installer_item_hash</key>
-		<string>36c71f390f8d62c709c72f657490ac01fe0d5593e7be95484de0408fa306a182</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.21.3__6.dmg</string>
-		<key>installer_item_size</key>
-		<integer>246308</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.openai.atlas</string>
-				<key>CFBundleName</key>
-				<string>ChatGPT Atlas</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.2026.21.3</string>
-				<key>CFBundleVersion</key>
-				<string>20260128170249000</string>
-				<key>minosversion</key>
-				<string>14.2</string>
-				<key>path</key>
-				<string>/Applications/ChatGPT Atlas.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>ChatGPT Atlas.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.2</string>
-		<key>name</key>
-		<string>ChatGPT Atlas</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>arm64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.21.3</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Web Browsers</string>
-		<key>description</key>
-		<string>Official OpenAI ChatGPT Browser application.</string>
-		<key>developer</key>
-		<string>OpenAI, L.L.C.</string>
-		<key>display_name</key>
-		<string>ChatGPT Atlas</string>
-		<key>installer_item_hash</key>
-		<string>36c71f390f8d62c709c72f657490ac01fe0d5593e7be95484de0408fa306a182</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.21.3__4.dmg</string>
-		<key>installer_item_size</key>
-		<integer>246308</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.openai.atlas</string>
-				<key>CFBundleName</key>
-				<string>ChatGPT Atlas</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.2026.21.3</string>
-				<key>CFBundleVersion</key>
-				<string>20260128170249000</string>
-				<key>minosversion</key>
-				<string>14.2</string>
-				<key>path</key>
-				<string>/Applications/ChatGPT Atlas.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>ChatGPT Atlas.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.2</string>
-		<key>name</key>
-		<string>ChatGPT Atlas</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>arm64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.21.3</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Web Browsers</string>
-		<key>description</key>
-		<string>Official OpenAI ChatGPT Browser application.</string>
-		<key>developer</key>
-		<string>OpenAI, L.L.C.</string>
-		<key>display_name</key>
-		<string>ChatGPT Atlas</string>
-		<key>installer_item_hash</key>
-		<string>36c71f390f8d62c709c72f657490ac01fe0d5593e7be95484de0408fa306a182</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.21.3.dmg</string>
-		<key>installer_item_size</key>
-		<integer>246308</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.openai.atlas</string>
-				<key>CFBundleName</key>
-				<string>ChatGPT Atlas</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.2026.21.3</string>
-				<key>CFBundleVersion</key>
-				<string>20260128170249000</string>
-				<key>minosversion</key>
-				<string>14.2</string>
-				<key>path</key>
-				<string>/Applications/ChatGPT Atlas.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>ChatGPT Atlas.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.2</string>
-		<key>name</key>
-		<string>ChatGPT Atlas</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>arm64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.21.3</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Web Browsers</string>
-		<key>description</key>
-		<string>Official OpenAI ChatGPT Browser application.</string>
-		<key>developer</key>
-		<string>OpenAI, L.L.C.</string>
-		<key>display_name</key>
-		<string>ChatGPT Atlas</string>
-		<key>installer_item_hash</key>
 		<string>43a0d3e65d1a44b5120474af2cc902ba4dddb658cd0133e096808e7fd84f406e</string>
 		<key>installer_item_location</key>
 		<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.28.6.dmg</string>
@@ -30706,6 +29303,76 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<true/>
 		<key>version</key>
 		<string>1.2026.28.6</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Enhance The Way You Work with Spatial Audio
+
+Welcome to Atlas, where innovation meets simplicity.
+
+Designed for theatre, live events, concerts and immersive experiences.</string>
+		<key>developer</key>
+		<string>Flamingo Solutions Ltd</string>
+		<key>display_name</key>
+		<string>Atlas</string>
+		<key>installer_item_hash</key>
+		<string>4e8c5dbdc55356607034d5cbe4f39d198cd222260653baa969ee1feeb4d7c482</string>
+		<key>installer_item_location</key>
+		<string>apps/Atlas/Atlas-2.1.2.dmg</string>
+		<key>installer_item_size</key>
+		<integer>30378</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.flamingosoftware.atlas</string>
+				<key>CFBundleName</key>
+				<string>Atlas</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2.1.2</string>
+				<key>CFBundleVersion</key>
+				<string>326</string>
+				<key>minosversion</key>
+				<string>14.6</string>
+				<key>path</key>
+				<string>/Applications/Atlas.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Atlas.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.6</string>
+		<key>name</key>
+		<string>Atlas</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2.1.2</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
