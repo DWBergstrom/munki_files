@@ -146,9 +146,9 @@ else
 	log "Tailscale serving status: ${TAILSCALE_SERVING_STATUS}"
 	log "Attempting to start tailscale serve..."
 	# Clear any existing configuration first, then set the new path
-	$TAILSCALE_CMD serve --reset 2>/dev/null
+	$TAILSCALE_CMD serve reset 2>/dev/null
 	sleep 1
-	if $TAILSCALE_CMD serve --bg --set-path /munki "http://127.0.0.1:${WEBSERVER_PORT}/" 2>/dev/null; then
+	if $TAILSCALE_CMD serve --bg --set-path ${TAILSCALE_URL}/munki "http://127.0.0.1:${WEBSERVER_PORT}/" 2>/dev/null; then
 		sleep 2
 		# Get fresh status after configuration
 		TAILSCALE_SERVE_OUTPUT=$($TAILSCALE_CMD serve status 2>/dev/null)
