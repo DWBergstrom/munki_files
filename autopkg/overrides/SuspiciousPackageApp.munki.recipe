@@ -39,11 +39,11 @@
 			<key>com.github.poundbangbash.eholtam-recipes.download.SuspiciousPackageApp</key>
 			<dict>
 				<key>git_hash</key>
-				<string>865ba08bc02a966f3b9313c2635736e2cc625648</string>
+				<string>a7da48be577e0efb85a8106736e2026015396a2c</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.eholtam-recipes/SuspiciousPackageApp/SuspiciousPackageApp.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>2921d0eaffa7b853f673f59c81e9632674501e5512da30ca4e2944c8705ab359</string>
+				<string>12f36889a08ace5732789bb992168e245c31e2443db58c360ffed840df9c93a0</string>
 			</dict>
 			<key>com.github.poundbangbash.eholtam-recipes.munki.SuspiciousPackageApp</key>
 			<dict>

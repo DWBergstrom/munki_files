@@ -52,11 +52,11 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 			<key>com.github.dataJAR-recipes.munki.Raycast</key>
 			<dict>
 				<key>git_hash</key>
-				<string>f87f8e97f6d0e22772048c009e8f939e24932ecf</string>
+				<string>0167678da8768f7c802927fac9b43ed0e9abaf34</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Raycast/Raycast.munki.recipe</string>
 				<key>sha256_hash</key>
-				<string>abee5260649c7cf04a896f94966f200c4562de03ab735a9ff9729870a7cff22f</string>
+				<string>2c23e1638e96639ef018a666d41b5e71b71a779de5ecd84828be35e65acfb586</string>
 			</dict>
 		</dict>
 	</dict>

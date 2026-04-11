@@ -48,11 +48,11 @@
 			<key>com.github.homebysix.munki.RecipeRobot</key>
 			<dict>
 				<key>git_hash</key>
-				<string>665186b0a88649dbd1d4fb42fbcf649acdd25c50</string>
+				<string>82681adff24878d0843ce0bc1ed3601268822263</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Elliot Jordan/Recipe Robot.munki.recipe</string>
 				<key>sha256_hash</key>
-				<string>021dfd251ddb659e83c836636d284ecaf2697b9542ec607e57aa5054b7fedbd5</string>
+				<string>c75927a3ba43a42c2d5eb15a1b4086ea5a01d365cc74ac36616625cf7b10f396</string>
 			</dict>
 		</dict>
 	</dict>

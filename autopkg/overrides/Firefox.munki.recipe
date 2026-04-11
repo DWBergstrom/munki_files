@@ -60,11 +60,11 @@
 			<key>com.github.autopkg.munki.firefox-rc-en_US</key>
 			<dict>
 				<key>git_hash</key>
-				<string>b8ebd97b7fc92cc4a9dc382ccc2ff8090c1b8f21</string>
+				<string>a501cf3dc4a6c72675b596dd2354602bd611fe3e</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/Mozilla/Firefox.munki.recipe</string>
 				<key>sha256_hash</key>
-				<string>3c0f6aa5c32194c854a6ff406525c603ffa5e33776d2509f574a7651fed3967d</string>
+				<string>3a7cc5c6a4f3a538f1188261667b84e3358c5b00dacfbdbe9615df1a5b6bb715</string>
 			</dict>
 		</dict>
 	</dict>

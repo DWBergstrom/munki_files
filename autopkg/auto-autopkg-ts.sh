@@ -1,25 +1,49 @@
 #!/bin/bash
 
-# logging functions
+# Log file setup - writes to ~/Library/Logs for Console.app visibility
+LOG_DIR="${HOME}/Library/Logs"
+LOG_FILE="${LOG_DIR}/auto-autopkg-ts.log"
+mkdir -p "${LOG_DIR}"
+
+# Rotate log if larger than 10MB
+if [ -f "${LOG_FILE}" ] && [ $(stat -f%z "${LOG_FILE}" 2>/dev/null || echo 0) -gt 10485760 ]; then
+	mv "${LOG_FILE}" "${LOG_FILE}.$(date +%Y%m%d_%H%M%S).bak"
+fi
+
+# Function to write to log file (strips color codes)
+write_log() {
+	echo "$1" | sed 's/\x1b\[[0-9;]*m//g' >> "${LOG_FILE}"
+}
+
+# logging functions - output to both console and log file
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 BLUE='\033[1;34m'
 NC='\033[0m' # No Color
 log() {
-	echo -e "${GREEN}[$(date +'%Y-%m-%d %H:%M:%S')]${NC} $1"
+	local msg="${GREEN}[$(date +'%Y-%m-%d %H:%M:%S')]${NC} $1"
+	echo -e "${msg}"
+	write_log "[$(date +'%Y-%m-%d %H:%M:%S')] $1"
 }
 error() {
-	echo -e "${RED}[$(date +'%Y-%m-%d %H:%M:%S')][ERROR]${NC} $1" >&2
+	local msg="${RED}[$(date +'%Y-%m-%d %H:%M:%S')][ERROR]${NC} $1"
+	echo -e "${msg}" >&2
+	write_log "[$(date +'%Y-%m-%d %H:%M:%S')][ERROR] $1"
 }
 warn() {
-	echo -e "${YELLOW}[$(date +'%Y-%m-%d %H:%M:%S')][WARNING]${NC} $1"
+	local msg="${YELLOW}[$(date +'%Y-%m-%d %H:%M:%S')][WARNING]${NC} $1"
+	echo -e "${msg}"
+	write_log "[$(date +'%Y-%m-%d %H:%M:%S')][WARNING] $1"
 }
 info() {
-	echo -e "${BLUE}[$(date +'%Y-%m-%d %H:%M:%S')][INFO]${NC} $1"
+	local msg="${BLUE}[$(date +'%Y-%m-%d %H:%M:%S')][INFO]${NC} $1"
+	echo -e "${msg}"
+	write_log "[$(date +'%Y-%m-%d %H:%M:%S')][INFO] $1"
 }
 
 log "executing auto-autopkg-ts.sh from ${PWD}"
+log "Log file: ${LOG_FILE}"
 
 # Prerequisites checks
 # Verify tailscale is installed
@@ -211,6 +235,106 @@ function run_repoclean {
 	echo "--- [repoclean] Finished repoclean run ---" >&2
 }
 
+function verify_trust_info {
+	log "Verifying trust info for all overrides..."
+	echo "--- [verify-trust-info] Starting trust verification ---" >&2
+	write_log "--- [verify-trust-info] Starting trust verification ---"
+	
+	trust_output=$(mktemp)
+	failed_recipes=()
+	failed_recipe_paths=()
+	
+	for override in "${OVERRIDES_DIR}"/*; do
+		if [ -f "${override}" ]; then
+			override_name=$(basename "${override}" .munki.recipe)
+			# Run verify-trust-info with -vv for verbose output
+			if ! "${AUTOPKG_CMD}" verify-trust-info -vv "${override}" > "${trust_output}" 2>&1; then
+				# Check if it's a trust verification failure vs other error
+				if grep -q "FAILED" "${trust_output}" 2>/dev/null; then
+					failed_recipes+=("${override_name}")
+					failed_recipe_paths+=("${override}")
+					warn "[verify-trust-info] Trust verification FAILED for: ${override_name}"
+					# Log verbose output to file for Console.app review
+					write_log "--- Trust verification details for ${override_name} ---"
+					cat "${trust_output}" >> "${LOG_FILE}"
+					write_log "--- End trust verification details ---"
+					# Show summary in console
+					if grep -q "non-core processor" "${trust_output}" 2>/dev/null; then
+						info "  Non-core processor has changed"
+					fi
+					if grep -q "parent recipe" "${trust_output}" 2>/dev/null; then
+						info "  Parent recipe has changed"
+					fi
+				else
+					# Other error (e.g., recipe not found)
+					error "[verify-trust-info] Error checking ${override_name}: $(cat "${trust_output}")"
+				fi
+			fi
+		fi
+	done
+	
+	rm -f "${trust_output}"
+	
+	# Summary
+	if [ ${#failed_recipes[@]} -gt 0 ]; then
+		warn "[verify-trust-info] ${#failed_recipes[@]} recipe(s) have trust verification failures:"
+		for recipe in "${failed_recipes[@]}"; do
+			warn "  - ${recipe}"
+		done
+		info "See ${LOG_FILE} for detailed diff output"
+		
+		# If interactive, offer to update trust or continue
+		if [ -t 0 ] && [ -t 1 ]; then
+			echo ""
+			echo "Options:"
+			echo "  u) Update trust info for failed recipes (review changes first)"
+			echo "  c) Continue running recipes without updating trust"
+			echo "  a) Abort"
+			read -p "Choose an option [u/c/a]: " trust_choice
+			
+			case "${trust_choice}" in
+				[Uu])
+					log "Updating trust info for failed recipes..."
+					for i in "${!failed_recipes[@]}"; do
+						recipe_name="${failed_recipes[$i]}"
+						recipe_path="${failed_recipe_paths[$i]}"
+						echo ""
+						info "Reviewing changes for: ${recipe_name}"
+						# Show the diff again for review
+						"${AUTOPKG_CMD}" verify-trust-info -vv "${recipe_path}" 2>&1 || true
+						echo ""
+						read -p "Update trust for ${recipe_name}? (y/N): " update_choice
+						if [[ "${update_choice}" =~ ^[Yy]$ ]]; then
+							if "${AUTOPKG_CMD}" update-trust-info "${recipe_path}"; then
+								log "Updated trust info for: ${recipe_name}"
+							else
+								error "Failed to update trust info for: ${recipe_name}"
+							fi
+						else
+							warn "Skipped trust update for: ${recipe_name}"
+						fi
+					done
+					;;
+				[Cc])
+					log "Continuing without updating trust info"
+					;;
+				*)
+					log "Aborting recipe run due to trust verification failures"
+					echo "--- [verify-trust-info] Finished trust verification (aborted) ---" >&2
+					write_log "--- [verify-trust-info] Finished trust verification (aborted) ---"
+					return 1
+					;;
+			esac
+		fi
+	else
+		log "[verify-trust-info] All recipes passed trust verification"
+	fi
+	
+	echo "--- [verify-trust-info] Finished trust verification ---" >&2
+	write_log "--- [verify-trust-info] Finished trust verification ---"
+	return 0
+}
+
 function run_all_overrides {
 	log "Running autopkg repo-update all..."
 	"${AUTOPKG_CMD}" repo-update all
@@ -305,11 +429,76 @@ function make_override () {
 	done
 }
 
+function verify_trust_info_single {
+	local override_path="${1}"
+	local override_name=$(basename "${override_path}" .munki.recipe)
+	
+	log "Verifying trust info for: ${override_name}..."
+	
+	trust_output=$(mktemp)
+	# Run verify-trust-info with -vv for verbose output
+	if ! "${AUTOPKG_CMD}" verify-trust-info -vv "${override_path}" > "${trust_output}" 2>&1; then
+		if grep -q "FAILED" "${trust_output}" 2>/dev/null; then
+			warn "[verify-trust-info] Trust verification FAILED for: ${override_name}"
+			# Display verbose output
+			cat "${trust_output}"
+			# Log to file for Console.app review
+			write_log "--- Trust verification details for ${override_name} ---"
+			cat "${trust_output}" >> "${LOG_FILE}"
+			write_log "--- End trust verification details ---"
+			rm -f "${trust_output}"
+			
+			if [ -t 0 ] && [ -t 1 ]; then
+				echo ""
+				echo "Options:"
+				echo "  u) Update trust info for this recipe"
+				echo "  c) Continue running recipe without updating trust"
+				echo "  a) Abort"
+				read -p "Choose an option [u/c/a]: " trust_choice
+				
+				case "${trust_choice}" in
+					[Uu])
+						log "Updating trust info for: ${override_name}"
+						if "${AUTOPKG_CMD}" update-trust-info "${override_path}"; then
+							log "Updated trust info for: ${override_name}"
+						else
+							error "Failed to update trust info for: ${override_name}"
+							return 1
+						fi
+						;;
+					[Cc])
+						log "Continuing without updating trust info"
+						;;
+					*)
+						log "Aborting recipe run"
+						return 1
+						;;
+				esac
+			fi
+		else
+			error "[verify-trust-info] Error checking ${override_name}: $(cat "${trust_output}")"
+			rm -f "${trust_output}"
+			return 1
+		fi
+	else
+		log "[verify-trust-info] ${override_name} passed trust verification"
+	fi
+	rm -f "${trust_output}"
+	return 0
+}
+
 function run_specified_overrides {
 	run_repoclean
 	shift  # Skip the script option flag
 	override_path="${1}"
 	override_name=$(basename "${override_path}" .munki.recipe)
+	
+	# Verify trust before running
+	if ! verify_trust_info_single "${override_path}"; then
+		error "Trust verification failed for ${override_name}"
+		return 1
+	fi
+	
 	log "Running autopkg for specified overrides: ${override_path}..."
 	# Write context marker to stderr so errors in log have context
 	echo "--- [${override_name}] Starting autopkg run ---" >&2
@@ -501,6 +690,11 @@ function main {
 		verify_autopkg_settings
 		verify_munki_settings
 		run_repoclean
+		# Verify trust info before running overrides (interactive mode can abort)
+		if ! verify_trust_info; then
+			error "Trust verification failed and user chose to abort"
+			exit 1
+		fi
 		run_all_overrides
 		add_new_overrides
 		run_makecatalogs
@@ -508,6 +702,8 @@ function main {
 	else
 		warn "Running from launch agent - skipping autopkg settings verification and munki settings update (requires sudo)"
 		run_repoclean
+		# Verify trust info (non-interactive mode continues despite failures)
+		verify_trust_info || warn "Trust verification had failures - continuing anyway in non-interactive mode"
 		run_all_overrides
 		add_new_overrides
 		run_makecatalogs

@@ -22,10 +22,10 @@
 			<string>Denver Technologies</string>
 			<key>display_name</key>
 			<string>Warp</string>
-			<key>name</key>
-			<string>%NAME%</string>
 			<key>force_munkiimport</key>
 			<true/>
+			<key>name</key>
+			<string>%NAME%</string>
 			<key>unattended_install</key>
 			<true/>
 		</dict>
@@ -50,11 +50,11 @@
 			<key>com.github.homebysix.munki.Warp</key>
 			<dict>
 				<key>git_hash</key>
-				<string>c6058c4b25882bdb7523b0418ec75a9e4d31eb93</string>
+				<string>82681adff24878d0843ce0bc1ed3601268822263</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Warp/Warp.munki.recipe</string>
 				<key>sha256_hash</key>
-				<string>b15a89007cada9237677c2e58ade9be3d2c0ab41c69d09f316995c74fdf98301</string>
+				<string>edd151fe16c12674887ff0d85fa0b86f451066163cf22a0f5d5225b0e6ebd8af</string>
 			</dict>
 		</dict>
 	</dict>

@@ -48,11 +48,11 @@
 			<key>com.github.homebysix.munki.AutoPkgr</key>
 			<dict>
 				<key>git_hash</key>
-				<string>787a03800bafbca3dc640b6f41ff1ea62338a065</string>
+				<string>c366b4f2c2f376ac4198ac3dfe64131cc5357492</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/AutoPkgr/AutoPkgr.munki.recipe</string>
 				<key>sha256_hash</key>
-				<string>e99a12cfa730f0223db312208c2b74f111b21cbefdcecb12a88cf9e1c99ea4ae</string>
+				<string>3fe4494c89c6c7ee7455f51a639685663ad6f3471710337d57db7377ce7bce14</string>
 			</dict>
 		</dict>
 	</dict>

@@ -53,20 +53,20 @@
 			<key>com.github.homebysix.download.Bartender</key>
 			<dict>
 				<key>git_hash</key>
-				<string>3b3cf3d616728802c1bce80bb2dbc000e026e9f4</string>
+				<string>543ebd174de5ff5a5b6710efcc927a03e5ced431</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Bartender/Bartender.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>3612c2ed38858bfec175a7cd10f779cb7064fd13c7c375ac8e3c84806a5e500a</string>
+				<string>67e4d92e62904a447eef0752ad2b7492251d3dee5aad8b466cda727a9db6149e</string>
 			</dict>
 			<key>com.github.homebysix.munki.Bartender</key>
 			<dict>
 				<key>git_hash</key>
-				<string>968b3eac82b42016e3c9513fcf8a136ed8d1f795</string>
+				<string>82681adff24878d0843ce0bc1ed3601268822263</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Bartender/Bartender.munki.recipe</string>
 				<key>sha256_hash</key>
-				<string>29fa069ee624b210db8fe3d7341b3898baf5ab9857e52244a00a7ccc5860defc</string>
+				<string>87cbb3081f21d97ace6c97c4d47d0cbdcfc2fb752318a7f41f489c33fae1f181</string>
 			</dict>
 		</dict>
 	</dict>

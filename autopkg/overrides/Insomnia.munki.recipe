@@ -39,20 +39,20 @@
 			<key>com.github.dataJAR-recipes.download.Insomnia</key>
 			<dict>
 				<key>git_hash</key>
-				<string>dd99bb5a5507c89d3d565d6e746a5ff7ab414519</string>
+				<string>7062b5d6f3bdacaacc679f7f8ff5160a42bfc45c</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Insomnia/Insomnia.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>ef2bb49c127d7124935919eede29a1dfa1bc8ef4efe97228107d3e881ebd47f0</string>
+				<string>745d0ee9956bbcbe0133536fc6476172775034fc47afa32c534b17bd65b021b2</string>
 			</dict>
 			<key>com.github.dataJAR-recipes.munki.Insomnia</key>
 			<dict>
 				<key>git_hash</key>
-				<string>dd99bb5a5507c89d3d565d6e746a5ff7ab414519</string>
+				<string>0167678da8768f7c802927fac9b43ed0e9abaf34</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Insomnia/Insomnia.munki.recipe</string>
 				<key>sha256_hash</key>
-				<string>a50f93adcf0a595d246fc9a48144aeb6cfddb7d90d5828386a74de428d6fea97</string>
+				<string>c0921e26dd82fbabcd2da1c390a46f63b5b4e369a98ee35f3c29de32fb6fe604</string>
 			</dict>
 		</dict>
 	</dict>
