@@ -87,15 +87,27 @@ else
 fi
 
 # Get github token for autopkg (optional)
-# only do this if not running from launch agent
-if [ -t 0 ] && [ -t 1 ]; then
+# only do this if not running from launch agent and op CLI is available
+if [ -t 0 ] && [ -t 1 ] && command -v op &> /dev/null; then
 	log "verifying github token for autopkg..."
-	GITHUB_TOKEN=$(op item get "GitHub - Autopkg" --fields token)
-	if [ -z "${GITHUB_TOKEN}" ]; then
-		error "Github token for autopkg not found. Add to 1Password when possible."
+	# Check if signed into 1Password CLI first
+	if op account list &> /dev/null; then
+		GITHUB_TOKEN=$(op item get "GitHub Personal Access Token: Autopkg Read" --fields token 2>/dev/null)
+		if [ -z "${GITHUB_TOKEN}" ]; then
+			warn "GitHub token for autopkg not found in 1Password."
+			info "Expected item: 'GitHub Personal Access Token: Autopkg Read' with field 'token'"
+			info "Or set GITHUB_TOKEN environment variable"
+		else
+			log "GitHub token for autopkg retrieved from 1Password"
+		fi
 	else
-		log "Github token for autopkg: ${GITHUB_TOKEN}"
+		warn "1Password CLI not authenticated. Run 'op signin' to enable GitHub token retrieval."
 	fi
+fi
+
+# Check if GITHUB_TOKEN was already set in environment (before this script ran)
+if [ -z "${GITHUB_TOKEN:-}" ]; then
+	info "No GitHub token available - autopkg will use unauthenticated GitHub API (rate limited)"
 fi
 
 # Config variables
