@@ -92,7 +92,7 @@ if [ -t 0 ] && [ -t 1 ] && command -v op &> /dev/null; then
 	log "verifying github token for autopkg..."
 	# Check if signed into 1Password CLI first
 	if op account list &> /dev/null; then
-		GITHUB_TOKEN=$(op item get "GitHub Personal Access Token: Autopkg Read" --fields token 2>/dev/null)
+		GITHUB_TOKEN=$(op item get "GitHub Personal Access Token: Autopkg Read" --fields token --reveal 2>/dev/null)
 		if [ -z "${GITHUB_TOKEN}" ]; then
 			warn "GitHub token for autopkg not found in 1Password."
 			info "Expected item: 'GitHub Personal Access Token: Autopkg Read' with field 'token'"
@@ -349,7 +349,9 @@ function verify_trust_info {
 
 function run_all_overrides {
 	log "Running autopkg repo-update all..."
-	"${AUTOPKG_CMD}" repo-update all
+	# Suppress verbose output, log to file, show only errors
+	"${AUTOPKG_CMD}" repo-update all >> "${LOG_FILE}" 2>&1 || warn "Some repos may have failed to update"
+	log "Repo update complete (details in log file)"
 	for override in "${OVERRIDES_DIR}"/*; do
 		# Extract recipe name from override path
 		override_name=$(basename "${override}" .munki.recipe)
