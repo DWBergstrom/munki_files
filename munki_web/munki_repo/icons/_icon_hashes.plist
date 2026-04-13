@@ -6,8 +6,14 @@
 	<string>3f99c31c1cb400f2f498ef602905a42e1e7ca6dc7ec26fb9021c3026b29e73b8</string>
 	<key>Antigravity.png</key>
 	<string>6259bb04e0bb4a1ecbd4f9bd5fb5d2f85293fa7063805589dca15f571c0c1081</string>
+	<key>AppCleaner.png</key>
+	<string>302575481b545c892657d4f1506284e1ffe7fca0d990286a7327fd5b547543c9</string>
+	<key>Apparency.png</key>
+	<string>3bcc667f9210b170a4844c41ee1a71722498dac30527557c6a97d5d3d1e3238b</string>
 	<key>Arc.png</key>
 	<string>a526e65a5c8fd1bb0efbb35aabf44b26de6ba44193470467a76c9b02388d3b63</string>
+	<key>Archaeology.png</key>
+	<string>4514a9adb0c1ea64a49f619cc792c1a81d4061d87a427ec3ed813ddf69567b31</string>
 	<key>Atlas.png</key>
 	<string>3aacd90ca1787b018e240fd97dfe50fc286aec0dd415383780f71e0209b04ef4</string>
 	<key>AutoPkgr.png</key>
@@ -20,8 +26,12 @@
 	<string>404b7397493e7152f661c5a7002917070d3e9b77c8c28a20bb68280dc02dd4ae</string>
 	<key>ChatGPT.png</key>
 	<string>68eac317e3074866fda7eddeed4e714e64a1f3450d23062256a03d22035056a0</string>
+	<key>Claude.png</key>
+	<string>4571774aee75c08a484f3fc18be9b690daa1d33c81af994e87b45af4b29050e4</string>
 	<key>Codex.png</key>
 	<string>b85f017fd75682366b85ada07bc9c84ad1d8b7f108785d098df49cbfafef2665</string>
+	<key>CrystalFetch.png</key>
+	<string>6af6bbbd65baf25a228222bc25f48300e38e95cd8dd677867b597e55707b109b</string>
 	<key>Cursor.png</key>
 	<string>624165e30ce4f4ca15416cb048972ddb528a48c73c5cb0713d6aa18b699ea8b3</string>
 	<key>DFUBlaster.png</key>
@@ -30,8 +40,12 @@
 	<string>33e4bf2b344178174dc4b2d4ea916925a757e44f83d898cecfe4e7c5043ab5d7</string>
 	<key>Docker.png</key>
 	<string>3f4a9bc1415d843baa938ca03b73296ccb9aece3ec8dfd97ade698c30d77409b</string>
+	<key>DuckDuckGo.png</key>
+	<string>e8909b5a21e06e19709ce8323f6154bb9b464379566e1a1f7220a69727da90e4</string>
 	<key>Firefox.png</key>
 	<string>ea497e0f26fdef83b1021d09db7740247e976745382aa2dffab589763b7902f5</string>
+	<key>GarageBand.png</key>
+	<string>51470255b69a54403a2f1c42ef1ba803bc41611c5473e02cfd0fd11d23244f04</string>
 	<key>Geekbench6.png</key>
 	<string>ec2f3fd4d11fc34c92a34e48c62effa93cfe0b5a23209ed37b238a35c87fd90f</string>
 	<key>GoogleChrome.png</key>
@@ -46,8 +60,16 @@
 	<string>5488daeeeab095101dcfeac67fbb6b49de5ff97bea860b0d148557a8f8f2c87c</string>
 	<key>NordVPN.png</key>
 	<string>ec59d5ca18c231f2d75bd553d31649555e5ae6151c5b9da3347825e1fe35ed1a</string>
+	<key>Ollama.png</key>
+	<string>387df49965014ef3c6092037dad52c9bbea6483f887f87cc91c90b3c5aafa303</string>
 	<key>Opera.png</key>
 	<string>7e18ed9e8d225e013bd119a0eb1dac2396b8c126b40a8c5dbc0cd98ea03b1f9e</string>
+	<key>OrbStack.png</key>
+	<string>5dc2b982672655b4e6cfa13ac41c3c147022bea50b537cdcbba7146235f1181d</string>
+	<key>Pearcleaner.png</key>
+	<string>6a5b8b13fa90b9566c12d7952caef37aa07f2d3f60226930c864f968ebada524</string>
+	<key>PowerShell.png</key>
+	<string>d8729fd593302a9cf7575d35de8982c8841a9efc3ed943a966ac5b0601b608cb</string>
 	<key>Raycast.png</key>
 	<string>ed662ee6b190f10d9bca72db82a6cb5dc27e1759b8e2814a65ba103ab09b4c3a</string>
 	<key>Recipe Robot.png</key>
@@ -82,6 +104,8 @@
 	<string>e758c4b5b92e552f55a33936261c617811fc459d65fbc0175b8d0a07f354fffd</string>
 	<key>iTerm2.png</key>
 	<string>1cb743d40fd2450cdd498a7572b25aa6f19185732b6247c77b7f7d619e45f303</string>
+	<key>mist.png</key>
+	<string>7b28ac601eaf1dca0c15603b526d3a42e9541f5b9fd7792f23bee45148f96d7f</string>
 	<key>munki.png</key>
 	<string>21701ce5eb2c06590238f473b65d22bae872ccdc503efe2150abd0004348abbd</string>
 	<key>munkitools.png</key>

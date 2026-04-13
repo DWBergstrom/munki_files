@@ -81,6 +81,9 @@
 		<string>LittleSnitch6</string>
 		<string>CrystalFetch</string>
 		<string>PowerShell</string>
+		<string>WindowsApp</string>
+		<string>Zoom</string>
+		<string>Xcode</string>
 	</array>
 </dict>
 </plist>

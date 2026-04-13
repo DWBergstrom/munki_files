@@ -27,8 +27,6 @@
 	<string>Mothers Ruin Software</string>
 	<key>display_name</key>
 	<string>Apparency</string>
-	<key>icon_name</key>
-	<string>Apparency.png</string>
 	<key>installer_item_hash</key>
 	<string>0a2639fac59f2a88510193bc6aa79a6e1af7a7f2c6cb6bc468fb7a30c8a68cc3</string>
 	<key>installer_item_location</key>

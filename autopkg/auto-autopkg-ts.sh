@@ -1039,10 +1039,65 @@ function find_missing_overrides {
 		else
 			warn "No .munki recipes found for '${app_name}'"
 			if [ -t 0 ] && [ -t 1 ]; then
-				read -p "  Permanently skip this app? (y/N): " skip_choice
-				if [[ "${skip_choice}" =~ ^[Yy]$ ]]; then
-					echo "${app_name}" >> "${SKIP_LIST_FILE}"
-					info "Added '${app_name}' to skip list"
+				# Check if Recipe Robot is available
+				if command -v recipe-robot &>/dev/null; then
+					echo "  Options:"
+					echo "    r) Try Recipe Robot to create a recipe"
+					echo "    p) Permanently skip this app"
+					echo "    s) Skip for now"
+					read -p "  Choose [r/p/s]: " no_recipe_choice
+					
+					case "${no_recipe_choice}" in
+						[Rr])
+							# Find the app path
+							app_path=$(find /Applications ~/Applications -maxdepth 2 -name "${app_name}.app" -type d 2>/dev/null | head -1)
+							if [ -n "${app_path}" ] && [ -d "${app_path}" ]; then
+								log "Running Recipe Robot on: ${app_path}"
+								info "Recipe Robot will create recipes in ~/Library/AutoPkg/Recipe Robot Output/"
+								if recipe-robot "${app_path}"; then
+									log "Recipe Robot completed"
+									# Check if a munki recipe was created
+									robot_output_dir="${HOME}/Library/AutoPkg/Recipe Robot Output/${app_name}"
+									munki_recipe=$(find "${robot_output_dir}" -name "*.munki.recipe" 2>/dev/null | head -1)
+									if [ -n "${munki_recipe}" ] && [ -f "${munki_recipe}" ]; then
+										info "Munki recipe created: ${munki_recipe}"
+										read -p "  Create override from this recipe? (Y/n): " create_override
+										if [[ ! "${create_override}" =~ ^[Nn]$ ]]; then
+											recipe_id=$(xmllint --xpath 'string(//key[.="Identifier"]/following-sibling::string[1])' "${munki_recipe}" 2>/dev/null)
+											if [ -n "${recipe_id}" ]; then
+												if "${AUTOPKG_CMD}" make-override "${recipe_id}"; then
+													log "Successfully created override for ${app_name}"
+													recipes_found+=("${recipe_id}")
+													apps_with_recipes+=("${app_name}")
+												else
+													error "Failed to create override from Recipe Robot recipe"
+												fi
+											fi
+										fi
+									else
+										warn "No munki recipe was created by Recipe Robot"
+									fi
+								else
+									error "Recipe Robot failed"
+								fi
+							else
+								warn "Could not find ${app_name}.app in /Applications"
+							fi
+							;;
+						[Pp])
+							echo "${app_name}" >> "${SKIP_LIST_FILE}"
+							info "Added '${app_name}' to skip list"
+							;;
+						*)
+							log "Skipping ${app_name}"
+							;;
+					esac
+				else
+					read -p "  Permanently skip this app? (y/N): " skip_choice
+					if [[ "${skip_choice}" =~ ^[Yy]$ ]]; then
+						echo "${app_name}" >> "${SKIP_LIST_FILE}"
+						info "Added '${app_name}' to skip list"
+					fi
 				fi
 			fi
 		fi

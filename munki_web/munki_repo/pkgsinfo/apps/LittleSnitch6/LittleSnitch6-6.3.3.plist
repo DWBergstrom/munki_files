@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-13T04:46:51Z</date>
+		<date>2026-04-13T05:11:33Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,37 +19,35 @@
 	<array>
 		<string>testing</string>
 	</array>
-	<key>category</key>
-	<string>Utilities</string>
 	<key>description</key>
-	<string>Archaeology is a tool For digging into binary files on macOS.</string>
+	<string>Little Snitch is a host-based application firewall for macOS.</string>
 	<key>developer</key>
-	<string>Mothers Ruin Software</string>
+	<string>Objective Development</string>
 	<key>display_name</key>
-	<string>Archaeology</string>
+	<string>Little Snitch 6</string>
 	<key>installer_item_hash</key>
-	<string>c9f8f5a0054f01b4453418e07c8c1a9baeac88e1bb2313059c7c3dcc620acc5e</string>
+	<string>9180c2ee2f69259d920255258930783aa7c9cc1ffbbb128920df2f51a9955265</string>
 	<key>installer_item_location</key>
-	<string>utilities/Archaeology-1.5.dmg</string>
+	<string>apps/LittleSnitch6/LittleSnitch6-6.3.3.dmg</string>
 	<key>installer_item_size</key>
-	<integer>4409</integer>
+	<integer>35898</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.mothersruin.Archaeology</string>
+			<string>at.obdev.littlesnitch</string>
 			<key>CFBundleName</key>
-			<string>Archaeology</string>
+			<string>Little Snitch</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.5</string>
+			<string>6.3.3</string>
 			<key>CFBundleVersion</key>
-			<string>215</string>
+			<string>7172</string>
 			<key>minosversion</key>
-			<string>13.0</string>
+			<string>14.0</string>
 			<key>path</key>
-			<string>/Applications/Archaeology.app</string>
+			<string>/Applications/Little Snitch.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -62,13 +60,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Archaeology.app</string>
+			<string>Little Snitch.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>13.0</string>
+	<string>14.0</string>
 	<key>name</key>
-	<string>Archaeology</string>
+	<string>LittleSnitch6</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>unattended_uninstall</key>
@@ -78,6 +76,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.5</string>
+	<string>6.3.3</string>
 </dict>
 </plist>

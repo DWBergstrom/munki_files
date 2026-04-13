@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.MicrosoftWindowsApp</string>
+	<key>Input</key>
+	<dict>
+		<key>DOWNLOADURL</key>
+		<string>https://go.microsoft.com/fwlink/?linkid=%PRODUCTID%</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/microsoft</string>
+		<key>NAME</key>
+		<string>WindowsApp</string>
+		<key>PRODUCTID</key>
+		<string>868963</string>
+		<key>SOFTWARETITLE1</key>
+		<string>Windows</string>
+		<key>SOFTWARETITLE2</key>
+		<string>App</string>
+		<key>VENDOR</key>
+		<string>Microsoft</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>blocking_applications</key>
+			<array>
+				<string>Microsoft Remote Desktop</string>
+				<string>Windows App</string>
+			</array>
+			<key>catalogs</key>
+			<array>
+				<string>utilities</string>
+			</array>
+			<key>category</key>
+			<string>Utility</string>
+			<key>description</key>
+			<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
+</string>
+			<key>developer</key>
+			<string>Microsoft</string>
+			<key>display_name</key>
+			<string>Windows App</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>unattended_uninstall</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.gilburns.munki.microsoftwindowsapp</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.gilburns.munki.microsoftwindowsapp</key>
+			<dict>
+				<key>git_hash</key>
+				<string>c2c125f0089f1076af8927dd2d381b0ec6371aa2</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.gilburns-recipes/Microsoft Windows App/MicrosoftWindowsApp.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>590b3a923acd03be2167a3f43586b2bbdbe8940a7e8a4ccc7042ecdf543dbfd5</string>
+			</dict>
+			<key>com.github.rtrouton.download.microsoftwindowsapp</key>
+			<dict>
+				<key>git_hash</key>
+				<string>d12fbe41e02315533f669ccc4fc08982fe4162bd</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.rtrouton-recipes/MicrosoftWindowsApp/MicrosoftWindowsApp.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>b4690df4be56bd0d7baf05ee407e89ee7229c79717b7de95fb7bdbc38d3246d5</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

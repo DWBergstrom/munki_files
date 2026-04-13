@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-13T04:46:51Z</date>
+		<date>2026-04-13T05:11:49Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -22,62 +22,64 @@
 	<key>category</key>
 	<string>Utilities</string>
 	<key>description</key>
-	<string>Archaeology is a tool For digging into binary files on macOS.</string>
+	<string>A Mac utility that automatically downloads macOS Firmwares / Installers.</string>
 	<key>developer</key>
-	<string>Mothers Ruin Software</string>
+	<string>ninxsoft</string>
 	<key>display_name</key>
-	<string>Archaeology</string>
+	<string>mist</string>
+	<key>installed_size</key>
+	<integer>19392</integer>
 	<key>installer_item_hash</key>
-	<string>c9f8f5a0054f01b4453418e07c8c1a9baeac88e1bb2313059c7c3dcc620acc5e</string>
+	<string>a764f92e23f5a0a1776c5f08c7dbfe99e98ff5ed9feb12da10410cc09e9abefb</string>
 	<key>installer_item_location</key>
-	<string>utilities/Archaeology-1.5.dmg</string>
+	<string>apps/mist/mist-0.30.pkg</string>
 	<key>installer_item_size</key>
-	<integer>4409</integer>
-	<key>installer_type</key>
-	<string>copy_from_dmg</string>
+	<integer>13066</integer>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.mothersruin.Archaeology</string>
+			<string>com.ninxsoft.mist</string>
 			<key>CFBundleName</key>
-			<string>Archaeology</string>
+			<string>Mist</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.5</string>
+			<string>0.30</string>
 			<key>CFBundleVersion</key>
-			<string>215</string>
+			<string>0.30</string>
 			<key>minosversion</key>
-			<string>13.0</string>
+			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/Archaeology.app</string>
+			<string>/Applications/Mist.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
 			<string>CFBundleShortVersionString</string>
 		</dict>
 	</array>
-	<key>items_to_copy</key>
+	<key>minimum_os_version</key>
+	<string>12.0</string>
+	<key>name</key>
+	<string>mist</string>
+	<key>receipts</key>
 	<array>
 		<dict>
-			<key>destination_path</key>
-			<string>/Applications</string>
-			<key>source_item</key>
-			<string>Archaeology.app</string>
+			<key>installed_size</key>
+			<integer>19392</integer>
+			<key>packageid</key>
+			<string>com.ninxsoft.pkg.mist</string>
+			<key>version</key>
+			<string>0.30</string>
 		</dict>
 	</array>
-	<key>minimum_os_version</key>
-	<string>13.0</string>
-	<key>name</key>
-	<string>Archaeology</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
-	<string>remove_copied_items</string>
+	<string>removepackages</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.5</string>
+	<string>0.30</string>
 </dict>
 </plist>

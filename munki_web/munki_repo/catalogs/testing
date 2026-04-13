@@ -546,8 +546,6 @@
 		<string>Mothers Ruin Software</string>
 		<key>display_name</key>
 		<string>Archaeology</string>
-		<key>icon_name</key>
-		<string>Archaeology.png</string>
 		<key>installer_item_hash</key>
 		<string>c9f8f5a0054f01b4453418e07c8c1a9baeac88e1bb2313059c7c3dcc620acc5e</string>
 		<key>installer_item_location</key>
@@ -616,8 +614,6 @@
 		<string>Mothers Ruin Software</string>
 		<key>display_name</key>
 		<string>Apparency</string>
-		<key>icon_name</key>
-		<string>Apparency.png</string>
 		<key>installer_item_hash</key>
 		<string>0a2639fac59f2a88510193bc6aa79a6e1af7a7f2c6cb6bc468fb7a30c8a68cc3</string>
 		<key>installer_item_location</key>
@@ -15009,6 +15005,49 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 			<string>testing</string>
 		</array>
 		<key>description</key>
+		<string>A free, source-available and fair-code licensed mac app cleaner</string>
+		<key>developer</key>
+		<string>Alin Lupascu</string>
+		<key>display_name</key>
+		<string>Pearcleaner</string>
+		<key>installed_size</key>
+		<integer>23484</integer>
+		<key>installer_item_hash</key>
+		<string>1888a2b6476c92ee33740d2f582d9dfde86910d2584b0e9bcf0bf36f5af2bf91</string>
+		<key>installer_item_location</key>
+		<string>apps/Pearcleaner/Pearcleaner-5.4.3.pkg</string>
+		<key>installer_item_size</key>
+		<integer>10341</integer>
+		<key>name</key>
+		<string>Pearcleaner</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>23484</integer>
+				<key>packageid</key>
+				<string>com.alienator88.Pearcleaner</string>
+				<key>version</key>
+				<string>5.4.3</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>5.4.3</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
 		<string>macOS app for managing Munki repositories</string>
 		<key>developer</key>
 		<string>Hannes Juutilainen</string>
@@ -16168,6 +16207,78 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<true/>
 		<key>version</key>
 		<string>12.5.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Development</string>
+		<key>description</key>
+		<string>OrbStack is a fast, light, and simple way to run containers and Linux machines on macOS. It's a supercharged alternative to Docker Desktop and WSL, all in one easy-to-use app.</string>
+		<key>developer</key>
+		<string>Orbital Labs, LLC</string>
+		<key>display_name</key>
+		<string>OrbStack</string>
+		<key>installer_item_hash</key>
+		<string>601889551cdfdc7feee148b7fdb0480fa0ba5c0db0be8f1c047fc840886a7571</string>
+		<key>installer_item_location</key>
+		<string>apps/OrbStack/OrbStack-arm64-2.0.5.dmg</string>
+		<key>installer_item_size</key>
+		<integer>463393</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>dev.kdrag0n.MacVirt</string>
+				<key>CFBundleName</key>
+				<string>OrbStack</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2.0.5</string>
+				<key>CFBundleVersion</key>
+				<string>19905</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/OrbStack.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>OrbStack.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.0</string>
+		<key>name</key>
+		<string>OrbStack</string>
+		<key>supported_architectures</key>
+		<array>
+			<string>arm64</string>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2.0.5</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -25010,6 +25121,217 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 			<string>testing</string>
 		</array>
 		<key>description</key>
+		<string>PowerShell for every system!</string>
+		<key>developer</key>
+		<string>PowerShell Team</string>
+		<key>display_name</key>
+		<string>PowerShell</string>
+		<key>installed_size</key>
+		<integer>180003</integer>
+		<key>installer_item_hash</key>
+		<string>f4d2529384772ddc398fd478723381561a88d1ace468ae2107da32ab05ac5daa</string>
+		<key>installer_item_location</key>
+		<string>apps/PowerShell/PowerShell-x64-7.4.14.pkg</string>
+		<key>installer_item_size</key>
+		<integer>70518</integer>
+		<key>name</key>
+		<string>PowerShell</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>180003</integer>
+				<key>packageid</key>
+				<string>com.microsoft.powershell</string>
+				<key>version</key>
+				<string>7.4.14</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>7.4.14</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Utilities</string>
+		<key>description</key>
+		<string>A Mac utility that automatically downloads macOS Firmwares / Installers.</string>
+		<key>developer</key>
+		<string>ninxsoft</string>
+		<key>display_name</key>
+		<string>mist</string>
+		<key>installed_size</key>
+		<integer>19392</integer>
+		<key>installer_item_hash</key>
+		<string>a764f92e23f5a0a1776c5f08c7dbfe99e98ff5ed9feb12da10410cc09e9abefb</string>
+		<key>installer_item_location</key>
+		<string>apps/mist/mist-0.30.pkg</string>
+		<key>installer_item_size</key>
+		<integer>13066</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.ninxsoft.mist</string>
+				<key>CFBundleName</key>
+				<string>Mist</string>
+				<key>CFBundleShortVersionString</key>
+				<string>0.30</string>
+				<key>CFBundleVersion</key>
+				<string>0.30</string>
+				<key>minosversion</key>
+				<string>12.0</string>
+				<key>path</key>
+				<string>/Applications/Mist.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.0</string>
+		<key>name</key>
+		<string>mist</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>19392</integer>
+				<key>packageid</key>
+				<string>com.ninxsoft.pkg.mist</string>
+				<key>version</key>
+				<string>0.30</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>0.30</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Virtualization tool for running Windows apps without rebooting.</string>
+		<key>developer</key>
+		<string>Parallels, Inc.</string>
+		<key>display_name</key>
+		<string>Parallels Desktop</string>
+		<key>installer_item_hash</key>
+		<string>de4bc59e2a5c4a1181e0ae8217db2542f5a1ce320dce44f9dd8811711acf9a59</string>
+		<key>installer_item_location</key>
+		<string>apps/Parallels Desktop/Parallels Desktop-18.3.4.pkg</string>
+		<key>installer_item_size</key>
+		<integer>309553</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.parallels.desktop.console</string>
+				<key>CFBundleName</key>
+				<string>Parallels Desktop</string>
+				<key>CFBundleShortVersionString</key>
+				<string>18.3.4</string>
+				<key>CFBundleVersion</key>
+				<string>53630</string>
+				<key>minosversion</key>
+				<string>10.14.6</string>
+				<key>path</key>
+				<string>/Applications/Parallels Desktop.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.14.6</string>
+		<key>name</key>
+		<string>Parallels Desktop</string>
+		<key>preuninstall_script</key>
+		<string>#!/bin/bash
+if [ -f /usr/local/bin/prlsrvctl ]; then
+	/usr/local/bin/prlsrvctl deactivate-license
+fi
+exit 0
+</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>0</integer>
+				<key>packageid</key>
+				<string>com.parallels.desktop.installer</string>
+				<key>version</key>
+				<string>18.3.4</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>uninstall_script</string>
+		<key>uninstall_script</key>
+		<string>#!/bin/bash
+
+# App bundle to remove
+app_Bundle="/Applications/Parallels Desktop.app/"
+lib_files="/Library/Parallels/"
+
+if [ -d "${app_Bundle}" ]
+then
+	/bin/echo "Found ${app_Bundle}, removing..."
+	/bin/rm -rf "${app_Bundle}"
+fi
+
+if [ -d "${lib_files}" ]
+then
+	/bin/echo "Found ${lib_files}, removing..."
+	/bin/rm -rf "${lib_files}"
+fi
+
+# Remove the pkg receipt
+pkgReceipt="com.parallels.desktop.installer"
+
+/bin/echo "Removing ${pkgReceipt}, removing..."
+pkgutil --forget "${pkgReceipt}"
+</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>18.3.4</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
 		<string>Supercharged productivity
 
 Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
@@ -25553,6 +25875,72 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<array>
 			<string>testing</string>
 		</array>
+		<key>description</key>
+		<string>Little Snitch is a host-based application firewall for macOS.</string>
+		<key>developer</key>
+		<string>Objective Development</string>
+		<key>display_name</key>
+		<string>Little Snitch 6</string>
+		<key>installer_item_hash</key>
+		<string>9180c2ee2f69259d920255258930783aa7c9cc1ffbbb128920df2f51a9955265</string>
+		<key>installer_item_location</key>
+		<string>apps/LittleSnitch6/LittleSnitch6-6.3.3.dmg</string>
+		<key>installer_item_size</key>
+		<integer>35898</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>at.obdev.littlesnitch</string>
+				<key>CFBundleName</key>
+				<string>Little Snitch</string>
+				<key>CFBundleShortVersionString</key>
+				<string>6.3.3</string>
+				<key>CFBundleVersion</key>
+				<string>7172</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/Little Snitch.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Little Snitch.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.0</string>
+		<key>name</key>
+		<string>LittleSnitch6</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>6.3.3</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
 		<key>category</key>
 		<string>VPN</string>
 		<key>description</key>
@@ -25953,6 +26341,82 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<true/>
 		<key>version</key>
 		<string>1.9600.41</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>zoom.us</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>The Zoom app provides cloud-hosted video conferencing, plus online meetings and group messaging.</string>
+		<key>developer</key>
+		<string>Zoom Video Communications, Inc.</string>
+		<key>display_name</key>
+		<string>Zoom</string>
+		<key>installed_size</key>
+		<integer>776482</integer>
+		<key>installer_item_hash</key>
+		<string>a03a60c3507686026518a13a1270d95617025b35b5da20705b2dcdf5a3ae16fd</string>
+		<key>installer_item_location</key>
+		<string>apps/Zoom/Zoom-7.0.0.77593.pkg</string>
+		<key>installer_item_size</key>
+		<integer>331292</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>us.zoom.xos</string>
+				<key>CFBundleName</key>
+				<string>zoom.us</string>
+				<key>CFBundleShortVersionString</key>
+				<string>7.0.0 (77593)</string>
+				<key>CFBundleVersion</key>
+				<string>7.0.0.77593</string>
+				<key>minosversion</key>
+				<string>10.15</string>
+				<key>path</key>
+				<string>/Applications/zoom.us.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleVersion</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15</string>
+		<key>name</key>
+		<string>Zoom</string>
+		<key>postuninstall_script</key>
+		<string>#!/bin/sh
+rm -rf /Applications/zoom.us.app
+</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>776482</integer>
+				<key>packageid</key>
+				<string>us.zoom.pkg.videomeeting</string>
+				<key>version</key>
+				<string>7.0.0.77593</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>7.0.0.77593</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -34313,6 +34777,84 @@ rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
 			<string>testing</string>
 		</array>
 		<key>description</key>
+		<string>Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models.</string>
+		<key>developer</key>
+		<string>Infra Technologies, Inc</string>
+		<key>display_name</key>
+		<string>Ollama</string>
+		<key>installer_item_hash</key>
+		<string>3adab154dec87bf0f11d71fe08294e762e43d12c2d69478ff7a2897d3e4c0faf</string>
+		<key>installer_item_location</key>
+		<string>apps/Ollama/Ollama-0.20.6.dmg</string>
+		<key>installer_item_size</key>
+		<integer>163230</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.electron.ollama</string>
+				<key>CFBundleName</key>
+				<string>Ollama</string>
+				<key>CFBundleShortVersionString</key>
+				<string>0.20.6</string>
+				<key>CFBundleVersion</key>
+				<string>0.20.6</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/Ollama.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Ollama.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.0</string>
+		<key>name</key>
+		<string>Ollama</string>
+		<key>postinstall_script</key>
+		<string>#!/bin/bash
+
+# Script built from: https://github.com/ollama/ollama/issues/851#issuecomment-1889808636
+# Please note admin rights are still needed as the file that records whether first time run has completed is located in the Users home folder. see https://github.com/ollama/ollama/issues/6814
+
+# Install Command Line Tools
+if ! [ -f /usr/local/bin/ollama ]; then
+  /usr/bin/touch /usr/local/bin/ollama ; /bin/ln -s -f /Applications/Ollama.app/Contents/Resources/ollama /usr/local/bin/ollama
+fi
+
+exit</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>0.20.6</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
 		<string>Google's agentic development platform, evolving the IDE into the agent-first era.</string>
 		<key>developer</key>
 		<string>Google</string>
@@ -34762,6 +35304,51 @@ rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
 		<true/>
 		<key>version</key>
 		<string>2.2.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string> </string>
+		<key>developer</key>
+		<string>Apple</string>
+		<key>display_name</key>
+		<string>GarageBand</string>
+		<key>installed_size</key>
+		<integer>4181114</integer>
+		<key>installer_item_hash</key>
+		<string>e5e2adb7bc0ca1bc71436f2e5921e0174e04f3e4c5e9438e081fbefc8befc724</string>
+		<key>installer_item_location</key>
+		<string>apps/GarageBand/GarageBand-10.4.13.pkg</string>
+		<key>installer_item_size</key>
+		<integer>3050113</integer>
+		<key>minimum_os_version</key>
+		<string>14.4</string>
+		<key>name</key>
+		<string>GarageBand</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>4181114</integer>
+				<key>packageid</key>
+				<string>com.apple.garageband10</string>
+				<key>version</key>
+				<string>10.4.13</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>10.4.13</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
