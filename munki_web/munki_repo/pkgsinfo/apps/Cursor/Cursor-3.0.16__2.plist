@@ -27,8 +27,6 @@
 	<string>Anysphere, Inc.</string>
 	<key>display_name</key>
 	<string>Cursor</string>
-	<key>icon_name</key>
-	<string>Cursor.png</string>
 	<key>installer_item_hash</key>
 	<string>4fda96ef149b6057aaf9238f8f919a08fa5895d7109cbfa5c5e59a5c8a9dd69e</string>
 	<key>installer_item_location</key>

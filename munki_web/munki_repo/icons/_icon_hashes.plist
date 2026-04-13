@@ -4,8 +4,12 @@
 <dict>
 	<key>1Password.png</key>
 	<string>3f99c31c1cb400f2f498ef602905a42e1e7ca6dc7ec26fb9021c3026b29e73b8</string>
+	<key>Antigravity.png</key>
+	<string>6259bb04e0bb4a1ecbd4f9bd5fb5d2f85293fa7063805589dca15f571c0c1081</string>
 	<key>Arc.png</key>
 	<string>a526e65a5c8fd1bb0efbb35aabf44b26de6ba44193470467a76c9b02388d3b63</string>
+	<key>Atlas.png</key>
+	<string>3aacd90ca1787b018e240fd97dfe50fc286aec0dd415383780f71e0209b04ef4</string>
 	<key>AutoPkgr.png</key>
 	<string>7913b114a9b31bc86a2d34890c0bd8e1aa43ff6558583d237117caededddbd5d</string>
 	<key>Bartender.png</key>
@@ -14,6 +18,12 @@
 	<string>8b9642a2788ef34ad73e8ff98049b3bf94f22bba861dcbab1d722c45df6e0a18</string>
 	<key>ChatGPT Atlas.png</key>
 	<string>404b7397493e7152f661c5a7002917070d3e9b77c8c28a20bb68280dc02dd4ae</string>
+	<key>ChatGPT.png</key>
+	<string>68eac317e3074866fda7eddeed4e714e64a1f3450d23062256a03d22035056a0</string>
+	<key>Codex.png</key>
+	<string>b85f017fd75682366b85ada07bc9c84ad1d8b7f108785d098df49cbfafef2665</string>
+	<key>Cursor.png</key>
+	<string>624165e30ce4f4ca15416cb048972ddb528a48c73c5cb0713d6aa18b699ea8b3</string>
 	<key>DFUBlaster.png</key>
 	<string>f06ae2d99c58b6793692ed95aee28efc78b64d01795b5bbc11bdc7435ad1d5fd</string>
 	<key>DataSpell.png</key>
@@ -22,6 +32,8 @@
 	<string>3f4a9bc1415d843baa938ca03b73296ccb9aece3ec8dfd97ade698c30d77409b</string>
 	<key>Firefox.png</key>
 	<string>ea497e0f26fdef83b1021d09db7740247e976745382aa2dffab589763b7902f5</string>
+	<key>Geekbench6.png</key>
+	<string>ec2f3fd4d11fc34c92a34e48c62effa93cfe0b5a23209ed37b238a35c87fd90f</string>
 	<key>GoogleChrome.png</key>
 	<string>5d5641838bd9f8b238f75c6ceb638ee06bbe3dd577890fec5243a799585f260b</string>
 	<key>Insomnia.png</key>
@@ -30,12 +42,26 @@
 	<string>a72b98eee8f7ae812a236307d6340a35f24bddcf1961b31af8f6314362f480b1</string>
 	<key>MicrosoftEdge.png</key>
 	<string>ed890ea5e9a59ae850b73d001ce6b81d85aedaec77b057e08b64adbdba9d8537</string>
+	<key>MunkiAdmin.png</key>
+	<string>5488daeeeab095101dcfeac67fbb6b49de5ff97bea860b0d148557a8f8f2c87c</string>
+	<key>NordVPN.png</key>
+	<string>ec59d5ca18c231f2d75bd553d31649555e5ae6151c5b9da3347825e1fe35ed1a</string>
+	<key>Opera.png</key>
+	<string>7e18ed9e8d225e013bd119a0eb1dac2396b8c126b40a8c5dbc0cd98ea03b1f9e</string>
 	<key>Raycast.png</key>
 	<string>ed662ee6b190f10d9bca72db82a6cb5dc27e1759b8e2814a65ba103ab09b4c3a</string>
 	<key>Recipe Robot.png</key>
 	<string>631e487b0a8abef7d2a37f8050f04823680a69121cd531d9b4fad53c831e9a08</string>
 	<key>RustRover.png</key>
 	<string>de007ea64f0848f352216774b805e7d5fa6eae1a71acf497aaee1a80d86a498e</string>
+	<key>Screens.png</key>
+	<string>f5d518756dd8f8d634e53fbb37b766cf50ede3537ec4b14caf37405726c12952</string>
+	<key>Signal_Desktop.png</key>
+	<string>2f02ada269a6c14308b76c383b301f3c77fc247dfa91275067441d2d6fbc520c</string>
+	<key>Steam.png</key>
+	<string>c476a4c59e8fe0715c82dda35617adcc68b2853e7740b7f001f8ec35f559543c</string>
+	<key>SuspiciousPackage.png</key>
+	<string>748f3c5718aaeeeb326134528371b0605199572ace54a3441a60ca7f46037cbc</string>
 	<key>SuspiciousPackageApp.png</key>
 	<string>748f3c5718aaeeeb326134528371b0605199572ace54a3441a60ca7f46037cbc</string>
 	<key>Tailscale.png</key>
@@ -48,6 +74,10 @@
 	<string>c960adb10723a86869cac10a8246cefff3c61d98e44403b157f83ea5a3af593a</string>
 	<key>Warp.png</key>
 	<string>06af4ee4651e32247d72faa4891077e5ea43286572ca0625f0c49525fbc8a47d</string>
+	<key>WezTerm.png</key>
+	<string>8c83bf17c2b7438cff3ece4d4bb562043b65c8a3cf35966c02055c78034b5251</string>
+	<key>Windsurf.png</key>
+	<string>8c02d171716302eeabec3930c90704a4669f0795f672139a1a7254ac79d9bdd6</string>
 	<key>iMazingProfileEditor.png</key>
 	<string>e758c4b5b92e552f55a33936261c617811fc459d65fbc0175b8d0a07f354fffd</string>
 	<key>iTerm2.png</key>

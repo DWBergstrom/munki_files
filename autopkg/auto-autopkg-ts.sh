@@ -2,7 +2,7 @@
 
 # Handle --help immediately before any other processing
 if [[ "$1" == "--help" || "$1" == "-h" ]]; then
-	echo "Usage: $(basename "$0") [option]"
+	echo "Usage: $(basename "$0") [option] [flags]"
 	echo ""
 	echo "Options:"
 	echo "  (none)             Run full autopkg workflow (repoclean, verify trust, run all overrides, makecatalogs, git commit)"
@@ -11,11 +11,23 @@ if [[ "$1" == "--help" || "$1" == "-h" ]]; then
 	echo "  --run-overrides    Run a specific override"
 	echo "                     Example: $0 --run-overrides /path/to/override.munki.recipe"
 	echo "  --find-missing     Scan installed apps and search for autopkg recipes for apps without overrides"
+	echo "  --verify-icons     Check that all packages in Munki repo have icons"
 	echo "  --help, -h         Show this help message"
+	echo ""
+	echo "Flags (can be combined with options):"
+	echo "  --force-import     Force re-import packages even if already in Munki repo (use for testing only)"
 	echo ""
 	echo "Log file: ${HOME}/Library/Logs/auto-autopkg-ts.log"
 	exit 0
 fi
+
+# Parse flags from any position in arguments
+FORCE_MUNKIIMPORT=""
+for arg in "$@"; do
+	if [[ "${arg}" == "--force-import" ]]; then
+		FORCE_MUNKIIMPORT="-k force_munkiimport=true"
+	fi
+done
 
 # Log file setup - writes to ~/Library/Logs for Console.app visibility
 LOG_DIR="${HOME}/Library/Logs"
@@ -245,6 +257,113 @@ function verify_munki_settings {
 	fi
 }
 
+function verify_icons {
+	log "Verifying icons for all packages in Munki repo..."
+	
+	ICONS_DIR="${MUNKI_REPO_PATH}/icons"
+	PKGSINFO_DIR="${MUNKI_REPO_PATH}/pkgsinfo"
+	
+	if [ ! -d "${PKGSINFO_DIR}" ]; then
+		error "pkgsinfo directory not found: ${PKGSINFO_DIR}"
+		return 1
+	fi
+	
+	if [ ! -d "${ICONS_DIR}" ]; then
+		warn "Icons directory not found: ${ICONS_DIR}"
+		mkdir -p "${ICONS_DIR}"
+		log "Created icons directory"
+	fi
+	
+	# Get list of unique package names from pkgsinfo
+	missing_icons=()
+	checked_names=()
+	total_pkgs=0
+	
+	while IFS= read -r -d '' pkginfo_file; do
+		# Extract the 'name' key from pkginfo plist
+		pkg_name=$(xmllint --xpath 'string(//key[.="name"]/following-sibling::string[1])' "${pkginfo_file}" 2>/dev/null)
+		
+		if [ -n "${pkg_name}" ]; then
+			# Skip if we've already checked this name
+			if [[ " ${checked_names[*]} " =~ " ${pkg_name} " ]]; then
+				continue
+			fi
+			checked_names+=("${pkg_name}")
+			((total_pkgs++))
+			
+			# Check for icon file (try common extensions)
+			icon_found=false
+			for ext in png PNG icns ICNS jpg JPG jpeg JPEG; do
+				if [ -f "${ICONS_DIR}/${pkg_name}.${ext}" ]; then
+					icon_found=true
+					break
+				fi
+			done
+			
+			if ! ${icon_found}; then
+				missing_icons+=("${pkg_name}")
+			fi
+		fi
+	done < <(find "${PKGSINFO_DIR}" -type f -name "*.plist" -print0 2>/dev/null)
+	
+	log "Checked ${total_pkgs} unique packages"
+	
+	if [ ${#missing_icons[@]} -eq 0 ]; then
+		log "All packages have icons!"
+		return 0
+	fi
+	
+	warn "${#missing_icons[@]} package(s) missing icons:"
+	for pkg in "${missing_icons[@]}"; do
+		warn "  - ${pkg}"
+	done
+	
+	# Offer to extract icons from installed apps (interactive mode)
+	if [ -t 0 ] && [ -t 1 ]; then
+		echo ""
+		read -p "Attempt to extract icons from installed apps? (y/N): " extract_choice
+		if [[ "${extract_choice}" =~ ^[Yy]$ ]]; then
+			for pkg_name in "${missing_icons[@]}"; do
+				# Try to find matching app in /Applications
+				app_path=$(find /Applications -maxdepth 2 -name "*.app" -type d 2>/dev/null | while read app; do
+					app_basename=$(basename "${app}" .app)
+					# Case-insensitive match, also try without spaces
+					app_lower=$(echo "${app_basename}" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]//g')
+					pkg_lower=$(echo "${pkg_name}" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]//g')
+					if [ "${app_lower}" = "${pkg_lower}" ]; then
+						echo "${app}"
+						break
+					fi
+				done)
+				
+				if [ -n "${app_path}" ] && [ -d "${app_path}" ]; then
+					# Extract icon using sips
+					icon_source="${app_path}/Contents/Resources/AppIcon.icns"
+					if [ ! -f "${icon_source}" ]; then
+						# Try to find any .icns file
+						icon_source=$(find "${app_path}/Contents/Resources" -name "*.icns" -type f 2>/dev/null | head -1)
+					fi
+					
+					if [ -f "${icon_source}" ]; then
+						icon_dest="${ICONS_DIR}/${pkg_name}.png"
+						if sips -s format png -z 256 256 "${icon_source}" --out "${icon_dest}" &>/dev/null; then
+							log "Extracted icon for: ${pkg_name}"
+						else
+							warn "Failed to extract icon for: ${pkg_name}"
+						fi
+					else
+						warn "No icon found in app bundle for: ${pkg_name}"
+					fi
+				else
+					info "No matching app found for: ${pkg_name}"
+				fi
+			done
+		fi
+	fi
+	
+	return 0
+}
+
 function run_repoclean {
 	log "Running repoclean..."
 	# Write context marker to stderr so errors in log have context
@@ -273,9 +392,10 @@ function verify_trust_info {
 	failed_recipes=()
 	failed_recipe_paths=()
 	
-	# Count overrides for progress
+	# Count overrides for progress (use unique list to avoid duplicates)
 	shopt -s nullglob
-	override_files=("${OVERRIDES_DIR}"/*.munki.recipe "${OVERRIDES_DIR}"/*.recipe)
+	# Use mapfile to properly handle filenames with spaces
+	mapfile -t override_files < <(ls -1 "${OVERRIDES_DIR}"/*.munki.recipe "${OVERRIDES_DIR}"/*.recipe 2>/dev/null | sort -u)
 	shopt -u nullglob
 	total_overrides=${#override_files[@]}
 	current=0
@@ -372,17 +492,27 @@ function run_all_overrides {
 	# Suppress verbose output, log to file, show only errors
 	"${AUTOPKG_CMD}" repo-update all >> "${LOG_FILE}" 2>&1 || warn "Some repos may have failed to update"
 	log "Repo update complete (details in log file)"
-	for override in "${OVERRIDES_DIR}"/*; do
+	
+	# Count overrides for progress (use unique list to avoid duplicates)
+	shopt -s nullglob
+	# Use mapfile to properly handle filenames with spaces
+	mapfile -t override_files < <(ls -1 "${OVERRIDES_DIR}"/*.munki.recipe "${OVERRIDES_DIR}"/*.recipe 2>/dev/null | sort -u)
+	shopt -u nullglob
+	total_overrides=${#override_files[@]}
+	current=0
+	
+	for override in "${override_files[@]}"; do
+		((current++))
 		# Extract recipe name from override path
 		override_name=$(basename "${override}" .munki.recipe)
-		log "Running autopkg ${override}..."
+		log "Running autopkg ${override}... (override ${current} of ${total_overrides})"
 		# Write context marker to stderr so errors in log have context
-		echo "--- [${override_name}] Starting autopkg run ---" >&2
+		echo "--- [${override_name}] Starting autopkg run (${current}/${total_overrides}) ---" >&2
 		
 		# Capture both stdout and stderr to check for trust verification errors
 		autopkg_output=$(mktemp)
 		# Redirect all output to file while also displaying it
-		if "${AUTOPKG_CMD}" run -v "${override}" -k force_munkiimport=true > >(tee "${autopkg_output}") 2> >(tee "${autopkg_output}" >&2); then
+		if "${AUTOPKG_CMD}" run -v "${override}" ${FORCE_MUNKIIMPORT} > >(tee "${autopkg_output}") 2> >(tee "${autopkg_output}" >&2); then
 			# Wait a moment for any buffered output
 			sleep 0.5
 			# Check output for trust verification errors
@@ -483,7 +613,9 @@ function find_missing_overrides {
 	# Build list of existing override names (normalized to lowercase, one per line)
 	existing_overrides=""
 	override_count=0
-	for override_file in "${OVERRIDES_DIR}"/*.munki.recipe "${OVERRIDES_DIR}"/*.recipe; do
+	# Use unique list to avoid duplicates (*.recipe also matches *.munki.recipe)
+	# Read files line by line to handle spaces in filenames
+	while IFS= read -r override_file; do
 		if [ -f "${override_file}" ]; then
 			# Extract the NAME from the recipe plist
 			override_name=$(xmllint --xpath 'string(//key[.="NAME"]/following-sibling::string[1])' "${override_file}" 2>/dev/null | tr '[:upper:]' '[:lower:]')
@@ -495,7 +627,7 @@ function find_missing_overrides {
 			filename_name=$(basename "${override_file}" | sed -E 's/\.(munki\.recipe|recipe)$//' | tr '[:upper:]' '[:lower:]')
 			existing_overrides="${existing_overrides}${filename_name}"$'\n'
 		fi
-	done
+	done < <(ls -1 "${OVERRIDES_DIR}"/*.munki.recipe "${OVERRIDES_DIR}"/*.recipe 2>/dev/null | sort -u)
 	log "Found ${override_count} existing overrides"
 	
 	# Scan /Applications for installed apps
@@ -839,7 +971,7 @@ function find_missing_overrides {
 					override_file=$(find "${OVERRIDES_DIR}" -maxdepth 1 -iname "*${app_name}*.recipe" -type f 2>/dev/null | head -1)
 					if [ -n "${override_file}" ] && [ -f "${override_file}" ]; then
 						log "Running override: ${override_file}"
-						"${AUTOPKG_CMD}" run -v "${override_file}" -k force_munkiimport=true
+						"${AUTOPKG_CMD}" run -v "${override_file}" ${FORCE_MUNKIIMPORT}
 					fi
 				done
 			fi
@@ -929,7 +1061,7 @@ function run_specified_overrides {
 	# Capture both stdout and stderr to check for trust verification errors
 	autopkg_output=$(mktemp)
 	# Redirect all output to file while also displaying it
-	if "${AUTOPKG_CMD}" run -v "${override_path}" -k force_munkiimport=true > >(tee "${autopkg_output}") 2> >(tee "${autopkg_output}" >&2); then
+	if "${AUTOPKG_CMD}" run -v "${override_path}" ${FORCE_MUNKIIMPORT} > >(tee "${autopkg_output}") 2> >(tee "${autopkg_output}" >&2); then
 		# Wait a moment for any buffered output
 		sleep 0.5
 		# Check output for trust verification errors
@@ -1144,6 +1276,9 @@ case $1 in
 		;;
 	--find-missing)
 		find_missing_overrides
+		;;
+	--verify-icons)
+		verify_icons
 		;;
 	*)
 		main

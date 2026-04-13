@@ -13253,8 +13253,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<string>Anysphere, Inc.</string>
 		<key>display_name</key>
 		<string>Cursor</string>
-		<key>icon_name</key>
-		<string>Cursor.png</string>
 		<key>installer_item_hash</key>
 		<string>4fda96ef149b6057aaf9238f8f919a08fa5895d7109cbfa5c5e59a5c8a9dd69e</string>
 		<key>installer_item_location</key>
@@ -13323,8 +13321,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<string>Anysphere, Inc.</string>
 		<key>display_name</key>
 		<string>Cursor</string>
-		<key>icon_name</key>
-		<string>Cursor.png</string>
 		<key>installer_item_hash</key>
 		<string>4fda96ef149b6057aaf9238f8f919a08fa5895d7109cbfa5c5e59a5c8a9dd69e</string>
 		<key>installer_item_location</key>
@@ -13393,8 +13389,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<string>Anysphere, Inc.</string>
 		<key>display_name</key>
 		<string>Cursor</string>
-		<key>icon_name</key>
-		<string>Cursor.png</string>
 		<key>installer_item_hash</key>
 		<string>4fda96ef149b6057aaf9238f8f919a08fa5895d7109cbfa5c5e59a5c8a9dd69e</string>
 		<key>installer_item_location</key>
@@ -13463,8 +13457,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<string>Anysphere, Inc.</string>
 		<key>display_name</key>
 		<string>Cursor</string>
-		<key>icon_name</key>
-		<string>Cursor.png</string>
 		<key>installer_item_hash</key>
 		<string>9779f901386d881fc070ea94b6213b72d0f4e89f23f2cebaa707d67ac7984398</string>
 		<key>installer_item_location</key>
@@ -13533,8 +13525,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<string>Anysphere, Inc.</string>
 		<key>display_name</key>
 		<string>Cursor</string>
-		<key>icon_name</key>
-		<string>Cursor.png</string>
 		<key>installer_item_hash</key>
 		<string>4fda96ef149b6057aaf9238f8f919a08fa5895d7109cbfa5c5e59a5c8a9dd69e</string>
 		<key>installer_item_location</key>
@@ -13603,8 +13593,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<string>Anysphere, Inc.</string>
 		<key>display_name</key>
 		<string>Cursor</string>
-		<key>icon_name</key>
-		<string>Cursor.png</string>
 		<key>installer_item_hash</key>
 		<string>4fda96ef149b6057aaf9238f8f919a08fa5895d7109cbfa5c5e59a5c8a9dd69e</string>
 		<key>installer_item_location</key>
@@ -13673,8 +13661,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<string>Anysphere, Inc.</string>
 		<key>display_name</key>
 		<string>Cursor</string>
-		<key>icon_name</key>
-		<string>Cursor.png</string>
 		<key>installer_item_hash</key>
 		<string>9779f901386d881fc070ea94b6213b72d0f4e89f23f2cebaa707d67ac7984398</string>
 		<key>installer_item_location</key>
@@ -13743,8 +13729,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<string>Anysphere, Inc.</string>
 		<key>display_name</key>
 		<string>Cursor</string>
-		<key>icon_name</key>
-		<string>Cursor.png</string>
 		<key>installer_item_hash</key>
 		<string>9779f901386d881fc070ea94b6213b72d0f4e89f23f2cebaa707d67ac7984398</string>
 		<key>installer_item_location</key>
@@ -13813,8 +13797,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<string>Anysphere, Inc.</string>
 		<key>display_name</key>
 		<string>Cursor</string>
-		<key>icon_name</key>
-		<string>Cursor.png</string>
 		<key>installer_item_hash</key>
 		<string>4fda96ef149b6057aaf9238f8f919a08fa5895d7109cbfa5c5e59a5c8a9dd69e</string>
 		<key>installer_item_location</key>
