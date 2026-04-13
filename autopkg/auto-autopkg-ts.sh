@@ -413,8 +413,11 @@ function verify_trust_info {
 	
 	# Count overrides for progress (use unique list to avoid duplicates)
 	shopt -s nullglob
-	# Use mapfile to properly handle filenames with spaces
-	mapfile -t override_files < <(ls -1 "${OVERRIDES_DIR}"/*.munki.recipe "${OVERRIDES_DIR}"/*.recipe 2>/dev/null | sort -u)
+	# Read files into array, handling spaces in filenames (bash 3.2 compatible)
+	override_files=()
+	while IFS= read -r file; do
+		[ -n "${file}" ] && override_files+=("${file}")
+	done < <(ls -1 "${OVERRIDES_DIR}"/*.munki.recipe "${OVERRIDES_DIR}"/*.recipe 2>/dev/null | sort -u)
 	shopt -u nullglob
 	total_overrides=${#override_files[@]}
 	current=0
@@ -514,12 +517,15 @@ function run_all_overrides {
 	
 	# Count overrides for progress (use unique list to avoid duplicates)
 	shopt -s nullglob
-	# Use mapfile to properly handle filenames with spaces
-	mapfile -t override_files < <(ls -1 "${OVERRIDES_DIR}"/*.munki.recipe "${OVERRIDES_DIR}"/*.recipe 2>/dev/null | sort -u)
+	# Read files into array, handling spaces in filenames (bash 3.2 compatible)
+	override_files=()
+	while IFS= read -r file; do
+		[ -n "${file}" ] && override_files+=("${file}")
+	done < <(ls -1 "${OVERRIDES_DIR}"/*.munki.recipe "${OVERRIDES_DIR}"/*.recipe 2>/dev/null | sort -u)
 	shopt -u nullglob
 	total_overrides=${#override_files[@]}
 	current=0
-	
+
 	for override in "${override_files[@]}"; do
 		((current++))
 		# Extract recipe name from override path
@@ -701,8 +707,11 @@ function find_missing_overrides {
 		done
 	fi
 	
-	# Deduplicate app names
-	mapfile -t unique_app_names < <(printf '%s\n' "${all_app_names[@]}" | sort -u)
+	# Deduplicate app names (bash 3.2 compatible)
+	unique_app_names=()
+	while IFS= read -r name; do
+		[ -n "${name}" ] && unique_app_names+=("${name}")
+	done < <(printf '%s\n' "${all_app_names[@]}" | sort -u)
 	log "Total unique applications: ${#unique_app_names[@]}"
 	
 	# Filter apps to find those without overrides
