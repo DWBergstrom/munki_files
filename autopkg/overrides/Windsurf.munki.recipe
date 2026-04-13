@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Windsurf</string>
+	<key>Input</key>
+	<dict>
+		<key>ARCH</key>
+		<string>arm64</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>Windsurf</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>blocking_applications</key>
+			<array>
+				<string>Windsurf</string>
+			</array>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>Development</string>
+			<key>description</key>
+			<string>Windsurf is Codeium’s AI-native IDE with Cascade agent, autocomplete, and chat to keep developers in flow.</string>
+			<key>developer</key>
+			<string>Codeium, Inc.</string>
+			<key>display_name</key>
+			<string>Windsurf</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.psaintemarie.munki.Windsurf</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.almenscorner.download.Windsurf</key>
+			<dict>
+				<key>git_hash</key>
+				<string>e18854ab106469e311fac44fe3737277c9a03026</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.almenscorner-recipes/Codeium/Windsurf.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>a0466cc70418dabf8c75416447ccd8ac9963a5afb20686eeb661595301487e4f</string>
+			</dict>
+			<key>com.github.psaintemarie.munki.Windsurf</key>
+			<dict>
+				<key>git_hash</key>
+				<string>fcb4e3039dc6d2a6ec5a6d3f9aed91c3c2559c64</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.psaintemarie-recipes/Codeium/Windsurf.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>bcd52a1a909bf40259acc1d9e987f4568b1fd915f4c4ed1bf51730181dce4212</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.WezTerm</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>WezTerm</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust</string>
+			<key>developer</key>
+			<string>Wesley FURLONG</string>
+			<key>display_name</key>
+			<string>WezTerm</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>unattended_uninstall</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.homebysix.munki.WezTerm</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.homebysix.munki.WezTerm</key>
+			<dict>
+				<key>git_hash</key>
+				<string>9bdd63b2769dcc38e3bf42ac10e154b9b89b8665</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/WezTerm/WezTerm.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>f9bdfa635f6337cd09e5af2f50fb532e3897264b96132eb311343d7e11f746b1</string>
+			</dict>
+			<key>com.github.w0.download.wezterm</key>
+			<dict>
+				<key>git_hash</key>
+				<string>08e1327f20d5d70dc4eadd7f31066d5fab6a93a6</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.w0-recipes/WezTerm/WezTerm.download.recipe.yaml</string>
+				<key>sha256_hash</key>
+				<string>41b1a8fbffdffeffdf4fa8ac7bba989abe3fc7ef2202753688761cd8cbe4d46d</string>
+			</dict>
+			<key>com.github.w0.pkg.wezterm</key>
+			<dict>
+				<key>git_hash</key>
+				<string>08e1327f20d5d70dc4eadd7f31066d5fab6a93a6</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.w0-recipes/WezTerm/WezTerm.pkg.recipe.yaml</string>
+				<key>sha256_hash</key>
+				<string>f5e93f208a032ba0612d33ccf5512bc8f17a930f49395ac362f2d3731a7f95ee</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

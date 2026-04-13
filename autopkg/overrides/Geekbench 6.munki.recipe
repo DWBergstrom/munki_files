@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Geekbench 6</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>Geekbench6</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Geekbench 6, the latest major upgrade to Primate Labs’ easy-to-use cross-platform benchmark, is now available for download. Geekbench 6 allows you to measure your system’s power more accurately than ever before.</string>
+			<key>developer</key>
+			<string>Primate Labs</string>
+			<key>display_name</key>
+			<string>Geekbench 6</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>unattended_uninstall</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.dataJAR-recipes.munki.Geekbench 6</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.dataJAR-recipes.download.Geekbench 6</key>
+			<dict>
+				<key>git_hash</key>
+				<string>1aeec7ad596c2d7f8ec789c9085bb2c6c30b4e78</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Geekbench 6/Geekbench 6.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>565529290186449c8969d5741da9c2fb045806e95fa53b46650ab3557fe019c8</string>
+			</dict>
+			<key>com.github.dataJAR-recipes.munki.Geekbench 6</key>
+			<dict>
+				<key>git_hash</key>
+				<string>0167678da8768f7c802927fac9b43ed0e9abaf34</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Geekbench 6/Geekbench 6.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>d7519c0c7953d96c8256fcf64b2e1e195913226a17fcfbf22dd0dd04028ccf1e</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

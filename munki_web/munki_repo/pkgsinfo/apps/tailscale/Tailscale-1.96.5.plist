@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2026-04-13T01:59:39Z</date>
+		<key>munki_version</key>
+		<string>7.0.0.5328</string>
+		<key>os_version</key>
+		<string>26.3.1</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>category</key>
+	<string>VPN</string>
+	<key>description</key>
+	<string>Secure remote access to shared resources. Tailscale connects your team's devices and development environments for easy access to remote resources.</string>
+	<key>developer</key>
+	<string>Tailscale Inc.</string>
+	<key>display_name</key>
+	<string>Tailscale</string>
+	<key>installer_item_hash</key>
+	<string>a2db87573b88be3dbab7e1d7ec373f87f844ee51d4ddf802960fe97383363241</string>
+	<key>installer_item_location</key>
+	<string>apps/tailscale/Tailscale-1.96.5.dmg</string>
+	<key>installer_item_size</key>
+	<integer>28568</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>io.tailscale.ipn.macsys</string>
+			<key>CFBundleName</key>
+			<string>Tailscale</string>
+			<key>CFBundleShortVersionString</key>
+			<string>1.96.5</string>
+			<key>CFBundleVersion</key>
+			<string>101.96.5</string>
+			<key>minosversion</key>
+			<string>12.4</string>
+			<key>path</key>
+			<string>/Applications/Tailscale.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>Tailscale.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>12.4</string>
+	<key>name</key>
+	<string>Tailscale</string>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.96.5</string>
+</dict>
+</plist>

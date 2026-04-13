@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Antigravity</string>
+	<key>Input</key>
+	<dict>
+		<key>ARCH</key>
+		<string>arm</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>Antigravity</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Google's agentic development platform, evolving the IDE into the agent-first era.</string>
+			<key>developer</key>
+			<string>Google</string>
+			<key>display_name</key>
+			<string>Antigravity</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>unattended_uninstall</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.homebysix.munki.Antigravity</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.homebysix.download.Antigravity</key>
+			<dict>
+				<key>git_hash</key>
+				<string>a237c04c626417725a8764f8fcab3a48e311f038</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Google/Antigravity.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>b92449e6a68529dc05c69789d93ad6a6c1c6b108f6da4e358bc459ad3f23cf71</string>
+			</dict>
+			<key>com.github.homebysix.munki.Antigravity</key>
+			<dict>
+				<key>git_hash</key>
+				<string>c9be77e46f2a8ad2728fc9b07ea6b928ee26a4fa</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Google/Antigravity.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>355fd13e25506283c2ec0ce925a100b83052ed957aa0586137b19eec6bd48b52</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

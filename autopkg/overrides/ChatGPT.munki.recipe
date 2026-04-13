@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.ChatGPT</string>
+	<key>Input</key>
+	<dict>
+		<key>DOWNLOADURL</key>
+		<string>https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_latest.dmg</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>ChatGPT</string>
+		<key>SOFTWARETITLE</key>
+		<string>ChatGPT</string>
+		<key>VENDOR</key>
+		<string>OpenAI</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>Productivity</string>
+			<key>description</key>
+			<string>ChatGPT is an AI-powered assistant that helps you with writing, brainstorming, coding, research, and more — right from your Mac. The native macOS app provides a fast, streamlined experience with easy access via the menu bar and system-wide shortcut. Employees can securely log in with their OpenAI account to access personalized AI assistance for day-to-day tasks, project support, and productivity enhancements.</string>
+			<key>developer</key>
+			<string>OpenAI</string>
+			<key>display_name</key>
+			<string>ChatGPT</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.aanklewicz.munki.ChatGPT</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.aanklewicz.munki.ChatGPT</key>
+			<dict>
+				<key>git_hash</key>
+				<string>292cbd1d5e73c96759c94899896109b33658de1f</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.aanklewicz-recipes/ChatGPT/ChatGPT.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>51d697390f9a8d062cd35146146a4257aa8c72956c20b04e365badaed01b7709</string>
+			</dict>
+			<key>com.github.rtrouton.download.ChatGPT</key>
+			<dict>
+				<key>git_hash</key>
+				<string>bcb704af8c68c46acbb37c79fcdb0fb39e9e64d7</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.rtrouton-recipes/ChatGPT/ChatGPT.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>79659e33fe6faa6bb89b4162169dc3f07647211b8c084f583f5c50d09b5e339c</string>
+			</dict>
+			<key>com.github.rtrouton.pkg.ChatGPT</key>
+			<dict>
+				<key>git_hash</key>
+				<string>bcb704af8c68c46acbb37c79fcdb0fb39e9e64d7</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.rtrouton-recipes/ChatGPT/ChatGPT.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>556f6458b35f22a19dca6a34b82d093a5903f0266a9441df08c706a3373030d4</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

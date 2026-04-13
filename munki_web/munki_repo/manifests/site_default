@@ -54,6 +54,20 @@
 		<string>Warp</string>
 		<string>ChatGPT Atlas</string>
 		<string>Cursor</string>
+		<string>ChatGPT</string>
+		<string>Windsurf</string>
+		<string>Signal</string>
+		<string>Antigravity</string>
+		<string>NordVPN</string>
+		<string>Steam</string>
+		<string>WezTerm</string>
+		<string>Codex</string>
+		<string>SuspiciousPackage</string>
+		<string>Opera</string>
+		<string>GarageBand</string>
+		<string>Geekbench6</string>
+		<string>MunkiAdmin</string>
+		<string>Screens</string>
 	</array>
 </dict>
 </plist>

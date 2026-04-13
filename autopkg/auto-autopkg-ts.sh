@@ -1,4 +1,21 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+# Handle --help immediately before any other processing
+if [[ "$1" == "--help" || "$1" == "-h" ]]; then
+	echo "Usage: $(basename "$0") [option]"
+	echo ""
+	echo "Options:"
+	echo "  (none)             Run full autopkg workflow (repoclean, verify trust, run all overrides, makecatalogs, git commit)"
+	echo "  --make-overrides   Create new overrides for specified recipes"
+	echo "                     Example: $0 --make-overrides Firefox.munki Chrome.munki"
+	echo "  --run-overrides    Run a specific override"
+	echo "                     Example: $0 --run-overrides /path/to/override.munki.recipe"
+	echo "  --find-missing     Scan installed apps and search for autopkg recipes for apps without overrides"
+	echo "  --help, -h         Show this help message"
+	echo ""
+	echo "Log file: ${HOME}/Library/Logs/auto-autopkg-ts.log"
+	exit 0
+fi
 
 # Log file setup - writes to ~/Library/Logs for Console.app visibility
 LOG_DIR="${HOME}/Library/Logs"
@@ -256,34 +273,37 @@ function verify_trust_info {
 	failed_recipes=()
 	failed_recipe_paths=()
 	
-	for override in "${OVERRIDES_DIR}"/*; do
+	# Count overrides for progress
+	shopt -s nullglob
+	override_files=("${OVERRIDES_DIR}"/*.munki.recipe "${OVERRIDES_DIR}"/*.recipe)
+	shopt -u nullglob
+	total_overrides=${#override_files[@]}
+	current=0
+	
+	for override in "${override_files[@]}"; do
 		if [ -f "${override}" ]; then
+			((current++))
 			override_name=$(basename "${override}" .munki.recipe)
-			# Run verify-trust-info with -vv for verbose output
-			if ! "${AUTOPKG_CMD}" verify-trust-info -vv "${override}" > "${trust_output}" 2>&1; then
+			# Show progress (overwrite same line)
+			printf "\r  Checking [%d/%d]: %s...                    " "${current}" "${total_overrides}" "${override_name}"
+			
+			# Run verify-trust-info (without -vv for speed, we'll get details for failures)
+			if ! "${AUTOPKG_CMD}" verify-trust-info "${override}" > "${trust_output}" 2>&1; then
 				# Check if it's a trust verification failure vs other error
 				if grep -q "FAILED" "${trust_output}" 2>/dev/null; then
 					failed_recipes+=("${override_name}")
 					failed_recipe_paths+=("${override}")
+					printf "\n"
 					warn "[verify-trust-info] Trust verification FAILED for: ${override_name}"
-					# Log verbose output to file for Console.app review
-					write_log "--- Trust verification details for ${override_name} ---"
-					cat "${trust_output}" >> "${LOG_FILE}"
-					write_log "--- End trust verification details ---"
-					# Show summary in console
-					if grep -q "non-core processor" "${trust_output}" 2>/dev/null; then
-						info "  Non-core processor has changed"
-					fi
-					if grep -q "parent recipe" "${trust_output}" 2>/dev/null; then
-						info "  Parent recipe has changed"
-					fi
 				else
 					# Other error (e.g., recipe not found)
+					printf "\n"
 					error "[verify-trust-info] Error checking ${override_name}: $(cat "${trust_output}")"
 				fi
 			fi
 		fi
 	done
+	printf "\n"
 	
 	rm -f "${trust_output}"
 	
@@ -441,6 +461,395 @@ function make_override () {
 			log "Successfully made override ${override}"
 		fi
 	done
+}
+
+function find_missing_overrides {
+	log "Scanning installed applications for missing autopkg overrides..."
+	
+	# Skip list file - apps to permanently ignore
+	SKIP_LIST_FILE="${AUTOPKG_DIR}/autopkg-skip-apps"
+	
+	# Load skip list (one app name per line, case-insensitive)
+	skip_list=""
+	if [ -f "${SKIP_LIST_FILE}" ]; then
+		skip_list=$(cat "${SKIP_LIST_FILE}" | tr '[:upper:]' '[:lower:]')
+		skip_count=$(echo "${skip_list}" | grep -c . || echo 0)
+		log "Loaded ${skip_count} app(s) from skip list"
+	fi
+	
+	# Enable nullglob so non-matching globs expand to nothing
+	shopt -s nullglob
+	
+	# Build list of existing override names (normalized to lowercase, one per line)
+	existing_overrides=""
+	override_count=0
+	for override_file in "${OVERRIDES_DIR}"/*.munki.recipe "${OVERRIDES_DIR}"/*.recipe; do
+		if [ -f "${override_file}" ]; then
+			# Extract the NAME from the recipe plist
+			override_name=$(xmllint --xpath 'string(//key[.="NAME"]/following-sibling::string[1])' "${override_file}" 2>/dev/null | tr '[:upper:]' '[:lower:]')
+			if [ -n "${override_name}" ]; then
+				existing_overrides="${existing_overrides}${override_name}"$'\n'
+				((override_count++))
+			fi
+			# Also add the filename-based name
+			filename_name=$(basename "${override_file}" | sed -E 's/\.(munki\.recipe|recipe)$//' | tr '[:upper:]' '[:lower:]')
+			existing_overrides="${existing_overrides}${filename_name}"$'\n'
+		fi
+	done
+	log "Found ${override_count} existing overrides"
+	
+	# Scan /Applications for installed apps
+	apps_without_overrides=()
+	app_count=0
+	
+	for app_path in /Applications/*.app ~/Applications/*.app; do
+		if [ -d "${app_path}" ]; then
+			((app_count++))
+			# Get the app name without .app extension
+			app_name=$(basename "${app_path}" .app)
+			app_name_lower=$(echo "${app_name}" | tr '[:upper:]' '[:lower:]')
+			
+			# Skip Apple system apps and common utilities that don't need autopkg
+			case "${app_name_lower}" in
+				"app store"|"automator"|"books"|"calculator"|"calendar"|"chess"|"contacts"|"dictionary"|"facetime"|"find my"|"font book"|"freeform"|"home"|"image capture"|"keynote"|"mail"|"maps"|"messages"|"mission control"|"music"|"news"|"notes"|"numbers"|"pages"|"photo booth"|"photos"|"podcasts"|"preview"|"quicktime player"|"reminders"|"safari"|"shortcuts"|"siri"|"stickies"|"stocks"|"system preferences"|"system settings"|"textedit"|"time machine"|"tv"|"voice memos"|"weather")
+					continue
+					;;
+			esac
+			
+			# Skip apps in the permanent skip list
+			if [ -n "${skip_list}" ] && echo "${skip_list}" | grep -qix "${app_name_lower}"; then
+				continue
+			fi
+			
+			# Check if override exists (case-insensitive) using grep
+			# Also check without spaces (e.g., "Google Chrome" -> "googlechrome")
+			app_name_nospace=$(echo "${app_name_lower}" | sed 's/[^a-z0-9]//g')
+			if ! echo "${existing_overrides}" | grep -qix "${app_name_lower}" && \
+			   ! echo "${existing_overrides}" | grep -qix "${app_name_nospace}"; then
+				apps_without_overrides+=("${app_name}")
+			fi
+		fi
+	done
+	
+	log "Scanned ${app_count} applications"
+	
+	if [ ${#apps_without_overrides[@]} -eq 0 ]; then
+		log "All installed applications have matching overrides!"
+		return 0
+	fi
+	
+	log "Found ${#apps_without_overrides[@]} application(s) without overrides:"
+	for app in "${apps_without_overrides[@]}"; do
+		info "  - ${app}"
+	done
+	
+	# Search for recipes for each app
+	echo ""
+	log "Searching for autopkg recipes..."
+	
+	recipes_found=()
+	apps_with_recipes=()
+	
+	for app_name in "${apps_without_overrides[@]}"; do
+		# Search autopkg for matching .munki recipes
+		# Try multiple search strategies for better results
+		search_output=$(mktemp)
+		munki_lines=""
+		
+		# Build search variations
+		search_no_spaces=$(echo "${app_name}" | sed 's/[^a-zA-Z0-9]//g')
+		first_word=$(echo "${app_name}" | awk '{print $1}' | sed 's/[^a-zA-Z0-9]//g')
+		
+		# Strategy 1: Try without spaces (e.g., "GoogleChrome" from "Google Chrome")
+		# This often matches recipe naming conventions better
+		"${AUTOPKG_CMD}" search "${search_no_spaces}" > "${search_output}" 2>&1 || true
+		munki_lines=$(grep -i "\.munki" "${search_output}" 2>/dev/null | grep -vi "^Name\|^----\|^To search\|^Note:" | head -15)
+		
+		# Strategy 2: If few/no results, also try first word and combine results
+		result_count=$(echo "${munki_lines}" | wc -l | tr -d ' ')
+		if [ -z "${result_count}" ] || [ "${result_count}" -lt 3 ]; then
+			"${AUTOPKG_CMD}" search "${first_word}" >> "${search_output}" 2>&1 || true
+			munki_lines=$(grep -i "\.munki" "${search_output}" 2>/dev/null | grep -vi "^Name\|^----\|^To search\|^Note:" | sort -u | head -15)
+		fi
+		
+		# Strategy 3: If still no results, try full name with spaces
+		if [ -z "${munki_lines}" ]; then
+			"${AUTOPKG_CMD}" search "${app_name}" > "${search_output}" 2>&1 || true
+			munki_lines=$(grep -i "\.munki" "${search_output}" 2>/dev/null | grep -vi "^Name\|^----\|^To search\|^Note:" | head -15)
+		fi
+		
+		if [ -n "${munki_lines}" ]; then
+			echo ""
+			info "Recipes found for '${app_name}':"
+			recipe_num=1
+			recipe_options=()
+			recipe_repos=()
+			while IFS= read -r line; do
+				if [ -n "${line}" ]; then
+					# autopkg search output: "RecipeName.munki.recipe    repo-name    Path/to/recipe"
+					# Columns are separated by 2+ spaces. Recipe names can have single spaces.
+					
+					# Extract repo first - look for *-recipes pattern (this is reliable)
+					recipe_repo=$(echo "${line}" | grep -oE '[a-zA-Z0-9_-]+-recipes' | head -1)
+					
+					# Extract recipe name - everything before "  " (2+ spaces) that ends with .munki or .munki.recipe
+					# Split on 2+ spaces and take the first field
+					recipe_name=$(echo "${line}" | sed -E 's/[[:space:]]{2,}.*//' | grep -oE '.*\.munki(\.recipe)?$')
+					
+					# Validate we have reasonable values
+					if [ -n "${recipe_name}" ] && echo "${recipe_name}" | grep -qiE "\.munki(\.recipe)?$"; then
+						if [ -n "${recipe_repo}" ]; then
+							echo "  ${recipe_num}) ${recipe_name} (${recipe_repo})"
+						else
+							echo "  ${recipe_num}) ${recipe_name} (repo unknown)"
+						fi
+						recipe_options+=("${recipe_name}")
+						recipe_repos+=("${recipe_repo}")
+						((recipe_num++))
+					fi
+				fi
+			done <<< "${munki_lines}"
+			
+			if [ ${#recipe_options[@]} -eq 0 ]; then
+				warn "No .munki recipes found for '${app_name}'"
+				rm -f "${search_output}"
+				continue
+			fi
+			
+			if [ -t 0 ] && [ -t 1 ]; then
+				echo "  s) Skip this app"
+				echo "  p) Permanently skip (add to skip list)"
+				echo "  q) Quit searching"
+				read -p "Choose recipe number to create override [1-$((recipe_num-1))/s/p/q]: " choice
+				
+				case "${choice}" in
+					[Qq])
+						log "Stopping recipe search"
+						rm -f "${search_output}"
+						break
+						;;
+					[Ss])
+						log "Skipping ${app_name}"
+						;;
+					[Pp])
+						log "Permanently skipping ${app_name}"
+						echo "${app_name}" >> "${SKIP_LIST_FILE}"
+						info "Added '${app_name}' to ${SKIP_LIST_FILE}"
+						;;
+					[1-9]*)
+						idx=$((choice - 1))
+						if [ ${idx} -ge 0 ] && [ ${idx} -lt ${#recipe_options[@]} ]; then
+							selected_recipe="${recipe_options[${idx}]}"
+							selected_repo="${recipe_repos[${idx}]}"
+							log "Creating override for: ${selected_recipe}"
+							
+							# Function to attempt creating override with dependency resolution
+							create_override_with_deps() {
+								local recipe="$1"
+								local repo="$2"
+								local max_attempts=3
+								local attempt=1
+								local override_output
+								
+								while [ ${attempt} -le ${max_attempts} ]; do
+									override_output=$(mktemp)
+									if "${AUTOPKG_CMD}" make-override "${recipe}" > "${override_output}" 2>&1; then
+										rm -f "${override_output}"
+										return 0
+									fi
+									
+									# Check for missing parent recipe
+									missing_recipe=$(grep "Didn't find a recipe for" "${override_output}" | sed 's/.*Didn.t find a recipe for //' | tr -d '.')
+									if [ -n "${missing_recipe}" ]; then
+										# Extract repo name from recipe identifier (com.github.USERNAME.type.Name)
+										parent_repo=$(echo "${missing_recipe}" | sed -n 's/com\.github\.\([^.]*\)\..*/\1-recipes/p')
+										if [ -n "${parent_repo}" ]; then
+											warn "Missing parent recipe from: ${parent_repo}"
+											info "Adding repo: ${parent_repo}"
+											if "${AUTOPKG_CMD}" repo-add "${parent_repo}" 2>/dev/null; then
+												log "Added parent repo: ${parent_repo}"
+												((attempt++))
+												rm -f "${override_output}"
+												continue
+											else
+												warn "Could not add ${parent_repo} automatically"
+											fi
+										fi
+									fi
+									
+									# Show error and break
+									cat "${override_output}"
+									rm -f "${override_output}"
+									break
+								done
+								return 1
+							}
+							
+							# First, try adding the recipe's own repo if we have it
+							if [ -n "${selected_repo}" ] && [ "${selected_repo}" != "" ]; then
+								"${AUTOPKG_CMD}" repo-add "${selected_repo}" 2>/dev/null && \
+									log "Ensured repo is added: ${selected_repo}"
+							fi
+							
+							# Try to create override with automatic dependency resolution
+							if create_override_with_deps "${selected_recipe}" "${selected_repo}"; then
+								log "Successfully created override for ${app_name}"
+								recipes_found+=("${selected_recipe}")
+								apps_with_recipes+=("${app_name}")
+							else
+								error "Failed to create override for ${selected_recipe}"
+								
+								# Try to extract error details for better guidance
+								test_output=$(mktemp)
+								"${AUTOPKG_CMD}" make-override "${selected_recipe}" > "${test_output}" 2>&1 || true
+								
+								# Check if override already exists
+								if grep -q "already exists" "${test_output}"; then
+									existing_path=$(grep "already exists at" "${test_output}" | sed 's/.*already exists at //' | sed 's/,.*//')
+									info "Override already exists: ${existing_path}"
+									log "Skipping - you already have this override"
+									rm -f "${test_output}"
+									continue
+								fi
+								
+								# Check for deprecated recipe
+								if grep -q "deprecated" "${test_output}"; then
+									warn "This recipe is deprecated"
+									if [ -t 0 ] && [ -t 1 ]; then
+										read -p "Create override anyway with --ignore-deprecation? (y/N): " deprec_choice
+										if [[ "${deprec_choice}" =~ ^[Yy]$ ]]; then
+											if "${AUTOPKG_CMD}" make-override "${selected_recipe}" --ignore-deprecation 2>/dev/null; then
+												log "Successfully created override for ${app_name} (deprecated recipe)"
+												recipes_found+=("${selected_recipe}")
+												apps_with_recipes+=("${app_name}")
+											else
+												error "Failed to create override even with --ignore-deprecation"
+											fi
+										else
+											log "Skipping deprecated recipe"
+										fi
+									fi
+									rm -f "${test_output}"
+									continue
+								fi
+								
+								# Check for missing parent recipe
+								missing_dep=$(grep "Didn't find a recipe for" "${test_output}" | sed 's/.*Didn.t find a recipe for //' | sed 's/\.$//')
+								rm -f "${test_output}"
+								
+								if [ -n "${missing_dep}" ]; then
+									# Extract likely repo name from identifier (com.github.USERNAME.type.Name)
+									suggested_repo=$(echo "${missing_dep}" | sed -n 's/com\.github\.\([^.]*\)\..*/\1-recipes/p')
+									echo ""
+									info "Missing parent recipe: ${missing_dep}"
+									if [ -n "${suggested_repo}" ]; then
+										info "Suggested repo to add: ${suggested_repo}"
+										read -p "Add '${suggested_repo}'? (Y/n/other): " repo_choice
+										case "${repo_choice}" in
+											[Nn])
+												warn "Skipping ${app_name}"
+												;;
+											""|[Yy]*)
+												if "${AUTOPKG_CMD}" repo-add "${suggested_repo}" 2>/dev/null; then
+													log "Added repo: ${suggested_repo}"
+													if "${AUTOPKG_CMD}" make-override "${selected_recipe}" 2>/dev/null; then
+														log "Successfully created override for ${app_name}"
+														recipes_found+=("${selected_recipe}")
+														apps_with_recipes+=("${app_name}")
+													else
+														error "Still failed - may need additional repos"
+													fi
+												else
+													error "Could not add repo: ${suggested_repo}"
+												fi
+												;;
+											*)
+												# User entered a different repo name
+												if "${AUTOPKG_CMD}" repo-add "${repo_choice}" 2>/dev/null; then
+													log "Added repo: ${repo_choice}"
+													if "${AUTOPKG_CMD}" make-override "${selected_recipe}" 2>/dev/null; then
+														log "Successfully created override for ${app_name}"
+														recipes_found+=("${selected_recipe}")
+														apps_with_recipes+=("${app_name}")
+													else
+														error "Still failed to create override"
+													fi
+												else
+													error "Could not add repo: ${repo_choice}"
+												fi
+												;;
+										esac
+									else
+										read -p "Enter repo to try (or press Enter to skip): " manual_repo
+										if [ -n "${manual_repo}" ]; then
+											"${AUTOPKG_CMD}" repo-add "${manual_repo}" 2>/dev/null
+											"${AUTOPKG_CMD}" make-override "${selected_recipe}" 2>/dev/null && \
+												log "Successfully created override for ${app_name}" && \
+												recipes_found+=("${selected_recipe}") && \
+												apps_with_recipes+=("${app_name}")
+										fi
+									fi
+								else
+									read -p "Enter repo to try (or press Enter to skip): " manual_repo
+									if [ -n "${manual_repo}" ]; then
+										"${AUTOPKG_CMD}" repo-add "${manual_repo}" 2>/dev/null
+										"${AUTOPKG_CMD}" make-override "${selected_recipe}" 2>/dev/null && \
+											log "Successfully created override for ${app_name}" && \
+											recipes_found+=("${selected_recipe}") && \
+											apps_with_recipes+=("${app_name}")
+									fi
+								fi
+							fi
+						else
+							warn "Invalid selection, skipping ${app_name}"
+						fi
+						;;
+					*)
+						warn "Invalid selection, skipping ${app_name}"
+						;;
+				esac
+			fi
+		else
+			warn "No .munki recipes found for '${app_name}'"
+			if [ -t 0 ] && [ -t 1 ]; then
+				read -p "  Permanently skip this app? (y/N): " skip_choice
+				if [[ "${skip_choice}" =~ ^[Yy]$ ]]; then
+					echo "${app_name}" >> "${SKIP_LIST_FILE}"
+					info "Added '${app_name}' to skip list"
+				fi
+			fi
+		fi
+		
+		rm -f "${search_output}"
+	done
+	
+	# Summary
+	echo ""
+	if [ ${#recipes_found[@]} -gt 0 ]; then
+		log "Created ${#recipes_found[@]} new override(s):"
+		for recipe in "${recipes_found[@]}"; do
+			info "  - ${recipe}"
+		done
+		
+		# Offer to run trust verification on new overrides
+		if [ -t 0 ] && [ -t 1 ]; then
+			read -p "Run autopkg for new overrides now? (y/N): " run_choice
+			if [[ "${run_choice}" =~ ^[Yy]$ ]]; then
+				for app_name in "${apps_with_recipes[@]}"; do
+					override_file=$(find "${OVERRIDES_DIR}" -maxdepth 1 -iname "*${app_name}*.recipe" -type f 2>/dev/null | head -1)
+					if [ -n "${override_file}" ] && [ -f "${override_file}" ]; then
+						log "Running override: ${override_file}"
+						"${AUTOPKG_CMD}" run -v "${override_file}" -k force_munkiimport=true
+					fi
+				done
+			fi
+		fi
+	else
+		log "No new overrides were created"
+	fi
+	
+	# Restore default glob behavior
+	shopt -u nullglob
 }
 
 function verify_trust_info_single {
@@ -732,6 +1141,9 @@ case $1 in
 		;;
 	--run-overrides)
 		run_specified_overrides "$@"
+		;;
+	--find-missing)
+		find_missing_overrides
 		;;
 	*)
 		main

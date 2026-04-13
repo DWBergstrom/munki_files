@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.SuspiciousPackage</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_CATEGORY</key>
+		<string>Utilities</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps</string>
+		<key>NAME</key>
+		<string>SuspiciousPackage</string>
+		<key>pkg_url</key>
+		<string>https://www.mothersruin.com/software/downloads/SuspiciousPackage.dmg</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>%MUNKI_CATEGORY%</string>
+			<key>description</key>
+			<string>Peek inside macOS Installer packages, see what they install, what they do, and more.</string>
+			<key>developer</key>
+			<string>Mothers Ruin Software</string>
+			<key>display_name</key>
+			<string>%NAME%</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.apizz.munki.SuspiciousPackage</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.apizz.munki.SuspiciousPackage</key>
+			<dict>
+				<key>git_hash</key>
+				<string>abdb40a2ccc3a9db97f278f98326cb608f59d846</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.apizz-recipes/Suspicious_Package/SuspiciousPackage.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>f3d24680599c46ab267cc3863d444f5846ab4bc06c8426a63d5559682faec155</string>
+			</dict>
+			<key>com.github.novaksam.download.SuspiciousPackage</key>
+			<dict>
+				<key>git_hash</key>
+				<string>9ebb6d4ed6b4b309e7ff8b26eeeacc9f644c397e</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.novaksam-recipes/Recipes - Download/SuspiciousPackage.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>5630ed58a643e2019a70d53f23a7934c8303749298300be7b70e11a58b4e719b</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

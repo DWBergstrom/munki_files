@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Signal</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_PKGINFO_DISPLAYNAME</key>
+		<string>Signal Desktop</string>
+		<key>MUNKI_PKGINFO_NAME</key>
+		<string>Signal_Desktop</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>Signal</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string> </string>
+			<key>developer</key>
+			<string>RIDDLE QUIET VENTURES, LLC</string>
+			<key>display_name</key>
+			<string>%MUNKI_PKGINFO_DISPLAYNAME%</string>
+			<key>name</key>
+			<string>%MUNKI_PKGINFO_NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.jaharmi.munki.Signal</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.jaharmi.download.Signal</key>
+			<dict>
+				<key>git_hash</key>
+				<string>5e999b844a573b676832feb5f4c68516cd88e6e0</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.jaharmi-recipes/Signal/Signal.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>089df972696bb5138da1531b09584ce84ec4e1bdd6c958a3886aa30b5eb30e0e</string>
+			</dict>
+			<key>com.github.jaharmi.munki.Signal</key>
+			<dict>
+				<key>git_hash</key>
+				<string>5e999b844a573b676832feb5f4c68516cd88e6e0</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.jaharmi-recipes/Signal/Signal.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>077874ff03798cc2820e6842865432435bbb060fd5d46a7868c2561278730bb1</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

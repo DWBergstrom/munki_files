@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.NordVPN</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>NordVPN</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>blocking_applications</key>
+			<array>
+				<string>NordVPN.app</string>
+				<string>NordVPNLauncher Sideload.app</string>
+			</array>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Get the fastest VPN in the world and enjoy a smooth, safe, and private connection on your Mac. NordVPN’s easy-to-use app will protect all your connected devices from snoopers tracking what you do online.
+
+Even if you think you have nothing to hide — no one likes to be watched. That’s why you need a VPN to protect your privacy and keep your online data safe.</string>
+			<key>developer</key>
+			<string>Nordvpn S.A.</string>
+			<key>display_name</key>
+			<string>NordVPN</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>postuninstall_script</key>
+			<string>#!/bin/bash
+#
+launchctl unload /Library/LaunchDaemons/com.nordvpn.macos.helper.plist
+#
+rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>unattended_uninstall</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.dataJAR-recipes.munki.NordVPN</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.ahousseini-recipes.download.NordVPN</key>
+			<dict>
+				<key>git_hash</key>
+				<string>dfeaa1931f3a9b7c46b112593036de823b93c0d0</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.ahousseini-recipes/NordVPN/NordVPN.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>8d66ed54fd0336f19d39cd6df969a5749ea9611e208e4fc1f7e54692abce09c2</string>
+			</dict>
+			<key>com.github.dataJAR-recipes.munki.NordVPN</key>
+			<dict>
+				<key>git_hash</key>
+				<string>0167678da8768f7c802927fac9b43ed0e9abaf34</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/NordVPN/NordVPN.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>b7d9b08d05151b9a180dcbae90b63b4648e53a44ee09d40e4d4c7b58e36b36d5</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>
