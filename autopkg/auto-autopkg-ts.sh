@@ -11,11 +11,14 @@ if [[ "$1" == "--help" || "$1" == "-h" ]]; then
 	echo "  --run-overrides    Run a specific override"
 	echo "                     Example: $0 --run-overrides /path/to/override.munki.recipe"
 	echo "  --find-missing     Scan installed apps and search for autopkg recipes for apps without overrides"
+	echo "                     Also scans remote hosts listed in autopkg-scan-hosts file"
 	echo "  --verify-icons     Check that all packages in Munki repo have icons"
 	echo "  --help, -h         Show this help message"
 	echo ""
 	echo "Flags (can be combined with options):"
 	echo "  --force-import     Force re-import packages even if already in Munki repo (use for testing only)"
+	echo "  --scan-host USER@HOST  Add additional host to scan for --find-missing (can be used multiple times)"
+	echo "  --local-only       Skip scanning remote hosts for --find-missing"
 	echo ""
 	echo "Log file: ${HOME}/Library/Logs/auto-autopkg-ts.log"
 	exit 0
@@ -23,10 +26,26 @@ fi
 
 # Parse flags from any position in arguments
 FORCE_MUNKIIMPORT=""
+EXTRA_SCAN_HOSTS=()
+LOCAL_ONLY=false
 for arg in "$@"; do
 	if [[ "${arg}" == "--force-import" ]]; then
 		FORCE_MUNKIIMPORT="-k force_munkiimport=true"
+	elif [[ "${arg}" == "--local-only" ]]; then
+		LOCAL_ONLY=true
 	fi
+done
+# Parse --scan-host arguments (need to look at pairs)
+while [[ $# -gt 0 ]]; do
+	case "$1" in
+		--scan-host)
+			if [[ -n "$2" && ! "$2" =~ ^-- ]]; then
+				EXTRA_SCAN_HOSTS+=("$2")
+				shift
+			fi
+			;;
+	esac
+	shift
 done
 
 # Log file setup - writes to ~/Library/Logs for Console.app visibility
@@ -630,43 +649,89 @@ function find_missing_overrides {
 	done < <(ls -1 "${OVERRIDES_DIR}"/*.munki.recipe "${OVERRIDES_DIR}"/*.recipe 2>/dev/null | sort -u)
 	log "Found ${override_count} existing overrides"
 	
-	# Scan /Applications for installed apps
-	apps_without_overrides=()
-	app_count=0
+	# Collect all app names from local and remote sources
+	all_app_names=()
 	
+	# Scan local /Applications
+	log "Scanning local applications..."
+	local_app_count=0
 	for app_path in /Applications/*.app ~/Applications/*.app; do
 		if [ -d "${app_path}" ]; then
-			((app_count++))
-			# Get the app name without .app extension
+			((local_app_count++))
 			app_name=$(basename "${app_path}" .app)
-			app_name_lower=$(echo "${app_name}" | tr '[:upper:]' '[:lower:]')
-			
-			# Skip Apple system apps and common utilities that don't need autopkg
-			case "${app_name_lower}" in
-				"app store"|"automator"|"books"|"calculator"|"calendar"|"chess"|"contacts"|"dictionary"|"facetime"|"find my"|"font book"|"freeform"|"home"|"image capture"|"keynote"|"mail"|"maps"|"messages"|"mission control"|"music"|"news"|"notes"|"numbers"|"pages"|"photo booth"|"photos"|"podcasts"|"preview"|"quicktime player"|"reminders"|"safari"|"shortcuts"|"siri"|"stickies"|"stocks"|"system preferences"|"system settings"|"textedit"|"time machine"|"tv"|"voice memos"|"weather")
-					continue
-					;;
-			esac
-			
-			# Skip apps in the permanent skip list
-			if [ -n "${skip_list}" ] && echo "${skip_list}" | grep -qix "${app_name_lower}"; then
+			all_app_names+=("${app_name}")
+		fi
+	done
+	log "Found ${local_app_count} local applications"
+	
+	# Scan remote hosts (unless --local-only)
+	SCAN_HOSTS_FILE="${AUTOPKG_DIR}/autopkg-scan-hosts"
+	if [ "${LOCAL_ONLY}" != "true" ]; then
+		# Build list of hosts to scan
+		hosts_to_scan=()
+		
+		# Add hosts from config file
+		if [ -f "${SCAN_HOSTS_FILE}" ]; then
+			while IFS= read -r line; do
+				# Skip comments and empty lines
+				[[ "${line}" =~ ^[[:space:]]*# ]] && continue
+				[[ -z "${line// }" ]] && continue
+				hosts_to_scan+=("${line}")
+			done < "${SCAN_HOSTS_FILE}"
+		fi
+		
+		# Add extra hosts from --scan-host flags
+		for host in "${EXTRA_SCAN_HOSTS[@]}"; do
+			hosts_to_scan+=("${host}")
+		done
+		
+		# Scan each remote host
+		for host in "${hosts_to_scan[@]}"; do
+			log "Scanning remote host: ${host}..."
+			remote_apps=$(ssh -o ConnectTimeout=10 -o BatchMode=yes "${host}" 'ls -1 /Applications/ 2>/dev/null | grep "\.app$" | sed "s/\.app$//"' 2>/dev/null)
+			if [ $? -eq 0 ] && [ -n "${remote_apps}" ]; then
+				remote_count=$(echo "${remote_apps}" | wc -l | tr -d ' ')
+				log "Found ${remote_count} applications on ${host}"
+				while IFS= read -r app_name; do
+					[ -n "${app_name}" ] && all_app_names+=("${app_name}")
+				done <<< "${remote_apps}"
+			else
+				warn "Could not connect to ${host} (check SSH key auth)"
+			fi
+		done
+	fi
+	
+	# Deduplicate app names
+	mapfile -t unique_app_names < <(printf '%s\n' "${all_app_names[@]}" | sort -u)
+	log "Total unique applications: ${#unique_app_names[@]}"
+	
+	# Filter apps to find those without overrides
+	apps_without_overrides=()
+	for app_name in "${unique_app_names[@]}"; do
+		app_name_lower=$(echo "${app_name}" | tr '[:upper:]' '[:lower:]')
+		
+		# Skip Apple system apps and common utilities that don't need autopkg
+		case "${app_name_lower}" in
+			"app store"|"automator"|"books"|"calculator"|"calendar"|"chess"|"contacts"|"dictionary"|"facetime"|"find my"|"font book"|"freeform"|"home"|"image capture"|"keynote"|"mail"|"maps"|"messages"|"mission control"|"music"|"news"|"notes"|"numbers"|"pages"|"photo booth"|"photos"|"podcasts"|"preview"|"quicktime player"|"reminders"|"safari"|"shortcuts"|"siri"|"stickies"|"stocks"|"system preferences"|"system settings"|"textedit"|"time machine"|"tv"|"voice memos"|"weather"|"utilities"|"ilife"|"iwork")
 				continue
-			fi
-			
-			# Check if override exists (case-insensitive) using grep
-			# Also check without spaces (e.g., "Google Chrome" -> "googlechrome")
-			app_name_nospace=$(echo "${app_name_lower}" | sed 's/[^a-z0-9]//g')
-			if ! echo "${existing_overrides}" | grep -qix "${app_name_lower}" && \
-			   ! echo "${existing_overrides}" | grep -qix "${app_name_nospace}"; then
-				apps_without_overrides+=("${app_name}")
-			fi
+				;;
+		esac
+		
+		# Skip apps in the permanent skip list
+		if [ -n "${skip_list}" ] && echo "${skip_list}" | grep -qix "${app_name_lower}"; then
+			continue
+		fi
+		
+		# Check if override exists (case-insensitive)
+		app_name_nospace=$(echo "${app_name_lower}" | sed 's/[^a-z0-9]//g')
+		if ! echo "${existing_overrides}" | grep -qix "${app_name_lower}" && \
+		   ! echo "${existing_overrides}" | grep -qix "${app_name_nospace}"; then
+			apps_without_overrides+=("${app_name}")
 		fi
 	done
 	
-	log "Scanned ${app_count} applications"
-	
 	if [ ${#apps_without_overrides[@]} -eq 0 ]; then
-		log "All installed applications have matching overrides!"
+		log "All applications have matching overrides!"
 		return 0
 	fi
 	
