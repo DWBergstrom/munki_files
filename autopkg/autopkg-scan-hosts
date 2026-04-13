@@ -1,4 +1,4 @@
 # Hosts to scan for installed applications (one per line)
 # Format: user@hostname or user@ip
 # Lines starting with # are comments
-dwbergstrom@192.168.1.128
+dwbergstrom@192.168.1.28

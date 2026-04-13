@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.OrbStack</string>
+	<key>Input</key>
+	<dict>
+		<key>ARCH</key>
+		<string>arm64</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>OrbStack</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>Development</string>
+			<key>description</key>
+			<string>OrbStack is a fast, light, and simple way to run containers and Linux machines on macOS. It's a supercharged alternative to Docker Desktop and WSL, all in one easy-to-use app.</string>
+			<key>developer</key>
+			<string>Orbital Labs, LLC</string>
+			<key>display_name</key>
+			<string>OrbStack</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>unattended_uninstall</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.arubdesu.munki.OrbStack</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict>
+			<key>com.github.homebysix.FindAndReplace/FindAndReplace</key>
+			<dict>
+				<key>git_hash</key>
+				<string>cecb7b4f782a8f6b59f029d30a544df0e07c5548</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/FindAndReplace/FindAndReplace.py</string>
+				<key>sha256_hash</key>
+				<string>550c9015d45d5f4bbdef4ebd2563c4fbfcbef10cde59598bb101ef7b2647a310</string>
+			</dict>
+		</dict>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.arubdesu.download.OrbStack</key>
+			<dict>
+				<key>git_hash</key>
+				<string>b8928e88ed20f7ca44ae4a14e71a19a8c9bd4c99</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.arubdesu-recipes/OrbStack/OrbStack.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>48460dfc346c8f22ca35076c5fa3e2174b2a0c604b42919fe89f3196979b2e6e</string>
+			</dict>
+			<key>com.github.arubdesu.munki.OrbStack</key>
+			<dict>
+				<key>git_hash</key>
+				<string>b8928e88ed20f7ca44ae4a14e71a19a8c9bd4c99</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.arubdesu-recipes/OrbStack/OrbStack.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>8461e3a3f28c35cb54ca63f55972a46485f3a4ee6a5911f7651b9116bab230b1</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

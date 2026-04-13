@@ -24,10 +24,14 @@ if [[ "$1" == "--help" || "$1" == "-h" ]]; then
 	exit 0
 fi
 
+# Save original arguments before parsing
+ORIGINAL_ARGS=("$@")
+
 # Parse flags from any position in arguments
 FORCE_MUNKIIMPORT=""
 EXTRA_SCAN_HOSTS=()
 LOCAL_ONLY=false
+
 for arg in "$@"; do
 	if [[ "${arg}" == "--force-import" ]]; then
 		FORCE_MUNKIIMPORT="-k force_munkiimport=true"
@@ -35,17 +39,17 @@ for arg in "$@"; do
 		LOCAL_ONLY=true
 	fi
 done
+
 # Parse --scan-host arguments (need to look at pairs)
-while [[ $# -gt 0 ]]; do
-	case "$1" in
-		--scan-host)
-			if [[ -n "$2" && ! "$2" =~ ^-- ]]; then
-				EXTRA_SCAN_HOSTS+=("$2")
-				shift
-			fi
-			;;
-	esac
-	shift
+i=0
+while [[ $i -lt ${#ORIGINAL_ARGS[@]} ]]; do
+	if [[ "${ORIGINAL_ARGS[$i]}" == "--scan-host" ]]; then
+		next=$((i + 1))
+		if [[ $next -lt ${#ORIGINAL_ARGS[@]} && ! "${ORIGINAL_ARGS[$next]}" =~ ^-- ]]; then
+			EXTRA_SCAN_HOSTS+=("${ORIGINAL_ARGS[$next]}")
+		fi
+	fi
+	((i++))
 done
 
 # Log file setup - writes to ~/Library/Logs for Console.app visibility
@@ -678,18 +682,26 @@ function find_missing_overrides {
 		
 		# Add hosts from config file
 		if [ -f "${SCAN_HOSTS_FILE}" ]; then
+			log "Reading hosts from: ${SCAN_HOSTS_FILE}"
 			while IFS= read -r line; do
 				# Skip comments and empty lines
 				[[ "${line}" =~ ^[[:space:]]*# ]] && continue
 				[[ -z "${line// }" ]] && continue
 				hosts_to_scan+=("${line}")
 			done < "${SCAN_HOSTS_FILE}"
+			log "Found ${#hosts_to_scan[@]} host(s) in config file"
+		else
+			info "No scan hosts config file found at: ${SCAN_HOSTS_FILE}"
 		fi
 		
 		# Add extra hosts from --scan-host flags
 		for host in "${EXTRA_SCAN_HOSTS[@]}"; do
 			hosts_to_scan+=("${host}")
 		done
+		
+		if [ ${#hosts_to_scan[@]} -eq 0 ]; then
+			info "No remote hosts to scan"
+		fi
 		
 		# Scan each remote host
 		for host in "${hosts_to_scan[@]}"; do
@@ -865,10 +877,14 @@ function find_missing_overrides {
 									fi
 									
 									# Check for missing parent recipe
-									missing_recipe=$(grep "Didn't find a recipe for" "${override_output}" | sed 's/.*Didn.t find a recipe for //' | tr -d '.')
+									missing_recipe=$(grep "Didn't find a recipe for" "${override_output}" | sed 's/.*Didn.t find a recipe for //' | sed 's/\.$//')
 									if [ -n "${missing_recipe}" ]; then
-										# Extract repo name from recipe identifier (com.github.USERNAME.type.Name)
+										# Extract repo name from recipe identifier
+										# Handles: com.github.USERNAME.type.Name OR com.USERNAME.type.Name
 										parent_repo=$(echo "${missing_recipe}" | sed -n 's/com\.github\.\([^.]*\)\..*/\1-recipes/p')
+										if [ -z "${parent_repo}" ]; then
+											parent_repo=$(echo "${missing_recipe}" | sed -n 's/com\.\([^.]*\)\..*/\1-recipes/p')
+										fi
 										if [ -n "${parent_repo}" ]; then
 											warn "Missing parent recipe from: ${parent_repo}"
 											info "Adding repo: ${parent_repo}"
@@ -944,8 +960,13 @@ function find_missing_overrides {
 								rm -f "${test_output}"
 								
 								if [ -n "${missing_dep}" ]; then
-									# Extract likely repo name from identifier (com.github.USERNAME.type.Name)
+									# Extract likely repo name from identifier
+									# Handles: com.github.USERNAME.type.Name OR com.USERNAME.type.Name
 									suggested_repo=$(echo "${missing_dep}" | sed -n 's/com\.github\.\([^.]*\)\..*/\1-recipes/p')
+									if [ -z "${suggested_repo}" ]; then
+										# Try without github (e.g., com.justinrummel.pkg.iStatMenus)
+										suggested_repo=$(echo "${missing_dep}" | sed -n 's/com\.\([^.]*\)\..*/\1-recipes/p')
+									fi
 									echo ""
 									info "Missing parent recipe: ${missing_dep}"
 									if [ -n "${suggested_repo}" ]; then

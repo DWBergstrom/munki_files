@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Apparency</string>
+	<key>Input</key>
+	<dict>
+		<key>NAME</key>
+		<string>Apparency</string>
+		<key>PKG_URL</key>
+		<string>https://www.mothersruin.com/software/downloads/Apparency.dmg</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>Utilities</string>
+			<key>description</key>
+			<string>Aparency is an application for inspecting other applications.</string>
+			<key>developer</key>
+			<string>Mothers Ruin Software</string>
+			<key>display_name</key>
+			<string>Apparency</string>
+			<key>icon_name</key>
+			<string>Apparency.png</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>unattended_uninstall</key>
+			<true/>
+			<key>uninstallable</key>
+			<true/>
+		</dict>
+		<key>repo_subdirectory</key>
+		<string>utilities</string>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.kevinmcox.munki.Apparency</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.kevinmcox.download.Apparency</key>
+			<dict>
+				<key>git_hash</key>
+				<string>6313efa2e26f68454afa6d332578ebe5c52a6e4c</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.kevinmcox-recipes/Mothers Ruin Software/Apparency.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>09cd117949066418e4ca18847af0416057c811ec3fbd73e34abf164228f367e1</string>
+			</dict>
+			<key>com.github.kevinmcox.munki.Apparency</key>
+			<dict>
+				<key>git_hash</key>
+				<string>6313efa2e26f68454afa6d332578ebe5c52a6e4c</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.kevinmcox-recipes/Mothers Ruin Software/Apparency.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>352b3e9c0b89cdec442ad36899a3d25025b6d357ee79bf855d73d18908d96446</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Archaeology</string>
+	<key>Input</key>
+	<dict>
+		<key>NAME</key>
+		<string>Archaeology</string>
+		<key>PKG_URL</key>
+		<string>https://www.mothersruin.com/software/downloads/Archaeology.dmg</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>Utilities</string>
+			<key>description</key>
+			<string>Archaeology is a tool For digging into binary files on macOS.</string>
+			<key>developer</key>
+			<string>Mothers Ruin Software</string>
+			<key>display_name</key>
+			<string>Archaeology</string>
+			<key>icon_name</key>
+			<string>Archaeology.png</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>unattended_uninstall</key>
+			<true/>
+			<key>uninstallable</key>
+			<true/>
+		</dict>
+		<key>repo_subdirectory</key>
+		<string>utilities</string>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.kevinmcox.munki.Archaeology</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.kevinmcox.download.Archaeology</key>
+			<dict>
+				<key>git_hash</key>
+				<string>06059acff14a1bd89306a1dd3d37f53647861ad0</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.kevinmcox-recipes/Mothers Ruin Software/Archaeology.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>4422127b688c1c95a5a94d299d62f69935a3aec225923046f6281843cd28b288</string>
+			</dict>
+			<key>com.github.kevinmcox.munki.Archaeology</key>
+			<dict>
+				<key>git_hash</key>
+				<string>6313efa2e26f68454afa6d332578ebe5c52a6e4c</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.kevinmcox-recipes/Mothers Ruin Software/Archaeology.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>67a13194e4b6ee89ad9ac9ede0317e86523ed2d20aa68afcd76df70df1c9ab2e</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

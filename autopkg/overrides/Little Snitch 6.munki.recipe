@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Little Snitch 6</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>LittleSnitch6</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Little Snitch is a host-based application firewall for macOS.</string>
+			<key>developer</key>
+			<string>Objective Development</string>
+			<key>display_name</key>
+			<string>Little Snitch 6</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>unattended_uninstall</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.dataJAR-recipes.munki.Little Snitch 6</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.dataJAR-recipes.download.Little Snitch 6</key>
+			<dict>
+				<key>git_hash</key>
+				<string>231101272ef1c5f179257d6e38227ab6e3bb3f05</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Little Snitch 6/Little Snitch 6.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>fd978cec945a66a7783fd9566d4c23ed64a650d40977629c4d0200445bd4a243</string>
+			</dict>
+			<key>com.github.dataJAR-recipes.munki.Little Snitch 6</key>
+			<dict>
+				<key>git_hash</key>
+				<string>0167678da8768f7c802927fac9b43ed0e9abaf34</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Little Snitch 6/Little Snitch 6.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>10b495bdf4a0fbd86a6cb56c1ed1e3f1b5a83bf0e30dacf43e9f03f9e93598c4</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

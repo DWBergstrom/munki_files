@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.CrystalFetch</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>CrystalFetch</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>macOS app for downloading Windows installer ISOs from UUPDump.</string>
+			<key>developer</key>
+			<string>Turing Software</string>
+			<key>display_name</key>
+			<string>CrystalFetch</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>unattended_uninstall</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.homebysix.munki.CrystalFetch</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.homebysix.download.CrystalFetch</key>
+			<dict>
+				<key>git_hash</key>
+				<string>86eabb4f400cfbeb82794ff971d81d1554b6b6ff</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Turing Software/CrystalFetch.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>1fe3d4131a4ed458be290be3af88828b156e52d7c38999cf21fa0c4018597e4e</string>
+			</dict>
+			<key>com.github.homebysix.munki.CrystalFetch</key>
+			<dict>
+				<key>git_hash</key>
+				<string>86eabb4f400cfbeb82794ff971d81d1554b6b6ff</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Turing Software/CrystalFetch.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>c668132659890fe4628cdad0d6ab3ca60f0d3ba665fd8020ff58b045d97f209f</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

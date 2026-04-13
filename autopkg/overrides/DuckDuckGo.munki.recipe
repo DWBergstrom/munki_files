@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.DuckDuckGo</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>DuckDuckGo</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Chrome-like keyword search for Safari.</string>
+			<key>developer</key>
+			<string>Duck Duck Go</string>
+			<key>display_name</key>
+			<string>DuckDuckGo</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.gilburns.munki.DuckDuckGo</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.gilburns.download.DuckDuckGo</key>
+			<dict>
+				<key>git_hash</key>
+				<string>a22e15644d681ca61b3a40e395b05a0e6f3e46a6</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.gilburns-recipes/Duck Duck Go/DuckDuckGo.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>380ca92253ad4dc0a6b1ffd5e0c30324b42229000ba187d246f039ac41296a56</string>
+			</dict>
+			<key>com.github.gilburns.munki.DuckDuckGo</key>
+			<dict>
+				<key>git_hash</key>
+				<string>df906cabe268e3173bb7533927c14bccf94a8679</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.gilburns-recipes/Duck Duck Go/DuckDuckGo.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>a58378e68bcb9fe93f3740b4333c0e7368f9fe56184b946fc15b12b7c8e351bd</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

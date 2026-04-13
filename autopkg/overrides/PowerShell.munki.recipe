@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.PowerShell</string>
+	<key>Input</key>
+	<dict>
+		<key>ARCH</key>
+		<string>x64</string>
+		<key>GITHUB_REPO</key>
+		<string>PowerShell/PowerShell</string>
+		<key>MAJOR_VERSION</key>
+		<string>7.4</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>PowerShell</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>PowerShell for every system!</string>
+			<key>developer</key>
+			<string>PowerShell Team</string>
+			<key>display_name</key>
+			<string>PowerShell</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.vmiller.munki.PowerShell</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.vmiller.download.PowerShell</key>
+			<dict>
+				<key>git_hash</key>
+				<string>e11edded94c5cb92026929a585d8c985f32f0be8</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.vmiller-recipes/PowerShell/PowerShell.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>72ec667c00aa4798bbb8f2f9456882c98b0db1f70b46c9d73e02724a4c3987ee</string>
+			</dict>
+			<key>com.github.vmiller.munki.PowerShell</key>
+			<dict>
+				<key>git_hash</key>
+				<string>f8adc81f4b9dbcf43db2a251a745ab0c29e1b255</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.vmiller-recipes/PowerShell/PowerShell.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>213b6d9ab85be6cda8cc902aabb80b9f8c9bceb5190f9b96f0a60e1021267440</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

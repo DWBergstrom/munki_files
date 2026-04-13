@@ -68,6 +68,19 @@
 		<string>Geekbench6</string>
 		<string>MunkiAdmin</string>
 		<string>Screens</string>
+		<string>Claude</string>
+		<string>AppCleaner</string>
+		<string>OrbStack</string>
+		<string>Archaeology</string>
+		<string>Pearcleaner</string>
+		<string>Ollama</string>
+		<string>Apparency</string>
+		<string>mist</string>
+		<string>DuckDuckGo</string>
+		<string>Parallels Desktop</string>
+		<string>LittleSnitch6</string>
+		<string>CrystalFetch</string>
+		<string>PowerShell</string>
 	</array>
 </dict>
 </plist>

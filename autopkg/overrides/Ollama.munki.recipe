@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Ollama</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>Ollama</string>
+		<key>PRERELEASE</key>
+		<string></string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models.</string>
+			<key>developer</key>
+			<string>Infra Technologies, Inc</string>
+			<key>display_name</key>
+			<string>Ollama</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>postinstall_script</key>
+			<string>#!/bin/bash
+
+# Script built from: https://github.com/ollama/ollama/issues/851#issuecomment-1889808636
+# Please note admin rights are still needed as the file that records whether first time run has completed is located in the Users home folder. see https://github.com/ollama/ollama/issues/6814
+
+# Install Command Line Tools
+if ! [ -f /usr/local/bin/ollama ]; then
+  /usr/bin/touch /usr/local/bin/ollama ; /bin/ln -s -f /Applications/Ollama.app/Contents/Resources/ollama /usr/local/bin/ollama
+fi
+
+exit</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>unattended_uninstall</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.dataJAR-recipes.munki.Ollama</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.dataJAR-recipes.download.Ollama</key>
+			<dict>
+				<key>git_hash</key>
+				<string>12f68ce5328aeab42b81f28cbadf8e52b9b4ee60</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Ollama/Ollama.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>a1b416908a6dfbe58bb1e86c86bf8cc3175ad8ed76c3ce8fce7971cea783323c</string>
+			</dict>
+			<key>com.github.dataJAR-recipes.munki.Ollama</key>
+			<dict>
+				<key>git_hash</key>
+				<string>0167678da8768f7c802927fac9b43ed0e9abaf34</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Ollama/Ollama.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>afafa9c4132027a6efd69e29379dbf0e0c24de7d31e6742c4b40f4439ba2d28c</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Claude</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>Claude</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Your AI partner on desktop. Fast, focused, and designed for deep work.</string>
+			<key>developer</key>
+			<string>Anthropic PBC</string>
+			<key>display_name</key>
+			<string>Claude</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>unattended_uninstall</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.dataJAR-recipes.munki.Claude</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.almenscorner.download.Claude</key>
+			<dict>
+				<key>git_hash</key>
+				<string>00d824e92aa032d81af1ee648aea75860a0355cc</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.almenscorner-recipes/Anthropic/Claude.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>21a0b0d76ed37d19fe4508292556c69ca2c944ba5e87f07c45122ce3fde35c6b</string>
+			</dict>
+			<key>com.github.dataJAR-recipes.munki.Claude</key>
+			<dict>
+				<key>git_hash</key>
+				<string>e138f4074c3c119eb88e1aae898ecb37e151da14</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Claude/Claude.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>8294b79d8ff6e1f78a8f37f2028d5b1520157c20df819dcead49e25ec3f9de29</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>
