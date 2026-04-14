@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2026-04-14T04:49:59Z</date>
+		<key>munki_version</key>
+		<string>7.0.0.5328</string>
+		<key>os_version</key>
+		<string>26.3.1</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>Chrome-like keyword search for Safari.</string>
+	<key>developer</key>
+	<string>Duck Duck Go</string>
+	<key>display_name</key>
+	<string>DuckDuckGo</string>
+	<key>installer_item_hash</key>
+	<string>5a2558dd372596ba98ef62fb5edce3009c952ebd4a70038795cbeb9d44172f2b</string>
+	<key>installer_item_location</key>
+	<string>apps/DuckDuckGo/DuckDuckGo-1.184.1__1.dmg</string>
+	<key>installer_item_size</key>
+	<integer>159599</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.duckduckgo.macos.browser</string>
+			<key>CFBundleName</key>
+			<string>DuckDuckGo</string>
+			<key>CFBundleShortVersionString</key>
+			<string>1.184.1</string>
+			<key>CFBundleVersion</key>
+			<string>674</string>
+			<key>minosversion</key>
+			<string>11.4</string>
+			<key>path</key>
+			<string>/Applications/DuckDuckGo.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>DuckDuckGo.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>11.4</string>
+	<key>name</key>
+	<string>DuckDuckGo</string>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.184.1</string>
+</dict>
+</plist>

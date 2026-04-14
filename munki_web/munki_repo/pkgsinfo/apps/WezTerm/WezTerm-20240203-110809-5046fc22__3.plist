@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2026-04-14T04:57:21Z</date>
+		<key>munki_version</key>
+		<string>7.0.0.5328</string>
+		<key>os_version</key>
+		<string>26.3.1</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust</string>
+	<key>developer</key>
+	<string>Wesley FURLONG</string>
+	<key>display_name</key>
+	<string>WezTerm</string>
+	<key>installed_size</key>
+	<integer>259827</integer>
+	<key>installer_item_hash</key>
+	<string>14f1eab479bbd1887b9b6cb6e1d1a0daaadae785a6048343a1a6fb1b322248fb</string>
+	<key>installer_item_location</key>
+	<string>apps/WezTerm/WezTerm-20240203-110809-5046fc22__2.pkg</string>
+	<key>installer_item_size</key>
+	<integer>100409</integer>
+	<key>name</key>
+	<string>WezTerm</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>259827</integer>
+			<key>packageid</key>
+			<string>com.github.wez.wezterm</string>
+			<key>version</key>
+			<string>20240203-110809-5046fc22</string>
+		</dict>
+	</array>
+	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>20240203-110809-5046fc22</string>
+</dict>
+</plist>
