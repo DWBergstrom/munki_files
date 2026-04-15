@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2026-04-15T04:54:23Z</date>
+		<key>munki_version</key>
+		<string>7.0.0.5328</string>
+		<key>os_version</key>
+		<string>26.3.1</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>Steam is the ultimate destination for playing, discussing, and creating games.</string>
+	<key>developer</key>
+	<string>Valve Software</string>
+	<key>display_name</key>
+	<string>Steam</string>
+	<key>installer_item_hash</key>
+	<string>e1abfbaaa7be3e0f48a0e0d4c313233e05861b1d26af32830ddc838be88f2691</string>
+	<key>installer_item_location</key>
+	<string>apps/Steam/Steam-0.0.0.0.0__3.dmg</string>
+	<key>installer_item_size</key>
+	<integer>3390</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.valvesoftware.steam</string>
+			<key>CFBundleName</key>
+			<string>Steam</string>
+			<key>CFBundleVersion</key>
+			<string>6.0</string>
+			<key>minosversion</key>
+			<string>10.13.0</string>
+			<key>path</key>
+			<string>/Applications/Steam.app</string>
+			<key>type</key>
+			<string>application</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>Steam.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.13.0</string>
+	<key>name</key>
+	<string>Steam</string>
+	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>0.0.0.0.0</string>
+</dict>
+</plist>

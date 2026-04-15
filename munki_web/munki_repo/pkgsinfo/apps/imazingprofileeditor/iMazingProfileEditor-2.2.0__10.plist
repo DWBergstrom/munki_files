@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-13T05:12:12Z</date>
+		<date>2026-04-15T04:57:40Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,35 +19,37 @@
 	<array>
 		<string>testing</string>
 	</array>
+	<key>category</key>
+	<string>Utilities</string>
 	<key>description</key>
-	<string>Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models.</string>
+	<string>iMazing Profile Editor lets users create, modify, and also digitally sign configuration profiles with a friendly user interface instead of manually coding them in XML.</string>
 	<key>developer</key>
-	<string>Infra Technologies, Inc</string>
+	<string>DigiDNA SARL</string>
 	<key>display_name</key>
-	<string>Ollama</string>
+	<string>iMazing Profile Editor</string>
 	<key>installer_item_hash</key>
-	<string>3adab154dec87bf0f11d71fe08294e762e43d12c2d69478ff7a2897d3e4c0faf</string>
+	<string>f5af8180e6aae3fa7d08b62e44e05bc7566dd10ebbbdfd613ca1731fb21b9e00</string>
 	<key>installer_item_location</key>
-	<string>apps/Ollama/Ollama-0.20.6.dmg</string>
+	<string>apps/imazingprofileeditor/iMazing_Profile_Editor_2.2.0.392103-2.2.0__3.dmg</string>
 	<key>installer_item_size</key>
-	<integer>163230</integer>
+	<integer>26899</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.electron.ollama</string>
+			<string>com.DigiDNA.iMazingProfileEditorMac</string>
 			<key>CFBundleName</key>
-			<string>Ollama</string>
+			<string>iMazing Profile Editor</string>
 			<key>CFBundleShortVersionString</key>
-			<string>0.20.6</string>
+			<string>2.2.0</string>
 			<key>CFBundleVersion</key>
-			<string>0.20.6</string>
+			<string>392103</string>
 			<key>minosversion</key>
-			<string>14.0</string>
+			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/Ollama.app</string>
+			<string>/Applications/iMazing Profile Editor.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,34 +62,20 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Ollama.app</string>
+			<string>iMazing Profile Editor.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>14.0</string>
+	<string>12.0</string>
 	<key>name</key>
-	<string>Ollama</string>
-	<key>postinstall_script</key>
-	<string>#!/bin/bash
-
-# Script built from: https://github.com/ollama/ollama/issues/851#issuecomment-1889808636
-# Please note admin rights are still needed as the file that records whether first time run has completed is located in the Users home folder. see https://github.com/ollama/ollama/issues/6814
-
-# Install Command Line Tools
-if ! [ -f /usr/local/bin/ollama ]; then
-  /usr/bin/touch /usr/local/bin/ollama ; /bin/ln -s -f /Applications/Ollama.app/Contents/Resources/ollama /usr/local/bin/ollama
-fi
-
-exit</string>
+	<string>iMazingProfileEditor</string>
 	<key>unattended_install</key>
-	<true/>
-	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>0.20.6</string>
+	<string>2.2.0</string>
 </dict>
 </plist>

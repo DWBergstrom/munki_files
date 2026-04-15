@@ -108,13 +108,13 @@
 		<key>display_name</key>
 		<string>Windows App</string>
 		<key>installed_size</key>
-		<integer>279408</integer>
+		<integer>279374</integer>
 		<key>installer_item_hash</key>
-		<string>980f09a9e1cbf8a53e09f9ada31b03e977e4c75751d705b94e02a875192d4f3f</string>
+		<string>f725f2a4e48203c6e943d11507f0467938433aeafd220e950456f63638ac05fb</string>
 		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.4.pkg</string>
+		<string>apps/microsoft/Microsoft_Windows_App-11.3.5.pkg</string>
 		<key>installer_item_size</key>
-		<integer>138154</integer>
+		<integer>138145</integer>
 		<key>installs</key>
 		<array>
 			<dict>
@@ -123,9 +123,9 @@
 				<key>CFBundleName</key>
 				<string>Windows App</string>
 				<key>CFBundleShortVersionString</key>
-				<string>11.3.4</string>
+				<string>11.3.5</string>
 				<key>CFBundleVersion</key>
-				<string>2943</string>
+				<string>2947</string>
 				<key>minosversion</key>
 				<string>14.0</string>
 				<key>path</key>
@@ -144,11 +144,11 @@
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>268677</integer>
+				<integer>268643</integer>
 				<key>packageid</key>
 				<string>com.microsoft.rdc.macos</string>
 				<key>version</key>
-				<string>11.3.4</string>
+				<string>11.3.5</string>
 			</dict>
 			<dict>
 				<key>installed_size</key>
@@ -168,7 +168,7 @@
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>11.3.4</string>
+		<string>11.3.5</string>
 	</dict>
 </array>
 </plist>

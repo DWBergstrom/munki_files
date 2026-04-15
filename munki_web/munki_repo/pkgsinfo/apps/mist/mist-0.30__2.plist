@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-12T15:01:05Z</date>
+		<date>2026-04-15T04:58:08Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,64 +20,66 @@
 		<string>testing</string>
 	</array>
 	<key>category</key>
-	<string>Developer</string>
+	<string>Utilities</string>
 	<key>description</key>
-	<string>Built to make you extraordinarily productive, Cursor is the best way to code with AI.</string>
+	<string>A Mac utility that automatically downloads macOS Firmwares / Installers.</string>
 	<key>developer</key>
-	<string>Anysphere, Inc.</string>
+	<string>ninxsoft</string>
 	<key>display_name</key>
-	<string>Cursor</string>
+	<string>mist</string>
+	<key>installed_size</key>
+	<integer>19392</integer>
 	<key>installer_item_hash</key>
-	<string>4fda96ef149b6057aaf9238f8f919a08fa5895d7109cbfa5c5e59a5c8a9dd69e</string>
+	<string>a764f92e23f5a0a1776c5f08c7dbfe99e98ff5ed9feb12da10410cc09e9abefb</string>
 	<key>installer_item_location</key>
-	<string>apps/Cursor/Cursor-3.0.16__4.dmg</string>
+	<string>apps/mist/mist-0.30__2.pkg</string>
 	<key>installer_item_size</key>
-	<integer>395609</integer>
-	<key>installer_type</key>
-	<string>copy_from_dmg</string>
+	<integer>13066</integer>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.todesktop.230313mzl4w4u92</string>
+			<string>com.ninxsoft.mist</string>
 			<key>CFBundleName</key>
-			<string>Cursor</string>
+			<string>Mist</string>
 			<key>CFBundleShortVersionString</key>
-			<string>3.0.16</string>
+			<string>0.30</string>
 			<key>CFBundleVersion</key>
-			<string>3.0.16</string>
+			<string>0.30</string>
 			<key>minosversion</key>
 			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/Cursor.app</string>
+			<string>/Applications/Mist.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
 			<string>CFBundleShortVersionString</string>
 		</dict>
 	</array>
-	<key>items_to_copy</key>
-	<array>
-		<dict>
-			<key>destination_path</key>
-			<string>/Applications</string>
-			<key>source_item</key>
-			<string>Cursor.app</string>
-		</dict>
-	</array>
 	<key>minimum_os_version</key>
 	<string>12.0</string>
 	<key>name</key>
-	<string>Cursor</string>
+	<string>mist</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>19392</integer>
+			<key>packageid</key>
+			<string>com.ninxsoft.pkg.mist</string>
+			<key>version</key>
+			<string>0.30</string>
+		</dict>
+	</array>
 	<key>unattended_install</key>
 	<true/>
 	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
-	<string>remove_copied_items</string>
+	<string>removepackages</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>3.0.16</string>
+	<string>0.30</string>
 </dict>
 </plist>

@@ -24,6 +24,95 @@
 		<key>installer_item_hash</key>
 		<string>388689698a0a03b33b0ea5b1b0a44ee1910e799836a8ce22bfc37b79c23dbd3c</string>
 		<key>installer_item_location</key>
+		<string>munkitools/munkitools-6.7.1.4732__32.pkg</string>
+		<key>installer_item_size</key>
+		<integer>49488</integer>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>munkitools6</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>1227</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.core</string>
+				<key>version</key>
+				<string>6.7.1.4732</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>134</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.admin</string>
+				<key>version</key>
+				<string>6.7.1.4732</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>28798</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.app</string>
+				<key>version</key>
+				<string>6.7.1.4732</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>25</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.app_usage</string>
+				<key>version</key>
+				<string>6.7.1.4732</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>124639</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.python</string>
+				<key>version</key>
+				<string>3.12.2.4689</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>10</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.launchd</string>
+				<key>version</key>
+				<string>6.6.0.4656</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>6.7.1.4732</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>development</string>
+		</array>
+		<key>category</key>
+		<string>munkitools</string>
+		<key>description</key>
+		<string>Managed software installation for macOS.</string>
+		<key>developer</key>
+		<string>The Munki Project</string>
+		<key>display_name</key>
+		<string>Managed Software Center</string>
+		<key>icon_name</key>
+		<string></string>
+		<key>installed_size</key>
+		<integer>154833</integer>
+		<key>installer_item_hash</key>
+		<string>388689698a0a03b33b0ea5b1b0a44ee1910e799836a8ce22bfc37b79c23dbd3c</string>
+		<key>installer_item_location</key>
 		<string>munkitools/munkitools-6.7.1.4732__16.pkg</string>
 		<key>installer_item_size</key>
 		<integer>49488</integer>
@@ -1911,6 +2000,105 @@
 		<string>8da9d1c63af4d01d61bd3da6dc02ea8a024e449766d0deccac767adcc2b9c9f3</string>
 		<key>installer_item_location</key>
 		<string>munkitools/munkitools-7.0.10.5496__1.pkg</string>
+		<key>installer_item_size</key>
+		<integer>25135</integer>
+		<key>minimum_os_version</key>
+		<string>10.15</string>
+		<key>name</key>
+		<string>munkitools</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>36172</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.core</string>
+				<key>version</key>
+				<string>7.0.10.5496</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>21227</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.admin</string>
+				<key>version</key>
+				<string>7.0.10.5496</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>9336</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.app</string>
+				<key>version</key>
+				<string>7.0.10.5496</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>1298</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.app_usage</string>
+				<key>version</key>
+				<string>7.0.10.5496</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>517</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.launchd</string>
+				<key>version</key>
+				<string>7.0.0.5320</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>970</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.pythonlibs</string>
+				<key>version</key>
+				<string>6.7.0.5293</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>1101</integer>
+				<key>optional</key>
+				<true/>
+				<key>packageid</key>
+				<string>com.googlecode.munki.libs</string>
+				<key>version</key>
+				<string>5.5</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>7.0.10.5496</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>development</string>
+		</array>
+		<key>category</key>
+		<string>munkitools</string>
+		<key>description</key>
+		<string>Managed software installation for macOS.</string>
+		<key>developer</key>
+		<string>The Munki Project</string>
+		<key>display_name</key>
+		<string>Managed Software Center</string>
+		<key>icon_name</key>
+		<string>munkitools.png</string>
+		<key>installed_size</key>
+		<integer>70621</integer>
+		<key>installer_item_hash</key>
+		<string>8da9d1c63af4d01d61bd3da6dc02ea8a024e449766d0deccac767adcc2b9c9f3</string>
+		<key>installer_item_location</key>
+		<string>munkitools/munkitools-7.0.10.5496__3.pkg</string>
 		<key>installer_item_size</key>
 		<integer>25135</integer>
 		<key>minimum_os_version</key>

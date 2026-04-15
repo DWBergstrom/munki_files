@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2026-04-15T04:53:10Z</date>
+		<key>munki_version</key>
+		<string>7.0.0.5328</string>
+		<key>os_version</key>
+		<string>26.3.1</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>Virtualization tool for running Windows apps without rebooting.</string>
+	<key>developer</key>
+	<string>Parallels, Inc.</string>
+	<key>display_name</key>
+	<string>Parallels Desktop</string>
+	<key>installer_item_hash</key>
+	<string>de4bc59e2a5c4a1181e0ae8217db2542f5a1ce320dce44f9dd8811711acf9a59</string>
+	<key>installer_item_location</key>
+	<string>apps/Parallels Desktop/Parallels Desktop-18.3.4__2.pkg</string>
+	<key>installer_item_size</key>
+	<integer>309553</integer>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.parallels.desktop.console</string>
+			<key>CFBundleName</key>
+			<string>Parallels Desktop</string>
+			<key>CFBundleShortVersionString</key>
+			<string>18.3.4</string>
+			<key>CFBundleVersion</key>
+			<string>53630</string>
+			<key>minosversion</key>
+			<string>10.14.6</string>
+			<key>path</key>
+			<string>/Applications/Parallels Desktop.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.14.6</string>
+	<key>name</key>
+	<string>Parallels Desktop</string>
+	<key>preuninstall_script</key>
+	<string>#!/bin/bash
+if [ -f /usr/local/bin/prlsrvctl ]; then
+	/usr/local/bin/prlsrvctl deactivate-license
+fi
+exit 0
+</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>0</integer>
+			<key>packageid</key>
+			<string>com.parallels.desktop.installer</string>
+			<key>version</key>
+			<string>18.3.4</string>
+		</dict>
+	</array>
+	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>uninstall_script</string>
+	<key>uninstall_script</key>
+	<string>#!/bin/bash
+
+# App bundle to remove
+app_Bundle="/Applications/Parallels Desktop.app/"
+lib_files="/Library/Parallels/"
+
+if [ -d "${app_Bundle}" ]
+then
+	/bin/echo "Found ${app_Bundle}, removing..."
+	/bin/rm -rf "${app_Bundle}"
+fi
+
+if [ -d "${lib_files}" ]
+then
+	/bin/echo "Found ${lib_files}, removing..."
+	/bin/rm -rf "${lib_files}"
+fi
+
+# Remove the pkg receipt
+pkgReceipt="com.parallels.desktop.installer"
+
+/bin/echo "Removing ${pkgReceipt}, removing..."
+pkgutil --forget "${pkgReceipt}"
+</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>18.3.4</string>
+</dict>
+</plist>

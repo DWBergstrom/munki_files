@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-13T04:49:16Z</date>
+		<date>2026-04-15T04:49:16Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -30,11 +30,11 @@
 	<key>icon_name</key>
 	<string>Cursor.png</string>
 	<key>installer_item_hash</key>
-	<string>4fda96ef149b6057aaf9238f8f919a08fa5895d7109cbfa5c5e59a5c8a9dd69e</string>
+	<string>c17de386a2e3a133f006c97a14a9c35629fc8140bf9e3fd4c5c8a5d3a439a007</string>
 	<key>installer_item_location</key>
-	<string>apps/Cursor/Cursor-3.0.16__1.dmg</string>
+	<string>apps/Cursor/Cursor-3.1.14.dmg</string>
 	<key>installer_item_size</key>
-	<integer>395609</integer>
+	<integer>395025</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
@@ -45,9 +45,9 @@
 			<key>CFBundleName</key>
 			<string>Cursor</string>
 			<key>CFBundleShortVersionString</key>
-			<string>3.0.16</string>
+			<string>3.1.14</string>
 			<key>CFBundleVersion</key>
-			<string>3.0.16</string>
+			<string>3.1.14</string>
 			<key>minosversion</key>
 			<string>12.0</string>
 			<key>path</key>
@@ -80,6 +80,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>3.0.16</string>
+	<string>3.1.14</string>
 </dict>
 </plist>
