@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2026-04-16T04:46:57Z</date>
+		<key>munki_version</key>
+		<string>7.0.0.5328</string>
+		<key>os_version</key>
+		<string>26.3.1</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>category</key>
+	<string>Utilities</string>
+	<key>description</key>
+	<string>Aparency is an application for inspecting other applications.</string>
+	<key>developer</key>
+	<string>Mothers Ruin Software</string>
+	<key>display_name</key>
+	<string>Apparency</string>
+	<key>icon_name</key>
+	<string>Apparency.png</string>
+	<key>installer_item_hash</key>
+	<string>0a2639fac59f2a88510193bc6aa79a6e1af7a7f2c6cb6bc468fb7a30c8a68cc3</string>
+	<key>installer_item_location</key>
+	<string>utilities/Apparency-3.2__3.dmg</string>
+	<key>installer_item_size</key>
+	<integer>5492</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.mothersruin.Apparency</string>
+			<key>CFBundleName</key>
+			<string>Apparency</string>
+			<key>CFBundleShortVersionString</key>
+			<string>3.2</string>
+			<key>CFBundleVersion</key>
+			<string>861</string>
+			<key>minosversion</key>
+			<string>13.0</string>
+			<key>path</key>
+			<string>/Applications/Apparency.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>Apparency.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>13.0</string>
+	<key>name</key>
+	<string>Apparency</string>
+	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>3.2</string>
+</dict>
+</plist>

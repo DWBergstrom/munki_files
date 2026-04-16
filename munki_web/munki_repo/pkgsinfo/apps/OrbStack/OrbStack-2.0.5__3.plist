@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-14T04:49:36Z</date>
+		<date>2026-04-16T04:53:12Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,38 +20,36 @@
 		<string>testing</string>
 	</array>
 	<key>category</key>
-	<string>Developer</string>
+	<string>Development</string>
 	<key>description</key>
-	<string>Built to make you extraordinarily productive, Cursor is the best way to code with AI.</string>
+	<string>OrbStack is a fast, light, and simple way to run containers and Linux machines on macOS. It's a supercharged alternative to Docker Desktop and WSL, all in one easy-to-use app.</string>
 	<key>developer</key>
-	<string>Anysphere, Inc.</string>
+	<string>Orbital Labs, LLC</string>
 	<key>display_name</key>
-	<string>Cursor</string>
-	<key>icon_name</key>
-	<string>Cursor.png</string>
+	<string>OrbStack</string>
 	<key>installer_item_hash</key>
-	<string>4c3930364ba7b238832423af156de468b527d2c97d69577bde86b78ccc79ec81</string>
+	<string>601889551cdfdc7feee148b7fdb0480fa0ba5c0db0be8f1c047fc840886a7571</string>
 	<key>installer_item_location</key>
-	<string>apps/Cursor/Cursor-3.1.10.dmg</string>
+	<string>apps/OrbStack/OrbStack-arm64-2.0.5__3.dmg</string>
 	<key>installer_item_size</key>
-	<integer>394966</integer>
+	<integer>463393</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.todesktop.230313mzl4w4u92</string>
+			<string>dev.kdrag0n.MacVirt</string>
 			<key>CFBundleName</key>
-			<string>Cursor</string>
+			<string>OrbStack</string>
 			<key>CFBundleShortVersionString</key>
-			<string>3.1.10</string>
+			<string>2.0.5</string>
 			<key>CFBundleVersion</key>
-			<string>3.1.10</string>
+			<string>19905</string>
 			<key>minosversion</key>
-			<string>12.0</string>
+			<string>14.0</string>
 			<key>path</key>
-			<string>/Applications/Cursor.app</string>
+			<string>/Applications/OrbStack.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -64,13 +62,17 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Cursor.app</string>
+			<string>OrbStack.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>12.0</string>
+	<string>14.0</string>
 	<key>name</key>
-	<string>Cursor</string>
+	<string>OrbStack</string>
+	<key>supported_architectures</key>
+	<array>
+		<string>arm64</string>
+	</array>
 	<key>unattended_install</key>
 	<true/>
 	<key>unattended_uninstall</key>
@@ -80,6 +82,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>3.1.10</string>
+	<string>2.0.5</string>
 </dict>
 </plist>

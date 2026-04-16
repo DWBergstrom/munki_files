@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-12T15:04:21Z</date>
+		<date>2026-04-16T04:58:00Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,35 +19,37 @@
 	<array>
 		<string>testing</string>
 	</array>
+	<key>category</key>
+	<string>Utilities</string>
 	<key>description</key>
-	<string>Fast Terminal app based in Rust.</string>
+	<string>iMazing Profile Editor lets users create, modify, and also digitally sign configuration profiles with a friendly user interface instead of manually coding them in XML.</string>
 	<key>developer</key>
-	<string>Denver Technologies</string>
+	<string>DigiDNA SARL</string>
 	<key>display_name</key>
-	<string>Warp</string>
-	<key>force_munkiimport</key>
-	<true/>
+	<string>iMazing Profile Editor</string>
 	<key>installer_item_hash</key>
-	<string>c0e35478ca0d1754d1a1e1bd47914ae365b9fb8a03b12d78e1d7cc36c28e50c6</string>
+	<string>f5af8180e6aae3fa7d08b62e44e05bc7566dd10ebbbdfd613ca1731fb21b9e00</string>
 	<key>installer_item_location</key>
-	<string>apps/Warp/Warp-0.2026.04.08.08.36.02__4.dmg</string>
+	<string>apps/imazingprofileeditor/iMazing_Profile_Editor_2.2.0.392103-2.2.0__4.dmg</string>
 	<key>installer_item_size</key>
-	<integer>227718</integer>
+	<integer>26899</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>dev.warp.Warp-Stable</string>
+			<string>com.DigiDNA.iMazingProfileEditorMac</string>
 			<key>CFBundleName</key>
-			<string>Warp</string>
+			<string>iMazing Profile Editor</string>
 			<key>CFBundleShortVersionString</key>
-			<string>0.2026.04.08.08.36.02</string>
+			<string>2.2.0</string>
 			<key>CFBundleVersion</key>
-			<string>0.2026.04.08.08.36.02</string>
+			<string>392103</string>
+			<key>minosversion</key>
+			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/Warp.app</string>
+			<string>/Applications/iMazing Profile Editor.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,11 +62,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Warp.app</string>
+			<string>iMazing Profile Editor.app</string>
 		</dict>
 	</array>
+	<key>minimum_os_version</key>
+	<string>12.0</string>
 	<key>name</key>
-	<string>Warp</string>
+	<string>iMazingProfileEditor</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -72,6 +76,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>0.2026.04.08.08.36.02</string>
+	<string>2.2.0</string>
 </dict>
 </plist>

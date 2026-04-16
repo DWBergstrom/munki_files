@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-11T02:39:07Z</date>
+		<date>2026-04-16T04:52:03Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,34 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Fast Terminal app based in Rust.</string>
+	<string>macOS app for managing Munki repositories</string>
 	<key>developer</key>
-	<string>Denver Technologies</string>
+	<string>Hannes Juutilainen</string>
 	<key>display_name</key>
-	<string>Warp</string>
-	<key>force_munkiimport</key>
-	<true/>
+	<string>MunkiAdmin</string>
 	<key>installer_item_hash</key>
-	<string>c0e35478ca0d1754d1a1e1bd47914ae365b9fb8a03b12d78e1d7cc36c28e50c6</string>
+	<string>29a4c5ba0ba9cddde9045a78098d7426d1972ff516707af77cd43c3b82b2222f</string>
 	<key>installer_item_location</key>
-	<string>apps/Warp/Warp-0.2026.04.08.08.36.02.dmg</string>
+	<string>apps/MunkiAdmin/MunkiAdmin-1.10.1__4.dmg</string>
 	<key>installer_item_size</key>
-	<integer>227718</integer>
+	<integer>4822</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>dev.warp.Warp-Stable</string>
+			<string>com.hjuutilainen.MunkiAdmin</string>
 			<key>CFBundleName</key>
-			<string>Warp</string>
+			<string>MunkiAdmin</string>
 			<key>CFBundleShortVersionString</key>
-			<string>0.2026.04.08.08.36.02</string>
+			<string>1.10.1</string>
 			<key>CFBundleVersion</key>
-			<string>0.2026.04.08.08.36.02</string>
+			<string>1.10.1</string>
+			<key>minosversion</key>
+			<string>10.13</string>
 			<key>path</key>
-			<string>/Applications/Warp.app</string>
+			<string>/Applications/MunkiAdmin.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,11 +60,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Warp.app</string>
+			<string>MunkiAdmin.app</string>
 		</dict>
 	</array>
+	<key>minimum_os_version</key>
+	<string>10.13</string>
 	<key>name</key>
-	<string>Warp</string>
+	<string>MunkiAdmin</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -72,6 +74,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>0.2026.04.08.08.36.02</string>
+	<string>1.10.1</string>
 </dict>
 </plist>

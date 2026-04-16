@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-11T04:49:56Z</date>
+		<date>2026-04-16T04:46:21Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,34 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Fast Terminal app based in Rust.</string>
+	<string>Google's agentic development platform, evolving the IDE into the agent-first era.</string>
 	<key>developer</key>
-	<string>Denver Technologies</string>
+	<string>Google</string>
 	<key>display_name</key>
-	<string>Warp</string>
-	<key>force_munkiimport</key>
-	<true/>
+	<string>Antigravity</string>
 	<key>installer_item_hash</key>
-	<string>c0e35478ca0d1754d1a1e1bd47914ae365b9fb8a03b12d78e1d7cc36c28e50c6</string>
+	<string>9b845782c74d4b7a95ee37c88f0ec89e85fb2e3cad9d387a2c1a0e1a98684cac</string>
 	<key>installer_item_location</key>
-	<string>apps/Warp/Warp-0.2026.04.08.08.36.02__1.dmg</string>
+	<string>apps/Antigravity/Antigravity-1.22.2__4.dmg</string>
 	<key>installer_item_size</key>
-	<integer>227718</integer>
+	<integer>191359</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>dev.warp.Warp-Stable</string>
+			<string>com.google.antigravity</string>
 			<key>CFBundleName</key>
-			<string>Warp</string>
+			<string>Antigravity</string>
 			<key>CFBundleShortVersionString</key>
-			<string>0.2026.04.08.08.36.02</string>
+			<string>1.22.2</string>
 			<key>CFBundleVersion</key>
-			<string>0.2026.04.08.08.36.02</string>
+			<string>1.22.2</string>
+			<key>minosversion</key>
+			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/Warp.app</string>
+			<string>/Applications/Antigravity.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,18 +60,22 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Warp.app</string>
+			<string>Antigravity.app</string>
 		</dict>
 	</array>
+	<key>minimum_os_version</key>
+	<string>12.0</string>
 	<key>name</key>
-	<string>Warp</string>
+	<string>Antigravity</string>
 	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>0.2026.04.08.08.36.02</string>
+	<string>1.22.2</string>
 </dict>
 </plist>
