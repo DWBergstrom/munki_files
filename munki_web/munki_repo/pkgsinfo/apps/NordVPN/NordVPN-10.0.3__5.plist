@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2026-04-17T04:52:40Z</date>
+		<key>munki_version</key>
+		<string>7.0.0.5328</string>
+		<key>os_version</key>
+		<string>26.3.1</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>blocking_applications</key>
+	<array>
+		<string>NordVPN.app</string>
+		<string>NordVPNLauncher Sideload.app</string>
+	</array>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>Get the fastest VPN in the world and enjoy a smooth, safe, and private connection on your Mac. NordVPN’s easy-to-use app will protect all your connected devices from snoopers tracking what you do online.
+
+Even if you think you have nothing to hide — no one likes to be watched. That’s why you need a VPN to protect your privacy and keep your online data safe.</string>
+	<key>developer</key>
+	<string>Nordvpn S.A.</string>
+	<key>display_name</key>
+	<string>NordVPN</string>
+	<key>installed_size</key>
+	<integer>577919</integer>
+	<key>installer_item_hash</key>
+	<string>a191acc936265e9042d52875301a7fa400520d20db790aa61d29a4f4248d5127</string>
+	<key>installer_item_location</key>
+	<string>apps/NordVPN/NordVPN-10.0.3__5.dmg</string>
+	<key>installer_item_size</key>
+	<integer>299545</integer>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.nordvpn.macos</string>
+			<key>CFBundleName</key>
+			<string>NordVPN</string>
+			<key>CFBundleShortVersionString</key>
+			<string>10.0.3</string>
+			<key>CFBundleVersion</key>
+			<string>356</string>
+			<key>minosversion</key>
+			<string>12.0</string>
+			<key>path</key>
+			<string>/Applications/NordVPN.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>12.0</string>
+	<key>name</key>
+	<string>NordVPN</string>
+	<key>postuninstall_script</key>
+	<string>#!/bin/bash
+#
+launchctl unload /Library/LaunchDaemons/com.nordvpn.macos.helper.plist
+#
+rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>577919</integer>
+			<key>packageid</key>
+			<string>com.nordvpn.macos</string>
+			<key>version</key>
+			<string>10.0.3</string>
+		</dict>
+	</array>
+	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>10.0.3</string>
+</dict>
+</plist>

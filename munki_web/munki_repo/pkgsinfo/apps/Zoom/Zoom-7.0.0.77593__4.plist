@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2026-04-17T04:58:05Z</date>
+		<key>munki_version</key>
+		<string>7.0.0.5328</string>
+		<key>os_version</key>
+		<string>26.3.1</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>blocking_applications</key>
+	<array>
+		<string>zoom.us</string>
+	</array>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>The Zoom app provides cloud-hosted video conferencing, plus online meetings and group messaging.</string>
+	<key>developer</key>
+	<string>Zoom Video Communications, Inc.</string>
+	<key>display_name</key>
+	<string>Zoom</string>
+	<key>installed_size</key>
+	<integer>776482</integer>
+	<key>installer_item_hash</key>
+	<string>a03a60c3507686026518a13a1270d95617025b35b5da20705b2dcdf5a3ae16fd</string>
+	<key>installer_item_location</key>
+	<string>apps/Zoom/Zoom-7.0.0.77593__4.pkg</string>
+	<key>installer_item_size</key>
+	<integer>331292</integer>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>us.zoom.xos</string>
+			<key>CFBundleName</key>
+			<string>zoom.us</string>
+			<key>CFBundleShortVersionString</key>
+			<string>7.0.0 (77593)</string>
+			<key>CFBundleVersion</key>
+			<string>7.0.0.77593</string>
+			<key>minosversion</key>
+			<string>10.15</string>
+			<key>path</key>
+			<string>/Applications/zoom.us.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleVersion</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.15</string>
+	<key>name</key>
+	<string>Zoom</string>
+	<key>postuninstall_script</key>
+	<string>#!/bin/sh
+rm -rf /Applications/zoom.us.app
+</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>776482</integer>
+			<key>packageid</key>
+			<string>us.zoom.pkg.videomeeting</string>
+			<key>version</key>
+			<string>7.0.0.77593</string>
+		</dict>
+	</array>
+	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>7.0.0.77593</string>
+</dict>
+</plist>

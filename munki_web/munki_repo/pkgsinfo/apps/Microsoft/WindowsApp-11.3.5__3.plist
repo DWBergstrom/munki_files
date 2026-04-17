@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2026-04-17T04:52:11Z</date>
+		<key>munki_version</key>
+		<string>7.0.0.5328</string>
+		<key>os_version</key>
+		<string>26.3.1</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>blocking_applications</key>
+	<array>
+		<string>Microsoft Remote Desktop</string>
+		<string>Windows App</string>
+	</array>
+	<key>catalogs</key>
+	<array>
+		<string>utilities</string>
+	</array>
+	<key>category</key>
+	<string>Utility</string>
+	<key>description</key>
+	<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
+</string>
+	<key>developer</key>
+	<string>Microsoft</string>
+	<key>display_name</key>
+	<string>Windows App</string>
+	<key>installed_size</key>
+	<integer>279374</integer>
+	<key>installer_item_hash</key>
+	<string>f725f2a4e48203c6e943d11507f0467938433aeafd220e950456f63638ac05fb</string>
+	<key>installer_item_location</key>
+	<string>apps/microsoft/Microsoft_Windows_App-11.3.5.pkg</string>
+	<key>installer_item_size</key>
+	<integer>138145</integer>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.microsoft.rdc.macos</string>
+			<key>CFBundleName</key>
+			<string>Windows App</string>
+			<key>CFBundleShortVersionString</key>
+			<string>11.3.5</string>
+			<key>CFBundleVersion</key>
+			<string>2947</string>
+			<key>minosversion</key>
+			<string>14.0</string>
+			<key>path</key>
+			<string>/Applications/Windows App.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>14.0</string>
+	<key>name</key>
+	<string>WindowsApp</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>268643</integer>
+			<key>packageid</key>
+			<string>com.microsoft.rdc.macos</string>
+			<key>version</key>
+			<string>11.3.5</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>10731</integer>
+			<key>packageid</key>
+			<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
+			<key>version</key>
+			<string>4.81.25121042</string>
+		</dict>
+	</array>
+	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>11.3.5</string>
+</dict>
+</plist>
