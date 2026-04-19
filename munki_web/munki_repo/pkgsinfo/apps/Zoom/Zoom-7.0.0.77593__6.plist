@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-16T04:52:21Z</date>
+		<date>2026-04-19T04:56:59Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -17,69 +17,64 @@
 	<false/>
 	<key>blocking_applications</key>
 	<array>
-		<string>NordVPN.app</string>
-		<string>NordVPNLauncher Sideload.app</string>
+		<string>zoom.us</string>
 	</array>
 	<key>catalogs</key>
 	<array>
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Get the fastest VPN in the world and enjoy a smooth, safe, and private connection on your Mac. NordVPN’s easy-to-use app will protect all your connected devices from snoopers tracking what you do online.
-
-Even if you think you have nothing to hide — no one likes to be watched. That’s why you need a VPN to protect your privacy and keep your online data safe.</string>
+	<string>The Zoom app provides cloud-hosted video conferencing, plus online meetings and group messaging.</string>
 	<key>developer</key>
-	<string>Nordvpn S.A.</string>
+	<string>Zoom Video Communications, Inc.</string>
 	<key>display_name</key>
-	<string>NordVPN</string>
+	<string>Zoom</string>
 	<key>installed_size</key>
-	<integer>577919</integer>
+	<integer>776482</integer>
 	<key>installer_item_hash</key>
-	<string>35cc7fe53ba07e026e572edcd209afcb2551904d6194f560b0efd0e62dba8bb5</string>
+	<string>a03a60c3507686026518a13a1270d95617025b35b5da20705b2dcdf5a3ae16fd</string>
 	<key>installer_item_location</key>
-	<string>apps/NordVPN/NordVPN-10.0.3__4.dmg</string>
+	<string>apps/Zoom/Zoom-7.0.0.77593__6.pkg</string>
 	<key>installer_item_size</key>
-	<integer>299545</integer>
+	<integer>331292</integer>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.nordvpn.macos</string>
+			<string>us.zoom.xos</string>
 			<key>CFBundleName</key>
-			<string>NordVPN</string>
+			<string>zoom.us</string>
 			<key>CFBundleShortVersionString</key>
-			<string>10.0.3</string>
+			<string>7.0.0 (77593)</string>
 			<key>CFBundleVersion</key>
-			<string>356</string>
+			<string>7.0.0.77593</string>
 			<key>minosversion</key>
-			<string>12.0</string>
+			<string>10.15</string>
 			<key>path</key>
-			<string>/Applications/NordVPN.app</string>
+			<string>/Applications/zoom.us.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
-			<string>CFBundleShortVersionString</string>
+			<string>CFBundleVersion</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>12.0</string>
+	<string>10.15</string>
 	<key>name</key>
-	<string>NordVPN</string>
+	<string>Zoom</string>
 	<key>postuninstall_script</key>
-	<string>#!/bin/bash
-#
-launchctl unload /Library/LaunchDaemons/com.nordvpn.macos.helper.plist
-#
-rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
+	<string>#!/bin/sh
+rm -rf /Applications/zoom.us.app
+</string>
 	<key>receipts</key>
 	<array>
 		<dict>
 			<key>installed_size</key>
-			<integer>577919</integer>
+			<integer>776482</integer>
 			<key>packageid</key>
-			<string>com.nordvpn.macos</string>
+			<string>us.zoom.pkg.videomeeting</string>
 			<key>version</key>
-			<string>10.0.3</string>
+			<string>7.0.0.77593</string>
 		</dict>
 	</array>
 	<key>unattended_install</key>
@@ -91,6 +86,6 @@ rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>10.0.3</string>
+	<string>7.0.0.77593</string>
 </dict>
 </plist>

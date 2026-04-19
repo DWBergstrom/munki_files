@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-15T04:52:19Z</date>
+		<date>2026-04-19T04:52:06Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -26,11 +26,11 @@
 	<key>display_name</key>
 	<string>Ollama</string>
 	<key>installer_item_hash</key>
-	<string>3d3a5d2275bb3169bc0e381c0ad6a44a47461597e83b9692f282fcdb9616c4c5</string>
+	<string>bb3931ba01ae9d7fb4c125932d9ff176bcc51047fe858a4febfeb946480fc7e9</string>
 	<key>installer_item_location</key>
-	<string>apps/Ollama/Ollama-0.20.7__1.dmg</string>
+	<string>apps/Ollama/Ollama-0.21.0__1.dmg</string>
 	<key>installer_item_size</key>
-	<integer>163219</integer>
+	<integer>163341</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
@@ -41,9 +41,9 @@
 			<key>CFBundleName</key>
 			<string>Ollama</string>
 			<key>CFBundleShortVersionString</key>
-			<string>0.20.7</string>
+			<string>0.21.0</string>
 			<key>CFBundleVersion</key>
-			<string>0.20.7</string>
+			<string>0.21.0</string>
 			<key>minosversion</key>
 			<string>14.0</string>
 			<key>path</key>
@@ -88,6 +88,6 @@ exit</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>0.20.7</string>
+	<string>0.21.0</string>
 </dict>
 </plist>

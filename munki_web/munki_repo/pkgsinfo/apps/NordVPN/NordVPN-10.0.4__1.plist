@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-17T04:52:40Z</date>
+		<date>2026-04-19T04:51:46Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -33,13 +33,13 @@ Even if you think you have nothing to hide â€” no one likes to be watched. Thatâ
 	<key>display_name</key>
 	<string>NordVPN</string>
 	<key>installed_size</key>
-	<integer>577919</integer>
+	<integer>577966</integer>
 	<key>installer_item_hash</key>
-	<string>a191acc936265e9042d52875301a7fa400520d20db790aa61d29a4f4248d5127</string>
+	<string>701ebb96cab82fa3e6c966891aadac3fc71ee229127e2e4f83690037454c6a3e</string>
 	<key>installer_item_location</key>
-	<string>apps/NordVPN/NordVPN-10.0.3__5.dmg</string>
+	<string>apps/NordVPN/NordVPN-10.0.4__1.dmg</string>
 	<key>installer_item_size</key>
-	<integer>299545</integer>
+	<integer>299581</integer>
 	<key>installs</key>
 	<array>
 		<dict>
@@ -48,9 +48,9 @@ Even if you think you have nothing to hide â€” no one likes to be watched. Thatâ
 			<key>CFBundleName</key>
 			<string>NordVPN</string>
 			<key>CFBundleShortVersionString</key>
-			<string>10.0.3</string>
+			<string>10.0.4</string>
 			<key>CFBundleVersion</key>
-			<string>356</string>
+			<string>357</string>
 			<key>minosversion</key>
 			<string>12.0</string>
 			<key>path</key>
@@ -75,11 +75,11 @@ rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
 	<array>
 		<dict>
 			<key>installed_size</key>
-			<integer>577919</integer>
+			<integer>577966</integer>
 			<key>packageid</key>
 			<string>com.nordvpn.macos</string>
 			<key>version</key>
-			<string>10.0.3</string>
+			<string>10.0.4</string>
 		</dict>
 	</array>
 	<key>unattended_install</key>
@@ -91,6 +91,6 @@ rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>10.0.3</string>
+	<string>10.0.4</string>
 </dict>
 </plist>

@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-17T04:52:59Z</date>
+		<date>2026-04-19T04:47:31Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,34 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models.</string>
+	<string>Bartender lets you organize your menu bar icons, by hiding them, rearranging them, show hidden items with a click or keyboard shortcut and have icons show when they update.</string>
 	<key>developer</key>
-	<string>Infra Technologies, Inc</string>
+	<string>Surtees Studios</string>
 	<key>display_name</key>
-	<string>Ollama</string>
+	<string>Bartender</string>
 	<key>installer_item_hash</key>
-	<string>e095e08c3019df4e06df8227ca7101d60359d5e15f3c9d9b6ae3198abb37848b</string>
+	<string>f0c50d1382c57b856c5a402309b12a8cf8d21557fb256dd95b9c58e895569f4a</string>
 	<key>installer_item_location</key>
-	<string>apps/Ollama/Ollama-0.20.7__3.dmg</string>
+	<string>apps/Bartender/Bartender-4.2.25__7.dmg</string>
 	<key>installer_item_size</key>
-	<integer>163219</integer>
+	<integer>10432</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.electron.ollama</string>
+			<string>com.surteesstudios.Bartender</string>
 			<key>CFBundleName</key>
-			<string>Ollama</string>
+			<string>Bartender 4</string>
 			<key>CFBundleShortVersionString</key>
-			<string>0.20.7</string>
+			<string>4.2.25</string>
 			<key>CFBundleVersion</key>
-			<string>0.20.7</string>
+			<string>42025</string>
 			<key>minosversion</key>
-			<string>14.0</string>
+			<string>11.0</string>
 			<key>path</key>
-			<string>/Applications/Ollama.app</string>
+			<string>/Applications/Bartender 4.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,34 +60,20 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Ollama.app</string>
+			<string>Bartender 4.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>14.0</string>
+	<string>11.0</string>
 	<key>name</key>
-	<string>Ollama</string>
-	<key>postinstall_script</key>
-	<string>#!/bin/bash
-
-# Script built from: https://github.com/ollama/ollama/issues/851#issuecomment-1889808636
-# Please note admin rights are still needed as the file that records whether first time run has completed is located in the Users home folder. see https://github.com/ollama/ollama/issues/6814
-
-# Install Command Line Tools
-if ! [ -f /usr/local/bin/ollama ]; then
-  /usr/bin/touch /usr/local/bin/ollama ; /bin/ln -s -f /Applications/Ollama.app/Contents/Resources/ollama /usr/local/bin/ollama
-fi
-
-exit</string>
+	<string>Bartender</string>
 	<key>unattended_install</key>
-	<true/>
-	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>0.20.7</string>
+	<string>4.2.25</string>
 </dict>
 </plist>

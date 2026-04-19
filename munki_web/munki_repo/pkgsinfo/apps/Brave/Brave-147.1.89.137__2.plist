@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-16T04:52:39Z</date>
+		<date>2026-04-19T04:47:51Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,35 +19,37 @@
 	<array>
 		<string>testing</string>
 	</array>
+	<key>category</key>
+	<string>Browsers</string>
 	<key>description</key>
-	<string>Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models.</string>
+	<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
 	<key>developer</key>
-	<string>Infra Technologies, Inc</string>
+	<string>Brave Software Inc.</string>
 	<key>display_name</key>
-	<string>Ollama</string>
+	<string>Brave Browser</string>
 	<key>installer_item_hash</key>
-	<string>284db6dc3ce85d1485d5ddb58bdc10ff8cf317d16c3f2f9a6a0d3318ae293f56</string>
+	<string>e902f3532f2a6b6f0413cee5baf4652aa26e2455eb94275d57ad98af6a56898b</string>
 	<key>installer_item_location</key>
-	<string>apps/Ollama/Ollama-0.20.7__2.dmg</string>
+	<string>apps/Brave/Brave-147.1.89.137__2.dmg</string>
 	<key>installer_item_size</key>
-	<integer>163222</integer>
+	<integer>237417</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.electron.ollama</string>
+			<string>com.brave.Browser</string>
 			<key>CFBundleName</key>
-			<string>Ollama</string>
+			<string>Brave</string>
 			<key>CFBundleShortVersionString</key>
-			<string>0.20.7</string>
+			<string>147.1.89.137</string>
 			<key>CFBundleVersion</key>
-			<string>0.20.7</string>
+			<string>189.137</string>
 			<key>minosversion</key>
-			<string>14.0</string>
+			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/Ollama.app</string>
+			<string>/Applications/Brave Browser.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,34 +62,20 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Ollama.app</string>
+			<string>Brave Browser.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>14.0</string>
+	<string>12.0</string>
 	<key>name</key>
-	<string>Ollama</string>
-	<key>postinstall_script</key>
-	<string>#!/bin/bash
-
-# Script built from: https://github.com/ollama/ollama/issues/851#issuecomment-1889808636
-# Please note admin rights are still needed as the file that records whether first time run has completed is located in the Users home folder. see https://github.com/ollama/ollama/issues/6814
-
-# Install Command Line Tools
-if ! [ -f /usr/local/bin/ollama ]; then
-  /usr/bin/touch /usr/local/bin/ollama ; /bin/ln -s -f /Applications/Ollama.app/Contents/Resources/ollama /usr/local/bin/ollama
-fi
-
-exit</string>
+	<string>Brave</string>
 	<key>unattended_install</key>
-	<true/>
-	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>0.20.7</string>
+	<string>147.1.89.137</string>
 </dict>
 </plist>

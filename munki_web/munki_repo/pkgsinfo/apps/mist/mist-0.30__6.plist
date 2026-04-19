@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-13T04:51:54Z</date>
+		<date>2026-04-19T04:57:32Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -15,46 +15,41 @@
 	</dict>
 	<key>autoremove</key>
 	<false/>
-	<key>blocking_applications</key>
-	<array>
-		<string>NordVPN.app</string>
-		<string>NordVPNLauncher Sideload.app</string>
-	</array>
 	<key>catalogs</key>
 	<array>
 		<string>testing</string>
 	</array>
+	<key>category</key>
+	<string>Utilities</string>
 	<key>description</key>
-	<string>Get the fastest VPN in the world and enjoy a smooth, safe, and private connection on your Mac. NordVPN’s easy-to-use app will protect all your connected devices from snoopers tracking what you do online.
-
-Even if you think you have nothing to hide — no one likes to be watched. That’s why you need a VPN to protect your privacy and keep your online data safe.</string>
+	<string>A Mac utility that automatically downloads macOS Firmwares / Installers.</string>
 	<key>developer</key>
-	<string>Nordvpn S.A.</string>
+	<string>ninxsoft</string>
 	<key>display_name</key>
-	<string>NordVPN</string>
+	<string>mist</string>
 	<key>installed_size</key>
-	<integer>577919</integer>
+	<integer>19392</integer>
 	<key>installer_item_hash</key>
-	<string>94b4cdcf50933e5dc0d0f3e5d75a0f10b0b98e8c52348e2e1280e567bc0cf102</string>
+	<string>a764f92e23f5a0a1776c5f08c7dbfe99e98ff5ed9feb12da10410cc09e9abefb</string>
 	<key>installer_item_location</key>
-	<string>apps/NordVPN/NordVPN-10.0.3__1.dmg</string>
+	<string>apps/mist/mist-0.30__6.pkg</string>
 	<key>installer_item_size</key>
-	<integer>299545</integer>
+	<integer>13066</integer>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.nordvpn.macos</string>
+			<string>com.ninxsoft.mist</string>
 			<key>CFBundleName</key>
-			<string>NordVPN</string>
+			<string>Mist</string>
 			<key>CFBundleShortVersionString</key>
-			<string>10.0.3</string>
+			<string>0.30</string>
 			<key>CFBundleVersion</key>
-			<string>356</string>
+			<string>0.30</string>
 			<key>minosversion</key>
 			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/NordVPN.app</string>
+			<string>/Applications/Mist.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -64,22 +59,16 @@ Even if you think you have nothing to hide — no one likes to be watched. That�
 	<key>minimum_os_version</key>
 	<string>12.0</string>
 	<key>name</key>
-	<string>NordVPN</string>
-	<key>postuninstall_script</key>
-	<string>#!/bin/bash
-#
-launchctl unload /Library/LaunchDaemons/com.nordvpn.macos.helper.plist
-#
-rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
+	<string>mist</string>
 	<key>receipts</key>
 	<array>
 		<dict>
 			<key>installed_size</key>
-			<integer>577919</integer>
+			<integer>19392</integer>
 			<key>packageid</key>
-			<string>com.nordvpn.macos</string>
+			<string>com.ninxsoft.pkg.mist</string>
 			<key>version</key>
-			<string>10.0.3</string>
+			<string>0.30</string>
 		</dict>
 	</array>
 	<key>unattended_install</key>
@@ -91,6 +80,6 @@ rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>10.0.3</string>
+	<string>0.30</string>
 </dict>
 </plist>

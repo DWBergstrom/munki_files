@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-17T04:49:17Z</date>
+		<date>2026-04-19T04:53:51Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,34 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Tool designed to help developers manage multiple coding agents, run tasks in parallel, and collaborate on software projects.</string>
+	<string>VNC client app that allows you to view and/or control a Mac remotely.</string>
 	<key>developer</key>
-	<string>OpenAI</string>
+	<string>Edovia, Inc.</string>
 	<key>display_name</key>
-	<string>Codex</string>
+	<string>Screens</string>
 	<key>installer_item_hash</key>
-	<string>4fcad35da96dfc5be72af6c7368bc8b4aaf23907680b2f5ddd1b3672b0f42f45</string>
+	<string>4563a32483242016830bf4bb612c3cdafc2640bbb81a926a16a8648eba5f319d</string>
 	<key>installer_item_location</key>
-	<string>apps/Codex/Codex-26.415.21839.dmg</string>
+	<string>apps/Screens/Screens-4.12.16__7.dmg</string>
 	<key>installer_item_size</key>
-	<integer>268553</integer>
+	<integer>23398</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.openai.codex</string>
+			<string>com.edovia.screens4.mac</string>
 			<key>CFBundleName</key>
-			<string>Codex</string>
+			<string>Screens 4</string>
 			<key>CFBundleShortVersionString</key>
-			<string>26.415.21839</string>
+			<string>4.12.16</string>
 			<key>CFBundleVersion</key>
-			<string>1763</string>
+			<string>1696599453</string>
 			<key>minosversion</key>
 			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/Codex.app</string>
+			<string>/Applications/Screens 4.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,13 +60,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Codex.app</string>
+			<string>Screens 4.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
 	<string>12.0</string>
 	<key>name</key>
-	<string>Codex</string>
+	<string>Screens</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>unattended_uninstall</key>
@@ -76,6 +76,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>26.415.21839</string>
+	<string>4.12.16</string>
 </dict>
 </plist>

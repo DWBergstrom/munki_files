@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2026-04-19T04:51:29Z</date>
+		<key>munki_version</key>
+		<string>7.0.0.5328</string>
+		<key>os_version</key>
+		<string>26.3.1</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>macOS app for managing Munki repositories</string>
+	<key>developer</key>
+	<string>Hannes Juutilainen</string>
+	<key>display_name</key>
+	<string>MunkiAdmin</string>
+	<key>installer_item_hash</key>
+	<string>29a4c5ba0ba9cddde9045a78098d7426d1972ff516707af77cd43c3b82b2222f</string>
+	<key>installer_item_location</key>
+	<string>apps/MunkiAdmin/MunkiAdmin-1.10.1__7.dmg</string>
+	<key>installer_item_size</key>
+	<integer>4822</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.hjuutilainen.MunkiAdmin</string>
+			<key>CFBundleName</key>
+			<string>MunkiAdmin</string>
+			<key>CFBundleShortVersionString</key>
+			<string>1.10.1</string>
+			<key>CFBundleVersion</key>
+			<string>1.10.1</string>
+			<key>minosversion</key>
+			<string>10.13</string>
+			<key>path</key>
+			<string>/Applications/MunkiAdmin.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>MunkiAdmin.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.13</string>
+	<key>name</key>
+	<string>MunkiAdmin</string>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.10.1</string>
+</dict>
+</plist>
