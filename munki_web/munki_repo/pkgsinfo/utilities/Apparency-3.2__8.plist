@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-13T05:12:34Z</date>
+		<date>2026-04-21T04:46:57Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,36 +20,38 @@
 		<string>testing</string>
 	</array>
 	<key>category</key>
-	<string>Development</string>
+	<string>Utilities</string>
 	<key>description</key>
-	<string>OrbStack is a fast, light, and simple way to run containers and Linux machines on macOS. It's a supercharged alternative to Docker Desktop and WSL, all in one easy-to-use app.</string>
+	<string>Aparency is an application for inspecting other applications.</string>
 	<key>developer</key>
-	<string>Orbital Labs, LLC</string>
+	<string>Mothers Ruin Software</string>
 	<key>display_name</key>
-	<string>OrbStack</string>
+	<string>Apparency</string>
+	<key>icon_name</key>
+	<string>Apparency.png</string>
 	<key>installer_item_hash</key>
-	<string>601889551cdfdc7feee148b7fdb0480fa0ba5c0db0be8f1c047fc840886a7571</string>
+	<string>0a2639fac59f2a88510193bc6aa79a6e1af7a7f2c6cb6bc468fb7a30c8a68cc3</string>
 	<key>installer_item_location</key>
-	<string>apps/OrbStack/OrbStack-arm64-2.0.5.dmg</string>
+	<string>utilities/Apparency-3.2__8.dmg</string>
 	<key>installer_item_size</key>
-	<integer>463393</integer>
+	<integer>5492</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>dev.kdrag0n.MacVirt</string>
+			<string>com.mothersruin.Apparency</string>
 			<key>CFBundleName</key>
-			<string>OrbStack</string>
+			<string>Apparency</string>
 			<key>CFBundleShortVersionString</key>
-			<string>2.0.5</string>
+			<string>3.2</string>
 			<key>CFBundleVersion</key>
-			<string>19905</string>
+			<string>861</string>
 			<key>minosversion</key>
-			<string>14.0</string>
+			<string>13.0</string>
 			<key>path</key>
-			<string>/Applications/OrbStack.app</string>
+			<string>/Applications/Apparency.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -62,17 +64,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>OrbStack.app</string>
+			<string>Apparency.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>14.0</string>
+	<string>13.0</string>
 	<key>name</key>
-	<string>OrbStack</string>
-	<key>supported_architectures</key>
-	<array>
-		<string>arm64</string>
-	</array>
+	<string>Apparency</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>unattended_uninstall</key>
@@ -82,6 +80,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>2.0.5</string>
+	<string>3.2</string>
 </dict>
 </plist>

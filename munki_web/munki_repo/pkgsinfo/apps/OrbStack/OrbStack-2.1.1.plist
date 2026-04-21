@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-17T04:53:39Z</date>
+		<date>2026-04-21T04:53:34Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -28,11 +28,11 @@
 	<key>display_name</key>
 	<string>OrbStack</string>
 	<key>installer_item_hash</key>
-	<string>601889551cdfdc7feee148b7fdb0480fa0ba5c0db0be8f1c047fc840886a7571</string>
+	<string>18a41f759958e1fa0951696b820b5478d3ed7353f8ca486fe9d026a1a7d97207</string>
 	<key>installer_item_location</key>
-	<string>apps/OrbStack/OrbStack-arm64-2.0.5__4.dmg</string>
+	<string>apps/OrbStack/OrbStack-arm64-2.1.1.dmg</string>
 	<key>installer_item_size</key>
-	<integer>463393</integer>
+	<integer>456709</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
@@ -43,9 +43,9 @@
 			<key>CFBundleName</key>
 			<string>OrbStack</string>
 			<key>CFBundleShortVersionString</key>
-			<string>2.0.5</string>
+			<string>2.1.1</string>
 			<key>CFBundleVersion</key>
-			<string>19905</string>
+			<string>20026</string>
 			<key>minosversion</key>
 			<string>14.0</string>
 			<key>path</key>
@@ -82,6 +82,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>2.0.5</string>
+	<string>2.1.1</string>
 </dict>
 </plist>

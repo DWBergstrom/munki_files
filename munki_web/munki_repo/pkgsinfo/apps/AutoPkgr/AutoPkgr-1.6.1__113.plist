@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-15T04:52:54Z</date>
+		<date>2026-04-21T04:47:14Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,37 +19,35 @@
 	<array>
 		<string>testing</string>
 	</array>
-	<key>category</key>
-	<string>Development</string>
 	<key>description</key>
-	<string>OrbStack is a fast, light, and simple way to run containers and Linux machines on macOS. It's a supercharged alternative to Docker Desktop and WSL, all in one easy-to-use app.</string>
+	<string>AutoPkgr is a free Mac app that makes it easy to install and configure AutoPkg.</string>
 	<key>developer</key>
-	<string>Orbital Labs, LLC</string>
+	<string>Linde Group, Inc.</string>
 	<key>display_name</key>
-	<string>OrbStack</string>
+	<string>AutoPkgr</string>
 	<key>installer_item_hash</key>
-	<string>601889551cdfdc7feee148b7fdb0480fa0ba5c0db0be8f1c047fc840886a7571</string>
+	<string>598aa227ef544d37b7f964c1352e6f2d955fc5a8127cc2a708e7bc02af2cc7f0</string>
 	<key>installer_item_location</key>
-	<string>apps/OrbStack/OrbStack-arm64-2.0.5__2.dmg</string>
+	<string>apps/AutoPkgr/AutoPkgr-1.6.1__9.dmg</string>
 	<key>installer_item_size</key>
-	<integer>463393</integer>
+	<integer>5648</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>dev.kdrag0n.MacVirt</string>
+			<string>com.lindegroup.AutoPkgr</string>
 			<key>CFBundleName</key>
-			<string>OrbStack</string>
+			<string>AutoPkgr</string>
 			<key>CFBundleShortVersionString</key>
-			<string>2.0.5</string>
+			<string>1.6.1</string>
 			<key>CFBundleVersion</key>
-			<string>19905</string>
+			<string>1509</string>
 			<key>minosversion</key>
-			<string>14.0</string>
+			<string>10.13</string>
 			<key>path</key>
-			<string>/Applications/OrbStack.app</string>
+			<string>/Applications/AutoPkgr.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -62,26 +60,20 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>OrbStack.app</string>
+			<string>AutoPkgr.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>14.0</string>
+	<string>10.13</string>
 	<key>name</key>
-	<string>OrbStack</string>
-	<key>supported_architectures</key>
-	<array>
-		<string>arm64</string>
-	</array>
+	<string>AutoPkgr</string>
 	<key>unattended_install</key>
-	<true/>
-	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>2.0.5</string>
+	<string>1.6.1</string>
 </dict>
 </plist>
