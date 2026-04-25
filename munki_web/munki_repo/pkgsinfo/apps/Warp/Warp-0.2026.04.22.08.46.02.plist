@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-23T04:52:20Z</date>
+		<date>2026-04-25T04:56:39Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,34 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models.</string>
+	<string>Fast Terminal app based in Rust.</string>
 	<key>developer</key>
-	<string>Infra Technologies, Inc</string>
+	<string>Denver Technologies</string>
 	<key>display_name</key>
-	<string>Ollama</string>
+	<string>Warp</string>
+	<key>force_munkiimport</key>
+	<true/>
 	<key>installer_item_hash</key>
-	<string>1fa7f683aebdee87d9f6a40ef0cd56a847b840fc5c2b6e20eeb5222bfcc285b7</string>
+	<string>1465a40110ba0ef9ea6ad34f9ff30902f020781f19cc60e39f2b274cb8dedf1d</string>
 	<key>installer_item_location</key>
-	<string>apps/Ollama/Ollama-0.21.1.dmg</string>
+	<string>apps/Warp/Warp-0.2026.04.22.08.46.02.dmg</string>
 	<key>installer_item_size</key>
-	<integer>163338</integer>
+	<integer>295231</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.electron.ollama</string>
+			<string>dev.warp.Warp-Stable</string>
 			<key>CFBundleName</key>
-			<string>Ollama</string>
+			<string>Warp</string>
 			<key>CFBundleShortVersionString</key>
-			<string>0.21.1</string>
+			<string>0.2026.04.22.08.46.02</string>
 			<key>CFBundleVersion</key>
-			<string>0.21.1</string>
-			<key>minosversion</key>
-			<string>14.0</string>
+			<string>0.2026.04.22.08.46.02</string>
 			<key>path</key>
-			<string>/Applications/Ollama.app</string>
+			<string>/Applications/Warp.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,34 +60,18 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Ollama.app</string>
+			<string>Warp.app</string>
 		</dict>
 	</array>
-	<key>minimum_os_version</key>
-	<string>14.0</string>
 	<key>name</key>
-	<string>Ollama</string>
-	<key>postinstall_script</key>
-	<string>#!/bin/bash
-
-# Script built from: https://github.com/ollama/ollama/issues/851#issuecomment-1889808636
-# Please note admin rights are still needed as the file that records whether first time run has completed is located in the Users home folder. see https://github.com/ollama/ollama/issues/6814
-
-# Install Command Line Tools
-if ! [ -f /usr/local/bin/ollama ]; then
-  /usr/bin/touch /usr/local/bin/ollama ; /bin/ln -s -f /Applications/Ollama.app/Contents/Resources/ollama /usr/local/bin/ollama
-fi
-
-exit</string>
+	<string>Warp</string>
 	<key>unattended_install</key>
-	<true/>
-	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>0.21.1</string>
+	<string>0.2026.04.22.08.46.02</string>
 </dict>
 </plist>

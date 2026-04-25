@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-23T04:48:35Z</date>
+		<date>2026-04-25T04:54:53Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,38 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Tool designed to help developers manage multiple coding agents, run tasks in parallel, and collaborate on software projects.</string>
+	<string>Steam is the ultimate destination for playing, discussing, and creating games.</string>
 	<key>developer</key>
-	<string>OpenAI</string>
+	<string>Valve Software</string>
 	<key>display_name</key>
-	<string>Codex</string>
+	<string>Steam</string>
 	<key>installer_item_hash</key>
-	<string>65d3114117f1f03157e2968358e7c1bbaca48f3fe4a9bc9b71fc6f719e9702eb</string>
+	<string>e1abfbaaa7be3e0f48a0e0d4c313233e05861b1d26af32830ddc838be88f2691</string>
 	<key>installer_item_location</key>
-	<string>apps/Codex/Codex-26.417.41555__2.dmg</string>
+	<string>apps/Steam/Steam-0.0.0.0.0__13.dmg</string>
 	<key>installer_item_size</key>
-	<integer>271716</integer>
+	<integer>3390</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.openai.codex</string>
+			<string>com.valvesoftware.steam</string>
 			<key>CFBundleName</key>
-			<string>Codex</string>
-			<key>CFBundleShortVersionString</key>
-			<string>26.417.41555</string>
+			<string>Steam</string>
 			<key>CFBundleVersion</key>
-			<string>1858</string>
+			<string>6.0</string>
 			<key>minosversion</key>
-			<string>12.0</string>
+			<string>10.13.0</string>
 			<key>path</key>
-			<string>/Applications/Codex.app</string>
+			<string>/Applications/Steam.app</string>
 			<key>type</key>
 			<string>application</string>
-			<key>version_comparison_key</key>
-			<string>CFBundleShortVersionString</string>
 		</dict>
 	</array>
 	<key>items_to_copy</key>
@@ -60,13 +56,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Codex.app</string>
+			<string>Steam.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>12.0</string>
+	<string>10.13.0</string>
 	<key>name</key>
-	<string>Codex</string>
+	<string>Steam</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>unattended_uninstall</key>
@@ -76,6 +72,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>26.417.41555</string>
+	<string>0.0.0.0.0</string>
 </dict>
 </plist>
