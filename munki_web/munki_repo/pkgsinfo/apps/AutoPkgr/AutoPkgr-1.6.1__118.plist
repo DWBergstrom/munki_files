@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-23T04:49:05Z</date>
+		<date>2026-04-26T04:47:11Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,39 +19,35 @@
 	<array>
 		<string>testing</string>
 	</array>
-	<key>category</key>
-	<string>Developer</string>
 	<key>description</key>
-	<string>Built to make you extraordinarily productive, Cursor is the best way to code with AI.</string>
+	<string>AutoPkgr is a free Mac app that makes it easy to install and configure AutoPkg.</string>
 	<key>developer</key>
-	<string>Anysphere, Inc.</string>
+	<string>Linde Group, Inc.</string>
 	<key>display_name</key>
-	<string>Cursor</string>
-	<key>icon_name</key>
-	<string>Cursor.png</string>
+	<string>AutoPkgr</string>
 	<key>installer_item_hash</key>
-	<string>aa9eee1eaf283af323a910fbd00f54898c3fd96e41b028550e6b81532affeb65</string>
+	<string>598aa227ef544d37b7f964c1352e6f2d955fc5a8127cc2a708e7bc02af2cc7f0</string>
 	<key>installer_item_location</key>
-	<string>apps/Cursor/Cursor-3.1.17__2.dmg</string>
+	<string>apps/AutoPkgr/AutoPkgr-1.6.1__14.dmg</string>
 	<key>installer_item_size</key>
-	<integer>394998</integer>
+	<integer>5648</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.todesktop.230313mzl4w4u92</string>
+			<string>com.lindegroup.AutoPkgr</string>
 			<key>CFBundleName</key>
-			<string>Cursor</string>
+			<string>AutoPkgr</string>
 			<key>CFBundleShortVersionString</key>
-			<string>3.1.17</string>
+			<string>1.6.1</string>
 			<key>CFBundleVersion</key>
-			<string>3.1.17</string>
+			<string>1509</string>
 			<key>minosversion</key>
-			<string>12.0</string>
+			<string>10.13</string>
 			<key>path</key>
-			<string>/Applications/Cursor.app</string>
+			<string>/Applications/AutoPkgr.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -64,22 +60,20 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Cursor.app</string>
+			<string>AutoPkgr.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>12.0</string>
+	<string>10.13</string>
 	<key>name</key>
-	<string>Cursor</string>
+	<string>AutoPkgr</string>
 	<key>unattended_install</key>
-	<true/>
-	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>3.1.17</string>
+	<string>1.6.1</string>
 </dict>
 </plist>

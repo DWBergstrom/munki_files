@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-24T04:56:25Z</date>
+		<date>2026-04-26T04:46:55Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,35 +19,39 @@
 	<array>
 		<string>testing</string>
 	</array>
+	<key>category</key>
+	<string>Utilities</string>
 	<key>description</key>
-	<string>Fast Terminal app based in Rust.</string>
+	<string>Aparency is an application for inspecting other applications.</string>
 	<key>developer</key>
-	<string>Denver Technologies</string>
+	<string>Mothers Ruin Software</string>
 	<key>display_name</key>
-	<string>Warp</string>
-	<key>force_munkiimport</key>
-	<true/>
+	<string>Apparency</string>
+	<key>icon_name</key>
+	<string>Apparency.png</string>
 	<key>installer_item_hash</key>
-	<string>31f7fd8dfad6409d98a2f4bec96eff361c060c601222f505100687d38605eabc</string>
+	<string>0a2639fac59f2a88510193bc6aa79a6e1af7a7f2c6cb6bc468fb7a30c8a68cc3</string>
 	<key>installer_item_location</key>
-	<string>apps/Warp/Warp-0.2026.04.15.08.45.04__2.dmg</string>
+	<string>utilities/Apparency-3.2__13.dmg</string>
 	<key>installer_item_size</key>
-	<integer>292803</integer>
+	<integer>5492</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>dev.warp.Warp-Stable</string>
+			<string>com.mothersruin.Apparency</string>
 			<key>CFBundleName</key>
-			<string>Warp</string>
+			<string>Apparency</string>
 			<key>CFBundleShortVersionString</key>
-			<string>0.2026.04.15.08.45.04</string>
+			<string>3.2</string>
 			<key>CFBundleVersion</key>
-			<string>0.2026.04.15.08.45.04</string>
+			<string>861</string>
+			<key>minosversion</key>
+			<string>13.0</string>
 			<key>path</key>
-			<string>/Applications/Warp.app</string>
+			<string>/Applications/Apparency.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,18 +64,22 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Warp.app</string>
+			<string>Apparency.app</string>
 		</dict>
 	</array>
+	<key>minimum_os_version</key>
+	<string>13.0</string>
 	<key>name</key>
-	<string>Warp</string>
+	<string>Apparency</string>
 	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>0.2026.04.15.08.45.04</string>
+	<string>3.2</string>
 </dict>
 </plist>

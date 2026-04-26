@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-22T04:49:35Z</date>
+		<date>2026-04-26T04:57:08Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,38 +20,36 @@
 		<string>testing</string>
 	</array>
 	<key>category</key>
-	<string>Developer</string>
+	<string>Utilities</string>
 	<key>description</key>
-	<string>Built to make you extraordinarily productive, Cursor is the best way to code with AI.</string>
+	<string>iMazing Profile Editor lets users create, modify, and also digitally sign configuration profiles with a friendly user interface instead of manually coding them in XML.</string>
 	<key>developer</key>
-	<string>Anysphere, Inc.</string>
+	<string>DigiDNA SARL</string>
 	<key>display_name</key>
-	<string>Cursor</string>
-	<key>icon_name</key>
-	<string>Cursor.png</string>
+	<string>iMazing Profile Editor</string>
 	<key>installer_item_hash</key>
-	<string>aa9eee1eaf283af323a910fbd00f54898c3fd96e41b028550e6b81532affeb65</string>
+	<string>f5af8180e6aae3fa7d08b62e44e05bc7566dd10ebbbdfd613ca1731fb21b9e00</string>
 	<key>installer_item_location</key>
-	<string>apps/Cursor/Cursor-3.1.17__1.dmg</string>
+	<string>apps/imazingprofileeditor/iMazing_Profile_Editor_2.2.0.392103-2.2.0__14.dmg</string>
 	<key>installer_item_size</key>
-	<integer>394998</integer>
+	<integer>26899</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.todesktop.230313mzl4w4u92</string>
+			<string>com.DigiDNA.iMazingProfileEditorMac</string>
 			<key>CFBundleName</key>
-			<string>Cursor</string>
+			<string>iMazing Profile Editor</string>
 			<key>CFBundleShortVersionString</key>
-			<string>3.1.17</string>
+			<string>2.2.0</string>
 			<key>CFBundleVersion</key>
-			<string>3.1.17</string>
+			<string>392103</string>
 			<key>minosversion</key>
 			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/Cursor.app</string>
+			<string>/Applications/iMazing Profile Editor.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -64,22 +62,20 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Cursor.app</string>
+			<string>iMazing Profile Editor.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
 	<string>12.0</string>
 	<key>name</key>
-	<string>Cursor</string>
+	<string>iMazingProfileEditor</string>
 	<key>unattended_install</key>
-	<true/>
-	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>3.1.17</string>
+	<string>2.2.0</string>
 </dict>
 </plist>

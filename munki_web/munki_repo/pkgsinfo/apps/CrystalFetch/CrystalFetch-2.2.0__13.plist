@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-24T04:49:00Z</date>
+		<date>2026-04-26T04:48:38Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,34 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Tool designed to help developers manage multiple coding agents, run tasks in parallel, and collaborate on software projects.</string>
+	<string>macOS app for downloading Windows installer ISOs from UUPDump.</string>
 	<key>developer</key>
-	<string>OpenAI</string>
+	<string>Turing Software</string>
 	<key>display_name</key>
-	<string>Codex</string>
+	<string>CrystalFetch</string>
 	<key>installer_item_hash</key>
-	<string>590b5b986c26c10efa82d605b677eea0fc6142ed61b51c4fe91a4be8b09c1936</string>
+	<string>6e428a419bc5deded21da0c9eafae4507fd5b2fb6e2c8cf8b59f97522f01deee</string>
 	<key>installer_item_location</key>
-	<string>apps/Codex/Codex-26.422.21637.dmg</string>
+	<string>apps/CrystalFetch/CrystalFetch-2.2.0__13.dmg</string>
 	<key>installer_item_size</key>
-	<integer>298668</integer>
+	<integer>4271</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.openai.codex</string>
+			<string>llc.turing.CrystalFetch</string>
 			<key>CFBundleName</key>
-			<string>Codex</string>
+			<string>CrystalFetch</string>
 			<key>CFBundleShortVersionString</key>
-			<string>26.422.21637</string>
+			<string>2.2.0</string>
 			<key>CFBundleVersion</key>
-			<string>2056</string>
+			<string>6</string>
 			<key>minosversion</key>
 			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/Codex.app</string>
+			<string>/Applications/CrystalFetch.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,13 +60,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Codex.app</string>
+			<string>CrystalFetch.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
 	<string>12.0</string>
 	<key>name</key>
-	<string>Codex</string>
+	<string>CrystalFetch</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>unattended_uninstall</key>
@@ -76,6 +76,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>26.422.21637</string>
+	<string>2.2.0</string>
 </dict>
 </plist>

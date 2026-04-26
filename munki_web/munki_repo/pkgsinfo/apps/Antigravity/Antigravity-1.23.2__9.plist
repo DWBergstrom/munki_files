@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-23T04:52:49Z</date>
+		<date>2026-04-26T04:46:18Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,41 +19,39 @@
 	<array>
 		<string>testing</string>
 	</array>
-	<key>category</key>
-	<string>Productivity</string>
 	<key>description</key>
-	<string>A web browser developed by Opera Software.</string>
+	<string>Google's agentic development platform, evolving the IDE into the agent-first era.</string>
 	<key>developer</key>
-	<string>Opera</string>
+	<string>Google</string>
 	<key>display_name</key>
-	<string>Opera</string>
+	<string>Antigravity</string>
 	<key>installer_item_hash</key>
-	<string>d4f562fc5dee814f87ea98bec3f3872e8c7ccece9bd294b425cdcdd36232deb6</string>
+	<string>caa35ad282741cc9350fb6234e9b86aef54cd4d2f75715a21ef27180182aa50f</string>
 	<key>installer_item_location</key>
-	<string>opera/opera/Opera-130.0.5847.82.dmg</string>
+	<string>apps/Antigravity/Antigravity-1.23.2__9.dmg</string>
 	<key>installer_item_size</key>
-	<integer>168167</integer>
+	<integer>191481</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.operasoftware.Opera</string>
+			<string>com.google.antigravity</string>
 			<key>CFBundleName</key>
-			<string>Opera</string>
+			<string>Antigravity</string>
 			<key>CFBundleShortVersionString</key>
-			<string>130.0</string>
+			<string>1.23.2</string>
 			<key>CFBundleVersion</key>
-			<string>130.0.5847.82</string>
+			<string>1.23.2</string>
 			<key>minosversion</key>
-			<string>11.0</string>
+			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/Opera.app</string>
+			<string>/Applications/Antigravity.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
-			<string>CFBundleVersion</string>
+			<string>CFBundleShortVersionString</string>
 		</dict>
 	</array>
 	<key>items_to_copy</key>
@@ -62,20 +60,22 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Opera.app</string>
+			<string>Antigravity.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>11.0</string>
+	<string>12.0</string>
 	<key>name</key>
-	<string>Opera</string>
+	<string>Antigravity</string>
 	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>130.0.5847.82</string>
+	<string>1.23.2</string>
 </dict>
 </plist>

@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-24T04:53:00Z</date>
+		<date>2026-04-26T04:50:51Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,41 +19,37 @@
 	<array>
 		<string>testing</string>
 	</array>
-	<key>category</key>
-	<string>Productivity</string>
 	<key>description</key>
-	<string>A web browser developed by Opera Software.</string>
-	<key>developer</key>
-	<string>Opera</string>
+	<string>Explore REST and GraphQL APIs.</string>
 	<key>display_name</key>
-	<string>Opera</string>
+	<string>Insomnia </string>
 	<key>installer_item_hash</key>
-	<string>2e2332ce7487d6e98f9e105744fa2da963668c30f1b58cafe288f48a7f1e3150</string>
+	<string>ebe2ff850eab58d56e11ea53a99ce048cb716c1292fcb3d8ab2be8a4e4673d04</string>
 	<key>installer_item_location</key>
-	<string>opera/opera/Opera-130.0.5847.82__1.dmg</string>
+	<string>apps/Insomnia/Insomnia.Core-12.5.0__14.dmg</string>
 	<key>installer_item_size</key>
-	<integer>168169</integer>
+	<integer>353960</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.operasoftware.Opera</string>
+			<string>com.insomnia.app</string>
 			<key>CFBundleName</key>
-			<string>Opera</string>
+			<string>Insomnia</string>
 			<key>CFBundleShortVersionString</key>
-			<string>130.0</string>
+			<string>12.5.0</string>
 			<key>CFBundleVersion</key>
-			<string>130.0.5847.82</string>
+			<string>12.5.0</string>
 			<key>minosversion</key>
-			<string>11.0</string>
+			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/Opera.app</string>
+			<string>/Applications/Insomnia.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
-			<string>CFBundleVersion</string>
+			<string>CFBundleShortVersionString</string>
 		</dict>
 	</array>
 	<key>items_to_copy</key>
@@ -62,13 +58,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Opera.app</string>
+			<string>Insomnia.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>11.0</string>
+	<string>12.0</string>
 	<key>name</key>
-	<string>Opera</string>
+	<string>Insomnia</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -76,6 +72,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>130.0.5847.82</string>
+	<string>12.5.0</string>
 </dict>
 </plist>

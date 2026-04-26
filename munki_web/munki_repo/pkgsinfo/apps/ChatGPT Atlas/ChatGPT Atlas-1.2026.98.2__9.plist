@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-23T04:56:17Z</date>
+		<date>2026-04-26T04:48:00Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,39 +19,41 @@
 	<array>
 		<string>testing</string>
 	</array>
+	<key>category</key>
+	<string>Web Browsers</string>
 	<key>description</key>
-	<string>Fast Terminal app based in Rust.</string>
+	<string>Official OpenAI ChatGPT Browser application.</string>
 	<key>developer</key>
-	<string>Denver Technologies</string>
+	<string>OpenAI, L.L.C.</string>
 	<key>display_name</key>
-	<string>Warp</string>
-	<key>force_munkiimport</key>
-	<true/>
+	<string>ChatGPT Atlas</string>
 	<key>installer_item_hash</key>
-	<string>31f7fd8dfad6409d98a2f4bec96eff361c060c601222f505100687d38605eabc</string>
+	<string>7f4c2a6807b45a6fe84a3477a7dc9c8ff1d7c4f02873fc299e91eda33c218427</string>
 	<key>installer_item_location</key>
-	<string>apps/Warp/Warp-0.2026.04.15.08.45.04__1.dmg</string>
+	<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.98.2__9.dmg</string>
 	<key>installer_item_size</key>
-	<integer>292803</integer>
+	<integer>251184</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>dev.warp.Warp-Stable</string>
+			<string>com.openai.atlas</string>
 			<key>CFBundleName</key>
-			<string>Warp</string>
+			<string>ChatGPT Atlas</string>
 			<key>CFBundleShortVersionString</key>
-			<string>0.2026.04.15.08.45.04</string>
+			<string>1.2026.98.2</string>
 			<key>CFBundleVersion</key>
-			<string>0.2026.04.15.08.45.04</string>
+			<string>20260416164957000</string>
+			<key>minosversion</key>
+			<string>14.2</string>
 			<key>path</key>
-			<string>/Applications/Warp.app</string>
+			<string>/Applications/ChatGPT Atlas.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
-			<string>CFBundleShortVersionString</string>
+			<string>CFBundleVersion</string>
 		</dict>
 	</array>
 	<key>items_to_copy</key>
@@ -60,11 +62,17 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Warp.app</string>
+			<string>ChatGPT Atlas.app</string>
 		</dict>
 	</array>
+	<key>minimum_os_version</key>
+	<string>14.2</string>
 	<key>name</key>
-	<string>Warp</string>
+	<string>ChatGPT Atlas</string>
+	<key>supported_architectures</key>
+	<array>
+		<string>arm64</string>
+	</array>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -72,6 +80,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>0.2026.04.15.08.45.04</string>
+	<string>1.2026.98.2</string>
 </dict>
 </plist>
