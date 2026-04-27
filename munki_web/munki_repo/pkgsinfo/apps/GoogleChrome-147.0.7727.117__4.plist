@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-25T04:56:39Z</date>
+		<date>2026-04-27T04:50:40Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,34 +20,32 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Fast Terminal app based in Rust.</string>
-	<key>developer</key>
-	<string>Denver Technologies</string>
+	<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
 	<key>display_name</key>
-	<string>Warp</string>
-	<key>force_munkiimport</key>
-	<true/>
+	<string>Google Chrome</string>
 	<key>installer_item_hash</key>
-	<string>1465a40110ba0ef9ea6ad34f9ff30902f020781f19cc60e39f2b274cb8dedf1d</string>
+	<string>007ca052348537992e884e1eda4dcebb78736b6f04366440901471a83c573ba6</string>
 	<key>installer_item_location</key>
-	<string>apps/Warp/Warp-0.2026.04.22.08.46.02.dmg</string>
+	<string>apps/GoogleChrome-147.0.7727.117__4.dmg</string>
 	<key>installer_item_size</key>
-	<integer>295231</integer>
+	<integer>242440</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>dev.warp.Warp-Stable</string>
+			<string>com.google.Chrome</string>
 			<key>CFBundleName</key>
-			<string>Warp</string>
+			<string>Chrome</string>
 			<key>CFBundleShortVersionString</key>
-			<string>0.2026.04.22.08.46.02</string>
+			<string>147.0.7727.117</string>
 			<key>CFBundleVersion</key>
-			<string>0.2026.04.22.08.46.02</string>
+			<string>7727.117</string>
+			<key>minosversion</key>
+			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/Warp.app</string>
+			<string>/Applications/Google Chrome.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,11 +58,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Warp.app</string>
+			<string>Google Chrome.app</string>
 		</dict>
 	</array>
+	<key>minimum_os_version</key>
+	<string>12.0</string>
 	<key>name</key>
-	<string>Warp</string>
+	<string>GoogleChrome</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -72,6 +72,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>0.2026.04.22.08.46.02</string>
+	<string>147.0.7727.117</string>
 </dict>
 </plist>
