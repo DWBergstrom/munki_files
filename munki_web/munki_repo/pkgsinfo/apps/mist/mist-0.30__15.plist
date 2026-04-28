@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-23T04:54:24Z</date>
+		<date>2026-04-28T04:57:30Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,61 +19,67 @@
 	<array>
 		<string>testing</string>
 	</array>
+	<key>category</key>
+	<string>Utilities</string>
 	<key>description</key>
-	<string> </string>
+	<string>A Mac utility that automatically downloads macOS Firmwares / Installers.</string>
 	<key>developer</key>
-	<string>RIDDLE QUIET VENTURES, LLC</string>
+	<string>ninxsoft</string>
 	<key>display_name</key>
-	<string>Signal Desktop</string>
+	<string>mist</string>
+	<key>installed_size</key>
+	<integer>19392</integer>
 	<key>installer_item_hash</key>
-	<string>8392ae5dfbd5a52586920304993897f8e9990dc0b747f44ca45de42bc3db9fe4</string>
+	<string>a764f92e23f5a0a1776c5f08c7dbfe99e98ff5ed9feb12da10410cc09e9abefb</string>
 	<key>installer_item_location</key>
-	<string>apps/Signal/signal-desktop-mac-universal-8.7.0__7.dmg</string>
+	<string>apps/mist/mist-0.30__15.pkg</string>
 	<key>installer_item_size</key>
-	<integer>251281</integer>
-	<key>installer_type</key>
-	<string>copy_from_dmg</string>
+	<integer>13066</integer>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>org.whispersystems.signal-desktop</string>
+			<string>com.ninxsoft.mist</string>
 			<key>CFBundleName</key>
-			<string>Signal</string>
+			<string>Mist</string>
 			<key>CFBundleShortVersionString</key>
-			<string>8.7.0</string>
+			<string>0.30</string>
 			<key>CFBundleVersion</key>
-			<string>1</string>
+			<string>0.30</string>
 			<key>minosversion</key>
 			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/Signal.app</string>
+			<string>/Applications/Mist.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
 			<string>CFBundleShortVersionString</string>
 		</dict>
 	</array>
-	<key>items_to_copy</key>
-	<array>
-		<dict>
-			<key>destination_path</key>
-			<string>/Applications</string>
-			<key>source_item</key>
-			<string>Signal.app</string>
-		</dict>
-	</array>
 	<key>minimum_os_version</key>
 	<string>12.0</string>
 	<key>name</key>
-	<string>Signal_Desktop</string>
+	<string>mist</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>19392</integer>
+			<key>packageid</key>
+			<string>com.ninxsoft.pkg.mist</string>
+			<key>version</key>
+			<string>0.30</string>
+		</dict>
+	</array>
 	<key>unattended_install</key>
 	<true/>
+	<key>unattended_uninstall</key>
+	<true/>
 	<key>uninstall_method</key>
-	<string>remove_copied_items</string>
+	<string>removepackages</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>8.7.0</string>
+	<string>0.30</string>
 </dict>
 </plist>

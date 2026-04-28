@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-16T04:54:40Z</date>
+		<date>2026-04-28T04:48:24Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,34 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string> </string>
+	<string>Tool designed to help developers manage multiple coding agents, run tasks in parallel, and collaborate on software projects.</string>
 	<key>developer</key>
-	<string>RIDDLE QUIET VENTURES, LLC</string>
+	<string>OpenAI</string>
 	<key>display_name</key>
-	<string>Signal Desktop</string>
+	<string>Codex</string>
 	<key>installer_item_hash</key>
-	<string>8392ae5dfbd5a52586920304993897f8e9990dc0b747f44ca45de42bc3db9fe4</string>
+	<string>90dd7716f260135b76f3f123f8b7057ebe7b67bdb432d009832ce90d005cc753</string>
 	<key>installer_item_location</key>
-	<string>apps/Signal/signal-desktop-mac-universal-8.7.0.dmg</string>
+	<string>apps/Codex/Codex-26.422.30944__3.dmg</string>
 	<key>installer_item_size</key>
-	<integer>251281</integer>
+	<integer>299536</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>org.whispersystems.signal-desktop</string>
+			<string>com.openai.codex</string>
 			<key>CFBundleName</key>
-			<string>Signal</string>
+			<string>Codex</string>
 			<key>CFBundleShortVersionString</key>
-			<string>8.7.0</string>
+			<string>26.422.30944</string>
 			<key>CFBundleVersion</key>
-			<string>1</string>
+			<string>2080</string>
 			<key>minosversion</key>
 			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/Signal.app</string>
+			<string>/Applications/Codex.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,20 +60,22 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Signal.app</string>
+			<string>Codex.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
 	<string>12.0</string>
 	<key>name</key>
-	<string>Signal_Desktop</string>
+	<string>Codex</string>
 	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>8.7.0</string>
+	<string>26.422.30944</string>
 </dict>
 </plist>
