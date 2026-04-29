@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-23T04:49:26Z</date>
+		<date>2026-04-29T04:54:26Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,34 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Chrome-like keyword search for Safari.</string>
+	<string>A kick ass tool for creating AutoPkg recipes.</string>
 	<key>developer</key>
-	<string>Duck Duck Go</string>
+	<string>Elliot Jordan</string>
 	<key>display_name</key>
-	<string>DuckDuckGo</string>
+	<string>Recipe Robot</string>
 	<key>installer_item_hash</key>
-	<string>9f897e4964e3902f6f28798f6170425a843ffdf573f50b1e4f6696f65ff7f0de</string>
+	<string>9a5ce472bd29f489c17c17eeb60a359e9e54ecc7cdef7b2e7d0c8816f081a1be</string>
 	<key>installer_item_location</key>
-	<string>apps/DuckDuckGo/DuckDuckGo-1.186.1__2.dmg</string>
+	<string>apps/Recipe Robot/Recipe Robot-2.5.0__17.dmg</string>
 	<key>installer_item_size</key>
-	<integer>160213</integer>
+	<integer>3475</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.duckduckgo.macos.browser</string>
+			<string>com.elliotjordan.recipe-robot</string>
 			<key>CFBundleName</key>
-			<string>DuckDuckGo</string>
+			<string>Recipe Robot</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.186.1</string>
+			<string>2.5.0</string>
 			<key>CFBundleVersion</key>
-			<string>680</string>
+			<string>1552</string>
 			<key>minosversion</key>
-			<string>11.4</string>
+			<string>11.0</string>
 			<key>path</key>
-			<string>/Applications/DuckDuckGo.app</string>
+			<string>/Applications/Recipe Robot.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,13 +60,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>DuckDuckGo.app</string>
+			<string>Recipe Robot.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>11.4</string>
+	<string>11.0</string>
 	<key>name</key>
-	<string>DuckDuckGo</string>
+	<string>Recipe Robot</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -74,6 +74,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.186.1</string>
+	<string>2.5.0</string>
 </dict>
 </plist>

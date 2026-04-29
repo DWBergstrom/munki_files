@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-26T04:49:20Z</date>
+		<date>2026-04-29T04:48:54Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,34 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Chrome-like keyword search for Safari.</string>
+	<string>macOS app for downloading Windows installer ISOs from UUPDump.</string>
 	<key>developer</key>
-	<string>Duck Duck Go</string>
+	<string>Turing Software</string>
 	<key>display_name</key>
-	<string>DuckDuckGo</string>
+	<string>CrystalFetch</string>
 	<key>installer_item_hash</key>
-	<string>9f897e4964e3902f6f28798f6170425a843ffdf573f50b1e4f6696f65ff7f0de</string>
+	<string>6e428a419bc5deded21da0c9eafae4507fd5b2fb6e2c8cf8b59f97522f01deee</string>
 	<key>installer_item_location</key>
-	<string>apps/DuckDuckGo/DuckDuckGo-1.186.1__5.dmg</string>
+	<string>apps/CrystalFetch/CrystalFetch-2.2.0__16.dmg</string>
 	<key>installer_item_size</key>
-	<integer>160213</integer>
+	<integer>4271</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.duckduckgo.macos.browser</string>
+			<string>llc.turing.CrystalFetch</string>
 			<key>CFBundleName</key>
-			<string>DuckDuckGo</string>
+			<string>CrystalFetch</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.186.1</string>
+			<string>2.2.0</string>
 			<key>CFBundleVersion</key>
-			<string>680</string>
+			<string>6</string>
 			<key>minosversion</key>
-			<string>11.4</string>
+			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/DuckDuckGo.app</string>
+			<string>/Applications/CrystalFetch.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,20 +60,22 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>DuckDuckGo.app</string>
+			<string>CrystalFetch.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>11.4</string>
+	<string>12.0</string>
 	<key>name</key>
-	<string>DuckDuckGo</string>
+	<string>CrystalFetch</string>
 	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.186.1</string>
+	<string>2.2.0</string>
 </dict>
 </plist>
