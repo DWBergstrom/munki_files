@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-29T04:52:56Z</date>
+		<date>2026-05-02T04:47:03Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,35 +19,39 @@
 	<array>
 		<string>testing</string>
 	</array>
+	<key>category</key>
+	<string>Utilities</string>
 	<key>description</key>
-	<string>Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models.</string>
+	<string>Archaeology is a tool For digging into binary files on macOS.</string>
 	<key>developer</key>
-	<string>Infra Technologies, Inc</string>
+	<string>Mothers Ruin Software</string>
 	<key>display_name</key>
-	<string>Ollama</string>
+	<string>Archaeology</string>
+	<key>icon_name</key>
+	<string>Archaeology.png</string>
 	<key>installer_item_hash</key>
-	<string>ab63591983a2a65d61c815007bc15a5d8e14c365dfc774cddcdbdae653fa8ea4</string>
+	<string>c9f8f5a0054f01b4453418e07c8c1a9baeac88e1bb2313059c7c3dcc620acc5e</string>
 	<key>installer_item_location</key>
-	<string>apps/Ollama/Ollama-0.22.0.dmg</string>
+	<string>utilities/Archaeology-1.5__19.dmg</string>
 	<key>installer_item_size</key>
-	<integer>163714</integer>
+	<integer>4409</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.electron.ollama</string>
+			<string>com.mothersruin.Archaeology</string>
 			<key>CFBundleName</key>
-			<string>Ollama</string>
+			<string>Archaeology</string>
 			<key>CFBundleShortVersionString</key>
-			<string>0.22.0</string>
+			<string>1.5</string>
 			<key>CFBundleVersion</key>
-			<string>0.22.0</string>
+			<string>215</string>
 			<key>minosversion</key>
-			<string>14.0</string>
+			<string>13.0</string>
 			<key>path</key>
-			<string>/Applications/Ollama.app</string>
+			<string>/Applications/Archaeology.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,25 +64,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Ollama.app</string>
+			<string>Archaeology.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>14.0</string>
+	<string>13.0</string>
 	<key>name</key>
-	<string>Ollama</string>
-	<key>postinstall_script</key>
-	<string>#!/bin/bash
-
-# Script built from: https://github.com/ollama/ollama/issues/851#issuecomment-1889808636
-# Please note admin rights are still needed as the file that records whether first time run has completed is located in the Users home folder. see https://github.com/ollama/ollama/issues/6814
-
-# Install Command Line Tools
-if ! [ -f /usr/local/bin/ollama ]; then
-  /usr/bin/touch /usr/local/bin/ollama ; /bin/ln -s -f /Applications/Ollama.app/Contents/Resources/ollama /usr/local/bin/ollama
-fi
-
-exit</string>
+	<string>Archaeology</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>unattended_uninstall</key>
@@ -88,6 +80,6 @@ exit</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>0.22.0</string>
+	<string>1.5</string>
 </dict>
 </plist>
