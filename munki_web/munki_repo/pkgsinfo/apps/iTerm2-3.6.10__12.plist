@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-05-01T04:48:36Z</date>
+		<date>2026-05-03T04:57:25Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,35 +19,37 @@
 	<array>
 		<string>testing</string>
 	</array>
+	<key>category</key>
+	<string>Utilities</string>
 	<key>description</key>
-	<string>Tool designed to help developers manage multiple coding agents, run tasks in parallel, and collaborate on software projects.</string>
+	<string>iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with OS 10.5 (Leopard) or newer. Its focus is on performance, internationalization, and supporting innovative features that make your life better.</string>
 	<key>developer</key>
-	<string>OpenAI</string>
+	<string>George Nachman</string>
 	<key>display_name</key>
-	<string>Codex</string>
+	<string>iTerm2</string>
 	<key>installer_item_hash</key>
-	<string>a9dd0b0b1a05686ed1f0092cbb1325773859dedf75ab31b35ca46656b2b92cb6</string>
+	<string>a906c81f642d877369e4cc16830a98bfe11f844ed08ef7db7f23a355f5257b2d</string>
 	<key>installer_item_location</key>
-	<string>apps/Codex/Codex-26.429.20946.dmg</string>
+	<string>apps/iTerm2-3.6.10__12.dmg</string>
 	<key>installer_item_size</key>
-	<integer>309023</integer>
+	<integer>44551</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.openai.codex</string>
+			<string>com.googlecode.iterm2</string>
 			<key>CFBundleName</key>
-			<string>Codex</string>
+			<string>iTerm2</string>
 			<key>CFBundleShortVersionString</key>
-			<string>26.429.20946</string>
+			<string>3.6.10</string>
 			<key>CFBundleVersion</key>
-			<string>2312</string>
+			<string>3.6.10</string>
 			<key>minosversion</key>
-			<string>12.0</string>
+			<string>12.4</string>
 			<key>path</key>
-			<string>/Applications/Codex.app</string>
+			<string>/Applications/iTerm.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,22 +62,20 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Codex.app</string>
+			<string>iTerm.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>12.0</string>
+	<string>12.4</string>
 	<key>name</key>
-	<string>Codex</string>
+	<string>iTerm2</string>
 	<key>unattended_install</key>
-	<true/>
-	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>26.429.20946</string>
+	<string>3.6.10</string>
 </dict>
 </plist>
