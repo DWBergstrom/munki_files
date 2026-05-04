@@ -53537,68 +53537,6 @@ rm -rf /Applications/zoom.us.app
 		<key>force_munkiimport</key>
 		<true/>
 		<key>installer_item_hash</key>
-		<string>7f77491f6cc8100e759aba44f29a29b6a914bf4860ef2248e6280e96704af346</string>
-		<key>installer_item_location</key>
-		<string>apps/Warp/Warp-0.2026.04.27.15.32.03.dmg</string>
-		<key>installer_item_size</key>
-		<integer>301096</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>dev.warp.Warp-Stable</string>
-				<key>CFBundleName</key>
-				<string>Warp</string>
-				<key>CFBundleShortVersionString</key>
-				<string>0.2026.04.27.15.32.03</string>
-				<key>CFBundleVersion</key>
-				<string>0.2026.04.27.15.32.03</string>
-				<key>path</key>
-				<string>/Applications/Warp.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Warp.app</string>
-			</dict>
-		</array>
-		<key>name</key>
-		<string>Warp</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>0.2026.04.27.15.32.03</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Fast Terminal app based in Rust.</string>
-		<key>developer</key>
-		<string>Denver Technologies</string>
-		<key>display_name</key>
-		<string>Warp</string>
-		<key>force_munkiimport</key>
-		<true/>
-		<key>installer_item_hash</key>
 		<string>e47a19cd72362b0735bf3a7ee45ba13b8fcffe9e7b5fb67adb2413f19335bc07</string>
 		<key>installer_item_location</key>
 		<string>apps/Warp/Warp-0.2026.04.29.08.57.01.dmg</string>
@@ -53708,130 +53646,6 @@ rm -rf /Applications/zoom.us.app
 		<true/>
 		<key>version</key>
 		<string>20240926.162135</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Fast Terminal app based in Rust.</string>
-		<key>developer</key>
-		<string>Denver Technologies</string>
-		<key>display_name</key>
-		<string>Warp</string>
-		<key>force_munkiimport</key>
-		<true/>
-		<key>installer_item_hash</key>
-		<string>7f77491f6cc8100e759aba44f29a29b6a914bf4860ef2248e6280e96704af346</string>
-		<key>installer_item_location</key>
-		<string>apps/Warp/Warp-0.2026.04.27.15.32.03__1.dmg</string>
-		<key>installer_item_size</key>
-		<integer>301096</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>dev.warp.Warp-Stable</string>
-				<key>CFBundleName</key>
-				<string>Warp</string>
-				<key>CFBundleShortVersionString</key>
-				<string>0.2026.04.27.15.32.03</string>
-				<key>CFBundleVersion</key>
-				<string>0.2026.04.27.15.32.03</string>
-				<key>path</key>
-				<string>/Applications/Warp.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Warp.app</string>
-			</dict>
-		</array>
-		<key>name</key>
-		<string>Warp</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>0.2026.04.27.15.32.03</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Fast Terminal app based in Rust.</string>
-		<key>developer</key>
-		<string>Denver Technologies</string>
-		<key>display_name</key>
-		<string>Warp</string>
-		<key>force_munkiimport</key>
-		<true/>
-		<key>installer_item_hash</key>
-		<string>7f77491f6cc8100e759aba44f29a29b6a914bf4860ef2248e6280e96704af346</string>
-		<key>installer_item_location</key>
-		<string>apps/Warp/Warp-0.2026.04.27.15.32.03__2.dmg</string>
-		<key>installer_item_size</key>
-		<integer>301096</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>dev.warp.Warp-Stable</string>
-				<key>CFBundleName</key>
-				<string>Warp</string>
-				<key>CFBundleShortVersionString</key>
-				<string>0.2026.04.27.15.32.03</string>
-				<key>CFBundleVersion</key>
-				<string>0.2026.04.27.15.32.03</string>
-				<key>path</key>
-				<string>/Applications/Warp.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Warp.app</string>
-			</dict>
-		</array>
-		<key>name</key>
-		<string>Warp</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>0.2026.04.27.15.32.03</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -68203,6 +68017,51 @@ exit</string>
 		<string>e5e2adb7bc0ca1bc71436f2e5921e0174e04f3e4c5e9438e081fbefc8befc724</string>
 		<key>installer_item_location</key>
 		<string>apps/GarageBand/GarageBand-10.4.13__12.pkg</string>
+		<key>installer_item_size</key>
+		<integer>3050113</integer>
+		<key>minimum_os_version</key>
+		<string>14.4</string>
+		<key>name</key>
+		<string>GarageBand</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>4181114</integer>
+				<key>packageid</key>
+				<string>com.apple.garageband10</string>
+				<key>version</key>
+				<string>10.4.13</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>10.4.13</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string> </string>
+		<key>developer</key>
+		<string>Apple</string>
+		<key>display_name</key>
+		<string>GarageBand</string>
+		<key>installed_size</key>
+		<integer>4181114</integer>
+		<key>installer_item_hash</key>
+		<string>e5e2adb7bc0ca1bc71436f2e5921e0174e04f3e4c5e9438e081fbefc8befc724</string>
+		<key>installer_item_location</key>
+		<string>apps/GarageBand/GarageBand-10.4.13__21.pkg</string>
 		<key>installer_item_size</key>
 		<integer>3050113</integer>
 		<key>minimum_os_version</key>
