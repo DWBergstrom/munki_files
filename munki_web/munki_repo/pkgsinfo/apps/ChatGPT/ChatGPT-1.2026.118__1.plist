@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-04-27T04:48:14Z</date>
+		<date>2026-05-15T04:51:42Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -28,24 +28,24 @@
 	<key>display_name</key>
 	<string>ChatGPT</string>
 	<key>installed_size</key>
-	<integer>134424</integer>
+	<integer>155280</integer>
 	<key>installer_item_hash</key>
-	<string>6b8d79abc7491756da445d6726c4adbea863fec53df4fee6f1db8541664839a7</string>
+	<string>4f32899dcca93b16e0bcb960f601dfb5f4d0de1ae21eb17def906d84d5f82332</string>
 	<key>installer_item_location</key>
-	<string>apps/ChatGPT/OpenAI_ChatGPT_1.2026.104__5.pkg</string>
+	<string>apps/ChatGPT/OpenAI_ChatGPT_1.2026.118__1.pkg</string>
 	<key>installer_item_size</key>
-	<integer>61581</integer>
+	<integer>70051</integer>
 	<key>name</key>
 	<string>ChatGPT</string>
 	<key>receipts</key>
 	<array>
 		<dict>
 			<key>installed_size</key>
-			<integer>134424</integer>
+			<integer>155280</integer>
 			<key>packageid</key>
 			<string>com.openai.chat</string>
 			<key>version</key>
-			<string>1.2026.104</string>
+			<string>1.2026.118</string>
 		</dict>
 	</array>
 	<key>unattended_install</key>
@@ -55,6 +55,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.2026.104</string>
+	<string>1.2026.118</string>
 </dict>
 </plist>

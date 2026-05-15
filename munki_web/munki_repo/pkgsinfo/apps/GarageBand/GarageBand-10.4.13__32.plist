@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-05-01T04:48:12Z</date>
+		<date>2026-05-15T04:56:37Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,33 +19,33 @@
 	<array>
 		<string>testing</string>
 	</array>
-	<key>category</key>
-	<string>Productivity</string>
 	<key>description</key>
-	<string>ChatGPT is an AI-powered assistant that helps you with writing, brainstorming, coding, research, and more — right from your Mac. The native macOS app provides a fast, streamlined experience with easy access via the menu bar and system-wide shortcut. Employees can securely log in with their OpenAI account to access personalized AI assistance for day-to-day tasks, project support, and productivity enhancements.</string>
+	<string> </string>
 	<key>developer</key>
-	<string>OpenAI</string>
+	<string>Apple</string>
 	<key>display_name</key>
-	<string>ChatGPT</string>
+	<string>GarageBand</string>
 	<key>installed_size</key>
-	<integer>134424</integer>
+	<integer>4181114</integer>
 	<key>installer_item_hash</key>
-	<string>6b8d79abc7491756da445d6726c4adbea863fec53df4fee6f1db8541664839a7</string>
+	<string>e5e2adb7bc0ca1bc71436f2e5921e0174e04f3e4c5e9438e081fbefc8befc724</string>
 	<key>installer_item_location</key>
-	<string>apps/ChatGPT/OpenAI_ChatGPT_1.2026.104__9.pkg</string>
+	<string>apps/GarageBand/GarageBand-10.4.13__32.pkg</string>
 	<key>installer_item_size</key>
-	<integer>61581</integer>
+	<integer>3050113</integer>
+	<key>minimum_os_version</key>
+	<string>14.4</string>
 	<key>name</key>
-	<string>ChatGPT</string>
+	<string>GarageBand</string>
 	<key>receipts</key>
 	<array>
 		<dict>
 			<key>installed_size</key>
-			<integer>134424</integer>
+			<integer>4181114</integer>
 			<key>packageid</key>
-			<string>com.openai.chat</string>
+			<string>com.apple.garageband10</string>
 			<key>version</key>
-			<string>1.2026.104</string>
+			<string>10.4.13</string>
 		</dict>
 	</array>
 	<key>unattended_install</key>
@@ -55,6 +55,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.2026.104</string>
+	<string>10.4.13</string>
 </dict>
 </plist>

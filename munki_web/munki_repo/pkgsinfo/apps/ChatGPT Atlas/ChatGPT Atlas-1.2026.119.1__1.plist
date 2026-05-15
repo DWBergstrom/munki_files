@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-05-02T04:52:37Z</date>
+		<date>2026-05-15T04:51:28Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,36 +20,36 @@
 		<string>testing</string>
 	</array>
 	<key>category</key>
-	<string>Productivity</string>
+	<string>Web Browsers</string>
 	<key>description</key>
-	<string>A web browser developed by Opera Software.</string>
+	<string>Official OpenAI ChatGPT Browser application.</string>
 	<key>developer</key>
-	<string>Opera</string>
+	<string>OpenAI, L.L.C.</string>
 	<key>display_name</key>
-	<string>Opera</string>
+	<string>ChatGPT Atlas</string>
 	<key>installer_item_hash</key>
-	<string>440e79a157890001615f4055f392a9e6fd75a9d2d87768f5d05d2ea77b852c81</string>
+	<string>7c37d573f83c53a60ab69d9c4a9250afe9d930534e05a6c59986b1ab3f28ce33</string>
 	<key>installer_item_location</key>
-	<string>opera/opera/Opera-131.0.5877.5__2.dmg</string>
+	<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.119.1__1.dmg</string>
 	<key>installer_item_size</key>
-	<integer>168525</integer>
+	<integer>246702</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.operasoftware.Opera</string>
+			<string>com.openai.atlas</string>
 			<key>CFBundleName</key>
-			<string>Opera</string>
+			<string>ChatGPT Atlas</string>
 			<key>CFBundleShortVersionString</key>
-			<string>131.0</string>
+			<string>1.2026.119.1</string>
 			<key>CFBundleVersion</key>
-			<string>131.0.5877.5</string>
+			<string>20260504231115000</string>
 			<key>minosversion</key>
-			<string>11.0</string>
+			<string>14.2</string>
 			<key>path</key>
-			<string>/Applications/Opera.app</string>
+			<string>/Applications/ChatGPT Atlas.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -62,13 +62,17 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Opera.app</string>
+			<string>ChatGPT Atlas.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>11.0</string>
+	<string>14.2</string>
 	<key>name</key>
-	<string>Opera</string>
+	<string>ChatGPT Atlas</string>
+	<key>supported_architectures</key>
+	<array>
+		<string>arm64</string>
+	</array>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -76,6 +80,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>131.0.5877.5</string>
+	<string>1.2026.119.1</string>
 </dict>
 </plist>

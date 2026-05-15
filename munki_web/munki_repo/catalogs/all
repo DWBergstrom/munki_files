@@ -13041,204 +13041,6 @@ fi</string>
 		<key>display_name</key>
 		<string>Opera</string>
 		<key>installer_item_hash</key>
-		<string>0f64d8e7fb2e627cc664195dd54d5067bda619ddf76b83d3bee4b50feb96a0a1</string>
-		<key>installer_item_location</key>
-		<string>opera/opera/Opera-131.0.5877.5.dmg</string>
-		<key>installer_item_size</key>
-		<integer>168524</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.operasoftware.Opera</string>
-				<key>CFBundleName</key>
-				<string>Opera</string>
-				<key>CFBundleShortVersionString</key>
-				<string>131.0</string>
-				<key>CFBundleVersion</key>
-				<string>131.0.5877.5</string>
-				<key>minosversion</key>
-				<string>11.0</string>
-				<key>path</key>
-				<string>/Applications/Opera.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Opera.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>11.0</string>
-		<key>name</key>
-		<string>Opera</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>131.0.5877.5</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Productivity</string>
-		<key>description</key>
-		<string>A web browser developed by Opera Software.</string>
-		<key>developer</key>
-		<string>Opera</string>
-		<key>display_name</key>
-		<string>Opera</string>
-		<key>installer_item_hash</key>
-		<string>c17e47d76cef022b3772a9b0948f2f1656bac357647e99731843f05f98e5f7a1</string>
-		<key>installer_item_location</key>
-		<string>opera/opera/Opera-131.0.5877.5__3.dmg</string>
-		<key>installer_item_size</key>
-		<integer>168532</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.operasoftware.Opera</string>
-				<key>CFBundleName</key>
-				<string>Opera</string>
-				<key>CFBundleShortVersionString</key>
-				<string>131.0</string>
-				<key>CFBundleVersion</key>
-				<string>131.0.5877.5</string>
-				<key>minosversion</key>
-				<string>11.0</string>
-				<key>path</key>
-				<string>/Applications/Opera.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Opera.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>11.0</string>
-		<key>name</key>
-		<string>Opera</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>131.0.5877.5</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Productivity</string>
-		<key>description</key>
-		<string>A web browser developed by Opera Software.</string>
-		<key>developer</key>
-		<string>Opera</string>
-		<key>display_name</key>
-		<string>Opera</string>
-		<key>installer_item_hash</key>
-		<string>ad88c79fcb41d5b46b083cf8b548dac49fe5be23720a7daf9298000fffa1afca</string>
-		<key>installer_item_location</key>
-		<string>opera/opera/Opera-131.0.5877.5__1.dmg</string>
-		<key>installer_item_size</key>
-		<integer>168542</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.operasoftware.Opera</string>
-				<key>CFBundleName</key>
-				<string>Opera</string>
-				<key>CFBundleShortVersionString</key>
-				<string>131.0</string>
-				<key>CFBundleVersion</key>
-				<string>131.0.5877.5</string>
-				<key>minosversion</key>
-				<string>11.0</string>
-				<key>path</key>
-				<string>/Applications/Opera.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Opera.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>11.0</string>
-		<key>name</key>
-		<string>Opera</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>131.0.5877.5</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Productivity</string>
-		<key>description</key>
-		<string>A web browser developed by Opera Software.</string>
-		<key>developer</key>
-		<string>Opera</string>
-		<key>display_name</key>
-		<string>Opera</string>
-		<key>installer_item_hash</key>
 		<string>de3b0b2249ef9caf47b95a61a2fcfdcf69c3345bfe067975aece3183e67a02a7</string>
 		<key>installer_item_location</key>
 		<string>opera/opera/Opera-131.0.5877.24.dmg</string>
@@ -13288,72 +13090,6 @@ fi</string>
 		<true/>
 		<key>version</key>
 		<string>131.0.5877.24</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Productivity</string>
-		<key>description</key>
-		<string>A web browser developed by Opera Software.</string>
-		<key>developer</key>
-		<string>Opera</string>
-		<key>display_name</key>
-		<string>Opera</string>
-		<key>installer_item_hash</key>
-		<string>440e79a157890001615f4055f392a9e6fd75a9d2d87768f5d05d2ea77b852c81</string>
-		<key>installer_item_location</key>
-		<string>opera/opera/Opera-131.0.5877.5__2.dmg</string>
-		<key>installer_item_size</key>
-		<integer>168525</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.operasoftware.Opera</string>
-				<key>CFBundleName</key>
-				<string>Opera</string>
-				<key>CFBundleShortVersionString</key>
-				<string>131.0</string>
-				<key>CFBundleVersion</key>
-				<string>131.0.5877.5</string>
-				<key>minosversion</key>
-				<string>11.0</string>
-				<key>path</key>
-				<string>/Applications/Opera.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Opera.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>11.0</string>
-		<key>name</key>
-		<string>Opera</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>131.0.5877.5</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -15396,6 +15132,90 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 	<dict>
 		<key>autoremove</key>
 		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>1Password 7</string>
+			<string>1Password Browser Helper</string>
+			<string>1Password</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Utilities</string>
+		<key>description</key>
+		<string>1Password is a password manager that goes beyond simple password storage by integrating directly with your web browser to automatically log you into websites, enter credit card information, fill registration forms, and easily generate strong passwords.</string>
+		<key>developer</key>
+		<string>AgileBits Inc.</string>
+		<key>display_name</key>
+		<string>1Password</string>
+		<key>installed_size</key>
+		<integer>878589</integer>
+		<key>installer_item_hash</key>
+		<string>ef12ea09447674a9e17de0f1b7552acc6cc0e5bd6d1d4e5efc40e73e9483014a</string>
+		<key>installer_item_location</key>
+		<string>apps/1Password-8.12.12__13.pkg</string>
+		<key>installer_item_size</key>
+		<integer>351812</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.1password.1password</string>
+				<key>CFBundleName</key>
+				<string>1Password</string>
+				<key>CFBundleShortVersionString</key>
+				<string>8.12.12</string>
+				<key>CFBundleVersion</key>
+				<string>8.12.12.466481</string>
+				<key>minosversion</key>
+				<string>12.0</string>
+				<key>path</key>
+				<string>/Applications/1Password.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.0</string>
+		<key>name</key>
+		<string>1Password</string>
+		<key>postinstall_script</key>
+		<string>#!/bin/bash
+
+LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console); 
+
+/usr/sbin/chown -R "$LOGGED_IN_USER":staff "/Applications/1Password.app"
+
+</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>878589</integer>
+				<key>packageid</key>
+				<string>com.1password.1password</string>
+				<key>version</key>
+				<string>0</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>8.12.12</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
 		<key>catalogs</key>
 		<array>
 			<string>testing</string>
@@ -16024,6 +15844,68 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<true/>
 		<key>version</key>
 		<string>4.6.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
+		<key>display_name</key>
+		<string>Google Chrome</string>
+		<key>installer_item_hash</key>
+		<string>2ce170c03cc959912ab0729d1f4d96ad8aa58e6c5eafbfdc6b0990d52d4092d8</string>
+		<key>installer_item_location</key>
+		<string>apps/GoogleChrome-148.0.7778.168__1.dmg</string>
+		<key>installer_item_size</key>
+		<integer>252341</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.google.Chrome</string>
+				<key>CFBundleName</key>
+				<string>Chrome</string>
+				<key>CFBundleShortVersionString</key>
+				<string>148.0.7778.168</string>
+				<key>CFBundleVersion</key>
+				<string>7778.168</string>
+				<key>minosversion</key>
+				<string>12.0</string>
+				<key>path</key>
+				<string>/Applications/Google Chrome.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Google Chrome.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.0</string>
+		<key>name</key>
+		<string>GoogleChrome</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>148.0.7778.168</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -17712,68 +17594,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<array>
 			<string>testing</string>
 		</array>
-		<key>description</key>
-		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
-		<key>display_name</key>
-		<string>Google Chrome</string>
-		<key>installer_item_hash</key>
-		<string>245504a62f858698a3760373aa3a81cbfc7627cc6b7908c01f90533b0dbbdfb1</string>
-		<key>installer_item_location</key>
-		<string>apps/GoogleChrome-147.0.7727.138__1.dmg</string>
-		<key>installer_item_size</key>
-		<integer>242396</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.google.Chrome</string>
-				<key>CFBundleName</key>
-				<string>Chrome</string>
-				<key>CFBundleShortVersionString</key>
-				<string>147.0.7727.138</string>
-				<key>CFBundleVersion</key>
-				<string>7727.138</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Google Chrome.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Google Chrome.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>GoogleChrome</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>147.0.7727.138</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
 		<key>category</key>
 		<string>Utilities</string>
 		<key>description</key>
@@ -17832,68 +17652,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<true/>
 		<key>version</key>
 		<string>3.6.10</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
-		<key>display_name</key>
-		<string>Google Chrome</string>
-		<key>installer_item_hash</key>
-		<string>245504a62f858698a3760373aa3a81cbfc7627cc6b7908c01f90533b0dbbdfb1</string>
-		<key>installer_item_location</key>
-		<string>apps/GoogleChrome-147.0.7727.138__3.dmg</string>
-		<key>installer_item_size</key>
-		<integer>242396</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.google.Chrome</string>
-				<key>CFBundleName</key>
-				<string>Chrome</string>
-				<key>CFBundleShortVersionString</key>
-				<string>147.0.7727.138</string>
-				<key>CFBundleVersion</key>
-				<string>7727.138</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Google Chrome.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Google Chrome.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>GoogleChrome</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>147.0.7727.138</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -18408,33 +18166,37 @@ fi
 		<array>
 			<string>testing</string>
 		</array>
+		<key>category</key>
+		<string>Utilities</string>
 		<key>description</key>
-		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
+		<string>Peek inside macOS Installer packages, see what they install, what they do, and more.</string>
+		<key>developer</key>
+		<string>Mothers Ruin Software</string>
 		<key>display_name</key>
-		<string>Google Chrome</string>
+		<string>SuspiciousPackage</string>
 		<key>installer_item_hash</key>
-		<string>245504a62f858698a3760373aa3a81cbfc7627cc6b7908c01f90533b0dbbdfb1</string>
+		<string>27b5acb1e25672b58af73b4b17b159c2daa4a85231b66a86d35a6cefe8cb5561</string>
 		<key>installer_item_location</key>
-		<string>apps/GoogleChrome-147.0.7727.138__4.dmg</string>
+		<string>apps/SuspiciousPackage-4.6.1__23.dmg</string>
 		<key>installer_item_size</key>
-		<integer>242396</integer>
+		<integer>6852</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
 		<array>
 			<dict>
 				<key>CFBundleIdentifier</key>
-				<string>com.google.Chrome</string>
+				<string>com.mothersruin.SuspiciousPackageApp</string>
 				<key>CFBundleName</key>
-				<string>Chrome</string>
+				<string>Suspicious Package</string>
 				<key>CFBundleShortVersionString</key>
-				<string>147.0.7727.138</string>
+				<string>4.6.1</string>
 				<key>CFBundleVersion</key>
-				<string>7727.138</string>
+				<string>1311.3</string>
 				<key>minosversion</key>
 				<string>12.0</string>
 				<key>path</key>
-				<string>/Applications/Google Chrome.app</string>
+				<string>/Applications/Suspicious Package.app</string>
 				<key>type</key>
 				<string>application</string>
 				<key>version_comparison_key</key>
@@ -18447,13 +18209,13 @@ fi
 				<key>destination_path</key>
 				<string>/Applications</string>
 				<key>source_item</key>
-				<string>Google Chrome.app</string>
+				<string>Suspicious Package.app</string>
 			</dict>
 		</array>
 		<key>minimum_os_version</key>
 		<string>12.0</string>
 		<key>name</key>
-		<string>GoogleChrome</string>
+		<string>SuspiciousPackage</string>
 		<key>unattended_install</key>
 		<true/>
 		<key>uninstall_method</key>
@@ -18461,7 +18223,7 @@ fi
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>147.0.7727.138</string>
+		<string>4.6.1</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -18882,130 +18644,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<true/>
 		<key>version</key>
 		<string>7.2.8</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
-		<key>display_name</key>
-		<string>Google Chrome</string>
-		<key>installer_item_hash</key>
-		<string>245504a62f858698a3760373aa3a81cbfc7627cc6b7908c01f90533b0dbbdfb1</string>
-		<key>installer_item_location</key>
-		<string>apps/GoogleChrome-147.0.7727.138.dmg</string>
-		<key>installer_item_size</key>
-		<integer>242396</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.google.Chrome</string>
-				<key>CFBundleName</key>
-				<string>Chrome</string>
-				<key>CFBundleShortVersionString</key>
-				<string>147.0.7727.138</string>
-				<key>CFBundleVersion</key>
-				<string>7727.138</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Google Chrome.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Google Chrome.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>GoogleChrome</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>147.0.7727.138</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
-		<key>display_name</key>
-		<string>Google Chrome</string>
-		<key>installer_item_hash</key>
-		<string>245504a62f858698a3760373aa3a81cbfc7627cc6b7908c01f90533b0dbbdfb1</string>
-		<key>installer_item_location</key>
-		<string>apps/GoogleChrome-147.0.7727.138__2.dmg</string>
-		<key>installer_item_size</key>
-		<integer>242396</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.google.Chrome</string>
-				<key>CFBundleName</key>
-				<string>Chrome</string>
-				<key>CFBundleShortVersionString</key>
-				<string>147.0.7727.138</string>
-				<key>CFBundleVersion</key>
-				<string>7727.138</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Google Chrome.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Google Chrome.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>GoogleChrome</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>147.0.7727.138</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -30939,326 +30577,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>display_name</key>
 		<string>DuckDuckGo</string>
 		<key>installer_item_hash</key>
-		<string>1139665e36d00006668c30067a1c9a05ec5660053dfaccf8a17cd4e6400a688b</string>
-		<key>installer_item_location</key>
-		<string>apps/DuckDuckGo/DuckDuckGo-1.187.0.dmg</string>
-		<key>installer_item_size</key>
-		<integer>165637</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.duckduckgo.macos.browser</string>
-				<key>CFBundleName</key>
-				<string>DuckDuckGo</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.187.0</string>
-				<key>CFBundleVersion</key>
-				<string>686</string>
-				<key>minosversion</key>
-				<string>11.4</string>
-				<key>path</key>
-				<string>/Applications/DuckDuckGo.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>DuckDuckGo.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>11.4</string>
-		<key>name</key>
-		<string>DuckDuckGo</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.187.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Chrome-like keyword search for Safari.</string>
-		<key>developer</key>
-		<string>Duck Duck Go</string>
-		<key>display_name</key>
-		<string>DuckDuckGo</string>
-		<key>installer_item_hash</key>
-		<string>1139665e36d00006668c30067a1c9a05ec5660053dfaccf8a17cd4e6400a688b</string>
-		<key>installer_item_location</key>
-		<string>apps/DuckDuckGo/DuckDuckGo-1.187.0__4.dmg</string>
-		<key>installer_item_size</key>
-		<integer>165637</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.duckduckgo.macos.browser</string>
-				<key>CFBundleName</key>
-				<string>DuckDuckGo</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.187.0</string>
-				<key>CFBundleVersion</key>
-				<string>686</string>
-				<key>minosversion</key>
-				<string>11.4</string>
-				<key>path</key>
-				<string>/Applications/DuckDuckGo.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>DuckDuckGo.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>11.4</string>
-		<key>name</key>
-		<string>DuckDuckGo</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.187.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Chrome-like keyword search for Safari.</string>
-		<key>developer</key>
-		<string>Duck Duck Go</string>
-		<key>display_name</key>
-		<string>DuckDuckGo</string>
-		<key>installer_item_hash</key>
-		<string>1139665e36d00006668c30067a1c9a05ec5660053dfaccf8a17cd4e6400a688b</string>
-		<key>installer_item_location</key>
-		<string>apps/DuckDuckGo/DuckDuckGo-1.187.0__2.dmg</string>
-		<key>installer_item_size</key>
-		<integer>165637</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.duckduckgo.macos.browser</string>
-				<key>CFBundleName</key>
-				<string>DuckDuckGo</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.187.0</string>
-				<key>CFBundleVersion</key>
-				<string>686</string>
-				<key>minosversion</key>
-				<string>11.4</string>
-				<key>path</key>
-				<string>/Applications/DuckDuckGo.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>DuckDuckGo.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>11.4</string>
-		<key>name</key>
-		<string>DuckDuckGo</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.187.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Chrome-like keyword search for Safari.</string>
-		<key>developer</key>
-		<string>Duck Duck Go</string>
-		<key>display_name</key>
-		<string>DuckDuckGo</string>
-		<key>installer_item_hash</key>
-		<string>1139665e36d00006668c30067a1c9a05ec5660053dfaccf8a17cd4e6400a688b</string>
-		<key>installer_item_location</key>
-		<string>apps/DuckDuckGo/DuckDuckGo-1.187.0__5.dmg</string>
-		<key>installer_item_size</key>
-		<integer>165637</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.duckduckgo.macos.browser</string>
-				<key>CFBundleName</key>
-				<string>DuckDuckGo</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.187.0</string>
-				<key>CFBundleVersion</key>
-				<string>686</string>
-				<key>minosversion</key>
-				<string>11.4</string>
-				<key>path</key>
-				<string>/Applications/DuckDuckGo.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>DuckDuckGo.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>11.4</string>
-		<key>name</key>
-		<string>DuckDuckGo</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.187.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Chrome-like keyword search for Safari.</string>
-		<key>developer</key>
-		<string>Duck Duck Go</string>
-		<key>display_name</key>
-		<string>DuckDuckGo</string>
-		<key>installer_item_hash</key>
-		<string>1139665e36d00006668c30067a1c9a05ec5660053dfaccf8a17cd4e6400a688b</string>
-		<key>installer_item_location</key>
-		<string>apps/DuckDuckGo/DuckDuckGo-1.187.0__1.dmg</string>
-		<key>installer_item_size</key>
-		<integer>165637</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.duckduckgo.macos.browser</string>
-				<key>CFBundleName</key>
-				<string>DuckDuckGo</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.187.0</string>
-				<key>CFBundleVersion</key>
-				<string>686</string>
-				<key>minosversion</key>
-				<string>11.4</string>
-				<key>path</key>
-				<string>/Applications/DuckDuckGo.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>DuckDuckGo.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>11.4</string>
-		<key>name</key>
-		<string>DuckDuckGo</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.187.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Chrome-like keyword search for Safari.</string>
-		<key>developer</key>
-		<string>Duck Duck Go</string>
-		<key>display_name</key>
-		<string>DuckDuckGo</string>
-		<key>installer_item_hash</key>
 		<string>c6062693449f82cbc9ac0e146f5f5511287c4469ba4903a2e4a734d6ac16f2fc</string>
 		<key>installer_item_location</key>
 		<string>apps/DuckDuckGo/DuckDuckGo-1.189.0.dmg</string>
@@ -31308,70 +30626,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<true/>
 		<key>version</key>
 		<string>1.189.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Chrome-like keyword search for Safari.</string>
-		<key>developer</key>
-		<string>Duck Duck Go</string>
-		<key>display_name</key>
-		<string>DuckDuckGo</string>
-		<key>installer_item_hash</key>
-		<string>1139665e36d00006668c30067a1c9a05ec5660053dfaccf8a17cd4e6400a688b</string>
-		<key>installer_item_location</key>
-		<string>apps/DuckDuckGo/DuckDuckGo-1.187.0__3.dmg</string>
-		<key>installer_item_size</key>
-		<integer>165637</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.duckduckgo.macos.browser</string>
-				<key>CFBundleName</key>
-				<string>DuckDuckGo</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.187.0</string>
-				<key>CFBundleVersion</key>
-				<string>686</string>
-				<key>minosversion</key>
-				<string>11.4</string>
-				<key>path</key>
-				<string>/Applications/DuckDuckGo.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>DuckDuckGo.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>11.4</string>
-		<key>name</key>
-		<string>DuckDuckGo</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.187.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -35333,6 +34587,66 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<string>27b5acb1e25672b58af73b4b17b159c2daa4a85231b66a86d35a6cefe8cb5561</string>
 		<key>installer_item_location</key>
 		<string>apps/mothersruin/SuspiciousPackage-4.6.1__6.dmg</string>
+		<key>installer_item_size</key>
+		<integer>6852</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.mothersruin.SuspiciousPackageApp</string>
+				<key>CFBundleName</key>
+				<string>Suspicious Package</string>
+				<key>CFBundleShortVersionString</key>
+				<string>4.6.1</string>
+				<key>CFBundleVersion</key>
+				<string>1311.3</string>
+				<key>minosversion</key>
+				<string>12.0</string>
+				<key>path</key>
+				<string>/Applications/Suspicious Package.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Suspicious Package.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>SuspiciousPackageApp</string>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>4.6.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Suspicious Package: An Application for Inspecting OS X Installer Packages</string>
+		<key>display_name</key>
+		<string>Suspicious Package App</string>
+		<key>installer_item_hash</key>
+		<string>27b5acb1e25672b58af73b4b17b159c2daa4a85231b66a86d35a6cefe8cb5561</string>
+		<key>installer_item_location</key>
+		<string>apps/mothersruin/SuspiciousPackage-4.6.1__23.dmg</string>
 		<key>installer_item_size</key>
 		<integer>6852</integer>
 		<key>installer_type</key>
@@ -41274,6 +40588,90 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 	<dict>
 		<key>autoremove</key>
 		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>Microsoft Remote Desktop</string>
+			<string>Windows App</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>utilities</string>
+		</array>
+		<key>category</key>
+		<string>Utility</string>
+		<key>description</key>
+		<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
+</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Windows App</string>
+		<key>installed_size</key>
+		<integer>279374</integer>
+		<key>installer_item_hash</key>
+		<string>f725f2a4e48203c6e943d11507f0467938433aeafd220e950456f63638ac05fb</string>
+		<key>installer_item_location</key>
+		<string>apps/microsoft/Microsoft_Windows_App-11.3.5.pkg</string>
+		<key>installer_item_size</key>
+		<integer>138145</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.microsoft.rdc.macos</string>
+				<key>CFBundleName</key>
+				<string>Windows App</string>
+				<key>CFBundleShortVersionString</key>
+				<string>11.3.5</string>
+				<key>CFBundleVersion</key>
+				<string>2947</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/Windows App.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.0</string>
+		<key>name</key>
+		<string>WindowsApp</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>268643</integer>
+				<key>packageid</key>
+				<string>com.microsoft.rdc.macos</string>
+				<key>version</key>
+				<string>11.3.5</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>10731</integer>
+				<key>packageid</key>
+				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
+				<key>version</key>
+				<string>4.81.25121042</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>11.3.5</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
 		<key>catalogs</key>
 		<array>
 			<string>testing</string>
@@ -43868,11 +43266,11 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>display_name</key>
 		<string>Codex</string>
 		<key>installer_item_hash</key>
-		<string>b0c9ccab01491983c210d7252f4c66897b4156ce2d50bcdfe130b0a1e253b833</string>
+		<string>5937a9b4df03f611767dfbe524aa697cb4ce26be59d218e89070a7197e9dae4d</string>
 		<key>installer_item_location</key>
-		<string>apps/Codex/Codex-26.429.30905.dmg</string>
+		<string>apps/Codex/Codex-26.513.20950.dmg</string>
 		<key>installer_item_size</key>
-		<integer>307483</integer>
+		<integer>338376</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -43883,9 +43281,9 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 				<key>CFBundleName</key>
 				<string>Codex</string>
 				<key>CFBundleShortVersionString</key>
-				<string>26.429.30905</string>
+				<string>26.513.20950</string>
 				<key>CFBundleVersion</key>
-				<string>2345</string>
+				<string>2816</string>
 				<key>minosversion</key>
 				<string>12.0</string>
 				<key>path</key>
@@ -43918,73 +43316,7 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>26.429.30905</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Tool designed to help developers manage multiple coding agents, run tasks in parallel, and collaborate on software projects.</string>
-		<key>developer</key>
-		<string>OpenAI</string>
-		<key>display_name</key>
-		<string>Codex</string>
-		<key>installer_item_hash</key>
-		<string>b0c9ccab01491983c210d7252f4c66897b4156ce2d50bcdfe130b0a1e253b833</string>
-		<key>installer_item_location</key>
-		<string>apps/Codex/Codex-26.429.30905__1.dmg</string>
-		<key>installer_item_size</key>
-		<integer>307483</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.openai.codex</string>
-				<key>CFBundleName</key>
-				<string>Codex</string>
-				<key>CFBundleShortVersionString</key>
-				<string>26.429.30905</string>
-				<key>CFBundleVersion</key>
-				<string>2345</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Codex.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Codex.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Codex</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>26.429.30905</string>
+		<string>26.513.20950</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -44066,11 +43398,11 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>display_name</key>
 		<string>Brave Browser</string>
 		<key>installer_item_hash</key>
-		<string>51dae2fee3adb46f4680d84b24944000bca502ae1e7b935f38221b114afe2b80</string>
+		<string>c93e0ce323d42f498981496ecca087fea8e8488058ff78c974b75e3de8d47250</string>
 		<key>installer_item_location</key>
-		<string>apps/Brave/Brave-147.1.89.145.dmg</string>
+		<string>apps/Brave/Brave-148.1.90.122__1.dmg</string>
 		<key>installer_item_size</key>
-		<integer>236893</integer>
+		<integer>239606</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -44081,9 +43413,9 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 				<key>CFBundleName</key>
 				<string>Brave</string>
 				<key>CFBundleShortVersionString</key>
-				<string>147.1.89.145</string>
+				<string>148.1.90.122</string>
 				<key>CFBundleVersion</key>
-				<string>189.145</string>
+				<string>190.122</string>
 				<key>minosversion</key>
 				<string>12.0</string>
 				<key>path</key>
@@ -44114,7 +43446,7 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>147.1.89.145</string>
+		<string>148.1.90.122</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -44320,72 +43652,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>catalogs</key>
 		<array>
 			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Browsers</string>
-		<key>description</key>
-		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
-		<key>developer</key>
-		<string>Brave Software Inc.</string>
-		<key>display_name</key>
-		<string>Brave Browser</string>
-		<key>installer_item_hash</key>
-		<string>51dae2fee3adb46f4680d84b24944000bca502ae1e7b935f38221b114afe2b80</string>
-		<key>installer_item_location</key>
-		<string>apps/Brave/Brave-147.1.89.145__1.dmg</string>
-		<key>installer_item_size</key>
-		<integer>236893</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.brave.Browser</string>
-				<key>CFBundleName</key>
-				<string>Brave</string>
-				<key>CFBundleShortVersionString</key>
-				<string>147.1.89.145</string>
-				<key>CFBundleVersion</key>
-				<string>189.145</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Brave Browser.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Brave Browser.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Brave</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>147.1.89.145</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
 			<string>development</string>
 		</array>
 		<key>category</key>
@@ -44463,72 +43729,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>display_name</key>
 		<string>Brave Browser</string>
 		<key>installer_item_hash</key>
-		<string>51dae2fee3adb46f4680d84b24944000bca502ae1e7b935f38221b114afe2b80</string>
-		<key>installer_item_location</key>
-		<string>apps/Brave/Brave-147.1.89.145__3.dmg</string>
-		<key>installer_item_size</key>
-		<integer>236893</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.brave.Browser</string>
-				<key>CFBundleName</key>
-				<string>Brave</string>
-				<key>CFBundleShortVersionString</key>
-				<string>147.1.89.145</string>
-				<key>CFBundleVersion</key>
-				<string>189.145</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Brave Browser.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Brave Browser.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Brave</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>147.1.89.145</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Browsers</string>
-		<key>description</key>
-		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
-		<key>developer</key>
-		<string>Brave Software Inc.</string>
-		<key>display_name</key>
-		<string>Brave Browser</string>
-		<key>installer_item_hash</key>
 		<string>0be69f2c1e4a645f96ef46d30932f68f69e5b65d1ed32c3f241152d77030cdbc</string>
 		<key>installer_item_location</key>
 		<string>apps/Brave/Brave-129.1.70.126.dmg</string>
@@ -44578,72 +43778,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<true/>
 		<key>version</key>
 		<string>129.1.70.126</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Browsers</string>
-		<key>description</key>
-		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
-		<key>developer</key>
-		<string>Brave Software Inc.</string>
-		<key>display_name</key>
-		<string>Brave Browser</string>
-		<key>installer_item_hash</key>
-		<string>51dae2fee3adb46f4680d84b24944000bca502ae1e7b935f38221b114afe2b80</string>
-		<key>installer_item_location</key>
-		<string>apps/Brave/Brave-147.1.89.145__2.dmg</string>
-		<key>installer_item_size</key>
-		<integer>236893</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.brave.Browser</string>
-				<key>CFBundleName</key>
-				<string>Brave</string>
-				<key>CFBundleShortVersionString</key>
-				<string>147.1.89.145</string>
-				<key>CFBundleVersion</key>
-				<string>189.145</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Brave Browser.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Brave Browser.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Brave</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>147.1.89.145</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -59528,286 +58662,6 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<key>display_name</key>
 		<string>Windsurf</string>
 		<key>installer_item_hash</key>
-		<string>898a9ed6797494b666346ab5c327f2c2dd87614be7a3e7e2b17085d052a9089a</string>
-		<key>installer_item_location</key>
-		<string>apps/Windsurf/Windsurf-2.1.32__1.dmg</string>
-		<key>installer_item_size</key>
-		<integer>271748</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.exafunction.windsurf</string>
-				<key>CFBundleName</key>
-				<string>Windsurf</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2.1.32</string>
-				<key>CFBundleVersion</key>
-				<string>2.1.32</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Windsurf.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Windsurf.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Windsurf</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2.1.32</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>Windsurf</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Development</string>
-		<key>description</key>
-		<string>Windsurf is Codeium’s AI-native IDE with Cascade agent, autocomplete, and chat to keep developers in flow.</string>
-		<key>developer</key>
-		<string>Codeium, Inc.</string>
-		<key>display_name</key>
-		<string>Windsurf</string>
-		<key>installer_item_hash</key>
-		<string>898a9ed6797494b666346ab5c327f2c2dd87614be7a3e7e2b17085d052a9089a</string>
-		<key>installer_item_location</key>
-		<string>apps/Windsurf/Windsurf-2.1.32__3.dmg</string>
-		<key>installer_item_size</key>
-		<integer>271748</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.exafunction.windsurf</string>
-				<key>CFBundleName</key>
-				<string>Windsurf</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2.1.32</string>
-				<key>CFBundleVersion</key>
-				<string>2.1.32</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Windsurf.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Windsurf.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Windsurf</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2.1.32</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>Windsurf</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Development</string>
-		<key>description</key>
-		<string>Windsurf is Codeium’s AI-native IDE with Cascade agent, autocomplete, and chat to keep developers in flow.</string>
-		<key>developer</key>
-		<string>Codeium, Inc.</string>
-		<key>display_name</key>
-		<string>Windsurf</string>
-		<key>installer_item_hash</key>
-		<string>898a9ed6797494b666346ab5c327f2c2dd87614be7a3e7e2b17085d052a9089a</string>
-		<key>installer_item_location</key>
-		<string>apps/Windsurf/Windsurf-2.1.32.dmg</string>
-		<key>installer_item_size</key>
-		<integer>271748</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.exafunction.windsurf</string>
-				<key>CFBundleName</key>
-				<string>Windsurf</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2.1.32</string>
-				<key>CFBundleVersion</key>
-				<string>2.1.32</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Windsurf.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Windsurf.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Windsurf</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2.1.32</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>Windsurf</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Development</string>
-		<key>description</key>
-		<string>Windsurf is Codeium’s AI-native IDE with Cascade agent, autocomplete, and chat to keep developers in flow.</string>
-		<key>developer</key>
-		<string>Codeium, Inc.</string>
-		<key>display_name</key>
-		<string>Windsurf</string>
-		<key>installer_item_hash</key>
-		<string>898a9ed6797494b666346ab5c327f2c2dd87614be7a3e7e2b17085d052a9089a</string>
-		<key>installer_item_location</key>
-		<string>apps/Windsurf/Windsurf-2.1.32__2.dmg</string>
-		<key>installer_item_size</key>
-		<integer>271748</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.exafunction.windsurf</string>
-				<key>CFBundleName</key>
-				<string>Windsurf</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2.1.32</string>
-				<key>CFBundleVersion</key>
-				<string>2.1.32</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Windsurf.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Windsurf.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Windsurf</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2.1.32</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>Windsurf</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Development</string>
-		<key>description</key>
-		<string>Windsurf is Codeium’s AI-native IDE with Cascade agent, autocomplete, and chat to keep developers in flow.</string>
-		<key>developer</key>
-		<string>Codeium, Inc.</string>
-		<key>display_name</key>
-		<string>Windsurf</string>
-		<key>installer_item_hash</key>
 		<string>d424ea8a7e2bd93daea3811677b2b893f8bc26f0590d7db011a98ee338186691</string>
 		<key>installer_item_location</key>
 		<string>apps/Windsurf/Windsurf-2.2.17.dmg</string>
@@ -61736,11 +60590,11 @@ rm -rf /Applications/zoom.us.app
 		<key>display_name</key>
 		<string>ChatGPT Atlas</string>
 		<key>installer_item_hash</key>
-		<string>7f4c2a6807b45a6fe84a3477a7dc9c8ff1d7c4f02873fc299e91eda33c218427</string>
+		<string>7c37d573f83c53a60ab69d9c4a9250afe9d930534e05a6c59986b1ab3f28ce33</string>
 		<key>installer_item_location</key>
-		<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.98.2__12.dmg</string>
+		<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.119.1__1.dmg</string>
 		<key>installer_item_size</key>
-		<integer>251184</integer>
+		<integer>246702</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -61751,9 +60605,9 @@ rm -rf /Applications/zoom.us.app
 				<key>CFBundleName</key>
 				<string>ChatGPT Atlas</string>
 				<key>CFBundleShortVersionString</key>
-				<string>1.2026.98.2</string>
+				<string>1.2026.119.1</string>
 				<key>CFBundleVersion</key>
-				<string>20260416164957000</string>
+				<string>20260504231115000</string>
 				<key>minosversion</key>
 				<string>14.2</string>
 				<key>path</key>
@@ -61788,987 +60642,7 @@ rm -rf /Applications/zoom.us.app
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>1.2026.98.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Web Browsers</string>
-		<key>description</key>
-		<string>Official OpenAI ChatGPT Browser application.</string>
-		<key>developer</key>
-		<string>OpenAI, L.L.C.</string>
-		<key>display_name</key>
-		<string>ChatGPT Atlas</string>
-		<key>installer_item_hash</key>
-		<string>7f4c2a6807b45a6fe84a3477a7dc9c8ff1d7c4f02873fc299e91eda33c218427</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.98.2__2.dmg</string>
-		<key>installer_item_size</key>
-		<integer>251184</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.openai.atlas</string>
-				<key>CFBundleName</key>
-				<string>ChatGPT Atlas</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.2026.98.2</string>
-				<key>CFBundleVersion</key>
-				<string>20260416164957000</string>
-				<key>minosversion</key>
-				<string>14.2</string>
-				<key>path</key>
-				<string>/Applications/ChatGPT Atlas.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>ChatGPT Atlas.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.2</string>
-		<key>name</key>
-		<string>ChatGPT Atlas</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>arm64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.98.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Web Browsers</string>
-		<key>description</key>
-		<string>Official OpenAI ChatGPT Browser application.</string>
-		<key>developer</key>
-		<string>OpenAI, L.L.C.</string>
-		<key>display_name</key>
-		<string>ChatGPT Atlas</string>
-		<key>installer_item_hash</key>
-		<string>7f4c2a6807b45a6fe84a3477a7dc9c8ff1d7c4f02873fc299e91eda33c218427</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.98.2__10.dmg</string>
-		<key>installer_item_size</key>
-		<integer>251184</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.openai.atlas</string>
-				<key>CFBundleName</key>
-				<string>ChatGPT Atlas</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.2026.98.2</string>
-				<key>CFBundleVersion</key>
-				<string>20260416164957000</string>
-				<key>minosversion</key>
-				<string>14.2</string>
-				<key>path</key>
-				<string>/Applications/ChatGPT Atlas.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>ChatGPT Atlas.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.2</string>
-		<key>name</key>
-		<string>ChatGPT Atlas</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>arm64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.98.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Web Browsers</string>
-		<key>description</key>
-		<string>Official OpenAI ChatGPT Browser application.</string>
-		<key>developer</key>
-		<string>OpenAI, L.L.C.</string>
-		<key>display_name</key>
-		<string>ChatGPT Atlas</string>
-		<key>installer_item_hash</key>
-		<string>7f4c2a6807b45a6fe84a3477a7dc9c8ff1d7c4f02873fc299e91eda33c218427</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.98.2__14.dmg</string>
-		<key>installer_item_size</key>
-		<integer>251184</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.openai.atlas</string>
-				<key>CFBundleName</key>
-				<string>ChatGPT Atlas</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.2026.98.2</string>
-				<key>CFBundleVersion</key>
-				<string>20260416164957000</string>
-				<key>minosversion</key>
-				<string>14.2</string>
-				<key>path</key>
-				<string>/Applications/ChatGPT Atlas.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>ChatGPT Atlas.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.2</string>
-		<key>name</key>
-		<string>ChatGPT Atlas</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>arm64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.98.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Web Browsers</string>
-		<key>description</key>
-		<string>Official OpenAI ChatGPT Browser application.</string>
-		<key>developer</key>
-		<string>OpenAI, L.L.C.</string>
-		<key>display_name</key>
-		<string>ChatGPT Atlas</string>
-		<key>installer_item_hash</key>
-		<string>7f4c2a6807b45a6fe84a3477a7dc9c8ff1d7c4f02873fc299e91eda33c218427</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.98.2__4.dmg</string>
-		<key>installer_item_size</key>
-		<integer>251184</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.openai.atlas</string>
-				<key>CFBundleName</key>
-				<string>ChatGPT Atlas</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.2026.98.2</string>
-				<key>CFBundleVersion</key>
-				<string>20260416164957000</string>
-				<key>minosversion</key>
-				<string>14.2</string>
-				<key>path</key>
-				<string>/Applications/ChatGPT Atlas.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>ChatGPT Atlas.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.2</string>
-		<key>name</key>
-		<string>ChatGPT Atlas</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>arm64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.98.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Web Browsers</string>
-		<key>description</key>
-		<string>Official OpenAI ChatGPT Browser application.</string>
-		<key>developer</key>
-		<string>OpenAI, L.L.C.</string>
-		<key>display_name</key>
-		<string>ChatGPT Atlas</string>
-		<key>installer_item_hash</key>
-		<string>7f4c2a6807b45a6fe84a3477a7dc9c8ff1d7c4f02873fc299e91eda33c218427</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.98.2__6.dmg</string>
-		<key>installer_item_size</key>
-		<integer>251184</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.openai.atlas</string>
-				<key>CFBundleName</key>
-				<string>ChatGPT Atlas</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.2026.98.2</string>
-				<key>CFBundleVersion</key>
-				<string>20260416164957000</string>
-				<key>minosversion</key>
-				<string>14.2</string>
-				<key>path</key>
-				<string>/Applications/ChatGPT Atlas.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>ChatGPT Atlas.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.2</string>
-		<key>name</key>
-		<string>ChatGPT Atlas</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>arm64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.98.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Web Browsers</string>
-		<key>description</key>
-		<string>Official OpenAI ChatGPT Browser application.</string>
-		<key>developer</key>
-		<string>OpenAI, L.L.C.</string>
-		<key>display_name</key>
-		<string>ChatGPT Atlas</string>
-		<key>installer_item_hash</key>
-		<string>7f4c2a6807b45a6fe84a3477a7dc9c8ff1d7c4f02873fc299e91eda33c218427</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.98.2__16.dmg</string>
-		<key>installer_item_size</key>
-		<integer>251184</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.openai.atlas</string>
-				<key>CFBundleName</key>
-				<string>ChatGPT Atlas</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.2026.98.2</string>
-				<key>CFBundleVersion</key>
-				<string>20260416164957000</string>
-				<key>minosversion</key>
-				<string>14.2</string>
-				<key>path</key>
-				<string>/Applications/ChatGPT Atlas.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>ChatGPT Atlas.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.2</string>
-		<key>name</key>
-		<string>ChatGPT Atlas</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>arm64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.98.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Web Browsers</string>
-		<key>description</key>
-		<string>Official OpenAI ChatGPT Browser application.</string>
-		<key>developer</key>
-		<string>OpenAI, L.L.C.</string>
-		<key>display_name</key>
-		<string>ChatGPT Atlas</string>
-		<key>installer_item_hash</key>
-		<string>7f4c2a6807b45a6fe84a3477a7dc9c8ff1d7c4f02873fc299e91eda33c218427</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.98.2__1.dmg</string>
-		<key>installer_item_size</key>
-		<integer>251184</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.openai.atlas</string>
-				<key>CFBundleName</key>
-				<string>ChatGPT Atlas</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.2026.98.2</string>
-				<key>CFBundleVersion</key>
-				<string>20260416164957000</string>
-				<key>minosversion</key>
-				<string>14.2</string>
-				<key>path</key>
-				<string>/Applications/ChatGPT Atlas.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>ChatGPT Atlas.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.2</string>
-		<key>name</key>
-		<string>ChatGPT Atlas</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>arm64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.98.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Web Browsers</string>
-		<key>description</key>
-		<string>Official OpenAI ChatGPT Browser application.</string>
-		<key>developer</key>
-		<string>OpenAI, L.L.C.</string>
-		<key>display_name</key>
-		<string>ChatGPT Atlas</string>
-		<key>installer_item_hash</key>
-		<string>7f4c2a6807b45a6fe84a3477a7dc9c8ff1d7c4f02873fc299e91eda33c218427</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.98.2__11.dmg</string>
-		<key>installer_item_size</key>
-		<integer>251184</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.openai.atlas</string>
-				<key>CFBundleName</key>
-				<string>ChatGPT Atlas</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.2026.98.2</string>
-				<key>CFBundleVersion</key>
-				<string>20260416164957000</string>
-				<key>minosversion</key>
-				<string>14.2</string>
-				<key>path</key>
-				<string>/Applications/ChatGPT Atlas.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>ChatGPT Atlas.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.2</string>
-		<key>name</key>
-		<string>ChatGPT Atlas</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>arm64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.98.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Web Browsers</string>
-		<key>description</key>
-		<string>Official OpenAI ChatGPT Browser application.</string>
-		<key>developer</key>
-		<string>OpenAI, L.L.C.</string>
-		<key>display_name</key>
-		<string>ChatGPT Atlas</string>
-		<key>installer_item_hash</key>
-		<string>7f4c2a6807b45a6fe84a3477a7dc9c8ff1d7c4f02873fc299e91eda33c218427</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.98.2__13.dmg</string>
-		<key>installer_item_size</key>
-		<integer>251184</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.openai.atlas</string>
-				<key>CFBundleName</key>
-				<string>ChatGPT Atlas</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.2026.98.2</string>
-				<key>CFBundleVersion</key>
-				<string>20260416164957000</string>
-				<key>minosversion</key>
-				<string>14.2</string>
-				<key>path</key>
-				<string>/Applications/ChatGPT Atlas.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>ChatGPT Atlas.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.2</string>
-		<key>name</key>
-		<string>ChatGPT Atlas</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>arm64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.98.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Web Browsers</string>
-		<key>description</key>
-		<string>Official OpenAI ChatGPT Browser application.</string>
-		<key>developer</key>
-		<string>OpenAI, L.L.C.</string>
-		<key>display_name</key>
-		<string>ChatGPT Atlas</string>
-		<key>installer_item_hash</key>
-		<string>7f4c2a6807b45a6fe84a3477a7dc9c8ff1d7c4f02873fc299e91eda33c218427</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.98.2__3.dmg</string>
-		<key>installer_item_size</key>
-		<integer>251184</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.openai.atlas</string>
-				<key>CFBundleName</key>
-				<string>ChatGPT Atlas</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.2026.98.2</string>
-				<key>CFBundleVersion</key>
-				<string>20260416164957000</string>
-				<key>minosversion</key>
-				<string>14.2</string>
-				<key>path</key>
-				<string>/Applications/ChatGPT Atlas.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>ChatGPT Atlas.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.2</string>
-		<key>name</key>
-		<string>ChatGPT Atlas</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>arm64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.98.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Web Browsers</string>
-		<key>description</key>
-		<string>Official OpenAI ChatGPT Browser application.</string>
-		<key>developer</key>
-		<string>OpenAI, L.L.C.</string>
-		<key>display_name</key>
-		<string>ChatGPT Atlas</string>
-		<key>installer_item_hash</key>
-		<string>7f4c2a6807b45a6fe84a3477a7dc9c8ff1d7c4f02873fc299e91eda33c218427</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.98.2__7.dmg</string>
-		<key>installer_item_size</key>
-		<integer>251184</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.openai.atlas</string>
-				<key>CFBundleName</key>
-				<string>ChatGPT Atlas</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.2026.98.2</string>
-				<key>CFBundleVersion</key>
-				<string>20260416164957000</string>
-				<key>minosversion</key>
-				<string>14.2</string>
-				<key>path</key>
-				<string>/Applications/ChatGPT Atlas.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>ChatGPT Atlas.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.2</string>
-		<key>name</key>
-		<string>ChatGPT Atlas</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>arm64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.98.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Web Browsers</string>
-		<key>description</key>
-		<string>Official OpenAI ChatGPT Browser application.</string>
-		<key>developer</key>
-		<string>OpenAI, L.L.C.</string>
-		<key>display_name</key>
-		<string>ChatGPT Atlas</string>
-		<key>installer_item_hash</key>
-		<string>7f4c2a6807b45a6fe84a3477a7dc9c8ff1d7c4f02873fc299e91eda33c218427</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.98.2__15.dmg</string>
-		<key>installer_item_size</key>
-		<integer>251184</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.openai.atlas</string>
-				<key>CFBundleName</key>
-				<string>ChatGPT Atlas</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.2026.98.2</string>
-				<key>CFBundleVersion</key>
-				<string>20260416164957000</string>
-				<key>minosversion</key>
-				<string>14.2</string>
-				<key>path</key>
-				<string>/Applications/ChatGPT Atlas.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>ChatGPT Atlas.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.2</string>
-		<key>name</key>
-		<string>ChatGPT Atlas</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>arm64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.98.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Web Browsers</string>
-		<key>description</key>
-		<string>Official OpenAI ChatGPT Browser application.</string>
-		<key>developer</key>
-		<string>OpenAI, L.L.C.</string>
-		<key>display_name</key>
-		<string>ChatGPT Atlas</string>
-		<key>installer_item_hash</key>
-		<string>7f4c2a6807b45a6fe84a3477a7dc9c8ff1d7c4f02873fc299e91eda33c218427</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.98.2__5.dmg</string>
-		<key>installer_item_size</key>
-		<integer>251184</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.openai.atlas</string>
-				<key>CFBundleName</key>
-				<string>ChatGPT Atlas</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.2026.98.2</string>
-				<key>CFBundleVersion</key>
-				<string>20260416164957000</string>
-				<key>minosversion</key>
-				<string>14.2</string>
-				<key>path</key>
-				<string>/Applications/ChatGPT Atlas.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>ChatGPT Atlas.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.2</string>
-		<key>name</key>
-		<string>ChatGPT Atlas</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>arm64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.98.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Web Browsers</string>
-		<key>description</key>
-		<string>Official OpenAI ChatGPT Browser application.</string>
-		<key>developer</key>
-		<string>OpenAI, L.L.C.</string>
-		<key>display_name</key>
-		<string>ChatGPT Atlas</string>
-		<key>installer_item_hash</key>
-		<string>7f4c2a6807b45a6fe84a3477a7dc9c8ff1d7c4f02873fc299e91eda33c218427</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.98.2__9.dmg</string>
-		<key>installer_item_size</key>
-		<integer>251184</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.openai.atlas</string>
-				<key>CFBundleName</key>
-				<string>ChatGPT Atlas</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.2026.98.2</string>
-				<key>CFBundleVersion</key>
-				<string>20260416164957000</string>
-				<key>minosversion</key>
-				<string>14.2</string>
-				<key>path</key>
-				<string>/Applications/ChatGPT Atlas.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>ChatGPT Atlas.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.2</string>
-		<key>name</key>
-		<string>ChatGPT Atlas</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>arm64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.98.2</string>
+		<string>1.2026.119.1</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -62848,146 +60722,6 @@ rm -rf /Applications/zoom.us.app
 			<string>testing</string>
 		</array>
 		<key>category</key>
-		<string>Web Browsers</string>
-		<key>description</key>
-		<string>Official OpenAI ChatGPT Browser application.</string>
-		<key>developer</key>
-		<string>OpenAI, L.L.C.</string>
-		<key>display_name</key>
-		<string>ChatGPT Atlas</string>
-		<key>installer_item_hash</key>
-		<string>7f4c2a6807b45a6fe84a3477a7dc9c8ff1d7c4f02873fc299e91eda33c218427</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.98.2.dmg</string>
-		<key>installer_item_size</key>
-		<integer>251184</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.openai.atlas</string>
-				<key>CFBundleName</key>
-				<string>ChatGPT Atlas</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.2026.98.2</string>
-				<key>CFBundleVersion</key>
-				<string>20260416164957000</string>
-				<key>minosversion</key>
-				<string>14.2</string>
-				<key>path</key>
-				<string>/Applications/ChatGPT Atlas.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>ChatGPT Atlas.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.2</string>
-		<key>name</key>
-		<string>ChatGPT Atlas</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>arm64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.98.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Web Browsers</string>
-		<key>description</key>
-		<string>Official OpenAI ChatGPT Browser application.</string>
-		<key>developer</key>
-		<string>OpenAI, L.L.C.</string>
-		<key>display_name</key>
-		<string>ChatGPT Atlas</string>
-		<key>installer_item_hash</key>
-		<string>7f4c2a6807b45a6fe84a3477a7dc9c8ff1d7c4f02873fc299e91eda33c218427</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT Atlas/ChatGPT Atlas-1.2026.98.2__8.dmg</string>
-		<key>installer_item_size</key>
-		<integer>251184</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.openai.atlas</string>
-				<key>CFBundleName</key>
-				<string>ChatGPT Atlas</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.2026.98.2</string>
-				<key>CFBundleVersion</key>
-				<string>20260416164957000</string>
-				<key>minosversion</key>
-				<string>14.2</string>
-				<key>path</key>
-				<string>/Applications/ChatGPT Atlas.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>ChatGPT Atlas.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.2</string>
-		<key>name</key>
-		<string>ChatGPT Atlas</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>arm64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.98.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
 		<string>Productivity</string>
 		<key>description</key>
 		<string>ChatGPT is an AI-powered assistant that helps you with writing, brainstorming, coding, research, and more — right from your Mac. The native macOS app provides a fast, streamlined experience with easy access via the menu bar and system-wide shortcut. Employees can securely log in with their OpenAI account to access personalized AI assistance for day-to-day tasks, project support, and productivity enhancements.</string>
@@ -62996,24 +60730,24 @@ rm -rf /Applications/zoom.us.app
 		<key>display_name</key>
 		<string>ChatGPT</string>
 		<key>installed_size</key>
-		<integer>134424</integer>
+		<integer>155280</integer>
 		<key>installer_item_hash</key>
-		<string>6b8d79abc7491756da445d6726c4adbea863fec53df4fee6f1db8541664839a7</string>
+		<string>4f32899dcca93b16e0bcb960f601dfb5f4d0de1ae21eb17def906d84d5f82332</string>
 		<key>installer_item_location</key>
-		<string>apps/ChatGPT/OpenAI_ChatGPT_1.2026.104__10.pkg</string>
+		<string>apps/ChatGPT/OpenAI_ChatGPT_1.2026.118__1.pkg</string>
 		<key>installer_item_size</key>
-		<integer>61581</integer>
+		<integer>70051</integer>
 		<key>name</key>
 		<string>ChatGPT</string>
 		<key>receipts</key>
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>134424</integer>
+				<integer>155280</integer>
 				<key>packageid</key>
 				<string>com.openai.chat</string>
 				<key>version</key>
-				<string>1.2026.104</string>
+				<string>1.2026.118</string>
 			</dict>
 		</array>
 		<key>unattended_install</key>
@@ -63023,502 +60757,7 @@ rm -rf /Applications/zoom.us.app
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>1.2026.104</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Productivity</string>
-		<key>description</key>
-		<string>ChatGPT is an AI-powered assistant that helps you with writing, brainstorming, coding, research, and more — right from your Mac. The native macOS app provides a fast, streamlined experience with easy access via the menu bar and system-wide shortcut. Employees can securely log in with their OpenAI account to access personalized AI assistance for day-to-day tasks, project support, and productivity enhancements.</string>
-		<key>developer</key>
-		<string>OpenAI</string>
-		<key>display_name</key>
-		<string>ChatGPT</string>
-		<key>installed_size</key>
-		<integer>134424</integer>
-		<key>installer_item_hash</key>
-		<string>6b8d79abc7491756da445d6726c4adbea863fec53df4fee6f1db8541664839a7</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT/OpenAI_ChatGPT_1.2026.104__8.pkg</string>
-		<key>installer_item_size</key>
-		<integer>61581</integer>
-		<key>name</key>
-		<string>ChatGPT</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>134424</integer>
-				<key>packageid</key>
-				<string>com.openai.chat</string>
-				<key>version</key>
-				<string>1.2026.104</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.104</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Productivity</string>
-		<key>description</key>
-		<string>ChatGPT is an AI-powered assistant that helps you with writing, brainstorming, coding, research, and more — right from your Mac. The native macOS app provides a fast, streamlined experience with easy access via the menu bar and system-wide shortcut. Employees can securely log in with their OpenAI account to access personalized AI assistance for day-to-day tasks, project support, and productivity enhancements.</string>
-		<key>developer</key>
-		<string>OpenAI</string>
-		<key>display_name</key>
-		<string>ChatGPT</string>
-		<key>installed_size</key>
-		<integer>134424</integer>
-		<key>installer_item_hash</key>
-		<string>6b8d79abc7491756da445d6726c4adbea863fec53df4fee6f1db8541664839a7</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT/OpenAI_ChatGPT_1.2026.104__11.pkg</string>
-		<key>installer_item_size</key>
-		<integer>61581</integer>
-		<key>name</key>
-		<string>ChatGPT</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>134424</integer>
-				<key>packageid</key>
-				<string>com.openai.chat</string>
-				<key>version</key>
-				<string>1.2026.104</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.104</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Productivity</string>
-		<key>description</key>
-		<string>ChatGPT is an AI-powered assistant that helps you with writing, brainstorming, coding, research, and more — right from your Mac. The native macOS app provides a fast, streamlined experience with easy access via the menu bar and system-wide shortcut. Employees can securely log in with their OpenAI account to access personalized AI assistance for day-to-day tasks, project support, and productivity enhancements.</string>
-		<key>developer</key>
-		<string>OpenAI</string>
-		<key>display_name</key>
-		<string>ChatGPT</string>
-		<key>installed_size</key>
-		<integer>134424</integer>
-		<key>installer_item_hash</key>
-		<string>6b8d79abc7491756da445d6726c4adbea863fec53df4fee6f1db8541664839a7</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT/OpenAI_ChatGPT_1.2026.104__9.pkg</string>
-		<key>installer_item_size</key>
-		<integer>61581</integer>
-		<key>name</key>
-		<string>ChatGPT</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>134424</integer>
-				<key>packageid</key>
-				<string>com.openai.chat</string>
-				<key>version</key>
-				<string>1.2026.104</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.104</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Productivity</string>
-		<key>description</key>
-		<string>ChatGPT is an AI-powered assistant that helps you with writing, brainstorming, coding, research, and more — right from your Mac. The native macOS app provides a fast, streamlined experience with easy access via the menu bar and system-wide shortcut. Employees can securely log in with their OpenAI account to access personalized AI assistance for day-to-day tasks, project support, and productivity enhancements.</string>
-		<key>developer</key>
-		<string>OpenAI</string>
-		<key>display_name</key>
-		<string>ChatGPT</string>
-		<key>installed_size</key>
-		<integer>134424</integer>
-		<key>installer_item_hash</key>
-		<string>6b8d79abc7491756da445d6726c4adbea863fec53df4fee6f1db8541664839a7</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT/OpenAI_ChatGPT_1.2026.104__7.pkg</string>
-		<key>installer_item_size</key>
-		<integer>61581</integer>
-		<key>name</key>
-		<string>ChatGPT</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>134424</integer>
-				<key>packageid</key>
-				<string>com.openai.chat</string>
-				<key>version</key>
-				<string>1.2026.104</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.104</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Productivity</string>
-		<key>description</key>
-		<string>ChatGPT is an AI-powered assistant that helps you with writing, brainstorming, coding, research, and more — right from your Mac. The native macOS app provides a fast, streamlined experience with easy access via the menu bar and system-wide shortcut. Employees can securely log in with their OpenAI account to access personalized AI assistance for day-to-day tasks, project support, and productivity enhancements.</string>
-		<key>developer</key>
-		<string>OpenAI</string>
-		<key>display_name</key>
-		<string>ChatGPT</string>
-		<key>installed_size</key>
-		<integer>134424</integer>
-		<key>installer_item_hash</key>
-		<string>6b8d79abc7491756da445d6726c4adbea863fec53df4fee6f1db8541664839a7</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT/OpenAI_ChatGPT_1.2026.104__5.pkg</string>
-		<key>installer_item_size</key>
-		<integer>61581</integer>
-		<key>name</key>
-		<string>ChatGPT</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>134424</integer>
-				<key>packageid</key>
-				<string>com.openai.chat</string>
-				<key>version</key>
-				<string>1.2026.104</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.104</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Productivity</string>
-		<key>description</key>
-		<string>ChatGPT is an AI-powered assistant that helps you with writing, brainstorming, coding, research, and more — right from your Mac. The native macOS app provides a fast, streamlined experience with easy access via the menu bar and system-wide shortcut. Employees can securely log in with their OpenAI account to access personalized AI assistance for day-to-day tasks, project support, and productivity enhancements.</string>
-		<key>developer</key>
-		<string>OpenAI</string>
-		<key>display_name</key>
-		<string>ChatGPT</string>
-		<key>installed_size</key>
-		<integer>134424</integer>
-		<key>installer_item_hash</key>
-		<string>6b8d79abc7491756da445d6726c4adbea863fec53df4fee6f1db8541664839a7</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT/OpenAI_ChatGPT_1.2026.104.pkg</string>
-		<key>installer_item_size</key>
-		<integer>61581</integer>
-		<key>name</key>
-		<string>ChatGPT</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>134424</integer>
-				<key>packageid</key>
-				<string>com.openai.chat</string>
-				<key>version</key>
-				<string>1.2026.104</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.104</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Productivity</string>
-		<key>description</key>
-		<string>ChatGPT is an AI-powered assistant that helps you with writing, brainstorming, coding, research, and more — right from your Mac. The native macOS app provides a fast, streamlined experience with easy access via the menu bar and system-wide shortcut. Employees can securely log in with their OpenAI account to access personalized AI assistance for day-to-day tasks, project support, and productivity enhancements.</string>
-		<key>developer</key>
-		<string>OpenAI</string>
-		<key>display_name</key>
-		<string>ChatGPT</string>
-		<key>installed_size</key>
-		<integer>134424</integer>
-		<key>installer_item_hash</key>
-		<string>6b8d79abc7491756da445d6726c4adbea863fec53df4fee6f1db8541664839a7</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT/OpenAI_ChatGPT_1.2026.104__1.pkg</string>
-		<key>installer_item_size</key>
-		<integer>61581</integer>
-		<key>name</key>
-		<string>ChatGPT</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>134424</integer>
-				<key>packageid</key>
-				<string>com.openai.chat</string>
-				<key>version</key>
-				<string>1.2026.104</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.104</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Productivity</string>
-		<key>description</key>
-		<string>ChatGPT is an AI-powered assistant that helps you with writing, brainstorming, coding, research, and more — right from your Mac. The native macOS app provides a fast, streamlined experience with easy access via the menu bar and system-wide shortcut. Employees can securely log in with their OpenAI account to access personalized AI assistance for day-to-day tasks, project support, and productivity enhancements.</string>
-		<key>developer</key>
-		<string>OpenAI</string>
-		<key>display_name</key>
-		<string>ChatGPT</string>
-		<key>installed_size</key>
-		<integer>134424</integer>
-		<key>installer_item_hash</key>
-		<string>6b8d79abc7491756da445d6726c4adbea863fec53df4fee6f1db8541664839a7</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT/OpenAI_ChatGPT_1.2026.104__3.pkg</string>
-		<key>installer_item_size</key>
-		<integer>61581</integer>
-		<key>name</key>
-		<string>ChatGPT</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>134424</integer>
-				<key>packageid</key>
-				<string>com.openai.chat</string>
-				<key>version</key>
-				<string>1.2026.104</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.104</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Productivity</string>
-		<key>description</key>
-		<string>ChatGPT is an AI-powered assistant that helps you with writing, brainstorming, coding, research, and more — right from your Mac. The native macOS app provides a fast, streamlined experience with easy access via the menu bar and system-wide shortcut. Employees can securely log in with their OpenAI account to access personalized AI assistance for day-to-day tasks, project support, and productivity enhancements.</string>
-		<key>developer</key>
-		<string>OpenAI</string>
-		<key>display_name</key>
-		<string>ChatGPT</string>
-		<key>installed_size</key>
-		<integer>134424</integer>
-		<key>installer_item_hash</key>
-		<string>6b8d79abc7491756da445d6726c4adbea863fec53df4fee6f1db8541664839a7</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT/OpenAI_ChatGPT_1.2026.104__4.pkg</string>
-		<key>installer_item_size</key>
-		<integer>61581</integer>
-		<key>name</key>
-		<string>ChatGPT</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>134424</integer>
-				<key>packageid</key>
-				<string>com.openai.chat</string>
-				<key>version</key>
-				<string>1.2026.104</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.104</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Productivity</string>
-		<key>description</key>
-		<string>ChatGPT is an AI-powered assistant that helps you with writing, brainstorming, coding, research, and more — right from your Mac. The native macOS app provides a fast, streamlined experience with easy access via the menu bar and system-wide shortcut. Employees can securely log in with their OpenAI account to access personalized AI assistance for day-to-day tasks, project support, and productivity enhancements.</string>
-		<key>developer</key>
-		<string>OpenAI</string>
-		<key>display_name</key>
-		<string>ChatGPT</string>
-		<key>installed_size</key>
-		<integer>134424</integer>
-		<key>installer_item_hash</key>
-		<string>6b8d79abc7491756da445d6726c4adbea863fec53df4fee6f1db8541664839a7</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT/OpenAI_ChatGPT_1.2026.104__6.pkg</string>
-		<key>installer_item_size</key>
-		<integer>61581</integer>
-		<key>name</key>
-		<string>ChatGPT</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>134424</integer>
-				<key>packageid</key>
-				<string>com.openai.chat</string>
-				<key>version</key>
-				<string>1.2026.104</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.104</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Productivity</string>
-		<key>description</key>
-		<string>ChatGPT is an AI-powered assistant that helps you with writing, brainstorming, coding, research, and more — right from your Mac. The native macOS app provides a fast, streamlined experience with easy access via the menu bar and system-wide shortcut. Employees can securely log in with their OpenAI account to access personalized AI assistance for day-to-day tasks, project support, and productivity enhancements.</string>
-		<key>developer</key>
-		<string>OpenAI</string>
-		<key>display_name</key>
-		<string>ChatGPT</string>
-		<key>installed_size</key>
-		<integer>134424</integer>
-		<key>installer_item_hash</key>
-		<string>6b8d79abc7491756da445d6726c4adbea863fec53df4fee6f1db8541664839a7</string>
-		<key>installer_item_location</key>
-		<string>apps/ChatGPT/OpenAI_ChatGPT_1.2026.104__2.pkg</string>
-		<key>installer_item_size</key>
-		<integer>61581</integer>
-		<key>name</key>
-		<string>ChatGPT</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>134424</integer>
-				<key>packageid</key>
-				<string>com.openai.chat</string>
-				<key>version</key>
-				<string>1.2026.104</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.2026.104</string>
+		<string>1.2026.118</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -76226,6 +73465,51 @@ exit</string>
 		<string>e5e2adb7bc0ca1bc71436f2e5921e0174e04f3e4c5e9438e081fbefc8befc724</string>
 		<key>installer_item_location</key>
 		<string>apps/GarageBand/GarageBand-10.4.13__8.pkg</string>
+		<key>installer_item_size</key>
+		<integer>3050113</integer>
+		<key>minimum_os_version</key>
+		<string>14.4</string>
+		<key>name</key>
+		<string>GarageBand</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>4181114</integer>
+				<key>packageid</key>
+				<string>com.apple.garageband10</string>
+				<key>version</key>
+				<string>10.4.13</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>10.4.13</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string> </string>
+		<key>developer</key>
+		<string>Apple</string>
+		<key>display_name</key>
+		<string>GarageBand</string>
+		<key>installed_size</key>
+		<integer>4181114</integer>
+		<key>installer_item_hash</key>
+		<string>e5e2adb7bc0ca1bc71436f2e5921e0174e04f3e4c5e9438e081fbefc8befc724</string>
+		<key>installer_item_location</key>
+		<string>apps/GarageBand/GarageBand-10.4.13__32.pkg</string>
 		<key>installer_item_size</key>
 		<integer>3050113</integer>
 		<key>minimum_os_version</key>

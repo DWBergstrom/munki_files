@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-05-03T04:56:25Z</date>
+		<date>2026-05-15T04:57:36Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -15,45 +15,37 @@
 	</dict>
 	<key>autoremove</key>
 	<false/>
-	<key>blocking_applications</key>
-	<array>
-		<string>Windsurf</string>
-	</array>
 	<key>catalogs</key>
 	<array>
 		<string>testing</string>
 	</array>
-	<key>category</key>
-	<string>Development</string>
 	<key>description</key>
-	<string>Windsurf is Codeium’s AI-native IDE with Cascade agent, autocomplete, and chat to keep developers in flow.</string>
-	<key>developer</key>
-	<string>Codeium, Inc.</string>
+	<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
 	<key>display_name</key>
-	<string>Windsurf</string>
+	<string>Google Chrome</string>
 	<key>installer_item_hash</key>
-	<string>898a9ed6797494b666346ab5c327f2c2dd87614be7a3e7e2b17085d052a9089a</string>
+	<string>2ce170c03cc959912ab0729d1f4d96ad8aa58e6c5eafbfdc6b0990d52d4092d8</string>
 	<key>installer_item_location</key>
-	<string>apps/Windsurf/Windsurf-2.1.32__3.dmg</string>
+	<string>apps/GoogleChrome-148.0.7778.168__1.dmg</string>
 	<key>installer_item_size</key>
-	<integer>271748</integer>
+	<integer>252341</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.exafunction.windsurf</string>
+			<string>com.google.Chrome</string>
 			<key>CFBundleName</key>
-			<string>Windsurf</string>
+			<string>Chrome</string>
 			<key>CFBundleShortVersionString</key>
-			<string>2.1.32</string>
+			<string>148.0.7778.168</string>
 			<key>CFBundleVersion</key>
-			<string>2.1.32</string>
+			<string>7778.168</string>
 			<key>minosversion</key>
 			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/Windsurf.app</string>
+			<string>/Applications/Google Chrome.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -66,13 +58,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Windsurf.app</string>
+			<string>Google Chrome.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
 	<string>12.0</string>
 	<key>name</key>
-	<string>Windsurf</string>
+	<string>GoogleChrome</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -80,6 +72,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>2.1.32</string>
+	<string>148.0.7778.168</string>
 </dict>
 </plist>
