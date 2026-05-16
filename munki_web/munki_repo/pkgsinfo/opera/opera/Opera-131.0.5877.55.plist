@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-05-14T04:57:24Z</date>
+		<date>2026-05-16T04:58:15Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,39 +19,41 @@
 	<array>
 		<string>testing</string>
 	</array>
+	<key>category</key>
+	<string>Productivity</string>
 	<key>description</key>
-	<string>Tool designed to help developers manage multiple coding agents, run tasks in parallel, and collaborate on software projects.</string>
+	<string>A web browser developed by Opera Software.</string>
 	<key>developer</key>
-	<string>OpenAI</string>
+	<string>Opera</string>
 	<key>display_name</key>
-	<string>Codex</string>
+	<string>Opera</string>
 	<key>installer_item_hash</key>
-	<string>e05ae853e5035c949b07915f8c68621b25eb43f47e5185ee6983e847ba176f27</string>
+	<string>545939e41d1350c60ae65638f8b33aa1985dd75950b1d1d7e0d0ad32783320c5</string>
 	<key>installer_item_location</key>
-	<string>apps/Codex/Codex-26.506.31421.dmg</string>
+	<string>opera/opera/Opera-131.0.5877.55.dmg</string>
 	<key>installer_item_size</key>
-	<integer>314827</integer>
+	<integer>168730</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.openai.codex</string>
+			<string>com.operasoftware.Opera</string>
 			<key>CFBundleName</key>
-			<string>Codex</string>
+			<string>Opera</string>
 			<key>CFBundleShortVersionString</key>
-			<string>26.506.31421</string>
+			<string>131.0</string>
 			<key>CFBundleVersion</key>
-			<string>2620</string>
+			<string>131.0.5877.55</string>
 			<key>minosversion</key>
-			<string>12.0</string>
+			<string>11.0</string>
 			<key>path</key>
-			<string>/Applications/Codex.app</string>
+			<string>/Applications/Opera.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
-			<string>CFBundleShortVersionString</string>
+			<string>CFBundleVersion</string>
 		</dict>
 	</array>
 	<key>items_to_copy</key>
@@ -60,22 +62,20 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Codex.app</string>
+			<string>Opera.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>12.0</string>
+	<string>11.0</string>
 	<key>name</key>
-	<string>Codex</string>
+	<string>Opera</string>
 	<key>unattended_install</key>
-	<true/>
-	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>26.506.31421</string>
+	<string>131.0.5877.55</string>
 </dict>
 </plist>
