@@ -94,6 +94,14 @@ info() {
 	write_log "[$(date +'%Y-%m-%d %H:%M:%S')][INFO] $1"
 }
 
+# True for y/yes (any case), with optional surrounding whitespace / CR
+is_yes() {
+	local answer="${1//$''/}"
+	answer="${answer#"${answer%%[![:space:]]*}"}"
+	answer="${answer%"${answer##*[![:space:]]}"}"
+	[[ "${answer}" =~ ^[Yy]([Ee][Ss])?$ ]]
+}
+
 log "executing auto-autopkg-ts.sh from ${PWD}"
 log "Log file: ${LOG_FILE}"
 
@@ -345,7 +353,7 @@ function verify_icons {
 	if [ -t 0 ] && [ -t 1 ]; then
 		echo ""
 		read -p "Attempt to extract icons from installed apps? (y/N): " extract_choice
-		if [[ "${extract_choice}" =~ ^[Yy]$ ]]; then
+		if is_yes "${extract_choice}"; then
 			for pkg_name in "${missing_icons[@]}"; do
 				# Try to find matching app in /Applications
 				app_path=$(find /Applications -maxdepth 2 -name "*.app" -type d 2>/dev/null | while read app; do
@@ -482,7 +490,7 @@ function verify_trust_info {
 						"${AUTOPKG_CMD}" verify-trust-info -vv "${recipe_path}" 2>&1 || true
 						echo ""
 						read -p "Update trust for ${recipe_name}? (y/N): " update_choice
-						if [[ "${update_choice}" =~ ^[Yy]$ ]]; then
+						if is_yes "${update_choice}"; then
 							if "${AUTOPKG_CMD}" update-trust-info "${recipe_path}"; then
 								log "Updated trust info for: ${recipe_name}"
 							else
@@ -939,7 +947,7 @@ function find_missing_overrides {
 									warn "This recipe is deprecated"
 									if [ -t 0 ] && [ -t 1 ]; then
 										read -p "Create override anyway with --ignore-deprecation? (y/N): " deprec_choice
-										if [[ "${deprec_choice}" =~ ^[Yy]$ ]]; then
+										if is_yes "${deprec_choice}"; then
 											if "${AUTOPKG_CMD}" make-override "${selected_recipe}" --ignore-deprecation 2>/dev/null; then
 												log "Successfully created override for ${app_name} (deprecated recipe)"
 												recipes_found+=("${selected_recipe}")
@@ -1094,7 +1102,7 @@ function find_missing_overrides {
 					esac
 				else
 					read -p "  Permanently skip this app? (y/N): " skip_choice
-					if [[ "${skip_choice}" =~ ^[Yy]$ ]]; then
+					if is_yes "${skip_choice}"; then
 						echo "${app_name}" >> "${SKIP_LIST_FILE}"
 						info "Added '${app_name}' to skip list"
 					fi
@@ -1116,7 +1124,7 @@ function find_missing_overrides {
 		# Offer to run trust verification on new overrides
 		if [ -t 0 ] && [ -t 1 ]; then
 			read -p "Run autopkg for new overrides now? (y/N): " run_choice
-			if [[ "${run_choice}" =~ ^[Yy]$ ]]; then
+			if is_yes "${run_choice}"; then
 				for app_name in "${apps_with_recipes[@]}"; do
 					override_file=$(find "${OVERRIDES_DIR}" -maxdepth 1 -iname "*${app_name}*.recipe" -type f 2>/dev/null | head -1)
 					if [ -n "${override_file}" ] && [ -f "${override_file}" ]; then

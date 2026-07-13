@@ -35,27 +35,17 @@
 	<key>ParentRecipeTrustInfo</key>
 	<dict>
 		<key>non_core_processors</key>
-		<dict>
-			<key>com.github.homebysix.FindAndReplace/FindAndReplace</key>
-			<dict>
-				<key>git_hash</key>
-				<string>cecb7b4f782a8f6b59f029d30a544df0e07c5548</string>
-				<key>path</key>
-				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/FindAndReplace/FindAndReplace.py</string>
-				<key>sha256_hash</key>
-				<string>550c9015d45d5f4bbdef4ebd2563c4fbfcbef10cde59598bb101ef7b2647a310</string>
-			</dict>
-		</dict>
+		<dict/>
 		<key>parent_recipes</key>
 		<dict>
 			<key>com.github.homebysix.download.Screens</key>
 			<dict>
 				<key>git_hash</key>
-				<string>9b0234d95b80ae32897d954ef507d569599a6918</string>
+				<string>b882a02347d36e64e0c58e52138bad2512351c29</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Screens/Screens.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>a07a374882f078f1eba7213fa289a5252d7369b2ed77921936ea2a8b16007671</string>
+				<string>622428e309823df1916fd4f69bb5be8cdc699156e851533e33c3bc5d4da4f5f4</string>
 			</dict>
 			<key>com.github.homebysix.munki.Screens</key>
 			<dict>

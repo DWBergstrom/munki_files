@@ -47,11 +47,11 @@
 			<key>com.github.peetinc.download.Cursor</key>
 			<dict>
 				<key>git_hash</key>
-				<string>6823016c94582bf4ab930c87f7eb9f2aa50ac46f</string>
+				<string>8bfdfdfa30299a04cebe8d44dc524e84fbec03d4</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.peetinc-recipes/Cursor/Cursor.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>1b2ab7c2a0c99d0be07654edc8e2042f03a15eae9920f3f0428efeee7f01ef30</string>
+				<string>a725c087a8ac15c7a9ec0983c14d8b81fed7247c55de2e6a87e263706491ea24</string>
 			</dict>
 			<key>com.github.peetinc.munki.Cursor</key>
 			<dict>

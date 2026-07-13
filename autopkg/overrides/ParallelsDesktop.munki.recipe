@@ -83,11 +83,11 @@ pkgutil --forget "${pkgReceipt}"
 			<key>com.github.homebysix.download.ParallelsDesktop</key>
 			<dict>
 				<key>git_hash</key>
-				<string>e9c1ee7f5134760131f765045a2184e017bee94d</string>
+				<string>16ae49fa9e6c3c696440eb57d97c651098a3d6e9</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Parallels/ParallelsDesktop.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>44f031831fa18afef4d998feb8058a862eb55c703fb782a43912dc02cec93516</string>
+				<string>b74f9df41b12f68bd9b811f706f13b86fc74e5e9e7729e5301260e6115c5b6ce</string>
 			</dict>
 			<key>com.github.homebysix.munki.ParallelsDesktop</key>
 			<dict>

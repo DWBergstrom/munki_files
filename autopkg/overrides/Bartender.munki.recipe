@@ -37,27 +37,17 @@
 	<key>ParentRecipeTrustInfo</key>
 	<dict>
 		<key>non_core_processors</key>
-		<dict>
-			<key>com.github.homebysix.FindAndReplace/FindAndReplace</key>
-			<dict>
-				<key>git_hash</key>
-				<string>cecb7b4f782a8f6b59f029d30a544df0e07c5548</string>
-				<key>path</key>
-				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/FindAndReplace/FindAndReplace.py</string>
-				<key>sha256_hash</key>
-				<string>550c9015d45d5f4bbdef4ebd2563c4fbfcbef10cde59598bb101ef7b2647a310</string>
-			</dict>
-		</dict>
+		<dict/>
 		<key>parent_recipes</key>
 		<dict>
 			<key>com.github.homebysix.download.Bartender</key>
 			<dict>
 				<key>git_hash</key>
-				<string>543ebd174de5ff5a5b6710efcc927a03e5ced431</string>
+				<string>b882a02347d36e64e0c58e52138bad2512351c29</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Bartender/Bartender.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>67e4d92e62904a447eef0752ad2b7492251d3dee5aad8b466cda727a9db6149e</string>
+				<string>307e915bb8cbfcbfe4e803788883ee20331d73c432108c7fe7dde783e8b81f8d</string>
 			</dict>
 			<key>com.github.homebysix.munki.Bartender</key>
 			<dict>
