@@ -41,20 +41,20 @@
 			<key>com.github.homebysix.download.Codex</key>
 			<dict>
 				<key>git_hash</key>
-				<string>cbcb147351a6f05f144d16f76b4c232dd7bc0e93</string>
+				<string>b068ace44054d9d2251cfcd2f3214783ec6f4b2d</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/OpenAI/Codex.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>3357fd56b30657cf960a1216ffd6d799b169e124c7639c2a741f9b76b5815292</string>
+				<string>60bd7604039654add53738aac64d7ec6dff4d764898c8fd3d76f3c815f558d96</string>
 			</dict>
 			<key>com.github.homebysix.munki.Codex</key>
 			<dict>
 				<key>git_hash</key>
-				<string>cbcb147351a6f05f144d16f76b4c232dd7bc0e93</string>
+				<string>273d68448c2a75b24877e35178b6752dd352887e</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/OpenAI/Codex.munki.recipe</string>
 				<key>sha256_hash</key>
-				<string>677e2f48b67bdf7d77d582392dd2d64594ec954bdcb1367299331bcba7b0bf19</string>
+				<string>a964b16b07f6ec8aa3f0f04b7d8ab894a970a582a67e98e2527d08e4351a926b</string>
 			</dict>
 		</dict>
 	</dict>

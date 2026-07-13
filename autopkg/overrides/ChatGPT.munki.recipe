@@ -56,11 +56,11 @@
 			<key>com.github.rtrouton.download.ChatGPT</key>
 			<dict>
 				<key>git_hash</key>
-				<string>bcb704af8c68c46acbb37c79fcdb0fb39e9e64d7</string>
+				<string>eafeefe3dac00ca3b8bcec21a1399a2f69ec6d3d</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.rtrouton-recipes/ChatGPT/ChatGPT.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>79659e33fe6faa6bb89b4162169dc3f07647211b8c084f583f5c50d09b5e339c</string>
+				<string>bc0633df412a7defe067a79ac5f6d7a8d79fffd8bea1cf91426bde0dc293b6ed</string>
 			</dict>
 			<key>com.github.rtrouton.pkg.ChatGPT</key>
 			<dict>

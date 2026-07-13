@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-07-13T04:48:45Z</date>
+		<date>2026-07-13T20:45:54Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,34 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Chrome-like keyword search for Safari.</string>
+	<string>Tool designed to help developers manage multiple coding agents, run tasks in parallel, and collaborate on software projects.</string>
 	<key>developer</key>
-	<string>Duck Duck Go</string>
+	<string>OpenAI</string>
 	<key>display_name</key>
-	<string>DuckDuckGo</string>
+	<string>Codex</string>
 	<key>installer_item_hash</key>
-	<string>50c440046e052fa875fc436d4f18c27a68227527d3bcda63337a30f181bcdc74</string>
+	<string>c243c94f8de6a51f5530ffe1f8d0c1588733d890ac692e34aaca06d95ba637ca</string>
 	<key>installer_item_location</key>
-	<string>apps/DuckDuckGo/DuckDuckGo-1.197.0__5.dmg</string>
+	<string>apps/Codex/Codex-26.707.62119.dmg</string>
 	<key>installer_item_size</key>
-	<integer>173976</integer>
+	<integer>601307</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.duckduckgo.macos.browser</string>
+			<string>com.openai.codex</string>
 			<key>CFBundleName</key>
-			<string>DuckDuckGo</string>
+			<string>ChatGPT</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.197.0</string>
+			<string>26.707.62119</string>
 			<key>CFBundleVersion</key>
-			<string>754</string>
+			<string>5211</string>
 			<key>minosversion</key>
-			<string>12.3</string>
+			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/DuckDuckGo.app</string>
+			<string>/Applications/ChatGPT.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,20 +60,22 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>DuckDuckGo.app</string>
+			<string>ChatGPT.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>12.3</string>
+	<string>12.0</string>
 	<key>name</key>
-	<string>DuckDuckGo</string>
+	<string>Codex</string>
 	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.197.0</string>
+	<string>26.707.62119</string>
 </dict>
 </plist>

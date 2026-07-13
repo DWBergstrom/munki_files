@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-07-09T04:48:58Z</date>
+		<date>2026-07-13T20:48:49Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,61 +19,67 @@
 	<array>
 		<string>testing</string>
 	</array>
+	<key>category</key>
+	<string>Utilities</string>
 	<key>description</key>
-	<string>Chrome-like keyword search for Safari.</string>
+	<string>A Mac utility that automatically downloads macOS Firmwares / Installers.</string>
 	<key>developer</key>
-	<string>Duck Duck Go</string>
+	<string>ninxsoft</string>
 	<key>display_name</key>
-	<string>DuckDuckGo</string>
+	<string>mist</string>
+	<key>installed_size</key>
+	<integer>20556</integer>
 	<key>installer_item_hash</key>
-	<string>50c440046e052fa875fc436d4f18c27a68227527d3bcda63337a30f181bcdc74</string>
+	<string>12715f8906ac9d0ede6f0665e703c323bdfcc99e54c8fae3a4ad8c516374483f</string>
 	<key>installer_item_location</key>
-	<string>apps/DuckDuckGo/DuckDuckGo-1.197.0__1.dmg</string>
+	<string>apps/mist/mist-0.40.pkg</string>
 	<key>installer_item_size</key>
-	<integer>173976</integer>
-	<key>installer_type</key>
-	<string>copy_from_dmg</string>
+	<integer>14077</integer>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.duckduckgo.macos.browser</string>
+			<string>com.ninxsoft.mist</string>
 			<key>CFBundleName</key>
-			<string>DuckDuckGo</string>
+			<string>Mist</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.197.0</string>
+			<string>0.40</string>
 			<key>CFBundleVersion</key>
-			<string>754</string>
+			<string>0.40</string>
 			<key>minosversion</key>
-			<string>12.3</string>
+			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/DuckDuckGo.app</string>
+			<string>/Applications/Mist.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
 			<string>CFBundleShortVersionString</string>
 		</dict>
 	</array>
-	<key>items_to_copy</key>
+	<key>minimum_os_version</key>
+	<string>12.0</string>
+	<key>name</key>
+	<string>mist</string>
+	<key>receipts</key>
 	<array>
 		<dict>
-			<key>destination_path</key>
-			<string>/Applications</string>
-			<key>source_item</key>
-			<string>DuckDuckGo.app</string>
+			<key>installed_size</key>
+			<integer>20556</integer>
+			<key>packageid</key>
+			<string>com.ninxsoft.pkg.mist</string>
+			<key>version</key>
+			<string>0.40</string>
 		</dict>
 	</array>
-	<key>minimum_os_version</key>
-	<string>12.3</string>
-	<key>name</key>
-	<string>DuckDuckGo</string>
 	<key>unattended_install</key>
 	<true/>
+	<key>unattended_uninstall</key>
+	<true/>
 	<key>uninstall_method</key>
-	<string>remove_copied_items</string>
+	<string>removepackages</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.197.0</string>
+	<string>0.40</string>
 </dict>
 </plist>
