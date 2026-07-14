@@ -13,6 +13,7 @@ if [[ "$1" == "--help" || "$1" == "-h" ]]; then
 	echo "  --find-missing     Scan installed apps and search for autopkg recipes for apps without overrides"
 	echo "                     Also scans remote hosts listed in autopkg-scan-hosts file"
 	echo "  --verify-icons     Check that all packages in Munki repo have icons"
+	echo "  --restart-server   Restart python http.server and Tailscale serve only"
 	echo "  --help, -h         Show this help message"
 	echo ""
 	echo "Flags (can be combined with options):"
@@ -96,7 +97,8 @@ info() {
 
 # True for y/yes (any case), with optional surrounding whitespace / CR
 is_yes() {
-	local answer="${1//$''/}"
+	local answer="$1"
+	answer="${answer//$'\r'/}"
 	answer="${answer#"${answer%%[![:space:]]*}"}"
 	answer="${answer%"${answer##*[![:space:]]}"}"
 	[[ "${answer}" =~ ^[Yy]([Ee][Ss])?$ ]]
@@ -199,69 +201,78 @@ else
 	WEBSERVER_STATUS="online as $WEBSERVER_NAME"
 fi
 log "Webserver host status: ${WEBSERVER_STATUS}"
-# Check if python server is running
+
+# Populated by restart_munki_server
 PYTHON_SERVER_STATUS=""
-if pgrep -f "http.server" > /dev/null; then
-	PYTHON_SERVER_STATUS="running...restarting"
-	kill -9 $(pgrep -f "http.server") 2>/dev/null
-	sleep 1
-fi
-
-# Start Python server using a subshell with cd to avoid getcwd() issues when running from LaunchAgent
-log "Starting Python server..."
-(cd "${MUNKI_REPO_PATH}" && python3 -m http.server ${WEBSERVER_PORT} --bind 127.0.0.1 >/dev/null 2>&1) &
-PYTHON_SERVER_PID=$!
-
-# Wait a moment for server to start and verify it's responding
-sleep 2
-if curl -s -o /dev/null -w "%{http_code}" "http://127.0.0.1:${WEBSERVER_PORT}/" | grep -q "200\|301\|302"; then
-	PYTHON_SERVER_STATUS="running"
-	log "Python server status: ${PYTHON_SERVER_STATUS} at http://127.0.0.1:${WEBSERVER_PORT}"
-else
-	PYTHON_SERVER_STATUS="started but not responding"
-	warn "Python server status: ${PYTHON_SERVER_STATUS} - may need a moment to start"
-fi
-
-# Check if tailscale is serving the munki repo
+PYTHON_SERVER_PID=""
 TAILSCALE_SERVING_STATUS=""
 TAILSCALE_URL=""
-# Extract the Tailscale URL from serve status
-TAILSCALE_SERVE_OUTPUT=$($TAILSCALE_CMD serve status 2>/dev/null)
-if echo "${TAILSCALE_SERVE_OUTPUT}" | grep -q "/munki"; then
-	# Extract the base URL (e.g., https://coherence.tail8eea7.ts.net)
-	TAILSCALE_URL=$(echo "${TAILSCALE_SERVE_OUTPUT}" | grep -E "^https://.*\.ts\.net" | head -1 | awk '{print $1}' | sed 's/ (tailnet only)//')
-	if [ -n "${TAILSCALE_URL}" ]; then
-		TAILSCALE_SERVING_STATUS="serving"
-		log "Tailscale serving status: ${TAILSCALE_SERVING_STATUS} at ${TAILSCALE_URL}/munki"
-	else
-		TAILSCALE_SERVING_STATUS="configured but URL not found"
-		warn "Tailscale serving status: ${TAILSCALE_SERVING_STATUS}"
-	fi
-else
-	TAILSCALE_SERVING_STATUS="not serving"
-	log "Tailscale serving status: ${TAILSCALE_SERVING_STATUS}"
-	log "Attempting to start tailscale serve..."
-	# Clear any existing configuration first, then set the new path
-	$TAILSCALE_CMD serve reset 2>/dev/null
-	sleep 1
-	if $TAILSCALE_CMD serve --bg --set-path ${TAILSCALE_URL}/munki "http://127.0.0.1:${WEBSERVER_PORT}/" 2>/dev/null; then
-		sleep 2
-		# Get fresh status after configuration
-		TAILSCALE_SERVE_OUTPUT=$($TAILSCALE_CMD serve status 2>/dev/null)
-		TAILSCALE_URL=$(echo "${TAILSCALE_SERVE_OUTPUT}" | grep -E "^https://.*\.ts\.net" | head -1 | awk '{print $1}' | sed 's/ (tailnet only)//')
-		if [ -n "${TAILSCALE_URL}" ]; then
-			log "Tailscale serve configured at ${TAILSCALE_URL}/munki"
-		else
-			warn "Tailscale serve configured but URL not available yet - check with 'tailscale serve status'"
-		fi
-	else
-		error "Failed to configure Tailscale serve"
-	fi
-fi
 
 # rsync options checks
 RSYNC_URL=""
 RSYNC_DESTINATION_PATH=""
+
+# Restart python http.server + Tailscale serve.
+# Uses nohup/disown so the server survives LaunchAgent job exit (launchd
+# otherwise kills the job's process group when the nightly run finishes).
+function restart_munki_server {
+	log "Restarting Munki web server (python http.server + Tailscale serve)..."
+
+	if [ ! -d "${MUNKI_REPO_PATH}" ]; then
+		error "Munki repo path not accessible: ${MUNKI_REPO_PATH}"
+		return 1
+	fi
+
+	if pgrep -f "http.server" >/dev/null 2>&1; then
+		log "Stopping existing python http.server..."
+		pkill -f "python3 -m http.server ${WEBSERVER_PORT}" 2>/dev/null || true
+		# Fallback if the more specific pattern missed
+		if pgrep -f "http.server" >/dev/null 2>&1; then
+			kill -9 $(pgrep -f "http.server") 2>/dev/null || true
+		fi
+		sleep 1
+	fi
+
+	log "Starting Python server..."
+	# Serve from repo path; nohup+disown so this outlives the script / launchd job
+	nohup bash -c "cd \"${MUNKI_REPO_PATH}\" && exec python3 -m http.server ${WEBSERVER_PORT} --bind 127.0.0.1" \
+		>/dev/null 2>&1 &
+	PYTHON_SERVER_PID=$!
+	disown "${PYTHON_SERVER_PID}" 2>/dev/null || true
+
+	sleep 2
+	if curl -s -o /dev/null -w "%{http_code}" "http://127.0.0.1:${WEBSERVER_PORT}/" | grep -qE '200|301|302'; then
+		PYTHON_SERVER_STATUS="running"
+		log "Python server status: ${PYTHON_SERVER_STATUS} at http://127.0.0.1:${WEBSERVER_PORT} (pid ${PYTHON_SERVER_PID})"
+	else
+		PYTHON_SERVER_STATUS="started but not responding"
+		warn "Python server status: ${PYTHON_SERVER_STATUS} - may need a moment to start"
+	fi
+
+	# Always (re)apply serve so /munki keeps pointing at the local python server
+	log "Configuring Tailscale serve /munki -> http://127.0.0.1:${WEBSERVER_PORT}/"
+	if ! "${TAILSCALE_CMD}" serve --bg --set-path /munki "http://127.0.0.1:${WEBSERVER_PORT}/" 2>/dev/null; then
+		"${TAILSCALE_CMD}" serve reset 2>/dev/null
+		sleep 1
+		if ! "${TAILSCALE_CMD}" serve --bg --set-path /munki "http://127.0.0.1:${WEBSERVER_PORT}/" 2>/dev/null; then
+			error "Failed to configure Tailscale serve"
+			return 1
+		fi
+	fi
+
+	sleep 1
+	local serve_output
+	serve_output=$("${TAILSCALE_CMD}" serve status 2>/dev/null)
+	TAILSCALE_URL=$(echo "${serve_output}" | grep -E "^https://.*\.ts\.net" | head -1 | awk '{print $1}' | sed 's/ (tailnet only)//')
+	if echo "${serve_output}" | grep -q "/munki" && [ -n "${TAILSCALE_URL}" ]; then
+		TAILSCALE_SERVING_STATUS="serving"
+		log "Tailscale serving status: ${TAILSCALE_SERVING_STATUS} at ${TAILSCALE_URL}/munki"
+	else
+		TAILSCALE_SERVING_STATUS="configured but URL not found"
+		warn "Tailscale serving status: ${TAILSCALE_SERVING_STATUS} - check with 'tailscale serve status'"
+	fi
+	return 0
+}
 
 function verify_autopkg_settings {
 	defaults write com.github.autopkg RECIPE_OVERRIDE_DIRS "${OVERRIDES_DIR}"
@@ -1426,6 +1437,10 @@ function main {
 
 # parameters
 case $1 in
+	--restart-server)
+		restart_munki_server
+		exit $?
+		;;
 	--make-overrides)
 		make_override "$@"
 		;;
@@ -1439,6 +1454,7 @@ case $1 in
 		verify_icons
 		;;
 	*)
+		restart_munki_server
 		main
 		;;
 esac
