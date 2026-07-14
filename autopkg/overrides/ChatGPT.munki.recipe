@@ -47,11 +47,11 @@
 			<key>com.github.aanklewicz.munki.ChatGPT</key>
 			<dict>
 				<key>git_hash</key>
-				<string>292cbd1d5e73c96759c94899896109b33658de1f</string>
+				<string>e6011e913090c4406cced7c570a056617f593bef</string>
 				<key>path</key>
-				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.aanklewicz-recipes/ChatGPT/ChatGPT.munki.recipe</string>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.aanklewicz-recipes/ChatGPT/ChatGPTClassic.munki.recipe</string>
 				<key>sha256_hash</key>
-				<string>51d697390f9a8d062cd35146146a4257aa8c72956c20b04e365badaed01b7709</string>
+				<string>0259bee0d04244ac02d376f512b3f80146c6cdc9ce224f6b66c20df1ce04dd02</string>
 			</dict>
 			<key>com.github.rtrouton.download.ChatGPT</key>
 			<dict>
