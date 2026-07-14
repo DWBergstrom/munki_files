@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-07-08T21:47:38Z</date>
+		<date>2026-07-14T04:56:30Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,34 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Tool designed to help developers manage multiple coding agents, run tasks in parallel, and collaborate on software projects.</string>
+	<string>Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models.</string>
 	<key>developer</key>
-	<string>OpenAI</string>
+	<string>Infra Technologies, Inc</string>
 	<key>display_name</key>
-	<string>Codex</string>
+	<string>Ollama</string>
 	<key>installer_item_hash</key>
-	<string>30a2fe991e486f1ed6d5251679639733568d20dedc0d71c989e8200bc711c46c</string>
+	<string>d6ff329bc5255c59013821f2208b5ed0675451a315c2337e669d040faa8b2ed5</string>
 	<key>installer_item_location</key>
-	<string>apps/Codex/Codex-26.623.141536.dmg</string>
+	<string>apps/Ollama/Ollama-0.32.0.dmg</string>
 	<key>installer_item_size</key>
-	<integer>517326</integer>
+	<integer>179204</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.openai.codex</string>
+			<string>com.electron.ollama</string>
 			<key>CFBundleName</key>
-			<string>Codex</string>
+			<string>Ollama</string>
 			<key>CFBundleShortVersionString</key>
-			<string>26.623.141536</string>
+			<string>0.32.0</string>
 			<key>CFBundleVersion</key>
-			<string>4753</string>
+			<string>0.32.0</string>
 			<key>minosversion</key>
-			<string>12.0</string>
+			<string>14.0</string>
 			<key>path</key>
-			<string>/Applications/Codex.app</string>
+			<string>/Applications/Ollama.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,13 +60,25 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Codex.app</string>
+			<string>Ollama.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>12.0</string>
+	<string>14.0</string>
 	<key>name</key>
-	<string>Codex</string>
+	<string>Ollama</string>
+	<key>postinstall_script</key>
+	<string>#!/bin/bash
+
+# Script built from: https://github.com/ollama/ollama/issues/851#issuecomment-1889808636
+# Please note admin rights are still needed as the file that records whether first time run has completed is located in the Users home folder. see https://github.com/ollama/ollama/issues/6814
+
+# Install Command Line Tools
+if ! [ -f /usr/local/bin/ollama ]; then
+  /usr/bin/touch /usr/local/bin/ollama ; /bin/ln -s -f /Applications/Ollama.app/Contents/Resources/ollama /usr/local/bin/ollama
+fi
+
+exit</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>unattended_uninstall</key>
@@ -76,6 +88,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>26.623.141536</string>
+	<string>0.32.0</string>
 </dict>
 </plist>
