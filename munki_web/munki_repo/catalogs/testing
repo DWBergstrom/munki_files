@@ -35677,6 +35677,76 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<array>
 			<string>testing</string>
 		</array>
+		<key>category</key>
+		<string>Developer</string>
+		<key>description</key>
+		<string>Built to make you extraordinarily productive, Cursor is the best way to code with AI.</string>
+		<key>developer</key>
+		<string>Anysphere, Inc.</string>
+		<key>display_name</key>
+		<string>Cursor</string>
+		<key>icon_name</key>
+		<string>Cursor.png</string>
+		<key>installer_item_hash</key>
+		<string>6bcd69558fe1f1db2b722ccaf63e33192cfca6030f87e332ef392e03f55bbbd1</string>
+		<key>installer_item_location</key>
+		<string>apps/Cursor/Cursor-3.11.25.dmg</string>
+		<key>installer_item_size</key>
+		<integer>417025</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.todesktop.230313mzl4w4u92</string>
+				<key>CFBundleName</key>
+				<string>Cursor</string>
+				<key>CFBundleShortVersionString</key>
+				<string>3.11.25</string>
+				<key>CFBundleVersion</key>
+				<string>3.11.25</string>
+				<key>minosversion</key>
+				<string>12.0</string>
+				<key>path</key>
+				<string>/Applications/Cursor.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Cursor.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.0</string>
+		<key>name</key>
+		<string>Cursor</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>3.11.25</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
 		<key>description</key>
 		<string>A free, source-available and fair-code licensed mac app cleaner</string>
 		<key>developer</key>
@@ -47946,11 +48016,11 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>display_name</key>
 		<string>Claude</string>
 		<key>installer_item_hash</key>
-		<string>73cd1e88145175d18e3462f89bd29d46affd72757ef70c51674f1fd6e937440e</string>
+		<string>44e852f6c9f4fb9ce32e9ce7888a74ee8c039529d794fe764c86a3c215cf8635</string>
 		<key>installer_item_location</key>
-		<string>apps/Claude/Claude-1.20186.9.dmg</string>
+		<string>apps/Claude/Claude-1.21459.1.dmg</string>
 		<key>installer_item_size</key>
-		<integer>330014</integer>
+		<integer>328912</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -47961,9 +48031,9 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 				<key>CFBundleName</key>
 				<string>Claude</string>
 				<key>CFBundleShortVersionString</key>
-				<string>1.20186.9</string>
+				<string>1.21459.1</string>
 				<key>CFBundleVersion</key>
-				<string>1.20186.9</string>
+				<string>1.21459.1</string>
 				<key>minosversion</key>
 				<string>12.0</string>
 				<key>path</key>
@@ -47996,7 +48066,7 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>1.20186.9</string>
+		<string>1.21459.1</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -51134,6 +51204,72 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<true/>
 		<key>version</key>
 		<string>113.1.51.114</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Browsers</string>
+		<key>description</key>
+		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
+		<key>developer</key>
+		<string>Brave Software Inc.</string>
+		<key>display_name</key>
+		<string>Brave Browser</string>
+		<key>installer_item_hash</key>
+		<string>04e2e16bcf0a8256d88239d1b76efac3f7c1bbd8651e52ca5afbaab52cb710de</string>
+		<key>installer_item_location</key>
+		<string>apps/Brave/Brave-150.1.92.140.dmg</string>
+		<key>installer_item_size</key>
+		<integer>243455</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.brave.Browser</string>
+				<key>CFBundleName</key>
+				<string>Brave</string>
+				<key>CFBundleShortVersionString</key>
+				<string>150.1.92.140</string>
+				<key>CFBundleVersion</key>
+				<string>192.140</string>
+				<key>minosversion</key>
+				<string>12.0</string>
+				<key>path</key>
+				<string>/Applications/Brave Browser.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Brave Browser.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.0</string>
+		<key>name</key>
+		<string>Brave</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>150.1.92.140</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -67538,6 +67674,74 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<true/>
 		<key>version</key>
 		<string>1.104.22</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Supercharged productivity
+
+Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
+		<key>developer</key>
+		<string>Raycast Technologies Inc</string>
+		<key>display_name</key>
+		<string>Raycast</string>
+		<key>installer_item_hash</key>
+		<string>af7cab72f44d488d5968de083e230582b25bb3c818a0fc9393766931ba63fbd9</string>
+		<key>installer_item_location</key>
+		<string>apps/Raycast/Raycast-1.104.23.dmg</string>
+		<key>installer_item_size</key>
+		<integer>108516</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.raycast.macos</string>
+				<key>CFBundleName</key>
+				<string>Raycast</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.104.23</string>
+				<key>CFBundleVersion</key>
+				<string>0</string>
+				<key>minosversion</key>
+				<string>13.0</string>
+				<key>path</key>
+				<string>/Applications/Raycast.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Raycast.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0</string>
+		<key>name</key>
+		<string>Raycast</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.104.23</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -84039,72 +84243,6 @@ exit</string>
 		<key>display_name</key>
 		<string>Antigravity</string>
 		<key>installer_item_hash</key>
-		<string>cb1955fdaa58ff851bf2f75078c318b90304d0a643eecb836aeb8783e2e89b12</string>
-		<key>installer_item_location</key>
-		<string>apps/Antigravity/Antigravity-2.2.1__4.dmg</string>
-		<key>installer_item_size</key>
-		<integer>178131</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.google.antigravity</string>
-				<key>CFBundleName</key>
-				<string>Antigravity</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2.2.1</string>
-				<key>CFBundleVersion</key>
-				<string>2.2.1</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Antigravity.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Antigravity.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Antigravity</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2.2.1</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Google's agentic development platform, evolving the IDE into the agent-first era.</string>
-		<key>developer</key>
-		<string>Google</string>
-		<key>display_name</key>
-		<string>Antigravity</string>
-		<key>installer_item_hash</key>
 		<string>5c9c1822d6343a40b9de6b405f9f718d7bd99510544fda4134bd75398120ce93</string>
 		<key>installer_item_location</key>
 		<string>apps/Antigravity/Antigravity-2.3.0.dmg</string>
@@ -84156,336 +84294,6 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>2.3.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Google's agentic development platform, evolving the IDE into the agent-first era.</string>
-		<key>developer</key>
-		<string>Google</string>
-		<key>display_name</key>
-		<string>Antigravity</string>
-		<key>installer_item_hash</key>
-		<string>cb1955fdaa58ff851bf2f75078c318b90304d0a643eecb836aeb8783e2e89b12</string>
-		<key>installer_item_location</key>
-		<string>apps/Antigravity/Antigravity-2.2.1__2.dmg</string>
-		<key>installer_item_size</key>
-		<integer>178131</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.google.antigravity</string>
-				<key>CFBundleName</key>
-				<string>Antigravity</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2.2.1</string>
-				<key>CFBundleVersion</key>
-				<string>2.2.1</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Antigravity.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Antigravity.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Antigravity</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2.2.1</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Google's agentic development platform, evolving the IDE into the agent-first era.</string>
-		<key>developer</key>
-		<string>Google</string>
-		<key>display_name</key>
-		<string>Antigravity</string>
-		<key>installer_item_hash</key>
-		<string>cb1955fdaa58ff851bf2f75078c318b90304d0a643eecb836aeb8783e2e89b12</string>
-		<key>installer_item_location</key>
-		<string>apps/Antigravity/Antigravity-2.2.1__5.dmg</string>
-		<key>installer_item_size</key>
-		<integer>178131</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.google.antigravity</string>
-				<key>CFBundleName</key>
-				<string>Antigravity</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2.2.1</string>
-				<key>CFBundleVersion</key>
-				<string>2.2.1</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Antigravity.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Antigravity.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Antigravity</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2.2.1</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Google's agentic development platform, evolving the IDE into the agent-first era.</string>
-		<key>developer</key>
-		<string>Google</string>
-		<key>display_name</key>
-		<string>Antigravity</string>
-		<key>installer_item_hash</key>
-		<string>cb1955fdaa58ff851bf2f75078c318b90304d0a643eecb836aeb8783e2e89b12</string>
-		<key>installer_item_location</key>
-		<string>apps/Antigravity/Antigravity-2.2.1__1.dmg</string>
-		<key>installer_item_size</key>
-		<integer>178131</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.google.antigravity</string>
-				<key>CFBundleName</key>
-				<string>Antigravity</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2.2.1</string>
-				<key>CFBundleVersion</key>
-				<string>2.2.1</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Antigravity.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Antigravity.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Antigravity</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2.2.1</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Google's agentic development platform, evolving the IDE into the agent-first era.</string>
-		<key>developer</key>
-		<string>Google</string>
-		<key>display_name</key>
-		<string>Antigravity</string>
-		<key>installer_item_hash</key>
-		<string>cb1955fdaa58ff851bf2f75078c318b90304d0a643eecb836aeb8783e2e89b12</string>
-		<key>installer_item_location</key>
-		<string>apps/Antigravity/Antigravity-2.2.1.dmg</string>
-		<key>installer_item_size</key>
-		<integer>178131</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.google.antigravity</string>
-				<key>CFBundleName</key>
-				<string>Antigravity</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2.2.1</string>
-				<key>CFBundleVersion</key>
-				<string>2.2.1</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Antigravity.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Antigravity.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Antigravity</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2.2.1</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Google's agentic development platform, evolving the IDE into the agent-first era.</string>
-		<key>developer</key>
-		<string>Google</string>
-		<key>display_name</key>
-		<string>Antigravity</string>
-		<key>installer_item_hash</key>
-		<string>cb1955fdaa58ff851bf2f75078c318b90304d0a643eecb836aeb8783e2e89b12</string>
-		<key>installer_item_location</key>
-		<string>apps/Antigravity/Antigravity-2.2.1__3.dmg</string>
-		<key>installer_item_size</key>
-		<integer>178131</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.google.antigravity</string>
-				<key>CFBundleName</key>
-				<string>Antigravity</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2.2.1</string>
-				<key>CFBundleVersion</key>
-				<string>2.2.1</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Antigravity.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Antigravity.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Antigravity</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2.2.1</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -87192,6 +87000,70 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>6.7.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string> </string>
+		<key>developer</key>
+		<string>RIDDLE QUIET VENTURES, LLC</string>
+		<key>display_name</key>
+		<string>Signal Desktop</string>
+		<key>installer_item_hash</key>
+		<string>aec1f6bbcfb37cbca76232e5b4780c906545d367b6767200842ff5296be26313</string>
+		<key>installer_item_location</key>
+		<string>apps/Signal/signal-desktop-mac-universal-8.19.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>252531</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>org.whispersystems.signal-desktop</string>
+				<key>CFBundleName</key>
+				<string>Signal</string>
+				<key>CFBundleShortVersionString</key>
+				<string>8.19.0</string>
+				<key>CFBundleVersion</key>
+				<string>1</string>
+				<key>minosversion</key>
+				<string>12.0</string>
+				<key>path</key>
+				<string>/Applications/Signal.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Signal.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.0</string>
+		<key>name</key>
+		<string>Signal_Desktop</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>8.19.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
