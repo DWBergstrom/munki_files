@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-07-12T04:53:24Z</date>
+		<date>2026-07-17T04:56:01Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,34 +20,32 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string> </string>
-	<key>developer</key>
-	<string>RIDDLE QUIET VENTURES, LLC</string>
+	<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
 	<key>display_name</key>
-	<string>Signal Desktop</string>
+	<string>Google Chrome</string>
 	<key>installer_item_hash</key>
-	<string>c987fbf46f1d372d1f000ef847941e76bf901d9b51d5f93dd275812bc7f7e943</string>
+	<string>354508b6cde6ca10840ab2be009decaf70b695c9f2966d39569d9f1d39baa80d</string>
 	<key>installer_item_location</key>
-	<string>apps/Signal/signal-desktop-mac-universal-8.18.0__2.dmg</string>
+	<string>apps/GoogleChrome-150.0.7871.129.dmg</string>
 	<key>installer_item_size</key>
-	<integer>251719</integer>
+	<integer>266495</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>org.whispersystems.signal-desktop</string>
+			<string>com.google.Chrome</string>
 			<key>CFBundleName</key>
-			<string>Signal</string>
+			<string>Chrome</string>
 			<key>CFBundleShortVersionString</key>
-			<string>8.18.0</string>
+			<string>150.0.7871.129</string>
 			<key>CFBundleVersion</key>
-			<string>1</string>
+			<string>7871.129</string>
 			<key>minosversion</key>
 			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/Signal.app</string>
+			<string>/Applications/Google Chrome.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,13 +58,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Signal.app</string>
+			<string>Google Chrome.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
 	<string>12.0</string>
 	<key>name</key>
-	<string>Signal_Desktop</string>
+	<string>GoogleChrome</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -74,6 +72,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>8.18.0</string>
+	<string>150.0.7871.129</string>
 </dict>
 </plist>

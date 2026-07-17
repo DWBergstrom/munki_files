@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-07-13T04:46:55Z</date>
+		<date>2026-07-17T04:50:31Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,37 +19,35 @@
 	<array>
 		<string>testing</string>
 	</array>
-	<key>category</key>
-	<string>Browsers</string>
 	<key>description</key>
-	<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
+	<string>Google's agentic development platform, evolving the IDE into the agent-first era.</string>
 	<key>developer</key>
-	<string>Brave Software Inc.</string>
+	<string>Google</string>
 	<key>display_name</key>
-	<string>Brave Browser</string>
+	<string>Antigravity</string>
 	<key>installer_item_hash</key>
-	<string>369586c66429d641d55ddd17f17ed40fc2f1631db7f88419e1900b48c74382c5</string>
+	<string>841714173d20026d1865ea3efbe04406dfeccdda44b3eb1f2c465216bc0786b8</string>
 	<key>installer_item_location</key>
-	<string>apps/Brave/Brave-150.1.92.139__3.dmg</string>
+	<string>apps/Antigravity/Antigravity-2.3.1.dmg</string>
 	<key>installer_item_size</key>
-	<integer>243433</integer>
+	<integer>177270</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.brave.Browser</string>
+			<string>com.google.antigravity</string>
 			<key>CFBundleName</key>
-			<string>Brave</string>
+			<string>Antigravity</string>
 			<key>CFBundleShortVersionString</key>
-			<string>150.1.92.139</string>
+			<string>2.3.1</string>
 			<key>CFBundleVersion</key>
-			<string>192.139</string>
+			<string>2.3.1</string>
 			<key>minosversion</key>
 			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/Brave Browser.app</string>
+			<string>/Applications/Antigravity.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -62,20 +60,22 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Brave Browser.app</string>
+			<string>Antigravity.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
 	<string>12.0</string>
 	<key>name</key>
-	<string>Brave</string>
+	<string>Antigravity</string>
 	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>150.1.92.139</string>
+	<string>2.3.1</string>
 </dict>
 </plist>

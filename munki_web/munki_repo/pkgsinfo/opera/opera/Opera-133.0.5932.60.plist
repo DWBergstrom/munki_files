@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-07-13T19:20:01Z</date>
+		<date>2026-07-17T04:58:16Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,42 +20,40 @@
 		<string>testing</string>
 	</array>
 	<key>category</key>
-	<string>Developer</string>
+	<string>Productivity</string>
 	<key>description</key>
-	<string>Built to make you extraordinarily productive, Cursor is the best way to code with AI.</string>
+	<string>A web browser developed by Opera Software.</string>
 	<key>developer</key>
-	<string>Anysphere, Inc.</string>
+	<string>Opera</string>
 	<key>display_name</key>
-	<string>Cursor</string>
-	<key>icon_name</key>
-	<string>Cursor.png</string>
+	<string>Opera</string>
 	<key>installer_item_hash</key>
-	<string>a7e2e1c224e76afe2563e6edc95681002a72562f6cff1c9aecca188edd36b32a</string>
+	<string>868493f2fd85c2f63951833d02712970ec9a019bf82662a6d47c4f7e66a7c4e2</string>
 	<key>installer_item_location</key>
-	<string>apps/Cursor/Cursor-3.11.19.dmg</string>
+	<string>opera/opera/Opera-133.0.5932.60.dmg</string>
 	<key>installer_item_size</key>
-	<integer>406195</integer>
+	<integer>172338</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.todesktop.230313mzl4w4u92</string>
+			<string>com.operasoftware.Opera</string>
 			<key>CFBundleName</key>
-			<string>Cursor</string>
+			<string>Opera</string>
 			<key>CFBundleShortVersionString</key>
-			<string>3.11.19</string>
+			<string>133.0</string>
 			<key>CFBundleVersion</key>
-			<string>3.11.19</string>
+			<string>133.0.5932.60</string>
 			<key>minosversion</key>
-			<string>12.0</string>
+			<string>11.0</string>
 			<key>path</key>
-			<string>/Applications/Cursor.app</string>
+			<string>/Applications/Opera.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
-			<string>CFBundleShortVersionString</string>
+			<string>CFBundleVersion</string>
 		</dict>
 	</array>
 	<key>items_to_copy</key>
@@ -64,22 +62,20 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Cursor.app</string>
+			<string>Opera.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>12.0</string>
+	<string>11.0</string>
 	<key>name</key>
-	<string>Cursor</string>
+	<string>Opera</string>
 	<key>unattended_install</key>
-	<true/>
-	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>3.11.19</string>
+	<string>133.0.5932.60</string>
 </dict>
 </plist>
