@@ -13063,11 +13063,11 @@ fi</string>
 		<key>display_name</key>
 		<string>Opera</string>
 		<key>installer_item_hash</key>
-		<string>1042766d39809804b19df79b17a524737cdc6f0915c57ff74f36bb3ec2f125ce</string>
+		<string>19962b525fd6c5dccc444a68d0d5d245ba4f1012baac609791f548f755d3e130</string>
 		<key>installer_item_location</key>
-		<string>opera/opera/Opera-133.0.5932.34.dmg</string>
+		<string>opera/opera/Opera-133.0.5932.85.dmg</string>
 		<key>installer_item_size</key>
-		<integer>172275</integer>
+		<integer>172353</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -13080,7 +13080,7 @@ fi</string>
 				<key>CFBundleShortVersionString</key>
 				<string>133.0</string>
 				<key>CFBundleVersion</key>
-				<string>133.0.5932.34</string>
+				<string>133.0.5932.85</string>
 				<key>minosversion</key>
 				<string>11.0</string>
 				<key>path</key>
@@ -13111,271 +13111,7 @@ fi</string>
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>133.0.5932.34</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Productivity</string>
-		<key>description</key>
-		<string>A web browser developed by Opera Software.</string>
-		<key>developer</key>
-		<string>Opera</string>
-		<key>display_name</key>
-		<string>Opera</string>
-		<key>installer_item_hash</key>
-		<string>8d6c8bf84a04f14d862cd322558d29ac1b21a88a277738c0ac234e3810d80553</string>
-		<key>installer_item_location</key>
-		<string>opera/opera/Opera-133.0.5932.34__1.dmg</string>
-		<key>installer_item_size</key>
-		<integer>172296</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.operasoftware.Opera</string>
-				<key>CFBundleName</key>
-				<string>Opera</string>
-				<key>CFBundleShortVersionString</key>
-				<string>133.0</string>
-				<key>CFBundleVersion</key>
-				<string>133.0.5932.34</string>
-				<key>minosversion</key>
-				<string>11.0</string>
-				<key>path</key>
-				<string>/Applications/Opera.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Opera.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>11.0</string>
-		<key>name</key>
-		<string>Opera</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>133.0.5932.34</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Productivity</string>
-		<key>description</key>
-		<string>A web browser developed by Opera Software.</string>
-		<key>developer</key>
-		<string>Opera</string>
-		<key>display_name</key>
-		<string>Opera</string>
-		<key>installer_item_hash</key>
-		<string>50203e1bd82a916f28d9c653e181a6d67428d453f77773dd36e582e4850679ee</string>
-		<key>installer_item_location</key>
-		<string>opera/opera/Opera-133.0.5932.34__3.dmg</string>
-		<key>installer_item_size</key>
-		<integer>172283</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.operasoftware.Opera</string>
-				<key>CFBundleName</key>
-				<string>Opera</string>
-				<key>CFBundleShortVersionString</key>
-				<string>133.0</string>
-				<key>CFBundleVersion</key>
-				<string>133.0.5932.34</string>
-				<key>minosversion</key>
-				<string>11.0</string>
-				<key>path</key>
-				<string>/Applications/Opera.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Opera.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>11.0</string>
-		<key>name</key>
-		<string>Opera</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>133.0.5932.34</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Productivity</string>
-		<key>description</key>
-		<string>A web browser developed by Opera Software.</string>
-		<key>developer</key>
-		<string>Opera</string>
-		<key>display_name</key>
-		<string>Opera</string>
-		<key>installer_item_hash</key>
-		<string>782c2ae43f2f152d08f29599b122d8d1069c9ad97e6d432d7827b45969cecdbc</string>
-		<key>installer_item_location</key>
-		<string>opera/opera/Opera-133.0.5932.34__2.dmg</string>
-		<key>installer_item_size</key>
-		<integer>172288</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.operasoftware.Opera</string>
-				<key>CFBundleName</key>
-				<string>Opera</string>
-				<key>CFBundleShortVersionString</key>
-				<string>133.0</string>
-				<key>CFBundleVersion</key>
-				<string>133.0.5932.34</string>
-				<key>minosversion</key>
-				<string>11.0</string>
-				<key>path</key>
-				<string>/Applications/Opera.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Opera.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>11.0</string>
-		<key>name</key>
-		<string>Opera</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>133.0.5932.34</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Productivity</string>
-		<key>description</key>
-		<string>A web browser developed by Opera Software.</string>
-		<key>developer</key>
-		<string>Opera</string>
-		<key>display_name</key>
-		<string>Opera</string>
-		<key>installer_item_hash</key>
-		<string>868493f2fd85c2f63951833d02712970ec9a019bf82662a6d47c4f7e66a7c4e2</string>
-		<key>installer_item_location</key>
-		<string>opera/opera/Opera-133.0.5932.60.dmg</string>
-		<key>installer_item_size</key>
-		<integer>172338</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.operasoftware.Opera</string>
-				<key>CFBundleName</key>
-				<string>Opera</string>
-				<key>CFBundleShortVersionString</key>
-				<string>133.0</string>
-				<key>CFBundleVersion</key>
-				<string>133.0.5932.60</string>
-				<key>minosversion</key>
-				<string>11.0</string>
-				<key>path</key>
-				<string>/Applications/Opera.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Opera.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>11.0</string>
-		<key>name</key>
-		<string>Opera</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>133.0.5932.60</string>
+		<string>133.0.5932.85</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -13637,6 +13373,68 @@ fi</string>
 		<true/>
 		<key>version</key>
 		<string>1.102.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
+		<key>display_name</key>
+		<string>Google Chrome</string>
+		<key>installer_item_hash</key>
+		<string>37104928751b54368ef25b5c0d7450a5b7e2f622731f45671d8b9b4278572345</string>
+		<key>installer_item_location</key>
+		<string>apps/GoogleChrome-150.0.7871.187.dmg</string>
+		<key>installer_item_size</key>
+		<integer>266701</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.google.Chrome</string>
+				<key>CFBundleName</key>
+				<string>Chrome</string>
+				<key>CFBundleShortVersionString</key>
+				<string>150.0.7871.187</string>
+				<key>CFBundleVersion</key>
+				<string>7871.187</string>
+				<key>minosversion</key>
+				<string>12.0</string>
+				<key>path</key>
+				<string>/Applications/Google Chrome.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Google Chrome.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.0</string>
+		<key>name</key>
+		<string>GoogleChrome</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>150.0.7871.187</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -14562,68 +14360,6 @@ fi</string>
 	<dict>
 		<key>autoremove</key>
 		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
-		<key>display_name</key>
-		<string>Google Chrome</string>
-		<key>installer_item_hash</key>
-		<string>6e9e9a02744c08b557fa05e92e83f83e8ef178c2315726802f1b1175d5063962</string>
-		<key>installer_item_location</key>
-		<string>apps/GoogleChrome-150.0.7871.125.dmg</string>
-		<key>installer_item_size</key>
-		<integer>266502</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.google.Chrome</string>
-				<key>CFBundleName</key>
-				<string>Chrome</string>
-				<key>CFBundleShortVersionString</key>
-				<string>150.0.7871.125</string>
-				<key>CFBundleVersion</key>
-				<string>7871.125</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Google Chrome.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Google Chrome.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>GoogleChrome</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>150.0.7871.125</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
 		<key>blocking_applications</key>
 		<array>
 			<string>1Password 7</string>
@@ -15299,150 +15035,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 			<string>testing</string>
 		</array>
 		<key>category</key>
-		<string>Software</string>
-		<key>description</key>
-		<string>Oracle VM VirtualBox is a free and open-source hypervisor for x86 computers currently being developed by Oracle Corporation.</string>
-		<key>developer</key>
-		<string>Oracle Corporation</string>
-		<key>display_name</key>
-		<string>VirtualBox</string>
-		<key>installed_size</key>
-		<integer>283314</integer>
-		<key>installer_item_hash</key>
-		<string>645400a0ff1bd18a49ee462f5618445174414f45bd3b344223ec659b00f4c009</string>
-		<key>installer_item_location</key>
-		<string>apps/VirtualBox-7.2.12__3.dmg</string>
-		<key>installer_item_size</key>
-		<integer>146781</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.virtualbox.app.VirtualBox</string>
-				<key>CFBundleName</key>
-				<string>VirtualBox</string>
-				<key>CFBundleShortVersionString</key>
-				<string>7.2.12</string>
-				<key>CFBundleVersion</key>
-				<string>7.2.12</string>
-				<key>path</key>
-				<string>/Applications/VirtualBox.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>name</key>
-		<string>VirtualBox</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>283307</integer>
-				<key>packageid</key>
-				<string>org.virtualbox.pkg.virtualbox</string>
-				<key>version</key>
-				<string>7.2.12</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>7</integer>
-				<key>packageid</key>
-				<string>org.virtualbox.pkg.virtualboxcli</string>
-				<key>version</key>
-				<string>7.2.12</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.2.12</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Software</string>
-		<key>description</key>
-		<string>Oracle VM VirtualBox is a free and open-source hypervisor for x86 computers currently being developed by Oracle Corporation.</string>
-		<key>developer</key>
-		<string>Oracle Corporation</string>
-		<key>display_name</key>
-		<string>VirtualBox</string>
-		<key>installed_size</key>
-		<integer>283314</integer>
-		<key>installer_item_hash</key>
-		<string>645400a0ff1bd18a49ee462f5618445174414f45bd3b344223ec659b00f4c009</string>
-		<key>installer_item_location</key>
-		<string>apps/VirtualBox-7.2.12__1.dmg</string>
-		<key>installer_item_size</key>
-		<integer>146781</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.virtualbox.app.VirtualBox</string>
-				<key>CFBundleName</key>
-				<string>VirtualBox</string>
-				<key>CFBundleShortVersionString</key>
-				<string>7.2.12</string>
-				<key>CFBundleVersion</key>
-				<string>7.2.12</string>
-				<key>path</key>
-				<string>/Applications/VirtualBox.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>name</key>
-		<string>VirtualBox</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>283307</integer>
-				<key>packageid</key>
-				<string>org.virtualbox.pkg.virtualbox</string>
-				<key>version</key>
-				<string>7.2.12</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>7</integer>
-				<key>packageid</key>
-				<string>org.virtualbox.pkg.virtualboxcli</string>
-				<key>version</key>
-				<string>7.2.12</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.2.12</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
 		<string>Utilities</string>
 		<key>description</key>
 		<string>Peek inside macOS Installer packages, see what they install, what they do, and more.</string>
@@ -15500,6 +15092,78 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<true/>
 		<key>version</key>
 		<string>4.6.2</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Software</string>
+		<key>description</key>
+		<string>Oracle VM VirtualBox is a free and open-source hypervisor for x86 computers currently being developed by Oracle Corporation.</string>
+		<key>developer</key>
+		<string>Oracle Corporation</string>
+		<key>display_name</key>
+		<string>VirtualBox</string>
+		<key>installed_size</key>
+		<integer>284034</integer>
+		<key>installer_item_hash</key>
+		<string>4486ed29a342082e10506f85de47833e00ebee9c2c63ce62aad9638f4a9cedbc</string>
+		<key>installer_item_location</key>
+		<string>apps/VirtualBox-7.2.14.dmg</string>
+		<key>installer_item_size</key>
+		<integer>146730</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>org.virtualbox.app.VirtualBox</string>
+				<key>CFBundleName</key>
+				<string>VirtualBox</string>
+				<key>CFBundleShortVersionString</key>
+				<string>7.2.14</string>
+				<key>CFBundleVersion</key>
+				<string>7.2.14</string>
+				<key>path</key>
+				<string>/Applications/VirtualBox.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>name</key>
+		<string>VirtualBox</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>284027</integer>
+				<key>packageid</key>
+				<string>org.virtualbox.pkg.virtualbox</string>
+				<key>version</key>
+				<string>7.2.14</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>7</integer>
+				<key>packageid</key>
+				<string>org.virtualbox.pkg.virtualboxcli</string>
+				<key>version</key>
+				<string>7.2.14</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>7.2.14</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -15640,68 +15304,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<array>
 			<string>testing</string>
 		</array>
-		<key>description</key>
-		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
-		<key>display_name</key>
-		<string>Google Chrome</string>
-		<key>installer_item_hash</key>
-		<string>354508b6cde6ca10840ab2be009decaf70b695c9f2966d39569d9f1d39baa80d</string>
-		<key>installer_item_location</key>
-		<string>apps/GoogleChrome-150.0.7871.129.dmg</string>
-		<key>installer_item_size</key>
-		<integer>266495</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.google.Chrome</string>
-				<key>CFBundleName</key>
-				<string>Chrome</string>
-				<key>CFBundleShortVersionString</key>
-				<string>150.0.7871.129</string>
-				<key>CFBundleVersion</key>
-				<string>7871.129</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Google Chrome.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Google Chrome.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>GoogleChrome</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>150.0.7871.129</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
 		<key>category</key>
 		<string>Utilities</string>
 		<key>description</key>
@@ -15760,78 +15362,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<true/>
 		<key>version</key>
 		<string>3.6.11</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Software</string>
-		<key>description</key>
-		<string>Oracle VM VirtualBox is a free and open-source hypervisor for x86 computers currently being developed by Oracle Corporation.</string>
-		<key>developer</key>
-		<string>Oracle Corporation</string>
-		<key>display_name</key>
-		<string>VirtualBox</string>
-		<key>installed_size</key>
-		<integer>283314</integer>
-		<key>installer_item_hash</key>
-		<string>645400a0ff1bd18a49ee462f5618445174414f45bd3b344223ec659b00f4c009</string>
-		<key>installer_item_location</key>
-		<string>apps/VirtualBox-7.2.12__5.dmg</string>
-		<key>installer_item_size</key>
-		<integer>146781</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.virtualbox.app.VirtualBox</string>
-				<key>CFBundleName</key>
-				<string>VirtualBox</string>
-				<key>CFBundleShortVersionString</key>
-				<string>7.2.12</string>
-				<key>CFBundleVersion</key>
-				<string>7.2.12</string>
-				<key>path</key>
-				<string>/Applications/VirtualBox.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>name</key>
-		<string>VirtualBox</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>283307</integer>
-				<key>packageid</key>
-				<string>org.virtualbox.pkg.virtualbox</string>
-				<key>version</key>
-				<string>7.2.12</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>7</integer>
-				<key>packageid</key>
-				<string>org.virtualbox.pkg.virtualboxcli</string>
-				<key>version</key>
-				<string>7.2.12</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.2.12</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -16105,78 +15635,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 			<string>testing</string>
 		</array>
 		<key>category</key>
-		<string>Software</string>
-		<key>description</key>
-		<string>Oracle VM VirtualBox is a free and open-source hypervisor for x86 computers currently being developed by Oracle Corporation.</string>
-		<key>developer</key>
-		<string>Oracle Corporation</string>
-		<key>display_name</key>
-		<string>VirtualBox</string>
-		<key>installed_size</key>
-		<integer>283314</integer>
-		<key>installer_item_hash</key>
-		<string>645400a0ff1bd18a49ee462f5618445174414f45bd3b344223ec659b00f4c009</string>
-		<key>installer_item_location</key>
-		<string>apps/VirtualBox-7.2.12.dmg</string>
-		<key>installer_item_size</key>
-		<integer>146781</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.virtualbox.app.VirtualBox</string>
-				<key>CFBundleName</key>
-				<string>VirtualBox</string>
-				<key>CFBundleShortVersionString</key>
-				<string>7.2.12</string>
-				<key>CFBundleVersion</key>
-				<string>7.2.12</string>
-				<key>path</key>
-				<string>/Applications/VirtualBox.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>name</key>
-		<string>VirtualBox</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>283307</integer>
-				<key>packageid</key>
-				<string>org.virtualbox.pkg.virtualbox</string>
-				<key>version</key>
-				<string>7.2.12</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>7</integer>
-				<key>packageid</key>
-				<string>org.virtualbox.pkg.virtualboxcli</string>
-				<key>version</key>
-				<string>7.2.12</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.2.12</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
 		<string>Utilities</string>
 		<key>description</key>
 		<string>Peek inside macOS Installer packages, see what they install, what they do, and more.</string>
@@ -16300,78 +15758,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<true/>
 		<key>version</key>
 		<string>3.6.11</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Software</string>
-		<key>description</key>
-		<string>Oracle VM VirtualBox is a free and open-source hypervisor for x86 computers currently being developed by Oracle Corporation.</string>
-		<key>developer</key>
-		<string>Oracle Corporation</string>
-		<key>display_name</key>
-		<string>VirtualBox</string>
-		<key>installed_size</key>
-		<integer>283314</integer>
-		<key>installer_item_hash</key>
-		<string>645400a0ff1bd18a49ee462f5618445174414f45bd3b344223ec659b00f4c009</string>
-		<key>installer_item_location</key>
-		<string>apps/VirtualBox-7.2.12__7.dmg</string>
-		<key>installer_item_size</key>
-		<integer>146781</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.virtualbox.app.VirtualBox</string>
-				<key>CFBundleName</key>
-				<string>VirtualBox</string>
-				<key>CFBundleShortVersionString</key>
-				<string>7.2.12</string>
-				<key>CFBundleVersion</key>
-				<string>7.2.12</string>
-				<key>path</key>
-				<string>/Applications/VirtualBox.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>name</key>
-		<string>VirtualBox</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>283307</integer>
-				<key>packageid</key>
-				<string>org.virtualbox.pkg.virtualbox</string>
-				<key>version</key>
-				<string>7.2.12</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>7</integer>
-				<key>packageid</key>
-				<string>org.virtualbox.pkg.virtualboxcli</string>
-				<key>version</key>
-				<string>7.2.12</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.2.12</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -16881,78 +16267,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 			<string>testing</string>
 		</array>
 		<key>category</key>
-		<string>Software</string>
-		<key>description</key>
-		<string>Oracle VM VirtualBox is a free and open-source hypervisor for x86 computers currently being developed by Oracle Corporation.</string>
-		<key>developer</key>
-		<string>Oracle Corporation</string>
-		<key>display_name</key>
-		<string>VirtualBox</string>
-		<key>installed_size</key>
-		<integer>283314</integer>
-		<key>installer_item_hash</key>
-		<string>645400a0ff1bd18a49ee462f5618445174414f45bd3b344223ec659b00f4c009</string>
-		<key>installer_item_location</key>
-		<string>apps/VirtualBox-7.2.12__2.dmg</string>
-		<key>installer_item_size</key>
-		<integer>146781</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.virtualbox.app.VirtualBox</string>
-				<key>CFBundleName</key>
-				<string>VirtualBox</string>
-				<key>CFBundleShortVersionString</key>
-				<string>7.2.12</string>
-				<key>CFBundleVersion</key>
-				<string>7.2.12</string>
-				<key>path</key>
-				<string>/Applications/VirtualBox.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>name</key>
-		<string>VirtualBox</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>283307</integer>
-				<key>packageid</key>
-				<string>org.virtualbox.pkg.virtualbox</string>
-				<key>version</key>
-				<string>7.2.12</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>7</integer>
-				<key>packageid</key>
-				<string>org.virtualbox.pkg.virtualboxcli</string>
-				<key>version</key>
-				<string>7.2.12</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.2.12</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
 		<string>Utilities</string>
 		<key>description</key>
 		<string>iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with OS 10.5 (Leopard) or newer. Its focus is on performance, internationalization, and supporting innovative features that make your life better.</string>
@@ -17142,78 +16456,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<true/>
 		<key>version</key>
 		<string>4.6.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Software</string>
-		<key>description</key>
-		<string>Oracle VM VirtualBox is a free and open-source hypervisor for x86 computers currently being developed by Oracle Corporation.</string>
-		<key>developer</key>
-		<string>Oracle Corporation</string>
-		<key>display_name</key>
-		<string>VirtualBox</string>
-		<key>installed_size</key>
-		<integer>283314</integer>
-		<key>installer_item_hash</key>
-		<string>645400a0ff1bd18a49ee462f5618445174414f45bd3b344223ec659b00f4c009</string>
-		<key>installer_item_location</key>
-		<string>apps/VirtualBox-7.2.12__6.dmg</string>
-		<key>installer_item_size</key>
-		<integer>146781</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.virtualbox.app.VirtualBox</string>
-				<key>CFBundleName</key>
-				<string>VirtualBox</string>
-				<key>CFBundleShortVersionString</key>
-				<string>7.2.12</string>
-				<key>CFBundleVersion</key>
-				<string>7.2.12</string>
-				<key>path</key>
-				<string>/Applications/VirtualBox.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>name</key>
-		<string>VirtualBox</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>283307</integer>
-				<key>packageid</key>
-				<string>org.virtualbox.pkg.virtualbox</string>
-				<key>version</key>
-				<string>7.2.12</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>7</integer>
-				<key>packageid</key>
-				<string>org.virtualbox.pkg.virtualboxcli</string>
-				<key>version</key>
-				<string>7.2.12</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.2.12</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -17680,88 +16922,16 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<array>
 			<string>testing</string>
 		</array>
-		<key>category</key>
-		<string>Software</string>
-		<key>description</key>
-		<string>Oracle VM VirtualBox is a free and open-source hypervisor for x86 computers currently being developed by Oracle Corporation.</string>
-		<key>developer</key>
-		<string>Oracle Corporation</string>
-		<key>display_name</key>
-		<string>VirtualBox</string>
-		<key>installed_size</key>
-		<integer>283314</integer>
-		<key>installer_item_hash</key>
-		<string>645400a0ff1bd18a49ee462f5618445174414f45bd3b344223ec659b00f4c009</string>
-		<key>installer_item_location</key>
-		<string>apps/VirtualBox-7.2.12__4.dmg</string>
-		<key>installer_item_size</key>
-		<integer>146781</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.virtualbox.app.VirtualBox</string>
-				<key>CFBundleName</key>
-				<string>VirtualBox</string>
-				<key>CFBundleShortVersionString</key>
-				<string>7.2.12</string>
-				<key>CFBundleVersion</key>
-				<string>7.2.12</string>
-				<key>path</key>
-				<string>/Applications/VirtualBox.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>name</key>
-		<string>VirtualBox</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>283307</integer>
-				<key>packageid</key>
-				<string>org.virtualbox.pkg.virtualbox</string>
-				<key>version</key>
-				<string>7.2.12</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>7</integer>
-				<key>packageid</key>
-				<string>org.virtualbox.pkg.virtualboxcli</string>
-				<key>version</key>
-				<string>7.2.12</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.2.12</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
 		<key>description</key>
 		<string>Mozilla Firefox is a free and open source web browser.</string>
 		<key>display_name</key>
 		<string>Mozilla Firefox</string>
 		<key>installer_item_hash</key>
-		<string>747002d592063e0b106de0c500b34fe6d84438b3b866621521c8e7be9ea7816c</string>
+		<string>2f9b5a20e546e7e79e4182f8fe10353a3e251635963ab3f6d399a3f290adeb96</string>
 		<key>installer_item_location</key>
-		<string>apps/firefox/Firefox-152.0.6.dmg</string>
+		<string>apps/firefox/Firefox-153.0.dmg</string>
 		<key>installer_item_size</key>
-		<integer>150066</integer>
+		<integer>150963</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -17772,9 +16942,9 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 				<key>CFBundleName</key>
 				<string>Firefox</string>
 				<key>CFBundleShortVersionString</key>
-				<string>152.0.6</string>
+				<string>153.0</string>
 				<key>CFBundleVersion</key>
-				<string>15226.7.13</string>
+				<string>15326.7.15</string>
 				<key>minosversion</key>
 				<string>10.15.0</string>
 				<key>path</key>
@@ -17807,7 +16977,7 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>152.0.6</string>
+		<string>153.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -35410,11 +34580,11 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>display_name</key>
 		<string>DuckDuckGo</string>
 		<key>installer_item_hash</key>
-		<string>e37b38f720468b884951c9c6d063f5734b133aabe29c7820b5bc18dd99fb202b</string>
+		<string>388b90af43451cca2469bf3b8cde29ba1c7507ebdfb9767de02da9e6826c07f2</string>
 		<key>installer_item_location</key>
-		<string>apps/DuckDuckGo/DuckDuckGo-1.198.0.dmg</string>
+		<string>apps/DuckDuckGo/DuckDuckGo-1.199.0.dmg</string>
 		<key>installer_item_size</key>
-		<integer>174213</integer>
+		<integer>174766</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -35425,9 +34595,9 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 				<key>CFBundleName</key>
 				<string>DuckDuckGo</string>
 				<key>CFBundleShortVersionString</key>
-				<string>1.198.0</string>
+				<string>1.199.0</string>
 				<key>CFBundleVersion</key>
-				<string>759</string>
+				<string>762</string>
 				<key>minosversion</key>
 				<string>12.3</string>
 				<key>path</key>
@@ -35458,7 +34628,7 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>1.198.0</string>
+		<string>1.199.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -35746,11 +34916,11 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>icon_name</key>
 		<string>Cursor.png</string>
 		<key>installer_item_hash</key>
-		<string>f2867ef94f983fb207bc9e941dadf906e49a12c57271524d53c2b64bc9091fe5</string>
+		<string>42b1edea8912eb0b2fc686ea89a4a0047aaaf43da4f7d8eb34a4bafa35d477b1</string>
 		<key>installer_item_location</key>
-		<string>apps/Cursor/Cursor-3.12.10.dmg</string>
+		<string>apps/Cursor/Cursor-3.13.10.dmg</string>
 		<key>installer_item_size</key>
-		<integer>418003</integer>
+		<integer>420058</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -35761,9 +34931,9 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 				<key>CFBundleName</key>
 				<string>Cursor</string>
 				<key>CFBundleShortVersionString</key>
-				<string>3.12.10</string>
+				<string>3.13.10</string>
 				<key>CFBundleVersion</key>
-				<string>3.12.10</string>
+				<string>3.13.10</string>
 				<key>minosversion</key>
 				<string>12.0</string>
 				<key>path</key>
@@ -35796,7 +34966,7 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>3.12.10</string>
+		<string>3.13.10</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -35816,11 +34986,11 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>icon_name</key>
 		<string>Cursor.png</string>
 		<key>installer_item_hash</key>
-		<string>6bcd69558fe1f1db2b722ccaf63e33192cfca6030f87e332ef392e03f55bbbd1</string>
+		<string>4b0e062d6dcb3a1b91b4fa96d553834615c58d6b28e41e9640132d8f1b46100f</string>
 		<key>installer_item_location</key>
-		<string>apps/Cursor/Cursor-3.11.25.dmg</string>
+		<string>apps/Cursor/Cursor-3.12.30.dmg</string>
 		<key>installer_item_size</key>
-		<integer>417025</integer>
+		<integer>418157</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -35831,9 +35001,9 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 				<key>CFBundleName</key>
 				<string>Cursor</string>
 				<key>CFBundleShortVersionString</key>
-				<string>3.11.25</string>
+				<string>3.12.30</string>
 				<key>CFBundleVersion</key>
-				<string>3.11.25</string>
+				<string>3.12.30</string>
 				<key>minosversion</key>
 				<string>12.0</string>
 				<key>path</key>
@@ -35866,7 +35036,7 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>3.11.25</string>
+		<string>3.12.30</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -42476,11 +41646,11 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>display_name</key>
 		<string>Insomnia </string>
 		<key>installer_item_hash</key>
-		<string>4af7e5a14c241b28a2c16370bb6cb0b53c4a9fb00c4814a95e413a2c67a584d7</string>
+		<string>227a2e5b056c33933b2cd01bc5ca206c950474768433d5ee36968be7dc0cc017</string>
 		<key>installer_item_location</key>
-		<string>apps/Insomnia/Insomnia.Core-13.0.2__2.dmg</string>
+		<string>apps/Insomnia/Insomnia.Core-13.1.0.dmg</string>
 		<key>installer_item_size</key>
-		<integer>357834</integer>
+		<integer>351629</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -42491,9 +41661,9 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 				<key>CFBundleName</key>
 				<string>Insomnia</string>
 				<key>CFBundleShortVersionString</key>
-				<string>13.0.2</string>
+				<string>13.1.0</string>
 				<key>CFBundleVersion</key>
-				<string>13.0.2</string>
+				<string>13.1.0</string>
 				<key>minosversion</key>
 				<string>12.0</string>
 				<key>path</key>
@@ -42524,255 +41694,7 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>13.0.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Explore REST and GraphQL APIs.</string>
-		<key>display_name</key>
-		<string>Insomnia </string>
-		<key>installer_item_hash</key>
-		<string>4af7e5a14c241b28a2c16370bb6cb0b53c4a9fb00c4814a95e413a2c67a584d7</string>
-		<key>installer_item_location</key>
-		<string>apps/Insomnia/Insomnia.Core-13.0.2__12.dmg</string>
-		<key>installer_item_size</key>
-		<integer>357834</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.insomnia.app</string>
-				<key>CFBundleName</key>
-				<string>Insomnia</string>
-				<key>CFBundleShortVersionString</key>
-				<string>13.0.2</string>
-				<key>CFBundleVersion</key>
-				<string>13.0.2</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Insomnia.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Insomnia.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Insomnia</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>13.0.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Explore REST and GraphQL APIs.</string>
-		<key>display_name</key>
-		<string>Insomnia </string>
-		<key>installer_item_hash</key>
-		<string>4af7e5a14c241b28a2c16370bb6cb0b53c4a9fb00c4814a95e413a2c67a584d7</string>
-		<key>installer_item_location</key>
-		<string>apps/Insomnia/Insomnia.Core-13.0.2__10.dmg</string>
-		<key>installer_item_size</key>
-		<integer>357834</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.insomnia.app</string>
-				<key>CFBundleName</key>
-				<string>Insomnia</string>
-				<key>CFBundleShortVersionString</key>
-				<string>13.0.2</string>
-				<key>CFBundleVersion</key>
-				<string>13.0.2</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Insomnia.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Insomnia.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Insomnia</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>13.0.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Explore REST and GraphQL APIs.</string>
-		<key>display_name</key>
-		<string>Insomnia </string>
-		<key>installer_item_hash</key>
-		<string>4af7e5a14c241b28a2c16370bb6cb0b53c4a9fb00c4814a95e413a2c67a584d7</string>
-		<key>installer_item_location</key>
-		<string>apps/Insomnia/Insomnia.Core-13.0.2.dmg</string>
-		<key>installer_item_size</key>
-		<integer>357834</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.insomnia.app</string>
-				<key>CFBundleName</key>
-				<string>Insomnia</string>
-				<key>CFBundleShortVersionString</key>
-				<string>13.0.2</string>
-				<key>CFBundleVersion</key>
-				<string>13.0.2</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Insomnia.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Insomnia.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Insomnia</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>13.0.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Explore REST and GraphQL APIs.</string>
-		<key>display_name</key>
-		<string>Insomnia </string>
-		<key>installer_item_hash</key>
-		<string>4af7e5a14c241b28a2c16370bb6cb0b53c4a9fb00c4814a95e413a2c67a584d7</string>
-		<key>installer_item_location</key>
-		<string>apps/Insomnia/Insomnia.Core-13.0.2__4.dmg</string>
-		<key>installer_item_size</key>
-		<integer>357834</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.insomnia.app</string>
-				<key>CFBundleName</key>
-				<string>Insomnia</string>
-				<key>CFBundleShortVersionString</key>
-				<string>13.0.2</string>
-				<key>CFBundleVersion</key>
-				<string>13.0.2</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Insomnia.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Insomnia.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Insomnia</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>13.0.2</string>
+		<string>13.1.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -42848,440 +41770,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>display_name</key>
 		<string>Insomnia </string>
 		<key>installer_item_hash</key>
-		<string>4af7e5a14c241b28a2c16370bb6cb0b53c4a9fb00c4814a95e413a2c67a584d7</string>
-		<key>installer_item_location</key>
-		<string>apps/Insomnia/Insomnia.Core-13.0.2__6.dmg</string>
-		<key>installer_item_size</key>
-		<integer>357834</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.insomnia.app</string>
-				<key>CFBundleName</key>
-				<string>Insomnia</string>
-				<key>CFBundleShortVersionString</key>
-				<string>13.0.2</string>
-				<key>CFBundleVersion</key>
-				<string>13.0.2</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Insomnia.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Insomnia.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Insomnia</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>13.0.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Explore REST and GraphQL APIs.</string>
-		<key>display_name</key>
-		<string>Insomnia </string>
-		<key>installer_item_hash</key>
-		<string>4af7e5a14c241b28a2c16370bb6cb0b53c4a9fb00c4814a95e413a2c67a584d7</string>
-		<key>installer_item_location</key>
-		<string>apps/Insomnia/Insomnia.Core-13.0.2__11.dmg</string>
-		<key>installer_item_size</key>
-		<integer>357834</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.insomnia.app</string>
-				<key>CFBundleName</key>
-				<string>Insomnia</string>
-				<key>CFBundleShortVersionString</key>
-				<string>13.0.2</string>
-				<key>CFBundleVersion</key>
-				<string>13.0.2</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Insomnia.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Insomnia.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Insomnia</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>13.0.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Explore REST and GraphQL APIs.</string>
-		<key>display_name</key>
-		<string>Insomnia </string>
-		<key>installer_item_hash</key>
-		<string>4af7e5a14c241b28a2c16370bb6cb0b53c4a9fb00c4814a95e413a2c67a584d7</string>
-		<key>installer_item_location</key>
-		<string>apps/Insomnia/Insomnia.Core-13.0.2__1.dmg</string>
-		<key>installer_item_size</key>
-		<integer>357834</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.insomnia.app</string>
-				<key>CFBundleName</key>
-				<string>Insomnia</string>
-				<key>CFBundleShortVersionString</key>
-				<string>13.0.2</string>
-				<key>CFBundleVersion</key>
-				<string>13.0.2</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Insomnia.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Insomnia.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Insomnia</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>13.0.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Explore REST and GraphQL APIs.</string>
-		<key>display_name</key>
-		<string>Insomnia </string>
-		<key>installer_item_hash</key>
-		<string>4af7e5a14c241b28a2c16370bb6cb0b53c4a9fb00c4814a95e413a2c67a584d7</string>
-		<key>installer_item_location</key>
-		<string>apps/Insomnia/Insomnia.Core-13.0.2__3.dmg</string>
-		<key>installer_item_size</key>
-		<integer>357834</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.insomnia.app</string>
-				<key>CFBundleName</key>
-				<string>Insomnia</string>
-				<key>CFBundleShortVersionString</key>
-				<string>13.0.2</string>
-				<key>CFBundleVersion</key>
-				<string>13.0.2</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Insomnia.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Insomnia.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Insomnia</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>13.0.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Explore REST and GraphQL APIs.</string>
-		<key>display_name</key>
-		<string>Insomnia </string>
-		<key>installer_item_hash</key>
-		<string>4af7e5a14c241b28a2c16370bb6cb0b53c4a9fb00c4814a95e413a2c67a584d7</string>
-		<key>installer_item_location</key>
-		<string>apps/Insomnia/Insomnia.Core-13.0.2__13.dmg</string>
-		<key>installer_item_size</key>
-		<integer>357834</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.insomnia.app</string>
-				<key>CFBundleName</key>
-				<string>Insomnia</string>
-				<key>CFBundleShortVersionString</key>
-				<string>13.0.2</string>
-				<key>CFBundleVersion</key>
-				<string>13.0.2</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Insomnia.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Insomnia.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Insomnia</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>13.0.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Explore REST and GraphQL APIs.</string>
-		<key>display_name</key>
-		<string>Insomnia </string>
-		<key>installer_item_hash</key>
-		<string>4af7e5a14c241b28a2c16370bb6cb0b53c4a9fb00c4814a95e413a2c67a584d7</string>
-		<key>installer_item_location</key>
-		<string>apps/Insomnia/Insomnia.Core-13.0.2__7.dmg</string>
-		<key>installer_item_size</key>
-		<integer>357834</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.insomnia.app</string>
-				<key>CFBundleName</key>
-				<string>Insomnia</string>
-				<key>CFBundleShortVersionString</key>
-				<string>13.0.2</string>
-				<key>CFBundleVersion</key>
-				<string>13.0.2</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Insomnia.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Insomnia.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Insomnia</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>13.0.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Explore REST and GraphQL APIs.</string>
-		<key>display_name</key>
-		<string>Insomnia </string>
-		<key>installer_item_hash</key>
-		<string>4af7e5a14c241b28a2c16370bb6cb0b53c4a9fb00c4814a95e413a2c67a584d7</string>
-		<key>installer_item_location</key>
-		<string>apps/Insomnia/Insomnia.Core-13.0.2__5.dmg</string>
-		<key>installer_item_size</key>
-		<integer>357834</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.insomnia.app</string>
-				<key>CFBundleName</key>
-				<string>Insomnia</string>
-				<key>CFBundleShortVersionString</key>
-				<string>13.0.2</string>
-				<key>CFBundleVersion</key>
-				<string>13.0.2</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Insomnia.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Insomnia.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Insomnia</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>13.0.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Explore REST and GraphQL APIs.</string>
-		<key>display_name</key>
-		<string>Insomnia </string>
-		<key>installer_item_hash</key>
 		<string>26ad3d7cac3aeeef8cccf1ddeea0af821be0df704776d54323970e7fde33e564</string>
 		<key>installer_item_location</key>
 		<string>apps/Insomnia/Insomnia.Core-11.6.2__1.dmg</string>
@@ -43344,68 +41832,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>display_name</key>
 		<string>Insomnia </string>
 		<key>installer_item_hash</key>
-		<string>4af7e5a14c241b28a2c16370bb6cb0b53c4a9fb00c4814a95e413a2c67a584d7</string>
-		<key>installer_item_location</key>
-		<string>apps/Insomnia/Insomnia.Core-13.0.2__9.dmg</string>
-		<key>installer_item_size</key>
-		<integer>357834</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.insomnia.app</string>
-				<key>CFBundleName</key>
-				<string>Insomnia</string>
-				<key>CFBundleShortVersionString</key>
-				<string>13.0.2</string>
-				<key>CFBundleVersion</key>
-				<string>13.0.2</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Insomnia.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Insomnia.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Insomnia</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>13.0.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Explore REST and GraphQL APIs.</string>
-		<key>display_name</key>
-		<string>Insomnia </string>
-		<key>installer_item_hash</key>
 		<string>df094a391b2424f1713f2d9401136b6cb52b7b0c5128f636b107d35fc0d9076f</string>
 		<key>installer_item_location</key>
 		<string>apps/Insomnia/Insomnia.Core-10.3.0.dmg</string>
@@ -43455,68 +41881,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<true/>
 		<key>version</key>
 		<string>10.3.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Explore REST and GraphQL APIs.</string>
-		<key>display_name</key>
-		<string>Insomnia </string>
-		<key>installer_item_hash</key>
-		<string>4af7e5a14c241b28a2c16370bb6cb0b53c4a9fb00c4814a95e413a2c67a584d7</string>
-		<key>installer_item_location</key>
-		<string>apps/Insomnia/Insomnia.Core-13.0.2__8.dmg</string>
-		<key>installer_item_size</key>
-		<integer>357834</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.insomnia.app</string>
-				<key>CFBundleName</key>
-				<string>Insomnia</string>
-				<key>CFBundleShortVersionString</key>
-				<string>13.0.2</string>
-				<key>CFBundleVersion</key>
-				<string>13.0.2</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Insomnia.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Insomnia.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Insomnia</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>13.0.2</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -47844,51 +46208,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>catalogs</key>
 		<array>
 			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Productivity</string>
-		<key>description</key>
-		<string>Microsoft Edge web browser</string>
-		<key>developer</key>
-		<string>Microsoft</string>
-		<key>display_name</key>
-		<string>Microsoft Edge</string>
-		<key>installed_size</key>
-		<integer>927155</integer>
-		<key>installer_item_hash</key>
-		<string>306589188aa9cfbe9c422410f27d374ae2321dd8aef80d87827ea8afd3ef902b</string>
-		<key>installer_item_location</key>
-		<string>apps/Microsoft/Microsoft_Edge-150.0.4078.80.pkg</string>
-		<key>installer_item_size</key>
-		<integer>408771</integer>
-		<key>minimum_os_version</key>
-		<string>10.10.0</string>
-		<key>name</key>
-		<string>MicrosoftEdge</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>927155</integer>
-				<key>packageid</key>
-				<string>com.microsoft.edgemac</string>
-				<key>version</key>
-				<string>150.0.4078.80</string>
-			</dict>
-		</array>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>150.0.4078.80</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
 			<string>development</string>
 		</array>
 		<key>category</key>
@@ -47945,13 +46264,13 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>display_name</key>
 		<string>Microsoft Edge</string>
 		<key>installed_size</key>
-		<integer>926936</integer>
+		<integer>927246</integer>
 		<key>installer_item_hash</key>
-		<string>68929c051651b056123369874fe5f6bea0a268500e6c506f6922b2d539a2fd86</string>
+		<string>4a83663914688acea69c66632658494a842c8d136455cd2e20fb36df4f5230a9</string>
 		<key>installer_item_location</key>
-		<string>apps/Microsoft/Microsoft_Edge-150.0.4078.65.pkg</string>
+		<string>apps/Microsoft/Microsoft_Edge-150.0.4078.99.pkg</string>
 		<key>installer_item_size</key>
-		<integer>408670</integer>
+		<integer>408821</integer>
 		<key>minimum_os_version</key>
 		<string>10.10.0</string>
 		<key>name</key>
@@ -47960,11 +46279,11 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>926936</integer>
+				<integer>927246</integer>
 				<key>packageid</key>
 				<string>com.microsoft.edgemac</string>
 				<key>version</key>
-				<string>150.0.4078.65</string>
+				<string>150.0.4078.99</string>
 			</dict>
 		</array>
 		<key>uninstall_method</key>
@@ -47972,7 +46291,7 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>150.0.4078.65</string>
+		<string>150.0.4078.99</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -47990,13 +46309,13 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>display_name</key>
 		<string>Microsoft Edge</string>
 		<key>installed_size</key>
-		<integer>926936</integer>
+		<integer>927219</integer>
 		<key>installer_item_hash</key>
-		<string>68929c051651b056123369874fe5f6bea0a268500e6c506f6922b2d539a2fd86</string>
+		<string>fd44cf2baf74d0b7eddc964770218fef6b92c9cb39c437a404ca05697f7cc32f</string>
 		<key>installer_item_location</key>
-		<string>apps/Microsoft/Microsoft_Edge-150.0.4078.65__1.pkg</string>
+		<string>apps/Microsoft/Microsoft_Edge-150.0.4078.96.pkg</string>
 		<key>installer_item_size</key>
-		<integer>408670</integer>
+		<integer>408819</integer>
 		<key>minimum_os_version</key>
 		<string>10.10.0</string>
 		<key>name</key>
@@ -48005,11 +46324,11 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>926936</integer>
+				<integer>927219</integer>
 				<key>packageid</key>
 				<string>com.microsoft.edgemac</string>
 				<key>version</key>
-				<string>150.0.4078.65</string>
+				<string>150.0.4078.96</string>
 			</dict>
 		</array>
 		<key>uninstall_method</key>
@@ -48017,97 +46336,7 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>150.0.4078.65</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Productivity</string>
-		<key>description</key>
-		<string>Microsoft Edge web browser</string>
-		<key>developer</key>
-		<string>Microsoft</string>
-		<key>display_name</key>
-		<string>Microsoft Edge</string>
-		<key>installed_size</key>
-		<integer>926936</integer>
-		<key>installer_item_hash</key>
-		<string>68929c051651b056123369874fe5f6bea0a268500e6c506f6922b2d539a2fd86</string>
-		<key>installer_item_location</key>
-		<string>apps/Microsoft/Microsoft_Edge-150.0.4078.65__3.pkg</string>
-		<key>installer_item_size</key>
-		<integer>408670</integer>
-		<key>minimum_os_version</key>
-		<string>10.10.0</string>
-		<key>name</key>
-		<string>MicrosoftEdge</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>926936</integer>
-				<key>packageid</key>
-				<string>com.microsoft.edgemac</string>
-				<key>version</key>
-				<string>150.0.4078.65</string>
-			</dict>
-		</array>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>150.0.4078.65</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Productivity</string>
-		<key>description</key>
-		<string>Microsoft Edge web browser</string>
-		<key>developer</key>
-		<string>Microsoft</string>
-		<key>display_name</key>
-		<string>Microsoft Edge</string>
-		<key>installed_size</key>
-		<integer>926936</integer>
-		<key>installer_item_hash</key>
-		<string>68929c051651b056123369874fe5f6bea0a268500e6c506f6922b2d539a2fd86</string>
-		<key>installer_item_location</key>
-		<string>apps/Microsoft/Microsoft_Edge-150.0.4078.65__2.pkg</string>
-		<key>installer_item_size</key>
-		<integer>408670</integer>
-		<key>minimum_os_version</key>
-		<string>10.10.0</string>
-		<key>name</key>
-		<string>MicrosoftEdge</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>926936</integer>
-				<key>packageid</key>
-				<string>com.microsoft.edgemac</string>
-				<key>version</key>
-				<string>150.0.4078.65</string>
-			</dict>
-		</array>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>150.0.4078.65</string>
+		<string>150.0.4078.96</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -48123,11 +46352,11 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>display_name</key>
 		<string>Claude</string>
 		<key>installer_item_hash</key>
-		<string>e48b5119b930eae5d88ef1006366058fb6651416e365683da060935f885ddb4c</string>
+		<string>6ba914d8230aa4d90e01fe3e557238300948d713facca231f2c718dfc5b77478</string>
 		<key>installer_item_location</key>
-		<string>apps/Claude/Claude-1.22209.0.dmg</string>
+		<string>apps/Claude/Claude-1.24012.9.dmg</string>
 		<key>installer_item_size</key>
-		<integer>332188</integer>
+		<integer>332855</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -48138,9 +46367,9 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 				<key>CFBundleName</key>
 				<string>Claude</string>
 				<key>CFBundleShortVersionString</key>
-				<string>1.22209.0</string>
+				<string>1.24012.9</string>
 				<key>CFBundleVersion</key>
-				<string>1.22209.0</string>
+				<string>1.24012.9</string>
 				<key>minosversion</key>
 				<string>12.0</string>
 				<key>path</key>
@@ -48173,7 +46402,7 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>1.22209.0</string>
+		<string>1.24012.9</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -48189,11 +46418,11 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>display_name</key>
 		<string>Claude</string>
 		<key>installer_item_hash</key>
-		<string>44e852f6c9f4fb9ce32e9ce7888a74ee8c039529d794fe764c86a3c215cf8635</string>
+		<string>d0b587f9dba49ff290153ab3e618d10e69de07ce01e3ed22366af0a2a9c3854b</string>
 		<key>installer_item_location</key>
-		<string>apps/Claude/Claude-1.21459.1.dmg</string>
+		<string>apps/Claude/Claude-1.24012.1.dmg</string>
 		<key>installer_item_size</key>
-		<integer>328912</integer>
+		<integer>333010</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -48204,9 +46433,9 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 				<key>CFBundleName</key>
 				<string>Claude</string>
 				<key>CFBundleShortVersionString</key>
-				<string>1.21459.1</string>
+				<string>1.24012.1</string>
 				<key>CFBundleVersion</key>
-				<string>1.21459.1</string>
+				<string>1.24012.1</string>
 				<key>minosversion</key>
 				<string>12.0</string>
 				<key>path</key>
@@ -48239,7 +46468,7 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>1.21459.1</string>
+		<string>1.24012.1</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -50865,11 +49094,11 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>display_name</key>
 		<string>Codex</string>
 		<key>installer_item_hash</key>
-		<string>ff459150991612007549270d2d28c5e78cec6bd6ac200a7ada5ed6c031369b87</string>
+		<string>e8d55e25c898224401f669400cfd50dd7e5f21b6cc501dd87f1396ecae3338e8</string>
 		<key>installer_item_location</key>
-		<string>apps/Codex/Codex-26.715.21425.dmg</string>
+		<string>apps/Codex/Codex-26.721.30844.dmg</string>
 		<key>installer_item_size</key>
-		<integer>604157</integer>
+		<integer>579966</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -50880,9 +49109,9 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 				<key>CFBundleName</key>
 				<string>ChatGPT</string>
 				<key>CFBundleShortVersionString</key>
-				<string>26.715.21425</string>
+				<string>26.721.30844</string>
 				<key>CFBundleVersion</key>
-				<string>5488</string>
+				<string>5813</string>
 				<key>minosversion</key>
 				<string>12.0</string>
 				<key>path</key>
@@ -50915,7 +49144,7 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>26.715.21425</string>
+		<string>26.721.30844</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -50931,11 +49160,11 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>display_name</key>
 		<string>Codex</string>
 		<key>installer_item_hash</key>
-		<string>40e34814e74e30943c209ebd4da94cd4de3581a52c5bffbe2bcf2e488d6361c6</string>
+		<string>ae864e2def7db56d0bb77a876a5cbe4e4c2f554ccc654cec921b946892583c0a</string>
 		<key>installer_item_location</key>
-		<string>apps/Codex/Codex-26.707.72221.dmg</string>
+		<string>apps/Codex/Codex-26.721.41059.dmg</string>
 		<key>installer_item_size</key>
-		<integer>601300</integer>
+		<integer>579943</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -50946,9 +49175,9 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 				<key>CFBundleName</key>
 				<string>ChatGPT</string>
 				<key>CFBundleShortVersionString</key>
-				<string>26.707.72221</string>
+				<string>26.721.41059</string>
 				<key>CFBundleVersion</key>
-				<string>5307</string>
+				<string>5848</string>
 				<key>minosversion</key>
 				<string>12.0</string>
 				<key>path</key>
@@ -50981,7 +49210,7 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>26.707.72221</string>
+		<string>26.721.41059</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -51185,6 +49414,72 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>catalogs</key>
 		<array>
 			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Browsers</string>
+		<key>description</key>
+		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
+		<key>developer</key>
+		<string>Brave Software Inc.</string>
+		<key>display_name</key>
+		<string>Brave Browser</string>
+		<key>installer_item_hash</key>
+		<string>22aa51a0aff41352f33e904ed642fccfdc43125a2c4f207de33c2aa9bd0964b2</string>
+		<key>installer_item_location</key>
+		<string>apps/Brave/Brave-150.1.92.143.dmg</string>
+		<key>installer_item_size</key>
+		<integer>243726</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.brave.Browser</string>
+				<key>CFBundleName</key>
+				<string>Brave</string>
+				<key>CFBundleShortVersionString</key>
+				<string>150.1.92.143</string>
+				<key>CFBundleVersion</key>
+				<string>192.143</string>
+				<key>minosversion</key>
+				<string>12.0</string>
+				<key>path</key>
+				<string>/Applications/Brave Browser.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Brave Browser.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.0</string>
+		<key>name</key>
+		<string>Brave</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>150.1.92.143</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
 			<string>development</string>
 		</array>
 		<key>category</key>
@@ -51262,72 +49557,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>display_name</key>
 		<string>Brave Browser</string>
 		<key>installer_item_hash</key>
-		<string>04e2e16bcf0a8256d88239d1b76efac3f7c1bbd8651e52ca5afbaab52cb710de</string>
-		<key>installer_item_location</key>
-		<string>apps/Brave/Brave-150.1.92.140.dmg</string>
-		<key>installer_item_size</key>
-		<integer>243455</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.brave.Browser</string>
-				<key>CFBundleName</key>
-				<string>Brave</string>
-				<key>CFBundleShortVersionString</key>
-				<string>150.1.92.140</string>
-				<key>CFBundleVersion</key>
-				<string>192.140</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Brave Browser.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Brave Browser.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Brave</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>150.1.92.140</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Browsers</string>
-		<key>description</key>
-		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
-		<key>developer</key>
-		<string>Brave Software Inc.</string>
-		<key>display_name</key>
-		<string>Brave Browser</string>
-		<key>installer_item_hash</key>
 		<string>0be69f2c1e4a645f96ef46d30932f68f69e5b65d1ed32c3f241152d77030cdbc</string>
 		<key>installer_item_location</key>
 		<string>apps/Brave/Brave-129.1.70.126.dmg</string>
@@ -51377,6 +49606,72 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<true/>
 		<key>version</key>
 		<string>129.1.70.126</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Browsers</string>
+		<key>description</key>
+		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
+		<key>developer</key>
+		<string>Brave Software Inc.</string>
+		<key>display_name</key>
+		<string>Brave Browser</string>
+		<key>installer_item_hash</key>
+		<string>d093e567903efb60b9606d1796066883e29383847e2672fe341361d66434785c</string>
+		<key>installer_item_location</key>
+		<string>apps/Brave/Brave-150.1.92.144.dmg</string>
+		<key>installer_item_size</key>
+		<integer>243725</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.brave.Browser</string>
+				<key>CFBundleName</key>
+				<string>Brave</string>
+				<key>CFBundleShortVersionString</key>
+				<string>150.1.92.144</string>
+				<key>CFBundleVersion</key>
+				<string>192.144</string>
+				<key>minosversion</key>
+				<string>12.0</string>
+				<key>path</key>
+				<string>/Applications/Brave Browser.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Brave Browser.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.0</string>
+		<key>name</key>
+		<string>Brave</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>150.1.92.144</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -64584,24 +62879,24 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>display_name</key>
 		<string>PowerShell</string>
 		<key>installed_size</key>
-		<integer>180108</integer>
+		<integer>180122</integer>
 		<key>installer_item_hash</key>
-		<string>1eea7c558aed389b59370b62e78228e3d96869afd9a71fa7c1fc7833d024cd0b</string>
+		<string>ba9180f7e0dedd10aca7955e82e2f4a95ca5a11756860386d847aa23bbcc8731</string>
 		<key>installer_item_location</key>
-		<string>apps/PowerShell/PowerShell-x64-7.4.17.pkg</string>
+		<string>apps/PowerShell/PowerShell-x64-7.4.18.pkg</string>
 		<key>installer_item_size</key>
-		<integer>70549</integer>
+		<integer>70561</integer>
 		<key>name</key>
 		<string>PowerShell</string>
 		<key>receipts</key>
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>180108</integer>
+				<integer>180122</integer>
 				<key>packageid</key>
 				<string>com.microsoft.powershell</string>
 				<key>version</key>
-				<string>7.4.17</string>
+				<string>7.4.18</string>
 			</dict>
 		</array>
 		<key>unattended_install</key>
@@ -64611,222 +62906,7 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>7.4.17</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>PowerShell for every system!</string>
-		<key>developer</key>
-		<string>PowerShell Team</string>
-		<key>display_name</key>
-		<string>PowerShell</string>
-		<key>installed_size</key>
-		<integer>180108</integer>
-		<key>installer_item_hash</key>
-		<string>1eea7c558aed389b59370b62e78228e3d96869afd9a71fa7c1fc7833d024cd0b</string>
-		<key>installer_item_location</key>
-		<string>apps/PowerShell/PowerShell-x64-7.4.17__3.pkg</string>
-		<key>installer_item_size</key>
-		<integer>70549</integer>
-		<key>name</key>
-		<string>PowerShell</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>180108</integer>
-				<key>packageid</key>
-				<string>com.microsoft.powershell</string>
-				<key>version</key>
-				<string>7.4.17</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.4.17</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>PowerShell for every system!</string>
-		<key>developer</key>
-		<string>PowerShell Team</string>
-		<key>display_name</key>
-		<string>PowerShell</string>
-		<key>installed_size</key>
-		<integer>180108</integer>
-		<key>installer_item_hash</key>
-		<string>1eea7c558aed389b59370b62e78228e3d96869afd9a71fa7c1fc7833d024cd0b</string>
-		<key>installer_item_location</key>
-		<string>apps/PowerShell/PowerShell-x64-7.4.17__1.pkg</string>
-		<key>installer_item_size</key>
-		<integer>70549</integer>
-		<key>name</key>
-		<string>PowerShell</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>180108</integer>
-				<key>packageid</key>
-				<string>com.microsoft.powershell</string>
-				<key>version</key>
-				<string>7.4.17</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.4.17</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>PowerShell for every system!</string>
-		<key>developer</key>
-		<string>PowerShell Team</string>
-		<key>display_name</key>
-		<string>PowerShell</string>
-		<key>installed_size</key>
-		<integer>180108</integer>
-		<key>installer_item_hash</key>
-		<string>1eea7c558aed389b59370b62e78228e3d96869afd9a71fa7c1fc7833d024cd0b</string>
-		<key>installer_item_location</key>
-		<string>apps/PowerShell/PowerShell-x64-7.4.17__5.pkg</string>
-		<key>installer_item_size</key>
-		<integer>70549</integer>
-		<key>name</key>
-		<string>PowerShell</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>180108</integer>
-				<key>packageid</key>
-				<string>com.microsoft.powershell</string>
-				<key>version</key>
-				<string>7.4.17</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.4.17</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>PowerShell for every system!</string>
-		<key>developer</key>
-		<string>PowerShell Team</string>
-		<key>display_name</key>
-		<string>PowerShell</string>
-		<key>installed_size</key>
-		<integer>180108</integer>
-		<key>installer_item_hash</key>
-		<string>1eea7c558aed389b59370b62e78228e3d96869afd9a71fa7c1fc7833d024cd0b</string>
-		<key>installer_item_location</key>
-		<string>apps/PowerShell/PowerShell-x64-7.4.17__2.pkg</string>
-		<key>installer_item_size</key>
-		<integer>70549</integer>
-		<key>name</key>
-		<string>PowerShell</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>180108</integer>
-				<key>packageid</key>
-				<string>com.microsoft.powershell</string>
-				<key>version</key>
-				<string>7.4.17</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.4.17</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>PowerShell for every system!</string>
-		<key>developer</key>
-		<string>PowerShell Team</string>
-		<key>display_name</key>
-		<string>PowerShell</string>
-		<key>installed_size</key>
-		<integer>180108</integer>
-		<key>installer_item_hash</key>
-		<string>1eea7c558aed389b59370b62e78228e3d96869afd9a71fa7c1fc7833d024cd0b</string>
-		<key>installer_item_location</key>
-		<string>apps/PowerShell/PowerShell-x64-7.4.17__4.pkg</string>
-		<key>installer_item_size</key>
-		<integer>70549</integer>
-		<key>name</key>
-		<string>PowerShell</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>180108</integer>
-				<key>packageid</key>
-				<string>com.microsoft.powershell</string>
-				<key>version</key>
-				<string>7.4.17</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.4.17</string>
+		<string>7.4.18</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -69414,13 +67494,13 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<key>display_name</key>
 		<string>Zoom</string>
 		<key>installed_size</key>
-		<integer>815813</integer>
+		<integer>814320</integer>
 		<key>installer_item_hash</key>
-		<string>941e3afe915188030821042d592e725e33a7f3fd09edc6e22c863d9c1736e359</string>
+		<string>98b28adbe20c5ea17b05bd4091607813afb5d8fea9697a4895f1f06fb591c497</string>
 		<key>installer_item_location</key>
-		<string>apps/Zoom/Zoom-7.1.0.83064__9.pkg</string>
+		<string>apps/Zoom/Zoom-7.1.5.84650.pkg</string>
 		<key>installer_item_size</key>
-		<integer>355187</integer>
+		<integer>354526</integer>
 		<key>installs</key>
 		<array>
 			<dict>
@@ -69429,9 +67509,9 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 				<key>CFBundleName</key>
 				<string>zoom.us</string>
 				<key>CFBundleShortVersionString</key>
-				<string>7.1.0 (83064)</string>
+				<string>7.1.5 (84650)</string>
 				<key>CFBundleVersion</key>
-				<string>7.1.0.83064</string>
+				<string>7.1.5.84650</string>
 				<key>minosversion</key>
 				<string>10.15</string>
 				<key>path</key>
@@ -69454,11 +67534,11 @@ rm -rf /Applications/zoom.us.app
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>815813</integer>
+				<integer>814320</integer>
 				<key>packageid</key>
 				<string>us.zoom.pkg.videomeeting</string>
 				<key>version</key>
-				<string>7.1.0.83064</string>
+				<string>7.1.5.84650</string>
 			</dict>
 		</array>
 		<key>unattended_install</key>
@@ -69470,1209 +67550,7 @@ rm -rf /Applications/zoom.us.app
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>7.1.0.83064</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>zoom.us</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>The Zoom app provides cloud-hosted video conferencing, plus online meetings and group messaging.</string>
-		<key>developer</key>
-		<string>Zoom Video Communications, Inc.</string>
-		<key>display_name</key>
-		<string>Zoom</string>
-		<key>installed_size</key>
-		<integer>815813</integer>
-		<key>installer_item_hash</key>
-		<string>941e3afe915188030821042d592e725e33a7f3fd09edc6e22c863d9c1736e359</string>
-		<key>installer_item_location</key>
-		<string>apps/Zoom/Zoom-7.1.0.83064__8.pkg</string>
-		<key>installer_item_size</key>
-		<integer>355187</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>us.zoom.xos</string>
-				<key>CFBundleName</key>
-				<string>zoom.us</string>
-				<key>CFBundleShortVersionString</key>
-				<string>7.1.0 (83064)</string>
-				<key>CFBundleVersion</key>
-				<string>7.1.0.83064</string>
-				<key>minosversion</key>
-				<string>10.15</string>
-				<key>path</key>
-				<string>/Applications/zoom.us.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.15</string>
-		<key>name</key>
-		<string>Zoom</string>
-		<key>postuninstall_script</key>
-		<string>#!/bin/sh
-rm -rf /Applications/zoom.us.app
-</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>815813</integer>
-				<key>packageid</key>
-				<string>us.zoom.pkg.videomeeting</string>
-				<key>version</key>
-				<string>7.1.0.83064</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.1.0.83064</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>zoom.us</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>The Zoom app provides cloud-hosted video conferencing, plus online meetings and group messaging.</string>
-		<key>developer</key>
-		<string>Zoom Video Communications, Inc.</string>
-		<key>display_name</key>
-		<string>Zoom</string>
-		<key>installed_size</key>
-		<integer>815813</integer>
-		<key>installer_item_hash</key>
-		<string>941e3afe915188030821042d592e725e33a7f3fd09edc6e22c863d9c1736e359</string>
-		<key>installer_item_location</key>
-		<string>apps/Zoom/Zoom-7.1.0.83064.pkg</string>
-		<key>installer_item_size</key>
-		<integer>355187</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>us.zoom.xos</string>
-				<key>CFBundleName</key>
-				<string>zoom.us</string>
-				<key>CFBundleShortVersionString</key>
-				<string>7.1.0 (83064)</string>
-				<key>CFBundleVersion</key>
-				<string>7.1.0.83064</string>
-				<key>minosversion</key>
-				<string>10.15</string>
-				<key>path</key>
-				<string>/Applications/zoom.us.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.15</string>
-		<key>name</key>
-		<string>Zoom</string>
-		<key>postuninstall_script</key>
-		<string>#!/bin/sh
-rm -rf /Applications/zoom.us.app
-</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>815813</integer>
-				<key>packageid</key>
-				<string>us.zoom.pkg.videomeeting</string>
-				<key>version</key>
-				<string>7.1.0.83064</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.1.0.83064</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>zoom.us</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>The Zoom app provides cloud-hosted video conferencing, plus online meetings and group messaging.</string>
-		<key>developer</key>
-		<string>Zoom Video Communications, Inc.</string>
-		<key>display_name</key>
-		<string>Zoom</string>
-		<key>installed_size</key>
-		<integer>815813</integer>
-		<key>installer_item_hash</key>
-		<string>941e3afe915188030821042d592e725e33a7f3fd09edc6e22c863d9c1736e359</string>
-		<key>installer_item_location</key>
-		<string>apps/Zoom/Zoom-7.1.0.83064__2.pkg</string>
-		<key>installer_item_size</key>
-		<integer>355187</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>us.zoom.xos</string>
-				<key>CFBundleName</key>
-				<string>zoom.us</string>
-				<key>CFBundleShortVersionString</key>
-				<string>7.1.0 (83064)</string>
-				<key>CFBundleVersion</key>
-				<string>7.1.0.83064</string>
-				<key>minosversion</key>
-				<string>10.15</string>
-				<key>path</key>
-				<string>/Applications/zoom.us.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.15</string>
-		<key>name</key>
-		<string>Zoom</string>
-		<key>postuninstall_script</key>
-		<string>#!/bin/sh
-rm -rf /Applications/zoom.us.app
-</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>815813</integer>
-				<key>packageid</key>
-				<string>us.zoom.pkg.videomeeting</string>
-				<key>version</key>
-				<string>7.1.0.83064</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.1.0.83064</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>zoom.us</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>The Zoom app provides cloud-hosted video conferencing, plus online meetings and group messaging.</string>
-		<key>developer</key>
-		<string>Zoom Video Communications, Inc.</string>
-		<key>display_name</key>
-		<string>Zoom</string>
-		<key>installed_size</key>
-		<integer>815813</integer>
-		<key>installer_item_hash</key>
-		<string>941e3afe915188030821042d592e725e33a7f3fd09edc6e22c863d9c1736e359</string>
-		<key>installer_item_location</key>
-		<string>apps/Zoom/Zoom-7.1.0.83064__10.pkg</string>
-		<key>installer_item_size</key>
-		<integer>355187</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>us.zoom.xos</string>
-				<key>CFBundleName</key>
-				<string>zoom.us</string>
-				<key>CFBundleShortVersionString</key>
-				<string>7.1.0 (83064)</string>
-				<key>CFBundleVersion</key>
-				<string>7.1.0.83064</string>
-				<key>minosversion</key>
-				<string>10.15</string>
-				<key>path</key>
-				<string>/Applications/zoom.us.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.15</string>
-		<key>name</key>
-		<string>Zoom</string>
-		<key>postuninstall_script</key>
-		<string>#!/bin/sh
-rm -rf /Applications/zoom.us.app
-</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>815813</integer>
-				<key>packageid</key>
-				<string>us.zoom.pkg.videomeeting</string>
-				<key>version</key>
-				<string>7.1.0.83064</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.1.0.83064</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>zoom.us</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>The Zoom app provides cloud-hosted video conferencing, plus online meetings and group messaging.</string>
-		<key>developer</key>
-		<string>Zoom Video Communications, Inc.</string>
-		<key>display_name</key>
-		<string>Zoom</string>
-		<key>installed_size</key>
-		<integer>815813</integer>
-		<key>installer_item_hash</key>
-		<string>941e3afe915188030821042d592e725e33a7f3fd09edc6e22c863d9c1736e359</string>
-		<key>installer_item_location</key>
-		<string>apps/Zoom/Zoom-7.1.0.83064__12.pkg</string>
-		<key>installer_item_size</key>
-		<integer>355187</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>us.zoom.xos</string>
-				<key>CFBundleName</key>
-				<string>zoom.us</string>
-				<key>CFBundleShortVersionString</key>
-				<string>7.1.0 (83064)</string>
-				<key>CFBundleVersion</key>
-				<string>7.1.0.83064</string>
-				<key>minosversion</key>
-				<string>10.15</string>
-				<key>path</key>
-				<string>/Applications/zoom.us.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.15</string>
-		<key>name</key>
-		<string>Zoom</string>
-		<key>postuninstall_script</key>
-		<string>#!/bin/sh
-rm -rf /Applications/zoom.us.app
-</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>815813</integer>
-				<key>packageid</key>
-				<string>us.zoom.pkg.videomeeting</string>
-				<key>version</key>
-				<string>7.1.0.83064</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.1.0.83064</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>zoom.us</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>The Zoom app provides cloud-hosted video conferencing, plus online meetings and group messaging.</string>
-		<key>developer</key>
-		<string>Zoom Video Communications, Inc.</string>
-		<key>display_name</key>
-		<string>Zoom</string>
-		<key>installed_size</key>
-		<integer>815813</integer>
-		<key>installer_item_hash</key>
-		<string>941e3afe915188030821042d592e725e33a7f3fd09edc6e22c863d9c1736e359</string>
-		<key>installer_item_location</key>
-		<string>apps/Zoom/Zoom-7.1.0.83064__4.pkg</string>
-		<key>installer_item_size</key>
-		<integer>355187</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>us.zoom.xos</string>
-				<key>CFBundleName</key>
-				<string>zoom.us</string>
-				<key>CFBundleShortVersionString</key>
-				<string>7.1.0 (83064)</string>
-				<key>CFBundleVersion</key>
-				<string>7.1.0.83064</string>
-				<key>minosversion</key>
-				<string>10.15</string>
-				<key>path</key>
-				<string>/Applications/zoom.us.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.15</string>
-		<key>name</key>
-		<string>Zoom</string>
-		<key>postuninstall_script</key>
-		<string>#!/bin/sh
-rm -rf /Applications/zoom.us.app
-</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>815813</integer>
-				<key>packageid</key>
-				<string>us.zoom.pkg.videomeeting</string>
-				<key>version</key>
-				<string>7.1.0.83064</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.1.0.83064</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>zoom.us</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>The Zoom app provides cloud-hosted video conferencing, plus online meetings and group messaging.</string>
-		<key>developer</key>
-		<string>Zoom Video Communications, Inc.</string>
-		<key>display_name</key>
-		<string>Zoom</string>
-		<key>installed_size</key>
-		<integer>815813</integer>
-		<key>installer_item_hash</key>
-		<string>941e3afe915188030821042d592e725e33a7f3fd09edc6e22c863d9c1736e359</string>
-		<key>installer_item_location</key>
-		<string>apps/Zoom/Zoom-7.1.0.83064__14.pkg</string>
-		<key>installer_item_size</key>
-		<integer>355187</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>us.zoom.xos</string>
-				<key>CFBundleName</key>
-				<string>zoom.us</string>
-				<key>CFBundleShortVersionString</key>
-				<string>7.1.0 (83064)</string>
-				<key>CFBundleVersion</key>
-				<string>7.1.0.83064</string>
-				<key>minosversion</key>
-				<string>10.15</string>
-				<key>path</key>
-				<string>/Applications/zoom.us.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.15</string>
-		<key>name</key>
-		<string>Zoom</string>
-		<key>postuninstall_script</key>
-		<string>#!/bin/sh
-rm -rf /Applications/zoom.us.app
-</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>815813</integer>
-				<key>packageid</key>
-				<string>us.zoom.pkg.videomeeting</string>
-				<key>version</key>
-				<string>7.1.0.83064</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.1.0.83064</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>zoom.us</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>The Zoom app provides cloud-hosted video conferencing, plus online meetings and group messaging.</string>
-		<key>developer</key>
-		<string>Zoom Video Communications, Inc.</string>
-		<key>display_name</key>
-		<string>Zoom</string>
-		<key>installed_size</key>
-		<integer>815813</integer>
-		<key>installer_item_hash</key>
-		<string>941e3afe915188030821042d592e725e33a7f3fd09edc6e22c863d9c1736e359</string>
-		<key>installer_item_location</key>
-		<string>apps/Zoom/Zoom-7.1.0.83064__6.pkg</string>
-		<key>installer_item_size</key>
-		<integer>355187</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>us.zoom.xos</string>
-				<key>CFBundleName</key>
-				<string>zoom.us</string>
-				<key>CFBundleShortVersionString</key>
-				<string>7.1.0 (83064)</string>
-				<key>CFBundleVersion</key>
-				<string>7.1.0.83064</string>
-				<key>minosversion</key>
-				<string>10.15</string>
-				<key>path</key>
-				<string>/Applications/zoom.us.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.15</string>
-		<key>name</key>
-		<string>Zoom</string>
-		<key>postuninstall_script</key>
-		<string>#!/bin/sh
-rm -rf /Applications/zoom.us.app
-</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>815813</integer>
-				<key>packageid</key>
-				<string>us.zoom.pkg.videomeeting</string>
-				<key>version</key>
-				<string>7.1.0.83064</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.1.0.83064</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>zoom.us</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>The Zoom app provides cloud-hosted video conferencing, plus online meetings and group messaging.</string>
-		<key>developer</key>
-		<string>Zoom Video Communications, Inc.</string>
-		<key>display_name</key>
-		<string>Zoom</string>
-		<key>installed_size</key>
-		<integer>815813</integer>
-		<key>installer_item_hash</key>
-		<string>941e3afe915188030821042d592e725e33a7f3fd09edc6e22c863d9c1736e359</string>
-		<key>installer_item_location</key>
-		<string>apps/Zoom/Zoom-7.1.0.83064__13.pkg</string>
-		<key>installer_item_size</key>
-		<integer>355187</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>us.zoom.xos</string>
-				<key>CFBundleName</key>
-				<string>zoom.us</string>
-				<key>CFBundleShortVersionString</key>
-				<string>7.1.0 (83064)</string>
-				<key>CFBundleVersion</key>
-				<string>7.1.0.83064</string>
-				<key>minosversion</key>
-				<string>10.15</string>
-				<key>path</key>
-				<string>/Applications/zoom.us.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.15</string>
-		<key>name</key>
-		<string>Zoom</string>
-		<key>postuninstall_script</key>
-		<string>#!/bin/sh
-rm -rf /Applications/zoom.us.app
-</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>815813</integer>
-				<key>packageid</key>
-				<string>us.zoom.pkg.videomeeting</string>
-				<key>version</key>
-				<string>7.1.0.83064</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.1.0.83064</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>zoom.us</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>The Zoom app provides cloud-hosted video conferencing, plus online meetings and group messaging.</string>
-		<key>developer</key>
-		<string>Zoom Video Communications, Inc.</string>
-		<key>display_name</key>
-		<string>Zoom</string>
-		<key>installed_size</key>
-		<integer>815813</integer>
-		<key>installer_item_hash</key>
-		<string>941e3afe915188030821042d592e725e33a7f3fd09edc6e22c863d9c1736e359</string>
-		<key>installer_item_location</key>
-		<string>apps/Zoom/Zoom-7.1.0.83064__1.pkg</string>
-		<key>installer_item_size</key>
-		<integer>355187</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>us.zoom.xos</string>
-				<key>CFBundleName</key>
-				<string>zoom.us</string>
-				<key>CFBundleShortVersionString</key>
-				<string>7.1.0 (83064)</string>
-				<key>CFBundleVersion</key>
-				<string>7.1.0.83064</string>
-				<key>minosversion</key>
-				<string>10.15</string>
-				<key>path</key>
-				<string>/Applications/zoom.us.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.15</string>
-		<key>name</key>
-		<string>Zoom</string>
-		<key>postuninstall_script</key>
-		<string>#!/bin/sh
-rm -rf /Applications/zoom.us.app
-</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>815813</integer>
-				<key>packageid</key>
-				<string>us.zoom.pkg.videomeeting</string>
-				<key>version</key>
-				<string>7.1.0.83064</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.1.0.83064</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>zoom.us</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>The Zoom app provides cloud-hosted video conferencing, plus online meetings and group messaging.</string>
-		<key>developer</key>
-		<string>Zoom Video Communications, Inc.</string>
-		<key>display_name</key>
-		<string>Zoom</string>
-		<key>installed_size</key>
-		<integer>815813</integer>
-		<key>installer_item_hash</key>
-		<string>941e3afe915188030821042d592e725e33a7f3fd09edc6e22c863d9c1736e359</string>
-		<key>installer_item_location</key>
-		<string>apps/Zoom/Zoom-7.1.0.83064__3.pkg</string>
-		<key>installer_item_size</key>
-		<integer>355187</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>us.zoom.xos</string>
-				<key>CFBundleName</key>
-				<string>zoom.us</string>
-				<key>CFBundleShortVersionString</key>
-				<string>7.1.0 (83064)</string>
-				<key>CFBundleVersion</key>
-				<string>7.1.0.83064</string>
-				<key>minosversion</key>
-				<string>10.15</string>
-				<key>path</key>
-				<string>/Applications/zoom.us.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.15</string>
-		<key>name</key>
-		<string>Zoom</string>
-		<key>postuninstall_script</key>
-		<string>#!/bin/sh
-rm -rf /Applications/zoom.us.app
-</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>815813</integer>
-				<key>packageid</key>
-				<string>us.zoom.pkg.videomeeting</string>
-				<key>version</key>
-				<string>7.1.0.83064</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.1.0.83064</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>zoom.us</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>The Zoom app provides cloud-hosted video conferencing, plus online meetings and group messaging.</string>
-		<key>developer</key>
-		<string>Zoom Video Communications, Inc.</string>
-		<key>display_name</key>
-		<string>Zoom</string>
-		<key>installed_size</key>
-		<integer>815813</integer>
-		<key>installer_item_hash</key>
-		<string>941e3afe915188030821042d592e725e33a7f3fd09edc6e22c863d9c1736e359</string>
-		<key>installer_item_location</key>
-		<string>apps/Zoom/Zoom-7.1.0.83064__11.pkg</string>
-		<key>installer_item_size</key>
-		<integer>355187</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>us.zoom.xos</string>
-				<key>CFBundleName</key>
-				<string>zoom.us</string>
-				<key>CFBundleShortVersionString</key>
-				<string>7.1.0 (83064)</string>
-				<key>CFBundleVersion</key>
-				<string>7.1.0.83064</string>
-				<key>minosversion</key>
-				<string>10.15</string>
-				<key>path</key>
-				<string>/Applications/zoom.us.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.15</string>
-		<key>name</key>
-		<string>Zoom</string>
-		<key>postuninstall_script</key>
-		<string>#!/bin/sh
-rm -rf /Applications/zoom.us.app
-</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>815813</integer>
-				<key>packageid</key>
-				<string>us.zoom.pkg.videomeeting</string>
-				<key>version</key>
-				<string>7.1.0.83064</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.1.0.83064</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>zoom.us</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>The Zoom app provides cloud-hosted video conferencing, plus online meetings and group messaging.</string>
-		<key>developer</key>
-		<string>Zoom Video Communications, Inc.</string>
-		<key>display_name</key>
-		<string>Zoom</string>
-		<key>installed_size</key>
-		<integer>815813</integer>
-		<key>installer_item_hash</key>
-		<string>941e3afe915188030821042d592e725e33a7f3fd09edc6e22c863d9c1736e359</string>
-		<key>installer_item_location</key>
-		<string>apps/Zoom/Zoom-7.1.0.83064__15.pkg</string>
-		<key>installer_item_size</key>
-		<integer>355187</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>us.zoom.xos</string>
-				<key>CFBundleName</key>
-				<string>zoom.us</string>
-				<key>CFBundleShortVersionString</key>
-				<string>7.1.0 (83064)</string>
-				<key>CFBundleVersion</key>
-				<string>7.1.0.83064</string>
-				<key>minosversion</key>
-				<string>10.15</string>
-				<key>path</key>
-				<string>/Applications/zoom.us.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.15</string>
-		<key>name</key>
-		<string>Zoom</string>
-		<key>postuninstall_script</key>
-		<string>#!/bin/sh
-rm -rf /Applications/zoom.us.app
-</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>815813</integer>
-				<key>packageid</key>
-				<string>us.zoom.pkg.videomeeting</string>
-				<key>version</key>
-				<string>7.1.0.83064</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.1.0.83064</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>zoom.us</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>The Zoom app provides cloud-hosted video conferencing, plus online meetings and group messaging.</string>
-		<key>developer</key>
-		<string>Zoom Video Communications, Inc.</string>
-		<key>display_name</key>
-		<string>Zoom</string>
-		<key>installed_size</key>
-		<integer>815813</integer>
-		<key>installer_item_hash</key>
-		<string>941e3afe915188030821042d592e725e33a7f3fd09edc6e22c863d9c1736e359</string>
-		<key>installer_item_location</key>
-		<string>apps/Zoom/Zoom-7.1.0.83064__7.pkg</string>
-		<key>installer_item_size</key>
-		<integer>355187</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>us.zoom.xos</string>
-				<key>CFBundleName</key>
-				<string>zoom.us</string>
-				<key>CFBundleShortVersionString</key>
-				<string>7.1.0 (83064)</string>
-				<key>CFBundleVersion</key>
-				<string>7.1.0.83064</string>
-				<key>minosversion</key>
-				<string>10.15</string>
-				<key>path</key>
-				<string>/Applications/zoom.us.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.15</string>
-		<key>name</key>
-		<string>Zoom</string>
-		<key>postuninstall_script</key>
-		<string>#!/bin/sh
-rm -rf /Applications/zoom.us.app
-</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>815813</integer>
-				<key>packageid</key>
-				<string>us.zoom.pkg.videomeeting</string>
-				<key>version</key>
-				<string>7.1.0.83064</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.1.0.83064</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>zoom.us</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>The Zoom app provides cloud-hosted video conferencing, plus online meetings and group messaging.</string>
-		<key>developer</key>
-		<string>Zoom Video Communications, Inc.</string>
-		<key>display_name</key>
-		<string>Zoom</string>
-		<key>installed_size</key>
-		<integer>815813</integer>
-		<key>installer_item_hash</key>
-		<string>941e3afe915188030821042d592e725e33a7f3fd09edc6e22c863d9c1736e359</string>
-		<key>installer_item_location</key>
-		<string>apps/Zoom/Zoom-7.1.0.83064__5.pkg</string>
-		<key>installer_item_size</key>
-		<integer>355187</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>us.zoom.xos</string>
-				<key>CFBundleName</key>
-				<string>zoom.us</string>
-				<key>CFBundleShortVersionString</key>
-				<string>7.1.0 (83064)</string>
-				<key>CFBundleVersion</key>
-				<string>7.1.0.83064</string>
-				<key>minosversion</key>
-				<string>10.15</string>
-				<key>path</key>
-				<string>/Applications/zoom.us.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.15</string>
-		<key>name</key>
-		<string>Zoom</string>
-		<key>postuninstall_script</key>
-		<string>#!/bin/sh
-rm -rf /Applications/zoom.us.app
-</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>815813</integer>
-				<key>packageid</key>
-				<string>us.zoom.pkg.videomeeting</string>
-				<key>version</key>
-				<string>7.1.0.83064</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.1.0.83064</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Fast Terminal app based in Rust.</string>
-		<key>developer</key>
-		<string>Denver Technologies</string>
-		<key>display_name</key>
-		<string>Warp</string>
-		<key>force_munkiimport</key>
-		<true/>
-		<key>installer_item_hash</key>
-		<string>43d782779a23cb52c2ac38944f6e5c787ee11c09db4ef029b6228cb6cd8eede6</string>
-		<key>installer_item_location</key>
-		<string>apps/Warp/Warp-0.2026.07.08.17.54.02__1.dmg</string>
-		<key>installer_item_size</key>
-		<integer>322054</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>dev.warp.Warp-Stable</string>
-				<key>CFBundleName</key>
-				<string>Warp</string>
-				<key>CFBundleShortVersionString</key>
-				<string>0.2026.07.08.17.54.02</string>
-				<key>CFBundleVersion</key>
-				<string>0.2026.07.08.17.54.02</string>
-				<key>path</key>
-				<string>/Applications/Warp.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Warp.app</string>
-			</dict>
-		</array>
-		<key>name</key>
-		<string>Warp</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>0.2026.07.08.17.54.02</string>
+		<string>7.1.5.84650</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -70752,11 +67630,11 @@ rm -rf /Applications/zoom.us.app
 		<key>force_munkiimport</key>
 		<true/>
 		<key>installer_item_hash</key>
-		<string>43d782779a23cb52c2ac38944f6e5c787ee11c09db4ef029b6228cb6cd8eede6</string>
+		<string>c0a5f02f67eb97213b515315333b1cac77d727a6f82c8cc63132b9de3006e1ce</string>
 		<key>installer_item_location</key>
-		<string>apps/Warp/Warp-0.2026.07.08.17.54.02__2.dmg</string>
+		<string>apps/Warp/Warp-0.2026.07.22.09.01.01.dmg</string>
 		<key>installer_item_size</key>
-		<integer>322054</integer>
+		<integer>323685</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -70767,9 +67645,9 @@ rm -rf /Applications/zoom.us.app
 				<key>CFBundleName</key>
 				<string>Warp</string>
 				<key>CFBundleShortVersionString</key>
-				<string>0.2026.07.08.17.54.02</string>
+				<string>0.2026.07.22.09.01.01</string>
 				<key>CFBundleVersion</key>
-				<string>0.2026.07.08.17.54.02</string>
+				<string>0.2026.07.22.09.01.01</string>
 				<key>path</key>
 				<string>/Applications/Warp.app</string>
 				<key>type</key>
@@ -70796,69 +67674,7 @@ rm -rf /Applications/zoom.us.app
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>0.2026.07.08.17.54.02</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Fast Terminal app based in Rust.</string>
-		<key>developer</key>
-		<string>Denver Technologies</string>
-		<key>display_name</key>
-		<string>Warp</string>
-		<key>force_munkiimport</key>
-		<true/>
-		<key>installer_item_hash</key>
-		<string>43d782779a23cb52c2ac38944f6e5c787ee11c09db4ef029b6228cb6cd8eede6</string>
-		<key>installer_item_location</key>
-		<string>apps/Warp/Warp-0.2026.07.08.17.54.02.dmg</string>
-		<key>installer_item_size</key>
-		<integer>322054</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>dev.warp.Warp-Stable</string>
-				<key>CFBundleName</key>
-				<string>Warp</string>
-				<key>CFBundleShortVersionString</key>
-				<string>0.2026.07.08.17.54.02</string>
-				<key>CFBundleVersion</key>
-				<string>0.2026.07.08.17.54.02</string>
-				<key>path</key>
-				<string>/Applications/Warp.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Warp.app</string>
-			</dict>
-		</array>
-		<key>name</key>
-		<string>Warp</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>0.2026.07.08.17.54.02</string>
+		<string>0.2026.07.22.09.01.01</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -80328,6 +77144,70 @@ Designed for theatre, live events, concerts and immersive experiences.</string>
 		<key>display_name</key>
 		<string>AutoPkgr</string>
 		<key>installer_item_hash</key>
+		<string>05955ffd7cc7e6e18b099aae1c3e2a373350543366e604bd540958148ce729e7</string>
+		<key>installer_item_location</key>
+		<string>apps/AutoPkgr/AutoPkgr-2.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>6953</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.lindegroup.AutoPkgr</string>
+				<key>CFBundleName</key>
+				<string>AutoPkgr</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2.0</string>
+				<key>CFBundleVersion</key>
+				<string>1540</string>
+				<key>minosversion</key>
+				<string>11.0</string>
+				<key>path</key>
+				<string>/Applications/AutoPkgr.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>AutoPkgr.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>11.0</string>
+		<key>name</key>
+		<string>AutoPkgr</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>AutoPkgr is a free Mac app that makes it easy to install and configure AutoPkg.</string>
+		<key>developer</key>
+		<string>Linde Group, Inc.</string>
+		<key>display_name</key>
+		<string>AutoPkgr</string>
+		<key>installer_item_hash</key>
 		<string>598aa227ef544d37b7f964c1352e6f2d955fc5a8127cc2a708e7bc02af2cc7f0</string>
 		<key>installer_item_location</key>
 		<string>apps/AutoPkgr/AutoPkgr-1.6.1__14.dmg</string>
@@ -83856,13 +80736,13 @@ Even if you think you have nothing to hide â€” no one likes to be watched. Thatâ
 		<key>display_name</key>
 		<string>NordVPN</string>
 		<key>installed_size</key>
-		<integer>559450</integer>
+		<integer>563079</integer>
 		<key>installer_item_hash</key>
-		<string>9a83032e1292c1e8a8a8ec2be10b7d45edcab23b16f6b22cd97a8c5ba917ef09</string>
+		<string>fdbc7877fb5cf9bd3fc0452468829af437abce7fbf3a9b8433eda8c6bfde5ab3</string>
 		<key>installer_item_location</key>
-		<string>apps/NordVPN/NordVPN-10.6.1.dmg</string>
+		<string>apps/NordVPN/NordVPN-10.7.0.dmg</string>
 		<key>installer_item_size</key>
-		<integer>245568</integer>
+		<integer>247030</integer>
 		<key>installs</key>
 		<array>
 			<dict>
@@ -83871,9 +80751,9 @@ Even if you think you have nothing to hide â€” no one likes to be watched. Thatâ
 				<key>CFBundleName</key>
 				<string>NordVPN</string>
 				<key>CFBundleShortVersionString</key>
-				<string>10.6.1</string>
+				<string>10.7.0</string>
 				<key>CFBundleVersion</key>
-				<string>366</string>
+				<string>367</string>
 				<key>minosversion</key>
 				<string>12.0</string>
 				<key>path</key>
@@ -83898,11 +80778,11 @@ rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>559450</integer>
+				<integer>563079</integer>
 				<key>packageid</key>
 				<string>com.nordvpn.macos</string>
 				<key>version</key>
-				<string>10.6.1</string>
+				<string>10.7.0</string>
 			</dict>
 		</array>
 		<key>unattended_install</key>
@@ -83914,7 +80794,7 @@ rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>10.6.1</string>
+		<string>10.7.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -83930,11 +80810,11 @@ rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
 		<key>display_name</key>
 		<string>Ollama</string>
 		<key>installer_item_hash</key>
-		<string>f63c43b0e433505e7fe5e56906cb161873e5da21c750989bf87533881f755fe9</string>
+		<string>93fd264d2c68d18c220d4c5ad0ea15401cb225953b6a2a6e0b704200e2656aa0</string>
 		<key>installer_item_location</key>
-		<string>apps/Ollama/Ollama-0.32.1.dmg</string>
+		<string>apps/Ollama/Ollama-0.32.3.dmg</string>
 		<key>installer_item_size</key>
-		<integer>179205</integer>
+		<integer>179667</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -83945,9 +80825,9 @@ rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
 				<key>CFBundleName</key>
 				<string>Ollama</string>
 				<key>CFBundleShortVersionString</key>
-				<string>0.32.1</string>
+				<string>0.32.3</string>
 				<key>CFBundleVersion</key>
-				<string>0.32.1</string>
+				<string>0.32.3</string>
 				<key>minosversion</key>
 				<string>14.0</string>
 				<key>path</key>
@@ -83992,151 +80872,7 @@ exit</string>
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>0.32.1</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models.</string>
-		<key>developer</key>
-		<string>Infra Technologies, Inc</string>
-		<key>display_name</key>
-		<string>Ollama</string>
-		<key>installer_item_hash</key>
-		<string>d6ff329bc5255c59013821f2208b5ed0675451a315c2337e669d040faa8b2ed5</string>
-		<key>installer_item_location</key>
-		<string>apps/Ollama/Ollama-0.32.0.dmg</string>
-		<key>installer_item_size</key>
-		<integer>179204</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.electron.ollama</string>
-				<key>CFBundleName</key>
-				<string>Ollama</string>
-				<key>CFBundleShortVersionString</key>
-				<string>0.32.0</string>
-				<key>CFBundleVersion</key>
-				<string>0.32.0</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Ollama.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Ollama.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>Ollama</string>
-		<key>postinstall_script</key>
-		<string>#!/bin/bash
-
-# Script built from: https://github.com/ollama/ollama/issues/851#issuecomment-1889808636
-# Please note admin rights are still needed as the file that records whether first time run has completed is located in the Users home folder. see https://github.com/ollama/ollama/issues/6814
-
-# Install Command Line Tools
-if ! [ -f /usr/local/bin/ollama ]; then
-  /usr/bin/touch /usr/local/bin/ollama ; /bin/ln -s -f /Applications/Ollama.app/Contents/Resources/ollama /usr/local/bin/ollama
-fi
-
-exit</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>0.32.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Google's agentic development platform, evolving the IDE into the agent-first era.</string>
-		<key>developer</key>
-		<string>Google</string>
-		<key>display_name</key>
-		<string>Antigravity</string>
-		<key>installer_item_hash</key>
-		<string>5c9c1822d6343a40b9de6b405f9f718d7bd99510544fda4134bd75398120ce93</string>
-		<key>installer_item_location</key>
-		<string>apps/Antigravity/Antigravity-2.3.0.dmg</string>
-		<key>installer_item_size</key>
-		<integer>178255</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.google.antigravity</string>
-				<key>CFBundleName</key>
-				<string>Antigravity</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2.3.0</string>
-				<key>CFBundleVersion</key>
-				<string>2.3.0</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Antigravity.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Antigravity.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Antigravity</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2.3.0</string>
+		<string>0.32.3</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -86924,11 +83660,11 @@ exit</string>
 		<key>display_name</key>
 		<string>Signal Desktop</string>
 		<key>installer_item_hash</key>
-		<string>aec1f6bbcfb37cbca76232e5b4780c906545d367b6767200842ff5296be26313</string>
+		<string>144c586b43e90798e686d3b39ea39a6365cef28813aa972f0e24881d2bef8b7a</string>
 		<key>installer_item_location</key>
-		<string>apps/Signal/signal-desktop-mac-universal-8.19.0.dmg</string>
+		<string>apps/Signal/signal-desktop-mac-universal-8.20.0.dmg</string>
 		<key>installer_item_size</key>
-		<integer>252531</integer>
+		<integer>257846</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -86939,7 +83675,7 @@ exit</string>
 				<key>CFBundleName</key>
 				<string>Signal</string>
 				<key>CFBundleShortVersionString</key>
-				<string>8.19.0</string>
+				<string>8.20.0</string>
 				<key>CFBundleVersion</key>
 				<string>1</string>
 				<key>minosversion</key>
@@ -86972,7 +83708,7 @@ exit</string>
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>8.19.0</string>
+		<string>8.20.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
