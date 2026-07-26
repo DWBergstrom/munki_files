@@ -43741,76 +43741,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<array>
 			<string>testing</string>
 		</array>
-		<key>category</key>
-		<string>Developer</string>
-		<key>description</key>
-		<string>Built to make you extraordinarily productive, Cursor is the best way to code with AI.</string>
-		<key>developer</key>
-		<string>Anysphere, Inc.</string>
-		<key>display_name</key>
-		<string>Cursor</string>
-		<key>icon_name</key>
-		<string>Cursor.png</string>
-		<key>installer_item_hash</key>
-		<string>4b0e062d6dcb3a1b91b4fa96d553834615c58d6b28e41e9640132d8f1b46100f</string>
-		<key>installer_item_location</key>
-		<string>apps/Cursor/Cursor-3.12.30.dmg</string>
-		<key>installer_item_size</key>
-		<integer>418157</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.todesktop.230313mzl4w4u92</string>
-				<key>CFBundleName</key>
-				<string>Cursor</string>
-				<key>CFBundleShortVersionString</key>
-				<string>3.12.30</string>
-				<key>CFBundleVersion</key>
-				<string>3.12.30</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Cursor.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Cursor.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Cursor</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>3.12.30</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
 		<key>description</key>
 		<string>A free, source-available and fair-code licensed mac app cleaner</string>
 		<key>developer</key>
@@ -56322,47 +56252,86 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 	<dict>
 		<key>autoremove</key>
 		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>Microsoft Remote Desktop</string>
+			<string>Windows App</string>
+		</array>
 		<key>catalogs</key>
 		<array>
-			<string>testing</string>
+			<string>utilities</string>
 		</array>
 		<key>category</key>
-		<string>Productivity</string>
+		<string>Utility</string>
 		<key>description</key>
-		<string>Microsoft Edge web browser</string>
+		<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
+</string>
 		<key>developer</key>
 		<string>Microsoft</string>
 		<key>display_name</key>
-		<string>Microsoft Edge</string>
+		<string>Windows App</string>
 		<key>installed_size</key>
-		<integer>927219</integer>
+		<integer>242588</integer>
 		<key>installer_item_hash</key>
-		<string>fd44cf2baf74d0b7eddc964770218fef6b92c9cb39c437a404ca05697f7cc32f</string>
+		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
 		<key>installer_item_location</key>
-		<string>apps/Microsoft/Microsoft_Edge-150.0.4078.96.pkg</string>
+		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
 		<key>installer_item_size</key>
-		<integer>408819</integer>
+		<integer>100508</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.microsoft.rdc.macos</string>
+				<key>CFBundleName</key>
+				<string>Windows App</string>
+				<key>CFBundleShortVersionString</key>
+				<string>11.3.7</string>
+				<key>CFBundleVersion</key>
+				<string>3040</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/Windows App.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
 		<key>minimum_os_version</key>
-		<string>10.10.0</string>
+		<string>14.0</string>
 		<key>name</key>
-		<string>MicrosoftEdge</string>
+		<string>WindowsApp</string>
 		<key>receipts</key>
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>927219</integer>
+				<integer>231857</integer>
 				<key>packageid</key>
-				<string>com.microsoft.edgemac</string>
+				<string>com.microsoft.rdc.macos</string>
 				<key>version</key>
-				<string>150.0.4078.96</string>
+				<string>11.3.7</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>10731</integer>
+				<key>packageid</key>
+				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
+				<key>version</key>
+				<string>4.81.25121042</string>
 			</dict>
 		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
 		<key>uninstall_method</key>
 		<string>removepackages</string>
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>150.0.4078.96</string>
+		<string>11.3.7</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -57017,72 +56986,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<true/>
 		<key>version</key>
 		<string>1.24012.9</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Your AI partner on desktop. Fast, focused, and designed for deep work.</string>
-		<key>developer</key>
-		<string>Anthropic PBC</string>
-		<key>display_name</key>
-		<string>Claude</string>
-		<key>installer_item_hash</key>
-		<string>d0b587f9dba49ff290153ab3e618d10e69de07ce01e3ed22366af0a2a9c3854b</string>
-		<key>installer_item_location</key>
-		<string>apps/Claude/Claude-1.24012.1.dmg</string>
-		<key>installer_item_size</key>
-		<integer>333010</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.anthropic.claudefordesktop</string>
-				<key>CFBundleName</key>
-				<string>Claude</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.24012.1</string>
-				<key>CFBundleVersion</key>
-				<string>1.24012.1</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Claude.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Claude.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Claude</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.24012.1</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -59708,72 +59611,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>display_name</key>
 		<string>Codex</string>
 		<key>installer_item_hash</key>
-		<string>e8d55e25c898224401f669400cfd50dd7e5f21b6cc501dd87f1396ecae3338e8</string>
-		<key>installer_item_location</key>
-		<string>apps/Codex/Codex-26.721.30844.dmg</string>
-		<key>installer_item_size</key>
-		<integer>579966</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.openai.codex</string>
-				<key>CFBundleName</key>
-				<string>ChatGPT</string>
-				<key>CFBundleShortVersionString</key>
-				<string>26.721.30844</string>
-				<key>CFBundleVersion</key>
-				<string>5813</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/ChatGPT.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>ChatGPT.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Codex</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>26.721.30844</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Tool designed to help developers manage multiple coding agents, run tasks in parallel, and collaborate on software projects.</string>
-		<key>developer</key>
-		<string>OpenAI</string>
-		<key>display_name</key>
-		<string>Codex</string>
-		<key>installer_item_hash</key>
 		<string>ae864e2def7db56d0bb77a876a5cbe4e4c2f554ccc654cec921b946892583c0a</string>
 		<key>installer_item_location</key>
 		<string>apps/Codex/Codex-26.721.41059.dmg</string>
@@ -60021,72 +59858,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<true/>
 		<key>version</key>
 		<string>116.1.57.47</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Browsers</string>
-		<key>description</key>
-		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
-		<key>developer</key>
-		<string>Brave Software Inc.</string>
-		<key>display_name</key>
-		<string>Brave Browser</string>
-		<key>installer_item_hash</key>
-		<string>22aa51a0aff41352f33e904ed642fccfdc43125a2c4f207de33c2aa9bd0964b2</string>
-		<key>installer_item_location</key>
-		<string>apps/Brave/Brave-150.1.92.143.dmg</string>
-		<key>installer_item_size</key>
-		<integer>243726</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.brave.Browser</string>
-				<key>CFBundleName</key>
-				<string>Brave</string>
-				<key>CFBundleShortVersionString</key>
-				<string>150.1.92.143</string>
-				<key>CFBundleVersion</key>
-				<string>192.143</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Brave Browser.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Brave Browser.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Brave</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>150.1.92.143</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -78182,68 +77953,6 @@ rm -rf /Applications/zoom.us.app
 		<key>force_munkiimport</key>
 		<true/>
 		<key>installer_item_hash</key>
-		<string>cf1237a72cea93d9a77c27b499a158da9a00fde82f2a66d57723b6c303297ee2</string>
-		<key>installer_item_location</key>
-		<string>apps/Warp/Warp-0.2026.07.15.08.55.01.dmg</string>
-		<key>installer_item_size</key>
-		<integer>322296</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>dev.warp.Warp-Stable</string>
-				<key>CFBundleName</key>
-				<string>Warp</string>
-				<key>CFBundleShortVersionString</key>
-				<string>0.2026.07.15.08.55.01</string>
-				<key>CFBundleVersion</key>
-				<string>0.2026.07.15.08.55.01</string>
-				<key>path</key>
-				<string>/Applications/Warp.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Warp.app</string>
-			</dict>
-		</array>
-		<key>name</key>
-		<string>Warp</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>0.2026.07.15.08.55.01</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Fast Terminal app based in Rust.</string>
-		<key>developer</key>
-		<string>Denver Technologies</string>
-		<key>display_name</key>
-		<string>Warp</string>
-		<key>force_munkiimport</key>
-		<true/>
-		<key>installer_item_hash</key>
 		<string>c0a5f02f67eb97213b515315333b1cac77d727a6f82c8cc63132b9de3006e1ce</string>
 		<key>installer_item_location</key>
 		<string>apps/Warp/Warp-0.2026.07.22.09.01.01.dmg</string>
@@ -91487,6 +91196,84 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>0.32.3</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models.</string>
+		<key>developer</key>
+		<string>Infra Technologies, Inc</string>
+		<key>display_name</key>
+		<string>Ollama</string>
+		<key>installer_item_hash</key>
+		<string>f735a55c91edb87d1e252746a519b054b5320501097b4c67a9b5eaf9b8448585</string>
+		<key>installer_item_location</key>
+		<string>apps/Ollama/Ollama-0.32.4.dmg</string>
+		<key>installer_item_size</key>
+		<integer>179725</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.electron.ollama</string>
+				<key>CFBundleName</key>
+				<string>Ollama</string>
+				<key>CFBundleShortVersionString</key>
+				<string>0.32.4</string>
+				<key>CFBundleVersion</key>
+				<string>0.32.4</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/Ollama.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Ollama.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.0</string>
+		<key>name</key>
+		<string>Ollama</string>
+		<key>postinstall_script</key>
+		<string>#!/bin/bash
+
+# Script built from: https://github.com/ollama/ollama/issues/851#issuecomment-1889808636
+# Please note admin rights are still needed as the file that records whether first time run has completed is located in the Users home folder. see https://github.com/ollama/ollama/issues/6814
+
+# Install Command Line Tools
+if ! [ -f /usr/local/bin/ollama ]; then
+  /usr/bin/touch /usr/local/bin/ollama ; /bin/ln -s -f /Applications/Ollama.app/Contents/Resources/ollama /usr/local/bin/ollama
+fi
+
+exit</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>0.32.4</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
