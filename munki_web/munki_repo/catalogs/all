@@ -23796,6 +23796,90 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 	<dict>
 		<key>autoremove</key>
 		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>1Password 7</string>
+			<string>1Password Browser Helper</string>
+			<string>1Password</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Utilities</string>
+		<key>description</key>
+		<string>1Password is a password manager that goes beyond simple password storage by integrating directly with your web browser to automatically log you into websites, enter credit card information, fill registration forms, and easily generate strong passwords.</string>
+		<key>developer</key>
+		<string>AgileBits Inc.</string>
+		<key>display_name</key>
+		<string>1Password</string>
+		<key>installed_size</key>
+		<integer>933177</integer>
+		<key>installer_item_hash</key>
+		<string>d5e6da9ae01216ca2995f5310de1a5c6b9491ea74896755600791ceadbdd7a9f</string>
+		<key>installer_item_location</key>
+		<string>apps/1Password-8.12.30.pkg</string>
+		<key>installer_item_size</key>
+		<integer>373474</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.1password.1password</string>
+				<key>CFBundleName</key>
+				<string>1Password</string>
+				<key>CFBundleShortVersionString</key>
+				<string>8.12.30</string>
+				<key>CFBundleVersion</key>
+				<string>8.12.30</string>
+				<key>minosversion</key>
+				<string>12.0</string>
+				<key>path</key>
+				<string>/Applications/1Password.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.0</string>
+		<key>name</key>
+		<string>1Password</string>
+		<key>postinstall_script</key>
+		<string>#!/bin/bash
+
+LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console); 
+
+/usr/sbin/chown -R "$LOGGED_IN_USER":staff "/Applications/1Password.app"
+
+</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>933177</integer>
+				<key>packageid</key>
+				<string>com.1password.1password</string>
+				<key>version</key>
+				<string>8.12.30</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>8.12.30</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
 		<key>catalogs</key>
 		<array>
 			<string>testing</string>
@@ -25744,70 +25828,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<true/>
 		<key>version</key>
 		<string>153.0.1</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Mozilla Firefox is a free and open source web browser.</string>
-		<key>display_name</key>
-		<string>Mozilla Firefox</string>
-		<key>installer_item_hash</key>
-		<string>2f9b5a20e546e7e79e4182f8fe10353a3e251635963ab3f6d399a3f290adeb96</string>
-		<key>installer_item_location</key>
-		<string>apps/firefox/Firefox-153.0.dmg</string>
-		<key>installer_item_size</key>
-		<integer>150963</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.mozilla.firefox</string>
-				<key>CFBundleName</key>
-				<string>Firefox</string>
-				<key>CFBundleShortVersionString</key>
-				<string>153.0</string>
-				<key>CFBundleVersion</key>
-				<string>15326.7.15</string>
-				<key>minosversion</key>
-				<string>10.15.0</string>
-				<key>path</key>
-				<string>/Applications/Firefox.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>mode</key>
-				<string>ug+w,o-w</string>
-				<key>source_item</key>
-				<string>Firefox.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.15.0</string>
-		<key>name</key>
-		<string>Firefox</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>153.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -43474,70 +43494,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>display_name</key>
 		<string>DuckDuckGo</string>
 		<key>installer_item_hash</key>
-		<string>388b90af43451cca2469bf3b8cde29ba1c7507ebdfb9767de02da9e6826c07f2</string>
-		<key>installer_item_location</key>
-		<string>apps/DuckDuckGo/DuckDuckGo-1.199.0.dmg</string>
-		<key>installer_item_size</key>
-		<integer>174766</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.duckduckgo.macos.browser</string>
-				<key>CFBundleName</key>
-				<string>DuckDuckGo</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.199.0</string>
-				<key>CFBundleVersion</key>
-				<string>762</string>
-				<key>minosversion</key>
-				<string>12.3</string>
-				<key>path</key>
-				<string>/Applications/DuckDuckGo.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>DuckDuckGo.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.3</string>
-		<key>name</key>
-		<string>DuckDuckGo</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.199.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Chrome-like keyword search for Safari.</string>
-		<key>developer</key>
-		<string>Duck Duck Go</string>
-		<key>display_name</key>
-		<string>DuckDuckGo</string>
-		<key>installer_item_hash</key>
 		<string>09253e404bc8305992d9553e218daa1da85d36b2f8c37960c08c6a9b9644225e</string>
 		<key>installer_item_location</key>
 		<string>apps/DuckDuckGo/DuckDuckGo-1.193.1.dmg</string>
@@ -43809,76 +43765,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<string>Anysphere, Inc.</string>
 		<key>display_name</key>
 		<string>Cursor</string>
-		<key>icon_name</key>
-		<string>Cursor.png</string>
-		<key>installer_item_hash</key>
-		<string>e96931b67ecb47cafaa5f6875cefad2d0ee9b85ed35e85486853eec639060363</string>
-		<key>installer_item_location</key>
-		<string>apps/Cursor/Cursor-3.13.21.dmg</string>
-		<key>installer_item_size</key>
-		<integer>420115</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.todesktop.230313mzl4w4u92</string>
-				<key>CFBundleName</key>
-				<string>Cursor</string>
-				<key>CFBundleShortVersionString</key>
-				<string>3.13.21</string>
-				<key>CFBundleVersion</key>
-				<string>3.13.21</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Cursor.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Cursor.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Cursor</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>3.13.21</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Developer</string>
-		<key>description</key>
-		<string>Built to make you extraordinarily productive, Cursor is the best way to code with AI.</string>
-		<key>developer</key>
-		<string>Anysphere, Inc.</string>
-		<key>display_name</key>
-		<string>Cursor</string>
 		<key>installer_item_hash</key>
 		<string>9779f901386d881fc070ea94b6213b72d0f4e89f23f2cebaa707d67ac7984398</string>
 		<key>installer_item_location</key>
@@ -43931,76 +43817,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<true/>
 		<key>version</key>
 		<string>1.4.5</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Developer</string>
-		<key>description</key>
-		<string>Built to make you extraordinarily productive, Cursor is the best way to code with AI.</string>
-		<key>developer</key>
-		<string>Anysphere, Inc.</string>
-		<key>display_name</key>
-		<string>Cursor</string>
-		<key>icon_name</key>
-		<string>Cursor.png</string>
-		<key>installer_item_hash</key>
-		<string>42b1edea8912eb0b2fc686ea89a4a0047aaaf43da4f7d8eb34a4bafa35d477b1</string>
-		<key>installer_item_location</key>
-		<string>apps/Cursor/Cursor-3.13.10.dmg</string>
-		<key>installer_item_size</key>
-		<integer>420058</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.todesktop.230313mzl4w4u92</string>
-				<key>CFBundleName</key>
-				<string>Cursor</string>
-				<key>CFBundleShortVersionString</key>
-				<string>3.13.10</string>
-				<key>CFBundleVersion</key>
-				<string>3.13.10</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Cursor.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Cursor.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Cursor</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>3.13.10</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -55887,47 +55703,86 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 	<dict>
 		<key>autoremove</key>
 		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>Microsoft Remote Desktop</string>
+			<string>Windows App</string>
+		</array>
 		<key>catalogs</key>
 		<array>
-			<string>testing</string>
+			<string>utilities</string>
 		</array>
 		<key>category</key>
-		<string>Productivity</string>
+		<string>Utility</string>
 		<key>description</key>
-		<string>Microsoft Edge web browser</string>
+		<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
+</string>
 		<key>developer</key>
 		<string>Microsoft</string>
 		<key>display_name</key>
-		<string>Microsoft Edge</string>
+		<string>Windows App</string>
 		<key>installed_size</key>
-		<integer>927246</integer>
+		<integer>242588</integer>
 		<key>installer_item_hash</key>
-		<string>4a83663914688acea69c66632658494a842c8d136455cd2e20fb36df4f5230a9</string>
+		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
 		<key>installer_item_location</key>
-		<string>apps/Microsoft/Microsoft_Edge-150.0.4078.99.pkg</string>
+		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
 		<key>installer_item_size</key>
-		<integer>408821</integer>
+		<integer>100508</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.microsoft.rdc.macos</string>
+				<key>CFBundleName</key>
+				<string>Windows App</string>
+				<key>CFBundleShortVersionString</key>
+				<string>11.3.7</string>
+				<key>CFBundleVersion</key>
+				<string>3040</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/Windows App.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
 		<key>minimum_os_version</key>
-		<string>10.10.0</string>
+		<string>14.0</string>
 		<key>name</key>
-		<string>MicrosoftEdge</string>
+		<string>WindowsApp</string>
 		<key>receipts</key>
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>927246</integer>
+				<integer>231857</integer>
 				<key>packageid</key>
-				<string>com.microsoft.edgemac</string>
+				<string>com.microsoft.rdc.macos</string>
 				<key>version</key>
-				<string>150.0.4078.99</string>
+				<string>11.3.7</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>10731</integer>
+				<key>packageid</key>
+				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
+				<key>version</key>
+				<string>4.81.25121042</string>
 			</dict>
 		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
 		<key>uninstall_method</key>
 		<string>removepackages</string>
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>150.0.4078.99</string>
+		<string>11.3.7</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -91677,84 +91532,6 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>0.32.5</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models.</string>
-		<key>developer</key>
-		<string>Infra Technologies, Inc</string>
-		<key>display_name</key>
-		<string>Ollama</string>
-		<key>installer_item_hash</key>
-		<string>f735a55c91edb87d1e252746a519b054b5320501097b4c67a9b5eaf9b8448585</string>
-		<key>installer_item_location</key>
-		<string>apps/Ollama/Ollama-0.32.4.dmg</string>
-		<key>installer_item_size</key>
-		<integer>179725</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.electron.ollama</string>
-				<key>CFBundleName</key>
-				<string>Ollama</string>
-				<key>CFBundleShortVersionString</key>
-				<string>0.32.4</string>
-				<key>CFBundleVersion</key>
-				<string>0.32.4</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Ollama.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Ollama.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>Ollama</string>
-		<key>postinstall_script</key>
-		<string>#!/bin/bash
-
-# Script built from: https://github.com/ollama/ollama/issues/851#issuecomment-1889808636
-# Please note admin rights are still needed as the file that records whether first time run has completed is located in the Users home folder. see https://github.com/ollama/ollama/issues/6814
-
-# Install Command Line Tools
-if ! [ -f /usr/local/bin/ollama ]; then
-  /usr/bin/touch /usr/local/bin/ollama ; /bin/ln -s -f /Applications/Ollama.app/Contents/Resources/ollama /usr/local/bin/ollama
-fi
-
-exit</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>0.32.4</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
