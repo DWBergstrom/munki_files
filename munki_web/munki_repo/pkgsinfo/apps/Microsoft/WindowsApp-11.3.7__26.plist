@@ -7,55 +7,55 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-07-14T14:57:19Z</date>
+		<date>2026-07-30T04:56:49Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
-		<string>26.5.1</string>
+		<string>26.5.2</string>
 	</dict>
 	<key>autoremove</key>
 	<false/>
 	<key>blocking_applications</key>
 	<array>
-		<string>1Password 7</string>
-		<string>1Password Browser Helper</string>
-		<string>1Password</string>
+		<string>Microsoft Remote Desktop</string>
+		<string>Windows App</string>
 	</array>
 	<key>catalogs</key>
 	<array>
-		<string>testing</string>
+		<string>utilities</string>
 	</array>
 	<key>category</key>
-	<string>Utilities</string>
+	<string>Utility</string>
 	<key>description</key>
-	<string>1Password is a password manager that goes beyond simple password storage by integrating directly with your web browser to automatically log you into websites, enter credit card information, fill registration forms, and easily generate strong passwords.</string>
+	<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
+</string>
 	<key>developer</key>
-	<string>AgileBits Inc.</string>
+	<string>Microsoft</string>
 	<key>display_name</key>
-	<string>1Password</string>
+	<string>Windows App</string>
 	<key>installed_size</key>
-	<integer>932001</integer>
+	<integer>242588</integer>
 	<key>installer_item_hash</key>
-	<string>a6ee81734e6cf242ee0977439492de00f6dabcb349c952c0e2c5fb96ec1e7c60</string>
+	<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
 	<key>installer_item_location</key>
-	<string>apps/1Password-8.12.28.pkg</string>
+	<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
 	<key>installer_item_size</key>
-	<integer>373057</integer>
+	<integer>100508</integer>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.1password.1password</string>
+			<string>com.microsoft.rdc.macos</string>
 			<key>CFBundleName</key>
-			<string>1Password</string>
+			<string>Windows App</string>
 			<key>CFBundleShortVersionString</key>
-			<string>8.12.28</string>
+			<string>11.3.7</string>
 			<key>CFBundleVersion</key>
-			<string>8.12.28</string>
+			<string>3040</string>
 			<key>minosversion</key>
-			<string>12.0</string>
+			<string>14.0</string>
 			<key>path</key>
-			<string>/Applications/1Password.app</string>
+			<string>/Applications/Windows App.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -63,26 +63,26 @@
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>12.0</string>
+	<string>14.0</string>
 	<key>name</key>
-	<string>1Password</string>
-	<key>postinstall_script</key>
-	<string>#!/bin/bash
-
-LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console); 
-
-/usr/sbin/chown -R "$LOGGED_IN_USER":staff "/Applications/1Password.app"
-
-</string>
+	<string>WindowsApp</string>
 	<key>receipts</key>
 	<array>
 		<dict>
 			<key>installed_size</key>
-			<integer>932001</integer>
+			<integer>231857</integer>
 			<key>packageid</key>
-			<string>com.1password.1password</string>
+			<string>com.microsoft.rdc.macos</string>
 			<key>version</key>
-			<string>8.12.28</string>
+			<string>11.3.7</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>10731</integer>
+			<key>packageid</key>
+			<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
+			<key>version</key>
+			<string>4.81.25121042</string>
 		</dict>
 	</array>
 	<key>unattended_install</key>
@@ -94,6 +94,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>8.12.28</string>
+	<string>11.3.7</string>
 </dict>
 </plist>
