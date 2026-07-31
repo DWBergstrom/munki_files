@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-07-25T04:55:49Z</date>
+		<date>2026-07-31T04:58:55Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,34 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Tool designed to help developers manage multiple coding agents, run tasks in parallel, and collaborate on software projects.</string>
+	<string> </string>
 	<key>developer</key>
-	<string>OpenAI</string>
+	<string>RIDDLE QUIET VENTURES, LLC</string>
 	<key>display_name</key>
-	<string>Codex</string>
+	<string>Signal Desktop</string>
 	<key>installer_item_hash</key>
-	<string>ae864e2def7db56d0bb77a876a5cbe4e4c2f554ccc654cec921b946892583c0a</string>
+	<string>b23ed551a307a3c4e59cd96e455df21b3d6f2cdaf017a060759d29210fd4bc06</string>
 	<key>installer_item_location</key>
-	<string>apps/Codex/Codex-26.721.41059.dmg</string>
+	<string>apps/Signal/signal-desktop-mac-universal-8.21.0.dmg</string>
 	<key>installer_item_size</key>
-	<integer>579943</integer>
+	<integer>257894</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.openai.codex</string>
+			<string>org.whispersystems.signal-desktop</string>
 			<key>CFBundleName</key>
-			<string>ChatGPT</string>
+			<string>Signal</string>
 			<key>CFBundleShortVersionString</key>
-			<string>26.721.41059</string>
+			<string>8.21.0</string>
 			<key>CFBundleVersion</key>
-			<string>5848</string>
+			<string>1</string>
 			<key>minosversion</key>
 			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/ChatGPT.app</string>
+			<string>/Applications/Signal.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,22 +60,20 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>ChatGPT.app</string>
+			<string>Signal.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
 	<string>12.0</string>
 	<key>name</key>
-	<string>Codex</string>
+	<string>Signal_Desktop</string>
 	<key>unattended_install</key>
-	<true/>
-	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>26.721.41059</string>
+	<string>8.21.0</string>
 </dict>
 </plist>
