@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-07-23T04:59:29Z</date>
+		<date>2026-08-01T04:54:12Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,35 +19,39 @@
 	<array>
 		<string>testing</string>
 	</array>
+	<key>category</key>
+	<string>Developer</string>
 	<key>description</key>
-	<string> </string>
+	<string>Built to make you extraordinarily productive, Cursor is the best way to code with AI.</string>
 	<key>developer</key>
-	<string>RIDDLE QUIET VENTURES, LLC</string>
+	<string>Anysphere, Inc.</string>
 	<key>display_name</key>
-	<string>Signal Desktop</string>
+	<string>Cursor</string>
+	<key>icon_name</key>
+	<string>Cursor.png</string>
 	<key>installer_item_hash</key>
-	<string>144c586b43e90798e686d3b39ea39a6365cef28813aa972f0e24881d2bef8b7a</string>
+	<string>2707b07893a3a7442619589892bd2119cef47f4bb304e95e8e6c8a360c6309be</string>
 	<key>installer_item_location</key>
-	<string>apps/Signal/signal-desktop-mac-universal-8.20.0.dmg</string>
+	<string>apps/Cursor/Cursor-3.14.7.dmg</string>
 	<key>installer_item_size</key>
-	<integer>257846</integer>
+	<integer>418388</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>org.whispersystems.signal-desktop</string>
+			<string>com.todesktop.230313mzl4w4u92</string>
 			<key>CFBundleName</key>
-			<string>Signal</string>
+			<string>Cursor</string>
 			<key>CFBundleShortVersionString</key>
-			<string>8.20.0</string>
+			<string>3.14.7</string>
 			<key>CFBundleVersion</key>
-			<string>1</string>
+			<string>3.14.7</string>
 			<key>minosversion</key>
 			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/Signal.app</string>
+			<string>/Applications/Cursor.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,20 +64,22 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Signal.app</string>
+			<string>Cursor.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
 	<string>12.0</string>
 	<key>name</key>
-	<string>Signal_Desktop</string>
+	<string>Cursor</string>
 	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>8.20.0</string>
+	<string>3.14.7</string>
 </dict>
 </plist>

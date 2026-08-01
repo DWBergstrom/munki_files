@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-07-30T04:53:45Z</date>
+		<date>2026-08-01T04:53:25Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -26,11 +26,11 @@
 	<key>display_name</key>
 	<string>Codex</string>
 	<key>installer_item_hash</key>
-	<string>7b3722e4f5864202b1dd69e6e6062f2f8c4388d215091503c73e1957b4cbf97a</string>
+	<string>45ec006a0f3f0fa004b6fd4d6d5529979a05361f995ca2c51de3a3b04deee123</string>
 	<key>installer_item_location</key>
-	<string>apps/Codex/Codex-26.721.81911.dmg</string>
+	<string>apps/Codex/Codex-26.727.51351.dmg</string>
 	<key>installer_item_size</key>
-	<integer>579962</integer>
+	<integer>595031</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
@@ -41,9 +41,9 @@
 			<key>CFBundleName</key>
 			<string>ChatGPT</string>
 			<key>CFBundleShortVersionString</key>
-			<string>26.721.81911</string>
+			<string>26.727.51351</string>
 			<key>CFBundleVersion</key>
-			<string>5973</string>
+			<string>6119</string>
 			<key>minosversion</key>
 			<string>12.0</string>
 			<key>path</key>
@@ -76,6 +76,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>26.721.81911</string>
+	<string>26.727.51351</string>
 </dict>
 </plist>

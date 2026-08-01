@@ -34909,6 +34909,76 @@ fi
 		<string>Anysphere, Inc.</string>
 		<key>display_name</key>
 		<string>Cursor</string>
+		<key>icon_name</key>
+		<string>Cursor.png</string>
+		<key>installer_item_hash</key>
+		<string>2707b07893a3a7442619589892bd2119cef47f4bb304e95e8e6c8a360c6309be</string>
+		<key>installer_item_location</key>
+		<string>apps/Cursor/Cursor-3.14.7.dmg</string>
+		<key>installer_item_size</key>
+		<integer>418388</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.todesktop.230313mzl4w4u92</string>
+				<key>CFBundleName</key>
+				<string>Cursor</string>
+				<key>CFBundleShortVersionString</key>
+				<string>3.14.7</string>
+				<key>CFBundleVersion</key>
+				<string>3.14.7</string>
+				<key>minosversion</key>
+				<string>12.0</string>
+				<key>path</key>
+				<string>/Applications/Cursor.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Cursor.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.0</string>
+		<key>name</key>
+		<string>Cursor</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>3.14.7</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Developer</string>
+		<key>description</key>
+		<string>Built to make you extraordinarily productive, Cursor is the best way to code with AI.</string>
+		<key>developer</key>
+		<string>Anysphere, Inc.</string>
+		<key>display_name</key>
+		<string>Cursor</string>
 		<key>installer_item_hash</key>
 		<string>9779f901386d881fc070ea94b6213b72d0f4e89f23f2cebaa707d67ac7984398</string>
 		<key>installer_item_location</key>
@@ -46200,6 +46270,51 @@ fi
 		<key>catalogs</key>
 		<array>
 			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Productivity</string>
+		<key>description</key>
+		<string>Microsoft Edge web browser</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Microsoft Edge</string>
+		<key>installed_size</key>
+		<integer>938622</integer>
+		<key>installer_item_hash</key>
+		<string>52701590e088388b865ebd889c9fde7dfc9a477652f79248da12db8f7970f450</string>
+		<key>installer_item_location</key>
+		<string>apps/Microsoft/Microsoft_Edge-151.0.4129.59.pkg</string>
+		<key>installer_item_size</key>
+		<integer>416851</integer>
+		<key>minimum_os_version</key>
+		<string>10.10.0</string>
+		<key>name</key>
+		<string>MicrosoftEdge</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>938622</integer>
+				<key>packageid</key>
+				<string>com.microsoft.edgemac</string>
+				<key>version</key>
+				<string>151.0.4129.59</string>
+			</dict>
+		</array>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>151.0.4129.59</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
 			<string>development</string>
 		</array>
 		<key>category</key>
@@ -48975,11 +49090,11 @@ fi
 		<key>display_name</key>
 		<string>Codex</string>
 		<key>installer_item_hash</key>
-		<string>7b3722e4f5864202b1dd69e6e6062f2f8c4388d215091503c73e1957b4cbf97a</string>
+		<string>45ec006a0f3f0fa004b6fd4d6d5529979a05361f995ca2c51de3a3b04deee123</string>
 		<key>installer_item_location</key>
-		<string>apps/Codex/Codex-26.721.81911.dmg</string>
+		<string>apps/Codex/Codex-26.727.51351.dmg</string>
 		<key>installer_item_size</key>
-		<integer>579962</integer>
+		<integer>595031</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -48990,9 +49105,9 @@ fi
 				<key>CFBundleName</key>
 				<string>ChatGPT</string>
 				<key>CFBundleShortVersionString</key>
-				<string>26.721.81911</string>
+				<string>26.727.51351</string>
 				<key>CFBundleVersion</key>
-				<string>5973</string>
+				<string>6119</string>
 				<key>minosversion</key>
 				<string>12.0</string>
 				<key>path</key>
@@ -49025,7 +49140,7 @@ fi
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>26.721.81911</string>
+		<string>26.727.51351</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -65423,6 +65538,74 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<key>display_name</key>
 		<string>Raycast</string>
 		<key>installer_item_hash</key>
+		<string>dc84c88ce4820c265795d3d1d512b6fd4e2d7bfad04cf50b438f12c604ca4282</string>
+		<key>installer_item_location</key>
+		<string>apps/Raycast/Raycast-1.104.24.dmg</string>
+		<key>installer_item_size</key>
+		<integer>108522</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.raycast.macos</string>
+				<key>CFBundleName</key>
+				<string>Raycast</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.104.24</string>
+				<key>CFBundleVersion</key>
+				<string>0</string>
+				<key>minosversion</key>
+				<string>13.0</string>
+				<key>path</key>
+				<string>/Applications/Raycast.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Raycast.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0</string>
+		<key>name</key>
+		<string>Raycast</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.104.24</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Supercharged productivity
+
+Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
+		<key>developer</key>
+		<string>Raycast Technologies Inc</string>
+		<key>display_name</key>
+		<string>Raycast</string>
+		<key>installer_item_hash</key>
 		<string>af7cab72f44d488d5968de083e230582b25bb3c818a0fc9393766931ba63fbd9</string>
 		<key>installer_item_location</key>
 		<string>apps/Raycast/Raycast-1.104.23.dmg</string>
@@ -67432,68 +67615,6 @@ rm -rf /Applications/zoom.us.app
 		<true/>
 		<key>version</key>
 		<string>7.1.5.84650</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Fast Terminal app based in Rust.</string>
-		<key>developer</key>
-		<string>Denver Technologies</string>
-		<key>display_name</key>
-		<string>Warp</string>
-		<key>force_munkiimport</key>
-		<true/>
-		<key>installer_item_hash</key>
-		<string>c0a5f02f67eb97213b515315333b1cac77d727a6f82c8cc63132b9de3006e1ce</string>
-		<key>installer_item_location</key>
-		<string>apps/Warp/Warp-0.2026.07.22.09.01.01.dmg</string>
-		<key>installer_item_size</key>
-		<integer>323685</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>dev.warp.Warp-Stable</string>
-				<key>CFBundleName</key>
-				<string>Warp</string>
-				<key>CFBundleShortVersionString</key>
-				<string>0.2026.07.22.09.01.01</string>
-				<key>CFBundleVersion</key>
-				<string>0.2026.07.22.09.01.01</string>
-				<key>path</key>
-				<string>/Applications/Warp.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Warp.app</string>
-			</dict>
-		</array>
-		<key>name</key>
-		<string>Warp</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>0.2026.07.22.09.01.01</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -83590,70 +83711,6 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>8.21.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>RIDDLE QUIET VENTURES, LLC</string>
-		<key>display_name</key>
-		<string>Signal Desktop</string>
-		<key>installer_item_hash</key>
-		<string>144c586b43e90798e686d3b39ea39a6365cef28813aa972f0e24881d2bef8b7a</string>
-		<key>installer_item_location</key>
-		<string>apps/Signal/signal-desktop-mac-universal-8.20.0.dmg</string>
-		<key>installer_item_size</key>
-		<integer>257846</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.whispersystems.signal-desktop</string>
-				<key>CFBundleName</key>
-				<string>Signal</string>
-				<key>CFBundleShortVersionString</key>
-				<string>8.20.0</string>
-				<key>CFBundleVersion</key>
-				<string>1</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Signal.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Signal.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Signal_Desktop</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>8.20.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>

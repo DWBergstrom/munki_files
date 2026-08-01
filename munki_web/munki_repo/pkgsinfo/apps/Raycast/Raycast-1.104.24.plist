@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-07-25T05:04:16Z</date>
+		<date>2026-08-01T04:58:55Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,34 +20,36 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Fast Terminal app based in Rust.</string>
+	<string>Supercharged productivity
+
+Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
 	<key>developer</key>
-	<string>Denver Technologies</string>
+	<string>Raycast Technologies Inc</string>
 	<key>display_name</key>
-	<string>Warp</string>
-	<key>force_munkiimport</key>
-	<true/>
+	<string>Raycast</string>
 	<key>installer_item_hash</key>
-	<string>c0a5f02f67eb97213b515315333b1cac77d727a6f82c8cc63132b9de3006e1ce</string>
+	<string>dc84c88ce4820c265795d3d1d512b6fd4e2d7bfad04cf50b438f12c604ca4282</string>
 	<key>installer_item_location</key>
-	<string>apps/Warp/Warp-0.2026.07.22.09.01.01.dmg</string>
+	<string>apps/Raycast/Raycast-1.104.24.dmg</string>
 	<key>installer_item_size</key>
-	<integer>323685</integer>
+	<integer>108522</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>dev.warp.Warp-Stable</string>
+			<string>com.raycast.macos</string>
 			<key>CFBundleName</key>
-			<string>Warp</string>
+			<string>Raycast</string>
 			<key>CFBundleShortVersionString</key>
-			<string>0.2026.07.22.09.01.01</string>
+			<string>1.104.24</string>
 			<key>CFBundleVersion</key>
-			<string>0.2026.07.22.09.01.01</string>
+			<string>0</string>
+			<key>minosversion</key>
+			<string>13.0</string>
 			<key>path</key>
-			<string>/Applications/Warp.app</string>
+			<string>/Applications/Raycast.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,18 +62,22 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Warp.app</string>
+			<string>Raycast.app</string>
 		</dict>
 	</array>
+	<key>minimum_os_version</key>
+	<string>13.0</string>
 	<key>name</key>
-	<string>Warp</string>
+	<string>Raycast</string>
 	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>0.2026.07.22.09.01.01</string>
+	<string>1.104.24</string>
 </dict>
 </plist>
