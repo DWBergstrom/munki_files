@@ -24,13 +24,13 @@
 		<key>display_name</key>
 		<string>Windows App</string>
 		<key>installed_size</key>
-		<integer>242588</integer>
+		<integer>242572</integer>
 		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
+		<string>bdc7ccf2914960074d8eaeaa0b3661127bb3a29291f6832ab7dfdadf70c4171a</string>
 		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
+		<string>apps/microsoft/Microsoft_Windows_App-11.4.0.pkg</string>
 		<key>installer_item_size</key>
-		<integer>100508</integer>
+		<integer>100503</integer>
 		<key>installs</key>
 		<array>
 			<dict>
@@ -39,9 +39,9 @@
 				<key>CFBundleName</key>
 				<string>Windows App</string>
 				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
+				<string>11.4.0</string>
 				<key>CFBundleVersion</key>
-				<string>3040</string>
+				<string>3078</string>
 				<key>minosversion</key>
 				<string>14.0</string>
 				<key>path</key>
@@ -60,11 +60,11 @@
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>231857</integer>
+				<integer>231841</integer>
 				<key>packageid</key>
 				<string>com.microsoft.rdc.macos</string>
 				<key>version</key>
-				<string>11.3.7</string>
+				<string>11.4.0</string>
 			</dict>
 			<dict>
 				<key>installed_size</key>
@@ -84,7 +84,7 @@
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>11.3.7</string>
+		<string>11.4.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -108,13 +108,13 @@
 		<key>display_name</key>
 		<string>Windows App</string>
 		<key>installed_size</key>
-		<integer>242588</integer>
+		<integer>242572</integer>
 		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
+		<string>bdc7ccf2914960074d8eaeaa0b3661127bb3a29291f6832ab7dfdadf70c4171a</string>
 		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
+		<string>apps/microsoft/Microsoft_Windows_App-11.4.0.pkg</string>
 		<key>installer_item_size</key>
-		<integer>100508</integer>
+		<integer>100503</integer>
 		<key>installs</key>
 		<array>
 			<dict>
@@ -123,9 +123,9 @@
 				<key>CFBundleName</key>
 				<string>Windows App</string>
 				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
+				<string>11.4.0</string>
 				<key>CFBundleVersion</key>
-				<string>3040</string>
+				<string>3078</string>
 				<key>minosversion</key>
 				<string>14.0</string>
 				<key>path</key>
@@ -144,11 +144,11 @@
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>231857</integer>
+				<integer>231841</integer>
 				<key>packageid</key>
 				<string>com.microsoft.rdc.macos</string>
 				<key>version</key>
-				<string>11.3.7</string>
+				<string>11.4.0</string>
 			</dict>
 			<dict>
 				<key>installed_size</key>
@@ -168,7 +168,7 @@
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>11.3.7</string>
+		<string>11.4.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -192,13 +192,13 @@
 		<key>display_name</key>
 		<string>Windows App</string>
 		<key>installed_size</key>
-		<integer>242588</integer>
+		<integer>242572</integer>
 		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
+		<string>bdc7ccf2914960074d8eaeaa0b3661127bb3a29291f6832ab7dfdadf70c4171a</string>
 		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
+		<string>apps/microsoft/Microsoft_Windows_App-11.4.0.pkg</string>
 		<key>installer_item_size</key>
-		<integer>100508</integer>
+		<integer>100503</integer>
 		<key>installs</key>
 		<array>
 			<dict>
@@ -207,9 +207,9 @@
 				<key>CFBundleName</key>
 				<string>Windows App</string>
 				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
+				<string>11.4.0</string>
 				<key>CFBundleVersion</key>
-				<string>3040</string>
+				<string>3078</string>
 				<key>minosversion</key>
 				<string>14.0</string>
 				<key>path</key>
@@ -228,11 +228,11 @@
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>231857</integer>
+				<integer>231841</integer>
 				<key>packageid</key>
 				<string>com.microsoft.rdc.macos</string>
 				<key>version</key>
-				<string>11.3.7</string>
+				<string>11.4.0</string>
 			</dict>
 			<dict>
 				<key>installed_size</key>
@@ -252,7 +252,7 @@
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>11.3.7</string>
+		<string>11.4.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -276,13 +276,13 @@
 		<key>display_name</key>
 		<string>Windows App</string>
 		<key>installed_size</key>
-		<integer>242588</integer>
+		<integer>242572</integer>
 		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
+		<string>bdc7ccf2914960074d8eaeaa0b3661127bb3a29291f6832ab7dfdadf70c4171a</string>
 		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
+		<string>apps/microsoft/Microsoft_Windows_App-11.4.0.pkg</string>
 		<key>installer_item_size</key>
-		<integer>100508</integer>
+		<integer>100503</integer>
 		<key>installs</key>
 		<array>
 			<dict>
@@ -291,9 +291,9 @@
 				<key>CFBundleName</key>
 				<string>Windows App</string>
 				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
+				<string>11.4.0</string>
 				<key>CFBundleVersion</key>
-				<string>3040</string>
+				<string>3078</string>
 				<key>minosversion</key>
 				<string>14.0</string>
 				<key>path</key>
@@ -312,11 +312,11 @@
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>231857</integer>
+				<integer>231841</integer>
 				<key>packageid</key>
 				<string>com.microsoft.rdc.macos</string>
 				<key>version</key>
-				<string>11.3.7</string>
+				<string>11.4.0</string>
 			</dict>
 			<dict>
 				<key>installed_size</key>
@@ -336,7 +336,7 @@
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>11.3.7</string>
+		<string>11.4.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -360,13 +360,13 @@
 		<key>display_name</key>
 		<string>Windows App</string>
 		<key>installed_size</key>
-		<integer>242588</integer>
+		<integer>242572</integer>
 		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
+		<string>bdc7ccf2914960074d8eaeaa0b3661127bb3a29291f6832ab7dfdadf70c4171a</string>
 		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
+		<string>apps/microsoft/Microsoft_Windows_App-11.4.0.pkg</string>
 		<key>installer_item_size</key>
-		<integer>100508</integer>
+		<integer>100503</integer>
 		<key>installs</key>
 		<array>
 			<dict>
@@ -375,9 +375,9 @@
 				<key>CFBundleName</key>
 				<string>Windows App</string>
 				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
+				<string>11.4.0</string>
 				<key>CFBundleVersion</key>
-				<string>3040</string>
+				<string>3078</string>
 				<key>minosversion</key>
 				<string>14.0</string>
 				<key>path</key>
@@ -396,11 +396,11 @@
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>231857</integer>
+				<integer>231841</integer>
 				<key>packageid</key>
 				<string>com.microsoft.rdc.macos</string>
 				<key>version</key>
-				<string>11.3.7</string>
+				<string>11.4.0</string>
 			</dict>
 			<dict>
 				<key>installed_size</key>
@@ -420,7 +420,7 @@
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>11.3.7</string>
+		<string>11.4.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -444,13 +444,13 @@
 		<key>display_name</key>
 		<string>Windows App</string>
 		<key>installed_size</key>
-		<integer>242588</integer>
+		<integer>242572</integer>
 		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
+		<string>bdc7ccf2914960074d8eaeaa0b3661127bb3a29291f6832ab7dfdadf70c4171a</string>
 		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
+		<string>apps/microsoft/Microsoft_Windows_App-11.4.0.pkg</string>
 		<key>installer_item_size</key>
-		<integer>100508</integer>
+		<integer>100503</integer>
 		<key>installs</key>
 		<array>
 			<dict>
@@ -459,9 +459,9 @@
 				<key>CFBundleName</key>
 				<string>Windows App</string>
 				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
+				<string>11.4.0</string>
 				<key>CFBundleVersion</key>
-				<string>3040</string>
+				<string>3078</string>
 				<key>minosversion</key>
 				<string>14.0</string>
 				<key>path</key>
@@ -480,11 +480,11 @@
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>231857</integer>
+				<integer>231841</integer>
 				<key>packageid</key>
 				<string>com.microsoft.rdc.macos</string>
 				<key>version</key>
-				<string>11.3.7</string>
+				<string>11.4.0</string>
 			</dict>
 			<dict>
 				<key>installed_size</key>
@@ -504,7 +504,7 @@
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>11.3.7</string>
+		<string>11.4.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -528,13 +528,13 @@
 		<key>display_name</key>
 		<string>Windows App</string>
 		<key>installed_size</key>
-		<integer>242676</integer>
+		<integer>242572</integer>
 		<key>installer_item_hash</key>
-		<string>47052e0aba8d5b2ad9a5468349f72bee317b69c07300a40ccadefb96050b1251</string>
+		<string>bdc7ccf2914960074d8eaeaa0b3661127bb3a29291f6832ab7dfdadf70c4171a</string>
 		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.8.pkg</string>
+		<string>apps/microsoft/Microsoft_Windows_App-11.4.0.pkg</string>
 		<key>installer_item_size</key>
-		<integer>100541</integer>
+		<integer>100503</integer>
 		<key>installs</key>
 		<array>
 			<dict>
@@ -543,9 +543,9 @@
 				<key>CFBundleName</key>
 				<string>Windows App</string>
 				<key>CFBundleShortVersionString</key>
-				<string>11.3.8</string>
+				<string>11.4.0</string>
 				<key>CFBundleVersion</key>
-				<string>3054</string>
+				<string>3078</string>
 				<key>minosversion</key>
 				<string>14.0</string>
 				<key>path</key>
@@ -564,11 +564,11 @@
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>231945</integer>
+				<integer>231841</integer>
 				<key>packageid</key>
 				<string>com.microsoft.rdc.macos</string>
 				<key>version</key>
-				<string>11.3.8</string>
+				<string>11.4.0</string>
 			</dict>
 			<dict>
 				<key>installed_size</key>
@@ -588,7 +588,7 @@
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>11.3.8</string>
+		<string>11.4.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -612,13 +612,13 @@
 		<key>display_name</key>
 		<string>Windows App</string>
 		<key>installed_size</key>
-		<integer>242588</integer>
+		<integer>242572</integer>
 		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
+		<string>bdc7ccf2914960074d8eaeaa0b3661127bb3a29291f6832ab7dfdadf70c4171a</string>
 		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
+		<string>apps/microsoft/Microsoft_Windows_App-11.4.0.pkg</string>
 		<key>installer_item_size</key>
-		<integer>100508</integer>
+		<integer>100503</integer>
 		<key>installs</key>
 		<array>
 			<dict>
@@ -627,9 +627,9 @@
 				<key>CFBundleName</key>
 				<string>Windows App</string>
 				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
+				<string>11.4.0</string>
 				<key>CFBundleVersion</key>
-				<string>3040</string>
+				<string>3078</string>
 				<key>minosversion</key>
 				<string>14.0</string>
 				<key>path</key>
@@ -648,11 +648,11 @@
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>231857</integer>
+				<integer>231841</integer>
 				<key>packageid</key>
 				<string>com.microsoft.rdc.macos</string>
 				<key>version</key>
-				<string>11.3.7</string>
+				<string>11.4.0</string>
 			</dict>
 			<dict>
 				<key>installed_size</key>
@@ -672,7 +672,7 @@
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>11.3.7</string>
+		<string>11.4.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -696,13 +696,13 @@
 		<key>display_name</key>
 		<string>Windows App</string>
 		<key>installed_size</key>
-		<integer>242588</integer>
+		<integer>242572</integer>
 		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
+		<string>bdc7ccf2914960074d8eaeaa0b3661127bb3a29291f6832ab7dfdadf70c4171a</string>
 		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
+		<string>apps/microsoft/Microsoft_Windows_App-11.4.0.pkg</string>
 		<key>installer_item_size</key>
-		<integer>100508</integer>
+		<integer>100503</integer>
 		<key>installs</key>
 		<array>
 			<dict>
@@ -711,9 +711,9 @@
 				<key>CFBundleName</key>
 				<string>Windows App</string>
 				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
+				<string>11.4.0</string>
 				<key>CFBundleVersion</key>
-				<string>3040</string>
+				<string>3078</string>
 				<key>minosversion</key>
 				<string>14.0</string>
 				<key>path</key>
@@ -732,11 +732,11 @@
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>231857</integer>
+				<integer>231841</integer>
 				<key>packageid</key>
 				<string>com.microsoft.rdc.macos</string>
 				<key>version</key>
-				<string>11.3.7</string>
+				<string>11.4.0</string>
 			</dict>
 			<dict>
 				<key>installed_size</key>
@@ -756,7 +756,7 @@
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>11.3.7</string>
+		<string>11.4.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -780,13 +780,13 @@
 		<key>display_name</key>
 		<string>Windows App</string>
 		<key>installed_size</key>
-		<integer>242588</integer>
+		<integer>242572</integer>
 		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
+		<string>bdc7ccf2914960074d8eaeaa0b3661127bb3a29291f6832ab7dfdadf70c4171a</string>
 		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
+		<string>apps/microsoft/Microsoft_Windows_App-11.4.0.pkg</string>
 		<key>installer_item_size</key>
-		<integer>100508</integer>
+		<integer>100503</integer>
 		<key>installs</key>
 		<array>
 			<dict>
@@ -795,9 +795,9 @@
 				<key>CFBundleName</key>
 				<string>Windows App</string>
 				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
+				<string>11.4.0</string>
 				<key>CFBundleVersion</key>
-				<string>3040</string>
+				<string>3078</string>
 				<key>minosversion</key>
 				<string>14.0</string>
 				<key>path</key>
@@ -816,11 +816,11 @@
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>231857</integer>
+				<integer>231841</integer>
 				<key>packageid</key>
 				<string>com.microsoft.rdc.macos</string>
 				<key>version</key>
-				<string>11.3.7</string>
+				<string>11.4.0</string>
 			</dict>
 			<dict>
 				<key>installed_size</key>
@@ -840,7 +840,7 @@
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>11.3.7</string>
+		<string>11.4.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -864,13 +864,13 @@
 		<key>display_name</key>
 		<string>Windows App</string>
 		<key>installed_size</key>
-		<integer>242588</integer>
+		<integer>242572</integer>
 		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
+		<string>bdc7ccf2914960074d8eaeaa0b3661127bb3a29291f6832ab7dfdadf70c4171a</string>
 		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
+		<string>apps/microsoft/Microsoft_Windows_App-11.4.0.pkg</string>
 		<key>installer_item_size</key>
-		<integer>100508</integer>
+		<integer>100503</integer>
 		<key>installs</key>
 		<array>
 			<dict>
@@ -879,9 +879,9 @@
 				<key>CFBundleName</key>
 				<string>Windows App</string>
 				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
+				<string>11.4.0</string>
 				<key>CFBundleVersion</key>
-				<string>3040</string>
+				<string>3078</string>
 				<key>minosversion</key>
 				<string>14.0</string>
 				<key>path</key>
@@ -900,11 +900,11 @@
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>231857</integer>
+				<integer>231841</integer>
 				<key>packageid</key>
 				<string>com.microsoft.rdc.macos</string>
 				<key>version</key>
-				<string>11.3.7</string>
+				<string>11.4.0</string>
 			</dict>
 			<dict>
 				<key>installed_size</key>
@@ -924,7 +924,7 @@
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>11.3.7</string>
+		<string>11.4.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -948,13 +948,13 @@
 		<key>display_name</key>
 		<string>Windows App</string>
 		<key>installed_size</key>
-		<integer>242588</integer>
+		<integer>242572</integer>
 		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
+		<string>bdc7ccf2914960074d8eaeaa0b3661127bb3a29291f6832ab7dfdadf70c4171a</string>
 		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
+		<string>apps/microsoft/Microsoft_Windows_App-11.4.0.pkg</string>
 		<key>installer_item_size</key>
-		<integer>100508</integer>
+		<integer>100503</integer>
 		<key>installs</key>
 		<array>
 			<dict>
@@ -963,9 +963,9 @@
 				<key>CFBundleName</key>
 				<string>Windows App</string>
 				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
+				<string>11.4.0</string>
 				<key>CFBundleVersion</key>
-				<string>3040</string>
+				<string>3078</string>
 				<key>minosversion</key>
 				<string>14.0</string>
 				<key>path</key>
@@ -984,11 +984,11 @@
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>231857</integer>
+				<integer>231841</integer>
 				<key>packageid</key>
 				<string>com.microsoft.rdc.macos</string>
 				<key>version</key>
-				<string>11.3.7</string>
+				<string>11.4.0</string>
 			</dict>
 			<dict>
 				<key>installed_size</key>
@@ -1008,7 +1008,7 @@
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>11.3.7</string>
+		<string>11.4.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -1032,13 +1032,13 @@
 		<key>display_name</key>
 		<string>Windows App</string>
 		<key>installed_size</key>
-		<integer>242588</integer>
+		<integer>242572</integer>
 		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
+		<string>bdc7ccf2914960074d8eaeaa0b3661127bb3a29291f6832ab7dfdadf70c4171a</string>
 		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
+		<string>apps/microsoft/Microsoft_Windows_App-11.4.0.pkg</string>
 		<key>installer_item_size</key>
-		<integer>100508</integer>
+		<integer>100503</integer>
 		<key>installs</key>
 		<array>
 			<dict>
@@ -1047,9 +1047,9 @@
 				<key>CFBundleName</key>
 				<string>Windows App</string>
 				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
+				<string>11.4.0</string>
 				<key>CFBundleVersion</key>
-				<string>3040</string>
+				<string>3078</string>
 				<key>minosversion</key>
 				<string>14.0</string>
 				<key>path</key>
@@ -1068,11 +1068,11 @@
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>231857</integer>
+				<integer>231841</integer>
 				<key>packageid</key>
 				<string>com.microsoft.rdc.macos</string>
 				<key>version</key>
-				<string>11.3.7</string>
+				<string>11.4.0</string>
 			</dict>
 			<dict>
 				<key>installed_size</key>
@@ -1092,7 +1092,7 @@
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>11.3.7</string>
+		<string>11.4.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -1116,13 +1116,13 @@
 		<key>display_name</key>
 		<string>Windows App</string>
 		<key>installed_size</key>
-		<integer>242588</integer>
+		<integer>242572</integer>
 		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
+		<string>bdc7ccf2914960074d8eaeaa0b3661127bb3a29291f6832ab7dfdadf70c4171a</string>
 		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
+		<string>apps/microsoft/Microsoft_Windows_App-11.4.0.pkg</string>
 		<key>installer_item_size</key>
-		<integer>100508</integer>
+		<integer>100503</integer>
 		<key>installs</key>
 		<array>
 			<dict>
@@ -1131,9 +1131,9 @@
 				<key>CFBundleName</key>
 				<string>Windows App</string>
 				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
+				<string>11.4.0</string>
 				<key>CFBundleVersion</key>
-				<string>3040</string>
+				<string>3078</string>
 				<key>minosversion</key>
 				<string>14.0</string>
 				<key>path</key>
@@ -1152,11 +1152,11 @@
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>231857</integer>
+				<integer>231841</integer>
 				<key>packageid</key>
 				<string>com.microsoft.rdc.macos</string>
 				<key>version</key>
-				<string>11.3.7</string>
+				<string>11.4.0</string>
 			</dict>
 			<dict>
 				<key>installed_size</key>
@@ -1176,7 +1176,7 @@
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>11.3.7</string>
+		<string>11.4.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -1200,13 +1200,13 @@
 		<key>display_name</key>
 		<string>Windows App</string>
 		<key>installed_size</key>
-		<integer>242588</integer>
+		<integer>242572</integer>
 		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
+		<string>bdc7ccf2914960074d8eaeaa0b3661127bb3a29291f6832ab7dfdadf70c4171a</string>
 		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
+		<string>apps/microsoft/Microsoft_Windows_App-11.4.0.pkg</string>
 		<key>installer_item_size</key>
-		<integer>100508</integer>
+		<integer>100503</integer>
 		<key>installs</key>
 		<array>
 			<dict>
@@ -1215,9 +1215,9 @@
 				<key>CFBundleName</key>
 				<string>Windows App</string>
 				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
+				<string>11.4.0</string>
 				<key>CFBundleVersion</key>
-				<string>3040</string>
+				<string>3078</string>
 				<key>minosversion</key>
 				<string>14.0</string>
 				<key>path</key>
@@ -1236,11 +1236,11 @@
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>231857</integer>
+				<integer>231841</integer>
 				<key>packageid</key>
 				<string>com.microsoft.rdc.macos</string>
 				<key>version</key>
-				<string>11.3.7</string>
+				<string>11.4.0</string>
 			</dict>
 			<dict>
 				<key>installed_size</key>
@@ -1260,1435 +1260,7 @@
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>11.3.7</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>Microsoft Remote Desktop</string>
-			<string>Windows App</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>utilities</string>
-		</array>
-		<key>category</key>
-		<string>Utility</string>
-		<key>description</key>
-		<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
-</string>
-		<key>developer</key>
-		<string>Microsoft</string>
-		<key>display_name</key>
-		<string>Windows App</string>
-		<key>installed_size</key>
-		<integer>242588</integer>
-		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
-		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
-		<key>installer_item_size</key>
-		<integer>100508</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>CFBundleName</key>
-				<string>Windows App</string>
-				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
-				<key>CFBundleVersion</key>
-				<string>3040</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Windows App.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>WindowsApp</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>231857</integer>
-				<key>packageid</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>version</key>
-				<string>11.3.7</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>10731</integer>
-				<key>packageid</key>
-				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
-				<key>version</key>
-				<string>4.81.25121042</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>11.3.7</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>Microsoft Remote Desktop</string>
-			<string>Windows App</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>utilities</string>
-		</array>
-		<key>category</key>
-		<string>Utility</string>
-		<key>description</key>
-		<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
-</string>
-		<key>developer</key>
-		<string>Microsoft</string>
-		<key>display_name</key>
-		<string>Windows App</string>
-		<key>installed_size</key>
-		<integer>242588</integer>
-		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
-		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
-		<key>installer_item_size</key>
-		<integer>100508</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>CFBundleName</key>
-				<string>Windows App</string>
-				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
-				<key>CFBundleVersion</key>
-				<string>3040</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Windows App.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>WindowsApp</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>231857</integer>
-				<key>packageid</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>version</key>
-				<string>11.3.7</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>10731</integer>
-				<key>packageid</key>
-				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
-				<key>version</key>
-				<string>4.81.25121042</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>11.3.7</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>Microsoft Remote Desktop</string>
-			<string>Windows App</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>utilities</string>
-		</array>
-		<key>category</key>
-		<string>Utility</string>
-		<key>description</key>
-		<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
-</string>
-		<key>developer</key>
-		<string>Microsoft</string>
-		<key>display_name</key>
-		<string>Windows App</string>
-		<key>installed_size</key>
-		<integer>242588</integer>
-		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
-		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
-		<key>installer_item_size</key>
-		<integer>100508</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>CFBundleName</key>
-				<string>Windows App</string>
-				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
-				<key>CFBundleVersion</key>
-				<string>3040</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Windows App.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>WindowsApp</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>231857</integer>
-				<key>packageid</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>version</key>
-				<string>11.3.7</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>10731</integer>
-				<key>packageid</key>
-				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
-				<key>version</key>
-				<string>4.81.25121042</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>11.3.7</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>Microsoft Remote Desktop</string>
-			<string>Windows App</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>utilities</string>
-		</array>
-		<key>category</key>
-		<string>Utility</string>
-		<key>description</key>
-		<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
-</string>
-		<key>developer</key>
-		<string>Microsoft</string>
-		<key>display_name</key>
-		<string>Windows App</string>
-		<key>installed_size</key>
-		<integer>242588</integer>
-		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
-		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
-		<key>installer_item_size</key>
-		<integer>100508</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>CFBundleName</key>
-				<string>Windows App</string>
-				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
-				<key>CFBundleVersion</key>
-				<string>3040</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Windows App.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>WindowsApp</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>231857</integer>
-				<key>packageid</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>version</key>
-				<string>11.3.7</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>10731</integer>
-				<key>packageid</key>
-				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
-				<key>version</key>
-				<string>4.81.25121042</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>11.3.7</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>Microsoft Remote Desktop</string>
-			<string>Windows App</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>utilities</string>
-		</array>
-		<key>category</key>
-		<string>Utility</string>
-		<key>description</key>
-		<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
-</string>
-		<key>developer</key>
-		<string>Microsoft</string>
-		<key>display_name</key>
-		<string>Windows App</string>
-		<key>installed_size</key>
-		<integer>242588</integer>
-		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
-		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
-		<key>installer_item_size</key>
-		<integer>100508</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>CFBundleName</key>
-				<string>Windows App</string>
-				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
-				<key>CFBundleVersion</key>
-				<string>3040</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Windows App.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>WindowsApp</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>231857</integer>
-				<key>packageid</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>version</key>
-				<string>11.3.7</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>10731</integer>
-				<key>packageid</key>
-				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
-				<key>version</key>
-				<string>4.81.25121042</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>11.3.7</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>Microsoft Remote Desktop</string>
-			<string>Windows App</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>utilities</string>
-		</array>
-		<key>category</key>
-		<string>Utility</string>
-		<key>description</key>
-		<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
-</string>
-		<key>developer</key>
-		<string>Microsoft</string>
-		<key>display_name</key>
-		<string>Windows App</string>
-		<key>installed_size</key>
-		<integer>242588</integer>
-		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
-		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
-		<key>installer_item_size</key>
-		<integer>100508</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>CFBundleName</key>
-				<string>Windows App</string>
-				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
-				<key>CFBundleVersion</key>
-				<string>3040</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Windows App.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>WindowsApp</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>231857</integer>
-				<key>packageid</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>version</key>
-				<string>11.3.7</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>10731</integer>
-				<key>packageid</key>
-				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
-				<key>version</key>
-				<string>4.81.25121042</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>11.3.7</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>Microsoft Remote Desktop</string>
-			<string>Windows App</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>utilities</string>
-		</array>
-		<key>category</key>
-		<string>Utility</string>
-		<key>description</key>
-		<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
-</string>
-		<key>developer</key>
-		<string>Microsoft</string>
-		<key>display_name</key>
-		<string>Windows App</string>
-		<key>installed_size</key>
-		<integer>242588</integer>
-		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
-		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
-		<key>installer_item_size</key>
-		<integer>100508</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>CFBundleName</key>
-				<string>Windows App</string>
-				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
-				<key>CFBundleVersion</key>
-				<string>3040</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Windows App.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>WindowsApp</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>231857</integer>
-				<key>packageid</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>version</key>
-				<string>11.3.7</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>10731</integer>
-				<key>packageid</key>
-				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
-				<key>version</key>
-				<string>4.81.25121042</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>11.3.7</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>Microsoft Remote Desktop</string>
-			<string>Windows App</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>utilities</string>
-		</array>
-		<key>category</key>
-		<string>Utility</string>
-		<key>description</key>
-		<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
-</string>
-		<key>developer</key>
-		<string>Microsoft</string>
-		<key>display_name</key>
-		<string>Windows App</string>
-		<key>installed_size</key>
-		<integer>242588</integer>
-		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
-		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
-		<key>installer_item_size</key>
-		<integer>100508</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>CFBundleName</key>
-				<string>Windows App</string>
-				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
-				<key>CFBundleVersion</key>
-				<string>3040</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Windows App.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>WindowsApp</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>231857</integer>
-				<key>packageid</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>version</key>
-				<string>11.3.7</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>10731</integer>
-				<key>packageid</key>
-				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
-				<key>version</key>
-				<string>4.81.25121042</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>11.3.7</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>Microsoft Remote Desktop</string>
-			<string>Windows App</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>utilities</string>
-		</array>
-		<key>category</key>
-		<string>Utility</string>
-		<key>description</key>
-		<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
-</string>
-		<key>developer</key>
-		<string>Microsoft</string>
-		<key>display_name</key>
-		<string>Windows App</string>
-		<key>installed_size</key>
-		<integer>242588</integer>
-		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
-		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
-		<key>installer_item_size</key>
-		<integer>100508</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>CFBundleName</key>
-				<string>Windows App</string>
-				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
-				<key>CFBundleVersion</key>
-				<string>3040</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Windows App.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>WindowsApp</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>231857</integer>
-				<key>packageid</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>version</key>
-				<string>11.3.7</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>10731</integer>
-				<key>packageid</key>
-				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
-				<key>version</key>
-				<string>4.81.25121042</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>11.3.7</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>Microsoft Remote Desktop</string>
-			<string>Windows App</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>utilities</string>
-		</array>
-		<key>category</key>
-		<string>Utility</string>
-		<key>description</key>
-		<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
-</string>
-		<key>developer</key>
-		<string>Microsoft</string>
-		<key>display_name</key>
-		<string>Windows App</string>
-		<key>installed_size</key>
-		<integer>242588</integer>
-		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
-		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
-		<key>installer_item_size</key>
-		<integer>100508</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>CFBundleName</key>
-				<string>Windows App</string>
-				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
-				<key>CFBundleVersion</key>
-				<string>3040</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Windows App.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>WindowsApp</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>231857</integer>
-				<key>packageid</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>version</key>
-				<string>11.3.7</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>10731</integer>
-				<key>packageid</key>
-				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
-				<key>version</key>
-				<string>4.81.25121042</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>11.3.7</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>Microsoft Remote Desktop</string>
-			<string>Windows App</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>utilities</string>
-		</array>
-		<key>category</key>
-		<string>Utility</string>
-		<key>description</key>
-		<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
-</string>
-		<key>developer</key>
-		<string>Microsoft</string>
-		<key>display_name</key>
-		<string>Windows App</string>
-		<key>installed_size</key>
-		<integer>242588</integer>
-		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
-		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
-		<key>installer_item_size</key>
-		<integer>100508</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>CFBundleName</key>
-				<string>Windows App</string>
-				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
-				<key>CFBundleVersion</key>
-				<string>3040</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Windows App.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>WindowsApp</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>231857</integer>
-				<key>packageid</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>version</key>
-				<string>11.3.7</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>10731</integer>
-				<key>packageid</key>
-				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
-				<key>version</key>
-				<string>4.81.25121042</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>11.3.7</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>Microsoft Remote Desktop</string>
-			<string>Windows App</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>utilities</string>
-		</array>
-		<key>category</key>
-		<string>Utility</string>
-		<key>description</key>
-		<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
-</string>
-		<key>developer</key>
-		<string>Microsoft</string>
-		<key>display_name</key>
-		<string>Windows App</string>
-		<key>installed_size</key>
-		<integer>242588</integer>
-		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
-		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
-		<key>installer_item_size</key>
-		<integer>100508</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>CFBundleName</key>
-				<string>Windows App</string>
-				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
-				<key>CFBundleVersion</key>
-				<string>3040</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Windows App.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>WindowsApp</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>231857</integer>
-				<key>packageid</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>version</key>
-				<string>11.3.7</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>10731</integer>
-				<key>packageid</key>
-				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
-				<key>version</key>
-				<string>4.81.25121042</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>11.3.7</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>Microsoft Remote Desktop</string>
-			<string>Windows App</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>utilities</string>
-		</array>
-		<key>category</key>
-		<string>Utility</string>
-		<key>description</key>
-		<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
-</string>
-		<key>developer</key>
-		<string>Microsoft</string>
-		<key>display_name</key>
-		<string>Windows App</string>
-		<key>installed_size</key>
-		<integer>242588</integer>
-		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
-		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
-		<key>installer_item_size</key>
-		<integer>100508</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>CFBundleName</key>
-				<string>Windows App</string>
-				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
-				<key>CFBundleVersion</key>
-				<string>3040</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Windows App.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>WindowsApp</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>231857</integer>
-				<key>packageid</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>version</key>
-				<string>11.3.7</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>10731</integer>
-				<key>packageid</key>
-				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
-				<key>version</key>
-				<string>4.81.25121042</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>11.3.7</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>Microsoft Remote Desktop</string>
-			<string>Windows App</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>utilities</string>
-		</array>
-		<key>category</key>
-		<string>Utility</string>
-		<key>description</key>
-		<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
-</string>
-		<key>developer</key>
-		<string>Microsoft</string>
-		<key>display_name</key>
-		<string>Windows App</string>
-		<key>installed_size</key>
-		<integer>242588</integer>
-		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
-		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
-		<key>installer_item_size</key>
-		<integer>100508</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>CFBundleName</key>
-				<string>Windows App</string>
-				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
-				<key>CFBundleVersion</key>
-				<string>3040</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Windows App.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>WindowsApp</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>231857</integer>
-				<key>packageid</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>version</key>
-				<string>11.3.7</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>10731</integer>
-				<key>packageid</key>
-				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
-				<key>version</key>
-				<string>4.81.25121042</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>11.3.7</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>Microsoft Remote Desktop</string>
-			<string>Windows App</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>utilities</string>
-		</array>
-		<key>category</key>
-		<string>Utility</string>
-		<key>description</key>
-		<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
-</string>
-		<key>developer</key>
-		<string>Microsoft</string>
-		<key>display_name</key>
-		<string>Windows App</string>
-		<key>installed_size</key>
-		<integer>242588</integer>
-		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
-		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
-		<key>installer_item_size</key>
-		<integer>100508</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>CFBundleName</key>
-				<string>Windows App</string>
-				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
-				<key>CFBundleVersion</key>
-				<string>3040</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Windows App.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>WindowsApp</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>231857</integer>
-				<key>packageid</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>version</key>
-				<string>11.3.7</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>10731</integer>
-				<key>packageid</key>
-				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
-				<key>version</key>
-				<string>4.81.25121042</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>11.3.7</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>Microsoft Remote Desktop</string>
-			<string>Windows App</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>utilities</string>
-		</array>
-		<key>category</key>
-		<string>Utility</string>
-		<key>description</key>
-		<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
-</string>
-		<key>developer</key>
-		<string>Microsoft</string>
-		<key>display_name</key>
-		<string>Windows App</string>
-		<key>installed_size</key>
-		<integer>242588</integer>
-		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
-		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
-		<key>installer_item_size</key>
-		<integer>100508</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>CFBundleName</key>
-				<string>Windows App</string>
-				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
-				<key>CFBundleVersion</key>
-				<string>3040</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Windows App.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>WindowsApp</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>231857</integer>
-				<key>packageid</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>version</key>
-				<string>11.3.7</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>10731</integer>
-				<key>packageid</key>
-				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
-				<key>version</key>
-				<string>4.81.25121042</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>11.3.7</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>Microsoft Remote Desktop</string>
-			<string>Windows App</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>utilities</string>
-		</array>
-		<key>category</key>
-		<string>Utility</string>
-		<key>description</key>
-		<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
-</string>
-		<key>developer</key>
-		<string>Microsoft</string>
-		<key>display_name</key>
-		<string>Windows App</string>
-		<key>installed_size</key>
-		<integer>242588</integer>
-		<key>installer_item_hash</key>
-		<string>58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90</string>
-		<key>installer_item_location</key>
-		<string>apps/microsoft/Microsoft_Windows_App-11.3.7.pkg</string>
-		<key>installer_item_size</key>
-		<integer>100508</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>CFBundleName</key>
-				<string>Windows App</string>
-				<key>CFBundleShortVersionString</key>
-				<string>11.3.7</string>
-				<key>CFBundleVersion</key>
-				<string>3040</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Windows App.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>WindowsApp</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>231857</integer>
-				<key>packageid</key>
-				<string>com.microsoft.rdc.macos</string>
-				<key>version</key>
-				<string>11.3.7</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>10731</integer>
-				<key>packageid</key>
-				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
-				<key>version</key>
-				<string>4.81.25121042</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>11.3.7</string>
+		<string>11.4.0</string>
 	</dict>
 </array>
 </plist>
