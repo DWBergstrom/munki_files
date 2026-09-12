@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-09-09T04:59:53Z</date>
+		<date>2026-09-12T04:58:51Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -28,11 +28,11 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 	<key>display_name</key>
 	<string>Raycast</string>
 	<key>installer_item_hash</key>
-	<string>a5fc1693a43a3415ad61c3d6161b20d2cfc19169c06df819a63cb73c5000ce15</string>
+	<string>9af903aee95af55e5f844b7b47c77740cfc30fe50ce9e37bab2f7946584a0ec8</string>
 	<key>installer_item_location</key>
-	<string>apps/Raycast/Raycast-2.2.1.0.dmg</string>
+	<string>apps/Raycast/Raycast-2.3.1.0.dmg</string>
 	<key>installer_item_size</key>
-	<integer>109226</integer>
+	<integer>115123</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
@@ -43,7 +43,7 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 			<key>CFBundleName</key>
 			<string>Raycast</string>
 			<key>CFBundleShortVersionString</key>
-			<string>2.2.1.0</string>
+			<string>2.3.1.0</string>
 			<key>CFBundleVersion</key>
 			<string>0</string>
 			<key>minosversion</key>
@@ -78,6 +78,6 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>2.2.1.0</string>
+	<string>2.3.1.0</string>
 </dict>
 </plist>
