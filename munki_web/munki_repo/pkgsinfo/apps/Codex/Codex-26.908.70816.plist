@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-09-12T04:53:38Z</date>
+		<date>2026-09-15T04:53:35Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,34 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Your AI partner on desktop. Fast, focused, and designed for deep work.</string>
+	<string>Tool designed to help developers manage multiple coding agents, run tasks in parallel, and collaborate on software projects.</string>
 	<key>developer</key>
-	<string>Anthropic PBC</string>
+	<string>OpenAI</string>
 	<key>display_name</key>
-	<string>Claude</string>
+	<string>Codex</string>
 	<key>installer_item_hash</key>
-	<string>a2ee39e570eaa7ac703146d86d7c939f5287cb64c570c9f6289ac83a636d6ea9</string>
+	<string>2ddfc5863814a6850b1fce952dcc92d922ce53a54a9a445d9fdc755e49b82aa0</string>
 	<key>installer_item_location</key>
-	<string>apps/Claude/Claude-1.52386.4.dmg</string>
+	<string>apps/Codex/Codex-26.908.70816.dmg</string>
 	<key>installer_item_size</key>
-	<integer>366232</integer>
+	<integer>609171</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.anthropic.claudefordesktop</string>
+			<string>com.openai.codex</string>
 			<key>CFBundleName</key>
-			<string>Claude</string>
+			<string>ChatGPT</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.52386.4</string>
+			<string>26.908.70816</string>
 			<key>CFBundleVersion</key>
-			<string>1.52386.4</string>
+			<string>9275</string>
 			<key>minosversion</key>
 			<string>13.0</string>
 			<key>path</key>
-			<string>/Applications/Claude.app</string>
+			<string>/Applications/ChatGPT.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,13 +60,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Claude.app</string>
+			<string>ChatGPT.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
 	<string>13.0</string>
 	<key>name</key>
-	<string>Claude</string>
+	<string>Codex</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>unattended_uninstall</key>
@@ -76,6 +76,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.52386.4</string>
+	<string>26.908.70816</string>
 </dict>
 </plist>
