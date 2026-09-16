@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-09-13T04:55:21Z</date>
+		<date>2026-09-16T05:00:16Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -15,85 +15,73 @@
 	</dict>
 	<key>autoremove</key>
 	<false/>
-	<key>blocking_applications</key>
-	<array>
-		<string>Microsoft Remote Desktop</string>
-		<string>Windows App</string>
-	</array>
 	<key>catalogs</key>
 	<array>
-		<string>utilities</string>
+		<string>testing</string>
 	</array>
 	<key>category</key>
-	<string>Utility</string>
+	<string>Software</string>
 	<key>description</key>
-	<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
-</string>
+	<string>Oracle VM VirtualBox is a free and open-source hypervisor for x86 computers currently being developed by Oracle Corporation.</string>
 	<key>developer</key>
-	<string>Microsoft</string>
+	<string>Oracle Corporation</string>
 	<key>display_name</key>
-	<string>Windows App</string>
+	<string>VirtualBox</string>
 	<key>installed_size</key>
-	<integer>242572</integer>
+	<integer>284557</integer>
 	<key>installer_item_hash</key>
-	<string>bdc7ccf2914960074d8eaeaa0b3661127bb3a29291f6832ab7dfdadf70c4171a</string>
+	<string>31baa81db388a50fe438fd93418898619bb280e4e2722e72f66b70f0ba2981f8</string>
 	<key>installer_item_location</key>
-	<string>apps/microsoft/Microsoft_Windows_App-11.4.0.pkg</string>
+	<string>apps/VirtualBox-7.2.18.dmg</string>
 	<key>installer_item_size</key>
-	<integer>100503</integer>
+	<integer>146723</integer>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.microsoft.rdc.macos</string>
+			<string>org.virtualbox.app.VirtualBox</string>
 			<key>CFBundleName</key>
-			<string>Windows App</string>
+			<string>VirtualBox</string>
 			<key>CFBundleShortVersionString</key>
-			<string>11.4.0</string>
+			<string>7.2.18</string>
 			<key>CFBundleVersion</key>
-			<string>3078</string>
-			<key>minosversion</key>
-			<string>14.0</string>
+			<string>7.2.18</string>
 			<key>path</key>
-			<string>/Applications/Windows App.app</string>
+			<string>/Applications/VirtualBox.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
 			<string>CFBundleShortVersionString</string>
 		</dict>
 	</array>
-	<key>minimum_os_version</key>
-	<string>14.0</string>
 	<key>name</key>
-	<string>WindowsApp</string>
+	<string>VirtualBox</string>
 	<key>receipts</key>
 	<array>
 		<dict>
 			<key>installed_size</key>
-			<integer>231841</integer>
+			<integer>284550</integer>
 			<key>packageid</key>
-			<string>com.microsoft.rdc.macos</string>
+			<string>org.virtualbox.pkg.virtualbox</string>
 			<key>version</key>
-			<string>11.4.0</string>
+			<string>7.2.18</string>
 		</dict>
 		<dict>
 			<key>installed_size</key>
-			<integer>10731</integer>
+			<integer>7</integer>
 			<key>packageid</key>
-			<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
+			<string>org.virtualbox.pkg.virtualboxcli</string>
 			<key>version</key>
-			<string>4.81.25121042</string>
+			<string>7.2.18</string>
 		</dict>
 	</array>
 	<key>unattended_install</key>
-	<true/>
-	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>removepackages</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>11.4.0</string>
+	<string>7.2.18</string>
 </dict>
 </plist>
