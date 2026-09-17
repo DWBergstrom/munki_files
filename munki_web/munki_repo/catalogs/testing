@@ -1503,6 +1503,76 @@
 		<key>category</key>
 		<string>Utilities</string>
 		<key>description</key>
+		<string>Archaeology is a tool For digging into binary files on macOS.</string>
+		<key>developer</key>
+		<string>Mothers Ruin Software</string>
+		<key>display_name</key>
+		<string>Archaeology</string>
+		<key>icon_name</key>
+		<string>Archaeology.png</string>
+		<key>installer_item_hash</key>
+		<string>9bdb9eea72849e740547a9e3711a02fd6f4e4d4c59a954e2dcea2090a2828d58</string>
+		<key>installer_item_location</key>
+		<string>utilities/Archaeology-1.7.dmg</string>
+		<key>installer_item_size</key>
+		<integer>5386</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.mothersruin.Archaeology</string>
+				<key>CFBundleName</key>
+				<string>Archaeology</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.7</string>
+				<key>CFBundleVersion</key>
+				<string>306</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/Archaeology.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Archaeology.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.0</string>
+		<key>name</key>
+		<string>Archaeology</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.7</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Utilities</string>
+		<key>description</key>
 		<string>Aparency is an application for inspecting other applications.</string>
 		<key>developer</key>
 		<string>Mothers Ruin Software</string>
@@ -4314,6 +4384,76 @@
 		<true/>
 		<key>version</key>
 		<string>3.2</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Utilities</string>
+		<key>description</key>
+		<string>Aparency is an application for inspecting other applications.</string>
+		<key>developer</key>
+		<string>Mothers Ruin Software</string>
+		<key>display_name</key>
+		<string>Apparency</string>
+		<key>icon_name</key>
+		<string>Apparency.png</string>
+		<key>installer_item_hash</key>
+		<string>675eadfb33589e3ce6eac88265c8651f02c2db74dac85361f2034bc956e8fc61</string>
+		<key>installer_item_location</key>
+		<string>utilities/Apparency-3.4.dmg</string>
+		<key>installer_item_size</key>
+		<integer>6257</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.mothersruin.Apparency</string>
+				<key>CFBundleName</key>
+				<string>Apparency</string>
+				<key>CFBundleShortVersionString</key>
+				<string>3.4</string>
+				<key>CFBundleVersion</key>
+				<string>1022</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/Apparency.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Apparency.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.0</string>
+		<key>name</key>
+		<string>Apparency</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>3.4</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -13203,72 +13343,6 @@ fi</string>
 		<key>display_name</key>
 		<string>Opera</string>
 		<key>installer_item_hash</key>
-		<string>898546d538554b5a514e4276a897093ea24a2ee5f4371f1e3247f258bd301ce0</string>
-		<key>installer_item_location</key>
-		<string>opera/opera/Opera-135.0.5973.133.dmg</string>
-		<key>installer_item_size</key>
-		<integer>174092</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.operasoftware.Opera</string>
-				<key>CFBundleName</key>
-				<string>Opera</string>
-				<key>CFBundleShortVersionString</key>
-				<string>135.0</string>
-				<key>CFBundleVersion</key>
-				<string>135.0.5973.133</string>
-				<key>minosversion</key>
-				<string>13.0</string>
-				<key>path</key>
-				<string>/Applications/Opera.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Opera.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>13.0</string>
-		<key>name</key>
-		<string>Opera</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>135.0.5973.133</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Productivity</string>
-		<key>description</key>
-		<string>A web browser developed by Opera Software.</string>
-		<key>developer</key>
-		<string>Opera</string>
-		<key>display_name</key>
-		<string>Opera</string>
-		<key>installer_item_hash</key>
 		<string>c940bc45716f59443853e9c52f56f85e52896a937db08f42d94b86602de1213b</string>
 		<key>installer_item_location</key>
 		<string>opera/opera/Opera-135.0.5973.41.dmg</string>
@@ -15245,6 +15319,72 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>category</key>
 		<string>Utilities</string>
 		<key>description</key>
+		<string>Peek inside macOS Installer packages, see what they install, what they do, and more.</string>
+		<key>developer</key>
+		<string>Mothers Ruin Software</string>
+		<key>display_name</key>
+		<string>SuspiciousPackage</string>
+		<key>installer_item_hash</key>
+		<string>cbe17b1a1c1d6137e8f36443622863773709d415c0aeec68e41b29ce3fad297f</string>
+		<key>installer_item_location</key>
+		<string>apps/SuspiciousPackage-4.8.dmg</string>
+		<key>installer_item_size</key>
+		<integer>7899</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.mothersruin.SuspiciousPackageApp</string>
+				<key>CFBundleName</key>
+				<string>Suspicious Package</string>
+				<key>CFBundleShortVersionString</key>
+				<string>4.8</string>
+				<key>CFBundleVersion</key>
+				<string>1457</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/Suspicious Package.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Suspicious Package.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.0</string>
+		<key>name</key>
+		<string>SuspiciousPackage</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>4.8</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Utilities</string>
+		<key>description</key>
 		<string>iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with OS 10.5 (Leopard) or newer. Its focus is on performance, internationalization, and supporting innovative features that make your life better.</string>
 		<key>developer</key>
 		<string>George Nachman</string>
@@ -15432,78 +15572,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<true/>
 		<key>version</key>
 		<string>3.6.11</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Software</string>
-		<key>description</key>
-		<string>Oracle VM VirtualBox is a free and open-source hypervisor for x86 computers currently being developed by Oracle Corporation.</string>
-		<key>developer</key>
-		<string>Oracle Corporation</string>
-		<key>display_name</key>
-		<string>VirtualBox</string>
-		<key>installed_size</key>
-		<integer>284153</integer>
-		<key>installer_item_hash</key>
-		<string>8237c1c8ef0c837c47394b82959d7ea42626ad3140e452f4f59561021b428eed</string>
-		<key>installer_item_location</key>
-		<string>apps/VirtualBox-7.2.16.dmg</string>
-		<key>installer_item_size</key>
-		<integer>146496</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.virtualbox.app.VirtualBox</string>
-				<key>CFBundleName</key>
-				<string>VirtualBox</string>
-				<key>CFBundleShortVersionString</key>
-				<string>7.2.16</string>
-				<key>CFBundleVersion</key>
-				<string>7.2.16</string>
-				<key>path</key>
-				<string>/Applications/VirtualBox.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>name</key>
-		<string>VirtualBox</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>284146</integer>
-				<key>packageid</key>
-				<string>org.virtualbox.pkg.virtualbox</string>
-				<key>version</key>
-				<string>7.2.16</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>7</integer>
-				<key>packageid</key>
-				<string>org.virtualbox.pkg.virtualboxcli</string>
-				<key>version</key>
-				<string>7.2.16</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.2.16</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -17452,70 +17520,6 @@ fi
 		<true/>
 		<key>version</key>
 		<string>3.6.11</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Mozilla Firefox is a free and open source web browser.</string>
-		<key>display_name</key>
-		<string>Mozilla Firefox</string>
-		<key>installer_item_hash</key>
-		<string>ab75b7c9f02083de5636cb2248f8d52dd97669878730a20c514f9dc00d9ca0c6</string>
-		<key>installer_item_location</key>
-		<string>apps/firefox/Firefox-155.0.1.dmg</string>
-		<key>installer_item_size</key>
-		<integer>155658</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.mozilla.firefox</string>
-				<key>CFBundleName</key>
-				<string>Firefox</string>
-				<key>CFBundleShortVersionString</key>
-				<string>155.0.1</string>
-				<key>CFBundleVersion</key>
-				<string>15526.9.3</string>
-				<key>minosversion</key>
-				<string>10.15.0</string>
-				<key>path</key>
-				<string>/Applications/Firefox.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>mode</key>
-				<string>ug+w,o-w</string>
-				<key>source_item</key>
-				<string>Firefox.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.15.0</string>
-		<key>name</key>
-		<string>Firefox</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>155.0.1</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -41758,6 +41762,66 @@ fi
 			<string>testing</string>
 		</array>
 		<key>description</key>
+		<string>Suspicious Package: An Application for Inspecting OS X Installer Packages</string>
+		<key>display_name</key>
+		<string>Suspicious Package App</string>
+		<key>installer_item_hash</key>
+		<string>cbe17b1a1c1d6137e8f36443622863773709d415c0aeec68e41b29ce3fad297f</string>
+		<key>installer_item_location</key>
+		<string>apps/mothersruin/SuspiciousPackage-4.8.dmg</string>
+		<key>installer_item_size</key>
+		<integer>7899</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.mothersruin.SuspiciousPackageApp</string>
+				<key>CFBundleName</key>
+				<string>Suspicious Package</string>
+				<key>CFBundleShortVersionString</key>
+				<string>4.8</string>
+				<key>CFBundleVersion</key>
+				<string>1457</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/Suspicious Package.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Suspicious Package.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>SuspiciousPackageApp</string>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>4.8</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
 		<string>Explore REST and GraphQL APIs.</string>
 		<key>display_name</key>
 		<string>Insomnia </string>
@@ -44551,11 +44615,11 @@ fi
 		<key>display_name</key>
 		<string>Claude</string>
 		<key>installer_item_hash</key>
-		<string>25c67372986126896ad0718df4836bbec968d6aac49db475bbfeaa842f3057fc</string>
+		<string>b81938c973e0919fefbb96f32adade8412d27e209bec94b228b9e915d5c2dde4</string>
 		<key>installer_item_location</key>
-		<string>apps/Claude/Claude-1.52386.6.dmg</string>
+		<string>apps/Claude/Claude-2.110.1.dmg</string>
 		<key>installer_item_size</key>
-		<integer>366329</integer>
+		<integer>368166</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -44566,9 +44630,9 @@ fi
 				<key>CFBundleName</key>
 				<string>Claude</string>
 				<key>CFBundleShortVersionString</key>
-				<string>1.52386.6</string>
+				<string>2.110.1</string>
 				<key>CFBundleVersion</key>
-				<string>1.52386.6</string>
+				<string>2.110.1</string>
 				<key>minosversion</key>
 				<string>13.0</string>
 				<key>path</key>
@@ -44601,7 +44665,7 @@ fi
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>1.52386.6</string>
+		<string>2.110.1</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -47359,6 +47423,72 @@ fi
 		<key>display_name</key>
 		<string>Codex</string>
 		<key>installer_item_hash</key>
+		<string>61c33b667b4560e70c94d0c0275e0f408d8ae1c2b1cbf598434d1307af471516</string>
+		<key>installer_item_location</key>
+		<string>apps/Codex/Codex-26.911.61220.dmg</string>
+		<key>installer_item_size</key>
+		<integer>620656</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.openai.codex</string>
+				<key>CFBundleName</key>
+				<string>ChatGPT</string>
+				<key>CFBundleShortVersionString</key>
+				<string>26.911.61220</string>
+				<key>CFBundleVersion</key>
+				<string>9647</string>
+				<key>minosversion</key>
+				<string>13.0</string>
+				<key>path</key>
+				<string>/Applications/ChatGPT.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>ChatGPT.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0</string>
+		<key>name</key>
+		<string>Codex</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>26.911.61220</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Tool designed to help developers manage multiple coding agents, run tasks in parallel, and collaborate on software projects.</string>
+		<key>developer</key>
+		<string>OpenAI</string>
+		<key>display_name</key>
+		<string>Codex</string>
+		<key>installer_item_hash</key>
 		<string>91fc4b809c2730b39e57d9adbc6b30c669ef074c900ca28c63a1e0b6fa41268c</string>
 		<key>installer_item_location</key>
 		<string>apps/Codex/Codex-26.803.81509.dmg</string>
@@ -47672,6 +47802,72 @@ fi
 		<true/>
 		<key>version</key>
 		<string>116.1.57.47</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Browsers</string>
+		<key>description</key>
+		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
+		<key>developer</key>
+		<string>Brave Software Inc.</string>
+		<key>display_name</key>
+		<string>Brave Browser</string>
+		<key>installer_item_hash</key>
+		<string>98134fdc38dead20b3ba0c4b9972249f8f53705216f48e0971636da56c51d1b6</string>
+		<key>installer_item_location</key>
+		<string>apps/Brave/Brave-153.1.95.102.dmg</string>
+		<key>installer_item_size</key>
+		<integer>322954</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.brave.Browser</string>
+				<key>CFBundleName</key>
+				<string>Brave</string>
+				<key>CFBundleShortVersionString</key>
+				<string>153.1.95.102</string>
+				<key>CFBundleVersion</key>
+				<string>195.102</string>
+				<key>minosversion</key>
+				<string>13.0</string>
+				<key>path</key>
+				<string>/Applications/Brave Browser.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Brave Browser.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0</string>
+		<key>name</key>
+		<string>Brave</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>153.1.95.102</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -78235,84 +78431,6 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>0.34.1</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models.</string>
-		<key>developer</key>
-		<string>Infra Technologies, Inc</string>
-		<key>display_name</key>
-		<string>Ollama</string>
-		<key>installer_item_hash</key>
-		<string>dcdc7293ab4f71fae88402d7bdcaf6c00414aa35163483656667434ecf4f3085</string>
-		<key>installer_item_location</key>
-		<string>apps/Ollama/Ollama-0.34.0.dmg</string>
-		<key>installer_item_size</key>
-		<integer>198215</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.electron.ollama</string>
-				<key>CFBundleName</key>
-				<string>Ollama</string>
-				<key>CFBundleShortVersionString</key>
-				<string>0.34.0</string>
-				<key>CFBundleVersion</key>
-				<string>0.34.0</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Ollama.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Ollama.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>Ollama</string>
-		<key>postinstall_script</key>
-		<string>#!/bin/bash
-
-# Script built from: https://github.com/ollama/ollama/issues/851#issuecomment-1889808636
-# Please note admin rights are still needed as the file that records whether first time run has completed is located in the Users home folder. see https://github.com/ollama/ollama/issues/6814
-
-# Install Command Line Tools
-if ! [ -f /usr/local/bin/ollama ]; then
-  /usr/bin/touch /usr/local/bin/ollama ; /bin/ln -s -f /Applications/Ollama.app/Contents/Resources/ollama /usr/local/bin/ollama
-fi
-
-exit</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>0.34.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>

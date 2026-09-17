@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-09-14T04:53:12Z</date>
+		<date>2026-09-17T04:59:51Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,34 +20,32 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Your AI partner on desktop. Fast, focused, and designed for deep work.</string>
-	<key>developer</key>
-	<string>Anthropic PBC</string>
+	<string>Suspicious Package: An Application for Inspecting OS X Installer Packages</string>
 	<key>display_name</key>
-	<string>Claude</string>
+	<string>Suspicious Package App</string>
 	<key>installer_item_hash</key>
-	<string>25c67372986126896ad0718df4836bbec968d6aac49db475bbfeaa842f3057fc</string>
+	<string>cbe17b1a1c1d6137e8f36443622863773709d415c0aeec68e41b29ce3fad297f</string>
 	<key>installer_item_location</key>
-	<string>apps/Claude/Claude-1.52386.6.dmg</string>
+	<string>apps/mothersruin/SuspiciousPackage-4.8.dmg</string>
 	<key>installer_item_size</key>
-	<integer>366329</integer>
+	<integer>7899</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.anthropic.claudefordesktop</string>
+			<string>com.mothersruin.SuspiciousPackageApp</string>
 			<key>CFBundleName</key>
-			<string>Claude</string>
+			<string>Suspicious Package</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.52386.6</string>
+			<string>4.8</string>
 			<key>CFBundleVersion</key>
-			<string>1.52386.6</string>
+			<string>1457</string>
 			<key>minosversion</key>
-			<string>13.0</string>
+			<string>14.0</string>
 			<key>path</key>
-			<string>/Applications/Claude.app</string>
+			<string>/Applications/Suspicious Package.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,22 +58,18 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Claude.app</string>
+			<string>Suspicious Package.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>13.0</string>
+	<string>10.13</string>
 	<key>name</key>
-	<string>Claude</string>
-	<key>unattended_install</key>
-	<true/>
-	<key>unattended_uninstall</key>
-	<true/>
+	<string>SuspiciousPackageApp</string>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.52386.6</string>
+	<string>4.8</string>
 </dict>
 </plist>

@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-08-19T05:01:39Z</date>
+		<date>2026-09-17T04:54:19Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,69 +19,63 @@
 	<array>
 		<string>testing</string>
 	</array>
-	<key>category</key>
-	<string>Software</string>
 	<key>description</key>
-	<string>Oracle VM VirtualBox is a free and open-source hypervisor for x86 computers currently being developed by Oracle Corporation.</string>
+	<string>Tool designed to help developers manage multiple coding agents, run tasks in parallel, and collaborate on software projects.</string>
 	<key>developer</key>
-	<string>Oracle Corporation</string>
+	<string>OpenAI</string>
 	<key>display_name</key>
-	<string>VirtualBox</string>
-	<key>installed_size</key>
-	<integer>284153</integer>
+	<string>Codex</string>
 	<key>installer_item_hash</key>
-	<string>8237c1c8ef0c837c47394b82959d7ea42626ad3140e452f4f59561021b428eed</string>
+	<string>61c33b667b4560e70c94d0c0275e0f408d8ae1c2b1cbf598434d1307af471516</string>
 	<key>installer_item_location</key>
-	<string>apps/VirtualBox-7.2.16.dmg</string>
+	<string>apps/Codex/Codex-26.911.61220.dmg</string>
 	<key>installer_item_size</key>
-	<integer>146496</integer>
+	<integer>620656</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>org.virtualbox.app.VirtualBox</string>
+			<string>com.openai.codex</string>
 			<key>CFBundleName</key>
-			<string>VirtualBox</string>
+			<string>ChatGPT</string>
 			<key>CFBundleShortVersionString</key>
-			<string>7.2.16</string>
+			<string>26.911.61220</string>
 			<key>CFBundleVersion</key>
-			<string>7.2.16</string>
+			<string>9647</string>
+			<key>minosversion</key>
+			<string>13.0</string>
 			<key>path</key>
-			<string>/Applications/VirtualBox.app</string>
+			<string>/Applications/ChatGPT.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
 			<string>CFBundleShortVersionString</string>
 		</dict>
 	</array>
-	<key>name</key>
-	<string>VirtualBox</string>
-	<key>receipts</key>
+	<key>items_to_copy</key>
 	<array>
 		<dict>
-			<key>installed_size</key>
-			<integer>284146</integer>
-			<key>packageid</key>
-			<string>org.virtualbox.pkg.virtualbox</string>
-			<key>version</key>
-			<string>7.2.16</string>
-		</dict>
-		<dict>
-			<key>installed_size</key>
-			<integer>7</integer>
-			<key>packageid</key>
-			<string>org.virtualbox.pkg.virtualboxcli</string>
-			<key>version</key>
-			<string>7.2.16</string>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>ChatGPT.app</string>
 		</dict>
 	</array>
+	<key>minimum_os_version</key>
+	<string>13.0</string>
+	<key>name</key>
+	<string>Codex</string>
 	<key>unattended_install</key>
 	<true/>
+	<key>unattended_uninstall</key>
+	<true/>
 	<key>uninstall_method</key>
-	<string>removepackages</string>
+	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>7.2.16</string>
+	<string>26.911.61220</string>
 </dict>
 </plist>
