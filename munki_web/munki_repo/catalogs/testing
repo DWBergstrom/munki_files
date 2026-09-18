@@ -2051,76 +2051,6 @@
 		<key>category</key>
 		<string>Utilities</string>
 		<key>description</key>
-		<string>Aparency is an application for inspecting other applications.</string>
-		<key>developer</key>
-		<string>Mothers Ruin Software</string>
-		<key>display_name</key>
-		<string>Apparency</string>
-		<key>icon_name</key>
-		<string>Apparency.png</string>
-		<key>installer_item_hash</key>
-		<string>9f0622d654603556861baf41e4959134e3321169a90c012909dc44057f7a3dc3</string>
-		<key>installer_item_location</key>
-		<string>utilities/Apparency-3.3.dmg</string>
-		<key>installer_item_size</key>
-		<integer>5513</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.mothersruin.Apparency</string>
-				<key>CFBundleName</key>
-				<string>Apparency</string>
-				<key>CFBundleShortVersionString</key>
-				<string>3.3</string>
-				<key>CFBundleVersion</key>
-				<string>918</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Apparency.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Apparency.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>Apparency</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>3.3</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Utilities</string>
-		<key>description</key>
 		<string>Archaeology is a tool For digging into binary files on macOS.</string>
 		<key>developer</key>
 		<string>Mothers Ruin Software</string>
@@ -4038,76 +3968,6 @@
 		<true/>
 		<key>version</key>
 		<string>3.6.8</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Utilities</string>
-		<key>description</key>
-		<string>Archaeology is a tool For digging into binary files on macOS.</string>
-		<key>developer</key>
-		<string>Mothers Ruin Software</string>
-		<key>display_name</key>
-		<string>Archaeology</string>
-		<key>icon_name</key>
-		<string>Archaeology.png</string>
-		<key>installer_item_hash</key>
-		<string>e1c370cd367f22a05b6dd271a92beec5b55863997184140153a848d31728b9fb</string>
-		<key>installer_item_location</key>
-		<string>utilities/Archaeology-1.6.dmg</string>
-		<key>installer_item_size</key>
-		<integer>4429</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.mothersruin.Archaeology</string>
-				<key>CFBundleName</key>
-				<string>Archaeology</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.6</string>
-				<key>CFBundleVersion</key>
-				<string>255</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Archaeology.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Archaeology.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>Archaeology</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.6</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -13343,6 +13203,72 @@ fi</string>
 		<key>display_name</key>
 		<string>Opera</string>
 		<key>installer_item_hash</key>
+		<string>ea6fc6c554c06be615dc9e10675af4c73094538a82c11b4bc0e6c59c6ea78e6b</string>
+		<key>installer_item_location</key>
+		<string>opera/opera/Opera-136.0.6008.22.dmg</string>
+		<key>installer_item_size</key>
+		<integer>173277</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.operasoftware.Opera</string>
+				<key>CFBundleName</key>
+				<string>Opera</string>
+				<key>CFBundleShortVersionString</key>
+				<string>136.0</string>
+				<key>CFBundleVersion</key>
+				<string>136.0.6008.22</string>
+				<key>minosversion</key>
+				<string>13.0</string>
+				<key>path</key>
+				<string>/Applications/Opera.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleVersion</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Opera.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0</string>
+		<key>name</key>
+		<string>Opera</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>136.0.6008.22</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Productivity</string>
+		<key>description</key>
+		<string>A web browser developed by Opera Software.</string>
+		<key>developer</key>
+		<string>Opera</string>
+		<key>display_name</key>
+		<string>Opera</string>
+		<key>installer_item_hash</key>
 		<string>c940bc45716f59443853e9c52f56f85e52896a937db08f42d94b86602de1213b</string>
 		<key>installer_item_location</key>
 		<string>opera/opera/Opera-135.0.5973.41.dmg</string>
@@ -16798,72 +16724,6 @@ fi
 		<true/>
 		<key>version</key>
 		<string>3.6.11</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Utilities</string>
-		<key>description</key>
-		<string>Peek inside macOS Installer packages, see what they install, what they do, and more.</string>
-		<key>developer</key>
-		<string>Mothers Ruin Software</string>
-		<key>display_name</key>
-		<string>SuspiciousPackage</string>
-		<key>installer_item_hash</key>
-		<string>5b8215b7a6536d1d41f1a3485e3428b39f8d3d0f2471ab1a0c69bedb22df4e5b</string>
-		<key>installer_item_location</key>
-		<string>apps/SuspiciousPackage-4.7.dmg</string>
-		<key>installer_item_size</key>
-		<integer>7008</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.mothersruin.SuspiciousPackageApp</string>
-				<key>CFBundleName</key>
-				<string>Suspicious Package</string>
-				<key>CFBundleShortVersionString</key>
-				<string>4.7</string>
-				<key>CFBundleVersion</key>
-				<string>1415</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Suspicious Package.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Suspicious Package.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>SuspiciousPackage</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>4.7</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -41706,66 +41566,6 @@ fi
 		<key>display_name</key>
 		<string>Suspicious Package App</string>
 		<key>installer_item_hash</key>
-		<string>5b8215b7a6536d1d41f1a3485e3428b39f8d3d0f2471ab1a0c69bedb22df4e5b</string>
-		<key>installer_item_location</key>
-		<string>apps/mothersruin/SuspiciousPackage-4.7.dmg</string>
-		<key>installer_item_size</key>
-		<integer>7008</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.mothersruin.SuspiciousPackageApp</string>
-				<key>CFBundleName</key>
-				<string>Suspicious Package</string>
-				<key>CFBundleShortVersionString</key>
-				<string>4.7</string>
-				<key>CFBundleVersion</key>
-				<string>1415</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Suspicious Package.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Suspicious Package.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.13</string>
-		<key>name</key>
-		<string>SuspiciousPackageApp</string>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>4.7</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Suspicious Package: An Application for Inspecting OS X Installer Packages</string>
-		<key>display_name</key>
-		<string>Suspicious Package App</string>
-		<key>installer_item_hash</key>
 		<string>cbe17b1a1c1d6137e8f36443622863773709d415c0aeec68e41b29ce3fad297f</string>
 		<key>installer_item_location</key>
 		<string>apps/mothersruin/SuspiciousPackage-4.8.dmg</string>
@@ -44516,6 +44316,51 @@ fi
 		<key>catalogs</key>
 		<array>
 			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Productivity</string>
+		<key>description</key>
+		<string>Microsoft Edge web browser</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Microsoft Edge</string>
+		<key>installed_size</key>
+		<integer>937667</integer>
+		<key>installer_item_hash</key>
+		<string>dad9816c3dfa18fb20ff0af42fca161d300f60a4102405d55d907508a2ee8559</string>
+		<key>installer_item_location</key>
+		<string>apps/Microsoft/Microsoft_Edge-153.0.4234.46.pkg</string>
+		<key>installer_item_size</key>
+		<integer>419916</integer>
+		<key>minimum_os_version</key>
+		<string>10.10.0</string>
+		<key>name</key>
+		<string>MicrosoftEdge</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>937667</integer>
+				<key>packageid</key>
+				<string>com.microsoft.edgemac</string>
+				<key>version</key>
+				<string>153.0.4234.46</string>
+			</dict>
+		</array>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>153.0.4234.46</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
 			<string>development</string>
 		</array>
 		<key>category</key>
@@ -44681,72 +44526,6 @@ fi
 		<key>display_name</key>
 		<string>Claude</string>
 		<key>installer_item_hash</key>
-		<string>df38475a697ec5a922c4d0050978ed449cbb2d11645c03a529b57c4f87233e39</string>
-		<key>installer_item_location</key>
-		<string>apps/Claude/Claude-2.110.0.dmg</string>
-		<key>installer_item_size</key>
-		<integer>367277</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.anthropic.claudefordesktop</string>
-				<key>CFBundleName</key>
-				<string>Claude</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2.110.0</string>
-				<key>CFBundleVersion</key>
-				<string>2.110.0</string>
-				<key>minosversion</key>
-				<string>13.0</string>
-				<key>path</key>
-				<string>/Applications/Claude.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Claude.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>13.0</string>
-		<key>name</key>
-		<string>Claude</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2.110.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Your AI partner on desktop. Fast, focused, and designed for deep work.</string>
-		<key>developer</key>
-		<string>Anthropic PBC</string>
-		<key>display_name</key>
-		<string>Claude</string>
-		<key>installer_item_hash</key>
 		<string>1e38f3d8a47e2e072cd8e63d887a45ca86eb4700e6fb786d40c322203e7ef8f1</string>
 		<key>installer_item_location</key>
 		<string>apps/Claude/Claude-1.46388.4.dmg</string>
@@ -44798,6 +44577,72 @@ fi
 		<true/>
 		<key>version</key>
 		<string>1.46388.4</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Your AI partner on desktop. Fast, focused, and designed for deep work.</string>
+		<key>developer</key>
+		<string>Anthropic PBC</string>
+		<key>display_name</key>
+		<string>Claude</string>
+		<key>installer_item_hash</key>
+		<string>1b79efb0873d1be08ff09517f3aaf6136a8c92ca151e448be1bbb0fd371d0522</string>
+		<key>installer_item_location</key>
+		<string>apps/Claude/Claude-2.2553.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>369362</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.anthropic.claudefordesktop</string>
+				<key>CFBundleName</key>
+				<string>Claude</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2.2553.0</string>
+				<key>CFBundleVersion</key>
+				<string>2.2553.0</string>
+				<key>minosversion</key>
+				<string>13.0</string>
+				<key>path</key>
+				<string>/Applications/Claude.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Claude.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0</string>
+		<key>name</key>
+		<string>Claude</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2.2553.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -47549,72 +47394,6 @@ fi
 			<string>testing</string>
 		</array>
 		<key>description</key>
-		<string>Tool designed to help developers manage multiple coding agents, run tasks in parallel, and collaborate on software projects.</string>
-		<key>developer</key>
-		<string>OpenAI</string>
-		<key>display_name</key>
-		<string>Codex</string>
-		<key>installer_item_hash</key>
-		<string>2ddfc5863814a6850b1fce952dcc92d922ce53a54a9a445d9fdc755e49b82aa0</string>
-		<key>installer_item_location</key>
-		<string>apps/Codex/Codex-26.908.70816.dmg</string>
-		<key>installer_item_size</key>
-		<integer>609171</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.openai.codex</string>
-				<key>CFBundleName</key>
-				<string>ChatGPT</string>
-				<key>CFBundleShortVersionString</key>
-				<string>26.908.70816</string>
-				<key>CFBundleVersion</key>
-				<string>9275</string>
-				<key>minosversion</key>
-				<string>13.0</string>
-				<key>path</key>
-				<string>/Applications/ChatGPT.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>ChatGPT.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>13.0</string>
-		<key>name</key>
-		<string>Codex</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>26.908.70816</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
 		<string> </string>
 		<key>developer</key>
 		<string>JetBrains s.r.o.</string>
@@ -47935,72 +47714,6 @@ fi
 		<true/>
 		<key>version</key>
 		<string>113.1.51.114</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Browsers</string>
-		<key>description</key>
-		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
-		<key>developer</key>
-		<string>Brave Software Inc.</string>
-		<key>display_name</key>
-		<string>Brave Browser</string>
-		<key>installer_item_hash</key>
-		<string>c7cda2705111cbab1c36cc30e2f1384f22cdc8c38597a4277b69e71e87112127</string>
-		<key>installer_item_location</key>
-		<string>apps/Brave/Brave-153.1.95.101.dmg</string>
-		<key>installer_item_size</key>
-		<integer>322949</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.brave.Browser</string>
-				<key>CFBundleName</key>
-				<string>Brave</string>
-				<key>CFBundleShortVersionString</key>
-				<string>153.1.95.101</string>
-				<key>CFBundleVersion</key>
-				<string>195.101</string>
-				<key>minosversion</key>
-				<string>13.0</string>
-				<key>path</key>
-				<string>/Applications/Brave Browser.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Brave Browser.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>13.0</string>
-		<key>name</key>
-		<string>Brave</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>153.1.95.101</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -65107,6 +64820,68 @@ rm -rf /Applications/zoom.us.app
 		<key>force_munkiimport</key>
 		<true/>
 		<key>installer_item_hash</key>
+		<string>826ee2b1a5103a174cb8be4447d1b7439e50f3901a74e4f748c833e567a586b1</string>
+		<key>installer_item_location</key>
+		<string>apps/Warp/Warp-0.2026.09.16.08.27.02.dmg</string>
+		<key>installer_item_size</key>
+		<integer>326928</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>dev.warp.Warp-Stable</string>
+				<key>CFBundleName</key>
+				<string>Warp</string>
+				<key>CFBundleShortVersionString</key>
+				<string>0.2026.09.16.08.27.02</string>
+				<key>CFBundleVersion</key>
+				<string>0.2026.09.16.08.27.02</string>
+				<key>path</key>
+				<string>/Applications/Warp.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Warp.app</string>
+			</dict>
+		</array>
+		<key>name</key>
+		<string>Warp</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>0.2026.09.16.08.27.02</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Fast Terminal app based in Rust.</string>
+		<key>developer</key>
+		<string>Denver Technologies</string>
+		<key>display_name</key>
+		<string>Warp</string>
+		<key>force_munkiimport</key>
+		<true/>
+		<key>installer_item_hash</key>
 		<string>d5591a6ea7721c879f7cd564ff689e8627e68ed7eb67a7e02d8d8226bd83dfd3</string>
 		<key>installer_item_location</key>
 		<string>apps/Warp/Warp-0.2026.09.09.08.26.02.dmg</string>
@@ -78294,6 +78069,87 @@ Even if you think you have nothing to hide — no one likes to be watched. That�
 		<key>display_name</key>
 		<string>NordVPN</string>
 		<key>installed_size</key>
+		<integer>608119</integer>
+		<key>installer_item_hash</key>
+		<string>c22aaa828f3c4d6e39400ed242a3e9323722a16e19d0bdfdc58e52e1aabed1c1</string>
+		<key>installer_item_location</key>
+		<string>apps/NordVPN/NordVPN-10.11.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>292345</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.nordvpn.macos</string>
+				<key>CFBundleName</key>
+				<string>NordVPN</string>
+				<key>CFBundleShortVersionString</key>
+				<string>10.11.0</string>
+				<key>CFBundleVersion</key>
+				<string>376</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/NordVPN.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.0</string>
+		<key>name</key>
+		<string>NordVPN</string>
+		<key>postuninstall_script</key>
+		<string>#!/bin/bash
+#
+launchctl unload /Library/LaunchDaemons/com.nordvpn.macos.helper.plist
+#
+rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>608119</integer>
+				<key>packageid</key>
+				<string>com.nordvpn.macos</string>
+				<key>version</key>
+				<string>10.11.0</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>10.11.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>NordVPN.app</string>
+			<string>NordVPNLauncher Sideload.app</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Get the fastest VPN in the world and enjoy a smooth, safe, and private connection on your Mac. NordVPN’s easy-to-use app will protect all your connected devices from snoopers tracking what you do online.
+
+Even if you think you have nothing to hide — no one likes to be watched. That’s why you need a VPN to protect your privacy and keep your online data safe.</string>
+		<key>developer</key>
+		<string>Nordvpn S.A.</string>
+		<key>display_name</key>
+		<string>NordVPN</string>
+		<key>installed_size</key>
 		<integer>610388</integer>
 		<key>installer_item_hash</key>
 		<string>aa2233172ab62fc4d32950196a691dcbb5d78e6c57b8901b74c1ac9c7989602d</string>
@@ -78431,6 +78287,84 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>0.34.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models.</string>
+		<key>developer</key>
+		<string>Infra Technologies, Inc</string>
+		<key>display_name</key>
+		<string>Ollama</string>
+		<key>installer_item_hash</key>
+		<string>757b86cd1ecb903fcd1147db87ec79b25a689daacf032e600a75d1e4c76b5f78</string>
+		<key>installer_item_location</key>
+		<string>apps/Ollama/Ollama-0.34.2.dmg</string>
+		<key>installer_item_size</key>
+		<integer>196537</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.electron.ollama</string>
+				<key>CFBundleName</key>
+				<string>Ollama</string>
+				<key>CFBundleShortVersionString</key>
+				<string>0.34.2</string>
+				<key>CFBundleVersion</key>
+				<string>0.34.2</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/Ollama.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Ollama.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.0</string>
+		<key>name</key>
+		<string>Ollama</string>
+		<key>postinstall_script</key>
+		<string>#!/bin/bash
+
+# Script built from: https://github.com/ollama/ollama/issues/851#issuecomment-1889808636
+# Please note admin rights are still needed as the file that records whether first time run has completed is located in the Users home folder. see https://github.com/ollama/ollama/issues/6814
+
+# Install Command Line Tools
+if ! [ -f /usr/local/bin/ollama ]; then
+  /usr/bin/touch /usr/local/bin/ollama ; /bin/ln -s -f /Applications/Ollama.app/Contents/Resources/ollama /usr/local/bin/ollama
+fi
+
+exit</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>0.34.2</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>

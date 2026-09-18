@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-09-15T04:53:35Z</date>
+		<date>2026-09-18T05:17:04Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,34 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Tool designed to help developers manage multiple coding agents, run tasks in parallel, and collaborate on software projects.</string>
+	<string>Fast Terminal app based in Rust.</string>
 	<key>developer</key>
-	<string>OpenAI</string>
+	<string>Denver Technologies</string>
 	<key>display_name</key>
-	<string>Codex</string>
+	<string>Warp</string>
+	<key>force_munkiimport</key>
+	<true/>
 	<key>installer_item_hash</key>
-	<string>2ddfc5863814a6850b1fce952dcc92d922ce53a54a9a445d9fdc755e49b82aa0</string>
+	<string>826ee2b1a5103a174cb8be4447d1b7439e50f3901a74e4f748c833e567a586b1</string>
 	<key>installer_item_location</key>
-	<string>apps/Codex/Codex-26.908.70816.dmg</string>
+	<string>apps/Warp/Warp-0.2026.09.16.08.27.02.dmg</string>
 	<key>installer_item_size</key>
-	<integer>609171</integer>
+	<integer>326928</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.openai.codex</string>
+			<string>dev.warp.Warp-Stable</string>
 			<key>CFBundleName</key>
-			<string>ChatGPT</string>
+			<string>Warp</string>
 			<key>CFBundleShortVersionString</key>
-			<string>26.908.70816</string>
+			<string>0.2026.09.16.08.27.02</string>
 			<key>CFBundleVersion</key>
-			<string>9275</string>
-			<key>minosversion</key>
-			<string>13.0</string>
+			<string>0.2026.09.16.08.27.02</string>
 			<key>path</key>
-			<string>/Applications/ChatGPT.app</string>
+			<string>/Applications/Warp.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,22 +60,18 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>ChatGPT.app</string>
+			<string>Warp.app</string>
 		</dict>
 	</array>
-	<key>minimum_os_version</key>
-	<string>13.0</string>
 	<key>name</key>
-	<string>Codex</string>
+	<string>Warp</string>
 	<key>unattended_install</key>
-	<true/>
-	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>26.908.70816</string>
+	<string>0.2026.09.16.08.27.02</string>
 </dict>
 </plist>

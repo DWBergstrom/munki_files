@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-09-16T04:53:14Z</date>
+		<date>2026-09-18T05:12:24Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,39 +19,41 @@
 	<array>
 		<string>testing</string>
 	</array>
+	<key>category</key>
+	<string>Productivity</string>
 	<key>description</key>
-	<string>Your AI partner on desktop. Fast, focused, and designed for deep work.</string>
+	<string>A web browser developed by Opera Software.</string>
 	<key>developer</key>
-	<string>Anthropic PBC</string>
+	<string>Opera</string>
 	<key>display_name</key>
-	<string>Claude</string>
+	<string>Opera</string>
 	<key>installer_item_hash</key>
-	<string>df38475a697ec5a922c4d0050978ed449cbb2d11645c03a529b57c4f87233e39</string>
+	<string>ea6fc6c554c06be615dc9e10675af4c73094538a82c11b4bc0e6c59c6ea78e6b</string>
 	<key>installer_item_location</key>
-	<string>apps/Claude/Claude-2.110.0.dmg</string>
+	<string>opera/opera/Opera-136.0.6008.22.dmg</string>
 	<key>installer_item_size</key>
-	<integer>367277</integer>
+	<integer>173277</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.anthropic.claudefordesktop</string>
+			<string>com.operasoftware.Opera</string>
 			<key>CFBundleName</key>
-			<string>Claude</string>
+			<string>Opera</string>
 			<key>CFBundleShortVersionString</key>
-			<string>2.110.0</string>
+			<string>136.0</string>
 			<key>CFBundleVersion</key>
-			<string>2.110.0</string>
+			<string>136.0.6008.22</string>
 			<key>minosversion</key>
 			<string>13.0</string>
 			<key>path</key>
-			<string>/Applications/Claude.app</string>
+			<string>/Applications/Opera.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
-			<string>CFBundleShortVersionString</string>
+			<string>CFBundleVersion</string>
 		</dict>
 	</array>
 	<key>items_to_copy</key>
@@ -60,22 +62,20 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Claude.app</string>
+			<string>Opera.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
 	<string>13.0</string>
 	<key>name</key>
-	<string>Claude</string>
+	<string>Opera</string>
 	<key>unattended_install</key>
-	<true/>
-	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>2.110.0</string>
+	<string>136.0.6008.22</string>
 </dict>
 </plist>
