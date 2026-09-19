@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-09-11T05:04:56Z</date>
+		<date>2026-09-19T04:52:45Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,35 +19,37 @@
 	<array>
 		<string>testing</string>
 	</array>
+	<key>category</key>
+	<string>Browsers</string>
 	<key>description</key>
-	<string>Fast Terminal app based in Rust.</string>
+	<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
 	<key>developer</key>
-	<string>Denver Technologies</string>
+	<string>Brave Software Inc.</string>
 	<key>display_name</key>
-	<string>Warp</string>
-	<key>force_munkiimport</key>
-	<true/>
+	<string>Brave Browser</string>
 	<key>installer_item_hash</key>
-	<string>d5591a6ea7721c879f7cd564ff689e8627e68ed7eb67a7e02d8d8226bd83dfd3</string>
+	<string>30a581f9ab945cf4824bb590c2b16b9c50681550392cfbdea5db66a54acb74bf</string>
 	<key>installer_item_location</key>
-	<string>apps/Warp/Warp-0.2026.09.09.08.26.02.dmg</string>
+	<string>apps/Brave/Brave-153.1.95.104.dmg</string>
 	<key>installer_item_size</key>
-	<integer>326100</integer>
+	<integer>323062</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>dev.warp.Warp-Stable</string>
+			<string>com.brave.Browser</string>
 			<key>CFBundleName</key>
-			<string>Warp</string>
+			<string>Brave</string>
 			<key>CFBundleShortVersionString</key>
-			<string>0.2026.09.09.08.26.02</string>
+			<string>153.1.95.104</string>
 			<key>CFBundleVersion</key>
-			<string>0.2026.09.09.08.26.02</string>
+			<string>195.104</string>
+			<key>minosversion</key>
+			<string>13.0</string>
 			<key>path</key>
-			<string>/Applications/Warp.app</string>
+			<string>/Applications/Brave Browser.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,11 +62,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Warp.app</string>
+			<string>Brave Browser.app</string>
 		</dict>
 	</array>
+	<key>minimum_os_version</key>
+	<string>13.0</string>
 	<key>name</key>
-	<string>Warp</string>
+	<string>Brave</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -72,6 +76,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>0.2026.09.09.08.26.02</string>
+	<string>153.1.95.104</string>
 </dict>
 </plist>
