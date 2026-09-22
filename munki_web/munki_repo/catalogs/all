@@ -43053,6 +43053,70 @@ fi
 		<key>display_name</key>
 		<string>DuckDuckGo</string>
 		<key>installer_item_hash</key>
+		<string>9165ff6b02af92cac056616adc4812d0052374a374915b25511ce40ce5bde024</string>
+		<key>installer_item_location</key>
+		<string>apps/DuckDuckGo/DuckDuckGo-1.208.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>181691</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.duckduckgo.macos.browser</string>
+				<key>CFBundleName</key>
+				<string>DuckDuckGo</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.208.0</string>
+				<key>CFBundleVersion</key>
+				<string>813</string>
+				<key>minosversion</key>
+				<string>12.3</string>
+				<key>path</key>
+				<string>/Applications/DuckDuckGo.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>DuckDuckGo.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.3</string>
+		<key>name</key>
+		<string>DuckDuckGo</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.208.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Chrome-like keyword search for Safari.</string>
+		<key>developer</key>
+		<string>Duck Duck Go</string>
+		<key>display_name</key>
+		<string>DuckDuckGo</string>
+		<key>installer_item_hash</key>
 		<string>09253e404bc8305992d9553e218daa1da85d36b2f8c37960c08c6a9b9644225e</string>
 		<key>installer_item_location</key>
 		<string>apps/DuckDuckGo/DuckDuckGo-1.193.1__1.dmg</string>
@@ -52316,6 +52380,90 @@ fi
 		<true/>
 		<key>version</key>
 		<string>2.2.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>Microsoft Remote Desktop</string>
+			<string>Windows App</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>utilities</string>
+		</array>
+		<key>category</key>
+		<string>Utility</string>
+		<key>description</key>
+		<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
+</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Windows App</string>
+		<key>installed_size</key>
+		<integer>242588</integer>
+		<key>installer_item_hash</key>
+		<string>346b9cc2e97ce9d82bdff7c565983b9061f27c3aec38831d3c46e64a1bdfbc75</string>
+		<key>installer_item_location</key>
+		<string>apps/microsoft/Microsoft_Windows_App-11.4.1.pkg</string>
+		<key>installer_item_size</key>
+		<integer>100507</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.microsoft.rdc.macos</string>
+				<key>CFBundleName</key>
+				<string>Windows App</string>
+				<key>CFBundleShortVersionString</key>
+				<string>11.4.1</string>
+				<key>CFBundleVersion</key>
+				<string>3092</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/Windows App.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.0</string>
+		<key>name</key>
+		<string>WindowsApp</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>231857</integer>
+				<key>packageid</key>
+				<string>com.microsoft.rdc.macos</string>
+				<key>version</key>
+				<string>11.4.1</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>10731</integer>
+				<key>packageid</key>
+				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
+				<key>version</key>
+				<string>4.81.25121042</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>11.4.1</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
