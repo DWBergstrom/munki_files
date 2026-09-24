@@ -15049,78 +15049,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 			<string>testing</string>
 		</array>
 		<key>category</key>
-		<string>Software</string>
-		<key>description</key>
-		<string>Oracle VM VirtualBox is a free and open-source hypervisor for x86 computers currently being developed by Oracle Corporation.</string>
-		<key>developer</key>
-		<string>Oracle Corporation</string>
-		<key>display_name</key>
-		<string>VirtualBox</string>
-		<key>installed_size</key>
-		<integer>284557</integer>
-		<key>installer_item_hash</key>
-		<string>31baa81db388a50fe438fd93418898619bb280e4e2722e72f66b70f0ba2981f8</string>
-		<key>installer_item_location</key>
-		<string>apps/VirtualBox-7.2.18.dmg</string>
-		<key>installer_item_size</key>
-		<integer>146723</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.virtualbox.app.VirtualBox</string>
-				<key>CFBundleName</key>
-				<string>VirtualBox</string>
-				<key>CFBundleShortVersionString</key>
-				<string>7.2.18</string>
-				<key>CFBundleVersion</key>
-				<string>7.2.18</string>
-				<key>path</key>
-				<string>/Applications/VirtualBox.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>name</key>
-		<string>VirtualBox</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>284550</integer>
-				<key>packageid</key>
-				<string>org.virtualbox.pkg.virtualbox</string>
-				<key>version</key>
-				<string>7.2.18</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>7</integer>
-				<key>packageid</key>
-				<string>org.virtualbox.pkg.virtualboxcli</string>
-				<key>version</key>
-				<string>7.2.18</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.2.18</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
 		<string>Utilities</string>
 		<key>description</key>
 		<string>iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with OS 10.5 (Leopard) or newer. Its focus is on performance, internationalization, and supporting innovative features that make your life better.</string>
@@ -16543,72 +16471,6 @@ fi
 		<key>category</key>
 		<string>Utilities</string>
 		<key>description</key>
-		<string>iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with OS 10.5 (Leopard) or newer. Its focus is on performance, internationalization, and supporting innovative features that make your life better.</string>
-		<key>developer</key>
-		<string>George Nachman</string>
-		<key>display_name</key>
-		<string>iTerm2</string>
-		<key>installer_item_hash</key>
-		<string>5733a53b71dee45200f550c2a59d86e15aaa46d97cb0f3ee7a9dd383be4f0bf7</string>
-		<key>installer_item_location</key>
-		<string>apps/iTerm2-3.7.2.dmg</string>
-		<key>installer_item_size</key>
-		<integer>57320</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.googlecode.iterm2</string>
-				<key>CFBundleName</key>
-				<string>iTerm2</string>
-				<key>CFBundleShortVersionString</key>
-				<string>3.7.2</string>
-				<key>CFBundleVersion</key>
-				<string>3.7.2</string>
-				<key>minosversion</key>
-				<string>13.0</string>
-				<key>path</key>
-				<string>/Applications/iTerm.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>iTerm.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>13.0</string>
-		<key>name</key>
-		<string>iTerm2</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>3.7.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Utilities</string>
-		<key>description</key>
 		<string>Peek inside macOS Installer packages, see what they install, what they do, and more.</string>
 		<key>developer</key>
 		<string>Mothers Ruin Software</string>
@@ -17518,70 +17380,6 @@ fi
 		<true/>
 		<key>version</key>
 		<string>3.6.11</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Mozilla Firefox is a free and open source web browser.</string>
-		<key>display_name</key>
-		<string>Mozilla Firefox</string>
-		<key>installer_item_hash</key>
-		<string>fecc46103039ca4a77ecb2b2ef7b03892f922e13db0782f8570c512b2e458515</string>
-		<key>installer_item_location</key>
-		<string>apps/firefox/Firefox-156.0.dmg</string>
-		<key>installer_item_size</key>
-		<integer>156850</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.mozilla.firefox</string>
-				<key>CFBundleName</key>
-				<string>Firefox</string>
-				<key>CFBundleShortVersionString</key>
-				<string>156.0</string>
-				<key>CFBundleVersion</key>
-				<string>15626.9.9</string>
-				<key>minosversion</key>
-				<string>10.15.0</string>
-				<key>path</key>
-				<string>/Applications/Firefox.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>mode</key>
-				<string>ug+w,o-w</string>
-				<key>source_item</key>
-				<string>Firefox.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.15.0</string>
-		<key>name</key>
-		<string>Firefox</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>156.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -41890,6 +41688,68 @@ fi
 		<key>display_name</key>
 		<string>Insomnia </string>
 		<key>installer_item_hash</key>
+		<string>11c1b222bfa1d9203292cbedd2b142f00aae3b3b5702fbed738cdc0db1cf582f</string>
+		<key>installer_item_location</key>
+		<string>apps/Insomnia/Insomnia.Core-13.3.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>371882</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.insomnia.app</string>
+				<key>CFBundleName</key>
+				<string>Insomnia</string>
+				<key>CFBundleShortVersionString</key>
+				<string>13.3.0</string>
+				<key>CFBundleVersion</key>
+				<string>13.3.0</string>
+				<key>minosversion</key>
+				<string>12.0</string>
+				<key>path</key>
+				<string>/Applications/Insomnia.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Insomnia.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.0</string>
+		<key>name</key>
+		<string>Insomnia</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>13.3.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Explore REST and GraphQL APIs.</string>
+		<key>display_name</key>
+		<string>Insomnia </string>
+		<key>installer_item_hash</key>
 		<string>f0b4535e55af44c212b6e601ae5919d0fa8cdbd82c3b52c10e85a29f4f621806</string>
 		<key>installer_item_location</key>
 		<string>apps/Insomnia/Insomnia.Core-13.2.0.dmg</string>
@@ -43340,6 +43200,72 @@ fi
 		<key>display_name</key>
 		<string>iMazing Profile Editor</string>
 		<key>installer_item_hash</key>
+		<string>b783fe4aec07c1f6a9f71262d8f0a4272c191394da904b7194c99aebbba8c0c8</string>
+		<key>installer_item_location</key>
+		<string>apps/imazingprofileeditor/iMazing_Profile_Editor_2.3.0.406703-2.3.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>30081</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.DigiDNA.iMazingProfileEditorMac</string>
+				<key>CFBundleName</key>
+				<string>iMazing Profile Editor</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2.3.0</string>
+				<key>CFBundleVersion</key>
+				<string>406703</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/iMazing Profile Editor.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>iMazing Profile Editor.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.0</string>
+		<key>name</key>
+		<string>iMazingProfileEditor</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2.3.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Utilities</string>
+		<key>description</key>
+		<string>iMazing Profile Editor lets users create, modify, and also digitally sign configuration profiles with a friendly user interface instead of manually coding them in XML.</string>
+		<key>developer</key>
+		<string>DigiDNA SARL</string>
+		<key>display_name</key>
+		<string>iMazing Profile Editor</string>
+		<key>installer_item_hash</key>
 		<string>e870b87dfc66a491814b969cbbe818a62f51d68e09263ca5a315e5400362b487</string>
 		<key>installer_item_location</key>
 		<string>apps/imazingprofileeditor/iMazing_Profile_Editor_2.2.1.393403-2.2.1__4.dmg</string>
@@ -44734,72 +44660,6 @@ fi
 		<true/>
 		<key>version</key>
 		<string>1.46388.4</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Your AI partner on desktop. Fast, focused, and designed for deep work.</string>
-		<key>developer</key>
-		<string>Anthropic PBC</string>
-		<key>display_name</key>
-		<string>Claude</string>
-		<key>installer_item_hash</key>
-		<string>78a6105ecf3812115d7ff9b6330918876d7d784dacbb45919c5123d40eee9556</string>
-		<key>installer_item_location</key>
-		<string>apps/Claude/Claude-2.2553.1.dmg</string>
-		<key>installer_item_size</key>
-		<integer>369340</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.anthropic.claudefordesktop</string>
-				<key>CFBundleName</key>
-				<string>Claude</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2.2553.1</string>
-				<key>CFBundleVersion</key>
-				<string>2.2553.1</string>
-				<key>minosversion</key>
-				<string>13.0</string>
-				<key>path</key>
-				<string>/Applications/Claude.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Claude.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>13.0</string>
-		<key>name</key>
-		<string>Claude</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2.2553.1</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -78316,11 +78176,11 @@ exit</string>
 		<key>display_name</key>
 		<string>Ollama</string>
 		<key>installer_item_hash</key>
-		<string>757b86cd1ecb903fcd1147db87ec79b25a689daacf032e600a75d1e4c76b5f78</string>
+		<string>75ea70e526268eb79fd7a587444788d57f85425e7274afe986cb866f5278135f</string>
 		<key>installer_item_location</key>
-		<string>apps/Ollama/Ollama-0.34.2.dmg</string>
+		<string>apps/Ollama/Ollama-0.34.4.dmg</string>
 		<key>installer_item_size</key>
-		<integer>196537</integer>
+		<integer>198058</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -78331,9 +78191,9 @@ exit</string>
 				<key>CFBundleName</key>
 				<string>Ollama</string>
 				<key>CFBundleShortVersionString</key>
-				<string>0.34.2</string>
+				<string>0.34.4</string>
 				<key>CFBundleVersion</key>
-				<string>0.34.2</string>
+				<string>0.34.4</string>
 				<key>minosversion</key>
 				<string>14.0</string>
 				<key>path</key>
@@ -78378,7 +78238,7 @@ exit</string>
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>0.34.2</string>
+		<string>0.34.4</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -81151,6 +81011,70 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>6.7.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string> </string>
+		<key>developer</key>
+		<string>RIDDLE QUIET VENTURES, LLC</string>
+		<key>display_name</key>
+		<string>Signal Desktop</string>
+		<key>installer_item_hash</key>
+		<string>46a1dc266c6de8965dd0e51ec3606f1f78d57d082890bc6646e344fbaaf5829e</string>
+		<key>installer_item_location</key>
+		<string>apps/Signal/signal-desktop-mac-universal-8.28.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>266891</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>org.whispersystems.signal-desktop</string>
+				<key>CFBundleName</key>
+				<string>Signal</string>
+				<key>CFBundleShortVersionString</key>
+				<string>8.28.0</string>
+				<key>CFBundleVersion</key>
+				<string>1</string>
+				<key>minosversion</key>
+				<string>13.0</string>
+				<key>path</key>
+				<string>/Applications/Signal.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Signal.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0</string>
+		<key>name</key>
+		<string>Signal_Desktop</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>8.28.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
