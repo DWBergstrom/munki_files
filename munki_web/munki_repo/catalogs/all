@@ -20968,6 +20968,100 @@ fi</string>
 		<key>icon_name</key>
 		<string>DFUBlaster.png</string>
 		<key>installed_size</key>
+		<integer>13068</integer>
+		<key>installer_item_hash</key>
+		<string>f0e3347d219589bd248917cd02a55beb3bbc78de8650927ea642e4be8a89093f</string>
+		<key>installer_item_location</key>
+		<string>utilities/DFUBlaster/DFUBlaster-5.1.3621.dmg</string>
+		<key>installer_item_size</key>
+		<integer>5131</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.twocanoes.DFU-Blaster-Pro</string>
+				<key>CFBundleName</key>
+				<string>DFU Blaster Pro</string>
+				<key>CFBundleShortVersionString</key>
+				<string>5.1</string>
+				<key>CFBundleVersion</key>
+				<string>3621</string>
+				<key>minosversion</key>
+				<string>15.0</string>
+				<key>path</key>
+				<string>/Applications/DFU Blaster Pro.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleVersion</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>15.0</string>
+		<key>name</key>
+		<string>DFUBlaster</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>13068</integer>
+				<key>packageid</key>
+				<string>com.twocanoes.pkg.DFU-Blaster</string>
+				<key>version</key>
+				<string>5.1.3621</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>uninstall_script</string>
+		<key>uninstall_script</key>
+		<string>#!/bin/sh
+# Uninstall script adapted from DFU Blaster Uninstall package
+if [ -d "/Applications/DFU Blaster.app" ] ; then
+	echo "Removing DFU Blaster.app"
+	rm -rf "/Applications/DFU Blaster.app"
+fi
+
+if [ -e "/Library/LaunchDaemons/com.twocanoes.dfublasterhelper.plist" ] ; then
+	echo "Removing DFU Blaster Helper LaunchDaemon"
+	cd "/Library/LaunchDaemons"
+	launchctl stop com.twocanoes.dfublasterhelper
+	launchctl unload com.twocanoes.dfublasterhelper.plist
+	rm com.twocanoes.dfublasterhelper.plist
+	echo "Done removing DFU Blaster Helper LaunchDaemon"
+fi
+
+if [ -e "/Library/PrivilegedHelperTools/com.twocanoes.dfublasterhelper" ] ; then
+	echo "Removing DFU Blaster Helper Tool"
+	rm "/Library/PrivilegedHelperTools/com.twocanoes.dfublasterhelper"
+	echo "Done removing DFU Blaster Helper Tool"
+fi</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>5.1.3621</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Utilities</string>
+		<key>description</key>
+		<string>DFU Blaster is the easiest way to put a Mac into DFU mode.</string>
+		<key>developer</key>
+		<string>Twocanoes Software</string>
+		<key>display_name</key>
+		<string>DFU Blaster</string>
+		<key>icon_name</key>
+		<string>DFUBlaster.png</string>
+		<key>installed_size</key>
 		<integer>12950</integer>
 		<key>installer_item_hash</key>
 		<string>9084c38301beb24a232377984f9f0f909f91c8f79c10f09c6e1c100ede2a2cf9</string>
@@ -21457,6 +21551,72 @@ fi</string>
 		<true/>
 		<key>version</key>
 		<string>135.0.5973.41</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Productivity</string>
+		<key>description</key>
+		<string>A web browser developed by Opera Software.</string>
+		<key>developer</key>
+		<string>Opera</string>
+		<key>display_name</key>
+		<string>Opera</string>
+		<key>installer_item_hash</key>
+		<string>9be3dd50f489f13faa7bcbba5b241ed651d86ffdc0ac5599763039f58369f143</string>
+		<key>installer_item_location</key>
+		<string>opera/opera/Opera-136.0.6008.52.dmg</string>
+		<key>installer_item_size</key>
+		<integer>173217</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.operasoftware.Opera</string>
+				<key>CFBundleName</key>
+				<string>Opera</string>
+				<key>CFBundleShortVersionString</key>
+				<string>136.0</string>
+				<key>CFBundleVersion</key>
+				<string>136.0.6008.52</string>
+				<key>minosversion</key>
+				<string>13.0</string>
+				<key>path</key>
+				<string>/Applications/Opera.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleVersion</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Opera.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0</string>
+		<key>name</key>
+		<string>Opera</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>136.0.6008.52</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -29818,6 +29978,53 @@ fi
 		<true/>
 		<key>version</key>
 		<string>6.5.4.44790</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>AppGate SDP.app</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>AppGate brings secure access to your infrastructure using better network security than legacy VPNs, NACs and firewalls.</string>
+		<key>developer</key>
+		<string>CYXTERA TECHNOLOGIES, INC.</string>
+		<key>display_name</key>
+		<string>AppGate SDP</string>
+		<key>installed_size</key>
+		<integer>591765</integer>
+		<key>installer_item_hash</key>
+		<string>434e21ec445249c4d73847bbc55071b4dbf05c87d856f6da1376f1b55a39054a</string>
+		<key>installer_item_location</key>
+		<string>apps/AppGate SDP/AppGate SDP-6.5.6.50126.dmg</string>
+		<key>installer_item_size</key>
+		<integer>177098</integer>
+		<key>name</key>
+		<string>AppGate SDP</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>591765</integer>
+				<key>packageid</key>
+				<string>com.appgate.pkg.appgatetun.component</string>
+				<key>version</key>
+				<string>6.5.6.50126</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>6.5.6.50126</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -49823,68 +50030,6 @@ fi
 		<key>display_name</key>
 		<string>Insomnia </string>
 		<key>installer_item_hash</key>
-		<string>f0b4535e55af44c212b6e601ae5919d0fa8cdbd82c3b52c10e85a29f4f621806</string>
-		<key>installer_item_location</key>
-		<string>apps/Insomnia/Insomnia.Core-13.2.0.dmg</string>
-		<key>installer_item_size</key>
-		<integer>368705</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.insomnia.app</string>
-				<key>CFBundleName</key>
-				<string>Insomnia</string>
-				<key>CFBundleShortVersionString</key>
-				<string>13.2.0</string>
-				<key>CFBundleVersion</key>
-				<string>13.2.0</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/Insomnia.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Insomnia.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>Insomnia</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>13.2.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Explore REST and GraphQL APIs.</string>
-		<key>display_name</key>
-		<string>Insomnia </string>
-		<key>installer_item_hash</key>
 		<string>26ad3d7cac3aeeef8cccf1ddeea0af821be0df704776d54323970e7fde33e564</string>
 		<key>installer_item_location</key>
 		<string>apps/Insomnia/Insomnia.Core-11.6.2__1.dmg</string>
@@ -52728,6 +52873,90 @@ fi
 	<dict>
 		<key>autoremove</key>
 		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>Microsoft Remote Desktop</string>
+			<string>Windows App</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>utilities</string>
+		</array>
+		<key>category</key>
+		<string>Utility</string>
+		<key>description</key>
+		<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
+</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Windows App</string>
+		<key>installed_size</key>
+		<integer>254559</integer>
+		<key>installer_item_hash</key>
+		<string>e6f97a8422adc8267ceb4e17a484192bd90b3ac9b2df2bc48923144f33371d4f</string>
+		<key>installer_item_location</key>
+		<string>apps/microsoft/Microsoft_Windows_App-11.4.2.pkg</string>
+		<key>installer_item_size</key>
+		<integer>103842</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.microsoft.rdc.macos</string>
+				<key>CFBundleName</key>
+				<string>Windows App</string>
+				<key>CFBundleShortVersionString</key>
+				<string>11.4.2</string>
+				<key>CFBundleVersion</key>
+				<string>3104</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/Windows App.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.0</string>
+		<key>name</key>
+		<string>WindowsApp</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>243828</integer>
+				<key>packageid</key>
+				<string>com.microsoft.rdc.macos</string>
+				<key>version</key>
+				<string>11.4.2</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>10731</integer>
+				<key>packageid</key>
+				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
+				<key>version</key>
+				<string>4.81.25121042</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>11.4.2</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
 		<key>catalogs</key>
 		<array>
 			<string>testing</string>
@@ -52769,6 +52998,117 @@ fi
 		<true/>
 		<key>version</key>
 		<string>153.0.4234.48</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Productivity</string>
+		<key>description</key>
+		<string>Microsoft Edge web browser</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Microsoft Edge</string>
+		<key>installed_size</key>
+		<integer>977716</integer>
+		<key>installer_item_hash</key>
+		<string>d104a5c2f288b3f8d8db964bba26e8545f645ea88b0d64ece1215b63a742a9a5</string>
+		<key>installer_item_location</key>
+		<string>apps/Microsoft/Microsoft_Edge-154.0.4258.37.pkg</string>
+		<key>installer_item_size</key>
+		<integer>437304</integer>
+		<key>minimum_os_version</key>
+		<string>10.10.0</string>
+		<key>name</key>
+		<string>MicrosoftEdge</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>977716</integer>
+				<key>packageid</key>
+				<string>com.microsoft.edgemac</string>
+				<key>version</key>
+				<string>154.0.4258.37</string>
+			</dict>
+		</array>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>154.0.4258.37</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Your AI partner on desktop. Fast, focused, and designed for deep work.</string>
+		<key>developer</key>
+		<string>Anthropic PBC</string>
+		<key>display_name</key>
+		<string>Claude</string>
+		<key>installer_item_hash</key>
+		<string>f26f4e616682868305721f91ebca6e5297ada73ecff5c9f1d8a6ef029962547a</string>
+		<key>installer_item_location</key>
+		<string>apps/Claude/Claude-2.9939.2.dmg</string>
+		<key>installer_item_size</key>
+		<integer>372252</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.anthropic.claudefordesktop</string>
+				<key>CFBundleName</key>
+				<string>Claude</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2.9939.2</string>
+				<key>CFBundleVersion</key>
+				<string>2.9939.2</string>
+				<key>minosversion</key>
+				<string>13.0</string>
+				<key>path</key>
+				<string>/Applications/Claude.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Claude.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0</string>
+		<key>name</key>
+		<string>Claude</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2.9939.2</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -55707,6 +56047,72 @@ fi
 		<true/>
 		<key>version</key>
 		<string>2.7.0.48109</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Browsers</string>
+		<key>description</key>
+		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
+		<key>developer</key>
+		<string>Brave Software Inc.</string>
+		<key>display_name</key>
+		<string>Brave Browser</string>
+		<key>installer_item_hash</key>
+		<string>2187b3e8855c87439507ac25eec37ac1682e59427dd8179c5b34dd2c92a5418a</string>
+		<key>installer_item_location</key>
+		<string>apps/Brave/Brave-154.1.96.59.dmg</string>
+		<key>installer_item_size</key>
+		<integer>328988</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.brave.Browser</string>
+				<key>CFBundleName</key>
+				<string>Brave</string>
+				<key>CFBundleShortVersionString</key>
+				<string>154.1.96.59</string>
+				<key>CFBundleVersion</key>
+				<string>196.59</string>
+				<key>minosversion</key>
+				<string>13.0</string>
+				<key>path</key>
+				<string>/Applications/Brave Browser.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Brave Browser.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0</string>
+		<key>name</key>
+		<string>Brave</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>154.1.96.59</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -71974,6 +72380,74 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<key>display_name</key>
 		<string>Raycast</string>
 		<key>installer_item_hash</key>
+		<string>fe05d4db25b8f61a985dea54145d7d2458967d2c87f97248cf26632bea5e9eaf</string>
+		<key>installer_item_location</key>
+		<string>apps/Raycast/Raycast-2.5.1.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>130591</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.raycast.macos</string>
+				<key>CFBundleName</key>
+				<string>Raycast</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2.5.1.0</string>
+				<key>CFBundleVersion</key>
+				<string>0</string>
+				<key>minosversion</key>
+				<string>26.0</string>
+				<key>path</key>
+				<string>/Applications/Raycast.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Raycast.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>26.0</string>
+		<key>name</key>
+		<string>Raycast</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2.5.1.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Supercharged productivity
+
+Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
+		<key>developer</key>
+		<string>Raycast Technologies Inc</string>
+		<key>display_name</key>
+		<string>Raycast</string>
+		<key>installer_item_hash</key>
 		<string>5bb09adafcf8070605264bb29fcf496e4d615da3a6a0ce88eab70653d186a795</string>
 		<key>installer_item_location</key>
 		<string>apps/Raycast/Raycast-2.4.1.0.dmg</string>
@@ -86324,84 +86798,6 @@ rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
 		<true/>
 		<key>version</key>
 		<string>10.11.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models.</string>
-		<key>developer</key>
-		<string>Infra Technologies, Inc</string>
-		<key>display_name</key>
-		<string>Ollama</string>
-		<key>installer_item_hash</key>
-		<string>9223969e13d1b4ff83ff759755a1cc383758cc5661d6cae574165a9a6cca1208</string>
-		<key>installer_item_location</key>
-		<string>apps/Ollama/Ollama-0.34.3.dmg</string>
-		<key>installer_item_size</key>
-		<integer>196626</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.electron.ollama</string>
-				<key>CFBundleName</key>
-				<string>Ollama</string>
-				<key>CFBundleShortVersionString</key>
-				<string>0.34.3</string>
-				<key>CFBundleVersion</key>
-				<string>0.34.3</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Ollama.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Ollama.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>Ollama</string>
-		<key>postinstall_script</key>
-		<string>#!/bin/bash
-
-# Script built from: https://github.com/ollama/ollama/issues/851#issuecomment-1889808636
-# Please note admin rights are still needed as the file that records whether first time run has completed is located in the Users home folder. see https://github.com/ollama/ollama/issues/6814
-
-# Install Command Line Tools
-if ! [ -f /usr/local/bin/ollama ]; then
-  /usr/bin/touch /usr/local/bin/ollama ; /bin/ln -s -f /Applications/Ollama.app/Contents/Resources/ollama /usr/local/bin/ollama
-fi
-
-exit</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>0.34.3</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>

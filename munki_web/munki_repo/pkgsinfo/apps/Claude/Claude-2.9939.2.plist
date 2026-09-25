@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-08-26T04:57:25Z</date>
+		<date>2026-09-25T04:54:04Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,32 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Explore REST and GraphQL APIs.</string>
+	<string>Your AI partner on desktop. Fast, focused, and designed for deep work.</string>
+	<key>developer</key>
+	<string>Anthropic PBC</string>
 	<key>display_name</key>
-	<string>Insomnia </string>
+	<string>Claude</string>
 	<key>installer_item_hash</key>
-	<string>f0b4535e55af44c212b6e601ae5919d0fa8cdbd82c3b52c10e85a29f4f621806</string>
+	<string>f26f4e616682868305721f91ebca6e5297ada73ecff5c9f1d8a6ef029962547a</string>
 	<key>installer_item_location</key>
-	<string>apps/Insomnia/Insomnia.Core-13.2.0.dmg</string>
+	<string>apps/Claude/Claude-2.9939.2.dmg</string>
 	<key>installer_item_size</key>
-	<integer>368705</integer>
+	<integer>372252</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.insomnia.app</string>
+			<string>com.anthropic.claudefordesktop</string>
 			<key>CFBundleName</key>
-			<string>Insomnia</string>
+			<string>Claude</string>
 			<key>CFBundleShortVersionString</key>
-			<string>13.2.0</string>
+			<string>2.9939.2</string>
 			<key>CFBundleVersion</key>
-			<string>13.2.0</string>
+			<string>2.9939.2</string>
 			<key>minosversion</key>
-			<string>12.0</string>
+			<string>13.0</string>
 			<key>path</key>
-			<string>/Applications/Insomnia.app</string>
+			<string>/Applications/Claude.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -58,20 +60,22 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Insomnia.app</string>
+			<string>Claude.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>12.0</string>
+	<string>13.0</string>
 	<key>name</key>
-	<string>Insomnia</string>
+	<string>Claude</string>
 	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>13.2.0</string>
+	<string>2.9939.2</string>
 </dict>
 </plist>
