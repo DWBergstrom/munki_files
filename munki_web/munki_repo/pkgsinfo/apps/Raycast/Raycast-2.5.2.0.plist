@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-09-19T04:52:45Z</date>
+		<date>2026-09-26T04:58:30Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,37 +19,37 @@
 	<array>
 		<string>testing</string>
 	</array>
-	<key>category</key>
-	<string>Browsers</string>
 	<key>description</key>
-	<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
+	<string>Supercharged productivity
+
+Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
 	<key>developer</key>
-	<string>Brave Software Inc.</string>
+	<string>Raycast Technologies Inc</string>
 	<key>display_name</key>
-	<string>Brave Browser</string>
+	<string>Raycast</string>
 	<key>installer_item_hash</key>
-	<string>30a581f9ab945cf4824bb590c2b16b9c50681550392cfbdea5db66a54acb74bf</string>
+	<string>1b7978360d1b96ca96b0bf13d9b1d1940599ceec61dd8c85a0de3f0e82445b23</string>
 	<key>installer_item_location</key>
-	<string>apps/Brave/Brave-153.1.95.104.dmg</string>
+	<string>apps/Raycast/Raycast-2.5.2.0.dmg</string>
 	<key>installer_item_size</key>
-	<integer>323062</integer>
+	<integer>130569</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.brave.Browser</string>
+			<string>com.raycast.macos</string>
 			<key>CFBundleName</key>
-			<string>Brave</string>
+			<string>Raycast</string>
 			<key>CFBundleShortVersionString</key>
-			<string>153.1.95.104</string>
+			<string>2.5.2.0</string>
 			<key>CFBundleVersion</key>
-			<string>195.104</string>
+			<string>0</string>
 			<key>minosversion</key>
-			<string>13.0</string>
+			<string>26.0</string>
 			<key>path</key>
-			<string>/Applications/Brave Browser.app</string>
+			<string>/Applications/Raycast.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -62,20 +62,22 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Brave Browser.app</string>
+			<string>Raycast.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>13.0</string>
+	<string>26.0</string>
 	<key>name</key>
-	<string>Brave</string>
+	<string>Raycast</string>
 	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>153.1.95.104</string>
+	<string>2.5.2.0</string>
 </dict>
 </plist>
