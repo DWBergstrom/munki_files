@@ -27180,6 +27180,70 @@ fi
 		<key>display_name</key>
 		<string>DuckDuckGo</string>
 		<key>installer_item_hash</key>
+		<string>ae5e632879295e0ce5995763b29c836a0ae4bf1a9a047b4461395b16eb3d3464</string>
+		<key>installer_item_location</key>
+		<string>apps/DuckDuckGo/DuckDuckGo-1.209.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>181710</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.duckduckgo.macos.browser</string>
+				<key>CFBundleName</key>
+				<string>DuckDuckGo</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.209.0</string>
+				<key>CFBundleVersion</key>
+				<string>816</string>
+				<key>minosversion</key>
+				<string>12.3</string>
+				<key>path</key>
+				<string>/Applications/DuckDuckGo.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>DuckDuckGo.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.3</string>
+		<key>name</key>
+		<string>DuckDuckGo</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.209.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Chrome-like keyword search for Safari.</string>
+		<key>developer</key>
+		<string>Duck Duck Go</string>
+		<key>display_name</key>
+		<string>DuckDuckGo</string>
+		<key>installer_item_hash</key>
 		<string>9165ff6b02af92cac056616adc4812d0052374a374915b25511ce40ce5bde024</string>
 		<key>installer_item_location</key>
 		<string>apps/DuckDuckGo/DuckDuckGo-1.208.0.dmg</string>
@@ -36730,6 +36794,72 @@ fi
 		<true/>
 		<key>version</key>
 		<string>2.9939.2</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Your AI partner on desktop. Fast, focused, and designed for deep work.</string>
+		<key>developer</key>
+		<string>Anthropic PBC</string>
+		<key>display_name</key>
+		<string>Claude</string>
+		<key>installer_item_hash</key>
+		<string>6f64d203e06c7362d1d1214456c137220ec6b07fff8071b392687a2043632d6f</string>
+		<key>installer_item_location</key>
+		<string>apps/Claude/Claude-2.9939.4.dmg</string>
+		<key>installer_item_size</key>
+		<integer>373099</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.anthropic.claudefordesktop</string>
+				<key>CFBundleName</key>
+				<string>Claude</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2.9939.4</string>
+				<key>CFBundleVersion</key>
+				<string>2.9939.4</string>
+				<key>minosversion</key>
+				<string>13.0</string>
+				<key>path</key>
+				<string>/Applications/Claude.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Claude.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0</string>
+		<key>name</key>
+		<string>Claude</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2.9939.4</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -55869,6 +55999,74 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<key>display_name</key>
 		<string>Raycast</string>
 		<key>installer_item_hash</key>
+		<string>273d520a708f8d9ca5a71fc1b8ae2710b0f66f6eaddd82437df2b684d97bc2af</string>
+		<key>installer_item_location</key>
+		<string>apps/Raycast/Raycast-2.5.3.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>130608</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.raycast.macos</string>
+				<key>CFBundleName</key>
+				<string>Raycast</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2.5.3.0</string>
+				<key>CFBundleVersion</key>
+				<string>0</string>
+				<key>minosversion</key>
+				<string>26.0</string>
+				<key>path</key>
+				<string>/Applications/Raycast.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Raycast.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>26.0</string>
+		<key>name</key>
+		<string>Raycast</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2.5.3.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Supercharged productivity
+
+Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
+		<key>developer</key>
+		<string>Raycast Technologies Inc</string>
+		<key>display_name</key>
+		<string>Raycast</string>
+		<key>installer_item_hash</key>
 		<string>232b19a6f52a962360d3ce93243dc59182eeab77139553e5d7ff34dea7b45cdd</string>
 		<key>installer_item_location</key>
 		<string>apps/Raycast/Raycast-1.104.25.dmg</string>
@@ -70219,6 +70417,87 @@ rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
 		<true/>
 		<key>version</key>
 		<string>10.11.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>NordVPN.app</string>
+			<string>NordVPNLauncher Sideload.app</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Get the fastest VPN in the world and enjoy a smooth, safe, and private connection on your Mac. NordVPN’s easy-to-use app will protect all your connected devices from snoopers tracking what you do online.
+
+Even if you think you have nothing to hide — no one likes to be watched. That’s why you need a VPN to protect your privacy and keep your online data safe.</string>
+		<key>developer</key>
+		<string>Nordvpn S.A.</string>
+		<key>display_name</key>
+		<string>NordVPN</string>
+		<key>installed_size</key>
+		<integer>606635</integer>
+		<key>installer_item_hash</key>
+		<string>0f5b91a9645dd6904a50fe55cd774fede3f88e9fd549925197179093946861ff</string>
+		<key>installer_item_location</key>
+		<string>apps/NordVPN/NordVPN-10.12.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>291249</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.nordvpn.macos</string>
+				<key>CFBundleName</key>
+				<string>NordVPN</string>
+				<key>CFBundleShortVersionString</key>
+				<string>10.12.0</string>
+				<key>CFBundleVersion</key>
+				<string>377</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/NordVPN.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.0</string>
+		<key>name</key>
+		<string>NordVPN</string>
+		<key>postuninstall_script</key>
+		<string>#!/bin/bash
+#
+launchctl unload /Library/LaunchDaemons/com.nordvpn.macos.helper.plist
+#
+rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>606635</integer>
+				<key>packageid</key>
+				<string>com.nordvpn.macos</string>
+				<key>version</key>
+				<string>10.12.0</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>10.12.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
