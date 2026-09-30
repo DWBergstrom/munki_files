@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-09-22T04:53:52Z</date>
+		<date>2026-09-30T04:54:46Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,34 +20,32 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Chrome-like keyword search for Safari.</string>
-	<key>developer</key>
-	<string>Duck Duck Go</string>
+	<string>Mozilla Firefox is a free and open source web browser.</string>
 	<key>display_name</key>
-	<string>DuckDuckGo</string>
+	<string>Mozilla Firefox</string>
 	<key>installer_item_hash</key>
-	<string>9165ff6b02af92cac056616adc4812d0052374a374915b25511ce40ce5bde024</string>
+	<string>df6d8c79b6126bcf24cb70ebab9371916a662028e2d706e462d432e78fdf396c</string>
 	<key>installer_item_location</key>
-	<string>apps/DuckDuckGo/DuckDuckGo-1.208.0.dmg</string>
+	<string>apps/firefox/Firefox-157.0.dmg</string>
 	<key>installer_item_size</key>
-	<integer>181691</integer>
+	<integer>157524</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.duckduckgo.macos.browser</string>
+			<string>org.mozilla.firefox</string>
 			<key>CFBundleName</key>
-			<string>DuckDuckGo</string>
+			<string>Firefox</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.208.0</string>
+			<string>157.0</string>
 			<key>CFBundleVersion</key>
-			<string>813</string>
+			<string>15726.9.24</string>
 			<key>minosversion</key>
-			<string>12.3</string>
+			<string>10.15.0</string>
 			<key>path</key>
-			<string>/Applications/DuckDuckGo.app</string>
+			<string>/Applications/Firefox.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -59,14 +57,16 @@
 		<dict>
 			<key>destination_path</key>
 			<string>/Applications</string>
+			<key>mode</key>
+			<string>ug+w,o-w</string>
 			<key>source_item</key>
-			<string>DuckDuckGo.app</string>
+			<string>Firefox.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>12.3</string>
+	<string>10.15.0</string>
 	<key>name</key>
-	<string>DuckDuckGo</string>
+	<string>Firefox</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -74,6 +74,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.208.0</string>
+	<string>157.0</string>
 </dict>
 </plist>
