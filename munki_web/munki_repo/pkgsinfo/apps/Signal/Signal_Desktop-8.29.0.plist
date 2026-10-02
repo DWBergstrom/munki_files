@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-09-25T04:52:58Z</date>
+		<date>2026-10-02T04:58:37Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,37 +19,35 @@
 	<array>
 		<string>testing</string>
 	</array>
-	<key>category</key>
-	<string>Browsers</string>
 	<key>description</key>
-	<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
+	<string> </string>
 	<key>developer</key>
-	<string>Brave Software Inc.</string>
+	<string>RIDDLE QUIET VENTURES, LLC</string>
 	<key>display_name</key>
-	<string>Brave Browser</string>
+	<string>Signal Desktop</string>
 	<key>installer_item_hash</key>
-	<string>2187b3e8855c87439507ac25eec37ac1682e59427dd8179c5b34dd2c92a5418a</string>
+	<string>2b9f27e16fd63953d048c5fd4bfaa53383388c0828b65ef7d7364be07eed3292</string>
 	<key>installer_item_location</key>
-	<string>apps/Brave/Brave-154.1.96.59.dmg</string>
+	<string>apps/Signal/signal-desktop-mac-universal-8.29.0.dmg</string>
 	<key>installer_item_size</key>
-	<integer>328988</integer>
+	<integer>267956</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.brave.Browser</string>
+			<string>org.whispersystems.signal-desktop</string>
 			<key>CFBundleName</key>
-			<string>Brave</string>
+			<string>Signal</string>
 			<key>CFBundleShortVersionString</key>
-			<string>154.1.96.59</string>
+			<string>8.29.0</string>
 			<key>CFBundleVersion</key>
-			<string>196.59</string>
+			<string>1</string>
 			<key>minosversion</key>
 			<string>13.0</string>
 			<key>path</key>
-			<string>/Applications/Brave Browser.app</string>
+			<string>/Applications/Signal.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -62,13 +60,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Brave Browser.app</string>
+			<string>Signal.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
 	<string>13.0</string>
 	<key>name</key>
-	<string>Brave</string>
+	<string>Signal_Desktop</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -76,6 +74,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>154.1.96.59</string>
+	<string>8.29.0</string>
 </dict>
 </plist>
