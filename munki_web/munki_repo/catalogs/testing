@@ -36636,51 +36636,6 @@ fi
 		<key>display_name</key>
 		<string>Microsoft Edge</string>
 		<key>installed_size</key>
-		<integer>977751</integer>
-		<key>installer_item_hash</key>
-		<string>fc6070ce53d00a22d33d73ecde9158046fa885f73f006d947711da2b34c88f52</string>
-		<key>installer_item_location</key>
-		<string>apps/Microsoft/Microsoft_Edge-154.0.4258.48.pkg</string>
-		<key>installer_item_size</key>
-		<integer>437305</integer>
-		<key>minimum_os_version</key>
-		<string>10.10.0</string>
-		<key>name</key>
-		<string>MicrosoftEdge</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>977751</integer>
-				<key>packageid</key>
-				<string>com.microsoft.edgemac</string>
-				<key>version</key>
-				<string>154.0.4258.48</string>
-			</dict>
-		</array>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>154.0.4258.48</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Productivity</string>
-		<key>description</key>
-		<string>Microsoft Edge web browser</string>
-		<key>developer</key>
-		<string>Microsoft</string>
-		<key>display_name</key>
-		<string>Microsoft Edge</string>
-		<key>installed_size</key>
 		<integer>977944</integer>
 		<key>installer_item_hash</key>
 		<string>dd720250d60a294cc2c0db9ccf05af732cce90d74a088d3e4293b280ef25cc71</string>
@@ -36709,72 +36664,6 @@ fi
 		<true/>
 		<key>version</key>
 		<string>154.0.4258.53</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Your AI partner on desktop. Fast, focused, and designed for deep work.</string>
-		<key>developer</key>
-		<string>Anthropic PBC</string>
-		<key>display_name</key>
-		<string>Claude</string>
-		<key>installer_item_hash</key>
-		<string>d8687c50d4f09cefc36c02aeffeb0125f7c6aafc7b8f5212140af035e034e23b</string>
-		<key>installer_item_location</key>
-		<string>apps/Claude/Claude-2.16120.0.dmg</string>
-		<key>installer_item_size</key>
-		<integer>374005</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.anthropic.claudefordesktop</string>
-				<key>CFBundleName</key>
-				<string>Claude</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2.16120.0</string>
-				<key>CFBundleVersion</key>
-				<string>2.16120.0</string>
-				<key>minosversion</key>
-				<string>13.0</string>
-				<key>path</key>
-				<string>/Applications/Claude.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Claude.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>13.0</string>
-		<key>name</key>
-		<string>Claude</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2.16120.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -39779,6 +39668,72 @@ fi
 		<true/>
 		<key>version</key>
 		<string>154.1.96.60</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Browsers</string>
+		<key>description</key>
+		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
+		<key>developer</key>
+		<string>Brave Software Inc.</string>
+		<key>display_name</key>
+		<string>Brave Browser</string>
+		<key>installer_item_hash</key>
+		<string>0e3de6c7a0abf16a691b4ecf243a21ef5d5fbf2dafa434654d4cbd42afbf3573</string>
+		<key>installer_item_location</key>
+		<string>apps/Brave/Brave-154.1.96.61.dmg</string>
+		<key>installer_item_size</key>
+		<integer>327613</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.brave.Browser</string>
+				<key>CFBundleName</key>
+				<string>Brave</string>
+				<key>CFBundleShortVersionString</key>
+				<string>154.1.96.61</string>
+				<key>CFBundleVersion</key>
+				<string>196.61</string>
+				<key>minosversion</key>
+				<string>13.0</string>
+				<key>path</key>
+				<string>/Applications/Brave Browser.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Brave Browser.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0</string>
+		<key>name</key>
+		<string>Brave</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>154.1.96.61</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -56116,6 +56071,74 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<key>display_name</key>
 		<string>Raycast</string>
 		<key>installer_item_hash</key>
+		<string>15e4bbaa22bf2c439783f26ce3d33f35afa9a618080112197469aa5c18f4c5dc</string>
+		<key>installer_item_location</key>
+		<string>apps/Raycast/Raycast-2.6.2.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>131887</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.raycast.macos</string>
+				<key>CFBundleName</key>
+				<string>Raycast</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2.6.2.0</string>
+				<key>CFBundleVersion</key>
+				<string>0</string>
+				<key>minosversion</key>
+				<string>26.0</string>
+				<key>path</key>
+				<string>/Applications/Raycast.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Raycast.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>26.0</string>
+		<key>name</key>
+		<string>Raycast</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2.6.2.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Supercharged productivity
+
+Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
+		<key>developer</key>
+		<string>Raycast Technologies Inc</string>
+		<key>display_name</key>
+		<string>Raycast</string>
+		<key>installer_item_hash</key>
 		<string>7c4d88487d2a6bbba51fb01002181945ef153c8f87a920c5616f93b395dfb7fc</string>
 		<key>installer_item_location</key>
 		<string>apps/Raycast/Raycast-2.6.0.0.dmg</string>
@@ -57067,68 +57090,6 @@ rm -rf /Applications/zoom.us.app
 		<true/>
 		<key>version</key>
 		<string>7.1.5.84650</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Fast Terminal app based in Rust.</string>
-		<key>developer</key>
-		<string>Denver Technologies</string>
-		<key>display_name</key>
-		<string>Warp</string>
-		<key>force_munkiimport</key>
-		<true/>
-		<key>installer_item_hash</key>
-		<string>c9456945c8f01471dbfbe26681be0cd411b08fa2a90931e36371f26e86557532</string>
-		<key>installer_item_location</key>
-		<string>apps/Warp/Warp-0.2026.09.23.14.34.01.dmg</string>
-		<key>installer_item_size</key>
-		<integer>327752</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>dev.warp.Warp-Stable</string>
-				<key>CFBundleName</key>
-				<string>Warp</string>
-				<key>CFBundleShortVersionString</key>
-				<string>0.2026.09.23.14.34.01</string>
-				<key>CFBundleVersion</key>
-				<string>0.2026.09.23.14.34.01</string>
-				<key>path</key>
-				<string>/Applications/Warp.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Warp.app</string>
-			</dict>
-		</array>
-		<key>name</key>
-		<string>Warp</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>0.2026.09.23.14.34.01</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -70407,6 +70368,84 @@ rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
 		<key>display_name</key>
 		<string>Ollama</string>
 		<key>installer_item_hash</key>
+		<string>546113cbc5165f0e5a01d3acbc4eb4d0fd8e39734c609ac8fb4bde38fd9ebfa3</string>
+		<key>installer_item_location</key>
+		<string>apps/Ollama/Ollama-0.35.1.dmg</string>
+		<key>installer_item_size</key>
+		<integer>197758</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.electron.ollama</string>
+				<key>CFBundleName</key>
+				<string>Ollama</string>
+				<key>CFBundleShortVersionString</key>
+				<string>0.35.1</string>
+				<key>CFBundleVersion</key>
+				<string>0.35.1</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/Ollama.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Ollama.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.0</string>
+		<key>name</key>
+		<string>Ollama</string>
+		<key>postinstall_script</key>
+		<string>#!/bin/bash
+
+# Script built from: https://github.com/ollama/ollama/issues/851#issuecomment-1889808636
+# Please note admin rights are still needed as the file that records whether first time run has completed is located in the Users home folder. see https://github.com/ollama/ollama/issues/6814
+
+# Install Command Line Tools
+if ! [ -f /usr/local/bin/ollama ]; then
+  /usr/bin/touch /usr/local/bin/ollama ; /bin/ln -s -f /Applications/Ollama.app/Contents/Resources/ollama /usr/local/bin/ollama
+fi
+
+exit</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>0.35.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models.</string>
+		<key>developer</key>
+		<string>Infra Technologies, Inc</string>
+		<key>display_name</key>
+		<string>Ollama</string>
+		<key>installer_item_hash</key>
 		<string>3fc680b80a97275d553b14bef7a3491b712709b6ef0b2d075032396670e1a6da</string>
 		<key>installer_item_location</key>
 		<string>apps/Ollama/Ollama-0.35.0.dmg</string>
@@ -73242,70 +73281,6 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>6.7.1</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>RIDDLE QUIET VENTURES, LLC</string>
-		<key>display_name</key>
-		<string>Signal Desktop</string>
-		<key>installer_item_hash</key>
-		<string>46a1dc266c6de8965dd0e51ec3606f1f78d57d082890bc6646e344fbaaf5829e</string>
-		<key>installer_item_location</key>
-		<string>apps/Signal/signal-desktop-mac-universal-8.28.0.dmg</string>
-		<key>installer_item_size</key>
-		<integer>266891</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.whispersystems.signal-desktop</string>
-				<key>CFBundleName</key>
-				<string>Signal</string>
-				<key>CFBundleShortVersionString</key>
-				<string>8.28.0</string>
-				<key>CFBundleVersion</key>
-				<string>1</string>
-				<key>minosversion</key>
-				<string>13.0</string>
-				<key>path</key>
-				<string>/Applications/Signal.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Signal.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>13.0</string>
-		<key>name</key>
-		<string>Signal_Desktop</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>8.28.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
