@@ -22231,90 +22231,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 	<dict>
 		<key>autoremove</key>
 		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>1Password 7</string>
-			<string>1Password Browser Helper</string>
-			<string>1Password</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Utilities</string>
-		<key>description</key>
-		<string>1Password is a password manager that goes beyond simple password storage by integrating directly with your web browser to automatically log you into websites, enter credit card information, fill registration forms, and easily generate strong passwords.</string>
-		<key>developer</key>
-		<string>AgileBits Inc.</string>
-		<key>display_name</key>
-		<string>1Password</string>
-		<key>installed_size</key>
-		<integer>997331</integer>
-		<key>installer_item_hash</key>
-		<string>6599838794ad975dea6ee67880c21c9a2186fff2131a77609eb0759d98b531e9</string>
-		<key>installer_item_location</key>
-		<string>apps/1Password-8.12.38.pkg</string>
-		<key>installer_item_size</key>
-		<integer>384548</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.1password.1password</string>
-				<key>CFBundleName</key>
-				<string>1Password</string>
-				<key>CFBundleShortVersionString</key>
-				<string>8.12.38</string>
-				<key>CFBundleVersion</key>
-				<string>8.12.38</string>
-				<key>minosversion</key>
-				<string>12.0</string>
-				<key>path</key>
-				<string>/Applications/1Password.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.0</string>
-		<key>name</key>
-		<string>1Password</string>
-		<key>postinstall_script</key>
-		<string>#!/bin/bash
-
-LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console); 
-
-/usr/sbin/chown -R "$LOGGED_IN_USER":staff "/Applications/1Password.app"
-
-</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>997331</integer>
-				<key>packageid</key>
-				<string>com.1password.1password</string>
-				<key>version</key>
-				<string>8.12.38</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>8.12.38</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
 		<key>catalogs</key>
 		<array>
 			<string>testing</string>
@@ -24973,6 +24889,70 @@ fi
 		<true/>
 		<key>version</key>
 		<string>3.6.11</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Mozilla Firefox is a free and open source web browser.</string>
+		<key>display_name</key>
+		<string>Mozilla Firefox</string>
+		<key>installer_item_hash</key>
+		<string>40a0a649120635460256dae9ad63e40377f77326cbc9c449a5d0a1d7f5dd7982</string>
+		<key>installer_item_location</key>
+		<string>apps/firefox/Firefox-157.0.1.dmg</string>
+		<key>installer_item_size</key>
+		<integer>157763</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>org.mozilla.firefox</string>
+				<key>CFBundleName</key>
+				<string>Firefox</string>
+				<key>CFBundleShortVersionString</key>
+				<string>157.0.1</string>
+				<key>CFBundleVersion</key>
+				<string>15726.10.5</string>
+				<key>minosversion</key>
+				<string>10.15.0</string>
+				<key>path</key>
+				<string>/Applications/Firefox.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>mode</key>
+				<string>ug+w,o-w</string>
+				<key>source_item</key>
+				<string>Firefox.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15.0</string>
+		<key>name</key>
+		<string>Firefox</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>157.0.1</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -35337,70 +35317,6 @@ fi
 		<key>display_name</key>
 		<string>DuckDuckGo</string>
 		<key>installer_item_hash</key>
-		<string>ae5e632879295e0ce5995763b29c836a0ae4bf1a9a047b4461395b16eb3d3464</string>
-		<key>installer_item_location</key>
-		<string>apps/DuckDuckGo/DuckDuckGo-1.209.0.dmg</string>
-		<key>installer_item_size</key>
-		<integer>181710</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.duckduckgo.macos.browser</string>
-				<key>CFBundleName</key>
-				<string>DuckDuckGo</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.209.0</string>
-				<key>CFBundleVersion</key>
-				<string>816</string>
-				<key>minosversion</key>
-				<string>12.3</string>
-				<key>path</key>
-				<string>/Applications/DuckDuckGo.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>DuckDuckGo.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.3</string>
-		<key>name</key>
-		<string>DuckDuckGo</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.209.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Chrome-like keyword search for Safari.</string>
-		<key>developer</key>
-		<string>Duck Duck Go</string>
-		<key>display_name</key>
-		<string>DuckDuckGo</string>
-		<key>installer_item_hash</key>
 		<string>54df67cfc7a2068fc98059f0cc15c004c9f179c1b9ac509509fcbf26a3144aa9</string>
 		<key>installer_item_location</key>
 		<string>apps/DuckDuckGo/DuckDuckGo-1.210.0.dmg</string>
@@ -45141,47 +45057,86 @@ fi
 	<dict>
 		<key>autoremove</key>
 		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>Microsoft Remote Desktop</string>
+			<string>Windows App</string>
+		</array>
 		<key>catalogs</key>
 		<array>
-			<string>testing</string>
+			<string>utilities</string>
 		</array>
 		<key>category</key>
-		<string>Productivity</string>
+		<string>Utility</string>
 		<key>description</key>
-		<string>Microsoft Edge web browser</string>
+		<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
+</string>
 		<key>developer</key>
 		<string>Microsoft</string>
 		<key>display_name</key>
-		<string>Microsoft Edge</string>
+		<string>Windows App</string>
 		<key>installed_size</key>
-		<integer>977944</integer>
+		<integer>254644</integer>
 		<key>installer_item_hash</key>
-		<string>dd720250d60a294cc2c0db9ccf05af732cce90d74a088d3e4293b280ef25cc71</string>
+		<string>9dc0e5f4abecfe9dc02d45fafc9813881bd24ecb84125eabe522b01b11a039ca</string>
 		<key>installer_item_location</key>
-		<string>apps/Microsoft/Microsoft_Edge-154.0.4258.53.pkg</string>
+		<string>apps/microsoft/Microsoft_Windows_App-11.4.3.pkg</string>
 		<key>installer_item_size</key>
-		<integer>437393</integer>
+		<integer>103871</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.microsoft.rdc.macos</string>
+				<key>CFBundleName</key>
+				<string>Windows App</string>
+				<key>CFBundleShortVersionString</key>
+				<string>11.4.3</string>
+				<key>CFBundleVersion</key>
+				<string>3115</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/Windows App.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
 		<key>minimum_os_version</key>
-		<string>10.10.0</string>
+		<string>14.0</string>
 		<key>name</key>
-		<string>MicrosoftEdge</string>
+		<string>WindowsApp</string>
 		<key>receipts</key>
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>977944</integer>
+				<integer>243913</integer>
 				<key>packageid</key>
-				<string>com.microsoft.edgemac</string>
+				<string>com.microsoft.rdc.macos</string>
 				<key>version</key>
-				<string>154.0.4258.53</string>
+				<string>11.4.3</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>10731</integer>
+				<key>packageid</key>
+				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
+				<key>version</key>
+				<string>4.81.25121042</string>
 			</dict>
 		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
 		<key>uninstall_method</key>
 		<string>removepackages</string>
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>154.0.4258.53</string>
+		<string>11.4.3</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -45449,11 +45404,11 @@ fi
 		<key>display_name</key>
 		<string>Claude</string>
 		<key>installer_item_hash</key>
-		<string>f8ea1a38d4cbfcdb7a6f236b05285f7bd0d78038784b9a757bdec96652d3f898</string>
+		<string>62f7afd7386178a5502ad87935bbec5e4e8e089ab0fecd58c1cd508774a98bec</string>
 		<key>installer_item_location</key>
-		<string>apps/Claude/Claude-2.19675.0.dmg</string>
+		<string>apps/Claude/Claude-2.26454.0.dmg</string>
 		<key>installer_item_size</key>
-		<integer>375854</integer>
+		<integer>379403</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -45464,9 +45419,9 @@ fi
 				<key>CFBundleName</key>
 				<string>Claude</string>
 				<key>CFBundleShortVersionString</key>
-				<string>2.19675.0</string>
+				<string>2.26454.0</string>
 				<key>CFBundleVersion</key>
-				<string>2.19675.0</string>
+				<string>2.26454.0</string>
 				<key>minosversion</key>
 				<string>13.0</string>
 				<key>path</key>
@@ -45499,7 +45454,7 @@ fi
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>2.19675.0</string>
+		<string>2.26454.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -64901,74 +64856,6 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 			<string>testing</string>
 		</array>
 		<key>description</key>
-		<string>Supercharged productivity
-
-Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
-		<key>developer</key>
-		<string>Raycast Technologies Inc</string>
-		<key>display_name</key>
-		<string>Raycast</string>
-		<key>installer_item_hash</key>
-		<string>15e4bbaa22bf2c439783f26ce3d33f35afa9a618080112197469aa5c18f4c5dc</string>
-		<key>installer_item_location</key>
-		<string>apps/Raycast/Raycast-2.6.2.0.dmg</string>
-		<key>installer_item_size</key>
-		<integer>131887</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.raycast.macos</string>
-				<key>CFBundleName</key>
-				<string>Raycast</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2.6.2.0</string>
-				<key>CFBundleVersion</key>
-				<string>0</string>
-				<key>minosversion</key>
-				<string>26.0</string>
-				<key>path</key>
-				<string>/Applications/Raycast.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Raycast.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>26.0</string>
-		<key>name</key>
-		<string>Raycast</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2.6.2.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
 		<string>Little Snitch is a host-based application firewall for macOS.</string>
 		<key>developer</key>
 		<string>Objective Development</string>
@@ -79123,6 +79010,84 @@ rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
 		<true/>
 		<key>version</key>
 		<string>10.12.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models.</string>
+		<key>developer</key>
+		<string>Infra Technologies, Inc</string>
+		<key>display_name</key>
+		<string>Ollama</string>
+		<key>installer_item_hash</key>
+		<string>4c2b990107af979f763062fe802075921c2f03aea16d168bcb32e49043506fbb</string>
+		<key>installer_item_location</key>
+		<string>apps/Ollama/Ollama-0.40.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>205532</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.electron.ollama</string>
+				<key>CFBundleName</key>
+				<string>Ollama</string>
+				<key>CFBundleShortVersionString</key>
+				<string>0.40.0</string>
+				<key>CFBundleVersion</key>
+				<string>0.40.0</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/Ollama.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Ollama.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.0</string>
+		<key>name</key>
+		<string>Ollama</string>
+		<key>postinstall_script</key>
+		<string>#!/bin/bash
+
+# Script built from: https://github.com/ollama/ollama/issues/851#issuecomment-1889808636
+# Please note admin rights are still needed as the file that records whether first time run has completed is located in the Users home folder. see https://github.com/ollama/ollama/issues/6814
+
+# Install Command Line Tools
+if ! [ -f /usr/local/bin/ollama ]; then
+  /usr/bin/touch /usr/local/bin/ollama ; /bin/ln -s -f /Applications/Ollama.app/Contents/Resources/ollama /usr/local/bin/ollama
+fi
+
+exit</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>0.40.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
