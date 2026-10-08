@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-10-06T04:53:21Z</date>
+		<date>2026-10-08T05:01:36Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,35 +19,37 @@
 	<array>
 		<string>testing</string>
 	</array>
+	<key>category</key>
+	<string>Utilities</string>
 	<key>description</key>
-	<string>Your AI partner on desktop. Fast, focused, and designed for deep work.</string>
+	<string>iMazing Profile Editor lets users create, modify, and also digitally sign configuration profiles with a friendly user interface instead of manually coding them in XML.</string>
 	<key>developer</key>
-	<string>Anthropic PBC</string>
+	<string>DigiDNA SARL</string>
 	<key>display_name</key>
-	<string>Claude</string>
+	<string>iMazing Profile Editor</string>
 	<key>installer_item_hash</key>
-	<string>0ba5a8fa7314f5427a5dc9354f51a351826a0e5ca3b494391551e5dace6fc909</string>
+	<string>3bda18c08a41af169feb903f2db88f23d19f68bb76b75f5743753fce36f206f6</string>
 	<key>installer_item_location</key>
-	<string>apps/Claude/Claude-2.19675.1.dmg</string>
+	<string>apps/imazingprofileeditor/iMazing_Profile_Editor_2.3.1.407603-2.3.1.dmg</string>
 	<key>installer_item_size</key>
-	<integer>375794</integer>
+	<integer>30133</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.anthropic.claudefordesktop</string>
+			<string>com.DigiDNA.iMazingProfileEditorMac</string>
 			<key>CFBundleName</key>
-			<string>Claude</string>
+			<string>iMazing Profile Editor</string>
 			<key>CFBundleShortVersionString</key>
-			<string>2.19675.1</string>
+			<string>2.3.1</string>
 			<key>CFBundleVersion</key>
-			<string>2.19675.1</string>
+			<string>407603</string>
 			<key>minosversion</key>
-			<string>13.0</string>
+			<string>14.0</string>
 			<key>path</key>
-			<string>/Applications/Claude.app</string>
+			<string>/Applications/iMazing Profile Editor.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,22 +62,20 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Claude.app</string>
+			<string>iMazing Profile Editor.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>13.0</string>
+	<string>14.0</string>
 	<key>name</key>
-	<string>Claude</string>
+	<string>iMazingProfileEditor</string>
 	<key>unattended_install</key>
-	<true/>
-	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>2.19675.1</string>
+	<string>2.3.1</string>
 </dict>
 </plist>

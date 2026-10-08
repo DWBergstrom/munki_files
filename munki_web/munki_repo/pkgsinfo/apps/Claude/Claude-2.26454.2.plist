@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-09-30T04:54:46Z</date>
+		<date>2026-10-08T04:53:36Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,32 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Mozilla Firefox is a free and open source web browser.</string>
+	<string>Your AI partner on desktop. Fast, focused, and designed for deep work.</string>
+	<key>developer</key>
+	<string>Anthropic PBC</string>
 	<key>display_name</key>
-	<string>Mozilla Firefox</string>
+	<string>Claude</string>
 	<key>installer_item_hash</key>
-	<string>df6d8c79b6126bcf24cb70ebab9371916a662028e2d706e462d432e78fdf396c</string>
+	<string>7aa7fcbd00a81a1cf6bafaed06a4dbba79d9ffc8f8310921a925675bb5ca133e</string>
 	<key>installer_item_location</key>
-	<string>apps/firefox/Firefox-157.0.dmg</string>
+	<string>apps/Claude/Claude-2.26454.2.dmg</string>
 	<key>installer_item_size</key>
-	<integer>157524</integer>
+	<integer>379441</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>org.mozilla.firefox</string>
+			<string>com.anthropic.claudefordesktop</string>
 			<key>CFBundleName</key>
-			<string>Firefox</string>
+			<string>Claude</string>
 			<key>CFBundleShortVersionString</key>
-			<string>157.0</string>
+			<string>2.26454.2</string>
 			<key>CFBundleVersion</key>
-			<string>15726.9.24</string>
+			<string>2.26454.2</string>
 			<key>minosversion</key>
-			<string>10.15.0</string>
+			<string>13.0</string>
 			<key>path</key>
-			<string>/Applications/Firefox.app</string>
+			<string>/Applications/Claude.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -57,23 +59,23 @@
 		<dict>
 			<key>destination_path</key>
 			<string>/Applications</string>
-			<key>mode</key>
-			<string>ug+w,o-w</string>
 			<key>source_item</key>
-			<string>Firefox.app</string>
+			<string>Claude.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>10.15.0</string>
+	<string>13.0</string>
 	<key>name</key>
-	<string>Firefox</string>
+	<string>Claude</string>
 	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>157.0</string>
+	<string>2.26454.2</string>
 </dict>
 </plist>
