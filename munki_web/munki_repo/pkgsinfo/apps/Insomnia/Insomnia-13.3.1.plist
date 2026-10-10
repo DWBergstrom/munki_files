@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-10-02T05:00:19Z</date>
+		<date>2026-10-10T04:55:20Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,34 +20,32 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Fast Terminal app based in Rust.</string>
-	<key>developer</key>
-	<string>Denver Technologies</string>
+	<string>Explore REST and GraphQL APIs.</string>
 	<key>display_name</key>
-	<string>Warp</string>
-	<key>force_munkiimport</key>
-	<true/>
+	<string>Insomnia </string>
 	<key>installer_item_hash</key>
-	<string>35718b4ce8749dce96e763605b8c02517643524f46590c8d7861493fa15c9e9c</string>
+	<string>ad6e6260f083162e61e879b99f27d69b934ae3cdbf6817ddb284acd8a4302650</string>
 	<key>installer_item_location</key>
-	<string>apps/Warp/Warp-0.2026.09.30.08.29.01.dmg</string>
+	<string>apps/Insomnia/Insomnia.Core-13.3.1.dmg</string>
 	<key>installer_item_size</key>
-	<integer>328726</integer>
+	<integer>371873</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>dev.warp.Warp-Stable</string>
+			<string>com.insomnia.app</string>
 			<key>CFBundleName</key>
-			<string>Warp</string>
+			<string>Insomnia</string>
 			<key>CFBundleShortVersionString</key>
-			<string>0.2026.09.30.08.29.01</string>
+			<string>13.3.1</string>
 			<key>CFBundleVersion</key>
-			<string>0.2026.09.30.08.29.01</string>
+			<string>13.3.1</string>
+			<key>minosversion</key>
+			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/Warp.app</string>
+			<string>/Applications/Insomnia.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,11 +58,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Warp.app</string>
+			<string>Insomnia.app</string>
 		</dict>
 	</array>
+	<key>minimum_os_version</key>
+	<string>12.0</string>
 	<key>name</key>
-	<string>Warp</string>
+	<string>Insomnia</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -72,6 +72,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>0.2026.09.30.08.29.01</string>
+	<string>13.3.1</string>
 </dict>
 </plist>
