@@ -35438,6 +35438,70 @@ fi
 		<array>
 			<string>testing</string>
 		</array>
+		<key>description</key>
+		<string>Chrome-like keyword search for Safari.</string>
+		<key>developer</key>
+		<string>Duck Duck Go</string>
+		<key>display_name</key>
+		<string>DuckDuckGo</string>
+		<key>installer_item_hash</key>
+		<string>102033aa08e4d6ed04e64a8e022a7b0b158b4d85375d880f678bfe5ef9ef12c9</string>
+		<key>installer_item_location</key>
+		<string>apps/DuckDuckGo/DuckDuckGo-1.211.1.dmg</string>
+		<key>installer_item_size</key>
+		<integer>167515</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.duckduckgo.macos.browser</string>
+				<key>CFBundleName</key>
+				<string>DuckDuckGo</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.211.1</string>
+				<key>CFBundleVersion</key>
+				<string>831</string>
+				<key>minosversion</key>
+				<string>12.3</string>
+				<key>path</key>
+				<string>/Applications/DuckDuckGo.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>DuckDuckGo.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.3</string>
+		<key>name</key>
+		<string>DuckDuckGo</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.211.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
 		<key>category</key>
 		<string>Developer</string>
 		<key>description</key>
@@ -42149,6 +42213,78 @@ fi
 		<key>display_name</key>
 		<string>OrbStack</string>
 		<key>installer_item_hash</key>
+		<string>f0c698e709c99fb3ee87f92c3a0445c6b8f5a10d6a0edd4f4d461925d194b86a</string>
+		<key>installer_item_location</key>
+		<string>apps/OrbStack/OrbStack-arm64-2.2.4.dmg</string>
+		<key>installer_item_size</key>
+		<integer>458543</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>dev.kdrag0n.MacVirt</string>
+				<key>CFBundleName</key>
+				<string>OrbStack</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2.2.4</string>
+				<key>CFBundleVersion</key>
+				<string>21120</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/OrbStack.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>OrbStack.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.0</string>
+		<key>name</key>
+		<string>OrbStack</string>
+		<key>supported_architectures</key>
+		<array>
+			<string>arm64</string>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2.2.4</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Development</string>
+		<key>description</key>
+		<string>OrbStack is a fast, light, and simple way to run containers and Linux machines on macOS. It's a supercharged alternative to Docker Desktop and WSL, all in one easy-to-use app.</string>
+		<key>developer</key>
+		<string>Orbital Labs, LLC</string>
+		<key>display_name</key>
+		<string>OrbStack</string>
+		<key>installer_item_hash</key>
 		<string>7ca77868f3a0d7d9f57b3f98615aad30cc59d23cc84bbff13f78846df0b493d4</string>
 		<key>installer_item_location</key>
 		<string>apps/OrbStack/OrbStack-arm64-2.2.3.dmg</string>
@@ -44646,6 +44782,90 @@ fi
 		<true/>
 		<key>version</key>
 		<string>2.2.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>Microsoft Remote Desktop</string>
+			<string>Windows App</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>utilities</string>
+		</array>
+		<key>category</key>
+		<string>Utility</string>
+		<key>description</key>
+		<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
+</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Windows App</string>
+		<key>installed_size</key>
+		<integer>254644</integer>
+		<key>installer_item_hash</key>
+		<string>9dc0e5f4abecfe9dc02d45fafc9813881bd24ecb84125eabe522b01b11a039ca</string>
+		<key>installer_item_location</key>
+		<string>apps/microsoft/Microsoft_Windows_App-11.4.3.pkg</string>
+		<key>installer_item_size</key>
+		<integer>103871</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.microsoft.rdc.macos</string>
+				<key>CFBundleName</key>
+				<string>Windows App</string>
+				<key>CFBundleShortVersionString</key>
+				<string>11.4.3</string>
+				<key>CFBundleVersion</key>
+				<string>3115</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/Windows App.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.0</string>
+		<key>name</key>
+		<string>WindowsApp</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>243913</integer>
+				<key>packageid</key>
+				<string>com.microsoft.rdc.macos</string>
+				<key>version</key>
+				<string>11.4.3</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>10731</integer>
+				<key>packageid</key>
+				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
+				<key>version</key>
+				<string>4.81.25121042</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>11.4.3</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -79378,84 +79598,6 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>0.40.3</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models.</string>
-		<key>developer</key>
-		<string>Infra Technologies, Inc</string>
-		<key>display_name</key>
-		<string>Ollama</string>
-		<key>installer_item_hash</key>
-		<string>28b6b36085358681393780cedd3773c11c05b37e079c6ed92273a7c01348a2c7</string>
-		<key>installer_item_location</key>
-		<string>apps/Ollama/Ollama-0.40.2.dmg</string>
-		<key>installer_item_size</key>
-		<integer>205518</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.electron.ollama</string>
-				<key>CFBundleName</key>
-				<string>Ollama</string>
-				<key>CFBundleShortVersionString</key>
-				<string>0.40.2</string>
-				<key>CFBundleVersion</key>
-				<string>0.40.2</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Ollama.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Ollama.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>Ollama</string>
-		<key>postinstall_script</key>
-		<string>#!/bin/bash
-
-# Script built from: https://github.com/ollama/ollama/issues/851#issuecomment-1889808636
-# Please note admin rights are still needed as the file that records whether first time run has completed is located in the Users home folder. see https://github.com/ollama/ollama/issues/6814
-
-# Install Command Line Tools
-if ! [ -f /usr/local/bin/ollama ]; then
-  /usr/bin/touch /usr/local/bin/ollama ; /bin/ln -s -f /Applications/Ollama.app/Contents/Resources/ollama /usr/local/bin/ollama
-fi
-
-exit</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>0.40.2</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
