@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-09-09T04:59:43Z</date>
+		<date>2026-10-14T04:57:26Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -26,24 +26,24 @@
 	<key>display_name</key>
 	<string>PowerShell</string>
 	<key>installed_size</key>
-	<integer>180157</integer>
+	<integer>180211</integer>
 	<key>installer_item_hash</key>
-	<string>962b0b220d712d4b2cbefe873f3ec5529ce12577572c78bba1c12f15e19527ba</string>
+	<string>adba10dbfbd0300d4627f9d6faa4b62cdc9696e7c5b3ab65ce88a23b6835c23d</string>
 	<key>installer_item_location</key>
-	<string>apps/PowerShell/PowerShell-x64-7.4.20.pkg</string>
+	<string>apps/PowerShell/PowerShell-x64-7.4.21.pkg</string>
 	<key>installer_item_size</key>
-	<integer>70552</integer>
+	<integer>70571</integer>
 	<key>name</key>
 	<string>PowerShell</string>
 	<key>receipts</key>
 	<array>
 		<dict>
 			<key>installed_size</key>
-			<integer>180157</integer>
+			<integer>180211</integer>
 			<key>packageid</key>
 			<string>com.microsoft.powershell</string>
 			<key>version</key>
-			<string>7.4.20</string>
+			<string>7.4.21</string>
 		</dict>
 	</array>
 	<key>unattended_install</key>
@@ -53,6 +53,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>7.4.20</string>
+	<string>7.4.21</string>
 </dict>
 </plist>

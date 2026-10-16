@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-08-08T04:58:42Z</date>
+		<date>2026-10-14T04:54:13Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,37 +19,33 @@
 	<array>
 		<string>testing</string>
 	</array>
-	<key>category</key>
-	<string>Development</string>
 	<key>description</key>
-	<string>OrbStack is a fast, light, and simple way to run containers and Linux machines on macOS. It's a supercharged alternative to Docker Desktop and WSL, all in one easy-to-use app.</string>
-	<key>developer</key>
-	<string>Orbital Labs, LLC</string>
+	<string>Mozilla Firefox is a free and open source web browser.</string>
 	<key>display_name</key>
-	<string>OrbStack</string>
+	<string>Mozilla Firefox</string>
 	<key>installer_item_hash</key>
-	<string>7ca77868f3a0d7d9f57b3f98615aad30cc59d23cc84bbff13f78846df0b493d4</string>
+	<string>dfe8508ee8880cec1578253eb02b9154b5971a55e832d97396f463cd07b5ef67</string>
 	<key>installer_item_location</key>
-	<string>apps/OrbStack/OrbStack-arm64-2.2.3.dmg</string>
+	<string>apps/firefox/Firefox-158.0.dmg</string>
 	<key>installer_item_size</key>
-	<integer>452200</integer>
+	<integer>160982</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>dev.kdrag0n.MacVirt</string>
+			<string>org.mozilla.firefox</string>
 			<key>CFBundleName</key>
-			<string>OrbStack</string>
+			<string>Firefox</string>
 			<key>CFBundleShortVersionString</key>
-			<string>2.2.3</string>
+			<string>158.0</string>
 			<key>CFBundleVersion</key>
-			<string>20963</string>
+			<string>15826.10.7</string>
 			<key>minosversion</key>
-			<string>14.0</string>
+			<string>10.15.0</string>
 			<key>path</key>
-			<string>/Applications/OrbStack.app</string>
+			<string>/Applications/Firefox.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -61,27 +57,23 @@
 		<dict>
 			<key>destination_path</key>
 			<string>/Applications</string>
+			<key>mode</key>
+			<string>ug+w,o-w</string>
 			<key>source_item</key>
-			<string>OrbStack.app</string>
+			<string>Firefox.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>14.0</string>
+	<string>10.15.0</string>
 	<key>name</key>
-	<string>OrbStack</string>
-	<key>supported_architectures</key>
-	<array>
-		<string>arm64</string>
-	</array>
+	<string>Firefox</string>
 	<key>unattended_install</key>
-	<true/>
-	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>2.2.3</string>
+	<string>158.0</string>
 </dict>
 </plist>

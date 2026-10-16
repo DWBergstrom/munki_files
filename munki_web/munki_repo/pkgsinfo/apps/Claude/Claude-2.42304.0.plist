@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-10-08T04:52:37Z</date>
+		<date>2026-10-16T04:53:21Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -19,37 +19,35 @@
 	<array>
 		<string>testing</string>
 	</array>
-	<key>category</key>
-	<string>Browsers</string>
 	<key>description</key>
-	<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
+	<string>Your AI partner on desktop. Fast, focused, and designed for deep work.</string>
 	<key>developer</key>
-	<string>Brave Software Inc.</string>
+	<string>Anthropic PBC</string>
 	<key>display_name</key>
-	<string>Brave Browser</string>
+	<string>Claude</string>
 	<key>installer_item_hash</key>
-	<string>32599c0a5643dd2f6e4547bd9a9b0420e2e760fc85cae8f49b308aec14b36a22</string>
+	<string>8404b27127c1131c7df15e9ca73050b88266d2694a703c5dac5a5f65c1ee04c5</string>
 	<key>installer_item_location</key>
-	<string>apps/Brave/Brave-155.1.97.56.dmg</string>
+	<string>apps/Claude/Claude-2.42304.0.dmg</string>
 	<key>installer_item_size</key>
-	<integer>329836</integer>
+	<integer>386765</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.brave.Browser</string>
+			<string>com.anthropic.claudefordesktop</string>
 			<key>CFBundleName</key>
-			<string>Brave</string>
+			<string>Claude</string>
 			<key>CFBundleShortVersionString</key>
-			<string>155.1.97.56</string>
+			<string>2.42304.0</string>
 			<key>CFBundleVersion</key>
-			<string>197.56</string>
+			<string>2.42304.0</string>
 			<key>minosversion</key>
 			<string>13.0</string>
 			<key>path</key>
-			<string>/Applications/Brave Browser.app</string>
+			<string>/Applications/Claude.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -62,20 +60,22 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Brave Browser.app</string>
+			<string>Claude.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
 	<string>13.0</string>
 	<key>name</key>
-	<string>Brave</string>
+	<string>Claude</string>
 	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>155.1.97.56</string>
+	<string>2.42304.0</string>
 </dict>
 </plist>

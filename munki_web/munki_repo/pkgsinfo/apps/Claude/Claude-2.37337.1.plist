@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-10-10T04:53:13Z</date>
+		<date>2026-10-14T04:53:03Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -26,11 +26,11 @@
 	<key>display_name</key>
 	<string>Claude</string>
 	<key>installer_item_hash</key>
-	<string>5039a50be5959d6e70b42660af537ebcc617d6402f350bee1fdd932a6c6b7803</string>
+	<string>267f6d93ac9e50d98f50d4117bad6f52c4b01aefe7a043d0bfce1304a23ab946</string>
 	<key>installer_item_location</key>
-	<string>apps/Claude/Claude-2.31226.1.dmg</string>
+	<string>apps/Claude/Claude-2.37337.1.dmg</string>
 	<key>installer_item_size</key>
-	<integer>380769</integer>
+	<integer>383555</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
@@ -41,9 +41,9 @@
 			<key>CFBundleName</key>
 			<string>Claude</string>
 			<key>CFBundleShortVersionString</key>
-			<string>2.31226.1</string>
+			<string>2.37337.1</string>
 			<key>CFBundleVersion</key>
-			<string>2.31226.1</string>
+			<string>2.37337.1</string>
 			<key>minosversion</key>
 			<string>13.0</string>
 			<key>path</key>
@@ -76,6 +76,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>2.31226.1</string>
+	<string>2.37337.1</string>
 </dict>
 </plist>
