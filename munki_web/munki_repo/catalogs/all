@@ -23372,72 +23372,6 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<key>display_name</key>
 		<string>iTerm2</string>
 		<key>installer_item_hash</key>
-		<string>ba2fe444927fd04d0800cfcab6da596284ca051202849808f627425511e6b5ac</string>
-		<key>installer_item_location</key>
-		<string>apps/iTerm2-3.7.4.dmg</string>
-		<key>installer_item_size</key>
-		<integer>57371</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.googlecode.iterm2</string>
-				<key>CFBundleName</key>
-				<string>iTerm2</string>
-				<key>CFBundleShortVersionString</key>
-				<string>3.7.4</string>
-				<key>CFBundleVersion</key>
-				<string>3.7.4</string>
-				<key>minosversion</key>
-				<string>13.0</string>
-				<key>path</key>
-				<string>/Applications/iTerm.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>iTerm.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>13.0</string>
-		<key>name</key>
-		<string>iTerm2</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>3.7.4</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Utilities</string>
-		<key>description</key>
-		<string>iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with OS 10.5 (Leopard) or newer. Its focus is on performance, internationalization, and supporting innovative features that make your life better.</string>
-		<key>developer</key>
-		<string>George Nachman</string>
-		<key>display_name</key>
-		<string>iTerm2</string>
-		<key>installer_item_hash</key>
 		<string>f0142fb137b5da24686bcdaaeafe2bc64f096045b8252cc178c4aa99dcbbae8c</string>
 		<key>installer_item_location</key>
 		<string>apps/iTerm2-3.6.11__18.dmg</string>
@@ -44968,6 +44902,135 @@ fi
 	<dict>
 		<key>autoremove</key>
 		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Productivity</string>
+		<key>description</key>
+		<string>Microsoft Edge web browser</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Microsoft Edge</string>
+		<key>installed_size</key>
+		<integer>944958</integer>
+		<key>installer_item_hash</key>
+		<string>d3cefdaa5fd404204a05d3db1b8c071bebabdf32f85f4faa2a8e558d122a8aa7</string>
+		<key>installer_item_location</key>
+		<string>apps/Microsoft/Microsoft_Edge-155.0.4283.62.pkg</string>
+		<key>installer_item_size</key>
+		<integer>422060</integer>
+		<key>minimum_os_version</key>
+		<string>10.10.0</string>
+		<key>name</key>
+		<string>MicrosoftEdge</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>944958</integer>
+				<key>packageid</key>
+				<string>com.microsoft.edgemac</string>
+				<key>version</key>
+				<string>155.0.4283.62</string>
+			</dict>
+		</array>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>155.0.4283.62</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>Microsoft Remote Desktop</string>
+			<string>Windows App</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>utilities</string>
+		</array>
+		<key>category</key>
+		<string>Utility</string>
+		<key>description</key>
+		<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
+</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Windows App</string>
+		<key>installed_size</key>
+		<integer>254644</integer>
+		<key>installer_item_hash</key>
+		<string>9dc0e5f4abecfe9dc02d45fafc9813881bd24ecb84125eabe522b01b11a039ca</string>
+		<key>installer_item_location</key>
+		<string>apps/microsoft/Microsoft_Windows_App-11.4.3.pkg</string>
+		<key>installer_item_size</key>
+		<integer>103871</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.microsoft.rdc.macos</string>
+				<key>CFBundleName</key>
+				<string>Windows App</string>
+				<key>CFBundleShortVersionString</key>
+				<string>11.4.3</string>
+				<key>CFBundleVersion</key>
+				<string>3115</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/Windows App.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.0</string>
+		<key>name</key>
+		<string>WindowsApp</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>243913</integer>
+				<key>packageid</key>
+				<string>com.microsoft.rdc.macos</string>
+				<key>version</key>
+				<string>11.4.3</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>10731</integer>
+				<key>packageid</key>
+				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
+				<key>version</key>
+				<string>4.81.25121042</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>11.4.3</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
 		<key>blocking_applications</key>
 		<array>
 			<string>Microsoft Remote Desktop</string>
@@ -45563,51 +45626,6 @@ fi
 	<dict>
 		<key>autoremove</key>
 		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Productivity</string>
-		<key>description</key>
-		<string>Microsoft Edge web browser</string>
-		<key>developer</key>
-		<string>Microsoft</string>
-		<key>display_name</key>
-		<string>Microsoft Edge</string>
-		<key>installed_size</key>
-		<integer>945132</integer>
-		<key>installer_item_hash</key>
-		<string>9f34fb05d8c66440cd8f972dc0c34d0f9e9ef25827525c093117ba61d69ee2e1</string>
-		<key>installer_item_location</key>
-		<string>apps/Microsoft/Microsoft_Edge-155.0.4283.45.pkg</string>
-		<key>installer_item_size</key>
-		<integer>422064</integer>
-		<key>minimum_os_version</key>
-		<string>10.10.0</string>
-		<key>name</key>
-		<string>MicrosoftEdge</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>945132</integer>
-				<key>packageid</key>
-				<string>com.microsoft.edgemac</string>
-				<key>version</key>
-				<string>155.0.4283.45</string>
-			</dict>
-		</array>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>155.0.4283.45</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
 		<key>blocking_applications</key>
 		<array>
 			<string>Microsoft Remote Desktop</string>
@@ -46192,72 +46210,6 @@ fi
 		<true/>
 		<key>version</key>
 		<string>11.4.3</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Your AI partner on desktop. Fast, focused, and designed for deep work.</string>
-		<key>developer</key>
-		<string>Anthropic PBC</string>
-		<key>display_name</key>
-		<string>Claude</string>
-		<key>installer_item_hash</key>
-		<string>267f6d93ac9e50d98f50d4117bad6f52c4b01aefe7a043d0bfce1304a23ab946</string>
-		<key>installer_item_location</key>
-		<string>apps/Claude/Claude-2.37337.1.dmg</string>
-		<key>installer_item_size</key>
-		<integer>383555</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.anthropic.claudefordesktop</string>
-				<key>CFBundleName</key>
-				<string>Claude</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2.37337.1</string>
-				<key>CFBundleVersion</key>
-				<string>2.37337.1</string>
-				<key>minosversion</key>
-				<string>13.0</string>
-				<key>path</key>
-				<string>/Applications/Claude.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Claude.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>13.0</string>
-		<key>name</key>
-		<string>Claude</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2.37337.1</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -49461,6 +49413,72 @@ fi
 		<true/>
 		<key>version</key>
 		<string>113.1.51.114</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Browsers</string>
+		<key>description</key>
+		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
+		<key>developer</key>
+		<string>Brave Software Inc.</string>
+		<key>display_name</key>
+		<string>Brave Browser</string>
+		<key>installer_item_hash</key>
+		<string>d0d6ae23d5698362efbcec228778cee7ffee1605e60c7d24209fa67d7db39845</string>
+		<key>installer_item_location</key>
+		<string>apps/Brave/Brave-155.1.97.59.dmg</string>
+		<key>installer_item_size</key>
+		<integer>330433</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.brave.Browser</string>
+				<key>CFBundleName</key>
+				<string>Brave</string>
+				<key>CFBundleShortVersionString</key>
+				<string>155.1.97.59</string>
+				<key>CFBundleVersion</key>
+				<string>197.59</string>
+				<key>minosversion</key>
+				<string>13.0</string>
+				<key>path</key>
+				<string>/Applications/Brave Browser.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Brave Browser.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0</string>
+		<key>name</key>
+		<string>Brave</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>155.1.97.59</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -65599,6 +65617,74 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<key>display_name</key>
 		<string>Raycast</string>
 		<key>installer_item_hash</key>
+		<string>359990e7a4529560f2cec7d329dfadc5168461ddb39d96feb227f6e2693f1a66</string>
+		<key>installer_item_location</key>
+		<string>apps/Raycast/Raycast-2.8.2.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>142013</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.raycast.macos</string>
+				<key>CFBundleName</key>
+				<string>Raycast</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2.8.2.0</string>
+				<key>CFBundleVersion</key>
+				<string>0</string>
+				<key>minosversion</key>
+				<string>26.0</string>
+				<key>path</key>
+				<string>/Applications/Raycast.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Raycast.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>26.0</string>
+		<key>name</key>
+		<string>Raycast</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2.8.2.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Supercharged productivity
+
+Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
+		<key>developer</key>
+		<string>Raycast Technologies Inc</string>
+		<key>display_name</key>
+		<string>Raycast</string>
+		<key>installer_item_hash</key>
 		<string>1ff7c7c319c201aa57ade1f063155ef5e93f39351a4a8d3346cceb36bca80c63</string>
 		<key>installer_item_location</key>
 		<string>apps/Raycast/Raycast-1.94.4.dmg</string>
@@ -66676,68 +66762,6 @@ rm -rf /Applications/zoom.us.app
 		<true/>
 		<key>version</key>
 		<string>20240926.162135</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Fast Terminal app based in Rust.</string>
-		<key>developer</key>
-		<string>Denver Technologies</string>
-		<key>display_name</key>
-		<string>Warp</string>
-		<key>force_munkiimport</key>
-		<true/>
-		<key>installer_item_hash</key>
-		<string>8ff1a7ca3a6ce6e79b9c693741e9f00b0aa13403fc48c05c57ca404a9f604fac</string>
-		<key>installer_item_location</key>
-		<string>apps/Warp/Warp-0.2026.10.07.08.29.00.dmg</string>
-		<key>installer_item_size</key>
-		<integer>330413</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>dev.warp.Warp-Stable</string>
-				<key>CFBundleName</key>
-				<string>Warp</string>
-				<key>CFBundleShortVersionString</key>
-				<string>0.2026.10.07.08.29.00</string>
-				<key>CFBundleVersion</key>
-				<string>0.2026.10.07.08.29.00</string>
-				<key>path</key>
-				<string>/Applications/Warp.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Warp.app</string>
-			</dict>
-		</array>
-		<key>name</key>
-		<string>Warp</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>0.2026.10.07.08.29.00</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -79879,87 +79903,6 @@ rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
 	<dict>
 		<key>autoremove</key>
 		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>NordVPN.app</string>
-			<string>NordVPNLauncher Sideload.app</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Get the fastest VPN in the world and enjoy a smooth, safe, and private connection on your Mac. NordVPN’s easy-to-use app will protect all your connected devices from snoopers tracking what you do online.
-
-Even if you think you have nothing to hide — no one likes to be watched. That’s why you need a VPN to protect your privacy and keep your online data safe.</string>
-		<key>developer</key>
-		<string>Nordvpn S.A.</string>
-		<key>display_name</key>
-		<string>NordVPN</string>
-		<key>installed_size</key>
-		<integer>606635</integer>
-		<key>installer_item_hash</key>
-		<string>0f5b91a9645dd6904a50fe55cd774fede3f88e9fd549925197179093946861ff</string>
-		<key>installer_item_location</key>
-		<string>apps/NordVPN/NordVPN-10.12.0.dmg</string>
-		<key>installer_item_size</key>
-		<integer>291249</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.nordvpn.macos</string>
-				<key>CFBundleName</key>
-				<string>NordVPN</string>
-				<key>CFBundleShortVersionString</key>
-				<string>10.12.0</string>
-				<key>CFBundleVersion</key>
-				<string>377</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/NordVPN.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>NordVPN</string>
-		<key>postuninstall_script</key>
-		<string>#!/bin/bash
-#
-launchctl unload /Library/LaunchDaemons/com.nordvpn.macos.helper.plist
-#
-rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>606635</integer>
-				<key>packageid</key>
-				<string>com.nordvpn.macos</string>
-				<key>version</key>
-				<string>10.12.0</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.12.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
 		<key>catalogs</key>
 		<array>
 			<string>testing</string>
@@ -80034,84 +79977,6 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>0.40.5</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models.</string>
-		<key>developer</key>
-		<string>Infra Technologies, Inc</string>
-		<key>display_name</key>
-		<string>Ollama</string>
-		<key>installer_item_hash</key>
-		<string>440244397603594ccc7c16584019a20751b8afaa8aefbd2297ec917feaf365d7</string>
-		<key>installer_item_location</key>
-		<string>apps/Ollama/Ollama-0.40.4.dmg</string>
-		<key>installer_item_size</key>
-		<integer>205980</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.electron.ollama</string>
-				<key>CFBundleName</key>
-				<string>Ollama</string>
-				<key>CFBundleShortVersionString</key>
-				<string>0.40.4</string>
-				<key>CFBundleVersion</key>
-				<string>0.40.4</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Ollama.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Ollama.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>Ollama</string>
-		<key>postinstall_script</key>
-		<string>#!/bin/bash
-
-# Script built from: https://github.com/ollama/ollama/issues/851#issuecomment-1889808636
-# Please note admin rights are still needed as the file that records whether first time run has completed is located in the Users home folder. see https://github.com/ollama/ollama/issues/6814
-
-# Install Command Line Tools
-if ! [ -f /usr/local/bin/ollama ]; then
-  /usr/bin/touch /usr/local/bin/ollama ; /bin/ln -s -f /Applications/Ollama.app/Contents/Resources/ollama /usr/local/bin/ollama
-fi
-
-exit</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>0.40.4</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -82948,70 +82813,6 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>8.31.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>RIDDLE QUIET VENTURES, LLC</string>
-		<key>display_name</key>
-		<string>Signal Desktop</string>
-		<key>installer_item_hash</key>
-		<string>e6d1de875b7dc5a0fd03ad4f26323bebb660a60fb94ae9e6a3894d0f4943d1da</string>
-		<key>installer_item_location</key>
-		<string>apps/Signal/signal-desktop-mac-universal-8.30.0.dmg</string>
-		<key>installer_item_size</key>
-		<integer>269164</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.whispersystems.signal-desktop</string>
-				<key>CFBundleName</key>
-				<string>Signal</string>
-				<key>CFBundleShortVersionString</key>
-				<string>8.30.0</string>
-				<key>CFBundleVersion</key>
-				<string>1</string>
-				<key>minosversion</key>
-				<string>13.0</string>
-				<key>path</key>
-				<string>/Applications/Signal.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Signal.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>13.0</string>
-		<key>name</key>
-		<string>Signal_Desktop</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>8.30.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -94639,6 +94440,70 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>4.7.5</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Virtual machines for iOS and macOS</string>
+		<key>developer</key>
+		<string>Turing Software, LLC</string>
+		<key>display_name</key>
+		<string>UTM</string>
+		<key>installer_item_hash</key>
+		<string>7b2d7b2e2a02b3de1757ef19a8f36573e6d9cceae8c8cca0abcbcaa4a852019a</string>
+		<key>installer_item_location</key>
+		<string>apps/UTM/UTM-5.0.8.dmg</string>
+		<key>installer_item_size</key>
+		<integer>297172</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.utmapp.UTM</string>
+				<key>CFBundleName</key>
+				<string>UTM</string>
+				<key>CFBundleShortVersionString</key>
+				<string>5.0.8</string>
+				<key>CFBundleVersion</key>
+				<string>128</string>
+				<key>minosversion</key>
+				<string>12.0</string>
+				<key>path</key>
+				<string>/Applications/UTM.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>UTM.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.0</string>
+		<key>name</key>
+		<string>UTM</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>5.0.8</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>

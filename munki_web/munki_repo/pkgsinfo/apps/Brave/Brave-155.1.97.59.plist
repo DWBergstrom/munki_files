@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-10-09T05:10:03Z</date>
+		<date>2026-10-17T04:52:45Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,36 +20,36 @@
 		<string>testing</string>
 	</array>
 	<key>category</key>
-	<string>Utilities</string>
+	<string>Browsers</string>
 	<key>description</key>
-	<string>iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with OS 10.5 (Leopard) or newer. Its focus is on performance, internationalization, and supporting innovative features that make your life better.</string>
+	<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
 	<key>developer</key>
-	<string>George Nachman</string>
+	<string>Brave Software Inc.</string>
 	<key>display_name</key>
-	<string>iTerm2</string>
+	<string>Brave Browser</string>
 	<key>installer_item_hash</key>
-	<string>ba2fe444927fd04d0800cfcab6da596284ca051202849808f627425511e6b5ac</string>
+	<string>d0d6ae23d5698362efbcec228778cee7ffee1605e60c7d24209fa67d7db39845</string>
 	<key>installer_item_location</key>
-	<string>apps/iTerm2-3.7.4.dmg</string>
+	<string>apps/Brave/Brave-155.1.97.59.dmg</string>
 	<key>installer_item_size</key>
-	<integer>57371</integer>
+	<integer>330433</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.googlecode.iterm2</string>
+			<string>com.brave.Browser</string>
 			<key>CFBundleName</key>
-			<string>iTerm2</string>
+			<string>Brave</string>
 			<key>CFBundleShortVersionString</key>
-			<string>3.7.4</string>
+			<string>155.1.97.59</string>
 			<key>CFBundleVersion</key>
-			<string>3.7.4</string>
+			<string>197.59</string>
 			<key>minosversion</key>
 			<string>13.0</string>
 			<key>path</key>
-			<string>/Applications/iTerm.app</string>
+			<string>/Applications/Brave Browser.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -62,13 +62,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>iTerm.app</string>
+			<string>Brave Browser.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
 	<string>13.0</string>
 	<key>name</key>
-	<string>iTerm2</string>
+	<string>Brave</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -76,6 +76,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>3.7.4</string>
+	<string>155.1.97.59</string>
 </dict>
 </plist>
