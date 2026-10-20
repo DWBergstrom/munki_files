@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-10-16T04:53:21Z</date>
+		<date>2026-10-20T04:54:19Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,34 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Your AI partner on desktop. Fast, focused, and designed for deep work.</string>
+	<string>Chrome-like keyword search for Safari.</string>
 	<key>developer</key>
-	<string>Anthropic PBC</string>
+	<string>Duck Duck Go</string>
 	<key>display_name</key>
-	<string>Claude</string>
+	<string>DuckDuckGo</string>
 	<key>installer_item_hash</key>
-	<string>8404b27127c1131c7df15e9ca73050b88266d2694a703c5dac5a5f65c1ee04c5</string>
+	<string>f6a669cffe4e2338f09efe6d4d1dc018227fe4a027bec9c3735c9cae72e820c4</string>
 	<key>installer_item_location</key>
-	<string>apps/Claude/Claude-2.42304.0.dmg</string>
+	<string>apps/DuckDuckGo/DuckDuckGo-1.212.0.dmg</string>
 	<key>installer_item_size</key>
-	<integer>386765</integer>
+	<integer>166760</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.anthropic.claudefordesktop</string>
+			<string>com.duckduckgo.macos.browser</string>
 			<key>CFBundleName</key>
-			<string>Claude</string>
+			<string>DuckDuckGo</string>
 			<key>CFBundleShortVersionString</key>
-			<string>2.42304.0</string>
+			<string>1.212.0</string>
 			<key>CFBundleVersion</key>
-			<string>2.42304.0</string>
+			<string>845</string>
 			<key>minosversion</key>
-			<string>13.0</string>
+			<string>12.3</string>
 			<key>path</key>
-			<string>/Applications/Claude.app</string>
+			<string>/Applications/DuckDuckGo.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,22 +60,20 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Claude.app</string>
+			<string>DuckDuckGo.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>13.0</string>
+	<string>12.3</string>
 	<key>name</key>
-	<string>Claude</string>
+	<string>DuckDuckGo</string>
 	<key>unattended_install</key>
-	<true/>
-	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>2.42304.0</string>
+	<string>1.212.0</string>
 </dict>
 </plist>
