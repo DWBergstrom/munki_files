@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-10-01T04:55:48Z</date>
+		<date>2026-10-21T04:56:51Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -34,13 +34,13 @@
 	<key>display_name</key>
 	<string>Windows App</string>
 	<key>installed_size</key>
-	<integer>254644</integer>
+	<integer>255019</integer>
 	<key>installer_item_hash</key>
-	<string>9dc0e5f4abecfe9dc02d45fafc9813881bd24ecb84125eabe522b01b11a039ca</string>
+	<string>70041210ec1c40cbcc1913010fb9a7de7e2b0c8d9f336777775789ae65bc9cab</string>
 	<key>installer_item_location</key>
-	<string>apps/microsoft/Microsoft_Windows_App-11.4.3.pkg</string>
+	<string>apps/microsoft/Microsoft_Windows_App-11.4.4.pkg</string>
 	<key>installer_item_size</key>
-	<integer>103871</integer>
+	<integer>103944</integer>
 	<key>installs</key>
 	<array>
 		<dict>
@@ -49,9 +49,9 @@
 			<key>CFBundleName</key>
 			<string>Windows App</string>
 			<key>CFBundleShortVersionString</key>
-			<string>11.4.3</string>
+			<string>11.4.4</string>
 			<key>CFBundleVersion</key>
-			<string>3115</string>
+			<string>3132</string>
 			<key>minosversion</key>
 			<string>14.0</string>
 			<key>path</key>
@@ -70,11 +70,11 @@
 	<array>
 		<dict>
 			<key>installed_size</key>
-			<integer>243913</integer>
+			<integer>244288</integer>
 			<key>packageid</key>
 			<string>com.microsoft.rdc.macos</string>
 			<key>version</key>
-			<string>11.4.3</string>
+			<string>11.4.4</string>
 		</dict>
 		<dict>
 			<key>installed_size</key>
@@ -94,6 +94,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>11.4.3</string>
+	<string>11.4.4</string>
 </dict>
 </plist>

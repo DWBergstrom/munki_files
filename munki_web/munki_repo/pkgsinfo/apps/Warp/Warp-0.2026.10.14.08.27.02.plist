@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-10-13T04:53:59Z</date>
+		<date>2026-10-21T05:01:39Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,34 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Chrome-like keyword search for Safari.</string>
+	<string>Fast Terminal app based in Rust.</string>
 	<key>developer</key>
-	<string>Duck Duck Go</string>
+	<string>Denver Technologies</string>
 	<key>display_name</key>
-	<string>DuckDuckGo</string>
+	<string>Warp</string>
+	<key>force_munkiimport</key>
+	<true/>
 	<key>installer_item_hash</key>
-	<string>102033aa08e4d6ed04e64a8e022a7b0b158b4d85375d880f678bfe5ef9ef12c9</string>
+	<string>9e24592d1b9ac614615f73cd3e5e281d64b10cc73dda4ffce01441e16b358fce</string>
 	<key>installer_item_location</key>
-	<string>apps/DuckDuckGo/DuckDuckGo-1.211.1.dmg</string>
+	<string>apps/Warp/Warp-0.2026.10.14.08.27.02.dmg</string>
 	<key>installer_item_size</key>
-	<integer>167515</integer>
+	<integer>331055</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.duckduckgo.macos.browser</string>
+			<string>dev.warp.Warp-Stable</string>
 			<key>CFBundleName</key>
-			<string>DuckDuckGo</string>
+			<string>Warp</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.211.1</string>
+			<string>0.2026.10.14.08.27.02</string>
 			<key>CFBundleVersion</key>
-			<string>831</string>
-			<key>minosversion</key>
-			<string>12.3</string>
+			<string>0.2026.10.14.08.27.02</string>
 			<key>path</key>
-			<string>/Applications/DuckDuckGo.app</string>
+			<string>/Applications/Warp.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,13 +60,11 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>DuckDuckGo.app</string>
+			<string>Warp.app</string>
 		</dict>
 	</array>
-	<key>minimum_os_version</key>
-	<string>12.3</string>
 	<key>name</key>
-	<string>DuckDuckGo</string>
+	<string>Warp</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -74,6 +72,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.211.1</string>
+	<string>0.2026.10.14.08.27.02</string>
 </dict>
 </plist>
