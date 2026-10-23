@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-10-21T04:57:46Z</date>
+		<date>2026-10-23T04:59:37Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,34 +20,36 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models.</string>
+	<string>Supercharged productivity
+
+Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
 	<key>developer</key>
-	<string>Infra Technologies, Inc</string>
+	<string>Raycast Technologies Inc</string>
 	<key>display_name</key>
-	<string>Ollama</string>
+	<string>Raycast</string>
 	<key>installer_item_hash</key>
-	<string>f555ab2819982ecefa00bea67904728fa16735728ad0e7c98863b6ae97641ecc</string>
+	<string>73a26f251745a28002723c9e0c3363f835bcde0b122e19e42a6d3fddd3ee23c5</string>
 	<key>installer_item_location</key>
-	<string>apps/Ollama/Ollama-0.40.7.dmg</string>
+	<string>apps/Raycast/Raycast-2.9.0.0.dmg</string>
 	<key>installer_item_size</key>
-	<integer>212727</integer>
+	<integer>142799</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.electron.ollama</string>
+			<string>com.raycast.macos</string>
 			<key>CFBundleName</key>
-			<string>Ollama</string>
+			<string>Raycast</string>
 			<key>CFBundleShortVersionString</key>
-			<string>0.40.7</string>
+			<string>2.9.0.0</string>
 			<key>CFBundleVersion</key>
-			<string>0.40.7</string>
+			<string>0</string>
 			<key>minosversion</key>
-			<string>14.0</string>
+			<string>26.0</string>
 			<key>path</key>
-			<string>/Applications/Ollama.app</string>
+			<string>/Applications/Raycast.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,25 +62,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Ollama.app</string>
+			<string>Raycast.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>14.0</string>
+	<string>26.0</string>
 	<key>name</key>
-	<string>Ollama</string>
-	<key>postinstall_script</key>
-	<string>#!/bin/bash
-
-# Script built from: https://github.com/ollama/ollama/issues/851#issuecomment-1889808636
-# Please note admin rights are still needed as the file that records whether first time run has completed is located in the Users home folder. see https://github.com/ollama/ollama/issues/6814
-
-# Install Command Line Tools
-if ! [ -f /usr/local/bin/ollama ]; then
-  /usr/bin/touch /usr/local/bin/ollama ; /bin/ln -s -f /Applications/Ollama.app/Contents/Resources/ollama /usr/local/bin/ollama
-fi
-
-exit</string>
+	<string>Raycast</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>unattended_uninstall</key>
@@ -88,6 +78,6 @@ exit</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>0.40.7</string>
+	<string>2.9.0.0</string>
 </dict>
 </plist>

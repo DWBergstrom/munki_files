@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-10-21T04:54:10Z</date>
+		<date>2026-10-23T05:02:58Z</date>
 		<key>munki_version</key>
 		<string>7.0.0.5328</string>
 		<key>os_version</key>
@@ -20,34 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Your AI partner on desktop. Fast, focused, and designed for deep work.</string>
+	<string>Fast Terminal app based in Rust.</string>
 	<key>developer</key>
-	<string>Anthropic PBC</string>
+	<string>Denver Technologies</string>
 	<key>display_name</key>
-	<string>Claude</string>
+	<string>Warp</string>
+	<key>force_munkiimport</key>
+	<true/>
 	<key>installer_item_hash</key>
-	<string>be656f451f6bc9206aad631f146a30eff07bf3a3c7f9ba4967b46c1e5c516ea4</string>
+	<string>5572dfe067fb8de43fd9742aa74d00799fc3925147340432ee7413adf58e2b19</string>
 	<key>installer_item_location</key>
-	<string>apps/Claude/Claude-3.1623.0.dmg</string>
+	<string>apps/Warp/Warp-0.2026.10.21.08.25.02.dmg</string>
 	<key>installer_item_size</key>
-	<integer>392402</integer>
+	<integer>332938</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.anthropic.claudefordesktop</string>
+			<string>dev.warp.Warp-Stable</string>
 			<key>CFBundleName</key>
-			<string>Claude</string>
+			<string>Warp</string>
 			<key>CFBundleShortVersionString</key>
-			<string>3.1623.0</string>
+			<string>0.2026.10.21.08.25.02</string>
 			<key>CFBundleVersion</key>
-			<string>3.1623.0</string>
-			<key>minosversion</key>
-			<string>13.0</string>
+			<string>0.2026.10.21.08.25.02</string>
 			<key>path</key>
-			<string>/Applications/Claude.app</string>
+			<string>/Applications/Warp.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,22 +60,18 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Claude.app</string>
+			<string>Warp.app</string>
 		</dict>
 	</array>
-	<key>minimum_os_version</key>
-	<string>13.0</string>
 	<key>name</key>
-	<string>Claude</string>
+	<string>Warp</string>
 	<key>unattended_install</key>
-	<true/>
-	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>3.1623.0</string>
+	<string>0.2026.10.21.08.25.02</string>
 </dict>
 </plist>
