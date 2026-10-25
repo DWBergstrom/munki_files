@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2026-10-24T13:12:15Z</date>
+		<key>notes</key>
+		<string>From munki PR #1305 / Munki 7.1 Assisted App Quit</string>
+	</dict>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>category</key>
+	<string>Preferences</string>
+	<key>description</key>
+	<string>Enables Managed Software Center assisted quit of blocking apps (Munki 7.1+). Sets MSCOfferToQuitBlockingApps, MSCOfferToForceQuitBlockingApps, and MSCOfferToUpdateOthers.</string>
+	<key>developer</key>
+	<string>dwbergstrom</string>
+	<key>display_name</key>
+	<string>Munki Assisted App Quit</string>
+	<key>installcheck_script</key>
+	<string>#!/bin/bash
+# Exit 0 = not installed (needs install); non-zero = already installed
+PREF_DOMAIN="/Library/Preferences/ManagedInstalls"
+quit=$(defaults read "$PREF_DOMAIN" MSCOfferToQuitBlockingApps 2&gt;/dev/null || echo 0)
+force=$(defaults read "$PREF_DOMAIN" MSCOfferToForceQuitBlockingApps 2&gt;/dev/null || echo 0)
+others=$(defaults read "$PREF_DOMAIN" MSCOfferToUpdateOthers 2&gt;/dev/null || echo 0)
+if [[ "$quit" == "1" &amp;&amp; "$force" == "1" &amp;&amp; "$others" == "1" ]]; then
+	exit 1
+fi
+exit 0
+</string>
+	<key>installer_type</key>
+	<string>nopkg</string>
+	<key>minimum_munki_version</key>
+	<string>7.1.0</string>
+	<key>minimum_os_version</key>
+	<string>10.15</string>
+	<key>name</key>
+	<string>ManagedInstalls-AssistedAppQuit</string>
+	<key>postinstall_script</key>
+	<string>#!/bin/bash
+# Enable Munki 7.1+ Assisted App Quit for Managed Software Center.
+# Docs: https://github.com/munki/munki/wiki/Munki-7.1-Assisted-App-Quit
+PREF_DOMAIN="/Library/Preferences/ManagedInstalls"
+defaults write "$PREF_DOMAIN" MSCOfferToQuitBlockingApps -bool true
+defaults write "$PREF_DOMAIN" MSCOfferToForceQuitBlockingApps -bool true
+defaults write "$PREF_DOMAIN" MSCOfferToUpdateOthers -bool true
+exit 0
+</string>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>uninstall_script</string>
+	<key>uninstall_script</key>
+	<string>#!/bin/bash
+PREF_DOMAIN="/Library/Preferences/ManagedInstalls"
+defaults delete "$PREF_DOMAIN" MSCOfferToQuitBlockingApps 2&gt;/dev/null || true
+defaults delete "$PREF_DOMAIN" MSCOfferToForceQuitBlockingApps 2&gt;/dev/null || true
+defaults delete "$PREF_DOMAIN" MSCOfferToUpdateOthers 2&gt;/dev/null || true
+exit 0
+</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.0</string>
+</dict>
+</plist>

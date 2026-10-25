@@ -17,6 +17,7 @@
 		<string>SuspiciousPackageApp</string>
 		<string>Tailscale</string>
 		<string>Warp</string>
+		<string>ManagedInstalls-AssistedAppQuit</string>
 	</array>
 	<key>managed_uninstalls</key>
 	<array/>

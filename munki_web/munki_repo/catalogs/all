@@ -3,6 +3,66 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Preferences</string>
+		<key>description</key>
+		<string>Enables Managed Software Center assisted quit of blocking apps (Munki 7.1+). Sets MSCOfferToQuitBlockingApps, MSCOfferToForceQuitBlockingApps, and MSCOfferToUpdateOthers.</string>
+		<key>developer</key>
+		<string>dwbergstrom</string>
+		<key>display_name</key>
+		<string>Munki Assisted App Quit</string>
+		<key>installcheck_script</key>
+		<string>#!/bin/bash
+# Exit 0 = not installed (needs install); non-zero = already installed
+PREF_DOMAIN="/Library/Preferences/ManagedInstalls"
+quit=$(defaults read "$PREF_DOMAIN" MSCOfferToQuitBlockingApps 2&gt;/dev/null || echo 0)
+force=$(defaults read "$PREF_DOMAIN" MSCOfferToForceQuitBlockingApps 2&gt;/dev/null || echo 0)
+others=$(defaults read "$PREF_DOMAIN" MSCOfferToUpdateOthers 2&gt;/dev/null || echo 0)
+if [[ "$quit" == "1" &amp;&amp; "$force" == "1" &amp;&amp; "$others" == "1" ]]; then
+	exit 1
+fi
+exit 0
+</string>
+		<key>installer_type</key>
+		<string>nopkg</string>
+		<key>minimum_munki_version</key>
+		<string>7.1.0</string>
+		<key>minimum_os_version</key>
+		<string>10.15</string>
+		<key>name</key>
+		<string>ManagedInstalls-AssistedAppQuit</string>
+		<key>postinstall_script</key>
+		<string>#!/bin/bash
+# Enable Munki 7.1+ Assisted App Quit for Managed Software Center.
+# Docs: https://github.com/munki/munki/wiki/Munki-7.1-Assisted-App-Quit
+PREF_DOMAIN="/Library/Preferences/ManagedInstalls"
+defaults write "$PREF_DOMAIN" MSCOfferToQuitBlockingApps -bool true
+defaults write "$PREF_DOMAIN" MSCOfferToForceQuitBlockingApps -bool true
+defaults write "$PREF_DOMAIN" MSCOfferToUpdateOthers -bool true
+exit 0
+</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>uninstall_script</string>
+		<key>uninstall_script</key>
+		<string>#!/bin/bash
+PREF_DOMAIN="/Library/Preferences/ManagedInstalls"
+defaults delete "$PREF_DOMAIN" MSCOfferToQuitBlockingApps 2&gt;/dev/null || true
+defaults delete "$PREF_DOMAIN" MSCOfferToForceQuitBlockingApps 2&gt;/dev/null || true
+defaults delete "$PREF_DOMAIN" MSCOfferToUpdateOthers 2&gt;/dev/null || true
+exit 0
+</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.0</string>
+	</dict>
+	<dict>
 		<key>autoremove</key>
 		<false/>
 		<key>catalogs</key>
@@ -453,6 +513,7 @@
 		<key>catalogs</key>
 		<array>
 			<string>development</string>
+			<string>testing</string>
 		</array>
 		<key>category</key>
 		<string>munkitools</string>
@@ -42149,78 +42210,6 @@ fi
 		<key>display_name</key>
 		<string>OrbStack</string>
 		<key>installer_item_hash</key>
-		<string>f0c698e709c99fb3ee87f92c3a0445c6b8f5a10d6a0edd4f4d461925d194b86a</string>
-		<key>installer_item_location</key>
-		<string>apps/OrbStack/OrbStack-arm64-2.2.4.dmg</string>
-		<key>installer_item_size</key>
-		<integer>458543</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>dev.kdrag0n.MacVirt</string>
-				<key>CFBundleName</key>
-				<string>OrbStack</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2.2.4</string>
-				<key>CFBundleVersion</key>
-				<string>21120</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/OrbStack.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>OrbStack.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>OrbStack</string>
-		<key>supported_architectures</key>
-		<array>
-			<string>arm64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2.2.4</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Development</string>
-		<key>description</key>
-		<string>OrbStack is a fast, light, and simple way to run containers and Linux machines on macOS. It's a supercharged alternative to Docker Desktop and WSL, all in one easy-to-use app.</string>
-		<key>developer</key>
-		<string>Orbital Labs, LLC</string>
-		<key>display_name</key>
-		<string>OrbStack</string>
-		<key>installer_item_hash</key>
 		<string>f2b887d26a21e0a12147eb005297782794b26f461f77c6b9cdfb57f576ad5e6d</string>
 		<key>installer_item_location</key>
 		<string>apps/OrbStack/OrbStack-arm64-2.2.5.dmg</string>
@@ -45061,6 +45050,90 @@ fi
 		<true/>
 		<key>version</key>
 		<string>156.0.4314.42</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>Microsoft Remote Desktop</string>
+			<string>Windows App</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>utilities</string>
+		</array>
+		<key>category</key>
+		<string>Utility</string>
+		<key>description</key>
+		<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
+</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Windows App</string>
+		<key>installed_size</key>
+		<integer>255019</integer>
+		<key>installer_item_hash</key>
+		<string>70041210ec1c40cbcc1913010fb9a7de7e2b0c8d9f336777775789ae65bc9cab</string>
+		<key>installer_item_location</key>
+		<string>apps/microsoft/Microsoft_Windows_App-11.4.4.pkg</string>
+		<key>installer_item_size</key>
+		<integer>103944</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.microsoft.rdc.macos</string>
+				<key>CFBundleName</key>
+				<string>Windows App</string>
+				<key>CFBundleShortVersionString</key>
+				<string>11.4.4</string>
+				<key>CFBundleVersion</key>
+				<string>3132</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/Windows App.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.0</string>
+		<key>name</key>
+		<string>WindowsApp</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>244288</integer>
+				<key>packageid</key>
+				<string>com.microsoft.rdc.macos</string>
+				<key>version</key>
+				<string>11.4.4</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>10731</integer>
+				<key>packageid</key>
+				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
+				<key>version</key>
+				<string>4.81.25121042</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>11.4.4</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -78799,6 +78872,84 @@ rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
 		<key>display_name</key>
 		<string>Ollama</string>
 		<key>installer_item_hash</key>
+		<string>dd75a3825773c0e7ff70296a1de5ccd75ab62e651c450538a3fa9687281accfc</string>
+		<key>installer_item_location</key>
+		<string>apps/Ollama/Ollama-0.40.11.dmg</string>
+		<key>installer_item_size</key>
+		<integer>219701</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.electron.ollama</string>
+				<key>CFBundleName</key>
+				<string>Ollama</string>
+				<key>CFBundleShortVersionString</key>
+				<string>0.40.11</string>
+				<key>CFBundleVersion</key>
+				<string>0.40.11</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/Ollama.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Ollama.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.0</string>
+		<key>name</key>
+		<string>Ollama</string>
+		<key>postinstall_script</key>
+		<string>#!/bin/bash
+
+# Script built from: https://github.com/ollama/ollama/issues/851#issuecomment-1889808636
+# Please note admin rights are still needed as the file that records whether first time run has completed is located in the Users home folder. see https://github.com/ollama/ollama/issues/6814
+
+# Install Command Line Tools
+if ! [ -f /usr/local/bin/ollama ]; then
+  /usr/bin/touch /usr/local/bin/ollama ; /bin/ln -s -f /Applications/Ollama.app/Contents/Resources/ollama /usr/local/bin/ollama
+fi
+
+exit</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>0.40.11</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models.</string>
+		<key>developer</key>
+		<string>Infra Technologies, Inc</string>
+		<key>display_name</key>
+		<string>Ollama</string>
+		<key>installer_item_hash</key>
 		<string>3af240e1077f8394aba5f4ad52272bfe72ebb1ac2cf843fcf55857273f777712</string>
 		<key>installer_item_location</key>
 		<string>apps/Ollama/Ollama-0.40.10.dmg</string>
@@ -78862,84 +79013,6 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>0.40.10</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models.</string>
-		<key>developer</key>
-		<string>Infra Technologies, Inc</string>
-		<key>display_name</key>
-		<string>Ollama</string>
-		<key>installer_item_hash</key>
-		<string>3bdbe9e7ef5dc7b9a07dcefa993434aa3a5b29b05178c073f43ecfd26a219465</string>
-		<key>installer_item_location</key>
-		<string>apps/Ollama/Ollama-0.40.9.dmg</string>
-		<key>installer_item_size</key>
-		<integer>219518</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.electron.ollama</string>
-				<key>CFBundleName</key>
-				<string>Ollama</string>
-				<key>CFBundleShortVersionString</key>
-				<string>0.40.9</string>
-				<key>CFBundleVersion</key>
-				<string>0.40.9</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Ollama.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Ollama.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>Ollama</string>
-		<key>postinstall_script</key>
-		<string>#!/bin/bash
-
-# Script built from: https://github.com/ollama/ollama/issues/851#issuecomment-1889808636
-# Please note admin rights are still needed as the file that records whether first time run has completed is located in the Users home folder. see https://github.com/ollama/ollama/issues/6814
-
-# Install Command Line Tools
-if ! [ -f /usr/local/bin/ollama ]; then
-  /usr/bin/touch /usr/local/bin/ollama ; /bin/ln -s -f /Applications/Ollama.app/Contents/Resources/ollama /usr/local/bin/ollama
-fi
-
-exit</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>0.40.9</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
