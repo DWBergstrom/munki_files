@@ -53366,6 +53366,49 @@ fi
 		<key>display_name</key>
 		<string>PowerShell</string>
 		<key>installed_size</key>
+		<integer>180247</integer>
+		<key>installer_item_hash</key>
+		<string>8e7987907888143d5ffef59882d1da8efb564e063dbfcd7cf4955e8d076a8d14</string>
+		<key>installer_item_location</key>
+		<string>apps/PowerShell/PowerShell-x64-7.4.22.pkg</string>
+		<key>installer_item_size</key>
+		<integer>70588</integer>
+		<key>name</key>
+		<string>PowerShell</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>180247</integer>
+				<key>packageid</key>
+				<string>com.microsoft.powershell</string>
+				<key>version</key>
+				<string>7.4.22</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>7.4.22</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>PowerShell for every system!</string>
+		<key>developer</key>
+		<string>PowerShell Team</string>
+		<key>display_name</key>
+		<string>PowerShell</string>
+		<key>installed_size</key>
 		<integer>180211</integer>
 		<key>installer_item_hash</key>
 		<string>adba10dbfbd0300d4627f9d6faa4b62cdc9696e7c5b3ab65ce88a23b6835c23d</string>
@@ -70457,84 +70500,6 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>0.40.11</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models.</string>
-		<key>developer</key>
-		<string>Infra Technologies, Inc</string>
-		<key>display_name</key>
-		<string>Ollama</string>
-		<key>installer_item_hash</key>
-		<string>3af240e1077f8394aba5f4ad52272bfe72ebb1ac2cf843fcf55857273f777712</string>
-		<key>installer_item_location</key>
-		<string>apps/Ollama/Ollama-0.40.10.dmg</string>
-		<key>installer_item_size</key>
-		<integer>219499</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.electron.ollama</string>
-				<key>CFBundleName</key>
-				<string>Ollama</string>
-				<key>CFBundleShortVersionString</key>
-				<string>0.40.10</string>
-				<key>CFBundleVersion</key>
-				<string>0.40.10</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Ollama.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Ollama.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>Ollama</string>
-		<key>postinstall_script</key>
-		<string>#!/bin/bash
-
-# Script built from: https://github.com/ollama/ollama/issues/851#issuecomment-1889808636
-# Please note admin rights are still needed as the file that records whether first time run has completed is located in the Users home folder. see https://github.com/ollama/ollama/issues/6814
-
-# Install Command Line Tools
-if ! [ -f /usr/local/bin/ollama ]; then
-  /usr/bin/touch /usr/local/bin/ollama ; /bin/ln -s -f /Applications/Ollama.app/Contents/Resources/ollama /usr/local/bin/ollama
-fi
-
-exit</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>0.40.10</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
