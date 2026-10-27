@@ -7,9 +7,9 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-10-14T04:57:26Z</date>
+		<date>2026-10-27T04:56:20Z</date>
 		<key>munki_version</key>
-		<string>7.0.0.5328</string>
+		<string>7.3.0.5808</string>
 		<key>os_version</key>
 		<string>26.5.2</string>
 	</dict>
@@ -19,40 +19,42 @@
 	<array>
 		<string>testing</string>
 	</array>
+	<key>category</key>
+	<string>Productivity</string>
 	<key>description</key>
-	<string>PowerShell for every system!</string>
+	<string>Microsoft Edge web browser</string>
 	<key>developer</key>
-	<string>PowerShell Team</string>
+	<string>Microsoft</string>
 	<key>display_name</key>
-	<string>PowerShell</string>
+	<string>Microsoft Edge</string>
 	<key>installed_size</key>
-	<integer>180211</integer>
+	<integer>953837</integer>
 	<key>installer_item_hash</key>
-	<string>adba10dbfbd0300d4627f9d6faa4b62cdc9696e7c5b3ab65ce88a23b6835c23d</string>
+	<string>b296b943ba258a8f678a6dc57a5d0f8889929480cb28808738947deb417ab94a</string>
 	<key>installer_item_location</key>
-	<string>apps/PowerShell/PowerShell-x64-7.4.21.pkg</string>
+	<string>apps/Microsoft/Microsoft_Edge-156.0.4314.50.pkg</string>
 	<key>installer_item_size</key>
-	<integer>70571</integer>
+	<integer>425314</integer>
+	<key>minimum_os_version</key>
+	<string>10.10.0</string>
 	<key>name</key>
-	<string>PowerShell</string>
+	<string>MicrosoftEdge</string>
 	<key>receipts</key>
 	<array>
 		<dict>
 			<key>installed_size</key>
-			<integer>180211</integer>
+			<integer>953837</integer>
 			<key>packageid</key>
-			<string>com.microsoft.powershell</string>
+			<string>com.microsoft.edgemac</string>
 			<key>version</key>
-			<string>7.4.21</string>
+			<string>156.0.4314.50</string>
 		</dict>
 	</array>
-	<key>unattended_install</key>
-	<true/>
 	<key>uninstall_method</key>
 	<string>removepackages</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>7.4.21</string>
+	<string>156.0.4314.50</string>
 </dict>
 </plist>
