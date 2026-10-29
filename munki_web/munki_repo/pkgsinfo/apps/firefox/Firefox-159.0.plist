@@ -7,11 +7,11 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-10-20T04:54:19Z</date>
+		<date>2026-10-29T04:54:48Z</date>
 		<key>munki_version</key>
-		<string>7.0.0.5328</string>
+		<string>7.3.0.5808</string>
 		<key>os_version</key>
-		<string>26.5.2</string>
+		<string>27.2</string>
 	</dict>
 	<key>autoremove</key>
 	<false/>
@@ -20,34 +20,32 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Chrome-like keyword search for Safari.</string>
-	<key>developer</key>
-	<string>Duck Duck Go</string>
+	<string>Mozilla Firefox is a free and open source web browser.</string>
 	<key>display_name</key>
-	<string>DuckDuckGo</string>
+	<string>Mozilla Firefox</string>
 	<key>installer_item_hash</key>
-	<string>f6a669cffe4e2338f09efe6d4d1dc018227fe4a027bec9c3735c9cae72e820c4</string>
+	<string>0772404ae6e068d7cc03cecf4bb06a855f10287a77b624ffa41c6d092a64ea13</string>
 	<key>installer_item_location</key>
-	<string>apps/DuckDuckGo/DuckDuckGo-1.212.0.dmg</string>
+	<string>apps/firefox/Firefox-159.0.dmg</string>
 	<key>installer_item_size</key>
-	<integer>166760</integer>
+	<integer>160932</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.duckduckgo.macos.browser</string>
+			<string>org.mozilla.firefox</string>
 			<key>CFBundleName</key>
-			<string>DuckDuckGo</string>
+			<string>Firefox</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.212.0</string>
+			<string>159.0</string>
 			<key>CFBundleVersion</key>
-			<string>845</string>
+			<string>15926.10.22</string>
 			<key>minosversion</key>
-			<string>12.3</string>
+			<string>10.15.0</string>
 			<key>path</key>
-			<string>/Applications/DuckDuckGo.app</string>
+			<string>/Applications/Firefox.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -59,14 +57,16 @@
 		<dict>
 			<key>destination_path</key>
 			<string>/Applications</string>
+			<key>mode</key>
+			<string>ug+w,o-w</string>
 			<key>source_item</key>
-			<string>DuckDuckGo.app</string>
+			<string>Firefox.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>12.3</string>
+	<string>10.15.0</string>
 	<key>name</key>
-	<string>DuckDuckGo</string>
+	<string>Firefox</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -74,6 +74,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.212.0</string>
+	<string>159.0</string>
 </dict>
 </plist>
