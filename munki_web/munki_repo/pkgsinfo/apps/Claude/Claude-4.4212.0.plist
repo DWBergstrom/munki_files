@@ -7,11 +7,11 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-10-21T04:55:21Z</date>
+		<date>2026-10-30T04:53:21Z</date>
 		<key>munki_version</key>
-		<string>7.0.0.5328</string>
+		<string>7.3.0.5808</string>
 		<key>os_version</key>
-		<string>26.5.2</string>
+		<string>27.2</string>
 	</dict>
 	<key>autoremove</key>
 	<false/>
@@ -20,32 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Mozilla Firefox is a free and open source web browser.</string>
+	<string>Your AI partner on desktop. Fast, focused, and designed for deep work.</string>
+	<key>developer</key>
+	<string>Anthropic PBC</string>
 	<key>display_name</key>
-	<string>Mozilla Firefox</string>
+	<string>Claude</string>
 	<key>installer_item_hash</key>
-	<string>1d7aa96b51fc9110185047de18228ac87238fba5e42bba53c9d696f88878cba6</string>
+	<string>86e3b79ab7aae2624a5a6356208bcd5c6a51be049f013bd26741961e561eb908</string>
 	<key>installer_item_location</key>
-	<string>apps/firefox/Firefox-158.0.1.dmg</string>
+	<string>apps/Claude/Claude-4.4212.0.dmg</string>
 	<key>installer_item_size</key>
-	<integer>161170</integer>
+	<integer>374576</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>org.mozilla.firefox</string>
+			<string>com.anthropic.claudefordesktop</string>
 			<key>CFBundleName</key>
-			<string>Firefox</string>
+			<string>Claude</string>
 			<key>CFBundleShortVersionString</key>
-			<string>158.0.1</string>
+			<string>4.4212.0</string>
 			<key>CFBundleVersion</key>
-			<string>15826.10.19</string>
+			<string>4.4212.0</string>
 			<key>minosversion</key>
-			<string>10.15.0</string>
+			<string>13.0</string>
 			<key>path</key>
-			<string>/Applications/Firefox.app</string>
+			<string>/Applications/Claude.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -57,23 +59,23 @@
 		<dict>
 			<key>destination_path</key>
 			<string>/Applications</string>
-			<key>mode</key>
-			<string>ug+w,o-w</string>
 			<key>source_item</key>
-			<string>Firefox.app</string>
+			<string>Claude.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>10.15.0</string>
+	<string>13.0</string>
 	<key>name</key>
-	<string>Firefox</string>
+	<string>Claude</string>
 	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>158.0.1</string>
+	<string>4.4212.0</string>
 </dict>
 </plist>

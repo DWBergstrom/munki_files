@@ -7,11 +7,11 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-10-25T04:56:50Z</date>
+		<date>2026-10-30T04:55:24Z</date>
 		<key>munki_version</key>
 		<string>7.3.0.5808</string>
 		<key>os_version</key>
-		<string>26.5.2</string>
+		<string>27.2</string>
 	</dict>
 	<key>autoremove</key>
 	<false/>
@@ -20,34 +20,32 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models.</string>
-	<key>developer</key>
-	<string>Infra Technologies, Inc</string>
+	<string>Explore REST and GraphQL APIs.</string>
 	<key>display_name</key>
-	<string>Ollama</string>
+	<string>Insomnia </string>
 	<key>installer_item_hash</key>
-	<string>dd75a3825773c0e7ff70296a1de5ccd75ab62e651c450538a3fa9687281accfc</string>
+	<string>d07738de010d5d3aa4a850f3dd788ae403ec38b7f6676862d2b9c687893c99c1</string>
 	<key>installer_item_location</key>
-	<string>apps/Ollama/Ollama-0.40.11.dmg</string>
+	<string>apps/Insomnia/Insomnia.Core-13.4.0.dmg</string>
 	<key>installer_item_size</key>
-	<integer>219701</integer>
+	<integer>392035</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.electron.ollama</string>
+			<string>com.insomnia.app</string>
 			<key>CFBundleName</key>
-			<string>Ollama</string>
+			<string>Insomnia</string>
 			<key>CFBundleShortVersionString</key>
-			<string>0.40.11</string>
+			<string>13.4.0</string>
 			<key>CFBundleVersion</key>
-			<string>0.40.11</string>
+			<string>13.4.0</string>
 			<key>minosversion</key>
-			<string>14.0</string>
+			<string>12.0</string>
 			<key>path</key>
-			<string>/Applications/Ollama.app</string>
+			<string>/Applications/Insomnia.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,34 +58,20 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Ollama.app</string>
+			<string>Insomnia.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>14.0</string>
+	<string>12.0</string>
 	<key>name</key>
-	<string>Ollama</string>
-	<key>postinstall_script</key>
-	<string>#!/bin/bash
-
-# Script built from: https://github.com/ollama/ollama/issues/851#issuecomment-1889808636
-# Please note admin rights are still needed as the file that records whether first time run has completed is located in the Users home folder. see https://github.com/ollama/ollama/issues/6814
-
-# Install Command Line Tools
-if ! [ -f /usr/local/bin/ollama ]; then
-  /usr/bin/touch /usr/local/bin/ollama ; /bin/ln -s -f /Applications/Ollama.app/Contents/Resources/ollama /usr/local/bin/ollama
-fi
-
-exit</string>
+	<string>Insomnia</string>
 	<key>unattended_install</key>
-	<true/>
-	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>0.40.11</string>
+	<string>13.4.0</string>
 </dict>
 </plist>
