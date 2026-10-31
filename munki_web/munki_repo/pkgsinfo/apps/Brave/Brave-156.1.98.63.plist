@@ -7,11 +7,11 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-09-17T04:51:46Z</date>
+		<date>2026-10-31T04:53:22Z</date>
 		<key>munki_version</key>
-		<string>7.0.0.5328</string>
+		<string>7.3.0.5808</string>
 		<key>os_version</key>
-		<string>26.5.2</string>
+		<string>27.2</string>
 	</dict>
 	<key>autoremove</key>
 	<false/>
@@ -20,38 +20,36 @@
 		<string>testing</string>
 	</array>
 	<key>category</key>
-	<string>Utilities</string>
+	<string>Browsers</string>
 	<key>description</key>
-	<string>Archaeology is a tool For digging into binary files on macOS.</string>
+	<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
 	<key>developer</key>
-	<string>Mothers Ruin Software</string>
+	<string>Brave Software Inc.</string>
 	<key>display_name</key>
-	<string>Archaeology</string>
-	<key>icon_name</key>
-	<string>Archaeology.png</string>
+	<string>Brave Browser</string>
 	<key>installer_item_hash</key>
-	<string>9bdb9eea72849e740547a9e3711a02fd6f4e4d4c59a954e2dcea2090a2828d58</string>
+	<string>79febd5289c61e113c17ebb0c54dc750f311d733d6698672cc001a9e8c136e97</string>
 	<key>installer_item_location</key>
-	<string>utilities/Archaeology-1.7.dmg</string>
+	<string>apps/Brave/Brave-156.1.98.63.dmg</string>
 	<key>installer_item_size</key>
-	<integer>5386</integer>
+	<integer>332469</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.mothersruin.Archaeology</string>
+			<string>com.brave.Browser</string>
 			<key>CFBundleName</key>
-			<string>Archaeology</string>
+			<string>Brave</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.7</string>
+			<string>156.1.98.63</string>
 			<key>CFBundleVersion</key>
-			<string>306</string>
+			<string>198.63</string>
 			<key>minosversion</key>
-			<string>14.0</string>
+			<string>13.0</string>
 			<key>path</key>
-			<string>/Applications/Archaeology.app</string>
+			<string>/Applications/Brave Browser.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -64,22 +62,20 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Archaeology.app</string>
+			<string>Brave Browser.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>14.0</string>
+	<string>13.0</string>
 	<key>name</key>
-	<string>Archaeology</string>
+	<string>Brave</string>
 	<key>unattended_install</key>
-	<true/>
-	<key>unattended_uninstall</key>
 	<true/>
 	<key>uninstall_method</key>
 	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>1.7</string>
+	<string>156.1.98.63</string>
 </dict>
 </plist>

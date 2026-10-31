@@ -60,5 +60,8 @@ wait_for_repo
 ensure_tailscale_serve
 
 log "Starting python http.server on 127.0.0.1:${WEBSERVER_PORT}"
-cd "${MUNKI_REPO_PATH}"
-exec /usr/bin/python3 -m http.server "${WEBSERVER_PORT}" --bind 127.0.0.1
+# Use --directory (absolute path) instead of cd: if the external volume
+# remounts, requests resolve the path fresh each time instead of failing
+# through a dead working directory while the process stays alive.
+cd /tmp
+exec /usr/bin/python3 -m http.server "${WEBSERVER_PORT}" --bind 127.0.0.1 --directory "${MUNKI_REPO_PATH}"
