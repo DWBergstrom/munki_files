@@ -3932,105 +3932,6 @@ exit 0
 		<key>display_name</key>
 		<string>Managed Software Center</string>
 		<key>icon_name</key>
-		<string>munkitools.png</string>
-		<key>installed_size</key>
-		<integer>45020</integer>
-		<key>installer_item_hash</key>
-		<string>7e790a4047d1de0022f49652480945eb73911b7c93c979b7d2a97852d3d28be4</string>
-		<key>installer_item_location</key>
-		<string>munkitools/munkitools-7.4.0.5891.pkg</string>
-		<key>installer_item_size</key>
-		<integer>21023</integer>
-		<key>minimum_os_version</key>
-		<string>10.15</string>
-		<key>name</key>
-		<string>munkitools</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>21302</integer>
-				<key>packageid</key>
-				<string>com.googlecode.munki.core</string>
-				<key>version</key>
-				<string>7.4.0.5875</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>11325</integer>
-				<key>packageid</key>
-				<string>com.googlecode.munki.admin</string>
-				<key>version</key>
-				<string>7.4.0.5875</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>9037</integer>
-				<key>packageid</key>
-				<string>com.googlecode.munki.app</string>
-				<key>version</key>
-				<string>7.4.0.5891</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>910</integer>
-				<key>packageid</key>
-				<string>com.googlecode.munki.app_usage</string>
-				<key>version</key>
-				<string>7.4.0.5875</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>375</integer>
-				<key>packageid</key>
-				<string>com.googlecode.munki.launchd</string>
-				<key>version</key>
-				<string>7.0.0.5320</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>970</integer>
-				<key>packageid</key>
-				<string>com.googlecode.munki.pythonlibs</string>
-				<key>version</key>
-				<string>6.7.0.5293</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>1101</integer>
-				<key>optional</key>
-				<true/>
-				<key>packageid</key>
-				<string>com.googlecode.munki.libs</string>
-				<key>version</key>
-				<string>5.5</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>7.4.0.5891</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>development</string>
-		</array>
-		<key>category</key>
-		<string>munkitools</string>
-		<key>description</key>
-		<string>Managed software installation for macOS.</string>
-		<key>developer</key>
-		<string>The Munki Project</string>
-		<key>display_name</key>
-		<string>Managed Software Center</string>
-		<key>icon_name</key>
 		<string></string>
 		<key>installed_size</key>
 		<integer>154833</integer>
@@ -44993,6 +44894,90 @@ fi
 	<dict>
 		<key>autoremove</key>
 		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>Microsoft Remote Desktop</string>
+			<string>Windows App</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>utilities</string>
+		</array>
+		<key>category</key>
+		<string>Utility</string>
+		<key>description</key>
+		<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
+</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Windows App</string>
+		<key>installed_size</key>
+		<integer>255019</integer>
+		<key>installer_item_hash</key>
+		<string>70041210ec1c40cbcc1913010fb9a7de7e2b0c8d9f336777775789ae65bc9cab</string>
+		<key>installer_item_location</key>
+		<string>apps/microsoft/Microsoft_Windows_App-11.4.4.pkg</string>
+		<key>installer_item_size</key>
+		<integer>103944</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.microsoft.rdc.macos</string>
+				<key>CFBundleName</key>
+				<string>Windows App</string>
+				<key>CFBundleShortVersionString</key>
+				<string>11.4.4</string>
+				<key>CFBundleVersion</key>
+				<string>3132</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/Windows App.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.0</string>
+		<key>name</key>
+		<string>WindowsApp</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>244288</integer>
+				<key>packageid</key>
+				<string>com.microsoft.rdc.macos</string>
+				<key>version</key>
+				<string>11.4.4</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>10731</integer>
+				<key>packageid</key>
+				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
+				<key>version</key>
+				<string>4.81.25121042</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>11.4.4</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
 		<key>catalogs</key>
 		<array>
 			<string>testing</string>
@@ -45204,51 +45189,6 @@ fi
 		<true/>
 		<key>version</key>
 		<string>11.4.4</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Productivity</string>
-		<key>description</key>
-		<string>Microsoft Edge web browser</string>
-		<key>developer</key>
-		<string>Microsoft</string>
-		<key>display_name</key>
-		<string>Microsoft Edge</string>
-		<key>installed_size</key>
-		<integer>954382</integer>
-		<key>installer_item_hash</key>
-		<string>a6c291a78fd591a712152432331e04aad7cd76cb1a3f6889913f7ee3f89a3e29</string>
-		<key>installer_item_location</key>
-		<string>apps/Microsoft/Microsoft_Edge-156.0.4314.56.pkg</string>
-		<key>installer_item_size</key>
-		<integer>425555</integer>
-		<key>minimum_os_version</key>
-		<string>10.10.0</string>
-		<key>name</key>
-		<string>MicrosoftEdge</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>954382</integer>
-				<key>packageid</key>
-				<string>com.microsoft.edgemac</string>
-				<key>version</key>
-				<string>156.0.4314.56</string>
-			</dict>
-		</array>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>156.0.4314.56</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -48911,72 +48851,6 @@ fi
 		<true/>
 		<key>version</key>
 		<string>2.7.0.48109</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Browsers</string>
-		<key>description</key>
-		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
-		<key>developer</key>
-		<string>Brave Software Inc.</string>
-		<key>display_name</key>
-		<string>Brave Browser</string>
-		<key>installer_item_hash</key>
-		<string>6676868d508de30484be55b3512da3cde7b12e95179bf29eb6f0e04362aa2b4a</string>
-		<key>installer_item_location</key>
-		<string>apps/Brave/Brave-156.1.98.62.dmg</string>
-		<key>installer_item_size</key>
-		<integer>332865</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.brave.Browser</string>
-				<key>CFBundleName</key>
-				<string>Brave</string>
-				<key>CFBundleShortVersionString</key>
-				<string>156.1.98.62</string>
-				<key>CFBundleVersion</key>
-				<string>198.62</string>
-				<key>minosversion</key>
-				<string>13.0</string>
-				<key>path</key>
-				<string>/Applications/Brave Browser.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Brave Browser.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>13.0</string>
-		<key>name</key>
-		<string>Brave</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>156.1.98.62</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
