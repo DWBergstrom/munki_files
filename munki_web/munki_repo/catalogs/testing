@@ -27340,6 +27340,70 @@ fi
 		<key>display_name</key>
 		<string>DuckDuckGo</string>
 		<key>installer_item_hash</key>
+		<string>423bf26854b04550242b6e27d0589e50fc59c1c59f9d66a98a8cc65b359e675d</string>
+		<key>installer_item_location</key>
+		<string>apps/DuckDuckGo/DuckDuckGo-1.215.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>167847</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.duckduckgo.macos.browser</string>
+				<key>CFBundleName</key>
+				<string>DuckDuckGo</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.215.0</string>
+				<key>CFBundleVersion</key>
+				<string>866</string>
+				<key>minosversion</key>
+				<string>12.3</string>
+				<key>path</key>
+				<string>/Applications/DuckDuckGo.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>DuckDuckGo.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.3</string>
+		<key>name</key>
+		<string>DuckDuckGo</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.215.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Chrome-like keyword search for Safari.</string>
+		<key>developer</key>
+		<string>Duck Duck Go</string>
+		<key>display_name</key>
+		<string>DuckDuckGo</string>
+		<key>installer_item_hash</key>
 		<string>09253e404bc8305992d9553e218daa1da85d36b2f8c37960c08c6a9b9644225e</string>
 		<key>installer_item_location</key>
 		<string>apps/DuckDuckGo/DuckDuckGo-1.193.1__2.dmg</string>
@@ -37164,6 +37228,51 @@ fi
 		<true/>
 		<key>version</key>
 		<string>11.4.4</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Productivity</string>
+		<key>description</key>
+		<string>Microsoft Edge web browser</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Microsoft Edge</string>
+		<key>installed_size</key>
+		<integer>961282</integer>
+		<key>installer_item_hash</key>
+		<string>71c48e8f6b559c52744771606c8bce4c30e9fab71692c563fdfa69b2ef3c8d20</string>
+		<key>installer_item_location</key>
+		<string>apps/Microsoft/Microsoft_Edge-157.0.4341.46.pkg</string>
+		<key>installer_item_size</key>
+		<integer>427962</integer>
+		<key>minimum_os_version</key>
+		<string>10.10.0</string>
+		<key>name</key>
+		<string>MicrosoftEdge</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>961282</integer>
+				<key>packageid</key>
+				<string>com.microsoft.edgemac</string>
+				<key>version</key>
+				<string>157.0.4341.46</string>
+			</dict>
+		</array>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>157.0.4341.46</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -70931,6 +71040,87 @@ rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
 	<dict>
 		<key>autoremove</key>
 		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>NordVPN.app</string>
+			<string>NordVPNLauncher Sideload.app</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Get the fastest VPN in the world and enjoy a smooth, safe, and private connection on your Mac. NordVPN’s easy-to-use app will protect all your connected devices from snoopers tracking what you do online.
+
+Even if you think you have nothing to hide — no one likes to be watched. That’s why you need a VPN to protect your privacy and keep your online data safe.</string>
+		<key>developer</key>
+		<string>Nordvpn S.A.</string>
+		<key>display_name</key>
+		<string>NordVPN</string>
+		<key>installed_size</key>
+		<integer>622320</integer>
+		<key>installer_item_hash</key>
+		<string>a98661fd854a032c7ddfe90c9a6c7f27cd73bfe3b1d3e5ecca2d113c8fe7b3cc</string>
+		<key>installer_item_location</key>
+		<string>apps/NordVPN/NordVPN-10.15.1.dmg</string>
+		<key>installer_item_size</key>
+		<integer>292813</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.nordvpn.macos</string>
+				<key>CFBundleName</key>
+				<string>NordVPN</string>
+				<key>CFBundleShortVersionString</key>
+				<string>10.15.1</string>
+				<key>CFBundleVersion</key>
+				<string>383</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/NordVPN.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.0</string>
+		<key>name</key>
+		<string>NordVPN</string>
+		<key>postuninstall_script</key>
+		<string>#!/bin/bash
+#
+launchctl unload /Library/LaunchDaemons/com.nordvpn.macos.helper.plist
+#
+rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>622320</integer>
+				<key>packageid</key>
+				<string>com.nordvpn.macos</string>
+				<key>version</key>
+				<string>10.15.1</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>10.15.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
 		<key>catalogs</key>
 		<array>
 			<string>testing</string>
@@ -71005,6 +71195,84 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>0.40.15</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models.</string>
+		<key>developer</key>
+		<string>Infra Technologies, Inc</string>
+		<key>display_name</key>
+		<string>Ollama</string>
+		<key>installer_item_hash</key>
+		<string>60d09e9494afec5d69eff0671c6f56868b3065bd2f547c1d23551ca4c07f7546</string>
+		<key>installer_item_location</key>
+		<string>apps/Ollama/Ollama-0.40.16.dmg</string>
+		<key>installer_item_size</key>
+		<integer>228291</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.electron.ollama</string>
+				<key>CFBundleName</key>
+				<string>Ollama</string>
+				<key>CFBundleShortVersionString</key>
+				<string>0.40.16</string>
+				<key>CFBundleVersion</key>
+				<string>0.40.16</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/Ollama.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Ollama.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.0</string>
+		<key>name</key>
+		<string>Ollama</string>
+		<key>postinstall_script</key>
+		<string>#!/bin/bash
+
+# Script built from: https://github.com/ollama/ollama/issues/851#issuecomment-1889808636
+# Please note admin rights are still needed as the file that records whether first time run has completed is located in the Users home folder. see https://github.com/ollama/ollama/issues/6814
+
+# Install Command Line Tools
+if ! [ -f /usr/local/bin/ollama ]; then
+  /usr/bin/touch /usr/local/bin/ollama ; /bin/ln -s -f /Applications/Ollama.app/Contents/Resources/ollama /usr/local/bin/ollama
+fi
+
+exit</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>0.40.16</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
