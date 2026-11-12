@@ -16989,70 +16989,6 @@ fi
 		<key>display_name</key>
 		<string>Mozilla Firefox</string>
 		<key>installer_item_hash</key>
-		<string>0c214da4439c1eb4cea28a3c141ff112d511aa32c67f9d12e91116569c8d8dda</string>
-		<key>installer_item_location</key>
-		<string>apps/firefox/Firefox-159.0.1.dmg</string>
-		<key>installer_item_size</key>
-		<integer>161107</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.mozilla.firefox</string>
-				<key>CFBundleName</key>
-				<string>Firefox</string>
-				<key>CFBundleShortVersionString</key>
-				<string>159.0.1</string>
-				<key>CFBundleVersion</key>
-				<string>15926.11.2</string>
-				<key>minosversion</key>
-				<string>10.15.0</string>
-				<key>path</key>
-				<string>/Applications/Firefox.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>mode</key>
-				<string>ug+w,o-w</string>
-				<key>source_item</key>
-				<string>Firefox.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.15.0</string>
-		<key>name</key>
-		<string>Firefox</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>159.0.1</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Mozilla Firefox is a free and open source web browser.</string>
-		<key>display_name</key>
-		<string>Mozilla Firefox</string>
-		<key>installer_item_hash</key>
 		<string>b270ccc60eb899bd0277bd078d7bd8690f5c4fc3e44b4fa9ee78ed2a3e89f0ca</string>
 		<key>installer_item_location</key>
 		<string>apps/firefox/Firefox-160.0.dmg</string>
@@ -37583,72 +37519,6 @@ fi
 		<key>display_name</key>
 		<string>Claude</string>
 		<key>installer_item_hash</key>
-		<string>90e99b0f73fc0fbdbbd926603fe161c2660b46328545bf5cf5da9fa2e2f7fe92</string>
-		<key>installer_item_location</key>
-		<string>apps/Claude/Claude-4.23118.0.dmg</string>
-		<key>installer_item_size</key>
-		<integer>387228</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.anthropic.claudefordesktop</string>
-				<key>CFBundleName</key>
-				<string>Claude</string>
-				<key>CFBundleShortVersionString</key>
-				<string>4.23118.0</string>
-				<key>CFBundleVersion</key>
-				<string>4.23118.0</string>
-				<key>minosversion</key>
-				<string>13.0</string>
-				<key>path</key>
-				<string>/Applications/Claude.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Claude.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>13.0</string>
-		<key>name</key>
-		<string>Claude</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>4.23118.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Your AI partner on desktop. Fast, focused, and designed for deep work.</string>
-		<key>developer</key>
-		<string>Anthropic PBC</string>
-		<key>display_name</key>
-		<string>Claude</string>
-		<key>installer_item_hash</key>
 		<string>7df9f675f1a8ce80b78187c53926581d589bf61c1ccaae9a749798f08ee66d05</string>
 		<key>installer_item_location</key>
 		<string>apps/Claude/Claude-5.1231.0.dmg</string>
@@ -37700,6 +37570,72 @@ fi
 		<true/>
 		<key>version</key>
 		<string>5.1231.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Your AI partner on desktop. Fast, focused, and designed for deep work.</string>
+		<key>developer</key>
+		<string>Anthropic PBC</string>
+		<key>display_name</key>
+		<string>Claude</string>
+		<key>installer_item_hash</key>
+		<string>eda18b8d79f7263624f6f82cd14e3892caedf8aea06194b857efbc4177db3822</string>
+		<key>installer_item_location</key>
+		<string>apps/Claude/Claude-5.1231.2.dmg</string>
+		<key>installer_item_size</key>
+		<integer>383391</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.anthropic.claudefordesktop</string>
+				<key>CFBundleName</key>
+				<string>Claude</string>
+				<key>CFBundleShortVersionString</key>
+				<string>5.1231.2</string>
+				<key>CFBundleVersion</key>
+				<string>5.1231.2</string>
+				<key>minosversion</key>
+				<string>13.0</string>
+				<key>path</key>
+				<string>/Applications/Claude.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Claude.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0</string>
+		<key>name</key>
+		<string>Claude</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>5.1231.2</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -40572,72 +40508,6 @@ fi
 		<true/>
 		<key>version</key>
 		<string>2.7.0.48109</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Browsers</string>
-		<key>description</key>
-		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
-		<key>developer</key>
-		<string>Brave Software Inc.</string>
-		<key>display_name</key>
-		<string>Brave Browser</string>
-		<key>installer_item_hash</key>
-		<string>e90561d36908c1c1dd7ebd072c019f11e17ead42d4d2c6712a45f9dbe57f91b9</string>
-		<key>installer_item_location</key>
-		<string>apps/Brave/Brave-157.1.99.55.dmg</string>
-		<key>installer_item_size</key>
-		<integer>334405</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.brave.Browser</string>
-				<key>CFBundleName</key>
-				<string>Brave</string>
-				<key>CFBundleShortVersionString</key>
-				<string>157.1.99.55</string>
-				<key>CFBundleVersion</key>
-				<string>199.55</string>
-				<key>minosversion</key>
-				<string>13.0</string>
-				<key>path</key>
-				<string>/Applications/Brave Browser.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Brave Browser.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>13.0</string>
-		<key>name</key>
-		<string>Brave</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>157.1.99.55</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -74037,6 +73907,70 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>8.27.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string> </string>
+		<key>developer</key>
+		<string>RIDDLE QUIET VENTURES, LLC</string>
+		<key>display_name</key>
+		<string>Signal Desktop</string>
+		<key>installer_item_hash</key>
+		<string>2745ae6a735bb39cb35a5761b98faaea011ace66cf28bbe5f9cbbb2a73cc6804</string>
+		<key>installer_item_location</key>
+		<string>apps/Signal/signal-desktop-mac-universal-8.35.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>264884</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>org.whispersystems.signal-desktop</string>
+				<key>CFBundleName</key>
+				<string>Signal</string>
+				<key>CFBundleShortVersionString</key>
+				<string>8.35.0</string>
+				<key>CFBundleVersion</key>
+				<string>1</string>
+				<key>minosversion</key>
+				<string>13.0</string>
+				<key>path</key>
+				<string>/Applications/Signal.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Signal.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0</string>
+		<key>name</key>
+		<string>Signal_Desktop</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>8.35.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
