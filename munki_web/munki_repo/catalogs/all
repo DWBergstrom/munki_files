@@ -45529,6 +45529,135 @@ fi
 	<dict>
 		<key>autoremove</key>
 		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Productivity</string>
+		<key>description</key>
+		<string>Microsoft Edge web browser</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Microsoft Edge</string>
+		<key>installed_size</key>
+		<integer>961357</integer>
+		<key>installer_item_hash</key>
+		<string>d2791ba64c1c40332fdd6b21e26a5b58cc2ce002f4b9dc5dd6445ab500ce2798</string>
+		<key>installer_item_location</key>
+		<string>apps/Microsoft/Microsoft_Edge-157.0.4341.57.pkg</string>
+		<key>installer_item_size</key>
+		<integer>427955</integer>
+		<key>minimum_os_version</key>
+		<string>10.10.0</string>
+		<key>name</key>
+		<string>MicrosoftEdge</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>961357</integer>
+				<key>packageid</key>
+				<string>com.microsoft.edgemac</string>
+				<key>version</key>
+				<string>157.0.4341.57</string>
+			</dict>
+		</array>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>157.0.4341.57</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>Microsoft Remote Desktop</string>
+			<string>Windows App</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>utilities</string>
+		</array>
+		<key>category</key>
+		<string>Utility</string>
+		<key>description</key>
+		<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
+</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Windows App</string>
+		<key>installed_size</key>
+		<integer>255019</integer>
+		<key>installer_item_hash</key>
+		<string>70041210ec1c40cbcc1913010fb9a7de7e2b0c8d9f336777775789ae65bc9cab</string>
+		<key>installer_item_location</key>
+		<string>apps/microsoft/Microsoft_Windows_App-11.4.4.pkg</string>
+		<key>installer_item_size</key>
+		<integer>103944</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.microsoft.rdc.macos</string>
+				<key>CFBundleName</key>
+				<string>Windows App</string>
+				<key>CFBundleShortVersionString</key>
+				<string>11.4.4</string>
+				<key>CFBundleVersion</key>
+				<string>3132</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/Windows App.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.0</string>
+		<key>name</key>
+		<string>WindowsApp</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>244288</integer>
+				<key>packageid</key>
+				<string>com.microsoft.rdc.macos</string>
+				<key>version</key>
+				<string>11.4.4</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>10731</integer>
+				<key>packageid</key>
+				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
+				<key>version</key>
+				<string>4.81.25121042</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>11.4.4</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
 		<key>blocking_applications</key>
 		<array>
 			<string>Microsoft Remote Desktop</string>
@@ -46852,72 +46981,6 @@ fi
 		<key>display_name</key>
 		<string>Claude</string>
 		<key>installer_item_hash</key>
-		<string>7df9f675f1a8ce80b78187c53926581d589bf61c1ccaae9a749798f08ee66d05</string>
-		<key>installer_item_location</key>
-		<string>apps/Claude/Claude-5.1231.0.dmg</string>
-		<key>installer_item_size</key>
-		<integer>383310</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.anthropic.claudefordesktop</string>
-				<key>CFBundleName</key>
-				<string>Claude</string>
-				<key>CFBundleShortVersionString</key>
-				<string>5.1231.0</string>
-				<key>CFBundleVersion</key>
-				<string>5.1231.0</string>
-				<key>minosversion</key>
-				<string>13.0</string>
-				<key>path</key>
-				<string>/Applications/Claude.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Claude.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>13.0</string>
-		<key>name</key>
-		<string>Claude</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>5.1231.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Your AI partner on desktop. Fast, focused, and designed for deep work.</string>
-		<key>developer</key>
-		<string>Anthropic PBC</string>
-		<key>display_name</key>
-		<string>Claude</string>
-		<key>installer_item_hash</key>
 		<string>eda18b8d79f7263624f6f82cd14e3892caedf8aea06194b857efbc4177db3822</string>
 		<key>installer_item_location</key>
 		<string>apps/Claude/Claude-5.1231.2.dmg</string>
@@ -47035,6 +47098,72 @@ fi
 		<true/>
 		<key>version</key>
 		<string>1.46388.4</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Your AI partner on desktop. Fast, focused, and designed for deep work.</string>
+		<key>developer</key>
+		<string>Anthropic PBC</string>
+		<key>display_name</key>
+		<string>Claude</string>
+		<key>installer_item_hash</key>
+		<string>1e860a6d63a36e0e2f0625f38af2d0c035ed2a30da0fbba32d70024980808032</string>
+		<key>installer_item_location</key>
+		<string>apps/Claude/Claude-5.11492.2.dmg</string>
+		<key>installer_item_size</key>
+		<integer>385163</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.anthropic.claudefordesktop</string>
+				<key>CFBundleName</key>
+				<string>Claude</string>
+				<key>CFBundleShortVersionString</key>
+				<string>5.11492.2</string>
+				<key>CFBundleVersion</key>
+				<string>5.11492.2</string>
+				<key>minosversion</key>
+				<string>13.0</string>
+				<key>path</key>
+				<string>/Applications/Claude.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Claude.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0</string>
+		<key>name</key>
+		<string>Claude</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>5.11492.2</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -49841,6 +49970,72 @@ fi
 		<true/>
 		<key>version</key>
 		<string>2.7.0.48109</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Browsers</string>
+		<key>description</key>
+		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
+		<key>developer</key>
+		<string>Brave Software Inc.</string>
+		<key>display_name</key>
+		<string>Brave Browser</string>
+		<key>installer_item_hash</key>
+		<string>be8bb3332e45359c96219ae67102eb1d9a88ff1ef8906e6709efc5790705449b</string>
+		<key>installer_item_location</key>
+		<string>apps/Brave/Brave-157.1.99.57.dmg</string>
+		<key>installer_item_size</key>
+		<integer>334429</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.brave.Browser</string>
+				<key>CFBundleName</key>
+				<string>Brave</string>
+				<key>CFBundleShortVersionString</key>
+				<string>157.1.99.57</string>
+				<key>CFBundleVersion</key>
+				<string>199.57</string>
+				<key>minosversion</key>
+				<string>13.0</string>
+				<key>path</key>
+				<string>/Applications/Brave Browser.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Brave Browser.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0</string>
+		<key>name</key>
+		<string>Brave</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>157.1.99.57</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -66304,6 +66499,74 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 			<string>testing</string>
 		</array>
 		<key>description</key>
+		<string>Supercharged productivity
+
+Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
+		<key>developer</key>
+		<string>Raycast Technologies Inc</string>
+		<key>display_name</key>
+		<string>Raycast</string>
+		<key>installer_item_hash</key>
+		<string>439e4b1b4c4373788894e08d573bf1197f3ce5f14b3a74a7da4cde748c277bab</string>
+		<key>installer_item_location</key>
+		<string>apps/Raycast/Raycast-2.12.0.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>151505</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.raycast.macos</string>
+				<key>CFBundleName</key>
+				<string>Raycast</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2.12.0.0</string>
+				<key>CFBundleVersion</key>
+				<string>0</string>
+				<key>minosversion</key>
+				<string>26.0</string>
+				<key>path</key>
+				<string>/Applications/Raycast.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Raycast.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>26.0</string>
+		<key>name</key>
+		<string>Raycast</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2.12.0.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
 		<string>Little Snitch is a host-based application firewall for macOS.</string>
 		<key>developer</key>
 		<string>Objective Development</string>
@@ -67125,6 +67388,68 @@ rm -rf /Applications/zoom.us.app
 		<true/>
 		<key>version</key>
 		<string>0.2026.11.04.08.17.01</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Fast Terminal app based in Rust.</string>
+		<key>developer</key>
+		<string>Denver Technologies</string>
+		<key>display_name</key>
+		<string>Warp</string>
+		<key>force_munkiimport</key>
+		<true/>
+		<key>installer_item_hash</key>
+		<string>8767bc168e167bfb43f7a5d3a66dc19eb576edab22fd8c6a909fa4f152fd85cb</string>
+		<key>installer_item_location</key>
+		<string>apps/Warp/Warp-0.2026.11.11.08.17.01.dmg</string>
+		<key>installer_item_size</key>
+		<integer>334207</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>dev.warp.Warp-Stable</string>
+				<key>CFBundleName</key>
+				<string>Warp</string>
+				<key>CFBundleShortVersionString</key>
+				<string>0.2026.11.11.08.17.01</string>
+				<key>CFBundleVersion</key>
+				<string>0.2026.11.11.08.17.01</string>
+				<key>path</key>
+				<string>/Applications/Warp.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Warp.app</string>
+			</dict>
+		</array>
+		<key>name</key>
+		<string>Warp</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>0.2026.11.11.08.17.01</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -83304,70 +83629,6 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>8.35.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>RIDDLE QUIET VENTURES, LLC</string>
-		<key>display_name</key>
-		<string>Signal Desktop</string>
-		<key>installer_item_hash</key>
-		<string>182eefb94bd12c15c176fe23995a228964fe65c2e19ec80f269803c100c9a182</string>
-		<key>installer_item_location</key>
-		<string>apps/Signal/signal-desktop-mac-universal-8.34.0.dmg</string>
-		<key>installer_item_size</key>
-		<integer>264747</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.whispersystems.signal-desktop</string>
-				<key>CFBundleName</key>
-				<string>Signal</string>
-				<key>CFBundleShortVersionString</key>
-				<string>8.34.0</string>
-				<key>CFBundleVersion</key>
-				<string>1</string>
-				<key>minosversion</key>
-				<string>13.0</string>
-				<key>path</key>
-				<string>/Applications/Signal.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Signal.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>13.0</string>
-		<key>name</key>
-		<string>Signal_Desktop</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>8.34.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
