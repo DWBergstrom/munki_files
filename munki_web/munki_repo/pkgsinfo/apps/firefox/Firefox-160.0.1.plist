@@ -7,11 +7,11 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-10-17T04:59:38Z</date>
+		<date>2026-11-18T05:54:42Z</date>
 		<key>munki_version</key>
-		<string>7.0.0.5328</string>
+		<string>7.3.0.5808</string>
 		<key>os_version</key>
-		<string>26.5.2</string>
+		<string>27.2</string>
 	</dict>
 	<key>autoremove</key>
 	<false/>
@@ -20,34 +20,32 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Virtual machines for iOS and macOS</string>
-	<key>developer</key>
-	<string>Turing Software, LLC</string>
+	<string>Mozilla Firefox is a free and open source web browser.</string>
 	<key>display_name</key>
-	<string>UTM</string>
+	<string>Mozilla Firefox</string>
 	<key>installer_item_hash</key>
-	<string>7b2d7b2e2a02b3de1757ef19a8f36573e6d9cceae8c8cca0abcbcaa4a852019a</string>
+	<string>db9a522291d82cbe9a2b2922822def4db0a79d4fa3e614979039d705b13b1c25</string>
 	<key>installer_item_location</key>
-	<string>apps/UTM/UTM-5.0.8.dmg</string>
+	<string>apps/firefox/Firefox-160.0.1.dmg</string>
 	<key>installer_item_size</key>
-	<integer>297172</integer>
+	<integer>161876</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.utmapp.UTM</string>
+			<string>org.mozilla.firefox</string>
 			<key>CFBundleName</key>
-			<string>UTM</string>
+			<string>Firefox</string>
 			<key>CFBundleShortVersionString</key>
-			<string>5.0.8</string>
+			<string>160.0.1</string>
 			<key>CFBundleVersion</key>
-			<string>128</string>
+			<string>16026.11.16</string>
 			<key>minosversion</key>
-			<string>12.0</string>
+			<string>10.15.0</string>
 			<key>path</key>
-			<string>/Applications/UTM.app</string>
+			<string>/Applications/Firefox.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -59,14 +57,16 @@
 		<dict>
 			<key>destination_path</key>
 			<string>/Applications</string>
+			<key>mode</key>
+			<string>ug+w,o-w</string>
 			<key>source_item</key>
-			<string>UTM.app</string>
+			<string>Firefox.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>12.0</string>
+	<string>10.15.0</string>
 	<key>name</key>
-	<string>UTM</string>
+	<string>Firefox</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -74,6 +74,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>5.0.8</string>
+	<string>160.0.1</string>
 </dict>
 </plist>
