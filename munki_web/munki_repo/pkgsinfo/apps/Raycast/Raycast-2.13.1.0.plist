@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-11-14T05:53:31Z</date>
+		<date>2026-11-19T05:58:09Z</date>
 		<key>munki_version</key>
 		<string>7.3.0.5808</string>
 		<key>os_version</key>
@@ -20,34 +20,36 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Your AI partner on desktop. Fast, focused, and designed for deep work.</string>
+	<string>Supercharged productivity
+
+Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
 	<key>developer</key>
-	<string>Anthropic PBC</string>
+	<string>Raycast Technologies Inc</string>
 	<key>display_name</key>
-	<string>Claude</string>
+	<string>Raycast</string>
 	<key>installer_item_hash</key>
-	<string>212f2bc2efdabf55524ef817faa842a86d70f900d45a04dec0c4c9abe8857208</string>
+	<string>e62777491febe5bfadf461d3f9a1ce761c2e661e635bc13e6921a16d75660c77</string>
 	<key>installer_item_location</key>
-	<string>apps/Claude/Claude-5.11492.5.dmg</string>
+	<string>apps/Raycast/Raycast-2.13.1.0.dmg</string>
 	<key>installer_item_size</key>
-	<integer>385232</integer>
+	<integer>154336</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.anthropic.claudefordesktop</string>
+			<string>com.raycast.macos</string>
 			<key>CFBundleName</key>
-			<string>Claude</string>
+			<string>Raycast</string>
 			<key>CFBundleShortVersionString</key>
-			<string>5.11492.5</string>
+			<string>2.13.1.0</string>
 			<key>CFBundleVersion</key>
-			<string>5.11492.5</string>
+			<string>0</string>
 			<key>minosversion</key>
-			<string>13.0</string>
+			<string>26.0</string>
 			<key>path</key>
-			<string>/Applications/Claude.app</string>
+			<string>/Applications/Raycast.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,13 +62,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Claude.app</string>
+			<string>Raycast.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>13.0</string>
+	<string>26.0</string>
 	<key>name</key>
-	<string>Claude</string>
+	<string>Raycast</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>unattended_uninstall</key>
@@ -76,6 +78,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>5.11492.5</string>
+	<string>2.13.1.0</string>
 </dict>
 </plist>
