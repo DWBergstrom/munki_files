@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-11-14T05:58:03Z</date>
+		<date>2026-11-20T05:53:26Z</date>
 		<key>munki_version</key>
 		<string>7.3.0.5808</string>
 		<key>os_version</key>
@@ -20,36 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Supercharged productivity
-
-Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
+	<string>Your AI partner on desktop. Fast, focused, and designed for deep work.</string>
 	<key>developer</key>
-	<string>Raycast Technologies Inc</string>
+	<string>Anthropic PBC</string>
 	<key>display_name</key>
-	<string>Raycast</string>
+	<string>Claude</string>
 	<key>installer_item_hash</key>
-	<string>8d306491c4c76fc0312701254996041e00f6b6587c66714c632d64dbfe9e8096</string>
+	<string>88996ea810717c86d4458cdb58da09dc9d9243c40d9efecf6f5514769c0cdfd7</string>
 	<key>installer_item_location</key>
-	<string>apps/Raycast/Raycast-2.12.1.0.dmg</string>
+	<string>apps/Claude/Claude-6.28899.2.dmg</string>
 	<key>installer_item_size</key>
-	<integer>151583</integer>
+	<integer>400127</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.raycast.macos</string>
+			<string>com.anthropic.claudefordesktop</string>
 			<key>CFBundleName</key>
-			<string>Raycast</string>
+			<string>Claude</string>
 			<key>CFBundleShortVersionString</key>
-			<string>2.12.1.0</string>
+			<string>6.28899.2</string>
 			<key>CFBundleVersion</key>
-			<string>0</string>
+			<string>6.28899.2</string>
 			<key>minosversion</key>
-			<string>26.0</string>
+			<string>13.0</string>
 			<key>path</key>
-			<string>/Applications/Raycast.app</string>
+			<string>/Applications/Claude.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -62,13 +60,13 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Raycast.app</string>
+			<string>Claude.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>26.0</string>
+	<string>13.0</string>
 	<key>name</key>
-	<string>Raycast</string>
+	<string>Claude</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>unattended_uninstall</key>
@@ -78,6 +76,6 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>2.12.1.0</string>
+	<string>6.28899.2</string>
 </dict>
 </plist>
