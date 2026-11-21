@@ -43899,72 +43899,6 @@ fi
 		<key>display_name</key>
 		<string>iMazing Profile Editor</string>
 		<key>installer_item_hash</key>
-		<string>bfa086853d672dc08e8c514684680b93e6f86b1da1467482ec45afc563355a45</string>
-		<key>installer_item_location</key>
-		<string>apps/imazingprofileeditor/iMazing_Profile_Editor_2.3.2.410103-2.3.2.dmg</string>
-		<key>installer_item_size</key>
-		<integer>30545</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.DigiDNA.iMazingProfileEditorMac</string>
-				<key>CFBundleName</key>
-				<string>iMazing Profile Editor</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2.3.2</string>
-				<key>CFBundleVersion</key>
-				<string>410103</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/iMazing Profile Editor.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>iMazing Profile Editor.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>iMazingProfileEditor</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2.3.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Utilities</string>
-		<key>description</key>
-		<string>iMazing Profile Editor lets users create, modify, and also digitally sign configuration profiles with a friendly user interface instead of manually coding them in XML.</string>
-		<key>developer</key>
-		<string>DigiDNA SARL</string>
-		<key>display_name</key>
-		<string>iMazing Profile Editor</string>
-		<key>installer_item_hash</key>
 		<string>e870b87dfc66a491814b969cbbe818a62f51d68e09263ca5a315e5400362b487</string>
 		<key>installer_item_location</key>
 		<string>apps/imazingprofileeditor/iMazing_Profile_Editor_2.2.1.393403-2.2.1__2.dmg</string>
@@ -46690,51 +46624,6 @@ fi
 	<dict>
 		<key>autoremove</key>
 		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Productivity</string>
-		<key>description</key>
-		<string>Microsoft Edge web browser</string>
-		<key>developer</key>
-		<string>Microsoft</string>
-		<key>display_name</key>
-		<string>Microsoft Edge</string>
-		<key>installed_size</key>
-		<integer>961357</integer>
-		<key>installer_item_hash</key>
-		<string>01a3976ac110c8c408d86650c0342056ce1cfc5097bcfbafdd42af797eb69ad3</string>
-		<key>installer_item_location</key>
-		<string>apps/Microsoft/Microsoft_Edge-157.0.4341.60.pkg</string>
-		<key>installer_item_size</key>
-		<integer>427951</integer>
-		<key>minimum_os_version</key>
-		<string>10.10.0</string>
-		<key>name</key>
-		<string>MicrosoftEdge</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>961357</integer>
-				<key>packageid</key>
-				<string>com.microsoft.edgemac</string>
-				<key>version</key>
-				<string>157.0.4341.60</string>
-			</dict>
-		</array>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>157.0.4341.60</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
 		<key>blocking_applications</key>
 		<array>
 			<string>Microsoft Remote Desktop</string>
@@ -46900,6 +46789,90 @@ fi
 		<true/>
 		<key>version</key>
 		<string>11.4.4</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>Microsoft Remote Desktop</string>
+			<string>Windows App</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>utilities</string>
+		</array>
+		<key>category</key>
+		<string>Utility</string>
+		<key>description</key>
+		<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
+</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Windows App</string>
+		<key>installed_size</key>
+		<integer>257202</integer>
+		<key>installer_item_hash</key>
+		<string>bc7ed3e01cc207c095fdaac8adf328d4d92f47c43ba980a9d5850ddab44688ba</string>
+		<key>installer_item_location</key>
+		<string>apps/microsoft/Microsoft_Windows_App-11.4.5.pkg</string>
+		<key>installer_item_size</key>
+		<integer>104590</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.microsoft.rdc.macos</string>
+				<key>CFBundleName</key>
+				<string>Windows App</string>
+				<key>CFBundleShortVersionString</key>
+				<string>11.4.5</string>
+				<key>CFBundleVersion</key>
+				<string>3151</string>
+				<key>minosversion</key>
+				<string>15.0</string>
+				<key>path</key>
+				<string>/Applications/Windows App.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>15.0</string>
+		<key>name</key>
+		<string>WindowsApp</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>246471</integer>
+				<key>packageid</key>
+				<string>com.microsoft.rdc.macos</string>
+				<key>version</key>
+				<string>11.4.5</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>10731</integer>
+				<key>packageid</key>
+				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
+				<key>version</key>
+				<string>4.81.25121042</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>11.4.5</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -47701,11 +47674,11 @@ fi
 		<key>display_name</key>
 		<string>Claude</string>
 		<key>installer_item_hash</key>
-		<string>c66453a02de641fe3720f9e535cd4d225b61081204d5f80b069e312424f01cc2</string>
+		<string>168640ac30ef49660a2c2fd47a8704ffe015341b33d31239864ca579b3f674d1</string>
 		<key>installer_item_location</key>
-		<string>apps/Claude/Claude-6.6395.1.dmg</string>
+		<string>apps/Claude/Claude-6.28899.6.dmg</string>
 		<key>installer_item_size</key>
-		<integer>394492</integer>
+		<integer>400026</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -47716,9 +47689,9 @@ fi
 				<key>CFBundleName</key>
 				<string>Claude</string>
 				<key>CFBundleShortVersionString</key>
-				<string>6.6395.1</string>
+				<string>6.28899.6</string>
 				<key>CFBundleVersion</key>
-				<string>6.6395.1</string>
+				<string>6.28899.6</string>
 				<key>minosversion</key>
 				<string>13.0</string>
 				<key>path</key>
@@ -47751,7 +47724,7 @@ fi
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>6.6395.1</string>
+		<string>6.28899.6</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -67863,68 +67836,6 @@ rm -rf /Applications/zoom.us.app
 		<key>force_munkiimport</key>
 		<true/>
 		<key>installer_item_hash</key>
-		<string>8767bc168e167bfb43f7a5d3a66dc19eb576edab22fd8c6a909fa4f152fd85cb</string>
-		<key>installer_item_location</key>
-		<string>apps/Warp/Warp-0.2026.11.11.08.17.01.dmg</string>
-		<key>installer_item_size</key>
-		<integer>334207</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>dev.warp.Warp-Stable</string>
-				<key>CFBundleName</key>
-				<string>Warp</string>
-				<key>CFBundleShortVersionString</key>
-				<string>0.2026.11.11.08.17.01</string>
-				<key>CFBundleVersion</key>
-				<string>0.2026.11.11.08.17.01</string>
-				<key>path</key>
-				<string>/Applications/Warp.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Warp.app</string>
-			</dict>
-		</array>
-		<key>name</key>
-		<string>Warp</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>0.2026.11.11.08.17.01</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Fast Terminal app based in Rust.</string>
-		<key>developer</key>
-		<string>Denver Technologies</string>
-		<key>display_name</key>
-		<string>Warp</string>
-		<key>force_munkiimport</key>
-		<true/>
-		<key>installer_item_hash</key>
 		<string>56a886203ce823e391abd1b5e5e2e1b6f04e7bb760726270eb80252cc1a745c2</string>
 		<key>installer_item_location</key>
 		<string>apps/Warp/Warp-0.2026.11.18.08.17.01.dmg</string>
@@ -68034,6 +67945,68 @@ rm -rf /Applications/zoom.us.app
 		<true/>
 		<key>version</key>
 		<string>20240926.162135</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Fast Terminal app based in Rust.</string>
+		<key>developer</key>
+		<string>Denver Technologies</string>
+		<key>display_name</key>
+		<string>Warp</string>
+		<key>force_munkiimport</key>
+		<true/>
+		<key>installer_item_hash</key>
+		<string>ff5127346cb10c63b499ad177f2c3916848234001cebe23420b53f0313131969</string>
+		<key>installer_item_location</key>
+		<string>apps/Warp/Warp-0.2026.11.18.08.17.04.dmg</string>
+		<key>installer_item_size</key>
+		<integer>335030</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>dev.warp.Warp-Stable</string>
+				<key>CFBundleName</key>
+				<string>Warp</string>
+				<key>CFBundleShortVersionString</key>
+				<string>0.2026.11.18.08.17.04</string>
+				<key>CFBundleVersion</key>
+				<string>0.2026.11.18.08.17.04</string>
+				<key>path</key>
+				<string>/Applications/Warp.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Warp.app</string>
+			</dict>
+		</array>
+		<key>name</key>
+		<string>Warp</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>0.2026.11.18.08.17.04</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -81186,6 +81159,84 @@ rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
 		<key>display_name</key>
 		<string>Ollama</string>
 		<key>installer_item_hash</key>
+		<string>49101c6329ec00efdf3c2ab0aec855736e80262e03ae9c06ed77925d93c50c18</string>
+		<key>installer_item_location</key>
+		<string>apps/Ollama/Ollama-0.40.17.dmg</string>
+		<key>installer_item_size</key>
+		<integer>229875</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.electron.ollama</string>
+				<key>CFBundleName</key>
+				<string>Ollama</string>
+				<key>CFBundleShortVersionString</key>
+				<string>0.40.17</string>
+				<key>CFBundleVersion</key>
+				<string>0.40.17</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/Ollama.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Ollama.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.0</string>
+		<key>name</key>
+		<string>Ollama</string>
+		<key>postinstall_script</key>
+		<string>#!/bin/bash
+
+# Script built from: https://github.com/ollama/ollama/issues/851#issuecomment-1889808636
+# Please note admin rights are still needed as the file that records whether first time run has completed is located in the Users home folder. see https://github.com/ollama/ollama/issues/6814
+
+# Install Command Line Tools
+if ! [ -f /usr/local/bin/ollama ]; then
+  /usr/bin/touch /usr/local/bin/ollama ; /bin/ln -s -f /Applications/Ollama.app/Contents/Resources/ollama /usr/local/bin/ollama
+fi
+
+exit</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>0.40.17</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models.</string>
+		<key>developer</key>
+		<string>Infra Technologies, Inc</string>
+		<key>display_name</key>
+		<string>Ollama</string>
+		<key>installer_item_hash</key>
 		<string>60d09e9494afec5d69eff0671c6f56868b3065bd2f547c1d23551ca4c07f7546</string>
 		<key>installer_item_location</key>
 		<string>apps/Ollama/Ollama-0.40.16.dmg</string>
@@ -84149,70 +84200,6 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>8.27.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>RIDDLE QUIET VENTURES, LLC</string>
-		<key>display_name</key>
-		<string>Signal Desktop</string>
-		<key>installer_item_hash</key>
-		<string>2745ae6a735bb39cb35a5761b98faaea011ace66cf28bbe5f9cbbb2a73cc6804</string>
-		<key>installer_item_location</key>
-		<string>apps/Signal/signal-desktop-mac-universal-8.35.0.dmg</string>
-		<key>installer_item_size</key>
-		<integer>264884</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.whispersystems.signal-desktop</string>
-				<key>CFBundleName</key>
-				<string>Signal</string>
-				<key>CFBundleShortVersionString</key>
-				<string>8.35.0</string>
-				<key>CFBundleVersion</key>
-				<string>1</string>
-				<key>minosversion</key>
-				<string>13.0</string>
-				<key>path</key>
-				<string>/Applications/Signal.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Signal.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>13.0</string>
-		<key>name</key>
-		<string>Signal_Desktop</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>8.35.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -88104,51 +88091,6 @@ exit</string>
 		<key>display_name</key>
 		<string>GarageBand</string>
 		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__10.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
 		<integer>4181114</integer>
 		<key>installer_item_hash</key>
 		<string>e5e2adb7bc0ca1bc71436f2e5921e0174e04f3e4c5e9438e081fbefc8befc724</string>
@@ -88239,51 +88181,6 @@ exit</string>
 		<key>display_name</key>
 		<string>GarageBand</string>
 		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__12.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
 		<integer>4181114</integer>
 		<key>installer_item_hash</key>
 		<string>e5e2adb7bc0ca1bc71436f2e5921e0174e04f3e4c5e9438e081fbefc8befc724</string>
@@ -88329,96 +88226,6 @@ exit</string>
 		<key>display_name</key>
 		<string>GarageBand</string>
 		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__32.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__8.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
 		<integer>4181114</integer>
 		<key>installer_item_hash</key>
 		<string>e5e2adb7bc0ca1bc71436f2e5921e0174e04f3e4c5e9438e081fbefc8befc724</string>
@@ -88449,51 +88256,6 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>10.4.13</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__16.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -88599,96 +88361,6 @@ exit</string>
 		<key>display_name</key>
 		<string>GarageBand</string>
 		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__29.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__14.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
 		<integer>4181114</integer>
 		<key>installer_item_hash</key>
 		<string>e5e2adb7bc0ca1bc71436f2e5921e0174e04f3e4c5e9438e081fbefc8befc724</string>
@@ -88734,51 +88406,6 @@ exit</string>
 		<key>display_name</key>
 		<string>GarageBand</string>
 		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__30.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
 		<integer>4181114</integer>
 		<key>installer_item_hash</key>
 		<string>e5e2adb7bc0ca1bc71436f2e5921e0174e04f3e4c5e9438e081fbefc8befc724</string>
@@ -88809,51 +88436,6 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>10.4.13</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__13.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -89049,51 +88631,6 @@ exit</string>
 		<key>display_name</key>
 		<string>GarageBand</string>
 		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__11.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
 		<integer>4181114</integer>
 		<key>installer_item_hash</key>
 		<string>e5e2adb7bc0ca1bc71436f2e5921e0174e04f3e4c5e9438e081fbefc8befc724</string>
@@ -89229,96 +88766,6 @@ exit</string>
 		<key>display_name</key>
 		<string>GarageBand</string>
 		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__15.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__28.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
 		<integer>4181114</integer>
 		<key>installer_item_hash</key>
 		<string>e5e2adb7bc0ca1bc71436f2e5921e0174e04f3e4c5e9438e081fbefc8befc724</string>
@@ -89349,51 +88796,6 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>10.4.13</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__31.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -89454,96 +88856,6 @@ exit</string>
 		<key>display_name</key>
 		<string>GarageBand</string>
 		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__9.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
 		<integer>4181114</integer>
 		<key>installer_item_hash</key>
 		<string>e5e2adb7bc0ca1bc71436f2e5921e0174e04f3e4c5e9438e081fbefc8befc724</string>
@@ -89589,96 +88901,6 @@ exit</string>
 		<key>display_name</key>
 		<string>GarageBand</string>
 		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__17.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__26.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
 		<integer>4181114</integer>
 		<key>installer_item_hash</key>
 		<string>e5e2adb7bc0ca1bc71436f2e5921e0174e04f3e4c5e9438e081fbefc8befc724</string>
@@ -89709,141 +88931,6 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>10.4.13</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__5.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__7.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__24.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -89949,51 +89036,6 @@ exit</string>
 		<key>display_name</key>
 		<string>GarageBand</string>
 		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__19.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
 		<integer>4181114</integer>
 		<key>installer_item_hash</key>
 		<string>e5e2adb7bc0ca1bc71436f2e5921e0174e04f3e4c5e9438e081fbefc8befc724</string>
@@ -90024,51 +89066,6 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>10.4.13</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__20.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -90174,96 +89171,6 @@ exit</string>
 		<key>display_name</key>
 		<string>GarageBand</string>
 		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__3.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__1.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
 		<integer>4181114</integer>
 		<key>installer_item_hash</key>
 		<string>e5e2adb7bc0ca1bc71436f2e5921e0174e04f3e4c5e9438e081fbefc8befc724</string>
@@ -90339,141 +89246,6 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>10.4.13</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__22.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__6.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__18.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -90579,51 +89351,6 @@ exit</string>
 		<key>display_name</key>
 		<string>GarageBand</string>
 		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__25.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
 		<integer>4181114</integer>
 		<key>installer_item_hash</key>
 		<string>e5e2adb7bc0ca1bc71436f2e5921e0174e04f3e4c5e9438e081fbefc8befc724</string>
@@ -90669,51 +89396,6 @@ exit</string>
 		<key>display_name</key>
 		<string>GarageBand</string>
 		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__27.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
 		<integer>4181114</integer>
 		<key>installer_item_hash</key>
 		<string>e5e2adb7bc0ca1bc71436f2e5921e0174e04f3e4c5e9438e081fbefc8befc724</string>
@@ -90744,96 +89426,6 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>10.4.13</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__4.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__23.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -91029,51 +89621,6 @@ exit</string>
 		<key>display_name</key>
 		<string>GarageBand</string>
 		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__21.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
 		<integer>4181114</integer>
 		<key>installer_item_hash</key>
 		<string>e5e2adb7bc0ca1bc71436f2e5921e0174e04f3e4c5e9438e081fbefc8befc724</string>
@@ -91104,51 +89651,6 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>10.4.13</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string> </string>
-		<key>developer</key>
-		<string>Apple</string>
-		<key>display_name</key>
-		<string>GarageBand</string>
-		<key>installed_size</key>
-		<integer>4065465</integer>
-		<key>installer_item_hash</key>
-		<string>9e0744d9cb7a69b05c2d9a219d0d600fa09d64cd2f97f1ace68d5770c6b37a52</string>
-		<key>installer_item_location</key>
-		<string>apps/GarageBand/GarageBand-10.4.14__2.pkg</string>
-		<key>installer_item_size</key>
-		<integer>2973667</integer>
-		<key>minimum_os_version</key>
-		<string>15.6</string>
-		<key>name</key>
-		<string>GarageBand</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>4065465</integer>
-				<key>packageid</key>
-				<string>com.apple.garageband10</string>
-				<key>version</key>
-				<string>10.4.14</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.4.14</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>

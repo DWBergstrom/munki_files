@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-11-12T05:58:34Z</date>
+		<date>2026-11-21T06:00:15Z</date>
 		<key>munki_version</key>
 		<string>7.3.0.5808</string>
 		<key>os_version</key>
@@ -20,34 +20,34 @@
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string> </string>
+	<string>Fast Terminal app based in Rust.</string>
 	<key>developer</key>
-	<string>RIDDLE QUIET VENTURES, LLC</string>
+	<string>Denver Technologies</string>
 	<key>display_name</key>
-	<string>Signal Desktop</string>
+	<string>Warp</string>
+	<key>force_munkiimport</key>
+	<true/>
 	<key>installer_item_hash</key>
-	<string>2745ae6a735bb39cb35a5761b98faaea011ace66cf28bbe5f9cbbb2a73cc6804</string>
+	<string>ff5127346cb10c63b499ad177f2c3916848234001cebe23420b53f0313131969</string>
 	<key>installer_item_location</key>
-	<string>apps/Signal/signal-desktop-mac-universal-8.35.0.dmg</string>
+	<string>apps/Warp/Warp-0.2026.11.18.08.17.04.dmg</string>
 	<key>installer_item_size</key>
-	<integer>264884</integer>
+	<integer>335030</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>org.whispersystems.signal-desktop</string>
+			<string>dev.warp.Warp-Stable</string>
 			<key>CFBundleName</key>
-			<string>Signal</string>
+			<string>Warp</string>
 			<key>CFBundleShortVersionString</key>
-			<string>8.35.0</string>
+			<string>0.2026.11.18.08.17.04</string>
 			<key>CFBundleVersion</key>
-			<string>1</string>
-			<key>minosversion</key>
-			<string>13.0</string>
+			<string>0.2026.11.18.08.17.04</string>
 			<key>path</key>
-			<string>/Applications/Signal.app</string>
+			<string>/Applications/Warp.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,13 +60,11 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Signal.app</string>
+			<string>Warp.app</string>
 		</dict>
 	</array>
-	<key>minimum_os_version</key>
-	<string>13.0</string>
 	<key>name</key>
-	<string>Signal_Desktop</string>
+	<string>Warp</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
@@ -74,6 +72,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>8.35.0</string>
+	<string>0.2026.11.18.08.17.04</string>
 </dict>
 </plist>
