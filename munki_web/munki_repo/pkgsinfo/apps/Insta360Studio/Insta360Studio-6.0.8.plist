@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2026-11-22T02:37:32Z</date>
+		<key>munki_version</key>
+		<string>7.3.0.5808</string>
+		<key>os_version</key>
+		<string>27.2.1</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>blocking_applications</key>
+	<array>
+		<string>Insta360 Studio.app</string>
+	</array>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>Insta360 Studio allows users to edit videos and photos shot on ONE X, EVO and GO. It contains the Insta360 Plugin for Adobe Premiere Pro.</string>
+	<key>developer</key>
+	<string>Insta360</string>
+	<key>display_name</key>
+	<string>Insta360 Studio</string>
+	<key>installed_size</key>
+	<integer>2213948</integer>
+	<key>installer_item_hash</key>
+	<string>84ea7a1ec9fcfc29854c14c87657017049b63243d67b78382ccf1ad4d51efe00</string>
+	<key>installer_item_location</key>
+	<string>apps/Insta360Studio/Insta360_Studio_6.0.8_release_insta360(RC_build100)_20261106_165633_signed_1793955486004-6.0.8.pkg</string>
+	<key>installer_item_size</key>
+	<integer>1110399</integer>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.insta360.studio</string>
+			<key>CFBundleName</key>
+			<string>Insta360 Studio</string>
+			<key>CFBundleShortVersionString</key>
+			<string>6.0.8</string>
+			<key>CFBundleVersion</key>
+			<string>6.0.8</string>
+			<key>minosversion</key>
+			<string>13.0</string>
+			<key>path</key>
+			<string>/Applications/Insta360 Studio.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>13.0</string>
+	<key>name</key>
+	<string>Insta360Studio</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>120874</integer>
+			<key>packageid</key>
+			<string>com.insta360.ThumbnailPlugin</string>
+			<key>version</key>
+			<string>2.0</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>2093074</integer>
+			<key>packageid</key>
+			<string>com.insta360.insta360Studio</string>
+			<key>version</key>
+			<string>6.0.8</string>
+		</dict>
+	</array>
+	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>6.0.8</string>
+</dict>
+</plist>

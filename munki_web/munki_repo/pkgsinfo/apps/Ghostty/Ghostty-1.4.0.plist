@@ -7,47 +7,51 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-11-20T05:53:26Z</date>
+		<date>2026-11-22T02:37:05Z</date>
 		<key>munki_version</key>
 		<string>7.3.0.5808</string>
 		<key>os_version</key>
-		<string>27.2</string>
+		<string>27.2.1</string>
 	</dict>
 	<key>autoremove</key>
 	<false/>
+	<key>blocking_applications</key>
+	<array>
+		<string>Ghostty.app</string>
+	</array>
 	<key>catalogs</key>
 	<array>
 		<string>testing</string>
 	</array>
 	<key>description</key>
-	<string>Your AI partner on desktop. Fast, focused, and designed for deep work.</string>
+	<string>Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.</string>
 	<key>developer</key>
-	<string>Anthropic PBC</string>
+	<string>Mitchell Hashimoto</string>
 	<key>display_name</key>
-	<string>Claude</string>
+	<string>Ghostty</string>
 	<key>installer_item_hash</key>
-	<string>88996ea810717c86d4458cdb58da09dc9d9243c40d9efecf6f5514769c0cdfd7</string>
+	<string>3a02075dbd24318d778426af41dee5507d53ecc4578ede96912ec9ce6d18d3e8</string>
 	<key>installer_item_location</key>
-	<string>apps/Claude/Claude-6.28899.2.dmg</string>
+	<string>apps/Ghostty/Ghostty-1.4.0.dmg</string>
 	<key>installer_item_size</key>
-	<integer>400127</integer>
+	<integer>33285</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.anthropic.claudefordesktop</string>
+			<string>com.mitchellh.ghostty</string>
 			<key>CFBundleName</key>
-			<string>Claude</string>
+			<string>Ghostty</string>
 			<key>CFBundleShortVersionString</key>
-			<string>6.28899.2</string>
+			<string>1.4.0</string>
 			<key>CFBundleVersion</key>
-			<string>6.28899.2</string>
+			<string>18457</string>
 			<key>minosversion</key>
 			<string>13.0</string>
 			<key>path</key>
-			<string>/Applications/Claude.app</string>
+			<string>/Applications/Ghostty.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -60,13 +64,13 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>Claude.app</string>
+			<string>Ghostty.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
 	<string>13.0</string>
 	<key>name</key>
-	<string>Claude</string>
+	<string>Ghostty</string>
 	<key>unattended_install</key>
 	<true/>
 	<key>unattended_uninstall</key>
@@ -76,6 +80,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>6.28899.2</string>
+	<string>1.4.0</string>
 </dict>
 </plist>

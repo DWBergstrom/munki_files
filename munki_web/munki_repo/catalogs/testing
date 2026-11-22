@@ -13772,6 +13772,72 @@ fi</string>
 		<array>
 			<string>testing</string>
 		</array>
+		<key>category</key>
+		<string>Utilities</string>
+		<key>description</key>
+		<string>iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with OS 10.5 (Leopard) or newer. Its focus is on performance, internationalization, and supporting innovative features that make your life better.</string>
+		<key>developer</key>
+		<string>George Nachman</string>
+		<key>display_name</key>
+		<string>iTerm2</string>
+		<key>installer_item_hash</key>
+		<string>bef6673bd7527c91aec700d1f6fa0e64881fb3479c331d857f9ab71f69b9a41a</string>
+		<key>installer_item_location</key>
+		<string>apps/iTerm2-3.7.9.dmg</string>
+		<key>installer_item_size</key>
+		<integer>78356</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.googlecode.iterm2</string>
+				<key>CFBundleName</key>
+				<string>iTerm2</string>
+				<key>CFBundleShortVersionString</key>
+				<string>3.7.9</string>
+				<key>CFBundleVersion</key>
+				<string>3.7.9</string>
+				<key>minosversion</key>
+				<string>13.0</string>
+				<key>path</key>
+				<string>/Applications/iTerm.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>iTerm.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0</string>
+		<key>name</key>
+		<string>iTerm2</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>3.7.9</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
 		<key>description</key>
 		<string></string>
 		<key>display_name</key>
@@ -14962,6 +15028,68 @@ LOGGED_IN_USER=$(/usr/bin/stat -f%Su /dev/console);
 		<true/>
 		<key>version</key>
 		<string>4.8</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
+		<key>display_name</key>
+		<string>Google Chrome</string>
+		<key>installer_item_hash</key>
+		<string>75b9fdb7573aab8a89f1b00319692a1f785fb4e6fd07e97916a13b00b3d34bae</string>
+		<key>installer_item_location</key>
+		<string>apps/GoogleChrome-158.0.8127.37.dmg</string>
+		<key>installer_item_size</key>
+		<integer>282488</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.google.Chrome</string>
+				<key>CFBundleName</key>
+				<string>Chrome</string>
+				<key>CFBundleShortVersionString</key>
+				<string>158.0.8127.37</string>
+				<key>CFBundleVersion</key>
+				<string>8127.37</string>
+				<key>minosversion</key>
+				<string>13.0</string>
+				<key>path</key>
+				<string>/Applications/Google Chrome.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Google Chrome.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0</string>
+		<key>name</key>
+		<string>GoogleChrome</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>158.0.8127.37</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -21304,6 +21432,74 @@ fi
 		<array>
 			<string>testing</string>
 		</array>
+		<key>category</key>
+		<string>Utilities</string>
+		<key>description</key>
+		<string>With Commander One you can use two panels at once, set up your very own hotkeys for any action, and way more. Moreover it is a free software that can be a great OS X Finder alternative.</string>
+		<key>developer</key>
+		<string>Eltima LLC</string>
+		<key>display_name</key>
+		<string>CommanderOne</string>
+		<key>installer_item_hash</key>
+		<string>ccdada39ddf06ecb4bf3e3c187bb46cc995bfc37181af37d7e446701e022c9c9</string>
+		<key>installer_item_location</key>
+		<string>apps/Eltima/CommanderOne-3.18.dmg</string>
+		<key>installer_item_size</key>
+		<integer>54084</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.eltima.cmd1</string>
+				<key>CFBundleName</key>
+				<string>Commander One</string>
+				<key>CFBundleShortVersionString</key>
+				<string>3.18</string>
+				<key>CFBundleVersion</key>
+				<string>4006</string>
+				<key>minosversion</key>
+				<string>10.13</string>
+				<key>path</key>
+				<string>/Applications/Commander One.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Commander One.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>CommanderOne</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>3.18</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
 		<key>description</key>
 		<string>Automates deployment of containerized applications.</string>
 		<key>developer</key>
@@ -27261,6 +27457,86 @@ fi
 		<true/>
 		<key>version</key>
 		<string>4.2.25</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>Insta360 Studio.app</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Insta360 Studio allows users to edit videos and photos shot on ONE X, EVO and GO. It contains the Insta360 Plugin for Adobe Premiere Pro.</string>
+		<key>developer</key>
+		<string>Insta360</string>
+		<key>display_name</key>
+		<string>Insta360 Studio</string>
+		<key>installed_size</key>
+		<integer>2213948</integer>
+		<key>installer_item_hash</key>
+		<string>84ea7a1ec9fcfc29854c14c87657017049b63243d67b78382ccf1ad4d51efe00</string>
+		<key>installer_item_location</key>
+		<string>apps/Insta360Studio/Insta360_Studio_6.0.8_release_insta360(RC_build100)_20261106_165633_signed_1793955486004-6.0.8.pkg</string>
+		<key>installer_item_size</key>
+		<integer>1110399</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.insta360.studio</string>
+				<key>CFBundleName</key>
+				<string>Insta360 Studio</string>
+				<key>CFBundleShortVersionString</key>
+				<string>6.0.8</string>
+				<key>CFBundleVersion</key>
+				<string>6.0.8</string>
+				<key>minosversion</key>
+				<string>13.0</string>
+				<key>path</key>
+				<string>/Applications/Insta360 Studio.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0</string>
+		<key>name</key>
+		<string>Insta360Studio</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>120874</integer>
+				<key>packageid</key>
+				<string>com.insta360.ThumbnailPlugin</string>
+				<key>version</key>
+				<string>2.0</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>2093074</integer>
+				<key>packageid</key>
+				<string>com.insta360.insta360Studio</string>
+				<key>version</key>
+				<string>6.0.8</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>6.0.8</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -34299,6 +34575,58 @@ fi
 		<array>
 			<string>testing</string>
 		</array>
+		<key>description</key>
+		<string>Work with Claude directly in your codebase. Build, debug, and ship from your terminal, IDE, Slack, or the web. Describe what you need, and Claude handles the rest.</string>
+		<key>developer</key>
+		<string>Anthropic</string>
+		<key>display_name</key>
+		<string>claude code</string>
+		<key>installed_size</key>
+		<integer>355330</integer>
+		<key>installer_item_hash</key>
+		<string>07c362a07c5c93c5a1b28b905e01a7c5eac07be0398a5c606033332811dd4a1c</string>
+		<key>installer_item_location</key>
+		<string>apps/ClaudeCode/ClaudeCode-arm64-2.1.330.pkg</string>
+		<key>installer_item_size</key>
+		<integer>157570</integer>
+		<key>name</key>
+		<string>ClaudeCode</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>355330</integer>
+				<key>packageid</key>
+				<string>com.github.autopkg.ClaudeCode</string>
+				<key>version</key>
+				<string>2.1.330</string>
+			</dict>
+		</array>
+		<key>supported_architectures</key>
+		<array>
+			<string>arm64</string>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2.1.330</string>
+		<key>version_script</key>
+		<string>#!/bin/sh
+/usr/local/bin/claude --version | /usr/bin/grep -oE '[0-9]+(\.[0-9]+)+'</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
 		<key>category</key>
 		<string>Utilities</string>
 		<key>description</key>
@@ -37519,72 +37847,6 @@ fi
 		<key>display_name</key>
 		<string>Claude</string>
 		<key>installer_item_hash</key>
-		<string>88996ea810717c86d4458cdb58da09dc9d9243c40d9efecf6f5514769c0cdfd7</string>
-		<key>installer_item_location</key>
-		<string>apps/Claude/Claude-6.28899.2.dmg</string>
-		<key>installer_item_size</key>
-		<integer>400127</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.anthropic.claudefordesktop</string>
-				<key>CFBundleName</key>
-				<string>Claude</string>
-				<key>CFBundleShortVersionString</key>
-				<string>6.28899.2</string>
-				<key>CFBundleVersion</key>
-				<string>6.28899.2</string>
-				<key>minosversion</key>
-				<string>13.0</string>
-				<key>path</key>
-				<string>/Applications/Claude.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Claude.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>13.0</string>
-		<key>name</key>
-		<string>Claude</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>6.28899.2</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Your AI partner on desktop. Fast, focused, and designed for deep work.</string>
-		<key>developer</key>
-		<string>Anthropic PBC</string>
-		<key>display_name</key>
-		<string>Claude</string>
-		<key>installer_item_hash</key>
 		<string>168640ac30ef49660a2c2fd47a8704ffe015341b33d31239864ca579b3f674d1</string>
 		<key>installer_item_location</key>
 		<string>apps/Claude/Claude-6.28899.6.dmg</string>
@@ -40312,6 +40574,72 @@ fi
 		<true/>
 		<key>version</key>
 		<string>20240203-110809-5046fc22</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Tool designed to help developers manage multiple coding agents, run tasks in parallel, and collaborate on software projects.</string>
+		<key>developer</key>
+		<string>OpenAI</string>
+		<key>display_name</key>
+		<string>Codex</string>
+		<key>installer_item_hash</key>
+		<string>67d362df03de37ebd794a64608abf98a2b0b1be2783d33a950abdd83ed89b279</string>
+		<key>installer_item_location</key>
+		<string>apps/Codex/Codex-26.1117.41037.dmg</string>
+		<key>installer_item_size</key>
+		<integer>568962</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.openai.codex</string>
+				<key>CFBundleName</key>
+				<string>ChatGPT</string>
+				<key>CFBundleShortVersionString</key>
+				<string>26.1117.41037</string>
+				<key>CFBundleVersion</key>
+				<string>29803</string>
+				<key>minosversion</key>
+				<string>13.0</string>
+				<key>path</key>
+				<string>/Applications/ChatGPT.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>ChatGPT.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0</string>
+		<key>name</key>
+		<string>Codex</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>26.1117.41037</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -47971,6 +48299,75 @@ fi
 		<key>display_name</key>
 		<string>VLC Media Player</string>
 		<key>installer_item_hash</key>
+		<string>2c8e89f7f42e53c2fb0e87b6dfa39b49f1364b25080aaa2e476ac74c0d7beb3c</string>
+		<key>installer_item_location</key>
+		<string>apps/VLC/VLC-3.0.24.dmg</string>
+		<key>installer_item_size</key>
+		<integer>96984</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>org.videolan.vlc</string>
+				<key>CFBundleName</key>
+				<string>VLC</string>
+				<key>CFBundleShortVersionString</key>
+				<string>3.0.24</string>
+				<key>CFBundleVersion</key>
+				<string>3.0.24</string>
+				<key>minosversion</key>
+				<string>10.7.5</string>
+				<key>path</key>
+				<string>/Applications/VLC.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>VLC.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.7.5</string>
+		<key>name</key>
+		<string>VLC</string>
+		<key>supported_architectures</key>
+		<array>
+			<string>arm64</string>
+			<string>x86_64</string>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>3.0.24</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVD, Audio CD, VCD, and various streaming protocols.</string>
+		<key>developer</key>
+		<string>The VideoLAN Project</string>
+		<key>display_name</key>
+		<string>VLC Media Player</string>
+		<key>installer_item_hash</key>
 		<string>56ee657c3aaf5c71b4ab7d6e4f4a77f6eca54633e0bf42a93b8116eb1d1f6ec9</string>
 		<key>installer_item_location</key>
 		<string>apps/VLC/VLC-3.0.23__1.dmg</string>
@@ -54106,6 +54503,72 @@ fi
 			<string>testing</string>
 		</array>
 		<key>description</key>
+		<string>Locate and eliminate duplicate and similar files.</string>
+		<key>developer</key>
+		<string>MacPaw Inc.</string>
+		<key>display_name</key>
+		<string>Gemini 2</string>
+		<key>installer_item_hash</key>
+		<string>567fadb32a420df62686e4158d767ed6823dc1548a8feb26cf79dbd4f5b3580e</string>
+		<key>installer_item_location</key>
+		<string>apps/Gemini 2/Gemini 2-2.10.2.dmg</string>
+		<key>installer_item_size</key>
+		<integer>51112</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.macpaw.site.Gemini2</string>
+				<key>CFBundleName</key>
+				<string>Gemini 2</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2.10.2</string>
+				<key>CFBundleVersion</key>
+				<string>407</string>
+				<key>minosversion</key>
+				<string>10.13</string>
+				<key>path</key>
+				<string>/Applications/Gemini 2.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Gemini 2.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.13</string>
+		<key>name</key>
+		<string>Gemini 2</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2.10.2</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
 		<string>PowerShell for every system!</string>
 		<key>developer</key>
 		<string>PowerShell Team</string>
@@ -54140,6 +54603,72 @@ fi
 		<true/>
 		<key>version</key>
 		<string>7.4.22</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Open-source menu bar toolkit bundling several small macOS utilities.</string>
+		<key>developer</key>
+		<string>Pedro Gomes</string>
+		<key>display_name</key>
+		<string>Vorssaint</string>
+		<key>installer_item_hash</key>
+		<string>952582444fe60d460a0453dea7392a5b6641d98c79d60e98f9f25d323bdb47d3</string>
+		<key>installer_item_location</key>
+		<string>apps/Vorssaint/Vorssaint-3.4.4.dmg</string>
+		<key>installer_item_size</key>
+		<integer>27582</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.vorssaint.utils</string>
+				<key>CFBundleName</key>
+				<string>Vorssaint</string>
+				<key>CFBundleShortVersionString</key>
+				<string>3.4.4</string>
+				<key>CFBundleVersion</key>
+				<string>106</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/Vorssaint.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Vorssaint.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.0</string>
+		<key>name</key>
+		<string>Vorssaint</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>3.4.4</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -57734,64 +58263,78 @@ rm -rf /Applications/zoom.us.app
 	<dict>
 		<key>autoremove</key>
 		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>zoom.us</string>
+		</array>
 		<key>catalogs</key>
 		<array>
 			<string>testing</string>
 		</array>
 		<key>description</key>
-		<string>Fast Terminal app based in Rust.</string>
+		<string>The Zoom app provides cloud-hosted video conferencing, plus online meetings and group messaging.</string>
 		<key>developer</key>
-		<string>Denver Technologies</string>
+		<string>Zoom Video Communications, Inc.</string>
 		<key>display_name</key>
-		<string>Warp</string>
-		<key>force_munkiimport</key>
-		<true/>
+		<string>Zoom</string>
+		<key>installed_size</key>
+		<integer>872415</integer>
 		<key>installer_item_hash</key>
-		<string>56a886203ce823e391abd1b5e5e2e1b6f04e7bb760726270eb80252cc1a745c2</string>
+		<string>f880af3051cdc08a89d94575227570fe2d7d7a155ca7632be7fe66598de8a089</string>
 		<key>installer_item_location</key>
-		<string>apps/Warp/Warp-0.2026.11.18.08.17.01.dmg</string>
+		<string>apps/Zoom/Zoom-7.2.5.90525.pkg</string>
 		<key>installer_item_size</key>
-		<integer>335004</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
+		<integer>376013</integer>
 		<key>installs</key>
 		<array>
 			<dict>
 				<key>CFBundleIdentifier</key>
-				<string>dev.warp.Warp-Stable</string>
+				<string>us.zoom.xos</string>
 				<key>CFBundleName</key>
-				<string>Warp</string>
+				<string>zoom.us</string>
 				<key>CFBundleShortVersionString</key>
-				<string>0.2026.11.18.08.17.01</string>
+				<string>7.2.5 (90525)</string>
 				<key>CFBundleVersion</key>
-				<string>0.2026.11.18.08.17.01</string>
+				<string>7.2.5.90525</string>
+				<key>minosversion</key>
+				<string>10.15</string>
 				<key>path</key>
-				<string>/Applications/Warp.app</string>
+				<string>/Applications/zoom.us.app</string>
 				<key>type</key>
 				<string>application</string>
 				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
+				<string>CFBundleVersion</string>
 			</dict>
 		</array>
-		<key>items_to_copy</key>
+		<key>minimum_os_version</key>
+		<string>10.15</string>
+		<key>name</key>
+		<string>Zoom</string>
+		<key>postuninstall_script</key>
+		<string>#!/bin/sh
+rm -rf /Applications/zoom.us.app
+</string>
+		<key>receipts</key>
 		<array>
 			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Warp.app</string>
+				<key>installed_size</key>
+				<integer>872415</integer>
+				<key>packageid</key>
+				<string>us.zoom.pkg.videomeeting</string>
+				<key>version</key>
+				<string>7.2.5.90525</string>
 			</dict>
 		</array>
-		<key>name</key>
-		<string>Warp</string>
 		<key>unattended_install</key>
 		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
 		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
+		<string>removepackages</string>
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>0.2026.11.18.08.17.01</string>
+		<string>7.2.5.90525</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -71142,84 +71685,6 @@ exit</string>
 			<string>testing</string>
 		</array>
 		<key>description</key>
-		<string>Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models.</string>
-		<key>developer</key>
-		<string>Infra Technologies, Inc</string>
-		<key>display_name</key>
-		<string>Ollama</string>
-		<key>installer_item_hash</key>
-		<string>60d09e9494afec5d69eff0671c6f56868b3065bd2f547c1d23551ca4c07f7546</string>
-		<key>installer_item_location</key>
-		<string>apps/Ollama/Ollama-0.40.16.dmg</string>
-		<key>installer_item_size</key>
-		<integer>228291</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.electron.ollama</string>
-				<key>CFBundleName</key>
-				<string>Ollama</string>
-				<key>CFBundleShortVersionString</key>
-				<string>0.40.16</string>
-				<key>CFBundleVersion</key>
-				<string>0.40.16</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Ollama.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Ollama.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>Ollama</string>
-		<key>postinstall_script</key>
-		<string>#!/bin/bash
-
-# Script built from: https://github.com/ollama/ollama/issues/851#issuecomment-1889808636
-# Please note admin rights are still needed as the file that records whether first time run has completed is located in the Users home folder. see https://github.com/ollama/ollama/issues/6814
-
-# Install Command Line Tools
-if ! [ -f /usr/local/bin/ollama ]; then
-  /usr/bin/touch /usr/local/bin/ollama ; /bin/ln -s -f /Applications/Ollama.app/Contents/Resources/ollama /usr/local/bin/ollama
-fi
-
-exit</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>0.40.16</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
 		<string>Google's agentic development platform, evolving the IDE into the agent-first era.</string>
 		<key>developer</key>
 		<string>Google</string>
@@ -71277,6 +71742,72 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>2.3.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Google's agentic development platform, evolving the IDE into the agent-first era.</string>
+		<key>developer</key>
+		<string>Google</string>
+		<key>display_name</key>
+		<string>Antigravity</string>
+		<key>installer_item_hash</key>
+		<string>385c89149ac0d81a8e16ef032cf76b84957ba7db2e4d28f4a357ddba2e0181c9</string>
+		<key>installer_item_location</key>
+		<string>apps/Antigravity/Antigravity-2.34.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>230424</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.google.antigravity</string>
+				<key>CFBundleName</key>
+				<string>Antigravity</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2.34.0</string>
+				<key>CFBundleVersion</key>
+				<string>2.34.0</string>
+				<key>minosversion</key>
+				<string>13.0</string>
+				<key>path</key>
+				<string>/Applications/Antigravity.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Antigravity.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0</string>
+		<key>name</key>
+		<string>Antigravity</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2.34.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -77807,6 +78338,76 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>2.2.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>Ghostty.app</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.</string>
+		<key>developer</key>
+		<string>Mitchell Hashimoto</string>
+		<key>display_name</key>
+		<string>Ghostty</string>
+		<key>installer_item_hash</key>
+		<string>3a02075dbd24318d778426af41dee5507d53ecc4578ede96912ec9ce6d18d3e8</string>
+		<key>installer_item_location</key>
+		<string>apps/Ghostty/Ghostty-1.4.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>33285</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.mitchellh.ghostty</string>
+				<key>CFBundleName</key>
+				<string>Ghostty</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.4.0</string>
+				<key>CFBundleVersion</key>
+				<string>18457</string>
+				<key>minosversion</key>
+				<string>13.0</string>
+				<key>path</key>
+				<string>/Applications/Ghostty.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Ghostty.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0</string>
+		<key>name</key>
+		<string>Ghostty</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.4.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>

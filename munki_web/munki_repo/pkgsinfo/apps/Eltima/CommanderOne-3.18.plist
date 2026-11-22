@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2026-11-22T02:56:33Z</date>
+		<key>munki_version</key>
+		<string>7.3.0.5808</string>
+		<key>os_version</key>
+		<string>27.2.1</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>category</key>
+	<string>Utilities</string>
+	<key>description</key>
+	<string>With Commander One you can use two panels at once, set up your very own hotkeys for any action, and way more. Moreover it is a free software that can be a great OS X Finder alternative.</string>
+	<key>developer</key>
+	<string>Eltima LLC</string>
+	<key>display_name</key>
+	<string>CommanderOne</string>
+	<key>installer_item_hash</key>
+	<string>ccdada39ddf06ecb4bf3e3c187bb46cc995bfc37181af37d7e446701e022c9c9</string>
+	<key>installer_item_location</key>
+	<string>apps/Eltima/CommanderOne-3.18.dmg</string>
+	<key>installer_item_size</key>
+	<integer>54084</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.eltima.cmd1</string>
+			<key>CFBundleName</key>
+			<string>Commander One</string>
+			<key>CFBundleShortVersionString</key>
+			<string>3.18</string>
+			<key>CFBundleVersion</key>
+			<string>4006</string>
+			<key>minosversion</key>
+			<string>10.13</string>
+			<key>path</key>
+			<string>/Applications/Commander One.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>Commander One.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.13</string>
+	<key>name</key>
+	<string>CommanderOne</string>
+	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>3.18</string>
+</dict>
+</plist>

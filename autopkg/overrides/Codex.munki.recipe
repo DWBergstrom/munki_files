@@ -41,11 +41,11 @@
 			<key>com.github.homebysix.download.Codex</key>
 			<dict>
 				<key>git_hash</key>
-				<string>b068ace44054d9d2251cfcd2f3214783ec6f4b2d</string>
+				<string>454bbc8cdfe9f7133082fb8c90a0763acc21a2ea</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/OpenAI/Codex.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>60bd7604039654add53738aac64d7ec6dff4d764898c8fd3d76f3c815f558d96</string>
+				<string>c6a16841d70e4945d3a3acbd97ee41b337e817698b35545f60d131a04aaadea6</string>
 			</dict>
 			<key>com.github.homebysix.munki.Codex</key>
 			<dict>

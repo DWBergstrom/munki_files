@@ -163,11 +163,11 @@ done
 			<key>com.github.nmcspadden.munki.xcode</key>
 			<dict>
 				<key>git_hash</key>
-				<string>ba3d7291204f8f66d4c3a0194a08b0faf4c28a87</string>
+				<string>c5d3f673a3665c497bd02907466e413211e98ad2</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.nmcspadden-recipes/Xcode/Xcode.munki.recipe</string>
 				<key>sha256_hash</key>
-				<string>7a578c7c49b310b918ab0ccda84cc538a0127056d85812546bd50a40730e63ee</string>
+				<string>98c2a77310a6d942c2a6680754a561bb628a87131891f7262b4bd73234c693c0</string>
 			</dict>
 		</dict>
 	</dict>

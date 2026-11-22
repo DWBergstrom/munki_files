@@ -43,11 +43,11 @@
 			<key>com.github.homebysix.download.Antigravity</key>
 			<dict>
 				<key>git_hash</key>
-				<string>d39bd4d708e07f31e9bb52bbdfe9844dee33ed95</string>
+				<string>77ec74f4cd0f3a1d0d43241947bbbe275664f5f0</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Google/Antigravity.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>8edd65d9c9665285d70b0e49374184b5d0bef7e631e700fc2e61476b8598cf57</string>
+				<string>593ac9c3dedb4bdbff290d09c49e5f2f95a7a7320fe6430ee5703b6e2ae61d62</string>
 			</dict>
 			<key>com.github.homebysix.munki.Antigravity</key>
 			<dict>

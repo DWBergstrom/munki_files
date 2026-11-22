@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Vorssaint</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>Vorssaint</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Open-source menu bar toolkit bundling several small macOS utilities.</string>
+			<key>developer</key>
+			<string>Pedro Gomes</string>
+			<key>display_name</key>
+			<string>Vorssaint</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>unattended_uninstall</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.homebysix.munki.Vorssaint</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.homebysix.download.Vorssaint</key>
+			<dict>
+				<key>git_hash</key>
+				<string>3b4237970eb9154811cff5ea9a4b9d3b8a76b4d6</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Vorssaint/Vorssaint.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>fa52e8dccb877c458c2d8e698a19f5fceb858140b59da1e4e8f9d0f58c1789a1</string>
+			</dict>
+			<key>com.github.homebysix.munki.Vorssaint</key>
+			<dict>
+				<key>git_hash</key>
+				<string>3b4237970eb9154811cff5ea9a4b9d3b8a76b4d6</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Vorssaint/Vorssaint.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>7c1e6413f18dab5a5785a6f6fe6352ba971542c19d7cb6a57f35d18dc82cc749</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

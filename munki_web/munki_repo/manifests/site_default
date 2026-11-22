@@ -83,6 +83,15 @@
 		<string>PowerShell</string>
 		<string>WindowsApp</string>
 		<string>Zoom</string>
+		<string>Vorssaint</string>
+		<string>ClaudeCode</string>
+		<string>Insta360Studio</string>
+		<string>Ghostty</string>
+		<string>CommanderOne</string>
+		<string>Xcode</string>
+		<string>AppGate SDP</string>
+		<string>AntigravityIDE</string>
+		<string>Gemini 2</string>
 	</array>
 </dict>
 </plist>

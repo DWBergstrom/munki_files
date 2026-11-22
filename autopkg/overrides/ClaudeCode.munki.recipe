@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.ClaudeCode</string>
+	<key>Input</key>
+	<dict>
+		<key>DOWNLOAD_ARCH</key>
+		<string>arm64</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>ClaudeCode</string>
+		<key>RELEASE_CHANNEL</key>
+		<string>latest</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Work with Claude directly in your codebase. Build, debug, and ship from your terminal, IDE, Slack, or the web. Describe what you need, and Claude handles the rest.</string>
+			<key>developer</key>
+			<string>Anthropic</string>
+			<key>display_name</key>
+			<string>claude code</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>supported_architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>unattended_install</key>
+			<true/>
+			<key>unattended_uninstall</key>
+			<true/>
+			<key>version_script</key>
+			<string>#!/bin/sh
+/usr/local/bin/claude --version | /usr/bin/grep -oE '[0-9]+(\.[0-9]+)+'</string>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.autopkg.gregneagle-recipes.claude-code.munki</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.autopkg.gregneagle-recipes.claude-code.download</key>
+			<dict>
+				<key>git_hash</key>
+				<string>148c59b9158d51276583d0700a4dd9c7e67963e7</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.gregneagle-recipes/ClaudeCode/ClaudeCode.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>964bbab14ce4728be6a6406918939f021d786851ab73b96300e3edc77d105fd4</string>
+			</dict>
+			<key>com.github.autopkg.gregneagle-recipes.claude-code.munki</key>
+			<dict>
+				<key>git_hash</key>
+				<string>48372e39a060fc87e409b0e936bec49a2cf2c79d</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.gregneagle-recipes/ClaudeCode/ClaudeCode.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>912e599e31b94081f6d743813b8e1c58fc089aa27186b5d406c46e804bec29ce</string>
+			</dict>
+			<key>com.github.autopkg.gregneagle-recipes.claude-code.pkg</key>
+			<dict>
+				<key>git_hash</key>
+				<string>cb8199b723303c7bbeaaef697208b43d3932bf39</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.gregneagle-recipes/ClaudeCode/ClaudeCode.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>a5d1f19b75f3f400e9d123a2a56c127d93bc6e45cdc9bb154434153ae700a8f5</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

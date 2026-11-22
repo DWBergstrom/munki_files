@@ -46,11 +46,11 @@
 			<key>com.github.autopkg.download.VLC</key>
 			<dict>
 				<key>git_hash</key>
-				<string>1b4ba2cfe6d1f6de304bc9c29b57df6602b2e7e6</string>
+				<string>cd107d434d771a9f1ef8992dc3e4ce2adccabf7c</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/VLC/VLC.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>e74a96c65488d34aabb247c171b57db7fed8afd67b61fffdce8f46bc54d35f18</string>
+				<string>7b5d6489c912a2c51b6ed0dad974e822481ab08afb9697423e3b7e4f34d52ed4</string>
 			</dict>
 			<key>com.github.autopkg.munki.VLC</key>
 			<dict>
