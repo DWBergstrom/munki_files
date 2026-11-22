@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.iStatMenus</string>
+	<key>Input</key>
+	<dict>
+		<key>DOWNLOAD_URL</key>
+		<string>https://download.bjango.com/istatmenus/</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps</string>
+		<key>NAME</key>
+		<string>iStatMenus</string>
+		<key>USER_AGENT</key>
+		<string>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/536.28.10 (KHTML, like Gecko) Version/6.0.3 Safari/536.28.10</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>An advanced Mac system monitor for your menubar</string>
+			<key>developer</key>
+			<string>Bjango</string>
+			<key>display_name</key>
+			<string>iStat Menus</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.Lotusshaney.munki.iStatMenus</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.Lotusshaney.munki.iStatMenus</key>
+			<dict>
+				<key>git_hash</key>
+				<string>0613108c29aa738ed208cc09b179bf581ec7902b</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.Lotusshaney-recipes/iStatsMenu/iStatMenus.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>ec178ce6fe829f5f89431617a4d97dbef706041a83a1d6ebcba71d6b27ceab84</string>
+			</dict>
+			<key>com.github.keeleysam.recipes.Bjango.iStatMenus.download</key>
+			<dict>
+				<key>git_hash</key>
+				<string>2448bf93f30005126d365e7abe04936cf6c6de75</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.keeleysam-recipes/Bjango/iStatMenus.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>4bb7e911f47b24187db5cc975c9de437b5072a5292c4377da8bc8b08e929c465</string>
+			</dict>
+			<key>com.justinrummel.pkg.iStatMenus</key>
+			<dict>
+				<key>git_hash</key>
+				<string>8d21fceaa7d45917d42eaa63588bb10da278801d</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.justinrummel-recipes/Bjango/iStatMenus.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>25711585e34a8daf13388e84bcde8a423b22865aefe74dbc566399f36684e055</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

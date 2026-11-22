@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.VMwareFusion</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/VMware</string>
+		<key>NAME</key>
+		<string>VMwareFusion</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>Productivity</string>
+			<key>description</key>
+			<string></string>
+			<key>developer</key>
+			<string>VMware</string>
+			<key>display_name</key>
+			<string>VMWare Fusion Pro</string>
+			<key>name</key>
+			<string>%NAME%</string>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.justinrummel.munki.VMwareFusion</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict>
+			<key>VMwareFusionURLProvider</key>
+			<dict>
+				<key>git_hash</key>
+				<string>50cca3149d7f4b2aadc4e44f363a9e4d0484f206</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.justinrummel-recipes/VMware Fusion/VMwareFusionURLProvider.py</string>
+				<key>sha256_hash</key>
+				<string>900de4435aee843d8dcb7351be850df0fb86c78be32ffe3f2fd3dd48d7f395ff</string>
+			</dict>
+		</dict>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.justinrummel.download.VMwareFusion</key>
+			<dict>
+				<key>git_hash</key>
+				<string>069d6bc8ff426e5e2cd36e708769107017759fd6</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.justinrummel-recipes/VMware Fusion/VMwareFusion.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>7bd5af1eb7616897e4fa76faf745b6a1e37bcbaf380c5615abb2bc90f4dee910</string>
+			</dict>
+			<key>com.justinrummel.munki.VMwareFusion</key>
+			<dict>
+				<key>git_hash</key>
+				<string>a45d50d0940f13f07b1fbcc6f8b3a5a9da056a2d</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.justinrummel-recipes/VMware Fusion/VMwareFusion.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>6bfef16726a823873aa08c571a11b7d8fd8311ac5fbc9cac5a029320b933f59c</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

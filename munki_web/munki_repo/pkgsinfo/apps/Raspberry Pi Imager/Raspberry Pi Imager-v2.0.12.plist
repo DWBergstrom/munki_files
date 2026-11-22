@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2026-11-22T03:56:46Z</date>
+		<key>munki_version</key>
+		<string>7.3.0.5808</string>
+		<key>os_version</key>
+		<string>27.2.1</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>The home of Raspberry Pi Imager, a user-friendly tool for creating bootable media for Raspberry Pi devices.</string>
+	<key>developer</key>
+	<string>Floris Bos</string>
+	<key>display_name</key>
+	<string>Raspberry Pi Imager</string>
+	<key>installer_item_hash</key>
+	<string>15b1a94c712c0032750855653c2bf129dceb401329fbce0a83d7cf05dc58a421</string>
+	<key>installer_item_location</key>
+	<string>apps/Raspberry Pi Imager/Raspberry Pi Imager-2.0.12-v2.0.12.dmg</string>
+	<key>installer_item_size</key>
+	<integer>35751</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.raspberrypi.rpi-imager</string>
+			<key>CFBundleName</key>
+			<string>Raspberry Pi Imager</string>
+			<key>CFBundleShortVersionString</key>
+			<string>v2.0.12</string>
+			<key>CFBundleVersion</key>
+			<string>v2.0.12</string>
+			<key>path</key>
+			<string>/Applications/Raspberry Pi Imager.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleVersion</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>Raspberry Pi Imager.app</string>
+		</dict>
+	</array>
+	<key>name</key>
+	<string>Raspberry Pi Imager</string>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>v2.0.12</string>
+</dict>
+</plist>

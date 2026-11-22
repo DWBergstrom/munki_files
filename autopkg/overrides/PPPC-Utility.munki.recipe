@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.PPPC-Utility</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>PPPC Utility</string>
+		<key>PRERELEASE</key>
+		<string></string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>PPPC Utility is a macOS (10.15 and newer) application for creating configuration profiles containing the Privacy Preferences Policy Control payload for macOS. The profiles can be saved locally, signed or unsigned. Profiles can also be uploaded directly to a Jamf Pro server.</string>
+			<key>developer</key>
+			<string>Jamf</string>
+			<key>display_name</key>
+			<string>PPPC Utility</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.dataJAR-recipes.munki.PPPC-Utility</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.dataJAR-recipes.download.PPPC-Utility</key>
+			<dict>
+				<key>git_hash</key>
+				<string>001dd5f870ac36259d1e7b5d948468b9763b1cee</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/PPPC-Utility/PPPC-Utility.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>6cf642dc1e8d84c1f015101c8939783068af306541cea516c3c9c7c65c2fdfdd</string>
+			</dict>
+			<key>com.github.dataJAR-recipes.munki.PPPC-Utility</key>
+			<dict>
+				<key>git_hash</key>
+				<string>0167678da8768f7c802927fac9b43ed0e9abaf34</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/PPPC-Utility/PPPC-Utility.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>7bd88cf12fcc6c1141243299e7e586b6a821984bd09df2c696365be0138e66da</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

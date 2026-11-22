@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.LingonX</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps</string>
+		<key>NAME</key>
+		<string>LingonX</string>
+		<key>SPARKLE_FEED_URL</key>
+		<string>https://www.peterborgapps.com/updates/lingonx5-appcast.xml</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>LingonX is an easy to use yet powerful utility that runs things automatically on your Mac</string>
+			<key>display_name</key>
+			<string>LingonX</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.arubdesu.munki.LingonX</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.arubdesu.download.LingonX</key>
+			<dict>
+				<key>git_hash</key>
+				<string>7598254195766b77373445ae8954a47034d72e3e</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.arubdesu-recipes/PeterBorgApps/LingonX.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>c7bb327ccfc6a893521c59cb919c9b69604d1aa38dccca07a9eeb745722691e9</string>
+			</dict>
+			<key>com.github.arubdesu.munki.LingonX</key>
+			<dict>
+				<key>git_hash</key>
+				<string>2170b478c88600be25e3be11ac60789d3b0bc98e</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.arubdesu-recipes/PeterBorgApps/LingonX.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>c31cb6cdbdbbbc571896da42fd2a1e99da8bddddd56d8ab68443ee02bf45a15f</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

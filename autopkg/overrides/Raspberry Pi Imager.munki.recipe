@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Raspberry Pi Imager</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>Raspberry Pi Imager</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>The home of Raspberry Pi Imager, a user-friendly tool for creating bootable media for Raspberry Pi devices.</string>
+			<key>developer</key>
+			<string>Floris Bos</string>
+			<key>display_name</key>
+			<string>Raspberry Pi Imager</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.Lotusshaney.munki.RaspberryPiImager</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.Lotusshaney.download.RaspberryPiImager</key>
+			<dict>
+				<key>git_hash</key>
+				<string>ddffd1cef41610c0f5471639f60803c6580b268b</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.Lotusshaney-recipes/Raspberry Pi Imager/Raspberry Pi Imager.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>1c99d5cdb6318b8c49b4f41c52ad202ae3fc5fc646e8796e09d2a8835433cb5c</string>
+			</dict>
+			<key>com.github.Lotusshaney.munki.RaspberryPiImager</key>
+			<dict>
+				<key>git_hash</key>
+				<string>3ca5bcdf6e48c40a2de50dbf6eb73447152bea4a</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.Lotusshaney-recipes/Raspberry Pi Imager/Raspberry Pi Imager.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>a83daedb113c70ee8c1111bb75f76a43b40d598b8fb3a4587f403a3fd316321c</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

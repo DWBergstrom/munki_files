@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Rectangle</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>Rectangle</string>
+		<key>PRERELEASE</key>
+		<string></string>
+		<key>pkginfo</key>
+		<dict>
+			<key>blocking_applications</key>
+			<array/>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Move and resize windows on macOS with keyboard shortcuts and snap areas.</string>
+			<key>developer</key>
+			<string>Knollsoft</string>
+			<key>display_name</key>
+			<string>Rectangle</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>postuninstall_script</key>
+			<string>#!/bin/bash
+/usr/bin/pkill -9 Rectangle</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>unattended_uninstall</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.dataJAR-recipes.munki.Rectangle</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.dataJAR-recipes.download.Rectangle</key>
+			<dict>
+				<key>git_hash</key>
+				<string>f65524262dc7a9265e5090b48747b514c04b0df5</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Rectangle/Rectangle.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>2c3dd401bbcdd8defee76fb3fe2a28b8f0e0af5bdb3737d91d1f46faa5327215</string>
+			</dict>
+			<key>com.github.dataJAR-recipes.munki.Rectangle</key>
+			<dict>
+				<key>git_hash</key>
+				<string>0167678da8768f7c802927fac9b43ed0e9abaf34</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Rectangle/Rectangle.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>921d885f5f48ae1e4978031aef0250ad15d319372ffa524d4d1caaf7e6092dec</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

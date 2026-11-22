@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.PowerPanel</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/cyberpower/powerpanel</string>
+		<key>NAME</key>
+		<string>PowerPanel</string>
+		<key>URL</key>
+		<string>https://www.cyberpowersystems.com/product/software/powerpanel-for-mac/</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>development-cyberpower-powerpanel</string>
+			</array>
+			<key>description</key>
+			<string>Provides Mac users with information and statistics about a connected UPS system</string>
+			<key>display_name</key>
+			<string>Power Panel</string>
+			<key>minimum_os_version</key>
+			<string>10.4.1</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.poundbangbash.eholtam-recipes.munki.powerpanel</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.poundbangbash.eholtam-recipes.download.powerpanel</key>
+			<dict>
+				<key>git_hash</key>
+				<string>73286b34f5b863ade3e3ae8092d036ab03e9bb33</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.eholtam-recipes/PowerPanel/PowerPanel.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>d2c308df6e4a15964ba9336717288a6eb9c63ac62d4f7dc5e944d10e85dfbffa</string>
+			</dict>
+			<key>com.github.poundbangbash.eholtam-recipes.munki.powerpanel</key>
+			<dict>
+				<key>git_hash</key>
+				<string>233da07318940770cf4b4aaaed1e05260363388a</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.eholtam-recipes/PowerPanel/PowerPanel.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>62dabe855eb258af35f5b7f25c1b56f368020bacf3588684ea6a649e1e0fe904</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

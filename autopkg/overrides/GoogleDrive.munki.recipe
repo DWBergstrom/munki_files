@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.GoogleDrive</string>
+	<key>Input</key>
+	<dict>
+		<key>DOWNLOAD_URL</key>
+		<string>https://dl.google.com/drive-file-stream/GoogleDrive.dmg</string>
+		<key>MUNKI_CATEGORY</key>
+		<string>Backups</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/googledrive</string>
+		<key>NAME</key>
+		<string>GoogleDrive</string>
+		<key>pkg_ids_set_optional_true</key>
+		<array>
+			<string>com.google.drivefs.filesystems.dfsfuse.arm64</string>
+			<string>com.google.drivefs.filesystems.dfsfuse.x86_64</string>
+			<string>com.google.drivefs.arm64</string>
+			<string>com.google.drivefs.x86_64</string>
+		</array>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>%MUNKI_CATEGORY%</string>
+			<key>description</key>
+			<string>With Google Drive, you stream your Drive files directly from the cloud to your Mac or PC, freeing up disk space and network bandwidth. Because Drive files are stored in the cloud, any changes you or your collaborators make are automatically updated everywhere. You’ll always have the latest version.
+
+You can also make Drive files available for offline access. These cached files sync back to the cloud when you're online, so the latest version is available on all your devices.</string>
+			<key>developer</key>
+			<string>Google Inc.</string>
+			<key>display_name</key>
+			<string>Google Drive</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.apizz.munki.GoogleDrive</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.apizz.munki.GoogleDrive</key>
+			<dict>
+				<key>git_hash</key>
+				<string>b9b7a59f9c86deb85e1fb9d6a6502fe93b586571</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.apizz-recipes/Google_Drive/GoogleDrive.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>cf13ac84b1464f89be503cc23bcced892b8f5870cd5078c0487bf360c38aace1</string>
+			</dict>
+			<key>com.github.nstrauss.download.GoogleDrive</key>
+			<dict>
+				<key>git_hash</key>
+				<string>3fc730529e8a71ecab58d28badf419cd7a3fd07c</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.nstrauss-recipes/Google Drive/GoogleDrive.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>e769ca1477d02a4b6b90c33d86197d0db8b186650c0e90f267d8d61c37e25f92</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

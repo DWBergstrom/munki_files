@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Visual Studio Code</string>
+	<key>Input</key>
+	<dict>
+		<key>APP_FILENAME</key>
+		<string>Visual Studio Code</string>
+		<key>ARCH</key>
+		<string>arm64</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps</string>
+		<key>NAME</key>
+		<string>Visual Studio Code</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>blocking_applications</key>
+			<array>
+				<string>Visual Studio Code.app</string>
+			</array>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux.</string>
+			<key>developer</key>
+			<string>Microsoft</string>
+			<key>display_name</key>
+			<string>Visual Studio Code</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.Lotusshaney.munki.visualstudiocode</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict>
+			<key>com.github.homebysix.FindAndReplace/FindAndReplace</key>
+			<dict>
+				<key>git_hash</key>
+				<string>cecb7b4f782a8f6b59f029d30a544df0e07c5548</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/FindAndReplace/FindAndReplace.py</string>
+				<key>sha256_hash</key>
+				<string>550c9015d45d5f4bbdef4ebd2563c4fbfcbef10cde59598bb101ef7b2647a310</string>
+			</dict>
+			<key>com.github.rtrouton.SharedProcessors/VariablePlaceholder</key>
+			<dict>
+				<key>git_hash</key>
+				<string>26270f19b593812339d9750c0196035b65451c41</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.rtrouton-recipes/SharedProcessors/VariablePlaceholder.py</string>
+				<key>sha256_hash</key>
+				<string>16637db57792a888a6d4fcdf26271ff7ac2b94ebf97433bc4072316f9c70a265</string>
+			</dict>
+		</dict>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.Lotusshaney.munki.visualstudiocode</key>
+			<dict>
+				<key>git_hash</key>
+				<string>ffeaec54c1cebcd7716234e703f0bcb1b37c6117</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.Lotusshaney-recipes/Visual Studio Code/Visual Studio Code.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>b5795c8b19a19b9a77286d0d9adc40480efb80b454803de6def7fd7a74d93f8a</string>
+			</dict>
+			<key>com.github.Lotusshaney.pkg.visualstudiocode</key>
+			<dict>
+				<key>git_hash</key>
+				<string>1a3c2d9f5a7edc97c8cd6f457a8a051074cae9c1</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.Lotusshaney-recipes/Visual Studio Code/Visual Studio Code.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>8afdd95f7fe672adda092966df8164d82eb77055488b5523507ade687fefa1c3</string>
+			</dict>
+			<key>com.github.jc0b.download.VisualStudioCode</key>
+			<dict>
+				<key>git_hash</key>
+				<string>521560e7a7b7614f1490a845427647ab9b94c732</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.jc0b-recipes/Microsoft/VisualStudioCode.download.recipe.yaml</string>
+				<key>sha256_hash</key>
+				<string>98bb84bf4ecccd9423896a6fa779bccbfb004f34e23a5633f551f1cdaf8a8fe6</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

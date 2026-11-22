@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2026-11-22T06:00:24Z</date>
+		<key>munki_version</key>
+		<string>7.3.0.5808</string>
+		<key>os_version</key>
+		<string>27.2.1</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>category</key>
+	<string>Backups</string>
+	<key>description</key>
+	<string>With Google Drive, you stream your Drive files directly from the cloud to your Mac or PC, freeing up disk space and network bandwidth. Because Drive files are stored in the cloud, any changes you or your collaborators make are automatically updated everywhere. You’ll always have the latest version.
+
+You can also make Drive files available for offline access. These cached files sync back to the cloud when you're online, so the latest version is available on all your devices.</string>
+	<key>developer</key>
+	<string>Google Inc.</string>
+	<key>display_name</key>
+	<string>Google Drive</string>
+	<key>installed_size</key>
+	<integer>728519</integer>
+	<key>installer_item_hash</key>
+	<string>9df0d9c9d64053190e1fbef36620b1549b8e38469d03ffce6a3e04bbe9d341a2</string>
+	<key>installer_item_location</key>
+	<string>apps/googledrive/GoogleDrive-134.0.1.pkg</string>
+	<key>installer_item_size</key>
+	<integer>134618</integer>
+	<key>minimum_os_version</key>
+	<string>13.0.0</string>
+	<key>name</key>
+	<string>GoogleDrive</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>97</integer>
+			<key>packageid</key>
+			<string>com.google.drivefs.shortcuts</string>
+			<key>version</key>
+			<string>134.0.1.0</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>349902</integer>
+			<key>minimum_os_version</key>
+			<string>13.0.0</string>
+			<key>optional</key>
+			<true/>
+			<key>packageid</key>
+			<string>com.google.drivefs.arm64</string>
+			<key>version</key>
+			<string>134.0.1.0</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>351984</integer>
+			<key>minimum_os_version</key>
+			<string>13.0.0</string>
+			<key>optional</key>
+			<true/>
+			<key>packageid</key>
+			<string>com.google.drivefs.x86_64</string>
+			<key>version</key>
+			<string>134.0.1.0</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>26536</integer>
+			<key>packageid</key>
+			<string>com.google.Keystone</string>
+			<key>version</key>
+			<string>0</string>
+		</dict>
+	</array>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>134.0.1</string>
+</dict>
+</plist>

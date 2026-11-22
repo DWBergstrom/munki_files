@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Handbrake</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/Handbrake</string>
+		<key>NAME</key>
+		<string>Handbrake</string>
+		<key>PRERELEASE</key>
+		<string></string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported codecs.</string>
+			<key>display_name</key>
+			<string>Handbrake</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.autopkg.munki.Handbrake</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.autopkg.download.Handbrake</key>
+			<dict>
+				<key>git_hash</key>
+				<string>f78a2b41df4a1bfcd3e584dd4d68f2e7534bbfc8</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/Handbrake/Handbrake.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>589da87868f567c70c63e491d62ca0a4a568f210a6ff83a369f0fa906b4d9250</string>
+			</dict>
+			<key>com.github.autopkg.munki.Handbrake</key>
+			<dict>
+				<key>git_hash</key>
+				<string>cd107d434d771a9f1ef8992dc3e4ce2adccabf7c</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/Handbrake/Handbrake.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>8bbb3a53334d8cb3c95d029e7fc4cda5c7f7e1e494e38d1e9d3dac9dcd0f76a9</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>
