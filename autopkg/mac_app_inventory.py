@@ -93,6 +93,18 @@ def discover_tailscale_hosts():
     if result.returncode != 0:
         return []
 
+    # Get the local machine's Tailscale IP so we don't scan ourselves
+    local_ip = None
+    try:
+        local_result = subprocess.run(
+            ["tailscale", "ip", "-4"],
+            capture_output=True, text=True, timeout=5,
+        )
+        if local_result.returncode == 0:
+            local_ip = local_result.stdout.strip()
+    except (FileNotFoundError, OSError, subprocess.TimeoutExpired):
+        pass
+
     hosts = []
     for line in result.stdout.splitlines():
         line = line.strip()
@@ -104,6 +116,11 @@ def discover_tailscale_hosts():
             continue
 
         ip = parts[0]
+
+        # Skip the local machine (redundant with local scan)
+        if local_ip and ip == local_ip:
+            continue
+
         # parts[1] = hostname, parts[2] = user@ (may have trailing @), parts[3] = OS
         os_name = parts[3].lower() if len(parts) > 3 else ""
 
@@ -119,9 +136,6 @@ def discover_tailscale_hosts():
         # Extract username from parts[2] (e.g., "DWBergstrom@" -> "DWBergstrom")
         user_part = parts[2] if len(parts) > 2 else ""
         username = user_part.rstrip("@")
-
-        # Skip the local machine (tailscale status includes it)
-        # We'll still include it but it's redundant with local scan
 
         if username and ip:
             hosts.append("%s@%s" % (username, ip))
