@@ -20,6 +20,7 @@ if [[ "$1" == "--help" || "$1" == "-h" ]]; then
 	echo "  --force-import     Force re-import packages even if already in Munki repo (use for testing only)"
 	echo "  --scan-host USER@HOST  Add additional host to scan for --find-missing (can be used multiple times)"
 	echo "  --local-only       Skip scanning remote hosts for --find-missing"
+\techo "  --tailscale        Scan hosts discovered via tailscale status for --find-missing"
 	echo ""
 	echo "Log file: ${HOME}/Library/Logs/auto-autopkg-ts.log"
 	exit 0
@@ -32,12 +33,15 @@ ORIGINAL_ARGS=("$@")
 FORCE_MUNKIIMPORT=""
 EXTRA_SCAN_HOSTS=()
 LOCAL_ONLY=false
+USE_TAILSCALE_HOSTS=false
 
 for arg in "$@"; do
 	if [[ "${arg}" == "--force-import" ]]; then
 		FORCE_MUNKIIMPORT="-k force_munkiimport=true"
 	elif [[ "${arg}" == "--local-only" ]]; then
 		LOCAL_ONLY=true
+	elif [[ "${arg}" == "--tailscale" ]]; then
+		USE_TAILSCALE_HOSTS=true
 	fi
 done
 
@@ -182,6 +186,8 @@ AUTOPKG_DIR="/Volumes/${VOLUME_NAME}/munki_files/autopkg"
 MUNKI_REPO_PATH="/Volumes/${VOLUME_NAME}/munki_files/munki_web/munki_repo/"
 # Define the override directory
 OVERRIDES_DIR="/Volumes/${VOLUME_NAME}/munki_files/autopkg/overrides"
+# Exclude Steam games from app inventory (apps under Steam library directories)
+EXCLUDE_STEAM="true"
 AUTOPKG_REPOS_FILE="${AUTOPKG_DIR}/autopkg-repos"
 
 # Verify volume is mounted
@@ -678,66 +684,57 @@ function find_missing_overrides {
 	done < <(ls -1 "${OVERRIDES_DIR}"/*.munki.recipe "${OVERRIDES_DIR}"/*.recipe 2>/dev/null | sort -u)
 	log "Found ${override_count} existing overrides"
 	
-	# Collect all app names from local and remote sources
+	# Collect all app names from local and remote sources via mac_app_inventory.py
 	all_app_names=()
-	
-	# Scan local /Applications
-	log "Scanning local applications..."
-	local_app_count=0
-	for app_path in /Applications/*.app ~/Applications/*.app; do
-		if [ -d "${app_path}" ]; then
-			((local_app_count++))
-			app_name=$(basename "${app_path}" .app)
-			all_app_names+=("${app_name}")
-		fi
-	done
-	log "Found ${local_app_count} local applications"
-	
-	# Scan remote hosts (unless --local-only)
+
+	log "Scanning installed applications via mac_app_inventory.py..."
+
+	INVENTORY_PY="${AUTOPKG_DIR}/mac_app_inventory.py"
+	INVENTORY_ARGS=(--format names --skip-list "${SKIP_LIST_FILE}" --compare-overrides "${OVERRIDES_DIR}" --missing-only)
+
+	# --tailscale implies remote scanning, so skip --local-only
+	if [ "${USE_TAILSCALE_HOSTS}" != "true" ]; then
+		INVENTORY_ARGS+=(--local-only)
+	fi
+
+	if [ "${USE_TAILSCALE_HOSTS}" = "true" ]; then
+		INVENTORY_ARGS+=(--tailscale)
+	fi
+
 	SCAN_HOSTS_FILE="${AUTOPKG_DIR}/autopkg-scan-hosts"
+
+	if [ "${EXCLUDE_STEAM}" = "true" ]; then
+		INVENTORY_ARGS+=(--exclude-steam)
+	fi
+
 	if [ "${LOCAL_ONLY}" != "true" ]; then
-		# Build list of hosts to scan
-		hosts_to_scan=()
-		
-		# Add hosts from config file
+		# Add remote hosts from config file
 		if [ -f "${SCAN_HOSTS_FILE}" ]; then
 			log "Reading hosts from: ${SCAN_HOSTS_FILE}"
+			host_count=0
 			while IFS= read -r line; do
 				# Skip comments and empty lines
 				[[ "${line}" =~ ^[[:space:]]*# ]] && continue
 				[[ -z "${line// }" ]] && continue
-				hosts_to_scan+=("${line}")
+				INVENTORY_ARGS+=(--scan-host "${line}")
+				((host_count++))
 			done < "${SCAN_HOSTS_FILE}"
-			log "Found ${#hosts_to_scan[@]} host(s) in config file"
+			log "Found ${host_count} host(s) in config file"
 		else
 			info "No scan hosts config file found at: ${SCAN_HOSTS_FILE}"
 		fi
-		
+
 		# Add extra hosts from --scan-host flags
 		for host in "${EXTRA_SCAN_HOSTS[@]}"; do
-			hosts_to_scan+=("${host}")
-		done
-		
-		if [ ${#hosts_to_scan[@]} -eq 0 ]; then
-			info "No remote hosts to scan"
-		fi
-		
-		# Scan each remote host
-		for host in "${hosts_to_scan[@]}"; do
-			log "Scanning remote host: ${host}..."
-			remote_apps=$(ssh -o ConnectTimeout=10 -o BatchMode=yes "${host}" 'ls -1 /Applications/ 2>/dev/null | grep "\.app$" | sed "s/\.app$//"' 2>/dev/null)
-			if [ $? -eq 0 ] && [ -n "${remote_apps}" ]; then
-				remote_count=$(echo "${remote_apps}" | wc -l | tr -d ' ')
-				log "Found ${remote_count} applications on ${host}"
-				while IFS= read -r app_name; do
-					[ -n "${app_name}" ] && all_app_names+=("${app_name}")
-				done <<< "${remote_apps}"
-			else
-				warn "Could not connect to ${host} (check SSH key auth)"
-			fi
+			INVENTORY_ARGS+=(--scan-host "${host}")
 		done
 	fi
-	
+
+	while IFS= read -r app_name; do
+		[ -n "${app_name}" ] && all_app_names+=("${app_name}")
+	done < <(python3 "${INVENTORY_PY}" "${INVENTORY_ARGS[@]}")
+
+	log "Found ${#all_app_names[@]} application(s) without overrides"
 	# Deduplicate app names (bash 3.2 compatible)
 	unique_app_names=()
 	while IFS= read -r name; do
