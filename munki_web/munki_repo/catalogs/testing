@@ -15090,68 +15090,6 @@ exit 0</string>
 		<array>
 			<string>testing</string>
 		</array>
-		<key>description</key>
-		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
-		<key>display_name</key>
-		<string>Google Chrome</string>
-		<key>installer_item_hash</key>
-		<string>75b9fdb7573aab8a89f1b00319692a1f785fb4e6fd07e97916a13b00b3d34bae</string>
-		<key>installer_item_location</key>
-		<string>apps/GoogleChrome-158.0.8127.37.dmg</string>
-		<key>installer_item_size</key>
-		<integer>282488</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.google.Chrome</string>
-				<key>CFBundleName</key>
-				<string>Chrome</string>
-				<key>CFBundleShortVersionString</key>
-				<string>158.0.8127.37</string>
-				<key>CFBundleVersion</key>
-				<string>8127.37</string>
-				<key>minosversion</key>
-				<string>13.0</string>
-				<key>path</key>
-				<string>/Applications/Google Chrome.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Google Chrome.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>13.0</string>
-		<key>name</key>
-		<string>GoogleChrome</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>158.0.8127.37</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
 		<key>category</key>
 		<string>Utilities</string>
 		<key>description</key>
@@ -17342,6 +17280,70 @@ fi
 		<true/>
 		<key>version</key>
 		<string>160.0.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Mozilla Firefox is a free and open source web browser.</string>
+		<key>display_name</key>
+		<string>Mozilla Firefox</string>
+		<key>installer_item_hash</key>
+		<string>18f398ada9ba9faa5458dc01c2a68fc7df35517283be2e7a421a0867c5f47f83</string>
+		<key>installer_item_location</key>
+		<string>apps/firefox/Firefox-161.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>163475</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>org.mozilla.firefox</string>
+				<key>CFBundleName</key>
+				<string>Firefox</string>
+				<key>CFBundleShortVersionString</key>
+				<string>161.0</string>
+				<key>CFBundleVersion</key>
+				<string>16126.11.18</string>
+				<key>minosversion</key>
+				<string>10.15.0</string>
+				<key>path</key>
+				<string>/Applications/Firefox.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>mode</key>
+				<string>ug+w,o-w</string>
+				<key>source_item</key>
+				<string>Firefox.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.15.0</string>
+		<key>name</key>
+		<string>Firefox</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>161.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -21568,6 +21570,94 @@ fi
 		<true/>
 		<key>version</key>
 		<string>2.5.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>Microsoft Auto Update</string>
+			<string>Microsoft Error Reporting</string>
+			<string>Microsoft Word</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>The Word you want. State-of-the-art editing, reviewing, and sharing tools make creating and polishing documents easy.</string>
+		<key>display_name</key>
+		<string>Microsoft Word</string>
+		<key>installed_size</key>
+		<integer>2797198</integer>
+		<key>installer_item_hash</key>
+		<string>4a1b814985452ef28fa652d30f09be4d315ea9ecc5355dc8cfe239a2720cc443</string>
+		<key>installer_item_location</key>
+		<string>apps/Microsoft Word 365/Microsoft_Word-16.115.26112215.pkg</string>
+		<key>installer_item_size</key>
+		<integer>1398947</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.microsoft.Word</string>
+				<key>CFBundleName</key>
+				<string>Word</string>
+				<key>CFBundleShortVersionString</key>
+				<string>16.115.2</string>
+				<key>CFBundleVersion</key>
+				<string>16.115.26112215</string>
+				<key>minosversion</key>
+				<string>15.0</string>
+				<key>path</key>
+				<string>/Applications/Microsoft Word.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleVersion</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>15.0</string>
+		<key>name</key>
+		<string>Microsoft Word 365</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>2785360</integer>
+				<key>packageid</key>
+				<string>com.microsoft.package.Microsoft_Word.app</string>
+				<key>version</key>
+				<string>16.115.26112215</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>10918</integer>
+				<key>packageid</key>
+				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
+				<key>version</key>
+				<string>4.85.26080216</string>
+			</dict>
+			<dict>
+				<key>installed_size</key>
+				<integer>920</integer>
+				<key>packageid</key>
+				<string>com.microsoft.pkg.licensing.v3</string>
+				<key>version</key>
+				<string>16.115.26112215</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>16.115.26112215</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -27929,70 +28019,6 @@ fi
 		<true/>
 		<key>version</key>
 		<string>1.217.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Chrome-like keyword search for Safari.</string>
-		<key>developer</key>
-		<string>Duck Duck Go</string>
-		<key>display_name</key>
-		<string>DuckDuckGo</string>
-		<key>installer_item_hash</key>
-		<string>c5cf6e0086907f30bded47afc6de712c97c8b3c93e7e28a1e4e340b936e5918d</string>
-		<key>installer_item_location</key>
-		<string>apps/DuckDuckGo/DuckDuckGo-1.216.0.dmg</string>
-		<key>installer_item_size</key>
-		<integer>165080</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.duckduckgo.macos.browser</string>
-				<key>CFBundleName</key>
-				<string>DuckDuckGo</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.216.0</string>
-				<key>CFBundleVersion</key>
-				<string>874</string>
-				<key>minosversion</key>
-				<string>12.3</string>
-				<key>path</key>
-				<string>/Applications/DuckDuckGo.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>DuckDuckGo.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>12.3</string>
-		<key>name</key>
-		<string>DuckDuckGo</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.216.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -35026,24 +35052,24 @@ fi
 		<key>display_name</key>
 		<string>claude code</string>
 		<key>installed_size</key>
-		<integer>355330</integer>
+		<integer>374802</integer>
 		<key>installer_item_hash</key>
-		<string>07c362a07c5c93c5a1b28b905e01a7c5eac07be0398a5c606033332811dd4a1c</string>
+		<string>5d89a2d6a1596aa4004ba35572f2b0508cd6ba8230717a7525e88c746b126802</string>
 		<key>installer_item_location</key>
-		<string>apps/ClaudeCode/ClaudeCode-arm64-2.1.330.pkg</string>
+		<string>apps/ClaudeCode/ClaudeCode-arm64-2.1.332.pkg</string>
 		<key>installer_item_size</key>
-		<integer>157570</integer>
+		<integer>167382</integer>
 		<key>name</key>
 		<string>ClaudeCode</string>
 		<key>receipts</key>
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>355330</integer>
+				<integer>374802</integer>
 				<key>packageid</key>
 				<string>com.github.autopkg.ClaudeCode</string>
 				<key>version</key>
-				<string>2.1.330</string>
+				<string>2.1.332</string>
 			</dict>
 		</array>
 		<key>supported_architectures</key>
@@ -35059,7 +35085,7 @@ fi
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>2.1.330</string>
+		<string>2.1.332</string>
 		<key>version_script</key>
 		<string>#!/bin/sh
 /usr/local/bin/claude --version | /usr/bin/grep -oE '[0-9]+(\.[0-9]+)+'</string>
@@ -38291,6 +38317,72 @@ fi
 		<key>display_name</key>
 		<string>Claude</string>
 		<key>installer_item_hash</key>
+		<string>d03c8f1734abc373f0e76573486db7d35ff64729239ee9053bcb79d7c7852567</string>
+		<key>installer_item_location</key>
+		<string>apps/Claude/Claude-7.37095.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>402762</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.anthropic.claudefordesktop</string>
+				<key>CFBundleName</key>
+				<string>Claude</string>
+				<key>CFBundleShortVersionString</key>
+				<string>7.37095.0</string>
+				<key>CFBundleVersion</key>
+				<string>7.37095.0</string>
+				<key>minosversion</key>
+				<string>13.0</string>
+				<key>path</key>
+				<string>/Applications/Claude.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Claude.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0</string>
+		<key>name</key>
+		<string>Claude</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>7.37095.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Your AI partner on desktop. Fast, focused, and designed for deep work.</string>
+		<key>developer</key>
+		<string>Anthropic PBC</string>
+		<key>display_name</key>
+		<string>Claude</string>
+		<key>installer_item_hash</key>
 		<string>168640ac30ef49660a2c2fd47a8704ffe015341b33d31239864ca579b3f674d1</string>
 		<key>installer_item_location</key>
 		<string>apps/Claude/Claude-6.28899.6.dmg</string>
@@ -41033,11 +41125,11 @@ fi
 		<key>display_name</key>
 		<string>Codex</string>
 		<key>installer_item_hash</key>
-		<string>67d362df03de37ebd794a64608abf98a2b0b1be2783d33a950abdd83ed89b279</string>
+		<string>00db5b0c41e91d6d8c257a7ddfff15bfe2b1e56f1119b54079821b144e86a5a3</string>
 		<key>installer_item_location</key>
-		<string>apps/Codex/Codex-26.1117.41037.dmg</string>
+		<string>apps/Codex/Codex-26.1120.50957.dmg</string>
 		<key>installer_item_size</key>
-		<integer>568962</integer>
+		<integer>518606</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -41048,9 +41140,9 @@ fi
 				<key>CFBundleName</key>
 				<string>ChatGPT</string>
 				<key>CFBundleShortVersionString</key>
-				<string>26.1117.41037</string>
+				<string>26.1120.50957</string>
 				<key>CFBundleVersion</key>
-				<string>29803</string>
+				<string>30866</string>
 				<key>minosversion</key>
 				<string>13.0</string>
 				<key>path</key>
@@ -41083,7 +41175,7 @@ fi
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>26.1117.41037</string>
+		<string>26.1120.50957</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -41280,6 +41372,72 @@ fi
 		<true/>
 		<key>version</key>
 		<string>2.7.0.48109</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Browsers</string>
+		<key>description</key>
+		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
+		<key>developer</key>
+		<string>Brave Software Inc.</string>
+		<key>display_name</key>
+		<string>Brave Browser</string>
+		<key>installer_item_hash</key>
+		<string>cd74111e19714be8ab651111fa239f80be1134fcb2a3f2e74f86f2415f9bdddf</string>
+		<key>installer_item_location</key>
+		<string>apps/Brave/Brave-158.1.100.59.dmg</string>
+		<key>installer_item_size</key>
+		<integer>355879</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.brave.Browser</string>
+				<key>CFBundleName</key>
+				<string>Brave</string>
+				<key>CFBundleShortVersionString</key>
+				<string>158.1.100.59</string>
+				<key>CFBundleVersion</key>
+				<string>200.59</string>
+				<key>minosversion</key>
+				<string>13.0</string>
+				<key>path</key>
+				<string>/Applications/Brave Browser.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Brave Browser.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0</string>
+		<key>name</key>
+		<string>Brave</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>158.1.100.59</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -49012,68 +49170,6 @@ rm -rf /Applications/zoom.us.app
 		<true/>
 		<key>version</key>
 		<string>20240926.162135</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Fast Terminal app based in Rust.</string>
-		<key>developer</key>
-		<string>Denver Technologies</string>
-		<key>display_name</key>
-		<string>Warp</string>
-		<key>force_munkiimport</key>
-		<true/>
-		<key>installer_item_hash</key>
-		<string>ff5127346cb10c63b499ad177f2c3916848234001cebe23420b53f0313131969</string>
-		<key>installer_item_location</key>
-		<string>apps/Warp/Warp-0.2026.11.18.08.17.04.dmg</string>
-		<key>installer_item_size</key>
-		<integer>335030</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>dev.warp.Warp-Stable</string>
-				<key>CFBundleName</key>
-				<string>Warp</string>
-				<key>CFBundleShortVersionString</key>
-				<string>0.2026.11.18.08.17.04</string>
-				<key>CFBundleVersion</key>
-				<string>0.2026.11.18.08.17.04</string>
-				<key>path</key>
-				<string>/Applications/Warp.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Warp.app</string>
-			</dict>
-		</array>
-		<key>name</key>
-		<string>Warp</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>0.2026.11.18.08.17.04</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -60203,87 +60299,6 @@ Even if you think you have nothing to hide — no one likes to be watched. That�
 		<key>display_name</key>
 		<string>NordVPN</string>
 		<key>installed_size</key>
-		<integer>622320</integer>
-		<key>installer_item_hash</key>
-		<string>a98661fd854a032c7ddfe90c9a6c7f27cd73bfe3b1d3e5ecca2d113c8fe7b3cc</string>
-		<key>installer_item_location</key>
-		<string>apps/NordVPN/NordVPN-10.15.1.dmg</string>
-		<key>installer_item_size</key>
-		<integer>292813</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.nordvpn.macos</string>
-				<key>CFBundleName</key>
-				<string>NordVPN</string>
-				<key>CFBundleShortVersionString</key>
-				<string>10.15.1</string>
-				<key>CFBundleVersion</key>
-				<string>383</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/NordVPN.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>NordVPN</string>
-		<key>postuninstall_script</key>
-		<string>#!/bin/bash
-#
-launchctl unload /Library/LaunchDaemons/com.nordvpn.macos.helper.plist
-#
-rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>622320</integer>
-				<key>packageid</key>
-				<string>com.nordvpn.macos</string>
-				<key>version</key>
-				<string>10.15.1</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>10.15.1</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>NordVPN.app</string>
-			<string>NordVPNLauncher Sideload.app</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Get the fastest VPN in the world and enjoy a smooth, safe, and private connection on your Mac. NordVPN’s easy-to-use app will protect all your connected devices from snoopers tracking what you do online.
-
-Even if you think you have nothing to hide — no one likes to be watched. That’s why you need a VPN to protect your privacy and keep your online data safe.</string>
-		<key>developer</key>
-		<string>Nordvpn S.A.</string>
-		<key>display_name</key>
-		<string>NordVPN</string>
-		<key>installed_size</key>
 		<integer>502057</integer>
 		<key>installer_item_hash</key>
 		<string>18807b314e28e23527a366a9428103471ef29d9a698cea2994d1d1907f4c964b</string>
@@ -60343,6 +60358,84 @@ rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
 		<true/>
 		<key>version</key>
 		<string>10.16.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models.</string>
+		<key>developer</key>
+		<string>Infra Technologies, Inc</string>
+		<key>display_name</key>
+		<string>Ollama</string>
+		<key>installer_item_hash</key>
+		<string>22b7e935b0645bb12f75d988e418a01f51d7cc593370deee985cae4285155e1d</string>
+		<key>installer_item_location</key>
+		<string>apps/Ollama/Ollama-0.40.18.dmg</string>
+		<key>installer_item_size</key>
+		<integer>231006</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.electron.ollama</string>
+				<key>CFBundleName</key>
+				<string>Ollama</string>
+				<key>CFBundleShortVersionString</key>
+				<string>0.40.18</string>
+				<key>CFBundleVersion</key>
+				<string>0.40.18</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/Ollama.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Ollama.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.0</string>
+		<key>name</key>
+		<string>Ollama</string>
+		<key>postinstall_script</key>
+		<string>#!/bin/bash
+
+# Script built from: https://github.com/ollama/ollama/issues/851#issuecomment-1889808636
+# Please note admin rights are still needed as the file that records whether first time run has completed is located in the Users home folder. see https://github.com/ollama/ollama/issues/6814
+
+# Install Command Line Tools
+if ! [ -f /usr/local/bin/ollama ]; then
+  /usr/bin/touch /usr/local/bin/ollama ; /bin/ln -s -f /Applications/Ollama.app/Contents/Resources/ollama /usr/local/bin/ollama
+fi
+
+exit</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>0.40.18</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -60502,6 +60595,72 @@ exit</string>
 		<key>display_name</key>
 		<string>Antigravity</string>
 		<key>installer_item_hash</key>
+		<string>be9694a3baff68c4126c4e298990d8f33309a471f6941936c377989602d163a6</string>
+		<key>installer_item_location</key>
+		<string>apps/Antigravity/Antigravity-2.35.1.dmg</string>
+		<key>installer_item_size</key>
+		<integer>236425</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.google.antigravity</string>
+				<key>CFBundleName</key>
+				<string>Antigravity</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2.35.1</string>
+				<key>CFBundleVersion</key>
+				<string>2.35.1</string>
+				<key>minosversion</key>
+				<string>13.0</string>
+				<key>path</key>
+				<string>/Applications/Antigravity.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Antigravity.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>13.0</string>
+		<key>name</key>
+		<string>Antigravity</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2.35.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Google's agentic development platform, evolving the IDE into the agent-first era.</string>
+		<key>developer</key>
+		<string>Google</string>
+		<key>display_name</key>
+		<string>Antigravity</string>
+		<key>installer_item_hash</key>
 		<string>51105bc2227e41379c42358d01139c6eb9b66d63eee75de10f717208e8f1c672</string>
 		<key>installer_item_location</key>
 		<string>apps/Antigravity/Antigravity-2.35.0.dmg</string>
@@ -60553,72 +60712,6 @@ exit</string>
 		<true/>
 		<key>version</key>
 		<string>2.35.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Google's agentic development platform, evolving the IDE into the agent-first era.</string>
-		<key>developer</key>
-		<string>Google</string>
-		<key>display_name</key>
-		<string>Antigravity</string>
-		<key>installer_item_hash</key>
-		<string>385c89149ac0d81a8e16ef032cf76b84957ba7db2e4d28f4a357ddba2e0181c9</string>
-		<key>installer_item_location</key>
-		<string>apps/Antigravity/Antigravity-2.34.0.dmg</string>
-		<key>installer_item_size</key>
-		<integer>230424</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.google.antigravity</string>
-				<key>CFBundleName</key>
-				<string>Antigravity</string>
-				<key>CFBundleShortVersionString</key>
-				<string>2.34.0</string>
-				<key>CFBundleVersion</key>
-				<string>2.34.0</string>
-				<key>minosversion</key>
-				<string>13.0</string>
-				<key>path</key>
-				<string>/Applications/Antigravity.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Antigravity.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>13.0</string>
-		<key>name</key>
-		<string>Antigravity</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2.34.0</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>

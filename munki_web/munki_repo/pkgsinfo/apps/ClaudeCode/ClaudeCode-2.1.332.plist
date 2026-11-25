@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-11-22T02:55:33Z</date>
+		<date>2026-11-25T05:57:47Z</date>
 		<key>munki_version</key>
 		<string>7.3.0.5808</string>
 		<key>os_version</key>
@@ -26,24 +26,24 @@
 	<key>display_name</key>
 	<string>claude code</string>
 	<key>installed_size</key>
-	<integer>355330</integer>
+	<integer>374802</integer>
 	<key>installer_item_hash</key>
-	<string>07c362a07c5c93c5a1b28b905e01a7c5eac07be0398a5c606033332811dd4a1c</string>
+	<string>5d89a2d6a1596aa4004ba35572f2b0508cd6ba8230717a7525e88c746b126802</string>
 	<key>installer_item_location</key>
-	<string>apps/ClaudeCode/ClaudeCode-arm64-2.1.330.pkg</string>
+	<string>apps/ClaudeCode/ClaudeCode-arm64-2.1.332.pkg</string>
 	<key>installer_item_size</key>
-	<integer>157570</integer>
+	<integer>167382</integer>
 	<key>name</key>
 	<string>ClaudeCode</string>
 	<key>receipts</key>
 	<array>
 		<dict>
 			<key>installed_size</key>
-			<integer>355330</integer>
+			<integer>374802</integer>
 			<key>packageid</key>
 			<string>com.github.autopkg.ClaudeCode</string>
 			<key>version</key>
-			<string>2.1.330</string>
+			<string>2.1.332</string>
 		</dict>
 	</array>
 	<key>supported_architectures</key>
@@ -59,7 +59,7 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>2.1.330</string>
+	<string>2.1.332</string>
 	<key>version_script</key>
 	<string>#!/bin/sh
 /usr/local/bin/claude --version | /usr/bin/grep -oE '[0-9]+(\.[0-9]+)+'</string>

@@ -7,54 +7,55 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-11-10T05:56:16Z</date>
+		<date>2026-11-25T06:02:51Z</date>
 		<key>munki_version</key>
 		<string>7.3.0.5808</string>
 		<key>os_version</key>
-		<string>27.2</string>
+		<string>27.2.1</string>
 	</dict>
 	<key>autoremove</key>
 	<false/>
 	<key>blocking_applications</key>
 	<array>
-		<string>NordVPN.app</string>
-		<string>NordVPNLauncher Sideload.app</string>
+		<string>Microsoft Remote Desktop</string>
+		<string>Windows App</string>
 	</array>
 	<key>catalogs</key>
 	<array>
-		<string>testing</string>
+		<string>utilities</string>
 	</array>
+	<key>category</key>
+	<string>Utility</string>
 	<key>description</key>
-	<string>Get the fastest VPN in the world and enjoy a smooth, safe, and private connection on your Mac. NordVPN’s easy-to-use app will protect all your connected devices from snoopers tracking what you do online.
-
-Even if you think you have nothing to hide — no one likes to be watched. That’s why you need a VPN to protect your privacy and keep your online data safe.</string>
+	<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
+</string>
 	<key>developer</key>
-	<string>Nordvpn S.A.</string>
+	<string>Microsoft</string>
 	<key>display_name</key>
-	<string>NordVPN</string>
+	<string>Windows App</string>
 	<key>installed_size</key>
-	<integer>622320</integer>
+	<integer>257202</integer>
 	<key>installer_item_hash</key>
-	<string>a98661fd854a032c7ddfe90c9a6c7f27cd73bfe3b1d3e5ecca2d113c8fe7b3cc</string>
+	<string>bc7ed3e01cc207c095fdaac8adf328d4d92f47c43ba980a9d5850ddab44688ba</string>
 	<key>installer_item_location</key>
-	<string>apps/NordVPN/NordVPN-10.15.1.dmg</string>
+	<string>apps/microsoft/Microsoft_Windows_App-11.4.5.pkg</string>
 	<key>installer_item_size</key>
-	<integer>292813</integer>
+	<integer>104590</integer>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.nordvpn.macos</string>
+			<string>com.microsoft.rdc.macos</string>
 			<key>CFBundleName</key>
-			<string>NordVPN</string>
+			<string>Windows App</string>
 			<key>CFBundleShortVersionString</key>
-			<string>10.15.1</string>
+			<string>11.4.5</string>
 			<key>CFBundleVersion</key>
-			<string>383</string>
+			<string>3151</string>
 			<key>minosversion</key>
-			<string>14.0</string>
+			<string>15.0</string>
 			<key>path</key>
-			<string>/Applications/NordVPN.app</string>
+			<string>/Applications/Windows App.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -62,24 +63,26 @@ Even if you think you have nothing to hide — no one likes to be watched. That�
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
-	<string>14.0</string>
+	<string>15.0</string>
 	<key>name</key>
-	<string>NordVPN</string>
-	<key>postuninstall_script</key>
-	<string>#!/bin/bash
-#
-launchctl unload /Library/LaunchDaemons/com.nordvpn.macos.helper.plist
-#
-rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
+	<string>WindowsApp</string>
 	<key>receipts</key>
 	<array>
 		<dict>
 			<key>installed_size</key>
-			<integer>622320</integer>
+			<integer>246471</integer>
 			<key>packageid</key>
-			<string>com.nordvpn.macos</string>
+			<string>com.microsoft.rdc.macos</string>
 			<key>version</key>
-			<string>10.15.1</string>
+			<string>11.4.5</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>10731</integer>
+			<key>packageid</key>
+			<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
+			<key>version</key>
+			<string>4.81.25121042</string>
 		</dict>
 	</array>
 	<key>unattended_install</key>
@@ -91,6 +94,6 @@ rm /Library/LaunchDaemons/com.nordvpn.macos.helper.plist</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>10.15.1</string>
+	<string>11.4.5</string>
 </dict>
 </plist>
