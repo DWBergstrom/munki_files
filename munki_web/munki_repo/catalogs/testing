@@ -16510,6 +16510,126 @@ fi
 	<dict>
 		<key>autoremove</key>
 		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>Visual Studio Code.app</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux.</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Visual Studio Code</string>
+		<key>installed_size</key>
+		<integer>1025946</integer>
+		<key>installer_item_hash</key>
+		<string>d1ea3f048a0667d0543134b92a44cd613c3d17bf914ee14f56938339af9e0b48</string>
+		<key>installer_item_location</key>
+		<string>apps/Visual Studio Code-1.148.0.pkg</string>
+		<key>installer_item_size</key>
+		<integer>379344</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleShortVersionString</key>
+				<string>1.148.0</string>
+				<key>path</key>
+				<string>/Applications/Visual Studio Code.app</string>
+				<key>type</key>
+				<string>application</string>
+			</dict>
+		</array>
+		<key>name</key>
+		<string>Visual Studio Code</string>
+		<key>postinstall_script</key>
+		<string>#!/bin/bash
+
+# Script to change ownership of the .vscode directory in each user's home directory
+
+# Exit Codes
+# 0: Success
+# 95: Not running as root
+
+# Variables
+LOG_PROCESS="fix_vscode_ownership"
+
+#Functions
+writeLog() {
+    # Write to system log
+    /usr/bin/logger -is -t "${LOG_PROCESS}" "[${LOG_PROCESS}] ${1}"
+}
+
+root_check() {
+    if [[ "$(/usr/bin/id -u)" != "0" ]] ; then
+        writeLog "${LOG_PROCESS} MUST run as root..."
+        exit 95
+    fi
+}
+
+main() {
+    # Get a list of all user directories in /Users, excluding some directories
+    for USER in $(/usr/bin/dscl . -list /Users UniqueID | /usr/bin/awk '$2 &gt; 500 { print $1 }'); do
+        
+        # Define the user's home directory
+        USER_DIR=$(/usr/bin/dscl . -read "/Users/${USER}" NFSHomeDirectory | awk '{print $2}')
+
+        # Define the .vscode directory path for this user
+        VSCODE_DIR="${USER_DIR}/.vscode"
+
+        # Check if the .vscode directory exists
+        if [[ -d "${VSCODE_DIR}" ]]; then
+            writeLog "Changing ownership of ${VSCODE_DIR} to ${USER}"
+            /usr/sbin/chown -R "${USER}":staff "${VSCODE_DIR}"
+        else
+            writeLog "Skipping: No .vscode directory found for ${USER}"
+        fi
+
+        # Define the Code directory path for this user
+        VSCODE_LIB_DIR="${USER_DIR}/Library/Application Support/Code"
+        
+        # Check if the Code directory exists
+        if [[ -d "${VSCODE_LIB_DIR}" ]]; then
+            writeLog "Changing ownership of ${VSCODE_LIB_DIR} to ${USER}"
+            /usr/sbin/chown -R "${USER}":staff "${VSCODE_LIB_DIR}"
+        else
+            writeLog "Skipping: No Code directory found for ${USER}"
+        fi
+    done
+}
+
+# Main
+root_check
+main
+writeLog "${LOG_PROCESS} complete."
+
+exit 0</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>1025946</integer>
+				<key>packageid</key>
+				<string>com.microsoft.VSCode</string>
+				<key>version</key>
+				<string>1.148.0</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.148.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
 		<key>catalogs</key>
 		<array>
 			<string>testing</string>
@@ -17229,70 +17349,6 @@ fi
 		<key>display_name</key>
 		<string>Mozilla Firefox</string>
 		<key>installer_item_hash</key>
-		<string>db9a522291d82cbe9a2b2922822def4db0a79d4fa3e614979039d705b13b1c25</string>
-		<key>installer_item_location</key>
-		<string>apps/firefox/Firefox-160.0.1.dmg</string>
-		<key>installer_item_size</key>
-		<integer>161876</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>org.mozilla.firefox</string>
-				<key>CFBundleName</key>
-				<string>Firefox</string>
-				<key>CFBundleShortVersionString</key>
-				<string>160.0.1</string>
-				<key>CFBundleVersion</key>
-				<string>16026.11.16</string>
-				<key>minosversion</key>
-				<string>10.15.0</string>
-				<key>path</key>
-				<string>/Applications/Firefox.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>mode</key>
-				<string>ug+w,o-w</string>
-				<key>source_item</key>
-				<string>Firefox.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.15.0</string>
-		<key>name</key>
-		<string>Firefox</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>160.0.1</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Mozilla Firefox is a free and open source web browser.</string>
-		<key>display_name</key>
-		<string>Mozilla Firefox</string>
-		<key>installer_item_hash</key>
 		<string>18f398ada9ba9faa5458dc01c2a68fc7df35517283be2e7a421a0867c5f47f83</string>
 		<key>installer_item_location</key>
 		<string>apps/firefox/Firefox-161.0.dmg</string>
@@ -17407,6 +17463,72 @@ fi
 		<true/>
 		<key>version</key>
 		<string>113.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.</string>
+		<key>developer</key>
+		<string>Zed Industries, Inc.</string>
+		<key>display_name</key>
+		<string>Zed</string>
+		<key>installer_item_hash</key>
+		<string>36ab60379627730fc3ac6ab79bc57dba7a1cf6d6df8117b8e22190d9b639fff5</string>
+		<key>installer_item_location</key>
+		<string>apps/Zed/Zed-1.30.2.dmg</string>
+		<key>installer_item_size</key>
+		<integer>85993</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>dev.zed.Zed</string>
+				<key>CFBundleName</key>
+				<string>Zed</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.30.2</string>
+				<key>CFBundleVersion</key>
+				<string>20261125.161922</string>
+				<key>minosversion</key>
+				<string>12.0</string>
+				<key>path</key>
+				<string>/Applications/Zed.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Zed.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.0</string>
+		<key>name</key>
+		<string>Zed</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.30.2</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -21658,94 +21780,6 @@ fi
 		<true/>
 		<key>version</key>
 		<string>16.115.26112215</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>blocking_applications</key>
-		<array>
-			<string>Microsoft Auto Update</string>
-			<string>Microsoft Error Reporting</string>
-			<string>Microsoft Word</string>
-		</array>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>The Word you want. State-of-the-art editing, reviewing, and sharing tools make creating and polishing documents easy.</string>
-		<key>display_name</key>
-		<string>Microsoft Word</string>
-		<key>installed_size</key>
-		<integer>2797012</integer>
-		<key>installer_item_hash</key>
-		<string>5ac9129c878fa04466aec509d47e9dcf86638dd13b5bf55b84b2e0da6392930c</string>
-		<key>installer_item_location</key>
-		<string>apps/Microsoft Word 365/Microsoft_Word-16.115.26111533.pkg</string>
-		<key>installer_item_size</key>
-		<integer>1398876</integer>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.microsoft.Word</string>
-				<key>CFBundleName</key>
-				<string>Word</string>
-				<key>CFBundleShortVersionString</key>
-				<string>16.115.1</string>
-				<key>CFBundleVersion</key>
-				<string>16.115.26111533</string>
-				<key>minosversion</key>
-				<string>15.0</string>
-				<key>path</key>
-				<string>/Applications/Microsoft Word.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>15.0</string>
-		<key>name</key>
-		<string>Microsoft Word 365</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>2785174</integer>
-				<key>packageid</key>
-				<string>com.microsoft.package.Microsoft_Word.app</string>
-				<key>version</key>
-				<string>16.115.26111533</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>10918</integer>
-				<key>packageid</key>
-				<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
-				<key>version</key>
-				<string>4.85.26080216</string>
-			</dict>
-			<dict>
-				<key>installed_size</key>
-				<integer>920</integer>
-				<key>packageid</key>
-				<string>com.microsoft.pkg.licensing.v3</string>
-				<key>version</key>
-				<string>16.115.26111533</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>16.115.26111533</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -34921,6 +34955,68 @@ fi
 		<array>
 			<string>testing</string>
 		</array>
+		<key>description</key>
+		<string>Explore REST and GraphQL APIs.</string>
+		<key>display_name</key>
+		<string>Insomnia </string>
+		<key>installer_item_hash</key>
+		<string>bf10dc8e0bd59636938b9122fc957632f74e5a8843b6f511101c9083c3a73337</string>
+		<key>installer_item_location</key>
+		<string>apps/Insomnia/Insomnia.Core-13.5.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>396204</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.insomnia.app</string>
+				<key>CFBundleName</key>
+				<string>Insomnia</string>
+				<key>CFBundleShortVersionString</key>
+				<string>13.5.0</string>
+				<key>CFBundleVersion</key>
+				<string>13.5.0</string>
+				<key>minosversion</key>
+				<string>12.0</string>
+				<key>path</key>
+				<string>/Applications/Insomnia.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Insomnia.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>12.0</string>
+		<key>name</key>
+		<string>Insomnia</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>13.5.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
 		<key>category</key>
 		<string>Development</string>
 		<key>description</key>
@@ -34985,58 +35081,6 @@ fi
 		<true/>
 		<key>version</key>
 		<string>2.2.5</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Work with Claude directly in your codebase. Build, debug, and ship from your terminal, IDE, Slack, or the web. Describe what you need, and Claude handles the rest.</string>
-		<key>developer</key>
-		<string>Anthropic</string>
-		<key>display_name</key>
-		<string>claude code</string>
-		<key>installed_size</key>
-		<integer>372526</integer>
-		<key>installer_item_hash</key>
-		<string>57b80604c8c3ec734073ed0ddfbb364b25cb8e2dac20b1ebbf7ece5d7dc4704d</string>
-		<key>installer_item_location</key>
-		<string>apps/ClaudeCode/ClaudeCode-arm64-2.1.331.pkg</string>
-		<key>installer_item_size</key>
-		<integer>166409</integer>
-		<key>name</key>
-		<string>ClaudeCode</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>372526</integer>
-				<key>packageid</key>
-				<string>com.github.autopkg.ClaudeCode</string>
-				<key>version</key>
-				<string>2.1.331</string>
-			</dict>
-		</array>
-		<key>supported_architectures</key>
-		<array>
-			<string>arm64</string>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2.1.331</string>
-		<key>version_script</key>
-		<string>#!/bin/sh
-/usr/local/bin/claude --version | /usr/bin/grep -oE '[0-9]+(\.[0-9]+)+'</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -37538,6 +37582,51 @@ fi
 		<key>catalogs</key>
 		<array>
 			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Productivity</string>
+		<key>description</key>
+		<string>Microsoft Edge web browser</string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Microsoft Edge</string>
+		<key>installed_size</key>
+		<integer>981897</integer>
+		<key>installer_item_hash</key>
+		<string>b042770ef89cc6b6bd85c967d64100b331deb7cdd6ef0d7c3f8c6eef10306231</string>
+		<key>installer_item_location</key>
+		<string>apps/Microsoft/Microsoft_Edge-158.0.4370.45.pkg</string>
+		<key>installer_item_size</key>
+		<integer>438650</integer>
+		<key>minimum_os_version</key>
+		<string>10.10.0</string>
+		<key>name</key>
+		<string>MicrosoftEdge</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>981897</integer>
+				<key>packageid</key>
+				<string>com.microsoft.edgemac</string>
+				<key>version</key>
+				<string>158.0.4370.45</string>
+			</dict>
+		</array>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>158.0.4370.45</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
 			<string>development</string>
 		</array>
 		<key>category</key>
@@ -38368,72 +38457,6 @@ fi
 		<true/>
 		<key>version</key>
 		<string>7.37095.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
-		<string>Your AI partner on desktop. Fast, focused, and designed for deep work.</string>
-		<key>developer</key>
-		<string>Anthropic PBC</string>
-		<key>display_name</key>
-		<string>Claude</string>
-		<key>installer_item_hash</key>
-		<string>168640ac30ef49660a2c2fd47a8704ffe015341b33d31239864ca579b3f674d1</string>
-		<key>installer_item_location</key>
-		<string>apps/Claude/Claude-6.28899.6.dmg</string>
-		<key>installer_item_size</key>
-		<integer>400026</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.anthropic.claudefordesktop</string>
-				<key>CFBundleName</key>
-				<string>Claude</string>
-				<key>CFBundleShortVersionString</key>
-				<string>6.28899.6</string>
-				<key>CFBundleVersion</key>
-				<string>6.28899.6</string>
-				<key>minosversion</key>
-				<string>13.0</string>
-				<key>path</key>
-				<string>/Applications/Claude.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Claude.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>13.0</string>
-		<key>name</key>
-		<string>Claude</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>6.28899.6</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -41251,72 +41274,6 @@ fi
 			<string>testing</string>
 		</array>
 		<key>description</key>
-		<string>Tool designed to help developers manage multiple coding agents, run tasks in parallel, and collaborate on software projects.</string>
-		<key>developer</key>
-		<string>OpenAI</string>
-		<key>display_name</key>
-		<string>Codex</string>
-		<key>installer_item_hash</key>
-		<string>f46ed2531e17517b214588ce6fa75b3d54ebab89867422b8493b33def9af8e81</string>
-		<key>installer_item_location</key>
-		<string>apps/Codex/Codex-26.1120.41243.dmg</string>
-		<key>installer_item_size</key>
-		<integer>518604</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.openai.codex</string>
-				<key>CFBundleName</key>
-				<string>ChatGPT</string>
-				<key>CFBundleShortVersionString</key>
-				<string>26.1120.41243</string>
-				<key>CFBundleVersion</key>
-				<string>30607</string>
-				<key>minosversion</key>
-				<string>13.0</string>
-				<key>path</key>
-				<string>/Applications/ChatGPT.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>ChatGPT.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>13.0</string>
-		<key>name</key>
-		<string>Codex</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>26.1120.41243</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
 		<string> </string>
 		<key>developer</key>
 		<string>JetBrains s.r.o.</string>
@@ -41438,72 +41395,6 @@ fi
 		<true/>
 		<key>version</key>
 		<string>158.1.100.59</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>category</key>
-		<string>Browsers</string>
-		<key>description</key>
-		<string>The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.</string>
-		<key>developer</key>
-		<string>Brave Software Inc.</string>
-		<key>display_name</key>
-		<string>Brave Browser</string>
-		<key>installer_item_hash</key>
-		<string>4b16d4b5886b368691ce559ffc3fa272978d39ae58ef5f695740723a943ef5c0</string>
-		<key>installer_item_location</key>
-		<string>apps/Brave/Brave-158.1.100.58.dmg</string>
-		<key>installer_item_size</key>
-		<integer>355935</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.brave.Browser</string>
-				<key>CFBundleName</key>
-				<string>Brave</string>
-				<key>CFBundleShortVersionString</key>
-				<string>158.1.100.58</string>
-				<key>CFBundleVersion</key>
-				<string>200.58</string>
-				<key>minosversion</key>
-				<string>13.0</string>
-				<key>path</key>
-				<string>/Applications/Brave Browser.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Brave Browser.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>13.0</string>
-		<key>name</key>
-		<string>Brave</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>158.1.100.58</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -45341,6 +45232,72 @@ fi
 		<key>display_name</key>
 		<string>Vorssaint</string>
 		<key>installer_item_hash</key>
+		<string>f4f1eb6ccb3d5b4e3a16f5350dfdd0d541e6130b3e5a418f1f0017ad8540eb89</string>
+		<key>installer_item_location</key>
+		<string>apps/Vorssaint/Vorssaint-3.4.5.dmg</string>
+		<key>installer_item_size</key>
+		<integer>28360</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.vorssaint.utils</string>
+				<key>CFBundleName</key>
+				<string>Vorssaint</string>
+				<key>CFBundleShortVersionString</key>
+				<string>3.4.5</string>
+				<key>CFBundleVersion</key>
+				<string>107</string>
+				<key>minosversion</key>
+				<string>14.0</string>
+				<key>path</key>
+				<string>/Applications/Vorssaint.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Vorssaint.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>14.0</string>
+		<key>name</key>
+		<string>Vorssaint</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>3.4.5</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Open-source menu bar toolkit bundling several small macOS utilities.</string>
+		<key>developer</key>
+		<string>Pedro Gomes</string>
+		<key>display_name</key>
+		<string>Vorssaint</string>
+		<key>installer_item_hash</key>
 		<string>952582444fe60d460a0453dea7392a5b6641d98c79d60e98f9f25d323bdb47d3</string>
 		<key>installer_item_location</key>
 		<string>apps/Vorssaint/Vorssaint-3.4.4.dmg</string>
@@ -48095,6 +48052,74 @@ Raycast is a blazingly fast, totally extendable launcher. It lets you complete t
 		<key>display_name</key>
 		<string>Raycast</string>
 		<key>installer_item_hash</key>
+		<string>2d16632864409809ee868fa6d86bf6316c3931b8aed57e31ecaf028f748aee29</string>
+		<key>installer_item_location</key>
+		<string>apps/Raycast/Raycast-2.14.0.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>154962</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.raycast.macos</string>
+				<key>CFBundleName</key>
+				<string>Raycast</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2.14.0.0</string>
+				<key>CFBundleVersion</key>
+				<string>0</string>
+				<key>minosversion</key>
+				<string>26.0</string>
+				<key>path</key>
+				<string>/Applications/Raycast.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Raycast.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>26.0</string>
+		<key>name</key>
+		<string>Raycast</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2.14.0.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Supercharged productivity
+
+Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</string>
+		<key>developer</key>
+		<string>Raycast Technologies Inc</string>
+		<key>display_name</key>
+		<string>Raycast</string>
+		<key>installer_item_hash</key>
 		<string>1ff7c7c319c201aa57ade1f063155ef5e93f39351a4a8d3346cceb36bca80c63</string>
 		<key>installer_item_location</key>
 		<string>apps/Raycast/Raycast-1.94.4.dmg</string>
@@ -49170,6 +49195,68 @@ rm -rf /Applications/zoom.us.app
 		<true/>
 		<key>version</key>
 		<string>20240926.162135</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Fast Terminal app based in Rust.</string>
+		<key>developer</key>
+		<string>Denver Technologies</string>
+		<key>display_name</key>
+		<string>Warp</string>
+		<key>force_munkiimport</key>
+		<true/>
+		<key>installer_item_hash</key>
+		<string>2b21b90a3010a724baf9f5a3a1ff97e34c538c505d098b6f9439e755b7f54fb1</string>
+		<key>installer_item_location</key>
+		<string>apps/Warp/Warp-0.2026.11.18.08.17.06.dmg</string>
+		<key>installer_item_size</key>
+		<integer>335286</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>dev.warp.Warp-Stable</string>
+				<key>CFBundleName</key>
+				<string>Warp</string>
+				<key>CFBundleShortVersionString</key>
+				<string>0.2026.11.18.08.17.06</string>
+				<key>CFBundleVersion</key>
+				<string>0.2026.11.18.08.17.06</string>
+				<key>path</key>
+				<string>/Applications/Warp.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Warp.app</string>
+			</dict>
+		</array>
+		<key>name</key>
+		<string>Warp</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>0.2026.11.18.08.17.06</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -60445,84 +60532,6 @@ exit</string>
 			<string>testing</string>
 		</array>
 		<key>description</key>
-		<string>Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models.</string>
-		<key>developer</key>
-		<string>Infra Technologies, Inc</string>
-		<key>display_name</key>
-		<string>Ollama</string>
-		<key>installer_item_hash</key>
-		<string>49101c6329ec00efdf3c2ab0aec855736e80262e03ae9c06ed77925d93c50c18</string>
-		<key>installer_item_location</key>
-		<string>apps/Ollama/Ollama-0.40.17.dmg</string>
-		<key>installer_item_size</key>
-		<integer>229875</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.electron.ollama</string>
-				<key>CFBundleName</key>
-				<string>Ollama</string>
-				<key>CFBundleShortVersionString</key>
-				<string>0.40.17</string>
-				<key>CFBundleVersion</key>
-				<string>0.40.17</string>
-				<key>minosversion</key>
-				<string>14.0</string>
-				<key>path</key>
-				<string>/Applications/Ollama.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Ollama.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>14.0</string>
-		<key>name</key>
-		<string>Ollama</string>
-		<key>postinstall_script</key>
-		<string>#!/bin/bash
-
-# Script built from: https://github.com/ollama/ollama/issues/851#issuecomment-1889808636
-# Please note admin rights are still needed as the file that records whether first time run has completed is located in the Users home folder. see https://github.com/ollama/ollama/issues/6814
-
-# Install Command Line Tools
-if ! [ -f /usr/local/bin/ollama ]; then
-  /usr/bin/touch /usr/local/bin/ollama ; /bin/ln -s -f /Applications/Ollama.app/Contents/Resources/ollama /usr/local/bin/ollama
-fi
-
-exit</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>0.40.17</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-		</array>
-		<key>description</key>
 		<string>Google's agentic development platform, evolving the IDE into the agent-first era.</string>
 		<key>developer</key>
 		<string>Google</string>
@@ -60661,11 +60670,11 @@ exit</string>
 		<key>display_name</key>
 		<string>Antigravity</string>
 		<key>installer_item_hash</key>
-		<string>51105bc2227e41379c42358d01139c6eb9b66d63eee75de10f717208e8f1c672</string>
+		<string>33b2123f12dee526b2d2d6bd7fe622ff328e697f51ece8c606ccdffe1aadd038</string>
 		<key>installer_item_location</key>
-		<string>apps/Antigravity/Antigravity-2.35.0.dmg</string>
+		<string>apps/Antigravity/Antigravity-2.35.2.dmg</string>
 		<key>installer_item_size</key>
-		<integer>236370</integer>
+		<integer>236428</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -60676,9 +60685,9 @@ exit</string>
 				<key>CFBundleName</key>
 				<string>Antigravity</string>
 				<key>CFBundleShortVersionString</key>
-				<string>2.35.0</string>
+				<string>2.35.2</string>
 				<key>CFBundleVersion</key>
-				<string>2.35.0</string>
+				<string>2.35.2</string>
 				<key>minosversion</key>
 				<string>13.0</string>
 				<key>path</key>
@@ -60711,7 +60720,7 @@ exit</string>
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>2.35.0</string>
+		<string>2.35.2</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>

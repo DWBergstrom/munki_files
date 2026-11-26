@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dwbergstrom</string>
+		<key>creation_date</key>
+		<date>2026-11-26T06:09:07Z</date>
+		<key>munki_version</key>
+		<string>7.3.0.5808</string>
+		<key>os_version</key>
+		<string>27.2.1</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>blocking_applications</key>
+	<array>
+		<string>Visual Studio Code.app</string>
+	</array>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux.</string>
+	<key>developer</key>
+	<string>Microsoft</string>
+	<key>display_name</key>
+	<string>Visual Studio Code</string>
+	<key>installed_size</key>
+	<integer>1025946</integer>
+	<key>installer_item_hash</key>
+	<string>d1ea3f048a0667d0543134b92a44cd613c3d17bf914ee14f56938339af9e0b48</string>
+	<key>installer_item_location</key>
+	<string>apps/Visual Studio Code-1.148.0.pkg</string>
+	<key>installer_item_size</key>
+	<integer>379344</integer>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleShortVersionString</key>
+			<string>1.148.0</string>
+			<key>path</key>
+			<string>/Applications/Visual Studio Code.app</string>
+			<key>type</key>
+			<string>application</string>
+		</dict>
+	</array>
+	<key>name</key>
+	<string>Visual Studio Code</string>
+	<key>postinstall_script</key>
+	<string>#!/bin/bash
+
+# Script to change ownership of the .vscode directory in each user's home directory
+
+# Exit Codes
+# 0: Success
+# 95: Not running as root
+
+# Variables
+LOG_PROCESS="fix_vscode_ownership"
+
+#Functions
+writeLog() {
+    # Write to system log
+    /usr/bin/logger -is -t "${LOG_PROCESS}" "[${LOG_PROCESS}] ${1}"
+}
+
+root_check() {
+    if [[ "$(/usr/bin/id -u)" != "0" ]] ; then
+        writeLog "${LOG_PROCESS} MUST run as root..."
+        exit 95
+    fi
+}
+
+main() {
+    # Get a list of all user directories in /Users, excluding some directories
+    for USER in $(/usr/bin/dscl . -list /Users UniqueID | /usr/bin/awk '$2 &gt; 500 { print $1 }'); do
+        
+        # Define the user's home directory
+        USER_DIR=$(/usr/bin/dscl . -read "/Users/${USER}" NFSHomeDirectory | awk '{print $2}')
+
+        # Define the .vscode directory path for this user
+        VSCODE_DIR="${USER_DIR}/.vscode"
+
+        # Check if the .vscode directory exists
+        if [[ -d "${VSCODE_DIR}" ]]; then
+            writeLog "Changing ownership of ${VSCODE_DIR} to ${USER}"
+            /usr/sbin/chown -R "${USER}":staff "${VSCODE_DIR}"
+        else
+            writeLog "Skipping: No .vscode directory found for ${USER}"
+        fi
+
+        # Define the Code directory path for this user
+        VSCODE_LIB_DIR="${USER_DIR}/Library/Application Support/Code"
+        
+        # Check if the Code directory exists
+        if [[ -d "${VSCODE_LIB_DIR}" ]]; then
+            writeLog "Changing ownership of ${VSCODE_LIB_DIR} to ${USER}"
+            /usr/sbin/chown -R "${USER}":staff "${VSCODE_LIB_DIR}"
+        else
+            writeLog "Skipping: No Code directory found for ${USER}"
+        fi
+    done
+}
+
+# Main
+root_check
+main
+writeLog "${LOG_PROCESS} complete."
+
+exit 0</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>1025946</integer>
+			<key>packageid</key>
+			<string>com.microsoft.VSCode</string>
+			<key>version</key>
+			<string>1.148.0</string>
+		</dict>
+	</array>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.148.0</string>
+</dict>
+</plist>

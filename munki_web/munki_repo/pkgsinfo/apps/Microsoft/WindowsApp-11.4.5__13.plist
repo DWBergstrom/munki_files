@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>dwbergstrom</string>
 		<key>creation_date</key>
-		<date>2026-11-22T03:56:21Z</date>
+		<date>2026-11-26T06:01:46Z</date>
 		<key>munki_version</key>
 		<string>7.3.0.5808</string>
 		<key>os_version</key>
@@ -17,76 +17,72 @@
 	<false/>
 	<key>blocking_applications</key>
 	<array>
-		<string>Microsoft Auto Update</string>
-		<string>Microsoft Error Reporting</string>
-		<string>Microsoft Word</string>
+		<string>Microsoft Remote Desktop</string>
+		<string>Windows App</string>
 	</array>
 	<key>catalogs</key>
 	<array>
-		<string>testing</string>
+		<string>utilities</string>
 	</array>
+	<key>category</key>
+	<string>Utility</string>
 	<key>description</key>
-	<string>The Word you want. State-of-the-art editing, reviewing, and sharing tools make creating and polishing documents easy.</string>
+	<string>Windows App serves as your secure gateway to connect to Windows across Windows 365, Azure Virtual Desktop, Remote Desktop, Remote Desktop Services, Microsoft Dev Box, and more.
+</string>
+	<key>developer</key>
+	<string>Microsoft</string>
 	<key>display_name</key>
-	<string>Microsoft Word</string>
+	<string>Windows App</string>
 	<key>installed_size</key>
-	<integer>2797012</integer>
+	<integer>257202</integer>
 	<key>installer_item_hash</key>
-	<string>5ac9129c878fa04466aec509d47e9dcf86638dd13b5bf55b84b2e0da6392930c</string>
+	<string>bc7ed3e01cc207c095fdaac8adf328d4d92f47c43ba980a9d5850ddab44688ba</string>
 	<key>installer_item_location</key>
-	<string>apps/Microsoft Word 365/Microsoft_Word-16.115.26111533.pkg</string>
+	<string>apps/microsoft/Microsoft_Windows_App-11.4.5.pkg</string>
 	<key>installer_item_size</key>
-	<integer>1398876</integer>
+	<integer>104590</integer>
 	<key>installs</key>
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.microsoft.Word</string>
+			<string>com.microsoft.rdc.macos</string>
 			<key>CFBundleName</key>
-			<string>Word</string>
+			<string>Windows App</string>
 			<key>CFBundleShortVersionString</key>
-			<string>16.115.1</string>
+			<string>11.4.5</string>
 			<key>CFBundleVersion</key>
-			<string>16.115.26111533</string>
+			<string>3151</string>
 			<key>minosversion</key>
 			<string>15.0</string>
 			<key>path</key>
-			<string>/Applications/Microsoft Word.app</string>
+			<string>/Applications/Windows App.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
-			<string>CFBundleVersion</string>
+			<string>CFBundleShortVersionString</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
 	<string>15.0</string>
 	<key>name</key>
-	<string>Microsoft Word 365</string>
+	<string>WindowsApp</string>
 	<key>receipts</key>
 	<array>
 		<dict>
 			<key>installed_size</key>
-			<integer>2785174</integer>
+			<integer>246471</integer>
 			<key>packageid</key>
-			<string>com.microsoft.package.Microsoft_Word.app</string>
+			<string>com.microsoft.rdc.macos</string>
 			<key>version</key>
-			<string>16.115.26111533</string>
+			<string>11.4.5</string>
 		</dict>
 		<dict>
 			<key>installed_size</key>
-			<integer>10918</integer>
+			<integer>10731</integer>
 			<key>packageid</key>
 			<string>com.microsoft.package.Microsoft_AutoUpdate.app</string>
 			<key>version</key>
-			<string>4.85.26080216</string>
-		</dict>
-		<dict>
-			<key>installed_size</key>
-			<integer>920</integer>
-			<key>packageid</key>
-			<string>com.microsoft.pkg.licensing.v3</string>
-			<key>version</key>
-			<string>16.115.26111533</string>
+			<string>4.81.25121042</string>
 		</dict>
 	</array>
 	<key>unattended_install</key>
@@ -98,6 +94,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>16.115.26111533</string>
+	<string>11.4.5</string>
 </dict>
 </plist>
